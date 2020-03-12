@@ -1,0 +1,39 @@
+---
+description: 여러 컨텐츠 해상도를 사용하여 서로 다른 타임라인 작업을 처리할 수 있습니다.
+seo-description: 여러 컨텐츠 해상도를 사용하여 서로 다른 타임라인 작업을 처리할 수 있습니다.
+seo-title: 광고 삭제/바꾸기 컨텐츠 해상도
+title: 광고 삭제/바꾸기 컨텐츠 해상도
+uuid: 2954ce0f-aed2-4a85-8e53-d4e89d1497b6
+translation-type: tm+mt
+source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+
+---
+
+
+# 광고 삭제/바꾸기 컨텐츠 해상도 {#content-resolvers-for-ad-deletion-replacement}
+
+여러 컨텐츠 해상도를 사용하여 서로 다른 타임라인 작업을 처리할 수 있습니다.
+
+```java
+List<ContentResolver> contentResolvers = new ArrayList<ContentResolver>(); 
+MetadataNode metadata = (MetadataNode) resource.getMetadata(); 
+if (metadata != null) { 
+    if (metadata.containsKey(DefaultMetadataKeys.TIME_RANGES_METADATA_KEY.getValue())) { 
+        String timeRangeType = metadata.getValue(DefaultMetadataKeys.TIME_RANGES_METADATA_KEY.getValue()); 
+        if (timeRangeType.equals(TimeRangeCollection.TIME_RANGE_TYPE_DELETE)) { 
+            contentResolvers.add(new DeleteContentResolver()); 
+        } else if (timeRangeType.equals(TimeRangeCollection.TIME_RANGE_TYPE_REPLACE)) { 
+            contentResolvers.add(new DeleteContentResolver()); 
+        } else if (timeRangeType.equals(TimeRangeCollection.TIME_RANGE_TYPE_MARK)) { 
+            contentResolvers.add(new CustomAdMarkersContentResolver()); 
+        } 
+    } 
+    if (metadata.containsKey(DefaultMetadataKeys.AUDITUDE_METADATA_KEY.getValue())) { 
+        contentResolvers.add(new AuditudeResolver(context)); 
+    } else if (metadata.containsKey(DefaultMetadataKeys.JSON_METADATA_KEY.getValue())) { 
+        contentResolvers.add(new MetadataResolver()); 
+    } 
+} 
+return contentResolvers;
+```
+
