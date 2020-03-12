@@ -1,0 +1,37 @@
+---
+description: 일반적으로 모든 Primetime DRM 라이선스는 제작 시 고유 디바이스에 바인딩됩니다. 이 바인딩을 사용하면 사용자가 권한 부여 없이 다른 디바이스에서 라이선스를 공유할 수 없습니다. Primetime DRM은 디바이스별 바인딩 외에도 디바이스 도메인 또는 디바이스 그룹에 라이선스를 바인딩할 수 있는 기능을 제공합니다.
+seo-description: 일반적으로 모든 Primetime DRM 라이선스는 제작 시 고유 디바이스에 바인딩됩니다. 이 바인딩을 사용하면 사용자가 권한 부여 없이 다른 디바이스에서 라이선스를 공유할 수 없습니다. Primetime DRM은 디바이스별 바인딩 외에도 디바이스 도메인 또는 디바이스 그룹에 라이선스를 바인딩할 수 있는 기능을 제공합니다.
+seo-title: 도메인 지원을 통해 암호화된 컨텐츠 재생
+title: 도메인 지원을 통해 암호화된 컨텐츠 재생
+uuid: 8854cc0f-9bfc-4833-82d7-a3f46ac88e06
+translation-type: tm+mt
+source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+
+---
+
+
+# 디바이스 도메인 지원 {#device-domain-support}
+
+일반적으로 모든 Primetime DRM 라이선스는 제작 시 고유 디바이스에 바인딩됩니다. 이 바인딩을 사용하면 사용자가 권한 부여 없이 다른 디바이스에서 라이선스를 공유할 수 없습니다. Primetime DRM은 디바이스별 바인딩 외에도 디바이스 도메인 또는 디바이스 그룹에 라이선스를 바인딩할 수 있는 기능을 제공합니다.
+
+컨텐츠 메타데이터가 장치 도메인 등록이 필요하다고 지정하는 경우 응용 프로그램은 API를 호출하여 장치 그룹에 가입할 수 있습니다. 이 작업은 도메인 서버로 전송될 도메인 등록 요청을 트리거합니다. 디바이스 그룹에 라이선스를 부여하면 라이선스를 내보내고 장치 그룹에 가입한 다른 디바이스와 공유할 수 있습니다.
+
+그런 다음 장치 그룹 정보가 `DRMContentData` 개체에 사용되며, `VoucherAccessInfo` 이는 라이센스를 성공적으로 검색하고 사용하는 데 필요한 정보를 제공하는 데 사용됩니다.
+
+## 도메인 지원을 통해 암호화된 컨텐츠 재생 {#play-encrypted-content-using-domain-support}
+
+Primetime DRM을 사용하여 암호화된 콘텐츠를 재생하려면 다음 단계를 수행하십시오.
+
+1. 를 `VoucherAccessInfo.deviceGroup`사용하여 장치 그룹 등록이 필요한지 확인합니다.
+1. 인증이 필요한 경우:
+   1. 이 `DeviceGroupInfo.authenticationMethod` 속성을 사용하여 인증이 필요한지 확인합니다.
+   1. 인증이 필요한 경우 다음 단계 중 하나를 수행하여 사용자를 인증합니다.
+
+      * 사용자의 사용자 이름과 암호를 입수하고 `DRMManager.authenticate(deviceGroup.serverURL, deviceGroup.domain, username, password)`호출합니다.
+      * 캐시/사전 생성된 인증 토큰을 입수하고 호출을 `DRMManager.setAuthenticationToken()`수행합니다.
+   1. 호출 `DRMManager.addToDeviceGroup()`
+1. 다음 작업 중 하나를 수행하여 컨텐츠에 대한 라이센스를 얻습니다.
+   1. 메서드를 `DRMManager.loadVoucher()` 사용합니다.
+   1. 동일한 장치 그룹에 등록된 다른 장치에서 라이센스를 취득하고 이 방법을 ` DRMManager` 통해 해당 `DRMManager.storeVoucher()` 장치에 라이센스를 제공합니다.
+1. 이 방법을 사용하여 암호화된 내용을 `Primetime.play()` 재생합니다.
+Primetime DRM 라이선스 서버에서 라이선스를 구입한 후 모든 디바이스에서 `DRMVoucher.toByteArray()` 방법을 사용하여 라이선스의 원시 바이트를 제공할 수 있습니다. 컨텐츠 공급자는 일반적으로 장치 그룹의 장치 수를 제한합니다. 제한에 도달하는 경우, 현재 장치를 등록하기 전에 사용하지 않은 장치에서 `DRMManager.removeFromDeviceGroup()` 메서드를 호출해야 할 수 있습니다.
