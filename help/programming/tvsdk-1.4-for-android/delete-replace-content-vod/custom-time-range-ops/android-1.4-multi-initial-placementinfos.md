@@ -1,0 +1,51 @@
+---
+description: TVSDK 파섹
+seo-description: TVSDK 파섹
+seo-title: 여러 초기 배치정보
+title: 여러 초기 배치정보
+uuid: e0f549d7-3092-45e9-bd67-ee41d01075b5
+translation-type: tm+mt
+source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+
+---
+
+
+# 여러 초기 배치정보{#multiple-initial-placementinformations}
+
+TVSDK 파섹
+
+```java
+ArrayList<PlacementInformation> placementInformations = new ArrayList<PlacementInformation>(); 
+CustomRangeHelper customRangeHelper = new CustomRangeHelper(mediaPlayerItem.getResource().getMetadata()); 
+  
+if (customRangeHelper.hasRanges() == null) { 
+    if (adSignalingMode == AdSignalingMode.SERVER_MAP) { 
+        placementInformations.add(new PlacementInformation(Type.SERVER_MAP, PlacementInformation.UNKNOWN_DURATION, 0)); 
+    } else if (adSignalingMode == AdSignalingMode.MANIFEST_CUES) { 
+        placementInformations.add(new PlacementInformation(Type.PRE_ROLL, timeMapping.getTime(), PlacementInformation.UNKNOWN_DURATION)); 
+    } 
+} 
+else if (customRangeHelper.hasRanges() == CustomRangeHelper.MARK_RANGE) { 
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES,  
+      PlacementInformation.Mode.MARK, PlacementInformation.UNKNOWN_DURATION, 0)); 
+} 
+else if (customRangeHelper.hasRanges() == CustomRangeHelper.DELETE_RANGE) { 
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES,  
+      PlacementInformation.Mode.DELETE, PlacementInformation.UNKNOWN_DURATION, 0)); 
+    if (adSignalingMode == AdSignalingMode.SERVER_MAP) { 
+        placementInformations.add(new PlacementInformation(Type.SERVER_MAP,  
+          PlacementInformation.UNKNOWN_DURATION, 0)); 
+    } else if (adSignalingMode == AdSignalingMode.MANIFEST_CUES) { 
+        placementInformations.add(new PlacementInformation(Type.PRE_ROLL,  
+          timeMapping.getTime(), PlacementInformation.UNKNOWN_DURATION)); 
+    } 
+} 
+else if (customRangeHelper.hasRanges() == CustomRangeHelper.REPLACE_RANGE) { 
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES,  
+      PlacementInformation.Mode.DELETE, PlacementInformation.UNKNOWN_DURATION, 0)); 
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES,  
+      PlacementInformation.Mode.REPLACE, PlacementInformation.UNKNOWN_DURATION, 0)); 
+} 
+return  placementInformations;
+```
+
