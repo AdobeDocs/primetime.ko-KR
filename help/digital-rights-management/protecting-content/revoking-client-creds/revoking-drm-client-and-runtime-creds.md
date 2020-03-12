@@ -1,0 +1,29 @@
+---
+seo-title: DRM 클라이언트 및 런타임 자격 증명 취소
+title: DRM 클라이언트 및 런타임 자격 증명 취소
+uuid: 8e36536a-8eed-4d27-8a5f-8d3219817e57
+translation-type: tm+mt
+source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+
+---
+
+
+# DRM 클라이언트 및 런타임 자격 증명 취소 {#revoking-drm-client-and-runtime-credentials}
+
+DRM/런타임 버전은 보안 수준, 버전 번호 및 운영 체제 및 런타임을 비롯한 기타 속성으로 식별됩니다. 허용되는 DRM/런타임 버전을 제한하려면 DRM 정책 또는 에서 모듈 제한을 설정합니다 `HandlerConfiguration`. 모듈 제한 사항에는 최소 보안 수준 및 라이선스를 발행할 수 없는 모듈 버전 목록이 포함될 수 있습니다.
+
+DRM/ [런타임 모듈을 식별하는 데 사용되는 특성에 대한 자세한 내용은 보호된 콘텐츠에](../../protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-drm-clients.md) 액세스할 수 없도록 제한된 DRM 클라이언트의 블랙 리스트(Blacklist)를 참조하십시오.
+
+최소 보안 수준이 설정된 경우 클라이언트(컴퓨터 토큰에 지정됨) 버전은 지정된 값보다 크거나 같아야 합니다.
+
+제외된 버전 목록이 지정되고 클라이언트의 버전이 목록의 버전 식별자와 일치하는 경우, 클라이언트는 이 ModuleRequirements 인스턴스를 포함하는 권한을 사용할 수 없습니다. 모듈이 버전 정보와 일치하도록 하려면 릴리스 버전을 제외한 버전 정보에 지정된 모든 매개 변수가 모듈 값과 정확히 일치해야 합니다. 릴리스 버전은 클라이언트 모듈 값이 버전 정보의 값보다 작거나 같은 경우에 일치합니다.
+
+특정 DRM 클라이언트 또는 런타임 버전으로 위반이 보고되는 경우 컨텐츠 소유자 및 컨텐츠 배포자(라이센스 서버를 실행하는 자)는 Adobe에 수정 사항이 없는 기간 동안 서버 라이센스를 거부하도록 구성할 수 있습니다. 위에 설명된 `HandlerConfiguration` 대로 또는 모든 DRM 정책을 변경하여 구성할 수 있습니다. 후자의 경우 DRM 정책 업데이트 목록을 유지 관리하고 이를 사용하여 DRM 정책이 업데이트되었는지 또는 취소되었는지 확인할 수 있습니다.
+
+최신 버전의 Adobe Flash Player/Adobe AIR 런타임 또는 Adobe DRM 모듈(Content Protection Library)이 필요한 경우 DRM 정책을 업데이트해야 합니다.
+
+Java [API를 사용하여 정책 업데이트를 참조하십시오](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md).
+
+그런 다음 DRM 정책 업데이트 목록을 만들거나 호출하거나 를 `HandlerConfiguration` 호출하여 제한을 설정해야 `HandlerConfiguration.setRuntimeModuleRequirements()` 합니다 `HandlerConfiguration.setDRMModuleRequirements()`. 사용자가 지정된 블랙리스트가 활성화된 새로운 라이선스를 요청하면 라이선스를 발급하기 전에 최신 런타임과 라이브러리를 설치해야 합니다.
+
+블랙리스트 DRM 및 런타임 [버전의](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md) 예를 보려면 Java API를 사용하여 정책 업데이트의 샘플 코드를 참조하십시오.
