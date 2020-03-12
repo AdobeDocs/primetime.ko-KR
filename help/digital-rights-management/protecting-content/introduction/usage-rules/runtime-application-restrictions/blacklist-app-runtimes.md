@@ -1,0 +1,24 @@
+---
+description: 'null'
+seo-description: 'null'
+seo-title: 애플리케이션 런타임 블랙 리스트
+title: 애플리케이션 런타임 블랙 리스트
+uuid: fc3c9bd6-b1e6-4534-b29c-cd9a35b80928
+translation-type: tm+mt
+source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+
+---
+
+
+# 애플리케이션 런타임 블랙 리스트{#blacklist-of-application-runtimes}
+
+애플리케이션 런타임의 블랙 리스트(Blacklist of application runtimes)는 컨텐츠에 액세스할 수 없는 Primetime 클라이언트 또는 Flash Runtime 버전을 지정합니다. 제한된 런타임(Flash Player, AIR 또는 iOS), 플랫폼 및 버전을 지정합니다.
+
+사용 사례 예:Primetime DRM Client 블랙리스트와 유사한 Flash Player, AIR 또는 iOS 런타임의 최신 버전을 라이선스 취득 및 컨텐츠 재생에 필요한 최소 버전으로 지정할 수 있습니다.
+
+다음 특성 외에 Primetime DRM 클라이언트 버전에 지원되는 모든 특성을 통해 애플리케이션 런타임을 식별할 수 있습니다.
+
+| **속성** | **지원되는 값** | **일치 기준** | **설명** |
+|---|---|---|---|
+| 애플리케이션 | `“FlashPlayer”, “AIR”, "DRM_Library", "AVE"` | 정확히 일치 | 응용 프로그램 런타임의 이름을 식별합니다. |
+
