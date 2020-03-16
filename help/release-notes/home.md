@@ -4,7 +4,7 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: c6036a6777e9158861850b60dd1e0749c30fa280
+source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
 
 ---
 
@@ -13,9 +13,9 @@ source-git-commit: c6036a6777e9158861850b60dd1e0749c30fa280
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## TVSDK 3.10 iOS 릴리스 노트의 개선 사항 및 수정 사항
+## TVSDK 3.11 iOS 릴리스 노트의 개선 사항 및 수정 사항
 
-이 릴리스는 주요 고객 문제를 해결하고 개인화 전송 인증서를 업데이트하는 데 중점을 두었습니다.
+이번 릴리스는 주요 고객 문제 해결에 중점을 두었습니다.
 
 iOS용 현재 릴리스 버전에 대한 자세한 내용을 [확인하십시오](../release-notes/tvsdk-3x-ios.md).
 
