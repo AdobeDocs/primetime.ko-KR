@@ -4,7 +4,7 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
+source-git-commit: ededb36a0b460fff4644a3716b36971ff9454c37
 
 ---
 
@@ -25,9 +25,9 @@ iOS용 현재 릴리스 버전에 대한 자세한 내용을 [확인하십시오
 
 현재 출시된 Android 버전에 대한 자세한 내용을 [확인하십시오](../release-notes/tvsdk-3x-android.md).
 
-## PTAI 19.11.1의 개선 사항 및 수정 사항
+## PTAI 20.3.3의 개선 사항 및 수정 사항
 
-유지 관리 업데이트
+고객 문제 수정
 
 현재 릴리스된 동적 광고 삽입 버전에 대한 자세한 내용은 PTAI [릴리스 노트를](ptai-19x-release-notes.md)참조하십시오.
 
