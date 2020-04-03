@@ -43,26 +43,20 @@ VPAID 2.0 지원을 추가하려면:
    >또한 플레이어가 준비 상태일 때만 사용자 지정 광고 보기를 만들어야 합니다.
    >
    >
-   >재설정이 호출될 때 사용자 지정 광고 보기만 삭제합니다. 예:   >
+   >재설정이 호출될 때 사용자 지정 광고 보기만 삭제합니다. 예:
    >
-   >
-   ```>
+   >```
    >// on reset 
    >if (_mediaPlayer != null) { 
    >       _mediaPlayer.disposeCustomAdView(); 
    >       ... 
    >} 
    >
+   >```
    >
-   ```   >
+   >마지막으로 사용자 지정 광고 보기를 처분하기 전에 에서 제거해야 합니다 `FrameLayout`. 예:
    >
-
-
-
-   >마지막으로 사용자 지정 광고 보기를 처분하기 전에 에서 제거해야 합니다 `FrameLayout`. 예:   >
-   >
-   >
-   ```>
-   if (_playerFrame != null) 
-      _playerFrame.removeAllViews(); 
-   ```
+   >```
+   >if (_playerFrame != null) 
+   >   _playerFrame.removeAllViews(); 
+   >```
