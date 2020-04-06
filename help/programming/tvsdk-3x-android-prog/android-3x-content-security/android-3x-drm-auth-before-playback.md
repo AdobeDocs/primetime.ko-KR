@@ -48,26 +48,26 @@ source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
 
 1. 에서 콜백을 구현합니다 `DRMLoadMetadataListener`.
 
-       &#39;loadDRMMetadata&#39;는 이러한 이벤트 처리기를 호출합니다.
-       
- &quot;java     
+   `loadDRMMetadata`는 이러한 이벤트 처리기를 호출합니다.
+
+   ```java
+   public interface DRMLoadMetadataListener { 
     
- 공개 인터페이스 DRMLoadMetadataListener {     
- public     void onLoadMetadataUrlStart();
-  DRM 인증이 필요한지     
- 여부     /**
-     * @param auth
- 필요     *
-   *     @paramMetadata
- *     구문 분석된 DRMMetadata를 입수했습니다.    */
-     public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadataMetadata);
-  onLoadMetadataUrlError();     public void
-      }
-     
-     
-     
- &quot;     다음은처리기에 대한 추가 정보입니다.
+       public void onLoadMetadataUrlStart(); 
+    
+       /** 
+       * @param authNeeded 
+       * whether DRM authentication is needed. 
+       * @param drmMetadata 
+       * the parsed DRMMetadata obtained.    */ 
+       public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadata drmMetadata); 
+       public void onLoadMetadataUrlError(); 
+   } 
    
+   ```
+
+   다음은처리기에 대한 추가 정보입니다.
+
    * `onLoadMetadataUrlStart` 메타데이터 URL 로드가 시작된 시기를 검색합니다.
    * `onLoadMetadataUrlComplete` 메타데이터 URL의 로드가 완료된 시기를 검색합니다.
    * `onLoadMetadataUrlError` 메타데이터가 로드되지 않았음을 나타냅니다.
