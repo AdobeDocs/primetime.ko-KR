@@ -3,7 +3,7 @@ seo-title: HSM 구성
 title: HSM 구성
 uuid: da4d7118-65a8-460d-a796-b7bf5c28b208
 translation-type: tm+mt
-source-git-commit: 47b2ed65ff0ea4f54a210cf7627ed535782296b9
+source-git-commit: ac75f63f98060e1937570476362bb5d4458d1f85
 
 ---
 
@@ -21,6 +21,6 @@ keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunP
 
 목록에 자격 증명이 표시되면 HSM이 제대로 구성되고 라이센스 서버가 자격 증명을 액세스할 수 있습니다.
 
-> [!NOTE]
-> 보호 스트리밍을 위한 Adobe Access Server는 현재 64비트 Windows OS에서 HSM을 지원하지 않습니다.
-
+>[!NOTE]
+>
+>보호 스트리밍을 위한 Adobe Access Server는 현재 64비트 Windows OS에서 HSM을 지원하지 않습니다.
