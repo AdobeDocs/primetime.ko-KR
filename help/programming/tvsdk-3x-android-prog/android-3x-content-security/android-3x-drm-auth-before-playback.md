@@ -5,7 +5,7 @@ seo-title: 재생 전 DRM 인증
 title: 재생 전 DRM 인증
 uuid: be319b04-a506-4278-8275-db32cd3f18aa
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: e300238be5a2bddc7c6b9bd26682dcb4401959b1
 
 ---
 
@@ -48,13 +48,13 @@ source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
 
 1. 에서 콜백을 구현합니다 `DRMLoadMetadataListener`.
 
-   `loadDRMMetadata`는 이러한 이벤트 처리기를 호출합니다.
+   이 `loadDRMMetadata` 이벤트는 이러한 이벤트 핸들러를 호출합니다.
 
    ```java
    public interface DRMLoadMetadataListener { 
-    
+   
        public void onLoadMetadataUrlStart(); 
-    
+   
        /** 
        * @param authNeeded 
        * whether DRM authentication is needed. 
@@ -63,10 +63,9 @@ source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
        public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadata drmMetadata); 
        public void onLoadMetadataUrlError(); 
    } 
-   
    ```
 
-   다음은처리기에 대한 추가 정보입니다.
+   다음은 처리기에 대한 추가 정보입니다.
 
    * `onLoadMetadataUrlStart` 메타데이터 URL 로드가 시작된 시기를 검색합니다.
    * `onLoadMetadataUrlComplete` 메타데이터 URL의 로드가 완료된 시기를 검색합니다.
