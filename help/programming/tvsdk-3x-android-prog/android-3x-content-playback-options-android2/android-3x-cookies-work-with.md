@@ -5,7 +5,7 @@ seo-title: 쿠키 작업
 title: 쿠키 작업
 uuid: 618bc59a-032d-445e-a867-ed2bf260570d
 translation-type: tm+mt
-source-git-commit: ad58732842eb651514a47dd565e31e3d98a84c46
+source-git-commit: 5ada8632a7a5e3cb5d795dc42110844244656095
 
 ---
 
@@ -64,8 +64,9 @@ TVSDK를 사용하여 세션 관리, 게이트 액세스 등을 위해 쿠키 �
    `config.setNetworkConfiguration(networkConfiguration)`
 
    >[!NOTE]
-   이 &#39;setReadSetCookieHeader&#39;를 false로 설정한 후 JAVA 쿠키 관리자를 사용하여 키 요청에 대한 쿠키를 설정합니다.
    >
+   >이 &#39;setReadSetCookieHeader&#39;를 false로 설정한 후 JAVA 쿠키 관리자를 사용하여 키 요청에 대한 쿠키를 설정합니다.
+
    `onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent)`
 이 콜백 API는 C++ 쿠키(http 응답에서 오는 쿠키)에 업데이트가 있을 때마다 실행됩니다. 애플리케이션은 이 콜백을 수신해야 하며 JAVA의 네트워크 호출이 아래와 같이 쿠키를 활용할 수 있도록 JAVA CookieStore를 적절히 업데이트할 수 있습니다.
 
