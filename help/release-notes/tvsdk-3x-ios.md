@@ -2,7 +2,7 @@
 title: iOS용 TVSDK 3.11 릴리스 노트
 description: iOS용 TVSDK 3.11 릴리스 노트는 TVSDK iOS 3.11의 새로운 기능 또는 변경된 사항, 해결되고 알려진 문제 및 장치 문제를 설명합니다.
 translation-type: tm+mt
-source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
+source-git-commit: ac75f63f98060e1937570476362bb5d4458d1f85
 
 ---
 
@@ -183,7 +183,6 @@ iOS TVSDK에서 VHL 2.0 통합 및 인증:API의 복잡성을 줄여 `VideoHeart
 이 `PTSDKConfig` 클래스는 Adobe Primetime 광고 결정, DRM 및 비디오 분석 서버에 대한 요청에 SSL을 적용하는 방법을 제공합니다. 자세한 내용은 이 클래스의 `forceHTTPS` 및 `isForcingHTTPS` 메서드를 참조하십시오. 매니페스트가 HTTPS를 통해 로드되는 경우 TVSDK는 HTTPS의 컨텐츠 사용을 보존하며 해당 매니페스트에서 상대 URL을 로드할 때 이 사용량을 반영합니다.
 
 >[!NOTE] 광고 추적 픽셀, 컨텐츠 및 광고 URL 및 이와 유사한 요청과 같은 타사 도메인에 대한 요청은 수정되지 않으며, HTTPS를 통해 지원되는 URL을 제공하는 것은 컨텐츠 제공업체 및 광고 서버의 책임입니다.
-> 
 
 **버전 1.4.18**
 
@@ -218,7 +217,6 @@ Primetime iOS TVSDK는 VPAID 2.0 Javascript 크리에이티브를 지원하므�
 **버전 1.4.13**
 
 >[!NOTE] Nielsen 모듈은 TVSDK 빌드에서 제거되었고 TVSDK는 곧 새로운 Nielsen 통합 모듈과 함께 업데이트될 예정입니다.
-
 
 **광고 폴백, 광고 선택 로직의 데이지 체인(Zendesk #3103)**
 
@@ -1108,9 +1106,11 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 ## 디바이스 인증 및 지원 {#device-certification-and-support}
 
 >[!NOTE]
-다음 기능은 TVSDK에서 지원되지 **않습니다** .
-* 모든 플랫폼 또는 버전에서 슬로우 모션 제작
-* 라이브 트릭 플레이
+>
+>다음 기능은 TVSDK에서 지원되지 **않습니다** .
+>
+>* 모든 플랫폼 또는 버전에서 슬로우 모션 제작
+>* 라이브 트릭 플레이
 
 
 **버전 1.4.43**
