@@ -5,7 +5,7 @@ seo-title: MediaPlayer에서 미디어 리소스 로드
 title: MediaPlayer에서 미디어 리소스 로드
 uuid: 8af3e8d1-359d-483c-b394-b95054f7265a
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 84924d84bfa436a8807c2e8d74d1dc268d457051
 
 ---
 
@@ -36,49 +36,48 @@ MediaResource를 직접 인스턴스화하고 재생할 비디오 컨텐츠를 �
 
 오류가 발생하면 MediaPlayer는 ERROR 상태로 전환됩니다. 또한 이벤트를 콜백에 전달하여 응용 프로그램에 알립니다. `STATUS_CHANGED` `MediaPlayerStatusChangeEvent`
 
-이렇게 하면 여러 매개 변수가 전달됩니다.>
+이렇게 하면 여러 매개 변수가 전달됩니다.
 * 값이 있는 문자열 유형의 `type` 매개 변수입니다 `ERROR`.
 
 * 오류 이벤트에 대한 진단 정보가 포함된 알림을 얻는 데 사용할 수 있는 `MediaError` 매개 변수입니다.
 
 
-><!--<a id="example_3774607C6F08473282CF0CB7F3D82373"></a>-->
-
+<!--<a id="example_3774607C6F08473282CF0CB7F3D82373"></a>-->
 
 다음 간소화된 샘플 코드는 미디어 리소스를 로드하는 프로세스를 보여 줍니다.
->```>
->>// mediaResource is a properly configured MediaResource instance 
+
+```
+// mediaResource is a properly configured MediaResource instance 
 // mediaPlayer is a MediaPlayer instance 
 // register an event listener with the MediaPlayer instance 
 mediaPlayer.addEventListener(MediaPlayerStatusChangeEvent.STATUS_CHANGED,  
-                            onStatusChanged); 
+                             onStatusChanged); 
 private function onStatusChanged(event:MediaPlayerStatusChangeEvent):void { 
-  switch(event.status) { 
-     case MediaPlayerStatus.INITIALIZED: 
-         // at this point, the resource is successfully loaded 
-         // the media player will provide a reference to the current 
-         // "playable item" ( is guarantee to be valid and not-null). 
-         var playerItem: MediaPlayerItem = mediaPlayer.currentItem; 
-         // we can take a look at the media item characteristics like 
-         // alternate audio tracks, profile information, if is a live stream 
-         // if is drm protected 
-         mediaPlayer.prepareToPlay(); 
-         break; 
-   case MediaPlayerStatus.PREPARED: 
-        // at this point, the resource is successfully processed all  
-        // advertisement placements have been executed and the the  
-        // MediaPlayer is ready to start the playback 
-       if (autoPlay) { 
-           mediaPlayer.play(); 
-       } 
-       break; 
-   case MediaPlayerStatus.ERROR: 
-       // something bad happened - the resource cannot be loaded 
-       // details about the problem are provided via the event.error property 
-       break; 
-       // implementation of the other methods in the PlaybackEventListener interface 
-       ... 
-   } 
+   switch(event.status) { 
+      case MediaPlayerStatus.INITIALIZED: 
+          // at this point, the resource is successfully loaded 
+          // the media player will provide a reference to the current 
+          // "playable item" ( is guarantee to be valid and not-null). 
+          var playerItem: MediaPlayerItem = mediaPlayer.currentItem; 
+          // we can take a look at the media item characteristics like 
+          // alternate audio tracks, profile information, if is a live stream 
+          // if is drm protected 
+          mediaPlayer.prepareToPlay(); 
+          break; 
+    case MediaPlayerStatus.PREPARED: 
+         // at this point, the resource is successfully processed all  
+         // advertisement placements have been executed and the the  
+         // MediaPlayer is ready to start the playback 
+        if (autoPlay) { 
+            mediaPlayer.play(); 
+        } 
+        break; 
+    case MediaPlayerStatus.ERROR: 
+        // something bad happened - the resource cannot be loaded 
+        // details about the problem are provided via the event.error property 
+        break; 
+        // implementation of the other methods in the PlaybackEventListener interface 
+        ... 
+    } 
 }
-```>
->
+```
