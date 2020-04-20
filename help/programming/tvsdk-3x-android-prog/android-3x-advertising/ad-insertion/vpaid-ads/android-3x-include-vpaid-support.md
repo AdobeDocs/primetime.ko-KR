@@ -5,7 +5,7 @@ seo-title: VPAID 2.0 통합 구현
 title: VPAID 2.0 통합 구현
 uuid: d512fb5b-001c-4a7a-a553-d5962002bb30
 translation-type: tm+mt
-source-git-commit: 1034a0520590777cc0930d2f732741202bc3bc04
+source-git-commit: 83df68905f74931355264661aed6cff43b802d3f
 
 ---
 
@@ -41,10 +41,10 @@ VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 
    >또한 플레이어가 준비 상태일 때만 사용자 지정 광고 보기를 만들어야 합니다.
    >
    >
-   >재설정이 호출될 때 사용자 지정 광고 보기만 삭제합니다. 예:   >
+   >재설정이 호출될 때 사용자 지정 광고 보기만 삭제합니다. 예:
    >
    >
-   ```>
+   ```
    >// on reset 
    >if (_mediaPlayer != null) { 
    >       _mediaPlayer.disposeCustomAdView(); 
@@ -52,9 +52,11 @@ VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 
    >} 
    >
    >```
-
-   마지막으로 사용자 지정 광고 보기를 처분하기 전에 에서 제거해야 합니다 `FrameLayout`. 예:
-   >```
-   >if (_playerFrame != null) 
-      _playerFrame.removeAllViews(); 
+   >
+   >마지막으로 사용자 지정 광고 보기를 처분하기 전에 에서 제거해야 합니다 `FrameLayout`. 예:
+   >
+   >
    ```
+   >if (_playerFrame != null) 
+   >       _playerFrame.removeAllViews(); 
+   >```
