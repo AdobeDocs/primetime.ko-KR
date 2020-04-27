@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: e41213acf027e4dc4d016ef31c2d3d1665f54dfc
+source-git-commit: 3e5078c25a1426c3991669809426eefab0386ac9
 
 ---
 
@@ -130,7 +130,7 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
    **참고:이제 레이지 광고 해결이 기본적으로 비활성화되도록 변경되었으며 명시적으로 활성화해야 합니다.**
 
-   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 얻기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
+   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 가져오기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
    이제 PREPARATION 이후 즉시 검색 기능이 허용되므로 광고 브레이크에 대한 검색 결과는 검색 완료 전에 즉시 해결됩니다.\
    신호 모드 SERVER_MAP 및 MANIFEST_CUES가 지원됩니다.
 
@@ -290,20 +290,13 @@ TVSDK가 연결을 열면 서버에 *지속적인* 연결을 요청합니다. �
 
 * **SizeAvalableEventListener**
 
-   * 이제 SizeAvailableEvent의 getHeight() 및 getWidth() 메서드는 각각 높이와 폭으로 출력을 반환합니다. 디스플레이 종횡비는 다음과 같이 계산할 수 있습니다.
+   * `getHeight()` 의 `getWidth()` 메서드는 `SizeAvailableEvent` 이제 각각 높이와 너비로 출력물을 반환합니다. 디스플레이 종횡비는 다음과 같이 계산할 수 있습니다.
 
-   ```java
-   SizeAvailableEvent e;
-   DAR = e.getWidth()/ e.getHeight();
-   ```
+      SizeAvailableEvent e;DAR = e.getWidth()/ e.getHeight();
 
-   Sar 폭 및 Sar 높이 측면에서 저장 종횡비를 사용하여 프레임 폭과 프레임 높이를 계산할 수도 있습니다.
+      Sar 폭 및 Sar 높이 측면에서 저장 종횡비를 사용하여 프레임 폭과 프레임 높이를 계산할 수도 있습니다.
 
-   ```java
-   SAR = e.getSarWidth()/e.getSarHeight();
-   frameHeight = e.getHeight();
-   frameWidth = e.getWidth()/SAR;
-   ```
+      SAR = e.getSarWidth()/e.getSarHeight();frameHeight = e.getHeight();frameWidth = e.getWidth()/SAR 파섹
 
 * **쿠키**
 
