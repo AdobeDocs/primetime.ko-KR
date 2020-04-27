@@ -4,7 +4,7 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: ededb36a0b460fff4644a3716b36971ff9454c37
+source-git-commit: 33abc0364a7dbe123ef1e6e444ad8578b5596f63
 
 ---
 
@@ -13,17 +13,17 @@ source-git-commit: ededb36a0b460fff4644a3716b36971ff9454c37
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
+## TVSDK 3.11 Android의 수정 사항
+
+이번 릴리스는 Widevine DRM에 대한 향상된 지원을 제공하고 주요 고객 문제를 해결했습니다.
+
+현재 출시된 Android 버전에 대한 자세한 내용을 [확인하십시오](../release-notes/tvsdk-3x-android.md).
+
 ## TVSDK 3.11 iOS 릴리스 노트의 개선 사항 및 수정 사항
 
 이번 릴리스는 주요 고객 문제 해결에 중점을 두었습니다.
 
 iOS용 현재 릴리스 버전에 대한 자세한 내용을 [확인하십시오](../release-notes/tvsdk-3x-ios.md).
-
-## TVSDK 3.10 Android의 수정 사항
-
-이번 릴리스는 주요 고객 문제 해결에 중점을 두었습니다.
-
-현재 출시된 Android 버전에 대한 자세한 내용을 [확인하십시오](../release-notes/tvsdk-3x-android.md).
 
 ## PTAI 20.3.3의 개선 사항 및 수정 사항
 
