@@ -5,7 +5,7 @@ seo-title: Widevine DRM
 title: Widevine DRM
 uuid: 3a5fd786-4319-4e92-83b6-0f5328df6a44
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: ddcdf38fb7a77b7609a21bbdf6b32188b917e22c
 
 ---
 
@@ -18,30 +18,70 @@ Primetime 디지털 저작권 관리(DRM 파섹) 시스템의 기능을 사용�
 
 <!--<a id="section_1385440013EF4A9AA45B6AC98919E662"></a>-->
 
-DASH 스트림과 함께 Android 기본 Widevine DRM을 사용할 수 있습니다.
+HLS CMAF 스트림과 함께 Android 기본 Widevine DRM을 사용할 수 있습니다.
 
-재생을 시작하기 전에 다음 `com.adobe.mediacore.drm.DRMManager` API를 호출합니다.
+>[!NOTE]
+>
+> Widevine CENC CTR 구성표를 사용하려면 최소 Android 버전 4.4(API Level 19)가 필요합니다.
+>
+> Widevine CBCS 구성표를 사용하려면 최소 Android 버전 7.1(API Level 25)이 필요합니다.
+
+## 라이선스 서버 세부 사항 설정 {#license-server-details}
+
+MediaPlayer 리소스를 로드하기 전에 다음 `com.adobe.mediacore.drm.DRMManager` API를 호출합니다.
 
 ```java
-public static void setProtectionData( 
-    String drm,  
-    String licenseServerURL,   
-    Map<String, String> requestProperties)
+public static void setProtectionData(
+String drm,
+String licenseServerURL,
+Map<String, String> requestProperties)
 ```
 
-인수:
+### 인수 {#arguments-license-server}
 
 * `drm` - `"com.widevine.alpha"` Widevine용.
 
 * `licenseServerURL` - 라이센스 요청을 받은 Widevine 라이센스 서버의 URL.
+
 * `requestProperties` - 나가는 라이선스 요청에 포함할 추가 헤더를 포함합니다.
 
 예를 들어 Expressplay DRM용으로 패키지된 컨텐츠를 사용하는 경우 재생 전에 다음 코드를 사용하십시오.
 
 ```java
-DRMManager.setProtectionData( 
+DRMManager.setProtectionData(
   "com.widevine.alpha",  
   "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken= 
 <i>token</i>",  
-  null); 
+  null);
 ```
+
+## 사용자 지정 콜백 제공 {#custom-callback}
+
+MediaPlayer 리소스를 로드하기 전에 다음 `com.adobe.mediacore.drm.DRMManager` API를 호출합니다.
+
+```java
+public static void setMediaDrmCallback(
+MediaDrmCallback callback)
+```
+
+### 인수 {#arguments-custom-callback}
+
+* `callback` - 기본 구현 대신 사용할 MediaDrmCallback의 사용자 지정 구현입니다 `com.adobe.mediacore.drm.WidevineMediaDrmCallback`.
+
+자세한 내용은 3.11 API 참조를 참조하십시오.
+
+## 현재 로드된 MediaPlayer 리소스의 PSSH 상자 가져오기 {#pssh-box-mediaplayer-resoource}
+
+다음 API를 `com.adobe.mediacore.drm.DRMManager` 호출하십시오. 가급적이면 사용자 지정 콜백 구현에서 호출합니다.
+
+```java
+public static byte[] getPSSH()
+```
+
+API는 로드된 Widevine 미디어 리소스와 관련된 보호 시스템 특정 헤더 상자를 반환합니다.
+
+DRM 인스턴스를 만들고 키를 로드하는 동안 유효한 상자를 짧은 기간 동안 사용할 수 있습니다. `MediaDrmCallback callback executeKeyRequest()` 라이센스 키 가져오기를 사용자 정의하는 데 사용할 수 있습니다.
+
+>[!NOTE]
+>
+> `getPSSH()` API는 단일 플레이어 인스턴스에서만 지원됩니다. 여러 플레이어나 인스턴트 온 기능을 올바르게 사용하려면 순차적으로 초기화해야 합니다.
