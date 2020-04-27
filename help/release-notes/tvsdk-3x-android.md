@@ -1,21 +1,21 @@
 ---
-title: Android용 TVSDK 3.10 릴리스 노트
-seo-title: Android용 TVSDK 3.10 릴리스 노트
-description: Android용 TVSDK 3.10 릴리스 정보에서는 TVSDK Android 3.10의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
-seo-description: Android용 TVSDK 3.10 릴리스 정보에서는 TVSDK Android 3.10의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
+title: Android용 TVSDK 3.11 릴리스 노트
+seo-title: Android용 TVSDK 3.11 릴리스 노트
+description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.10의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
+seo-description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.11의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: c4d5b2d5c942a96eadb8f40203ce25a29fe3e1ae
+source-git-commit: 33abc0364a7dbe123ef1e6e444ad8578b5596f63
 
 ---
 
 
-# Android용 TVSDK 3.10 릴리스 노트 {#tvsdk-for-android-release-notes}
+# Android용 TVSDK 3.11 릴리스 노트 {#tvsdk-for-android-release-notes}
 
-Android용 TVSDK 3.10 릴리스 노트에서는 TVSDK Android 3.10의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다.
+Android용 TVSDK 3.11 릴리스 노트는 TVSDK Android 3.11의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다.
 
 Android 참조 플레이어는 배포의 samples/ 디렉토리에 Android TVSDK에 포함되어 있습니다. 함께 제공되는 README.md 파일은 참조 플레이어를 구축하는 방법을 설명합니다.
 
@@ -35,11 +35,20 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
 <!-- ## New features {#new-features} -->
 
-## Android TVSDK 3.10
+## Android TVSDK 3.11
 
-현재 릴리스는 [해결된 문제](#resolved-issues) 섹션에 언급된 주요 고객 문제를 수정하는 데 중점을 둡니다.
+**PSSH(보호 시스템 특정 헤더) 상자 반입이 허용됨**
+
+이제 TVSDK에서 현재 로드된 미디어 리소스와 관련된 보호 시스템 특정 헤더 상자를 가져올 수 있습니다. 새 API가 `getPSSH()` 에 추가되었습니다 `com.adobe.mediacore.drm.DRMManager`.
+자세한 내용은 무선 DRM [을 참조하십시오](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
+
+현재 릴리스에서 수정된 주요 고객 문제는 [해결된 문제](#resolved-issues) 섹션에 언급되어 있습니다.
 
 ### 이전 릴리스의 새로운 기능 및 개선 사항
+
+**Android TVSDK 3.10**
+
+이 릴리스는 [해결된 문제](#resolved-issues) 섹션에 언급된 주요 고객 문제를 수정하는 데 중점을 두었습니다.
 
 **Android TVSDK 3.9**
 
@@ -121,7 +130,7 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
    **참고:이제 레이지 광고 해결이 기본적으로 비활성화되도록 변경되었으며 명시적으로 활성화해야 합니다.**
 
-   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 가져오기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
+   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 얻기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
    이제 PREPARATION 이후 즉시 검색 기능이 허용되므로 광고 브레이크에 대한 검색 결과는 검색 완료 전에 즉시 해결됩니다.\
    신호 모드 SERVER_MAP 및 MANIFEST_CUES가 지원됩니다.
 
@@ -204,12 +213,17 @@ Android TVSDK v2.5.3은 다음 업데이트 및 API 변경 사항을 제공합�
 * API 변경 사항:
 
    * 새 이벤트 쿠키 UpdatedEvent가 추가됩니다. 쿠키가 업데이트될 때 미디어 플레이어에 의해 전달됩니다.
+
    * 사용자 지정 사용자 에이전트를 사용하기 위해 NetworkConfiguration::set/ getCustomUserAgent()에 새 API가 추가됩니다.
+
    * NetworkConfiguration::set/ getEncodedUrlForTracking에 새 API가 추가되어 안전하지 않은 문자를 강제로 인코딩합니다.
+
    * 장애 조치(failover)의 경우 네트워크 확인 URL을 설정하기 위해 새 API가 NetworkConfiguration::getNetworkDownVerificationUrl()에 추가됩니다.
+
    * 캡션을 표시할 때 공백을 영숫자로 처리할지 여부를 정의하는 새 속성이 TextFormat::treatSpaceAsAlphaNum에 추가됩니다.
 
 * SizeAvailableEvent의 변경 사항:이전에는 SizeAvailableEvent의 getHeight() 및 getWidth() 메서드가 Frame 높이 및 프레임 너비를 반환하는 데 사용되었으며, 이 메서드는 미디어 형식으로 반환되었습니다. 이제 디코더에서 반환된 출력 높이와 출력 너비를 각각 반환합니다.
+
 * 버퍼링 동작의 변경 사항:버퍼링 동작이 변경되었습니다. 버퍼가 비어 있는 경우 원하는 작업을 앱 개발자에게 맡겼다. 2.5.3은 버퍼 빈 상황에서 재생 버퍼 크기를 사용합니다.
 
 **버전 2.5.2**
@@ -223,21 +237,33 @@ Android 2.5.1에서 릴리스된 중요한 새로운 기능
 * **성능**&#x200B;개선 새로운 TVSDK 2.5.1 아키텍처는 많은 성능 향상을 가져왔습니다. 타사 벤치마크 조사 결과를 바탕으로 새 아키텍처는 시작 시간을 5배 줄이고 업계 평균과 비교하여 드롭된 프레임을 3.8배 더 적게 제공합니다.
 
    * **VOD 및 실시간 실시간** 실시간 지원 - 인스턴트 온 경우 TVSDK가 초기화되고 재생이 시작되기 전에 미디어를 버퍼링합니다. 백그라운드에서 여러 MediaPlayerItemLoader 인스턴스를 동시에 실행할 수 있으므로 여러 스트림을 버퍼링할 수 있습니다. 사용자가 채널을 변경하고 스트림이 제대로 버퍼링되면 새 채널에서 재생이 즉시 시작됩니다. 또한 TVSDK 2.5.1은 **실시간** 스트림을 위해 Instant On을 지원합니다. 라이브 윈도우를 이동하면 라이브 스트림이 다시 버퍼링됩니다.
+
    * **향상된 ABR 논리 -** 새로운 ABR 로직은 버퍼 길이, 버퍼 길이 변경 비율 및 측정된 대역폭을 기반으로 합니다. 따라서 ABR은 대역폭 변동 시 올바른 비트 전송률을 선택하고 버퍼 길이 변경되는 속도를 모니터링하여 비트율 전환이 실제로 발생하는 횟수를 최적화합니다.
+
    * **부분 세그먼트 다운로드/하위 세그멘테이션 - TVSDK는** 가능한 한 빨리 재생을 시작할 수 있도록 각 조각 크기를 추가로 줄입니다. 조각 조각에는 2초마다 키 프레임이 있어야 합니다.
+
    * **레이지 광고 해상도 - TVSDK는** 재생을 시작하기 전에 비프리롤 광고의 해상도를 기다리지 않으므로 시작 시간을 단축할 수 있습니다. 검색 및 트릭 플레이와 같은 API는 모든 광고가 해결될 때까지 허용되지 않습니다. CSAI와 함께 사용되는 VOD 스트림에 적용됩니다. 검색 및 빨리 감기 등의 작업은 광고 해상도가 완료될 때까지 허용되지 않습니다. 라이브 스트림의 경우 라이브 이벤트 중에는 이 기능을 광고 해상도에 사용할 수 없습니다.
+
    * **영구 네트워크 연결 - 이** 기능을 통해 TVSDK는 영구 네트워크 연결의 내부 목록을 만들고 저장할 수 있습니다. 이러한 연결은 각 네트워크 요청에 대해 새 연결을 열고 이후에 삭제하는 대신 여러 요청에 대해 다시 사용됩니다. 이렇게 하면 네트워킹 코드의 효율성을 높이고 지연을 줄임으로써 재생 성능이 빨라집니다.
 TVSDK가 연결을 열면 서버에 *지속적인* 연결을 요청합니다. 일부 서버에서는 이 유형의 연결을 지원하지 않을 수 있습니다. 이 경우 TVSDK가 각 요청에 대한 연결을 다시 설정하는 데 실패합니다. 또한 영구 연결은 기본적으로 켜져 있지만 TVSDK에는 앱이 원하는 경우 영구 연결을 끌 수 있는 구성 옵션이 있습니다.
+
    * **병렬 다운로드 -** 비디오 및 오디오를 연속적으로 다운로드하는 것이 시작 지연을 줄여줍니다. 이 기능을 사용하면 HLS Live 및 VOD 파일을 재생할 수 있고, 서버의 사용 가능한 대역폭 사용을 최적화하고, 버퍼 언더런 상황에 진입할 가능성을 낮추며, 다운로드와 재생 사이의 지연을 최소화할 수 있습니다.
+
    * **병렬 광고 다운로드 - TVSDK는 광고 중단이 발생하기 전에 컨텐츠 재생과 동시에 광고를 프리페치하므로 광고 및 컨텐츠를 매끄럽게 재생할 수 있습니다** .
 
 * **재생**
 
    * **MP4 컨텐츠 재생 - TV** SDK에서 재생할 수 있도록 MP4 단편 클립을 다시 코딩할 필요가 없습니다.
-참고:MP4 재생에는 ABR 전환, 트릭 재생, 광고 삽입, 늦은 오디오 바인딩 및 하위 세그멘테이션이 지원되지 않습니다.
+      > [!NOTE]
+      >
+      > MP4 재생에는 ABR 전환, 트릭 재생, 광고 삽입, 늦은 오디오 바인딩 및 하위 세그멘테이션이 지원되지 않습니다.
+
    * **ABR(Trick Play with adaptive bit rate)** - 이 기능을 사용하면 TVSDK가 트릭 재생 모드에서 iFrame 스트림 간을 전환할 수 있습니다. iFrame이 아닌 프로파일을 사용하여 보다 빠른 속도로 trick을 재생할 수 있습니다.
+
    * **원활한 트릭 재생 - 향상된** 이러한 기능을 통해 사용자 경험을 향상시킬 수 있습니다.
+
       * 트릭 재생 중에 대역폭 및 버퍼 프로파일을 기반으로 적응 비트 전송률 및 프레임 속도를 선택할 수 있습니다.
+
       * IDR 스트림 대신 기본 스트림을 사용하여 최대 30fps를 빠르게 재생할 수 있습니다.
 
 * **컨텐츠 보호**
@@ -247,14 +273,15 @@ TVSDK가 연결을 열면 서버에 *지속적인* 연결을 요청합니다. �
 * **워크플로우 지원**
 
    * **직접 청구 통합 - 이** 서비스는 Adobe Analytics 백엔드로 청구 지표를 전송하며, 이는 고객이 사용하는 스트림에 대해 Adobe Primetime에서 인증한 것입니다.
-
-      TVSDK는 고객 판매 계약을 준수하면서 자동으로 지표를 수집하여 청구 목적에 필요한 주기적인 사용 보고서를 생성합니다. 모든 스트림 시작 이벤트에서 TVSDK는 Adobe Analytics 데이터 삽입 API를 사용하여 청구 가능한 스트림 기간에 따라 콘텐츠 유형, 광고 삽입 가능 플래그, drm 활성화 플래그 등의 청구 지표를 Adobe Analytics Primetime 소유 보고서 세트로 전송합니다. 이 경우 고객의 자체 Adobe Analytics 보고서 세트 또는 서버 호출을 방해하거나 포함시키지 않습니다. 요청 시 이 청구 사용량 보고서는 고객에게 정기적으로 전송됩니다. 이 단계는 비용 청구를 지원하는 첫 번째 청구 기능입니다. 설명서에 설명된 API를 사용하여 판매 계약에 따라 구성할 수 있습니다. 이 기능은 기본적으로 활성화되어 있습니다. 이 기능을 끄려면 참조 플레이어 샘플을 참조하십시오.
+   TVSDK는 고객 판매 계약을 준수하면서 자동으로 지표를 수집하여 청구 목적에 필요한 주기적인 사용 보고서를 생성합니다. 모든 스트림 시작 이벤트에서 TVSDK는 Adobe Analytics 데이터 삽입 API를 사용하여 청구 가능한 스트림 기간에 따라 콘텐츠 유형, 광고 삽입 가능 플래그, drm 활성화 플래그 등의 청구 지표를 Adobe Analytics Primetime 소유 보고서 세트로 전송합니다. 이 경우 고객의 자체 Adobe Analytics 보고서 세트 또는 서버 호출을 방해하거나 포함시키지 않습니다. 요청 시 이 청구 사용량 보고서는 고객에게 정기적으로 전송됩니다. 이 단계는 비용 청구를 지원하는 첫 번째 청구 기능입니다. 설명서에 설명된 API를 사용하여 판매 계약에 따라 구성할 수 있습니다. 이 기능은 기본적으로 활성화되어 있습니다. 이 기능을 끄려면 참조 플레이어 샘플을 참조하십시오.
 
    * **향상된 장애 조치 지원 - 호스트 서버, 재생 목록 파일 및 세그먼트에 장애가 발생하더라도 중단 없이 계속 재생할 수 있도록 구현된 추가 전략입니다** .
+
 
 * **광고**
 
    * **해자 통합 - 해자에서** 광고 시청 가능성 측정을 지원합니다.
+
    * **Companion banners - Companion 배너는 선형 광고와 함께 표시되며, 광고가 끝난 후에도 계속 표시됩니다** . 이러한 배너는 html(HTML 조각) 유형이거나 iframe(iframe 페이지의 URL)을 입력할 수 있습니다.
 
 * **분석**
@@ -265,17 +292,18 @@ TVSDK가 연결을 열면 서버에 *지속적인* 연결을 요청합니다. �
 
    * 이제 SizeAvailableEvent의 getHeight() 및 getWidth() 메서드는 각각 높이와 폭으로 출력을 반환합니다. 디스플레이 종횡비는 다음과 같이 계산할 수 있습니다.
 
-      SizeAvailableEvent e;
+   ```java
+   SizeAvailableEvent e;
+   DAR = e.getWidth()/ e.getHeight();
+   ```
 
-      DAR = e.getWidth()/ e.getHeight();
+   Sar 폭 및 Sar 높이 측면에서 저장 종횡비를 사용하여 프레임 폭과 프레임 높이를 계산할 수도 있습니다.
 
-      Sar 폭 및 Sar 높이 측면에서 저장 종횡비를 사용하여 프레임 폭과 프레임 높이를 계산할 수도 있습니다.
-
-      SAR = e.getSarWidth()/e.getSarHeight();
-
-      frameHeight = e.getHeight();
-
-      frameWidth = e.getWidth()/SAR 파섹
+   ```java
+   SAR = e.getSarWidth()/e.getSarHeight();
+   frameHeight = e.getHeight();
+   frameWidth = e.getWidth()/SAR;
+   ```
 
 * **쿠키**
 
@@ -291,7 +319,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 |---|---|---|
 | 일반 재생(재생, 일시 중지, 검색) | VOD + 라이브 | Y |
 | FER - 일반 재생(재생, 일시 중지, 검색) | FER VOD | Y |
-| 광고 재생 시간 검색 | VOD + 라이브 | 지원되지 않음 |
+| 광고 재생 시간 검색 | 라이브 | 지원되지 않음 |
 | AC3 | VOD + 라이브 | 지원되지 않음 |
 | MP3 | VOD | 지원되지 않음 |
 | MP4 컨텐츠 재생 | VOD | Y |
@@ -357,7 +385,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 | DRM | VOD + 라이브 | Primetime DRM만 해당(향후:Widevine) |
 | 외부 재생(RBOP) | VOD + 라이브 | Primetime DRM만 해당 |
 | 라이선스 순환 | VOD + 라이브 | Primetime DRM만 해당 |
-| 키 회전 | VOD + 라이브 | Primetime DRM만 해당 |
+| 키 회전 | VOD + 라이브 | Primetime DRM 및 Widevine DRM |
 
 | 기능 | 컨텐츠 유형 | HLS |
 |---|---|---|
@@ -368,13 +396,17 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
 해상도가 보고된 문제와 연결된 경우 ZD#xxxxx와 같은 Zendesk 참조가 표시됩니다.
 
-**Android TVSDK 3.10**
+**Android TVSDK 3.11**
 
-이 섹션에서는 TVSDK 3.10 Android 릴리스에서 해결된 문제에 대한 요약을 제공합니다.
+이 섹션에서는 TVSDK 3.11 Android 릴리스에서 해결된 문제에 대한 요약을 제공합니다.
 
-* ZD#40340 - 모든 TS(TypeScript) 파일을 블랙리스트로 표시한 후 재생을 시도할 때 &quot;App Not Responding&quot; 오류가 발생하여 애플리케이션이 충돌합니다.
+* ZD# - Android TVSDK 참조 앱의 WebVTT를 사용하여 HLS 매니페스트에 대해 한국어 문자가 누락된 글리프 심볼로 표시됩니다.
 
 ### 이전 릴리스의 해결된 문제
+
+**Android TVSDK 3.10**
+
+* ZD#40340 - 모든 TS(TypeScript) 파일을 블랙리스트로 표시한 후 재생을 시도할 때 &quot;App Not Responding&quot; 오류가 발생하여 애플리케이션이 충돌합니다.
 
 **Android TVSDK 3.8**
 
@@ -603,11 +635,15 @@ WebViewDebuging은 기본적으로 False로 설정됩니다. 디버깅을 사용
 
 ## 알려진 문제 및 제한 사항 {#known-issues-and-limitations}
 
-**Android TVSDK 3.10**
+**Android TVSDK 3.11**
 
 * 새로운 제한 사항이 추가되지 않았습니다.
 
 ### 이전 릴리스의 알려진 문제 및 제한 사항
+
+**Android TVSDK 3.10**
+
+* 새로운 제한 사항이 추가되지 않았습니다.
 
 **Android TVSDK 3.8**
 
