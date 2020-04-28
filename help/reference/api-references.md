@@ -5,7 +5,7 @@ description: API를 사용하면 기능적인 애플리케이션 또는 통합�
 seo-description: API를 사용하면 기능적인 애플리케이션 또는 통합을 빠르고 손쉽게 만들 수 있습니다.
 topic-tags: API-references
 translation-type: tm+mt
-source-git-commit: 33abc0364a7dbe123ef1e6e444ad8578b5596f63
+source-git-commit: b063235ed1eb27f537d4b311f2f07d7f5750206b
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 33abc0364a7dbe123ef1e6e444ad8578b5596f63
 # Adobe Primetime API 참조 {#api-references}
 
 + TVSDK 3.11 {#tvsdk-311}
-   + [Android용 TVSDK 3.11](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_311/index.html)
+   + [Android용 TVSDK 3.11](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.11/index.html)
 
 + TVSDK 3.5 {#tvsdk-35}
    + [iOS용 TVSDK 3.5](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v35/index.html)
