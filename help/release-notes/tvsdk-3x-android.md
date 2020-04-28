@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: e84c50037557e157a044b1cec1fdea84cb156ea0
+source-git-commit: b71ac860652f53b171926b570c004db2351d3d3a
 
 ---
 
@@ -130,14 +130,15 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
    **참고:이제 레이지 광고 해결이 기본적으로 비활성화되도록 변경되었으며 명시적으로 활성화해야 합니다.**
 
-   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 가져오기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
+   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 얻기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
    이제 PREPARATION 이후 즉시 검색 기능이 허용되므로 광고 브레이크에 대한 검색 결과는 검색 완료 전에 즉시 해결됩니다.\
    신호 모드 SERVER_MAP 및 MANIFEST_CUES가 지원됩니다.
 
    자세한 내용은 API 및 이벤트 변경에 대한 TVSDK 3.0 for Android 프로그래머 가이드를 참조하십시오.
 
-* **최신 `targetSdkVersion` 버전으로 업데이트\
-   **원활한 기능을 위해 19 `targetSdkVersion` 에서 27로 업데이트합니다.
+* **최신`targetSdkVersion`버전으로 업데이트**
+
+   19 `targetSdkVersion` 에서 27로 업데이트하면 원활하게 작동합니다.
 
 * **이제 Placement.Type getPlacementType()이 인터페이스 TimelineMarker의 메서드입니다**
 
