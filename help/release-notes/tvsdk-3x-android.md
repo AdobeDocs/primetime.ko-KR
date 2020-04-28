@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 3e5078c25a1426c3991669809426eefab0386ac9
+source-git-commit: 5cf340119147799cd7b2c40a2a312595eebaa737
 
 ---
 
@@ -130,7 +130,7 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
    **참고:이제 레이지 광고 해결이 기본적으로 비활성화되도록 변경되었으며 명시적으로 활성화해야 합니다.**
 
-   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 가져오기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
+   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 얻기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
    이제 PREPARATION 이후 즉시 검색 기능이 허용되므로 광고 브레이크에 대한 검색 결과는 검색 완료 전에 즉시 해결됩니다.\
    신호 모드 SERVER_MAP 및 MANIFEST_CUES가 지원됩니다.
 
@@ -393,7 +393,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
 이 섹션에서는 TVSDK 3.11 Android 릴리스에서 해결된 문제에 대한 요약을 제공합니다.
 
-* ZD# - Android TVSDK 참조 앱의 WebVTT를 사용하여 HLS 매니페스트에 대해 한국어 문자가 누락된 글리프 심볼로 표시됩니다.
+* Android TVSDK 참조 앱에서 WebVTT를 사용하여 HLS 매니페스트에 대한 누락된 글리프 기호로 한국어 문자가 표시됩니다.
 
 ### 이전 릴리스의 해결된 문제
 
