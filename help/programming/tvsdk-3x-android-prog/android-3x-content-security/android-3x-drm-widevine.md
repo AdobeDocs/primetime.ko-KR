@@ -5,7 +5,7 @@ seo-title: Widevine DRM
 title: Widevine DRM
 uuid: 3a5fd786-4319-4e92-83b6-0f5328df6a44
 translation-type: tm+mt
-source-git-commit: ddcdf38fb7a77b7609a21bbdf6b32188b917e22c
+source-git-commit: 0271af21b74e80455ddb2c53571cd75f3a0f56ba
 
 ---
 
@@ -68,7 +68,7 @@ MediaDrmCallback callback)
 
 * `callback` - 기본 구현 대신 사용할 MediaDrmCallback의 사용자 지정 구현입니다 `com.adobe.mediacore.drm.WidevineMediaDrmCallback`.
 
-자세한 내용은 3.11 API 참조를 참조하십시오.
+자세한 내용은 Android TVSDK [3.11 API 설명서를](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.11/index.html)참조하십시오.
 
 ## 현재 로드된 MediaPlayer 리소스의 PSSH 상자 가져오기 {#pssh-box-mediaplayer-resoource}
 
