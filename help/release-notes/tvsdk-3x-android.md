@@ -1,5 +1,5 @@
 ---
-title: Android용 TVSDK 3.10 릴리스 노트
+title: Android용 TVSDK 3.11 릴리스 노트
 seo-title: Android용 TVSDK 3.11 릴리스 노트
 description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.10의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
 seo-description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.11의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
@@ -8,14 +8,14 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 1f03dd8975fed27836a34159a403ba4aeec199c1
+source-git-commit: 26b0622f807405eaec9cfe162799111ed340e02c
 
 ---
 
 
-# Android용 TVSDK 3.10 릴리스 노트 {#tvsdk-for-android-release-notes}
+# Android용 TVSDK 3.11 릴리스 노트 {#tvsdk-for-android-release-notes}
 
-Android용 TVSDK 3.10 릴리스 노트에서는 TVSDK Android 3.10의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다.
+Android용 TVSDK 3.11 릴리스 노트는 TVSDK Android 3.11의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다.
 
 Android 참조 플레이어는 배포의 samples/ 디렉토리에 Android TVSDK에 포함되어 있습니다. 함께 제공되는 README.md 파일은 참조 플레이어를 구축하는 방법을 설명합니다.
 
@@ -33,20 +33,20 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
 지원되는 포괄적인 기능 및 지원되지 않는 기능은 릴리스 [노트의 기능](#feature-matrix) 매트릭스에 나와 있습니다.
 
+## Android TVSDK 3.11
+
+**PSSH(보호 시스템 특정 헤더) 상자 반입이 허용됨**
+
+이제 TVSDK에서 현재 로드된 미디어 리소스와 관련된 보호 시스템 특정 헤더 상자를 가져올 수 있습니다. 새 API가 `getPSSH()` 에 추가되었습니다 `com.adobe.mediacore.drm.DRMManager`.
+자세한 내용은 무선 DRM [을 참조하십시오](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
+
+현재 릴리스에서 수정된 주요 고객 문제는 [해결된 문제](#resolved-issues) 섹션에 언급되어 있습니다.
+
+### 이전 릴리스의 새로운 기능 및 개선 사항
+
 **Android TVSDK 3.10**
 
 이 릴리스는 [해결된 문제](#resolved-issues) 섹션에 언급된 주요 고객 문제를 수정하는 데 중점을 두었습니다.
-
-<!-- ## New features {#new-features} -->
-
-<!--
-## Android TVSDK 3.11
-**Protection System Specific Header (PSSH) Box fetching allowed**
-TVSDK now allows fetching of Protection System Specific Header Box associated with current loaded Media Resource. New API `getPSSH()` has been added to `com.adobe.mediacore.drm.DRMManager`.
-For more information, see [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
-Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section. -->
-
-## 이전 릴리스의 새로운 기능 및 개선 사항
 
 **Android TVSDK 3.9**
 
@@ -388,15 +388,17 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
 해상도가 보고된 문제와 연결된 경우 ZD#xxxxx와 같은 Zendesk 참조가 표시됩니다.
 
+**Android TVSDK 3.11**
+
+이 섹션에서는 TVSDK 3.11 Android 릴리스에서 해결된 문제에 대한 요약을 제공합니다.
+
+* ZD#41252 - Android TVSDK 참조 앱의 WebVTT을 사용하여 HLS 매니페스트에 대한 한국어 문자가 누락된 글리프 심볼로 표시됩니다.
+
+### 이전 릴리스의 해결된 문제
+
 **Android TVSDK 3.10**
 
 * ZD#40340 - 모든 TS(TypeScript) 파일을 블랙리스트로 표시한 후 재생을 시도할 때 &quot;App Not Responding&quot; 오류가 발생하여 애플리케이션이 충돌합니다.
-
-<!-- **Android TVSDK 3.11**
-This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
-* ZD#41252 - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app. -->
-
-### 이전 릴리스의 해결된 문제
 
 **Android TVSDK 3.8**
 
