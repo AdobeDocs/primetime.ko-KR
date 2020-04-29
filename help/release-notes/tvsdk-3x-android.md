@@ -1,14 +1,14 @@
 ---
 title: Android용 TVSDK 3.11 릴리스 노트
 seo-title: Android용 TVSDK 3.11 릴리스 노트
-description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.10의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
+description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.11의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
 seo-description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.11의 새로운 기능 또는 변경된 내용, 해결되고 알려진 문제 및 장치 문제를 설명합니다
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 26b0622f807405eaec9cfe162799111ed340e02c
+source-git-commit: dbb4aceaea1f3db2fcc5a2aa2168ee8a1cd4c785
 
 ---
 
@@ -97,46 +97,58 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 * **병렬 광고 해상도 및 매니페스트 다운로드 지원**
 
    * TVSDK 3.2는 VMAP을 제외한 모든 광고 요청 및 광고 중단에 대한 순차적 해상도 대신 동시 해상도를 지원합니다.
+
    * 광고 중단의 모든 광고 매니페스트는 동시에 다운로드됩니다.
+
 * **광고 해상도 및 매니페스트 다운로드 시간 초과에 대한 지원을 활성화했습니다.**
 
    * 이제 사용자는 전체 광고 해상도 및 매니페스트 다운로드에 대한 시간 초과 값을 설정할 수 있습니다.  VMAP의 경우 모든 광고 나누기가 순차적으로 해결되므로 시간 초과 값은 개별 광고 나누기에 적용됩니다.
+
 * **AdvertisingMetadata 클래스에 새로운 API가 도입되었습니다.**
 
-   * void setAdResolutionTimeout(int adResolutionTimeout)
-   * int getAdResolutionTimeout()
-   * void setAdManifestTimeout(int adManifestTimeout)
-   * int getAdManifestTimeout()
+   * `void setAdResolutionTimeout(int adResolutionTimeout)`
+
+   * `int getAdResolutionTimeout()`
+
+   * `void setAdManifestTimeout(int adManifestTimeout)`
+
+   * `int getAdManifestTimeout()`
+
 * **AdvertisingMetadata 클래스에서 API 아래 제거됨:**
 
-   * void setAdRequestTimeout(int adRequestTimeout)
-   * int getAdRequestTimeout()
+   * `void setAdRequestTimeout(int adRequestTimeout)`
+
+   * `int getAdRequestTimeout()`
+
 * **AC3/EAC3 오디오 코덱을 사용하여 스트림 재생 활성화**
 
-   * void alwaysUseAC3OnSupportedDevices(boolean val)의 MediaPlayer 클래스
+   * `void alwaysUseAC3OnSupportedDevices(boolean val)` 수업 중 `MediaPlayer`
+
 * **TVSDK는 암호화된 Widevine CTR을 위한 CMAF 및 일반 스트림 재생을 지원합니다.**
+
 * **이제 4K HEVC 스트림의 재생이 지원됩니다.**
+
 * **병렬 광고 호출 요청** - TVSDK는 이제 20개의 광고 호출 요청을 동시에 프리페치합니다.
 
 **버전 3.0**
 
 * **TVSDK 3.0은 HEVC(High Efficiency Video Coding) 스트림을 지원합니다.**
 
-* **적시 - 광고 마커에 더 가까운 광고 해결**
+* **마침 - 광고 마커에**&#x200B;더 가까운 광고 해결이제 레이지 광고 해결을 통해 각 광고 중단이 독립적으로 해결됩니다. 이전에는 광고 해상도가 두 단계로 진행되었습니다.사전 롤은 재생 시작 전에 해결되었으며 재생 시작 후 모든 중간/후 롤 슬롯이 결합되었습니다. 이 향상된 기능을 사용하면 이제 광고 큐 포인트 이전의 특정 시간에 각 광고 나누기가 해결됩니다.
 
-   이제 레이지 광고 해결이 각 광고 나누기를 독립적으로 해결합니다. 이전에는 광고 해상도가 두 단계로 진행되었습니다.사전 롤은 재생 시작 전에 해결되었으며 재생 시작 후 모든 중간/후 롤 슬롯이 결합되었습니다. 이 향상된 기능을 사용하면 이제 광고 큐 포인트 이전의 특정 시간에 각 광고 나누기가 해결됩니다.
+> [!NOTE]
+>
+> 이제 레이지 광고 해결이 기본적으로 비활성화되도록 변경되었으며 명시적으로 활성화해야 합니다.
 
-   **참고:이제 레이지 광고 해결이 기본적으로 비활성화되도록 변경되었으며 명시적으로 활성화해야 합니다.**
+이 광고 메타데이터와 연관된 지연된 광고 로딩 허용치를 가져오기 `AdvertisingMetadata::setDelayAdLoadingTolerance` 위해 새 API가 추가되었습니다.\
+이제 PREPARATION 이후 바로 검색을 수행할 수 있으므로 광고 브레이크에 대한 검색 결과는 검색이 완료되기 전에 즉시 해결됩니다.\
+신호 모드 `SERVER_MAP` 및 `MANIFEST_CUES` 지원이 지원됩니다.
 
-   이 광고 메타데이터와 관련된 지연된 *광고 로드 허용치를* 가져오기 위해 새 API가 AdvertisingMetadata::setDelayAdLoadingTolerance에 추가됩니다.\
-   이제 PREPARATION 이후 즉시 검색 기능이 허용되므로 광고 브레이크에 대한 검색 결과는 검색 완료 전에 즉시 해결됩니다.\
-   신호 모드 SERVER_MAP 및 MANIFEST_CUES가 지원됩니다.
+자세한 내용은 API [및 이벤트 변경 사항에 대한 TVSDK 3.0](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md) for Android 프로그래머 가이드를 참조하십시오.
 
-   자세한 내용은 API 및 이벤트 변경에 대한 TVSDK 3.0 for Android 프로그래머 가이드를 참조하십시오.
+* **최신`targetSdkVersion`버전으로 업데이트됨**
 
-* **최신`targetSdkVersion`버전으로 업데이트**
-
-   19 `targetSdkVersion` 에서 27로 업데이트하면 원활하게 작동합니다.
+원활한 기능을 위해 19에서 27까지 `targetSdkVersion` 업데이트되었습니다.
 
 * **이제 Placement.Type getPlacementType()이 인터페이스 TimelineMarker의 메서드입니다**
 
@@ -167,6 +179,7 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
    예:사용자는 3개의 30초 광고로 구성된 90초 광고 중단의 중간(40초)에 참여합니다. 이것은 쉬는 시간에 두 번째 광고에서 10초입니다.
 
    * 나머지 기간(20초) 동안 두 번째 광고가 재생되고 세 번째 광고가 재생됩니다.
+
    * 부분 광고(두 번째 광고)에 대한 광고 추적기는 실행되지 않습니다. 세 번째 광고에 대한 추적기가 실행됩니다.
 
 * **HTTPS를 통한 안전한 광고 로딩**
@@ -175,7 +188,7 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
 * **CRS 요청에 추가된 AdSystem 및 Creative Id**
 
-   * 이제 1401 및 1403 요청에서 새 매개 변수로 &#39;AdSystem&#39; 및 &#39;CreativeId&#39;를 포함합니다.
+   이제 1401 및 1403 요청에서 새 매개 변수로 `AdSystem` 포함되고 `CreativeId` 포함됩니다.
 
 * **NetworkConfiguration 클래스의 API setEncodeUrlForTracking은 URL에서 안전하지 않은 문자를 인코딩해야 하므로 제거되었습니다** .
 
@@ -183,17 +196,17 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
 Android TVSDK v2.5.4는 다음 업데이트 및 API 변경 사항을 제공합니다.
 
-* WebViewDebuging에 대한 기본값 변경
+* 기본값 변경 `WebViewDebbuging`
 
-   WebViewDebuging 값은 기본적으로 False로 설정됩니다. 이를 활성화하려면 애플리케이션에서 setWebContentsDebuggingEnabled(true)를 호출합니다.
+   `WebViewDebbuging` 값이 기본적으로 `Fals`e로 설정되어 있습니다. 이를 활성화하려면 응용 `setWebContentsDebuggingEnabled(true)` 프로그램에서 호출합니다.
 
-* OpenSSL 및 Curl 버전 업그레이드
+* **OpenSSL 및 Curl 버전 업그레이드**
 
    v7.57.0으로 libcurl을 업데이트하고 OpenSSL을 v1.0.2k로 업데이트했습니다.
 
 * VAST 응답 개체에 대한 앱 수준 액세스
 
-   응용 프로그램에 대한 VAST 응답 개체에 대한 액세스를 제공하는 새로운 API NetworkAdInfo::getVastXml()을 도입했습니다.
+   애플리케이션에 대한 VAST 응답 개체에 대한 액세스를 `NetworkAdInfo::getVastXml()` 제공하는 새로운 API를 도입했습니다.
 
 **버전 2.5.3**
 
@@ -205,23 +218,24 @@ Android TVSDK v2.5.3은 다음 업데이트 및 API 변경 사항을 제공합�
 
 * 사용자 정의 가능한 TVSDK 사용자 에이전트:사용자 에이전트를 사용자 정의하기 위한 몇 가지 새로운 API를 추가했습니다.
 
-   * setCustomUserAgent(문자열 값)
-   * getCustomUserAgent()
+   * `setCustomUserAgent(String value)`
+   * `getCustomUserAgent()`
 
 * Android Application과 TVSDK 간 쿠키 공유:Android TVSDK는 이제 JAVA 레이어(Android 애플리케이션의 CookieStore에 저장됨)와 C++ TVSDK 레이어 간의 쿠키 액세스를 지원합니다. 이제 Java 쿠키 저장소에 노출되므로 기본 C++ 레이어에서 쿠키를 설정 및/또는 수정할 수 있습니다.
+
 * API 변경 사항:
 
-   * 새 이벤트 쿠키 UpdatedEvent가 추가됩니다. 쿠키가 업데이트될 때 미디어 플레이어에 의해 전달됩니다.
+   * 새 이벤트가 `CookiesUpdatedEvent` 추가됩니다. 쿠키가 업데이트될 때 미디어 플레이어에 의해 전달됩니다.
 
-   * 사용자 지정 사용자 에이전트를 사용하기 위해 NetworkConfiguration::set/ getCustomUserAgent()에 새 API가 추가됩니다.
+   * 사용자 지정 사용자 에이전트를 사용하기 `NetworkConfiguration::set/ getCustomUserAgent()` 위해 새 API가 추가됩니다.
 
-   * NetworkConfiguration::set/ getEncodedUrlForTracking에 새 API가 추가되어 안전하지 않은 문자를 강제로 인코딩합니다.
+   * 안전하지 않은 문자 인코딩을 강제 `NetworkConfiguration::set/ getEncodedUrlForTracking` 적용하기 위해 새 API가 추가되었습니다.
 
-   * 장애 조치(failover)의 경우 네트워크 확인 URL을 설정하기 위해 새 API가 NetworkConfiguration::getNetworkDownVerificationUrl()에 추가됩니다.
+   * 장애 조치 시 네트워크 확인 URL을 `NetworkConfiguration::getNetworkDownVerificationUrl()` 설정하기 위해 새 API가 추가됩니다.
 
-   * 캡션을 표시할 때 공백을 영숫자로 처리할지 여부를 정의하는 새 속성이 TextFormat::treatSpaceAsAlphaNum에 추가됩니다.
+   * 캡션을 표시할 때 공백을 영숫자로 처리할지 여부를 `TextFormat::treatSpaceAsAlphaNum` 정의하는 새 속성이 추가됩니다.
 
-* SizeAvailableEvent의 변경 사항:이전에는 SizeAvailableEvent의 getHeight() 및 getWidth() 메서드가 Frame 높이 및 프레임 너비를 반환하는 데 사용되었으며, 이 메서드는 미디어 형식으로 반환되었습니다. 이제 디코더에서 반환된 출력 높이와 출력 너비를 각각 반환합니다.
+* 의 변경 `SizeAvailableEvent`사항. 이전에는, `getHeight()` 및 2.5.2의 `getWidth()` `SizeAvailableEvent` 메서드는 프레임 높이와 프레임 너비를 반환하는 데 사용되었으며, 이는 미디어 형식으로 반환되었습니다. 이제 디코더에서 반환된 출력 높이와 출력 너비를 각각 반환합니다.
 
 * 버퍼링 동작의 변경 사항:버퍼링 동작이 변경되었습니다. 버퍼가 비어 있는 경우 원하는 작업을 앱 개발자에게 맡겼다. 2.5.3은 버퍼 빈 상황에서 재생 버퍼 크기를 사용합니다.
 
@@ -233,37 +247,38 @@ Android TVSDK v2.5.2는 중요한 버그 수정 및 몇 가지 API 변경 사항
 
 Android 2.5.1에서 릴리스된 중요한 새로운 기능
 
-* **성능**&#x200B;개선 새로운 TVSDK 2.5.1 아키텍처는 많은 성능 향상을 가져왔습니다. 타사 벤치마크 조사 결과를 바탕으로 새 아키텍처는 시작 시간을 5배 줄이고 업계 평균과 비교하여 드롭된 프레임을 3.8배 더 적게 제공합니다.
+* **향상된 성능 -** 새로운 TVSDK 2.5.1 아키텍처는 많은 성능 향상을 가져옵니다. 타사 벤치마크 조사 결과를 바탕으로 새 아키텍처는 시작 시간을 5배 줄이고 업계 평균과 비교하여 드롭된 프레임을 3.8배 더 적게 제공합니다.
 
-   * **VOD 및 실시간 실시간** 실시간 지원 - 인스턴트 온 경우 TVSDK가 초기화되고 재생이 시작되기 전에 미디어를 버퍼링합니다. 백그라운드에서 여러 MediaPlayerItemLoader 인스턴스를 동시에 실행할 수 있으므로 여러 스트림을 버퍼링할 수 있습니다. 사용자가 채널을 변경하고 스트림이 제대로 버퍼링되면 새 채널에서 재생이 즉시 시작됩니다. 또한 TVSDK 2.5.1은 **실시간** 스트림을 위해 Instant On을 지원합니다. 라이브 윈도우를 이동하면 라이브 스트림이 다시 버퍼링됩니다.
+* **VOD 및 실시간 실시간** 실시간 지원 - 인스턴트 온 경우 TVSDK가 초기화되고 재생이 시작되기 전에 미디어를 버퍼링합니다. 백그라운드에서 여러 MediaPlayerItemLoader 인스턴스를 동시에 실행할 수 있으므로 여러 스트림을 버퍼링할 수 있습니다. 사용자가 채널을 변경하고 스트림이 제대로 버퍼링되면 새 채널에서 재생이 즉시 시작됩니다. 또한 TVSDK 2.5.1은 **실시간** 스트림을 위해 Instant On을 지원합니다. 라이브 윈도우를 이동하면 라이브 스트림이 다시 버퍼링됩니다.
 
-   * **향상된 ABR 논리 -** 새로운 ABR 로직은 버퍼 길이, 버퍼 길이 변경 비율 및 측정된 대역폭을 기반으로 합니다. 따라서 ABR은 대역폭 변동 시 올바른 비트 전송률을 선택하고 버퍼 길이 변경되는 속도를 모니터링하여 비트율 전환이 실제로 발생하는 횟수를 최적화합니다.
+* **향상된 ABR 논리 -** 새로운 ABR 로직은 버퍼 길이, 버퍼 길이 변경 비율 및 측정된 대역폭을 기반으로 합니다. 따라서 ABR은 대역폭 변동 시 올바른 비트 전송률을 선택하고 버퍼 길이 변경되는 속도를 모니터링하여 비트율 전환이 실제로 발생하는 횟수를 최적화합니다.
 
-   * **부분 세그먼트 다운로드/하위 세그멘테이션 - TVSDK는** 가능한 한 빨리 재생을 시작할 수 있도록 각 조각 크기를 추가로 줄입니다. 조각 조각에는 2초마다 키 프레임이 있어야 합니다.
+* **부분 세그먼트 다운로드/하위 세그멘테이션 - TVSDK는** 가능한 한 빨리 재생을 시작할 수 있도록 각 조각 크기를 추가로 줄입니다. 조각 조각에는 2초마다 키 프레임이 있어야 합니다.
 
-   * **레이지 광고 해상도 - TVSDK는** 재생을 시작하기 전에 비프리롤 광고의 해상도를 기다리지 않으므로 시작 시간을 단축할 수 있습니다. 검색 및 트릭 플레이와 같은 API는 모든 광고가 해결될 때까지 허용되지 않습니다. CSAI와 함께 사용되는 VOD 스트림에 적용됩니다. 검색 및 빨리 감기 등의 작업은 광고 해상도가 완료될 때까지 허용되지 않습니다. 라이브 스트림의 경우 라이브 이벤트 중에는 이 기능을 광고 해상도에 사용할 수 없습니다.
+* **레이지 광고 해상도 - TVSDK는** 재생을 시작하기 전에 비프리롤 광고의 해상도를 기다리지 않으므로 시작 시간을 단축할 수 있습니다. 검색 및 트릭 플레이와 같은 API는 모든 광고가 해결될 때까지 허용되지 않습니다. CSAI와 함께 사용되는 VOD 스트림에 적용됩니다. 검색 및 빨리 감기 등의 작업은 광고 해상도가 완료될 때까지 허용되지 않습니다. 라이브 스트림의 경우 라이브 이벤트 중에는 이 기능을 광고 해상도에 사용할 수 없습니다.
 
-   * **영구 네트워크 연결 - 이** 기능을 통해 TVSDK는 영구 네트워크 연결의 내부 목록을 만들고 저장할 수 있습니다. 이러한 연결은 각 네트워크 요청에 대해 새 연결을 열고 이후에 삭제하는 대신 여러 요청에 대해 다시 사용됩니다. 이렇게 하면 네트워킹 코드의 효율성을 높이고 지연을 줄임으로써 재생 성능이 빨라집니다.
+* **영구 네트워크 연결 - 이** 기능을 통해 TVSDK는 영구 네트워크 연결의 내부 목록을 만들고 저장할 수 있습니다. 이러한 연결은 각 네트워크 요청에 대해 새 연결을 열고 이후에 삭제하는 대신 여러 요청에 대해 다시 사용됩니다. 이렇게 하면 네트워킹 코드의 효율성을 높이고 지연을 줄임으로써 재생 성능이 빨라집니다.
 TVSDK가 연결을 열면 서버에 *지속적인* 연결을 요청합니다. 일부 서버에서는 이 유형의 연결을 지원하지 않을 수 있습니다. 이 경우 TVSDK가 각 요청에 대한 연결을 다시 설정하는 데 실패합니다. 또한 영구 연결은 기본적으로 켜져 있지만 TVSDK에는 앱이 원하는 경우 영구 연결을 끌 수 있는 구성 옵션이 있습니다.
 
-   * **병렬 다운로드 -** 비디오 및 오디오를 연속적으로 다운로드하는 것이 시작 지연을 줄여줍니다. 이 기능을 사용하면 HLS Live 및 VOD 파일을 재생할 수 있고, 서버의 사용 가능한 대역폭 사용을 최적화하고, 버퍼 언더런 상황에 진입할 가능성을 낮추며, 다운로드와 재생 사이의 지연을 최소화할 수 있습니다.
+* **병렬 다운로드 -** 비디오 및 오디오를 연속적으로 다운로드하는 것이 시작 지연을 줄여줍니다. 이 기능을 사용하면 HLS Live 및 VOD 파일을 재생할 수 있고, 서버의 사용 가능한 대역폭 사용을 최적화하고, 버퍼 언더런 상황에 진입할 가능성을 낮추며, 다운로드와 재생 사이의 지연을 최소화할 수 있습니다.
 
-   * **병렬 광고 다운로드 - TVSDK는 광고 중단이 발생하기 전에 컨텐츠 재생과 동시에 광고를 프리페치하므로 광고 및 컨텐츠를 매끄럽게 재생할 수 있습니다** .
+* **병렬 광고 다운로드 - TVSDK는 광고 중단이 발생하기 전에 컨텐츠 재생과 동시에 광고를 프리페치하므로 광고 및 컨텐츠를 매끄럽게 재생할 수 있습니다** .
 
 * **재생**
 
-   * **MP4 컨텐츠 재생 - TV** SDK에서 재생할 수 있도록 MP4 단편 클립을 다시 코딩할 필요가 없습니다.
-      > [!NOTE]
-      >
-      > MP4 재생에는 ABR 전환, 트릭 재생, 광고 삽입, 늦은 오디오 바인딩 및 하위 세그멘테이션이 지원되지 않습니다.
+* **MP4 컨텐츠 재생 - TV** SDK에서 재생할 수 있도록 MP4 단편 클립을 다시 코딩할 필요가 없습니다.
 
-   * **ABR(Trick Play with adaptive bit rate)** - 이 기능을 사용하면 TVSDK가 트릭 재생 모드에서 iFrame 스트림 간을 전환할 수 있습니다. iFrame이 아닌 프로파일을 사용하여 보다 빠른 속도로 trick을 재생할 수 있습니다.
+   > [!NOTE]
+   >
+   > MP4 재생에는 ABR 전환, 트릭 재생, 광고 삽입, 늦은 오디오 바인딩 및 하위 세그멘테이션이 지원되지 않습니다.
 
-   * **원활한 트릭 재생 - 향상된** 이러한 기능을 통해 사용자 경험을 향상시킬 수 있습니다.
+* **ABR(Trick Play with adaptive bit rate)** - 이 기능을 사용하면 TVSDK가 트릭 재생 모드에서 iFrame 스트림 간을 전환할 수 있습니다. iFrame이 아닌 프로파일을 사용하여 보다 빠른 속도로 trick을 재생할 수 있습니다.
 
-      * 트릭 재생 중에 대역폭 및 버퍼 프로파일을 기반으로 적응 비트 전송률 및 프레임 속도를 선택할 수 있습니다.
+* **원활한 트릭 재생 - 향상된** 이러한 기능을 통해 사용자 경험을 향상시킬 수 있습니다.
 
-      * IDR 스트림 대신 기본 스트림을 사용하여 최대 30fps를 빠르게 재생할 수 있습니다.
+   * 트릭 재생 중에 대역폭 및 버퍼 프로파일을 기반으로 적응 비트 전송률 및 프레임 속도를 선택할 수 있습니다.
+
+   * IDR 스트림 대신 기본 스트림을 사용하여 최대 30fps를 빠르게 재생할 수 있습니다.
 
 * **컨텐츠 보호**
 
@@ -291,15 +306,22 @@ TVSDK가 연결을 열면 서버에 *지속적인* 연결을 요청합니다. �
 
    * `getHeight()` 의 `getWidth()` 메서드는 `SizeAvailableEvent` 이제 각각 높이와 너비로 출력물을 반환합니다. 디스플레이 종횡비는 다음과 같이 계산할 수 있습니다.
 
-      SizeAvailableEvent e;DAR = e.getWidth()/ e.getHeight();
+      ```java
+      SizeAvailableEvent e;
+      DAR = e.getWidth()/ e.getHeight();
+      ```
 
       Sar 폭 및 Sar 높이 측면에서 저장 종횡비를 사용하여 프레임 폭과 프레임 높이를 계산할 수도 있습니다.
 
-      SAR = e.getSarWidth()/e.getSarHeight();frameHeight = e.getHeight();frameWidth = e.getWidth()/SAR 파섹
+      ```java
+      SAR = e.getSarWidth()/e.getSarHeight();
+      frameHeight = e.getHeight();
+      frameWidth = e.getWidth()/SAR;
+      ```
 
 * **쿠키**
 
-   * Android TVSDK는 이제 Android 애플리케이션의 CookieStore에 저장된 JAVA 쿠키에 대한 액세스를 지원합니다. 새 쿠키가 &quot;Set-Cookie&quot; 응답 헤더의 일부로 올 때마다 기록하기 위해 콜백 API(onCookiesUpdated)가 제공됩니다. 이러한 쿠키는 CookieStore를 사용하여 특정 URI/도메인에 이러한 쿠키 값을 설정하여 다른 URI/도메인에 사용되는 HttpCookie 목록 형식으로 사용할 수 있습니다. 마찬가지로 TVSDK의 쿠키 값은 CookieStore 추가 API를 사용하여 업데이트됩니다.
+   * Android TVSDK는 이제 Android 애플리케이션의 CookieStore에 저장된 JAVA 쿠키에 대한 액세스를 지원합니다. 새 쿠키가 Set-Cookie 응답 헤더의 일부로 올 때마다 레코딩하기 위해 콜백 API(onCookiesUpdated) **가** 제공됩니다. 이러한 쿠키는 CookieStore를 사용하여 특정 URI/도메인에 이러한 쿠키 값을 설정하여 다른 URI/도메인에 사용되는 HttpCookie 목록 형식으로 사용할 수 있습니다. 마찬가지로 TVSDK의 쿠키 값은 CookieStore 추가 API를 사용하여 업데이트됩니다.
 
 ## Feature Matrix {#feature-matrix}
 
