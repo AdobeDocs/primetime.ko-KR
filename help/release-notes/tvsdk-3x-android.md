@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: dbb4aceaea1f3db2fcc5a2aa2168ee8a1cd4c785
+source-git-commit: fdb4e4eb741dd066017d96205cea8cbd15dcbc7b
 
 ---
 
@@ -333,7 +333,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 |---|---|---|
 | 일반 재생(재생, 일시 중지, 검색) | VOD + 라이브 | Y |
 | FER - 일반 재생(재생, 일시 중지, 검색) | FER VOD | Y |
-| 광고 재생 시간 검색 | 라이브 | 지원되지 않음 |
+| 광고 재생 시간 검색 | VOD + 라이브 | 지원되지 않음 |
 | AC3 | VOD + 라이브 | 지원되지 않음 |
 | MP3 | VOD | 지원되지 않음 |
 | MP4 컨텐츠 재생 | VOD | Y |
@@ -399,7 +399,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 | DRM | VOD + 라이브 | Primetime DRM만 해당(향후:Widevine) |
 | 외부 재생(RBOP) | VOD + 라이브 | Primetime DRM만 해당 |
 | 라이선스 순환 | VOD + 라이브 | Primetime DRM만 해당 |
-| 키 회전 | VOD + 라이브 | Primetime DRM 및 Widevine DRM |
+| 키 회전 | VOD + 라이브 | Primetime DRM만 해당 |
 
 | 기능 | 컨텐츠 유형 | HLS |
 |---|---|---|
@@ -414,7 +414,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
 이 섹션에서는 TVSDK 3.11 Android 릴리스에서 해결된 문제에 대한 요약을 제공합니다.
 
-* ZD#41252 - Android TVSDK 참조 앱의 WebVTT을 사용하여 HLS 매니페스트에 대한 한국어 문자가 누락된 글리프 심볼로 표시됩니다.
+* ZD#41252 - Android 7.1 이후 WebVTT의 한국어 문자
 
 ### 이전 릴리스의 해결된 문제
 
