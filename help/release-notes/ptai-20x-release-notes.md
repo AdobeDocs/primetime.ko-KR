@@ -1,10 +1,10 @@
 ---
-title: PTAI 20.3.3 릴리스 노트
+title: PTAI 20.5.1 릴리스 노트
 description: PTAI 20.5.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 해결되고 알려진 문제를 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 2a5866be64895ba13994720bf943dc676c2595bf
+source-git-commit: 266b884707e9160d539a06fd089732ef8ade21ba
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **시기:** 2020년 3월 26일 목요일 오전 03:00에서 동부 오전 04:00까지
 
-* 이제 SSAI 4XX 및 5XX 응답에서 CORS 관련 헤더를 올바르게 제공하여 크로스 도메인 javascript/webview 클라이언트가 오류 응답을 성공적으로 읽을 수 있도록 합니다.
+* 이제 SSAI 4XX 및 5XX 응답에서 CORS 관련 헤더를 올바르게 제공하여 크로스 도메인 javascript/웹뷰 클라이언트가 오류 응답을 성공적으로 읽을 수 있도록 합니다.
 
 * 광고 서버로 전달될 때 IPv6 주소가 올바르게 URL로 인코딩되지 않았던 X-Forwarded-For 헤더의 문제를 수정했습니다.
 
@@ -48,11 +48,13 @@ ht-degree: 0%
 
 **시기:** 2020년 1월 28일 화요일 오전 2시부터 오전 3시까지 동부시간
 
-* **&quot;nbc&quot; CueFormat**&#x200B;에 대한 FER가 지원되는 VMAP을 사용하면 ptcueformat=nbc가 사용되고 스트림이 인큐 매니페스트 및 구이식 광고가 포함된 VOD 스트림인 경우 FER 스트림의 신호를 FW 타임라인 재정의 매개 변수로 변환할 수 있습니다.
+* **NBC CueFormat을 위한 FER를 지원하는 VMAP**
+
+   FER 스트림의 큐를 FW 타임라인 대체 매개 변수로 변환할 수 있습니다. 매개 변수가 사용되고 스트림이 인매니페스트 큐 및 굽은 광고 `ptcueformat=nbc` 가 있는 VOD 스트림입니다.
 
 * 타사 광고 공급자/CDN으로 전달하기 전에 HTTP 헤더에서 사용자-에이전트 필드의 기밀 정보를 가릴 수 있습니다.
 
-* Auditude 및 기타 광고 공급자, CDN으로 전송하기 전에 &quot;user-agent&quot; HTTP 헤더에서 제어/인쇄할 수 없는 문자(32) 필터링 Auditude Ad-Call은 이러한 잘못된 헤더에 대해 실패하는 데 사용됩니다.
+* 사용자-에이전트 HTTP 헤더에서 제어/인쇄 불가능 문자(ASCII 코드 &lt; 32)를 필터링한 후 Auditude 및 기타 광고 공급자, CDN으로 전송합니다. Auditude Ad-Call은 이러한 잘못된 헤더에 대해 실패하는 데 사용됩니다.
 
 * NetStorage Group에서 이전 V1 개체를 제거하여 개체 수를 Akamai의 안전한 제한 내에 유지합니다.
 
