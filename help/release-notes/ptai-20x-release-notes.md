@@ -2,7 +2,7 @@
 title: PTAI 20.5.1 릴리스 노트
 description: PTAI 20.5.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 해결되고 알려진 문제를 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 7c6acf4b310a7df4ea79a5974f66f7f4b615b21c
+source-git-commit: 75f95c1ddbca6fc9aa2a722635b1bfb6f097f8cc
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
