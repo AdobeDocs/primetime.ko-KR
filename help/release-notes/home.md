@@ -4,41 +4,44 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: caf6ca93bb4a02ba9e54a1a0be4f9790d6ce2ac2
+source-git-commit: 8e19c638caf2f9ea37dbf2ec7373ae9f470b93fe
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
 
 # Primetime 릴리스 노트
 
-Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
+Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서에서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
+
+## PTAI 20.5.1의 개선 사항 및 수정 사항
+
+주요 고객 문제 해결에 주력합니다.
 
 ## TVSDK 3.11 Android의 수정 사항
 
-이번 릴리스는 Widevine DRM에 대한 향상된 지원을 제공하고 주요 고객 문제를 해결했습니다.
-현재 출시된 Android 버전에 대한 자세한 내용을 [확인하십시오](../release-notes/tvsdk-3x-android.md).
+이 릴리스는 Widevine DRM에 대한 향상된 지원을 제공하고 주요 고객 문제를 해결했습니다.
+현재 출시된 [Android 버전에 대한 자세한 내용을 확인하십시오](../release-notes/tvsdk-3x-android.md).
 
 ## TVSDK 3.11 iOS 릴리스 노트의 개선 사항 및 수정 사항
 
-이번 릴리스는 주요 고객 문제 해결에 중점을 두었습니다.
+이 릴리스는 주요 고객 문제 해결에 중점을 두고 있습니다.
 
-iOS용 현재 릴리스 버전에 대한 자세한 내용을 [확인하십시오](../release-notes/tvsdk-3x-ios.md).
+현재 출시된 [iOS에 대한 자세한 내용을 확인하십시오](../release-notes/tvsdk-3x-ios.md).
 
-## PTAI 20.3.3의 개선 사항 및 수정 사항
+현재 출시된 버전의 동적 광고 삽입에 대한 자세한 내용은 [PTAI 릴리스 노트를 참조하십시오](ptai-19x-release-notes.md).
 
-고객 문제 수정
-
-현재 릴리스된 동적 광고 삽입 버전에 대한 자세한 내용은 PTAI [릴리스 노트를](ptai-19x-release-notes.md)참조하십시오.
-
-## 참고 항목
+## 자세한 내용은
 
 | 사용 안내서 | 설명 |
 |--- |--- |
 | [Primetime 프로그래밍 도움말](/help/programming/home.md) | Android 장치에서 Java를 사용하는 응용 프로그램과 비디오 플레이어를 개발하는 방법과 iOS 장치에서 Objective-C를 사용하는 방법을 배울 수 있습니다. |
-| [Primetime 마이그레이션 및 전환 도움말](/help/migration-guides/home.md) | 기존 Primetime TVSDK Suite에서 차세대 패키지로 전환하는 전환 및 마이그레이션 프로세스에 대해 설명합니다. |
-| [참조 구현](/help/android-reference-implementation/home.md) | TVSDK를 이해하고 기능 관리자를 수정하여 개인 플레이어를 사용자 정의할 수 있습니다. |
+| [Primetime 마이그레이션 및 전환 도움말](/help/migration-guides/home.md) | 기존 Primetime TVSDK Suite에서 차세대 제품으로 전환하는 전환 및 마이그레이션 프로세스에 대해 설명합니다. |
+| [참조 구현](/help/android-reference-implementation/home.md) | TV SDK를 이해하고 기능 관리자를 수정하여 개인 플레이어를 사용자 정의할 수 있습니다. |
 | [Primetime API 참조](/help/reference/api-references.md) | TVSDK 함수, 데이터 구조 및 기타 프로그래밍 구문에 대한 자세한 정보를 제공합니다. |
-| [디지털 권한 관리](/help/digital-rights-management/home.md) | DRM(Digital Rights Management)의 다양한 사용자 시나리오에 대해 자세히 알아보십시오. |
+| [디지털 권한 관리](/help/digital-rights-management/home.md) | DRM(Digital Rights Management)의 다양한 사용자 시나리오에 대해 자세히 알아보십시오 |
 | [동적 광고 삽입 도움말](/help/dynamic-ad-insertion/home.md) | 서버에 사용자 타깃팅된 동적 광고를 삽입하여 컨텐츠를 상용화하고 개인화된 광고를 통해 고객의 참여를 유도하는 방법을 설명합니다. |
 | [아카이브](https://helpx.adobe.com/primetime/archives.html) | 보관된 문서의 PDF를 다운로드합니다. |
 
