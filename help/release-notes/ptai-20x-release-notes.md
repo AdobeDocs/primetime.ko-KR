@@ -2,9 +2,9 @@
 title: PTAI 20.5.1 릴리스 노트
 description: PTAI 20.5.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 해결되고 알려진 문제를 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 4f97591b819d705891a053961eccd50a3cd05aa2
+source-git-commit: 9c117678a049e34bfcf960e992a4ce7361968f3e
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,16 @@ ht-degree: 0%
 ## 해결된 문제
 
 해결 방법이 보고된 문제와 연관된 경우 Zendesk 참조가 표시됩니다. 예: ZD#xxxxx.
+
+**PTAI 20.5.1**
+
+* 헤더 전송 시 CORS 헤더 관련 문제
+
+* CRS 대시보드의 문제
+
+**PTAI 20.3.4**
+
+* VOD/WebVTT에서 광고 삽입 후 자막이 동기화되지 않는 문제가 있었습니다.
 
 **PTAI 20.3.3**
 
