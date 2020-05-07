@@ -2,9 +2,9 @@
 title: PTAI 20.5.1 릴리스 노트
 description: PTAI 20.5.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 해결되고 알려진 문제를 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 75f95c1ddbca6fc9aa2a722635b1bfb6f097f8cc
+source-git-commit: e5fb84a7199e16a5eb7b6fd61aa7a1e50bb05c73
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **시기:** 2020년 3월 26일 목요일 오전 3:00부터 오전 04:00까지 동부 시간
 
-* 이제 SSAI 4XX 및 5XX 응답에서 CORS 관련 헤더를 올바르게 제공하여 크로스 도메인 javascript/웹뷰 클라이언트가 오류 응답을 성공적으로 읽을 수 있도록 합니다.
+* 이제 SSAI 4XX 및 5XX 응답에서 CORS 관련 헤더를 올바르게 제공하여 크로스 도메인 javascript 웹뷰 클라이언트가 오류 응답을 성공적으로 읽을 수 있도록 합니다.
 
 * 광고 서버로 전달될 때 IPv6 주소가 올바르게 URL로 인코딩되지 않았던 X-Forwarded-For 헤더의 문제를 수정했습니다.
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 * NetStorage Group에서 이전 V1 개체를 제거하여 개체 수를 Akamai의 안전한 제한 내에 유지합니다.
 
-### 버전 20.1.2 [핫픽스]
+### 버전 20.1.2(핫픽스)
 
 **시기:** 2020년 1월 20일 월요일 오전 2:00부터 오전 3:00까지 동부 시간
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ## 해결된 문제
 
-해결 방법이 보고된 문제와 연관된 경우 Zendesk 참조가 표시됩니다. 예: ZD#xxxxx.
+해결 방법이 보고된 문제와 연관된 경우 Zendesk 참조가 표시됩니다. 예를 들어 `ZD#xxxxx`
 
 **PTAI 20.5.1**
 
