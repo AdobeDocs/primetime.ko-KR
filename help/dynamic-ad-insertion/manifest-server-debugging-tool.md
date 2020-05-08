@@ -306,7 +306,7 @@ Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 
 ### TRACE_WEBVTT_RESPONSE 레코드 {#trace-webvtt-response-records}
 
-이 ``of ``로그 ``type ````responses ``서버 ``manifest ``서버 ``sends ``캡션을 SequenceCaptions ``clients ``에 `` `answer` ``기록합니다 ``requests `` `for` ``WEBVTT ``. TRACE_WEBVTT_RESPONSE를 벗어나는 필드는 분리된 `by`탭에 표에 표시된 순서대로 표시됩니다.
+Records of this type log responses the manifest server sends to clients in answer to requests for WEBVTT captions. Fields beyond TRACE_WEBVTT_RESPONSE appear in the order shown in the table, separated by tabs.
 
 | 필드 | 유형 | 설명 |
 |--- |--- |--- |
