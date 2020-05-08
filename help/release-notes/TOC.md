@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 7dd4dced32253a3d94e753a49a4b52a60bbba4b1
+source-git-commit: 1ec9411ac897ac6e7328aef9a6ddd614f533f1d0
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
    + [PTAI 20.5.1 릴리스 노트](ptai-20x-release-notes.md)
    + [PTAI 19.11.1 릴리스 노트](ptai-19x-release-notes.md)
 + iOS용 TVSDK {#tvsdk-ios}
-   + [iOS용 TVSDK 3.11 릴리스 노트](tvsdk-3x-ios.md)
+   + [iOS용 TVSDK 3.12 릴리스 노트](tvsdk-3x-ios.md)
    + [iOS용 TVSDK 1.4 릴리스 노트](tvsdk-1-4-ios.md)
 + Android용 TVSDK {#tvsdk-android}
    + [Android용 TVSDK 3.11 릴리스 노트](tvsdk-3x-android.md)
