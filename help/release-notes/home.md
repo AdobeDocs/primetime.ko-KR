@@ -4,9 +4,9 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: bc9f03647d0b6114b6030ded058eb452e2b80887
+source-git-commit: 4060de986dbf3d1ee57a415a4af302b1631db6a3
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 # Primetime 릴리스 노트
 
-Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서에서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다
+Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서에서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
+
+## PTAI 20.6.1의 개선 사항 및 수정 사항
+
+이번 릴리스는 긴 형식의 VOD 에셋을 통해 세션을 지속적으로 유지하기 위해 매니페스트 조작 및 개선 API와 같은 기능을 중점적으로 다루었습니다. 이 릴리스에는 주요 고객 문제에 대한 수정 사항도 포함되어 있습니다.
+
+현재 출시된 버전의 동적 광고 삽입에 대한 자세한 내용은 [PTAI 릴리스 노트를 참조하십시오](ptai-20x-release-notes.md).
 
 ## TVSDK 3.12 iOS 릴리스 노트의 개선 사항 및 수정 사항
 
 이 릴리스는 주요 고객 문제 해결에 중점을 두고 있습니다.
 
 현재 출시된 [iOS에 대한 자세한 내용을 확인하십시오](../release-notes/tvsdk-3x-ios.md).
-
-## PTAI 20.5.1의 개선 사항 및 수정 사항
-
-주요 고객 문제 해결에 주력합니다.
-
-현재 출시된 버전의 동적 광고 삽입에 대한 자세한 내용은 [PTAI 릴리스 노트를 참조하십시오](ptai-20x-release-notes.md).
 
 ## TVSDK 3.11 Android의 수정 사항
 
