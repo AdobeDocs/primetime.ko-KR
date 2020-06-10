@@ -2,9 +2,9 @@
 title: PTAI 20.6.1 릴리스 노트
 description: PTAI 20.6.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 해결되고 알려진 문제를 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: fc09f185489ff7e3decb7c77b495825e4c9c7c09
+source-git-commit: 5dd5015c01565964b53ef82659308190ee350a89
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 0%
 
 * 광고에서 다시 콘텐츠로 전환할 때 EXT-X-DISCONTINUITY 태그가 재생 목록 맨 위에서 제거되던 문제가 해결되었습니다. 이 수정 사항을 활성화하려면 Adobe 지원 센터에 문의하십시오.
 
-## 이전 릴리스에서 변경된 사항
-
 ### 버전 20.5.1
 
 **시기:** 2020년 5월 5일 화요일 오전 04:00에서 오전 5:00(동부 시간)
@@ -46,7 +44,7 @@ ht-degree: 0%
 
 ### 버전 20.3.4
 
-**시기:** 2020년 4월 1일 수요일 오전 03:00에서 오전 4:00(동부 시간)
+**시기:** 2020년 4월 1일 수요일 오전 03:00부터 오전 04:00까지 동부 시간
 
 * VOD/WebVTT에서 광고 삽입 후 자막이 동기화되지 않는 문제를 수정했습니다.
 
