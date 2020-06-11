@@ -1,24 +1,24 @@
 ---
-title: Android용 TVSDK 3.11 릴리스 노트
-seo-title: Android용 TVSDK 3.11 릴리스 노트
-description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.11의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다
-seo-description: Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.11의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다
+title: Android용 TVSDK 3.12 릴리스 정보
+seo-title: Android용 TVSDK 3.12 릴리스 정보
+description: Android용 TVSDK 3.12 릴리스 정보에서는 TVSDK Android 3.12의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다
+seo-description: Android용 TVSDK 3.12 릴리스 정보에서는 TVSDK Android 3.12의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 5dd5015c01565964b53ef82659308190ee350a89
+source-git-commit: db3f488e29468fc29ea8bf033877124a9abdecd0
 workflow-type: tm+mt
-source-wordcount: '5490'
+source-wordcount: '5531'
 ht-degree: 0%
 
 ---
 
 
-# Android용 TVSDK 3.11 릴리스 노트 {#tvsdk-for-android-release-notes}
+# Android용 TVSDK 3.12 릴리스 정보 {#tvsdk-for-android-release-notes}
 
-Android용 TVSDK 3.11 릴리스 정보에서는 TVSDK Android 3.11의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다.
+Android용 TVSDK 3.12 릴리스 정보에서는 TVSDK Android 3.12의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다.
 
 Android 참조 플레이어는 배포 샘플/디렉토리에 Android TVSDK에 포함되어 있습니다. 함께 제공되는 README.md 파일은 참조 플레이어를 구축하는 방법을 설명합니다.
 
@@ -36,26 +36,31 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
 지원되는 포괄적인 기능 및 지원되지 않는 기능은 릴리스 노트의 [기능 매트릭스](#feature-matrix) 섹션에 제공됩니다.
 
-## Android TVSDK 3.11
+## Android TVSDK 3.12
 
-**PSSH(Protection System Specific Header) 상자 반입이 허용됨**
+Primetime Reference 애플리케이션의 등급 버전이 버전 5.6.4로 업데이트되었습니다.
 
-이제 TVSDK에서 현재 로드된 미디어 리소스와 관련된 보호 시스템 특정 헤더 상자를 가져올 수 있습니다. 새 API `getPSSH()` 가 에 추가되었습니다 `com.adobe.mediacore.drm.DRMManager`.
-자세한 내용은 무선 [DRM을 참조하십시오](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
+Android Studio를 사용하여 참조 앱을 설정하고 실행하려면 `TVSDK_Android_x.x.x.x/samples/PrimetimeReference/src/README.md`
 
 현재 릴리스에서 수정된 주요 고객 문제는 [해결된 문제](#resolved-issues) 섹션에 언급되어 있습니다.
 
 ### 이전 릴리스의 새로운 기능 및 개선 사항
 
+**Android TVSDK 3.11**
+
+* **PSSH(Protection System Specific Header) 상자 반입이 허용됩니다** . - TVSDK를 사용하면 현재 로드된 미디어 리소스와 관련된 보호 시스템 특정 헤더 상자를 가져올 수 있습니다. 새 API가 `getPSSH()` 에 추가되었습니다 `com.adobe.mediacore.drm.DRMManager`.
+
+자세한 내용은 무선 [DRM을 참조하십시오](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
+
 **Android TVSDK 3.10**
 
-이 릴리스는 [해결된 문제 섹션에 언급된 주요 고객 문제를](#resolved-issues) 수정하는 데 중점을 두었습니다.
+이번 릴리스는 [해결된 문제 섹션에 언급된 주요 고객 문제를](#resolved-issues) 해결하는 데 주력했습니다.
 
 **Android TVSDK 3.9**
 
-* **HTTPS를 통한 안전한 전달** - Android TVSDK 3.9는 탁월한 규모 및 성능으로 안전하게 컨텐츠를 전달할 수 있는 HTTPS를 통한 안전한 전달 기능을 제공합니다.
+* **HTTPS를 통한** 안전한 전달 - Android TVSDK 3.9는 탁월한 규모 및 성능으로 안전하게 컨텐츠를 전달할 수 있는 HTTPS를 통한 안전한 전달 기능을 도입했습니다.
 
-   HTTPS를 통한 안전한 배달을 가능하게 하기 위해 새로운 API가 `NetworkConfiguration` 클래스에 도입되었습니다.
+   HTTPS를 통한 안전한 전달을 활성화하기 위해 새로운 API가 `NetworkConfiguration` 클래스에 도입되었습니다.
 
    `public void setForceHTTPS (boolean value)`
 
@@ -65,7 +70,7 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 
 * **부분 광고 중단 기능을 사용한 프리롤 지원** - 향상된 TVSDK 3.8은 PABI(Partial Ad-Break) 기능을 사용하여 프리롤 광고를 지원합니다.
 
-   프리롤 광고는 사용 가능한 경우 재생되고 라이브 TV의 경험을 시뮬레이션하는 라이브 지점에서 컨텐츠가 재생됩니다.
+프리롤 광고는 사용 가능한 경우 재생되고 라이브 TV의 경험을 시뮬레이션하는 라이브 지점에서 컨텐츠가 재생됩니다.
 
 **Android TVSDK 3.7**
 
@@ -82,6 +87,7 @@ Android용 TVSDK는 이전 버전보다 향상된 많은 성능을 제공합니�
 **버전 3.5**
 
 * **TVSDK 3.5를 사용하면 타임라인에서 재생된 광고를** 제거할 수 있습니다.
+
 * **오프라인 재생** 지원 - 오프라인 재생을 통해 사용자는 이제 디바이스에 비디오 컨텐츠를 다운로드하고 연결되어 있지 않을 때 시청할 수 있습니다. 자세한 내용은 &quot;Android를[사용한 오프라인 재생&quot;을 참조하십시오](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.5.pdf).
 
 **버전 3.4**
@@ -437,13 +443,17 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
 해상도가 보고된 문제와 연결된 경우 ZD#xxxxx와 같은 Zendesk 참조가 표시됩니다.
 
-**Android TVSDK 3.11**
+**Android TVSDK 3.12**
 
-이 섹션에서는 TVSDK 3.11 Android 릴리스에서 해결된 문제에 대한 요약을 제공합니다.
+이 섹션에서는 TVSDK 3.12 Android 릴리스에서 해결된 문제에 대한 요약을 제공합니다.
 
-* ZD#41252 - Android 7.1 이후에 끊어진 WebVTT의 한국어 문자
+* ZD#40584 - Primetime Reference 앱은 최신 버전의 경우 빌드되지 않습니다.
 
 ### 이전 릴리스의 문제 해결
+
+**Android TVSDK 3.11**
+
+* ZD#41252 - Android 7.1 이후에 끊어진 WebVTT의 한국어 문자
 
 **Android TVSDK 3.10**
 
@@ -535,7 +545,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
    * 변수 m_nOutputHeight(AndroidMCVideoDecoder 내부의) 때문에 실제 출력 높이 대신 프레임 높이로 업데이트됩니다. getVideoFrame 함수에서 m_nOutputHeight를 올바르게 계산하도록 관련 변경 작업이 수행되었습니다.
 
-* ZD #26614 - 긴급 — 서드파티 광고 서비스/프로그래머틱 광고 서비스 — 노출 횟수 실패
+* ZD #26614 - 긴급 — 서드파티 광고 서비스/프로그래머틱 광고 서비스 — 광고 노출 횟수
 
    * &quot;space&quot;가 &lt;VAST version =&quot;2.0&quot;>과 같은 &quot;equal&quot; 기호 앞에 있을 때 문제가 재생산될 수 있는 XML 파싱의 사례를 처리하여 이전 수정 사항을 개선했습니다.
 
@@ -715,7 +725,7 @@ WebViewDebuging은 기본적으로 False로 설정됩니다. 디버깅을 활성
 
 * TVSDK 3.2는 CMAF 샘플 AES 및 AES128 스트림 재생을 지원하지 않습니다.
 * HEVC CMAF 스트림에는 자막 재생에 대한 지원이 포함되어 있지 않습니다.
-* 비밀번호화되지 않은 세그먼트 주변에서 검색을 수행할 때 WV 암호화된 스트림에 대해 녹색 색상이 표시됩니다.
+* 비밀번호화되지 않은 세그먼트 주변에서 검색을 수행할 때 WV 암호화된 스트림에 대해 녹색 색조가 표시됩니다.
 * CMAF 스트림은 ID3 이벤트를 지원하지 않습니다.
 * HLS 스트림은 TTML 캡션 형식을 지원하지 않습니다.
 
