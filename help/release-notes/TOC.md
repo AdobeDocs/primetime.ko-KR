@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 73c69ac4747db60cd17a1b385ab519f15b9003ac
+source-git-commit: 106a523b0df22157c2ddc9246e959389869fbba5
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
    + [iOS용 TVSDK 3.12 릴리스 노트](tvsdk-3x-ios.md)
    + [iOS용 TVSDK 1.4 릴리스 노트](tvsdk-1-4-ios.md)
 + Android용 TVSDK {#tvsdk-android}
-   + [Android용 TVSDK 3.11 릴리스 노트](tvsdk-3x-android.md)
+   + [Android용 TVSDK 3.12 릴리스 정보](tvsdk-3x-android.md)
    + [Android용 TVSDK 2.7 릴리스 노트](tvsdk-27-android.md)
    + [Android용 TVSDK 2.4.1 릴리스 노트](tvsdk-24-android.md)
    + [Android용 TVSDK 1.4 릴리스 정보](tvsdk-1-4-android.md)
