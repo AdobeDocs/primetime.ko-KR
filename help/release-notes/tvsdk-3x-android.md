@@ -8,9 +8,9 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: db3f488e29468fc29ea8bf033877124a9abdecd0
+source-git-commit: d1881d1fe97d416ee0f69f62828aef46c5ad21bb
 workflow-type: tm+mt
-source-wordcount: '5531'
+source-wordcount: '5415'
 ht-degree: 0%
 
 ---
@@ -371,28 +371,6 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 | 광고 차단 | VOD + 라이브 | 지원되지 않음 |
 | 즉시 켜기 | VOD + 라이브 | 지원되지 않음 |
 | 끊김 마커 지원 | VOD + 라이브 | Y |
-| 302 리디렉션 지속 | VOD + 라이브 | Y |
-
-| 기능 | 컨텐츠 유형 | HLS |
-|---|---|---|
-| 일반 재생, 광고 사용 | VOD + 라이브 | Y |
-| 광고가 활성화된 FER 컨텐츠 | VOD | Y |
-| 기본 광고 비헤이비어 | VOD + 라이브 | Y |
-| VAST 2.0/3.0 | VOD + 라이브 | Y |
-| VMAP 1.0 | VOD + 라이브 | Y |
-| MP4 광고 | VOD + 라이브 | Y(CRS) |
-| 광고를 사용하여 트릭 플레이 | VOD + 라이브 | Y |
-| 광고 전용 | VOD | Y |
-| 타깃팅 매개 변수 | VOD + 라이브 | Y |
-| 사용자 지정 매개 변수 | VOD + 라이브 | Y |
-| 사용자 지정 광고 동작 | VOD + 라이브 | Y |
-| 사용자 지정 광고 태그 | 라이브 | Y |
-| 사용자 지정 광고 해상도 | VOD + 라이브 | Y |
-| 자유로운 사용자 지정 광고 확인자 | VOD | Y |
-| C3 | VOD + 라이브 | 지원되지 않음 |
-| 레이지 광고 해결 | VOD | Y |
-| 불연속성 마커 지원 - SSAI | VOD + 라이브 | Y |
-| 부록 광고, 배너 광고 및 클릭 가능한 광고 | VOD + 라이브 | Y |
 | 302 리디렉션 지속 | VOD + 라이브 | Y |
 
 | 기능 | 컨텐츠 유형 | HLS |
