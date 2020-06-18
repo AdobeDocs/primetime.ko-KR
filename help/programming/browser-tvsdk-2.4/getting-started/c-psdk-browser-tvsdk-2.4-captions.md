@@ -5,7 +5,10 @@ seo-title: 캡션
 title: 캡션
 uuid: 4dedcedc-50e5-4983-bb09-3f316337117e
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ function onCaptionsUpdateEvent (event) {
 </ph>
 ```
 
-UI 프레임워크는 수정할 수 있는 기본 캡션 동작 구현을 제공합니다. 자막 비헤이비어는 기본 자막 비헤이비어를 확장하여 수정할 수도 있습니다. 예:
+UI 프레임워크는 수정할 수 있는 기본 캡션 동작 구현을 제공합니다. 자막 동작은 기본 자막 동작을 확장하여 수정할 수도 있습니다. 예:
 
 ```js
 // Using UI Framework 
@@ -56,4 +59,3 @@ player:{
  
 }); 
 ```
-
