@@ -2,9 +2,9 @@
 title: PTAI 20.6.1 릴리스 노트
 description: PTAI 20.6.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 해결되고 알려진 문제를 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 5dd5015c01565964b53ef82659308190ee350a89
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ### 버전 20.3.4
 
-**시기:** 2020년 4월 1일 수요일 오전 03:00부터 오전 04:00까지 동부 시간
+**시기:** 2020년 4월 1일 수요일 오전 03:00에서 오전 4:00(동부 시간)
 
 * VOD/WebVTT에서 광고 삽입 후 자막이 동기화되지 않는 문제를 수정했습니다.
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 **시기:** 2020년 1월 15일 수요일 오전 04:00부터 오전 05:00까지 동부 시간
 
-* Creative Repackaging Service는 잘못된 형식의 크리에이티브 전문가를 자동으로 블랙리스트로 표시하여 더 빠르게 광고를 삽입할 수 있습니다.
+* Creative Repackaging Service는 잘못된 형식의 크리에이티브 목록을 자동으로 차단하여 광고 삽입 시간을 단축할 수 있습니다.
 
 * 서버측 광고 삽입에 새로운 SCTE 35 큐 형식에 대한 1단계 지원을 추가했습니다.
 
