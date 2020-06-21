@@ -8,9 +8,9 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
 workflow-type: tm+mt
-source-wordcount: '5417'
+source-wordcount: '5418'
 ht-degree: 0%
 
 ---
@@ -435,7 +435,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
 **Android TVSDK 3.10**
 
-* ZD#40340 - 모든 TS(TypeScript) 파일을 블랙리스트에 올린 후 재생을 시도할 때 &quot;App Not Responding&quot; 오류가 발생하는 응용 프로그램이 충돌합니다.
+* ZD#40340 - 모든 TS(TypeScript) 파일을 나열한 블록 후에 재생을 시도할 때 &quot;App Not Responding&quot; 오류가 발생하는 응용 프로그램이 충돌합니다.
 
 **Android TVSDK 3.8**
 
@@ -703,7 +703,7 @@ WebViewDebuging은 기본적으로 False로 설정됩니다. 디버깅을 활성
 
 * TVSDK 3.2는 CMAF 샘플 AES 및 AES128 스트림 재생을 지원하지 않습니다.
 * HEVC CMAF 스트림에는 자막 재생에 대한 지원이 포함되어 있지 않습니다.
-* 비밀번호화되지 않은 세그먼트 주변에서 검색을 수행할 때 WV 암호화된 스트림에 대해 녹색 색상이 표시됩니다.
+* 비밀번호화되지 않은 세그먼트 주변에서 검색을 수행할 때 WV 암호화된 스트림에 대해 녹색 색조가 표시됩니다.
 * CMAF 스트림은 ID3 이벤트를 지원하지 않습니다.
 * HLS 스트림은 TTML 캡션 형식을 지원하지 않습니다.
 
