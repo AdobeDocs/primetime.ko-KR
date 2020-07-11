@@ -3,9 +3,9 @@ seo-title: AIR 게시자 ID 유틸리티 개요
 title: AIR 게시자 ID 유틸리티 개요
 uuid: 31aecc0e-ad9b-43ad-ba58-77d2c999f4a4
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,3 @@ AIR 파일 작성 프로세스의 일부로 AIR Developer Tool(ADT)은 Publisher
 >[!NOTE] {class=&quot;- topic/note &quot;}
 >
 >AIR 허용 목록 실행에 사용되는 게시자 ID는 응용 프로그램 파일의 응용 프로그램 게시자가 지정한 게시자 ID와 다릅니다 [!DNL application.xml] .
-
