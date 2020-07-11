@@ -6,9 +6,9 @@ seo-title: 구성 속성
 title: 구성 속성
 uuid: 216921d1-a9c1-4650-9dce-c025836986e5
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.chaining.rootKey</span> <p class="- topic/p "><span class="codeph"> -rootKey</span> <i class="+ topic/ph hi-d/i ">루트 키</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>고급 라이센스 체인의 루트 암호화 키를 <a href="https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> 지정합니다</a>. 키를 지정하지 않고 고급 라이센스 체인이 활성화되어 있으면 임의 키가 자동으로 생성됩니다. </p> <p>키는 16바이트여야 하며 16진수 값으로 지정해야 합니다. 16진수 값 사이의 공백은 선택 사항입니다. 업데이트의 경우 명령줄 옵션을 사용할 수 없으며 속성은 무시됩니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>고급 라이센스 체인의 루트 암호화 키를 <a href="https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> 지정합니다</a>. 키를 지정하지 않고 고급 라이센스 체인이 활성화되어 있으면 임의 키가 자동으로 생성됩니다. </p> <p>키는 16바이트입니다. 16진수 값으로 지정됩니다. 16진수 값 사이의 공백은 선택 사항입니다. 업데이트의 경우 명령줄 옵션을 사용할 수 없으며 속성은 무시됩니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.domain.url</span> <p class="- topic/p "><span class="codeph"> -domainURL</span> <i class="+ topic/ph hi-d/i ">url</i> </p> </td> 
@@ -90,11 +90,11 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.drmVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -drmBlacklist</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>보호된 콘텐츠에 대한 액세스가 제한된 DRM 클라이언트 이 옵션은 사용할 수 없는 DRM 모듈 버전(blocklist) 목록을 지정합니다. </p> <p>값은 다음 형식으로 쉼표로 구분된 <span class="codeph"> 이름=값</span> 쌍으로 구성됩니다. </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">추가 이름/값 쌍은 쉼표로 구분해야 합니다. 예: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>보호된 콘텐츠에 대한 액세스가 제한된 DRM 클라이언트 이 옵션은 사용할 수 없는(차단 목록) DRM 모듈 버전의 목록을 지정합니다. </p> <p>값은 다음 형식으로 쉼표로 구분된 <span class="codeph"> 이름=값</span> 쌍으로 구성됩니다. </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">추가 이름/값 쌍은 쉼표로 구분해야 합니다. 예: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.runtimeVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -runtimeBlacklist</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>응용 프로그램 런타임은 보호된 콘텐츠에 액세스할 수 없습니다. 이 옵션은 사용할 수 없는 런타임 모듈 버전(blocklist) 목록을 지정합니다. </p> <p>값은 다음 형식의 쉼표로 구분된 <span class="codeph"> 이름=값</span> 쌍으로 구성됩니다. </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|application|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">추가 이름/값 쌍은 쉼표로 구분해야 합니다. 예: <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>응용 프로그램 런타임은 보호된 콘텐츠에 액세스할 수 없습니다. 이 옵션은 사용할 수 없는(차단 목록) 런타임 모듈 버전의 목록을 지정합니다. </p> <p>값은 다음 형식의 쉼표로 구분된 <span class="codeph"> 이름=값</span> 쌍으로 구성됩니다. </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|application|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">추가 이름/값 쌍은 쉼표로 구분해야 합니다. 예: <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.v1DeviceCapabilities</span> <p class="- topic/p "><span class="codeph"> -devCapabilitiesV1</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
@@ -186,11 +186,11 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedAIRApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">비 Flash 애플리케이션(Adobe AIR, iOS, Android 등)의 허용 목록 보호된 콘텐츠를 재생할 수 있습니다. 속성은 다음 형식을 사용해야 합니다. <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]]] </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash 애플리케이션이 아닌 허용 목록(Adobe AIR, iOS, Android 등) 보호된 콘텐츠를 재생할 수 있습니다. 속성은 다음 형식을 사용해야 합니다. <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]]] </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedSWFApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">보호된 내용을 재생할 수 있는 SWF 응용 프로그램의 허용 목록입니다. 속성은 다음 형식을 사용해야 합니다. </p> <p class="- topic/p "> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">보호된 내용을 재생할 수 있는 SWF 애플리케이션의 허용 목록 속성은 다음 형식을 사용해야 합니다. </p> <p class="- topic/p "> 
      <ul id="ul_EC20F52AD95C4BE3B7F703048A43CDF0"> 
       <li id="li_3E4A47D925C24834A2C25BC5943279D4"><span class="+ topic/ph pr-d/codeph codeph">URL</span> </li> 
       <li id="li_9A7CAF081C5F488FB5CDA6D38C5552F6"><span class="+ topic/ph pr-d/codeph codeph">file=swf_file</span> </li> 
@@ -203,4 +203,3 @@ ht-degree: 0%
   </tr> 
  </tbody> 
 </table>
-
