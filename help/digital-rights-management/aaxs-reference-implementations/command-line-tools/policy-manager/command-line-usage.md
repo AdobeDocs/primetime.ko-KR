@@ -3,9 +3,9 @@ seo-title: 명령줄 사용
 title: 명령줄 사용
 uuid: e549a98e-b027-4472-8860-6aa1d56d4a8b
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -air pubId </span>[: <span class="+ topic/ph pr-d/codeph codeph"> appId </span>[:[ <span class="+ topic/ph pr-d/codeph codeph"> min </span>]:[ <span class="+ topic/ph pr-d/codeph codeph"> max </span>]]] </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">보호된 내용을 재생할 수 있는 AIR 애플리케이션의 허용 목록입니다. 이 정책을 통해 보호된 콘텐츠에 액세스할 수 있는 게시자, 응용 프로그램 및 버전을 제한하려면 이 규칙을 사용합니다. </p> <p class="- topic/p ">appId <i class="+ topic/ph hi-d/i ">가</i> 지정되지 않은 경우 게시자 <i class="+ topic/ph hi-d/i ">pubId</i> 에 대한 모든 응용 프로그램이 허용됩니다. </p> <p class="- topic/p "><i class="+ topic/ph hi-d/i ">최소</i> 및 <i class="+ topic/ph hi-d/i ">최대</i> 버전 번호는 선택 사항입니다. </p> <p class="- topic/p ">여러 <span class="codeph"> 응용 프로그램을 허용하도록 여러 -air </span> 옵션을 지정할 수 있습니다. AIR 또는 SWF 애플리케이션을 지정하지 않은 경우 모든 애플리케이션에서 이 컨텐츠에 액세스할 수 있습니다. 업데이트하는 동안 나머지 인수 없이 -air를 사용하여 목록에서 모든 항목을 제거합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">보호된 내용을 재생할 수 있는 AIR 애플리케이션의 허용 목록 이 정책을 통해 보호된 콘텐츠에 액세스할 수 있는 게시자, 응용 프로그램 및 버전을 제한하려면 이 규칙을 사용합니다. </p> <p class="- topic/p ">appId <i class="+ topic/ph hi-d/i ">가</i> 지정되지 않은 경우 게시자 <i class="+ topic/ph hi-d/i ">pubId</i> 에 대한 모든 응용 프로그램이 허용됩니다. </p> <p class="- topic/p "><i class="+ topic/ph hi-d/i ">최소</i> 및 <i class="+ topic/ph hi-d/i ">최대</i> 버전 번호는 선택 사항입니다. </p> <p class="- topic/p ">여러 <span class="codeph"> 응용 프로그램을 허용하도록 여러 -air </span> 옵션을 지정할 수 있습니다. AIR 또는 SWF 애플리케이션을 지정하지 않은 경우 모든 애플리케이션에서 이 컨텐츠에 액세스할 수 있습니다. 업데이트하는 동안 나머지 인수 없이 -air를 사용하여 목록에서 모든 항목을 제거합니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -drmBlacklist 이름 </span> / <i class="+ topic/ph hi-d/i ">값</i><span class="+ topic/ph pr-d/codeph codeph"> 쌍 </span> <i class="+ topic/ph hi-d/i "> </i> <span class="+ topic/ph pr-d/codeph codeph"> </span> </td> 
@@ -120,7 +120,7 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> -swf url </span> </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> -swf 파일= swf_file </span>, <span class="+ topic/ph pr-d/codeph codeph"> time= max_time_to_verify </span> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">보호된 내용을 재생할 수 있는 SWF 애플리케이션의 허용 목록입니다. 여러 응용 프로그램을 허용하도록 여러 -swf 옵션을 지정할 수 있습니다. AIR 또는 SWF 애플리케이션을 지정하지 않은 경우 모든 애플리케이션에서 이 컨텐츠에 액세스할 수 있습니다. 업데이트하는 동안 나머지 인수 없이 -swf를 사용하여 목록에서 모든 항목을 제거합니다. SWF를 해시 값으로 식별하려면 해시를 계산할 SWF 파일과 SWF 확인을 완료할 수 있는 최대 시간(초)을 지정합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">보호된 내용을 재생할 수 있는 SWF 애플리케이션의 허용 목록 여러 응용 프로그램을 허용하도록 여러 -swf 옵션을 지정할 수 있습니다. AIR 또는 SWF 애플리케이션을 지정하지 않은 경우 모든 애플리케이션에서 이 컨텐츠에 액세스할 수 있습니다. 업데이트하는 동안 나머지 인수 없이 -swf를 사용하여 목록에서 모든 항목을 제거합니다. SWF를 해시 값으로 식별하려면 해시를 계산할 SWF 파일과 SWF 확인을 완료할 수 있는 최대 시간(초)을 지정합니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -k name= 값 </span> </td> 
