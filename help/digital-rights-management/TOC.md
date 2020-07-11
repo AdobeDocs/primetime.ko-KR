@@ -4,9 +4,9 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 디지털 저작권 관리 도움말
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2202'
 ht-degree: 0%
 
 ---
@@ -189,9 +189,9 @@ ht-degree: 0%
       + [시간 기반 규칙](protecting-content/introduction/usage-rules/authentication/time-based-rules.md)
       + [동기화를 위한 요구 사항](protecting-content/introduction/usage-rules/authentication/synchronization.md)
    + 런타임 및 애플리케이션 제한 사항 {#runtime-application-restrictions}
-      + [Primetime DRM 응용 프로그램의 Allowlist가 보호된 내용을 재생하도록 허용되었습니다...](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-air.md)
-      + [Adobe® Flash® Player SWF에 대한 허용 목록](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-flash.md)
-      + [보호된 콘텐츠에 액세스할 수 없는 DRM 클라이언트 차단 목록](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md)
+      + [Primetime DRM 응용 프로그램의 허용 목록에서 보호된 내용을 재생할 수 있습니다...](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-air.md)
+      + [Adobe® Flash® Player SWF용 허용 목록](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-flash.md)
+      + [보호된 콘텐츠에 대한 액세스가 제한된 DRM 클라이언트의 차단 목록](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md)
       + [애플리케이션 런타임 차단 목록](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-app-runtimes.md)
       + [DRM 및 런타임에 대한 최소 보안 수준](protecting-content/introduction/usage-rules/runtime-application-restrictions/min-sec-level-for-drm.md)
       + [보호된 내용을 재생하는 데 필요한 장치 기능](protecting-content/introduction/usage-rules/runtime-application-restrictions/device-capabilities.md)
@@ -281,8 +281,8 @@ ht-degree: 0%
       + [DRM 정책 관리자](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-overview.md)
       + [정책 관리자 명령줄 사용](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-command-line-usage.md)
       + [구성 속성](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-config-file-properties.md)
-      + [SWF가 아닌 응용 프로그램 허용 목록](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/non-swf-allowlisting.md)
-      + [SWF 응용 프로그램 허용 목록](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/swf-allowlisting.md)
+      + [SWF가 아닌 응용 프로그램 목록 허용](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/non-swf-allowlisting.md)
+      + [SWF 응용 프로그램 목록 허용](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/swf-allowlisting.md)
    + [DRM Media Packager](drm-reference-implementations/command-line-tools/configure-command-line-tools/media-packager/media-packager-overview.md)
    + [DRM 정책 업데이트 목록 관리자](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-update-list-manager/policy-update-list-manager-overview.md)
    + [DRM 해지 목록 관리자](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-revocation-list-manager/policy-revocation-list-manager-overview.md)
@@ -401,7 +401,7 @@ ht-degree: 0%
       + [롤백 감지](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection.md)
       + [라이선스 발행 시 컴퓨터 수](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection-machine-count.md)
       + [재생 보호](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-replay-detection.md)
-      + [신뢰할 수 있는 컨텐츠 패키저 허용 목록 유지](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-maintain-allowlist.md)
+      + [신뢰할 수 있는 컨텐츠 패키저 허용 목록 유지 관리](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-maintain-allowlist.md)
       + [인증 토큰에 대한 시간 초과](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-timeout-for-authn-tokens.md)
       + [정책 옵션 무시](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
       + [라이선스 사전 생성](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
@@ -424,10 +424,10 @@ ht-degree: 0%
    + [사용자 인증](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
    + [시간 기반 규칙](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
    + 런타임 및 애플리케이션 제한 사항 {#runtime-and-application-restrictions}
-      + [보호된 콘텐츠를 재생할 수 있는 Adobe® Primetime 애플리케이션 목록 허용](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
-      + [보호된 내용을 재생할 수 있는 Adobe® Flash® Player SWF 목록 허용](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
-      + [보호된 콘텐츠에 액세스할 수 없는 DRM 클라이언트 차단 목록](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
-      + [보호된 콘텐츠에 액세스할 수 없도록 제한된 애플리케이션 런타임 목록](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-app-runtimes.md)
+      + [Adobe® Primetime 애플리케이션의 허용 목록으로 보호된 콘텐츠 재생](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
+      + [보호된 내용을 재생할 수 있는 Adobe® Flash® Player SWF용 허용 목록](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
+      + [보호된 콘텐츠에 대한 액세스가 제한된 DRM 클라이언트의 차단 목록](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
+      + [보호된 컨텐츠에 액세스할 수 없도록 제한된 애플리케이션 런타임 차단 목록](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-app-runtimes.md)
       + [DRM 및 런타임에 대한 최소 보안 수준](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-min-sec-level-for-drm.md)
       + [보호된 내용을 재생하는 데 필요한 장치 기능](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-device-capabilities.md)
       + [Jailbreak Enforcement (Adobe Primetime 필요)](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-jailbreak-enforcement.md)
