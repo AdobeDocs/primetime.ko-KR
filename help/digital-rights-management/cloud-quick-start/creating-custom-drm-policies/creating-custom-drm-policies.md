@@ -3,9 +3,9 @@ seo-title: 사용자 정의 DRM 정책 만들기(선택 사항)
 title: 사용자 정의 DRM 정책 만들기(선택 사항)
 uuid: 701b51d9-6dde-4c21-bc5b-09e612582968
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 사용자 정의 DRM 정책 만들기(선택 사항){#create-custom-drm-policies-optional}
 
-Primetime Cloud DRM 보호 키트에는 패키징 중에 사용할 수 있는 몇 가지 미리 구성된 정책이 포함되어 있습니다. 예를 들어 특정 SWF-Allowlisting 권한 등 추가 정책 구성을 원하는 경우 포함된 Primetime DRM 정책 관리자를 사용하여 사용자 지정 정책을 생성할 수 있습니다.
+Primetime Cloud DRM 보호 키트에는 패키징 중에 사용할 수 있는 몇 가지 미리 구성된 정책이 포함되어 있습니다. 예를 들어 특정 SWF 허용 목록 권한과 같은 추가 정책 구성을 원하는 경우 포함된 Primetime DRM 정책 관리자를 사용하여 사용자 지정 정책을 생성할 수 있습니다.
 
 >[!NOTE]
 >
