@@ -5,7 +5,7 @@ seo-title: 개요
 title: 개요
 uuid: 874c175b-8207-49fa-aad4-204ccbee9c2c
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -43,4 +43,4 @@ SDK는 이러한 작업을 수행하는 Java API를 제공하며, 라이센스 �
 
 사용자 지정 사용 규칙을 지정합니다. 사용자 지정 데이터는 라이센스 서버에서 발행한 라이센스에 포함될 수 있습니다. 이 데이터의 해석/처리는 클라이언트 응용 프로그램 및 라이센스 서버의 구현에 전적으로 달려 있습니다.
 
-사용 사례 예: 정책 및/또는 컨텐츠 라이선스의 일부로 다른 비즈니스 규칙을 안전하게 전달하여 사용 규칙을 확장할 수 있습니다. 보안상의 이유로 이러한 사용 규칙은 사용자 정의 클라이언트 응용 프로그램 코드에 적용되기 때문에 이 옵션을 AIR 응용 프로그램 또는 Flash Player SWF 허용 목록 옵션과 함께 사용해야 합니다. 자세한 내용은 &quot;[런타임 및 애플리케이션 제한](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)사항&quot;을 참조하십시오.
+사용 사례 예: 정책 및/또는 컨텐츠 라이선스의 일부로 다른 비즈니스 규칙을 안전하게 전달하여 사용 규칙을 확장할 수 있습니다. 보안상의 이유로 이러한 사용 규칙은 사용자 정의 클라이언트 응용 프로그램 코드에 적용되기 때문에 AIR 응용 프로그램 또는 Flash Player SWF 허용 목록 옵션과 함께 이 옵션을 사용해야 합니다. 자세한 내용은 런타임 [및 애플리케이션 제한을 참조하십시오](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md).
