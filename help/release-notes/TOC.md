@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 106a523b0df22157c2ddc9246e959389869fbba5
+source-git-commit: 7c8b9778f9b63151617e57bc2318ba77e0b630bc
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 + [릴리스 노트 개요](home.md)
 + Primetime 동적 광고 삽입 {#ptai}
-   + [PTAI 20.6.1 릴리스 노트](ptai-20x-release-notes.md)
+   + [PTAI 20.7.1 릴리스 노트](ptai-20x-release-notes.md)
    + [PTAI 19.11.1 릴리스 노트](ptai-19x-release-notes.md)
 + iOS용 TVSDK {#tvsdk-ios}
    + [iOS용 TVSDK 3.12 릴리스 노트](tvsdk-3x-ios.md)
