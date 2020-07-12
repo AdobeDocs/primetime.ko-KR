@@ -4,9 +4,9 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 8f8b9d167d7456968879edac847c51e6c9e1da3c
+source-git-commit: 7c8b9778f9b63151617e57bc2318ba77e0b630bc
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 
 현재 출시된 [Android 버전에 대한 자세한 내용을 확인하십시오](../release-notes/tvsdk-3x-android.md).
 
-## PTAI 20.6.1의 개선 사항 및 수정 사항
+## PTAI 20.7.1의 개선 사항 및 수정 사항
 
-이번 릴리스는 긴 형식의 VOD 에셋을 통해 세션을 지속적으로 유지하기 위해 매니페스트 조작 및 개선 API와 같은 기능을 중점적으로 다루었습니다. 이 릴리스에는 주요 고객 문제에 대한 수정 사항도 포함되어 있습니다.
+이번 릴리스에서는 X-ADBE-AI-X1 HTTP 응답 헤더, 개선된 지표 집계 및 &quot;세션 통계&quot; 패널에 더 많은 정보가 추가되어 SCTE35의 향상된 기능에 초점을 두었습니다.
 
 현재 출시된 버전의 동적 광고 삽입에 대한 자세한 내용은 [PTAI 릴리스 노트를 참조하십시오](ptai-20x-release-notes.md).
 
