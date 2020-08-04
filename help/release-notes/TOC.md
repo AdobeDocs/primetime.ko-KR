@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 7c8b9778f9b63151617e57bc2318ba77e0b630bc
+source-git-commit: 6b2aaa96f8604af27810cceee5a8a98c4feebd6f
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 # Primetime 릴리스 노트 {#release-notes}
 
 + [릴리스 노트 개요](home.md)
-+ Primetime 동적 광고 삽입 {#ptai}
-   + [PTAI 20.7.1 릴리스 노트](ptai-20x-release-notes.md)
++ Primetime 동적 Ad Insertion {#ptai}
+   + [PTAI 20.8.1 릴리스 노트](ptai-20x-release-notes.md)
    + [PTAI 19.11.1 릴리스 노트](ptai-19x-release-notes.md)
 + iOS용 TVSDK {#tvsdk-ios}
    + [iOS용 TVSDK 3.12 릴리스 노트](tvsdk-3x-ios.md)
@@ -36,5 +36,5 @@ ht-degree: 0%
    + [Primetime Streaming Server 버전 1 릴리스](primetime-streaming-server-1x.md)
 + Playstation 4용 TVSDK {#tvsdk-playstation}
    + [TVSDK 2.1 PlayStation 4 릴리스 정보](tvsdk-21-ps4.md)
-+ 디지털 권한 관리 {#drm}
++ Digital Rights Management {#drm}
    + [DRM 5.3.1 릴리스 노트](drm-531-release-notes.md)
