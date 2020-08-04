@@ -1,20 +1,30 @@
 ---
-title: PTAI 20.7.1 릴리스 노트
-description: PTAI 20.7.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 해결되고 알려진 문제를 담고 있습니다.
+title: PTAI 20.8.1 릴리스 노트
+description: PTAI 20.8.1 릴리스 노트는 2020년 Primetime 동적 Ad Insertion에서 해결되고 알려진 새로운 문제점과 변경된 내용을 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 7c8b9778f9b63151617e57bc2318ba77e0b630bc
+source-git-commit: 6b2aaa96f8604af27810cceee5a8a98c4feebd6f
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
 
 
-# Primetime 동적 광고 삽입 20.7.1 릴리스 노트
+# Primetime 동적 Ad Insertion 20.8.1 릴리스 노트
 
-동적 광고 삽입 20.7.1 릴리스 노트는 2020년 Primetime 동적 광고 삽입에서 새로운 기능 또는 변경된 기능, 해결된 문제 및 알려진 문제를 설명합니다.
+동적 Ad Insertion 20.8.1 릴리스 노트는 2020년 Primetime 동적 Ad Insertion의 새로운 기능 또는 변경된 기능, 해결된 문제 및 알려진 문제를 설명합니다.
 
-## PTAI 20.7.1의 새로운 기능
+## PTAI 20.8.1의 새로운 기능
+
+**시기:** 2020년 8월 4일 화요일 오전 3:00에서 오전 6:00(동부 시간)
+
+**향상된 기능 및 수정 사항**
+
+유지 관리 업데이트.
+
+### 이전 릴리스 버전의 개선 사항 및 수정 사항
+
+#### 버전 20.7.1
 
 **시기:** 2020년 7월 9일 목요일 오전 3:00부터 오전 5:00까지 동부 시간
 
@@ -26,9 +36,7 @@ ht-degree: 0%
 
 * 향상된 지표 집계
 
-* 세션 통계 패널에 대한 향상된 SSAI 콘솔 대시보드
-
-### 이전 릴리스 버전의 개선 사항 및 수정 사항
+* 세션 통계 패널의 향상된 SSAI 콘솔 대시보드
 
 #### 버전 20.6.2
 
