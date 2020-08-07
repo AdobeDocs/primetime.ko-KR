@@ -5,7 +5,10 @@ seo-title: 암호 스크램블러
 title: 암호 스크램블러
 uuid: 56df0f49-f3fd-464d-b4ba-25e1b497158a
 translation-type: tm+mt
-source-git-commit: 105dedcfe47a5f454a067e66a95827e638290742
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -41,8 +44,8 @@ Encrypted password:
 </i class="+ topic>
 ```
 
-및 파일에서 지정한 [!DNL flashaccess-global.xml] 모든 [!DNL flashaccess-tenant.xml] 암호는 암호화되어야 합니다.
+및 파일에서 지정한 모든 암호 [!DNL flashaccess-global.xml] 를 [!DNL flashaccess-tenant.xml] 암호화해야 합니다.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->보호 스트리밍을 위한 Primetime DRM Server의 암호 스크램블러 유틸리티는 참조 구현 라이센스 서버와 함께 제공되는 스크램블러와 호환되지 않습니다.
+>보호된 스트리밍을 위한 Primetime DRM Server의 암호 스크램블러 유틸리티는 참조 구현 라이선스 서버와 함께 제공되는 스크램블러와 호환되지 않습니다.
