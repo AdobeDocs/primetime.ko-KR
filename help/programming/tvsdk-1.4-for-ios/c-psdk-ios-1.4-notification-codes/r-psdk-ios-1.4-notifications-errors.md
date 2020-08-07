@@ -5,7 +5,10 @@ seo-title: 오류 알림 코드
 title: 오류 알림 코드
 uuid: cea75277-7747-4f9b-ad59-98f9f1a5ac2f
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 <!--<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>-->
 
-대부분의 오류에는 다운로드하지 못한 리소스의 URL과 같은 관련 메타데이터가 포함되어 있습니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
+대부분의 오류에는 다운로드하지 못한 리소스의 URL과 같은 관련 메타데이터가 포함됩니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_8B61210A406A45ACBE37FC29729DDE22"> 
  <thead> 
@@ -112,14 +115,14 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
    <td colname="2"><span class="codeph"> AD_RESOLVER_METADATA_INVALID </span> </td> 
    <td colname="3"> <span class="codeph"> AD_NOT_INSERTED</span> </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>잘못된 광고 메타데이터 형식으로 인해 광고 해결에 실패했습니다. </p> </td> 
+   <td colname="5"> <p>잘못된 광고 메타데이터 형식으로 인해 광고 확인이 실패했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104005 </span> </td> 
    <td colname="2"><span class="codeph"> AD_INSERTION_FAIL </span> </td> 
    <td colname="3"> <span class="codeph"> AD_NOT_INSERTED </span> </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>광고 해결 단계가 실패했습니다. </p> </td> 
+   <td colname="5"> <p>광고 단계 해결에 실패했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104006 </span> </td> 
@@ -140,7 +143,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
    <td colname="2"><span class="codeph"> NATIVE_ERROR </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> INTERNAL_ERROR </span> </td> 
-   <td colname="5"> <p>하위 수준 iOS 오류가 발생했습니다. </p> </td> 
+   <td colname="5"> <p>낮은 수준의 iOS 오류가 발생했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>구성</b> </td> 
@@ -172,7 +175,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170000 </span> </td> 
-   <td colname="2"><span class="codeph"> AD_HLS_VERSION_호환되지 않음 </span> </td> 
+   <td colname="2"><span class="codeph"> AD_HLS_VERSION_ 호환되지 않음 </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
    <td colname="5"> <p>광고의 HLS 버전은 컨텐츠의 HLS 버전보다 높습니다. </p> </td> 
@@ -203,7 +206,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
    <td colname="2"><span class="codeph"> HLS_SEGMENT_ERROR </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"><span class="codeph"> 설명 </span><span class="codeph"> URL </span><span class="codeph"> INTERNAL_ERROR </span> </td> 
-   <td colname="5"> <p>세그먼트가 변형의 지정된 대역폭을 초과했습니다. </p> </td> 
+   <td colname="5"> <p>세그먼트가 변형의 지정된 대역폭을 초과합니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170005 </span> </td> 
@@ -235,7 +238,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170009 </span> </td> 
-   <td colname="2"><span class="codeph"> SUBTITLES_TRACK_CHANGE_FAIL </span> </td> 
+   <td colname="2"><span class="codeph"> SUBTITLE_TRACK_CHANGE_FAIL </span> </td> 
    <td colname="3"><span class="codeph"> PLAYER_NOT_READY </span> </td> 
    <td colname="4"> 없음 </td> 
    <td colname="5"> <p>자막 트랙을 변경하는 동안 오류가 발생했습니다. </p> </td> 
@@ -245,16 +248,18 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
    <td colname="2"><span class="codeph"> SITECATALYST_ERROR </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"><span class="codeph"> 설명 </span> </td> 
-   <td colname="5"> <p>SiteCatalyst 오류입니다. 설명을 참조하십시오. </p> </td> 
+   <td colname="5"> <p>Site catalyst 오류입니다. 설명을 참조하십시오. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170011 </span> </td> 
    <td colname="2"><span class="codeph"> AD_TARGET_DURATION_INCOMPATIBLE </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
-   <td colname="5"> <p>광고의 타겟 지속 시간이 컨텐츠의 타겟 지속 기간보다 높습니다. </p> </td> 
+   <td colname="5"> <p>광고의 TARGET 지속 시간이 컨텐츠의 TARGET 지속 기간보다 높습니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!NOTE] adID 및 소스(URL)는 `PTAdAsset` `AD_ASSET` 키와 함께 알림 메타데이터의 을 통해 검색할 수 있습니다.
+>[!NOTE]
+>
+>adID와 소스(URL)는 `PTAdAsset` `AD_ASSET` 키가 있는 알림 메타데이터의 을 통해 검색할 수 있습니다.
