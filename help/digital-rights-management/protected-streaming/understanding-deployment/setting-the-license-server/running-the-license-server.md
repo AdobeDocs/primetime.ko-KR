@@ -3,9 +3,9 @@ seo-title: 보호된 스트리밍을 위한 DRM 서버 실행
 title: 보호된 스트리밍을 위한 DRM 서버 실행
 uuid: 9bbe211d-268b-43c2-9e55-7ce62de40d30
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 보호된 스트리밍을 위한 DRM 서버 실행 {#running-the-drm-server-for-protected-streaming}
 
-보호된 스트리밍을 위한 Adobe Primetime DRM Server를 시작하려면 구성 파일에서 설정의 유효성을 확인하는 것이 좋습니다.
+보호된 스트리밍을 위한 Adobe Primetime DRM 서버를 시작하려면 먼저 구성 파일에서 설정의 유효성을 확인하는 것이 좋습니다.
 
 라이센스 서버와 함께 제공된 유틸리티를 사용하여 설정의 유효성을 확인할 수 있습니다. 이 안내서의 *구성 유효성 검사기* 를 참조하십시오.
 
@@ -23,9 +23,9 @@ Tomcat 및 라이센스 서버를 시작하려면 Tomcat의 [!DNL catalina.bat s
 
 ## 로그 파일 {#log-files}
 
-보호된 스트리밍을 위한 Adobe Primetime DRM Server에서 생성된 로그 파일은 LicenseServer.LogRoot에서 지정한 디렉토리에 있습니다.
+보호된 스트리밍을 위한 Adobe Primetime DRM 서버에서 생성된 로그 파일은 LicenseServer.LogRoot에서 지정한 디렉토리에 있습니다.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >서버가 실행되는 동안 현재 로그 파일을 삭제하거나 이동하는 경우 로그 파일을 다시 만들지 못할 수 있습니다. 따라서 일부 로그 정보가 삭제될 수 있습니다.
 
@@ -50,7 +50,7 @@ Tomcat 및 라이센스 서버를 시작하려면 Tomcat의 [!DNL catalina.bat s
 
 ### 전역 로그 파일 {#section_1CFA90748142439C9F3BE380969539DA}
 
-전역 로그 파일 [!DNL flashaccess-global.log]은 *LicenseServer.LogRoot에 있습니다*. Adobe Primetime DRM Java SDK 또는 서버가 초기화된 동안 생성된 로그 메시지가 로그에 포함될 수 있습니다.
+전역 로그 파일 [!DNL flashaccess-global.log]은 *LicenseServer.LogRoot에 있습니다*. Adobe Primetime DRM Java SDK 또는 로그 메시지가 서버가 초기화된 동안 생성된 로그 메시지를 로그에 포함할 수 있습니다.
 
 ### 파티션 로그 파일 {#section_5660137CD6AA40519E72A4315534846B}
 
@@ -84,4 +84,4 @@ HSM 암호는 언제든지 수정할 수 [!DNL flashaccess-global.xml] 있습니
 
 ### 테넌트 구성 파일 업데이트 {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
-파일에 지정된 모든 값을 언제든지 수정할 수 [!DNL flashaccess-tenant.xml] 있습니다. 변경 사항은 다음에 서버가 구성 파일을 다시 로드할 때 적용됩니다. 또한 서버는 모든 자격 증명() 파일 및 패키지 파일의 모든 수정 사항을 확인하고 테넌트 구성 파일에서 참조되는 목록 인증서 파일을 허용합니다. [!DNL .pfx]
+파일에 지정된 모든 값을 언제든지 수정할 수 [!DNL flashaccess-tenant.xml] 있습니다. 변경 사항은 다음에 서버가 구성 파일을 다시 로드할 때 적용됩니다. 또한 서버는 테넌트 구성 파일에서 참조되는 모든 자격 증명() 파일 및 패키지 허용 목록 인증서 파일의 모든 수정 사항을 확인합니다. [!DNL .pfx]
