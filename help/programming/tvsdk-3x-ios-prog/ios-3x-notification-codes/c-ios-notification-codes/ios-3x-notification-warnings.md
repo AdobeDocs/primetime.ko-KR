@@ -5,7 +5,10 @@ seo-title: 경고 알림 코드
 title: 경고 알림 코드
 uuid: da1a561d-3b9a-468a-a24a-7b6fa62aa2e8
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
 
 <!--<a id="section_F25366B6703040E3ADA993C113618F01"></a>-->
 
-대부분의 경고에는 다운로드하지 못한 리소스의 URL과 같은 관련 메타데이터가 포함되어 있습니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
+대부분의 경고에는 다운로드하지 못한 리소스의 URL과 같은 관련 메타데이터가 포함됩니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_C24772DF203B4DB2ACE6B475698C4C58"> 
  <thead> 
@@ -48,7 +51,7 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
    <td colname="2"><span class="codeph"> AD_RESOLVER_RETURNED_NO_ADS</span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"><span class="codeph"> INTERNAL_ERROR, AD_ID,DESCRIPTION</span> </td> 
-   <td colname="5"> <p>잘못된 VAST URL이나 VAST 래퍼에서 반환된 광고가 없어 광고 해결에 실패했습니다. </p> </td> 
+   <td colname="5"> <p>VAST URL이 잘못되었거나 VAST 래퍼에서 광고가 반환되지 않아 광고 해결에 실패했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>배경 매니페스트</b> </td> 
@@ -59,10 +62,10 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 204000 </span> </td> 
-   <td colname="2"><span class="codeph"> BACKGROUND_MANIFEST_WARNING</span> </td> 
+   <td colname="2"><span class="codeph"> BACKGROUND_MANIFEST_ 경고</span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
-   <td colname="4"><span class="codeph"> BACKGROUND_MANIFEST_WARNING_ERROR</span> BACKGROUND_MANIFEST_WARNING_NAME <span class="codeph"></span> <span class="codeph"> 설명</span> </td> 
-   <td colname="5"> <p> 백그라운드 매니페스트 다운로드에 오류가 있습니다. 백그라운드 매니페스트를 업데이트하는 경우 TVSDK 경고로 전달되며 재생이 중지되지 않습니다. </p> </td> 
+   <td colname="4"><span class="codeph"> BACKGROUND_MANIFEST_ WARNING_ERROR</span><span class="codeph"> BACKGROUND_MANIFEST_WARNING_NAME</span> <span class="codeph"> 설명</span> </td> 
+   <td colname="5"> <p> 백그라운드 매니페스트 다운로드에 오류가 있습니다. 배경 매니페스트 업데이트 시 발생하는 모든 문제는 TVSDK 경고로 전달되며 재생을 중단하지 않습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 204001 </span> </td> 
@@ -80,14 +83,14 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 210000 </span> </td> 
-   <td colname="2"><span class="codeph"> UNDEFINED_TIME_RANGES </span> </td> 
+   <td colname="2"><span class="codeph"> UNDEFINED_TIME_RANGE </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"> 없음 </td> 
-   <td colname="5"> 광고 신호 모드는 사용자 지정 범위로 정의되지만 정의된 범위는 없습니다. </td> 
+   <td colname="5"> 광고 신호 모드는 사용자 지정 범위로 정의되지만 정의된 범위가 없습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 210001 </span> </td> 
-   <td colname="2"><span class="codeph"> INVALID_TIME_RANGES </span> </td> 
+   <td colname="2"><span class="codeph"> INVALID_TIME_ 범위 </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"><span class="codeph"> 설명 </span> </td> 
    <td colname="5"> <p> 하나 이상의 시간 범위가 잘못되어 무시되거나 수정됩니다. </p> <p> DESCRIPTION은 잘못된 범위에 대한 설명을 포함하는 문자열입니다. </p> </td> 
@@ -118,7 +121,7 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
    <td colname="2"><span class="codeph"> AD_HLS_AUDIOONLY_MISSING </span> </td> 
    <td colname="3"><span class="codeph"> AD_NOT_INSERTED </span> </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>광고에 오디오 전용 스트림이 없음 </p> </td> 
+   <td colname="5"> <p>광고에 오디오 전용 스트림이 없습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 270003 </span> </td> 
@@ -132,7 +135,7 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
    <td colname="2"><span class="codeph"> AVASSET_FAILED_TO_CREATE </span> </td> 
    <td colname="3"><span class="codeph"> PLAYBACK_ERROR </span> </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>AVAsset을 만드는 동안 오류가 발생했습니다. </p> </td> 
+   <td colname="5"> <p>AVAset을 만드는 동안 오류가 발생했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 270006 </span> </td> 
@@ -153,6 +156,6 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
 
 >[!NOTE]
 >
->adID 및 소스(URL)는 `AD_ASSET` 키와 함께 알림 메타데이터의 PTAdAsset을 통해 검색할 수 있습니다.
+>adID 및 소스(URL)는 `AD_ASSET` 키가 있는 알림 메타데이터의 PTAdAsset을 통해 검색할 수 있습니다.
 >
 >이 [] 속성은 알림에 대한 선택적 키를 지정합니다.
