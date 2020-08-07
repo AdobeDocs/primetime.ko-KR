@@ -3,7 +3,10 @@ seo-title: 보호된 내용을 재생하는 데 필요한 장치 기능
 title: 보호된 내용을 재생하는 데 필요한 장치 기능
 uuid: 16ed73d9-e02f-4c86-bf15-2d3e7122bf5a
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
 
@@ -31,13 +34,13 @@ source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
   <tr> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">신뢰의 하드웨어 루트 </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">"true" 또는 "false" </p> </td> 
-   <td colname="3" class="- topic/entry "> <p class="- topic/p ">Exact Mac </p> </td> 
-   <td colname="4" class="- topic/entry "> <p class="- topic/p ">true이면 장치에 하드웨어 신뢰 루트가 있어야 합니다. </p> </td> 
+   <td colname="3" class="- topic/entry "> <p class="- topic/p ">정확 </p> </td> 
+   <td colname="4" class="- topic/entry "> <p class="- topic/p ">true인 경우 장치에 신뢰 하드웨어 루트가 있어야 합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->이 사용 규칙은 Adobe Access 클라이언트 버전 2.0.2 이상에서 지원됩니다. 이전 클라이언트의 동작은 라이센스 서버에서 지원하는 최소 클라이언트 버전에 따라 달라집니다. 최소 [클라이언트 버전을 참조하십시오](../../../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md).
+>이 사용 규칙은 Adobe Access 클라이언트 버전 2.0.2 이상에서 지원됩니다. 이전 클라이언트의 동작은 라이선스 서버에서 지원하는 최소 클라이언트 버전에 따라 달라집니다. 최소 [클라이언트 버전을 참조하십시오](../../../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md).
 
