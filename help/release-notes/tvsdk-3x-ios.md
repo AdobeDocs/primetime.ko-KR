@@ -2,7 +2,7 @@
 title: iOS용 TVSDK 3.12 릴리스 노트
 description: iOS용 TVSDK 3.12 릴리스 노트는 TVSDK iOS 3.12의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다.
 translation-type: tm+mt
-source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -18,7 +18,7 @@ iOS용 TVSDK 3.12 릴리스 노트는 TVSDK iOS 3.12의 새로운 기능 또는 
 
 iOS 3.12를 다운로드하기 전에 하드웨어, 운영 체제 및 애플리케이션 버전이 다음 요구 사항을 충족하는지 확인하십시오.
 
-운영 체제: iOS 8.0 이상
+운영 체제:iOS 8.0 이상
 
 ## iOS TVSDK 3.12
 
@@ -78,9 +78,9 @@ vastXML 속성이 제대로 설정되지 않고 nil 값을 반환하고 있습�
 
 * 이제 사용자는 TVSDK 3.4를 사용하여 전체 광고 해상도 및 매니페스트 다운로드에 대한 시간 초과 값을 설정할 수 있습니다. 지정된 시간 제한 내에 일부 광고가 해결되지 않으면 TVSDK에서 나머지 광고를 재생합니다.
 
-* PTAdMetadata: adRequestTimeout API는 더 이상 사용되지 않으며 제거됩니다. 기본값은 35초로 설정되었습니다.
+* PTAdMetadata:adRequestTimeout API는 더 이상 사용되지 않으며 제거됩니다. 기본값은 35초로 설정되었습니다.
 
-* 두 개의 새로운 대체 API가 PTAdMetadataClass에 도입되었습니다. adResolutionTimeout - 광고 매니페스트 다운로드에 대한 전체 광고 해상도 호출 및 ManifestTimeout - 시간 초과입니다.
+* 두 개의 새로운 대체 API가 PTAdMetadataClass에 도입되었습니다.adResolutionTimeout - 광고 매니페스트 다운로드에 대한 전체 광고 해상도 호출 및 ManifestTimeout - 시간 초과입니다.
 
 **매출 최적화**
 
@@ -133,7 +133,7 @@ Xcode10을 준수하기 위해 TVSDK가 &quot;`libstdc++`&quot;에서 &quot;`lib
 **버전 1.4.43**
 
 * 부분 광고 추적을 트리거하지 않고 광고 중간에 참여할 수 있는 TV와 같은 경험\
-   예: 사용자는 3개의 30초 광고로 구성된 90초 광고 중단의 중간(40초)에 참여합니다. 이것은 쉬는 동안 두 번째 광고에서 10초입니다.
+   예:사용자는 3개의 30초 광고로 구성된 90초 광고 중단의 중간(40초)에 참여합니다. 이것은 쉬는 동안 두 번째 광고에서 10초입니다.
 
    * 나머지 기간(20초) 동안 두 번째 광고 다음에 세 번째 광고가 재생됩니다.
    * 부분 광고(두 번째 광고)에 대한 광고 추적기는 트리거되지 않습니다. 세 번째 광고에 대한 추적기만 트리거됩니다.
@@ -149,9 +149,9 @@ Xcode10을 준수하기 위해 TVSDK가 &quot;`libstdc++`&quot;에서 &quot;`lib
 
 API 변경 사항:
 
-* **isSecure**: 플레이어가 레코딩 및 오류 발생 시 보호되도록 새로운 API가 도입되었습니다. 기본값은 true입니다.
+* **isSecure**:플레이어가 레코딩 및 오류 발생 시 보호되도록 새로운 API가 도입되었습니다. 기본값은 true입니다.
 
-* **allowExternalRecording**: 보안 컨텐츠에 대한 에어플레이 미러링을 허용하는 새로운 API가 도입되었습니다. Airplay 미러링은 레코딩으로 처리되므로 `allowExternalRecording` 값을 `True`설정하여 에어플레이 미러링을 허용하거나 보안 컨텐츠를 위해 에어플레이 미러링을 중지하도록 `False` 설정해야 합니다. 기본적으로 `value` true입니다.
+* **allowExternalRecording**:보안 컨텐츠에 대한 에어플레이 미러링을 허용하는 새로운 API가 도입되었습니다. Airplay 미러링은 레코딩으로 처리되므로 `allowExternalRecording` 값을 `True`설정하여 에어플레이 미러링을 허용하거나 보안 컨텐츠를 위해 에어플레이 미러링을 중지하도록 `False` 설정해야 합니다. 기본적으로 `value` true입니다.
 
 **버전 1.4.40**
 
@@ -167,29 +167,31 @@ API 변경 사항:
 
 **버전 1.4.36**
 
-iOS TVSDK에서 VHL 2.0 통합 및 인증: API의 복잡성을 줄여 `VideoHeartbeatsLibrary` 구현 장벽을 줄입니다.
+iOS TVSDK에서 VHL 2.0 통합 및 인증:API의 복잡성을 줄여 `VideoHeartbeatsLibrary` 구현 장벽을 줄입니다.
 
 **버전 1.4.34**
 
 **네트워크 광고 정보**
 
-이제 TVSDK API는 타사 VAST 응답에 대한 추가 정보를 제공합니다. 광고 ID, 광고 시스템 및 VAST 광고 확장 기능은 광고 자산의 속성을 통해 액세스할 수 있는 `PTNetworkAdInfo` `networkAdInfo` 클래스에서 제공됩니다. 이 정보는 해자 Analytics과 같은 다른 광고 Analytics 플랫폼과 통합하는 데 사용할 **수 있습니다**.
+이제 TVSDK API는 타사 VAST 응답에 대한 추가 정보를 제공합니다. 광고 ID, 광고 시스템 및 VAST 광고 확장 기능은 광고 자산의 속성을 통해 액세스할 수 있는 `PTNetworkAdInfo` `networkAdInfo` 클래스에서 제공됩니다. 이 정보는 해자 분석과 같은 다른 광고 분석 플랫폼과 통합하는 데 사용할 **수 있습니다**.
 
 **버전 1.4.31**
 
-* **요금 청구 지표** 실제 사용에 관계없이 고정 요금 대신 사용한 만큼만 지불하려는 고객을 수용하기 위해 Adobe는 사용 지표를 수집하고 이러한 지표를 사용하여 고객에게 청구할 비용을 결정합니다.
+* **요금 청구 지표** 실제 사용에 관계없이 고정 요금 대신 사용한 만큼만 지불하려는 고객을 수용하기 위해 Adobe은 사용 지표를 수집하고 이러한 지표를 사용하여 고객에게 청구할 비용을 결정합니다.
 
-   TVSDK가 스트림 시작 이벤트를 생성할 때마다 플레이어는 HTTP 메시지를 Adobe의 결제 시스템으로 주기적으로 보내기 시작합니다. 청구 가능한 기간이라고 하는 기간은 표준 VOD, 프로 VOD(미드롤 광고 활성화) 및 라이브 컨텐츠에 대해 다를 수 있습니다. 각 컨텐츠 유형의 기본 기간은 30분이지만 Adobe와의 계약에 따라 실제 값이 결정됩니다.
+   TVSDK가 스트림 시작 이벤트를 생성할 때마다 플레이어는 주기적으로 HTTP 메시지를 Adobe의 청구 시스템으로 보내기 시작합니다. 청구 가능한 기간이라고 하는 기간은 표준 VOD, 프로 VOD(미드롤 광고 활성화) 및 라이브 컨텐츠에 대해 다를 수 있습니다. 각 컨텐츠 유형의 기본 기간은 30분이지만 Adobe과의 계약에 따라 실제 값이 결정됩니다.
 
-* **이제 CRS Ads** TVSDK에 대한 다중 CDN 지원은 CRS 광고에 대해 다중 CDN을 지원합니다. CRS 광고에 대한 FTP 세부 정보를 제공함으로써 Akamai와 같은 기본 Adobe 소유 CDN 이외의 CDN 위치를 지정할 수 있습니다.
+* **이제 CRS Ads** TVSDK에 대한 다중 CDN 지원은 CRS 광고에 대해 다중 CDN을 지원합니다. CRS 광고에 대한 FTP 세부 정보를 제공함으로써 기본 Adobe 소유 CDN(예: Akamai)이 아닌 CDN 위치를 지정할 수 있습니다.
 
 **버전 1.4.29**
 
 클래스 `PTSDKConfig` 에서 forceHTTPS API가 추가되었습니다.
 
-이 `PTSDKConfig` 클래스는 Adobe Primetime 광고 결정, DRM 및 비디오 Analytics 서버에 대한 요청에 SSL을 적용하는 방법을 제공합니다. 자세한 내용은 이 클래스의 `forceHTTPS` 및 `isForcingHTTPS` 메서드를 참조하십시오. 매니페스트가 HTTPS를 통해 로드되는 경우 TVSDK는 HTTPS의 컨텐츠 사용을 보존하며 해당 매니페스트에서 상대 URL을 로드할 때 이러한 사용을 반영합니다.
+이 `PTSDKConfig` 클래스는 Adobe Primetime 광고 결정, DRM 및 비디오 분석 서버에 대한 요청에 SSL을 적용하는 방법을 제공합니다. 자세한 내용은 이 클래스의 `forceHTTPS` 및 `isForcingHTTPS` 메서드를 참조하십시오. 매니페스트가 HTTPS를 통해 로드되는 경우 TVSDK는 HTTPS의 컨텐츠 사용을 보존하며 해당 매니페스트에서 상대 URL을 로드할 때 이러한 사용을 반영합니다.
 
->[!NOTE] 광고 추적 픽셀, 컨텐츠 및 광고 URL 및 유사한 요청과 같은 타사 도메인에 대한 요청은 수정되지 않으며, HTTPS를 통해 지원되는 URL을 제공하는 것은 컨텐츠 제공업체 및 광고 서버의 책임입니다.
+>[!NOTE]
+>
+>광고 추적 픽셀, 컨텐츠 및 광고 URL 및 유사한 요청과 같은 타사 도메인에 대한 요청은 수정되지 않으며, HTTPS를 통해 지원되는 URL을 제공하는 것은 컨텐츠 제공업체 및 광고 서버의 책임입니다.
 
 **버전 1.4.18**
 
@@ -217,13 +219,15 @@ Primetime iOS TVSDK는 이제 VPAID 2.0 Javascript 크리에이티브를 지원�
 
 * 다음 기능은 현재 지원되지 않습니다.
 
-   * 디지털 저작권 관리(DRM)
+   * Digital Rights Management(DRM)
    * 광고 배너
    * TV 마크업 언어(TVML)
 
 **버전 1.4.13**
 
->[!NOTE] TVSDK 빌드에서 Nielsen 모듈이 제거되었고, TVSDK가 곧 새로운 Nielsen 통합 모듈로 업데이트될 예정입니다.
+>[!NOTE]
+>
+>TVSDK 빌드에서 Nielsen 모듈이 제거되었고, TVSDK가 곧 새로운 Nielsen 통합 모듈로 업데이트될 예정입니다.
 
 **광고 폴백, 광고 선택 로직의 데이지 체인(Zendesk #3103)**
 
@@ -247,7 +251,7 @@ Primetime iOS TVSDK는 이제 VPAID 2.0 Javascript 크리에이티브를 지원�
 
 * **온프레미스 개인화 지원**
 
-다른 종단점으로 이동할 클라이언트의 개별화 요청을 사용자 정의할 수 있도록 Adobe Personalization Server의 온-프레미스 설치를 지원합니다.
+다른 종단점으로 이동하도록 클라이언트의 개별화 요청을 사용자 지정하는 Adobe Personalization Server의 온-프레미스 설치를 지원합니다.
 
 * **해상도 기반의 출력 보호**
 
@@ -257,7 +261,7 @@ Primetime iOS TVSDK는 이제 VPAID 2.0 Javascript 크리에이티브를 지원�
 
 * **비디오 하트비트 라이브러리(VHL)가 버전 1.4.1.1로 업데이트**
 
-   * Adobe Analytics Video Essentials를 사용하여 다른 SDK 또는 플레이어에서 다양한 분석 사용 사례를 번들로 제공하는 기능을 추가했습니다.
+   * 다른 SDK 또는 플레이어에서 Adobe Analytics Video Essentials를 사용하여 다양한 분석 사용 사례를 번들로 제공하는 기능을 추가했습니다.
    * 광고 추적은 `trackAdBreakStart` 및 `trackAdBreakComplete` 메서드를 제거하여 최적화되었습니다. 광고 나누기는 `trackAdStart` 및 `trackAdComplete` 메서드 호출에서 유추됩니다.
    * 광고를 추적할 때 더 이상 `playhead` 속성이 필요하지 않습니다.
    * Marketing Cloud 방문자 ID에 대한 지원을 추가했습니다.
@@ -367,7 +371,7 @@ Comment Type: draft
 
 * **Ticket36685** - 라이브 에셋 - 플레이어 시간 진행률과 시간이 일치하지 않으며 SCTE 마커 timeCorrect 시간은 라이브 포인트에 앞서 있는 SCTE 마커에 대해 계산됩니다.
 
-* **Ticket36492** - 일시 중지된 상태 `currentTime` 동안 새 위치를 찾을 때 업데이트되지 `localTime` 않습니다. 이제 플레이어가 일시 중지 상태인 경우 Player의 현재 시간을 0으로 설정할 수 있습니다. 이전에는 재생 상태에서만 0으로 설정되었던 현재 시간이 이전이었습니다.
+* **Ticket36492** - 일시 중지된 상태 `currentTime` 동안 새 위치를 찾을 때 업데이트되지 `localTime` 않습니다. 이제 플레이어가 일시 중지 상태인 경우 Player의 현재 시간을 0으로 설정할 수 있습니다.이전에는 재생 상태에서만 0으로 설정되었던 현재 시간이 이전이었습니다.
 
 **버전 1.4.45**
 
@@ -383,14 +387,14 @@ Comment Type: draft
 
 광고 서버에서 보고한 기간과 실제 광고 컨텐츠가 일치하지 않는 경우 사례를 처리하기 위해 추가 검사가 추가되었습니다.
 
-* **Ticket34801** - 일시 중지된 상태 동안 새 위치를 찾을 때 currentTime 및 localTime이 업데이트되지 않았습니다. 플레이어가 일시 중지된 상태에서 현재 시간을 0으로 설정할 수 있습니다. 이전에는 재생 상태에서만 0으로 설정되었던 현재 시간이 이전이었습니다.
+* **Ticket34801** - 일시 중지된 상태 동안 새 위치를 찾을 때 currentTime 및 localTime이 업데이트되지 않았습니다. 플레이어가 일시 중지된 상태에서 현재 시간을 0으로 설정할 수 있습니다.이전에는 재생 상태에서만 0으로 설정되었던 현재 시간이 이전이었습니다.
 
 * **Ticket35037** - 신호 기반 광고 삽입에서 돌아올 때 재생이 잘못된 URL을 정지합니다.
 1.4.42 릴리스의 해결된 문제 #34385에 대한 향상된 수정. 작업 큐가 더 강력해지도록 isCancelled 확인 및 예외 처리 코드가 추가되었습니다.
 
 **버전 1.4.43**
 
-* (ZD#32990) - iOS: 일부 큐 포인트에서 광고 대신 재생되는 컨텐츠 `selectedMediaOptionInMediaSelectionGroup` AVPlayerItem 인터페이스의 일부인 API가 이제 iOS 11의 AVMediaSelection 아래로 이동되었습니다. 이 새로운 API를 사용하여 문제가 해결되었습니다.
+* (ZD#32990) - iOS:일부 큐 포인트에서 광고 대신 재생되는 컨텐츠 `selectedMediaOptionInMediaSelectionGroup` AVPlayerItem 인터페이스의 일부인 API가 이제 iOS 11의 AVMediaSelection 아래로 이동되었습니다. 이 새로운 API를 사용하여 문제가 해결되었습니다.
 
 * (ZD#33683) 메타데이터 문자열에서 TVSDK == 접미사를 제거했습니다. 구문 분석 논리에서 문제가 해결되었습니다.
 
@@ -467,7 +471,7 @@ Comment Type: draft
 
 * (ZD #32465) - 플레이어에서 병합된 재생 목록을 처리할 수 없습니다.
 
-   전화 통화 `finishLoadingWithError`(다음 사용: 오류) AV 재단이 대체 스트림/트리거 장애 조치를 시도하려면.
+   전화 통화 `finishLoadingWithError`(다음 사용:오류) AV 재단이 대체 스트림/트리거 장애 조치를 시도하려면.
 
 * (ZD #31951) - 라이센스 회전 중 TVSDK 오류
 
@@ -511,7 +515,7 @@ Comment Type: draft
 
 **버전 1.4.38** (1.4.38.860)
 
-* (ZD #29281) - iOS: CRS 요청에 AdSystem 및 Creative Id 추가
+* (ZD #29281) - iOS:CRS 요청에 AdSystem 및 Creative Id 추가
 
 CRS 표준화 규칙에 따라 CRS 요청에서 크리에이티브 ID 및 AdSystem 사용
 
@@ -533,7 +537,7 @@ iOS에서 프로그래머틱 광고 지원이 추가되었습니다.
 
 스트림의 # EXT-X-PLAYLIST-TYPE 태그가 VOD가 아닌 이벤트로 설정되어 재생되는 문제
 
-* (ZD #29281) - iOS: CRS 요청에 AdSystem 및 Creative Id 추가
+* (ZD #29281) - iOS:CRS 요청에 AdSystem 및 Creative Id 추가
 
 CRS 표준화 규칙에 따라 CRS 요청에서 Creative Id 및 AdSystem 사용
 
@@ -587,7 +591,7 @@ CRS 백엔드 요구 사항에 따라 표준화된 URL 대신 1401 CRS 요청에
 
 이 문제는 사용 가능한 모든 번들에서 볼 수 있도록 리소스 로드를 업데이트하여 해결되었습니다.
 
-* (ZD# 27460) 미드롤 첫 번째 광고 통화 - 403을 `cdn.auditude.com` 반환하도록 POST를 실행합니다.
+* (ZD# 27460) 미드롤 첫 광고 통화 - 403을 `cdn.auditude.com` 반환하는 POST
 
 새 CDN 계정은 POST CDN 요청을 처리할 수 없습니다. 이 문제는 코드를 업데이트하여 광고 요청이 POST 대신 GET이 되도록 함으로써 `cdn.auditude.com` 해결되었습니다.
 
@@ -631,9 +635,9 @@ CRS 백엔드 요구 사항에 따라 표준화된 URL 대신 1401 CRS 요청에
 
 이 릴리스의 TVSDK에 대해 다음 문제가 해결되었습니다.
 
-* (ZD# 24180) 목록을 허용하려면 사용자 지정 헤더를 추가합니다.
+* (ZD# 24180) 사용자 정의 헤더를 허용 목록에 추가합니다.
 
-TVSDK 허용 목록에 새 사용자 지정 헤더가 추가되었습니다.
+TVSDK 허용 목록에 새로운 사용자 정의 헤더가 추가되었습니다.
 
 * (ZD# 25016) ABR 제어 매개 변수가 설정되면 장애 조치(failover) 스트림이 임의로 선택됩니다
 
@@ -653,19 +657,19 @@ VMAP에서의 마지막 광고 중단 시작 시간이 전체 기간이 완료�
 
 * 비디오 하트비트 라이브러리(VHL)가 버전 1.5.9로 업데이트되어 다음 문제를 해결했습니다.
 
-* (ZD #22351) VHL - Analytics: 라이브 비디오 에셋 지속 시간
+* (ZD #22351) VHL - 분석:라이브 비디오 에셋 지속 시간
 
 이 문제는 PTVideoAnalyticsTrackingMetadata에 assetDuration API를 추가하여 라이브/선형 스트림의 자산 지속 시간을 업데이트하고 실시간 스트림을 확인하는 논리를 제공하여 해결되었습니다.
 
-* (ZD# 22675) VHL - Analytics: 라이브 비디오 에셋 기간 업데이트
+* (ZD# 22675) VHL - 분석:라이브 비디오 에셋 기간 업데이트
 
 이 문제는 ZD #22351과 동일합니다.
 
-* (ZD #25908) VHL - Analytics: Adobe Heartbeat 이벤트 충돌
+* (ZD #25908) VHL - 분석:Adobe 하트비트 이벤트 충돌
 
 이 문제는 iOS 버전 1.5.9용 최신 버전의 VHL을 사용하도록 구현을 업데이트하여 안정성과 성능을 향상시킴으로써 해결되었습니다.
 
-* (ZD #25956) VHL - Analytics: 비디오를 반복적으로 재생하면 충돌이 발생합니다.
+* (ZD #25956) VHL - 분석:비디오를 반복적으로 재생하면 충돌이 발생합니다.
 
 이 문제는 ZD #25908과 동일합니다.
 
@@ -751,7 +755,7 @@ VideoAnalytics에서 누락된 비디오 길이에 대한 문제가 해결되었
 
 이 문제는 (ZD #21590)과 동일합니다.
 
-* (ZD #22280) - Analytics 비디오 길이를 0으로 설정
+* (ZD #22280) - Analytics 비디오 길이가 0으로 설정됨
 
 이 문제는 (ZD #21590)과 동일합니다.
 
@@ -777,7 +781,7 @@ VPAID 광고 재생이 실패할 경우 플레이어 보기를 숨김 취소하�
 
 이 문제는 장(chapter)과 장(non-chapter) 경계 간에 전환할 때 장 시작/완료를 제대로 검색하도록 VideoAnalyticsTracker를 업데이트하여 해결되었습니다.
 
-* (ZD #20784) - Analytics: 라이브 비디오 전환을 위한 콘텐츠 트리거 완료
+* (ZD #20784) - 분석:라이브 비디오 전환을 위한 콘텐츠 트리거 완료
 
 이 문제는 비디오 추적 세션 중에 컨텐츠 완료를 수동으로 트리거하는 논리를 추가하여 해결되었습니다.
 
@@ -816,7 +820,7 @@ VPAID 광고 재생이 실패할 경우 플레이어 보기를 숨김 취소하�
 
 * (ZD #21782) - iOS 오류 코드 10100
 
-Adobe Access DRM에서 재생을 시작하는 동안 TVSDK에서 10100 오류를 반환하는 문제가 해결되었습니다.
+Adobe 액세스 DRM 스트림에서 재생을 시작하는 동안 TVSDK에서 101000 오류를 반환하는 문제가 해결되었습니다.
 
 * (ZD #21889) - 온라인 광고 및 오프라인 컨텐츠 재생이 실패합니다
 
@@ -828,13 +832,13 @@ AES로 암호화된 오프라인 콘텐츠에 대한 광고가 해결된 후 재
 
 * (ZD #22257) - TVSDK가 DRM 스트림을 재생하지 못합니다.
 
-Adobe Access DRM에서 재생을 시작하는 동안 101000 오류를 반환하는 TVSDK에서 발생하는 문제가 해결되었습니다.
+Adobe 액세스 DRM 스트림에서 재생을 시작하는 동안 101000 오류를 반환하는 TVSDK에서 발생하는 문제가 해결되었습니다.
 
 **iOS 6.0용 버전 1.4.22** (1.4.22.627)+
 
 * (ZD #18709) - iOS용 TVSDK에서 충돌이 발생했습니다.
 
-일부 Adobe Access DRM으로 보호된 스트림에서 발생하는 충돌 문제가 수정되었습니다.
+일부 Adobe 액세스 DRM 보호 스트림에서 발생하는 충돌 문제가 수정되었습니다.
 
 * (ZD #18850) - CRS 규칙에 따라 크리에이티브 선택 로직을 업데이트합니다.
 
@@ -870,7 +874,7 @@ EVENT 스트림의 경우, 이전 릴리스 빌드에서 광고 할당이 올바
 
 **iOS 6.0용 버전 1.4.21** (1.4.21.605)+
 
-* (ZD #20749) - 폴백이 비어 있지 않은 VAST 응답을 건너뜁니다. 추가 광고 추적 URL 실행
+* (ZD #20749) - 폴백이 비어 있지 않은 VAST 응답을 건너뜁니다.추가 광고 추적 URL 실행
 
 대체 광고에 대한 중복 핑 문제가 해결되었습니다.
 
@@ -919,7 +923,7 @@ TVSDK에서 대규모 파서 인스턴스를 잘못 지정한 충돌이 수정�
 
 JavaScript MIME 유형이 항상 포함되거나 유효한 MIME 유형으로 간주되지 않았습니다. 이 문제는 유효한 MIME 유형으로 JavaScript를 포함함으로써 해결되었습니다.
 
-* (ZD #20749) - 폴백이 비어 있지 않은 VAST 응답을 건너뜁니다. 추가 광고 추적 URL 실행
+* (ZD #20749) - 폴백이 비어 있지 않은 VAST 응답을 건너뜁니다.추가 광고 추적 URL 실행
 
 일부 크리에이티브 전문가가 다시 패키지되지 않는 문제가 해결되었습니다.
 
@@ -969,7 +973,7 @@ Akamai 토큰화된 스트림은 세그먼트 요청 시 쿠키를 전송해야 
 
 모든 경고가 해결되었습니다.
 
-**참고**: tvOS 호환 라이브러리가 TVSDK용으로 추가되었습니다.
+**참고**:tvOS 호환 라이브러리가 TVSDK용으로 추가되었습니다.
 
 **버전 1.4.16** (1.4.16.1454)
 
@@ -991,7 +995,7 @@ TVSDK 라이브러리가 YUV RGB 색상 변환을 수행하는 네온 코드를 
 
 * (Zendesk #18072) - Android M - 응용 프로그램 충돌
 
-프로필 및 수준이 지원되는지 확인할 때 MediaCodecList 및 MediaCodecInfo API를 호출하는 동안 이 충돌이 발생합니다. Adobe는 추가 인사이트를 위해 Google의 지원을 모색하고 있습니다. 이 문제는 코덱이 필요한 경우에만 이러한 API를 호출할 수 있도록 미리 모든 코덱을 로드하여 임시 작업을 제공하여 해결되었습니다.
+프로필 및 수준이 지원되는지 확인할 때 MediaCodecList 및 MediaCodecInfo API를 호출하는 동안 이 충돌이 발생합니다. Adobe은 추가적인 인사이트를 얻기 위해 구글의 지원을 모색하고 있다. 이 문제는 코덱이 필요한 경우에만 이러한 API를 호출할 수 있도록 미리 모든 코덱을 로드하여 임시 작업을 제공하여 해결되었습니다.
 
 * (Zendesk #18074) - Android 6.0과 Nexus에서 아랍어 자막이 작동하지 않음
 
@@ -999,13 +1003,13 @@ TVSDK 라이브러리가 YUV RGB 색상 변환을 수행하는 네온 코드를 
 
 **iOS 6.0용 버전 1.4.15** (1.4.15.512)+
 
-**참고**: Nielsen 모듈은 TVSDK 빌드에서 제거되었지만 TVSDK는 곧 새로운 Nielsen 통합 모듈로 업데이트될 예정입니다.
+**참고**:Nielsen 모듈은 TVSDK 빌드에서 제거되었지만 TVSDK는 곧 새로운 Nielsen 통합 모듈로 업데이트될 예정입니다.
 
 * (ZD #2228) - MediaPlayerNotification에서 사용할 수 없는 매니페스트를 가져올 때 오류가 발생했습니다.
 
 알림 M3U8_PARSER_ERROR 발생 시 컨텐츠를 노출하는 메타데이터를 추가했습니다.
 
-* (ZD #4437) - Adobe Primetime SDK 내의 충돌
+* (ZD #4437) - Adobe Primetime SDK 내에서 충돌
 
 자막/대체 오디오를 준비할 때 보고된 충돌이 해결되었습니다.
 
@@ -1042,7 +1046,7 @@ iOS 9를 제대로 지원하려면 Application Transportation Security의 예외
 
 **iOS 6.0용 버전 1.4.12** (1.4.12.463)+
 
-* (ZD #2751) CSAI 및 CRS / 향상: 특정 미디어 파일 URL에서 동적 요소를 처리합니다.
+* (ZD #2751) CSAI 및 CRS / 향상:특정 미디어 파일 URL에서 동적 요소를 처리합니다.
 
 동적 크리에이티브 URL을 사용하여 광고를 제대로 처리할 수 있도록 Creative Repackaging Service를 업데이트했습니다.
 
@@ -1092,7 +1096,7 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 
 **버전 1.4.5** (1.4.5.283)
 
-* (ZD #2141) TreeHouse 앱에 대한 Analytics 구현이 패키지를 빌드하는 라이브러리를 `AdobeAnalyticsPlugin.a` 추가했습니다.
+* (ZD #2141) TreeHouse 앱에 대한 Analytics 구현이 패키지를 빌드할 라이브러리를 `AdobeAnalyticsPlugin.a` 추가했습니다.
 * 비디오 하트비트 라이브러리를 1.4.1.2로 업데이트
 * [PTPALY-4226] [ZD #2423과 관련) DRM 재설정을 수행하면 응용 프로그램 문서 데이터가 삭제될 수 있습니다.
 
@@ -1102,7 +1106,7 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 
 * (ZD #2435) 분석 요구 사항에 대한 TV SDK 설명서
 
-**버전 1.4.2** (1.4.2.210: iOS 6.0+)
+**버전 1.4.2** (1.4.2.210:iOS 6.0+)
 
 * (ZD #1129) `_player.currentItem.audioOptions` 빈 항목 반환
 * (ZD #2109) Primetime PSDK 1.4.1.125는 Xcode 5.1.1과 작동하지 않음
@@ -1141,7 +1145,7 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 
 * TVSDK 1.4.28은 iOS 10 베타 7에서 인증되었습니다.
 * DRM을 지원하므로 추가 `forceHTTPS` 및 `isForcingHTTPS` API를 통해 HTTPS를 적용할 수 있습니다.
-* VHL 라이브러리가 1.5.8로 업데이트되고 Adobe Mobile 라이브러리가 4.8.4로 업데이트되며 로거 유틸리티 라이브러리가 버전 7.0 배포 대상으로 업데이트되었습니다.
+* VHL 라이브러리가 1.5.8로 업데이트되고, Adobe 모바일 라이브러리가 4.8.4로 업데이트되고, 로거 유틸리티 라이브러리가 버전 7.0 배포 대상으로 업데이트되었습니다.
 
 **버전 1.4.19**
 
@@ -1153,9 +1157,9 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 
    이 버전의 TVSDK는 tvOS를 지원하며 암호화되지 않은 HLS 스트림에 대해 인증되었습니다.
 
-   **참고**: 다음 컴파일 지침을 기억하십시오.
+   **참고**:다음 컴파일 지침을 기억하십시오.
 
-   * TVSDK tvOs 지원은 비 Adobe DRM으로 암호화된 스트림으로 제한됩니다. tvOS 빌드 설정에서 drmNativeInterface.framework 참조를 제거해야 합니다. AES 암호화된 스트림은 여전히 지원됩니다.
+   * TVSDK tvOs 지원은 Adobe이 아닌 DRM으로 암호화된 스트림으로 제한됩니다. tvOS 빌드 설정에서 drmNativeInterface.framework 참조를 제거해야 합니다. AES 암호화된 스트림은 여전히 지원됩니다.
    * Apple에서는 모든 Apple TV 응용 프로그램이 비트 코드가 활성화되어 있어야 하므로 프로젝트 설정에서 이 플래그를 설정해야 합니다.
 
 ## 알려진 문제 및 제한 사항 {#known-issues-and-limitations}
@@ -1169,11 +1173,11 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 * iOS 11에서 라이선스 회전 비디오가 재생되지 않고 iOS 9.x 및 iOS 10.x에서도 제대로 재생되는 경우가 있을 수 있습니다.
 * VPAID 2.0 지원에서 재생을 AirPlay에서 활성화하면 VPAID 광고를 건너뜁니다.
 * 최소 타겟이 iOS7(이상)로 설정된 경우 drmNativeInterface.framework가 올바르게 링크되지 않습니다.
-해결 방법: 다음과 같이 libstdc++.6.dylib 라이브러리를 명시적으로 지정합니다. Target->빌드 단계->바이너리를 라이브러리와 연결하고 libstdc++.6.dylib를 추가합니다.
+해결 방법:다음과 같이 libstdc++.6.dylib 라이브러리를 명시적으로 지정합니다.Target->빌드 단계->바이너리를 라이브러리와 연결하고 libstdc++.6.dylib를 추가합니다.
 * 포스트롤 대체 API에 대해 삽입되지 않습니다.
 * 광고 중단 내에서 검색하면 광고 시작 및 광고 중단 알림이 중복됩니다.
 * currentTimeUpdateInterval 설정은 아무런 효과가 없습니다.
-참고: 특정 iOS 버전에서는 OS가 PSDKLibrary.framework 내에 리소스를 자동으로 로드하지 않습니다. PSDKResources.bundle을 애플리케이션의 번들 리소스에 수동으로 복사해야 합니다. &quot;빌드 단계&quot;로 이동하여 번들 리소스를 복사합니다.
+참고:특정 iOS 버전에서는 OS가 PSDKLibrary.framework 내에 리소스를 자동으로 로드하지 않습니다. PSDKResources.bundle을 애플리케이션의 번들 리소스에 수동으로 복사해야 합니다.&quot;빌드 단계&quot;로 이동하여 번들 리소스를 복사합니다.
 * Xcode 8 이하 버전에서는 참조 앱을 빌드할 수 없습니다. iOS TVSDK 버전 1.4.41 이상 버전에서 Xcode 9를 사용하여 컴파일하십시오.
 * VPAID 광고는 delayAdLoadingTolerance 값을 준수하지 않습니다.
 * 24077- 자막이 있는 특정 HLS 콘텐츠의 경우 정지 또는 재설정 메서드에서 플레이어가 충돌합니다.
@@ -1193,4 +1197,4 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 
 * [iOS용 TVSDK 3.4 프로그래머 가이드](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-for-ios/introduction/ios-3x-overview.html)
 * [TVSDK iOS 3.4 API 참조](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v34/index.html)
-* Adobe Primetime 학습 및 지원 페이지에서 [전체 도움말 문서를](https://helpx.adobe.com/support/primetime.html) 참조하십시오.
+* 자세한 도움말 설명서는 [Adobe Primetime 학습 및 지원](https://helpx.adobe.com/support/primetime.html) 페이지를 참조하십시오.
