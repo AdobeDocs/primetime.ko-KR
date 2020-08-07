@@ -5,7 +5,10 @@ seo-title: TVSDK 애플리케이션에서 Apple FairPlay 사용
 title: TVSDK 애플리케이션에서 Apple FairPlay 사용
 uuid: fafffdb9-09f9-45fb-9957-3c6e95ed55f9
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
@@ -14,21 +17,21 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 TVSDK 애플리케이션에서 Apple의 DRM 솔루션인 Apple FairPlay Streaming을 구현할 수 있습니다.
 
-1. 구현하여 FairPlay 고객 리소스 로더를 `PTAVAssetResourceLoaderDelegate`만듭니다.
+1. 구현하여 FairPlay 고객 리소스 로더를 만듭니다 `PTAVAssetResourceLoaderDelegate`.
 
-   자세한 내용은 TVSDK [애플리케이션의](../../c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)Apple FairPlay를 참조하십시오.
+   자세한 내용은 TVSDK 애플리케이션에서 [Apple FairPlay를 참조하십시오](../../c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md).
 
    >[!NOTE]
    >
-   >FPS 인식 앱 개발을 위한 FairPlay Server SDK *에* 포함되어 있는 FairPlayStreaming_PG.pdf *(* FairPlay Server SDK [)의 지침을 따르십시오](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip).
+   >FPS 인식 앱 *개발을 위한* FairPlay Server SDK에 포함되어 있는 FairPlay 스트리밍 프로그램 안내서 *(* FairPlayStreaming_PG.pdf [)의 지침을 따라야 합니다](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip).
 
-   이 `resourceLoader:shouldWaitForLoadingOfRequestedResource` 방법은 안에 있는 것과 같습니다 `AVAssetResourceLoaderDelegate`.
+   그 `resourceLoader:shouldWaitForLoadingOfRequestedResource` 방법은 안에 있는 것과 같다 `AVAssetResourceLoaderDelegate`.
 
-   >[!IMPORTANT] {importance=&quot;high&quot;}
+   >[!IMPORTANT]
    >
-   >ExpressPlay 라이선스 서버 시나리오에서 콘텐트를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL의 URL을 `skd://` (또는 `https://` `https://`)로 변경합니다.
+   >ExpressPlay 라이선스 서버 시나리오에서 콘텐트를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL의 URL 체계를 (또는) `skd://` 에서 ( `https://` 또는 `https://`)로 변경합니다.
 
-1. FairPlay *고객 리소스* 로더를 에 등록합니다 `registerPTAVAssetResourceLoader`.
+1. FairPlay *고객 리소스* 로더를 등록하십시오 `registerPTAVAssetResourceLoader`.
 
    ```
    PTFairPlayResourceLoader *resourceLoader =  
