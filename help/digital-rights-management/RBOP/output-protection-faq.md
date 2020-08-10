@@ -5,9 +5,9 @@ seo-title: RBOP FAQ
 title: RBOP FAQ
 uuid: 7dcd337c-369a-474c-8768-409c48b5cee5
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: fa9e89dd63c8b4c9d6eee78258957cfd30c29088
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 해상도 기반의 출력 보호 사용에 대한 FAQ입니다.
 
-* **Q.** 픽셀 제약 조건에 대한 디지털 출력 요구 사항을 정의할 *때 HDCP 버전을 종료하면 구문 분석/형식 오류가 발생하지만 HDCP 요구 사항은 없습니다. 이 경우 디지털 출력 요구 사항을 어떻게 구성해야 합니까?* **A.** 현재 클라이언트에서 HDCP 버전 검사가 지원되지 않으므로 HDCP 버전을 로 설정하는 것이 좋습니다 `1.0`. 따라서 HDCP 버전 검사가 지원되는 경우 구성이 올바르게 포맷되어 나중에 일관됩니다. 다음 코드 조각은 이 HDCP 값이 있는 구성을 보여 줍니다.
+* **Q.** 픽셀 제약 조건에 대한 디지털 출력 요구 사항을 정의할 *때 HDCP 버전을 종료하면 구문 분석/형식 오류가 발생하지만 HDCP 요구 사항은 없습니다. 이 경우 디지털 출력 요구 사항을 어떻게 구성해야 합니까?* **A.** 현재 클라이언트에서 HDCP 버전 검사가 지원되지 않으므로 Adobe에서는 HDCP 버전을 로 설정하는 것이 좋습니다 `1.0`. 따라서 HDCP 버전 검사가 지원되는 경우 구성이 올바르게 포맷되어 나중에 일관됩니다. 다음 코드 조각은 이 HDCP 값이 있는 구성을 보여 줍니다.
 
    ```
    { "pixelConstraints":  
@@ -41,13 +41,14 @@ ht-degree: 0%
 
    * 720P - HDCP 필요
    * 480P - OP 없음
+
    각 변형에 다음 규칙이 적용됩니다.
 
    **스트림:**
 
-   * 240, 480: 둘 다 &lt;= 480; OP는 필요하지 않으며 스트림은 HDCP가 있거나 없는 상태로 로드됩니다.
-   * 600, 720: 둘 다 &lt;= 720; 재생에 필요한 HDCP
-   * 1080년: > 720; 스트림은 위 규칙에서 찾을 수 없으므로 블록 목록에 표시됩니다(오류가 반환됨).
+   * 240, 480:둘 다 &lt;= 480;OP는 필요하지 않으며 스트림은 HDCP가 있거나 없는 상태로 로드됩니다.
+   * 600, 720:둘 다 &lt;= 720;재생에 필요한 HDCP
+   * 1080년:> 720;스트림은 위 규칙에서 찾을 수 없으므로 블록 목록에 표시됩니다(오류가 반환됨).
 
 
 * **Q.** 일부 Android 장치에서 정의한 픽셀 수 제한이 정의된 대로 정확하게 적용되지 않습니다. 무슨 일이야?
@@ -56,18 +57,27 @@ ht-degree: 0%
 
    ```
    { 
-       "maxPixel":  
-   
-<b>800</b>,&quot;pixelConstraints&quot;: [{ &quot;pixelCount&quot;:\
-<b>532</b>,&quot;디지털&quot;: [{&quot;output&quot;: &quot;REQUIRED&quot;, &quot;hdcp&quot;:{&quot;major&quot;: 1,&quot;경미한&quot;: 0}}],&quot;아날로그&quot;: {&quot;output&quot;: &quot;REQUIRED&quot;}},...
+       "maxPixel": 800, 
+       "pixelConstraints": [ 
+           { "pixelCount": 532, 
+             "digital": [{"output": "REQUIRED", "hdcp":{"major": 1,"minor": 0}}], 
+             "analog": {"output": "REQUIRED"} 
+           }, 
+   ... 
+   ```
 
-```
-to: 
-```
-{&quot;maxPixel&quot;:\
-<b>820</b>,&quot;pixelConstraints&quot;: [{ &quot;pixelCount&quot;:\
-<b>552</b>,&quot;디지털&quot;: [{&quot;output&quot;: &quot;REQUIRED&quot;, &quot;hdcp&quot;:{&quot;major&quot;: 1,&quot;경미한&quot;: 0}}],&quot;아날로그&quot;: {&quot;output&quot;: &quot;REQUIRED&quot;}},...
+   to:
 
-```
-throughout, for all instances of `maxPixel` and `pixelCount`.
+   ```
+   { 
+       "maxPixel": 820, 
+       "pixelConstraints": [ 
+           { "pixelCount": 552, 
+             "digital": [{"output": "REQUIRED", "hdcp":{"major": 1,"minor": 0}}], 
+             "analog": {"output": "REQUIRED"} 
+           }, 
+   ... 
+   ```
+
+   에 대한 `maxPixel` 모든 인스턴스 `pixelCount`.
 
