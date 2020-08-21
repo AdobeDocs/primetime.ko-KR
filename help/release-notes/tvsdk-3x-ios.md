@@ -2,7 +2,7 @@
 title: iOS용 TVSDK 3.12 릴리스 노트
 description: iOS용 TVSDK 3.12 릴리스 노트는 TVSDK iOS 3.12의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다.
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -541,7 +541,7 @@ iOS에서 프로그래머틱 광고 지원이 추가되었습니다.
 
 CRS 표준화 규칙에 따라 CRS 요청에서 Creative Id 및 AdSystem 사용
 
-* [ ZD #29462) - iOS 앱에서 충돌을 일으키는 A&amp;E VOD의 HidanceHub 광고
+* (ZD #29462) - iOS 앱에서 충돌을 일으키는 A&amp;E VOD의 HidanceHub 광고
 
 **버전 1.4.36(1.4.36.835)**
 
@@ -1098,7 +1098,7 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 
 * (ZD #2141) TreeHouse 앱에 대한 Analytics 구현이 패키지를 빌드할 라이브러리를 `AdobeAnalyticsPlugin.a` 추가했습니다.
 * 비디오 하트비트 라이브러리를 1.4.1.2로 업데이트
-* [PTPALY-4226] [ZD #2423과 관련) DRM 재설정을 수행하면 응용 프로그램 문서 데이터가 삭제될 수 있습니다.
+* (PTPALY-4226)(ZD #2423과 관련) DRM 재설정을 수행하면 응용 프로그램 문서 데이터가 삭제될 수 있습니다.
 
 **버전 1.4.4** (1.4.4.242)
 
@@ -1191,7 +1191,7 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
    * 확인되지 않은 라이브 HEVC 스트림이 확인되지 않았습니다.
    * HEVC 광고 지원이 확인되지 않았습니다.
 * JIT가 활성화되고 내성이 10초로 설정되면 VMAP->VAST 리디렉션 광고의 경우 첫 번째 중간 롤과 중단에 대해 VAST 호출이 표시되지 않습니다.
-* 광고 해결 시간이 제대로 작동하기 위해 라이브 스트림 재생 중에 재생 목록이 업데이트될 때마다 플레이어에서는 20초 이내에 연결된 재생 목록이 필요합니다. 해당 간격 내에 연결된 재생 목록을 받지 못하면 내부 오류가 발생하고 플레이어가 중지됩니다.
+* 광고 해상도 시간이 제대로 작동하기 위해 라이브 스트림 재생 중에 재생 목록이 업데이트될 때마다 플레이어는 20초 이내에 연결된 재생 목록을 기대합니다. 해당 간격 내에 연결된 재생 목록을 받지 못하면 내부 오류가 발생하고 플레이어가 중지됩니다.
 
 ## 유용한 리소스 {#helpful-resources}
 
