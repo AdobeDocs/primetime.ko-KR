@@ -2,41 +2,46 @@
 cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime Dynamic Ad Insertion Help
+user-guide-title: Primetime 동적 Ad Insertion 도움말
+user-guide-description: Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads.
 translation-type: tm+mt
-source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
 
-# 동적 광고 삽입 도움말 {#ad-insertion}
+# 동적 Ad Insertion 도움말 {#ad-insertion}
 
-+ [동적 광고 삽입 개요](home.md)
-+ [동적 광고 삽입 릴리스 노트](https://docs.adobe.com/content/help/en/primetime/release-notes/ptai/ptai-19x-release-notes.html)
++ [동적 Ad Insertion 개요](home.md)
++ [동적 Ad Insertion 릴리스 노트](https://docs.adobe.com/content/help/en/primetime/release-notes/ptai/ptai-19x-release-notes.html)
 + [매니페스트 서버 디버깅 도구](manifest-server-debugging-tool.md)
+
 <!-- + [Server Side Ad Insertion debugging dashboard](ssai-debugging-dashboard.md)-->
-+ 광고 삽입을 위한 매니페스트 서버 API {#manifest-server}
++ Ad Insertion용 매니페스트 서버 API {#manifest-server}
    + [매니페스트 서버 상호 작용 개요](msapi-topics/ms-overview.md)
    + Manifest Server 시작하기 {#get-started}
-      + [매니페스트 서버에 명령 보내기](msapi-topics/ms-getting-started/ms-sending-cmd.md)
+      + [매니페스트 서버로 명령 보내기](msapi-topics/ms-getting-started/ms-sending-cmd.md)
       + [매니페스트 서버 쿼리 매개 변수](msapi-topics/ms-getting-started/ms-api-query-params.md)
    + 광고 삽입 요청 {#ad-insert}
       + [광고 삽입 요청](msapi-topics/ms-insert-ads/ms-ad-insert.md)
       + [클라이언트 및 상황별 선택적 쿼리 매개 변수](msapi-topics/ms-insert-ads/ms-api-query-param-situation.md)
-      + [HLS 플레이어를 페일오버/백업 스트림으로 전환 촉진](msapi-topics/ms-insert-ads/hls-switching-to-failover.md)
+      + [페일오버/백업 스트림으로 HLS 플레이어 전환 촉진](msapi-topics/ms-insert-ads/hls-switching-to-failover.md)
       + [다중 비트 전송률 스트림](msapi-topics/ms-insert-ads/ms-api-mbr-streams.md)
-      + [부분 광고 나누기 삽입](msapi-topics/ms-insert-ads/partial-ad-break-insetion.md)
+      + [부분 광고 중단 삽입](msapi-topics/ms-insert-ads/partial-ad-break-insetion.md)
       + [CRS 광고 전달을 위한 다양한 CDN 지원](msapi-topics/ms-insert-ads/ms-api-multi-cdns-for-crs.md)
-   + VOD 타임라인 바꾸기 {#replace-vod}
-      + [VOD 변경 사항](msapi-topics/ms-changes-vod-timeline/ms-replace-vod-timeline.md)
+   + VOD 타임라인 교체 {#replace-vod}
+      + [VOD 변경](msapi-topics/ms-changes-vod-timeline/ms-replace-vod-timeline.md)
       + [VOD 타임라인 포맷](msapi-topics/ms-changes-vod-timeline/ms-api-timeline-format.md)
-      + [VOD 타임라인 바꾸기](msapi-topics/ms-changes-vod-timeline/t-ms-replace-vod-timeline.md)
+      + [VOD 타임라인 교체](msapi-topics/ms-changes-vod-timeline/t-ms-replace-vod-timeline.md)
    + 광고 효과 추적 {#ad}
       + [광고 추적](msapi-topics/ms-at-effectiveness/ms-at-overview.md)
       + [클라이언트측 광고 추적 활성화](msapi-topics/ms-at-effectiveness/ms-enable-client-side-ad-tracking.md)
       + [비TVSDK 클라이언트측 추적 개요](msapi-topics/ms-at-effectiveness/notvsdk-csat-overview.md)
-      + [매니페스트 서버와 상호 작용할 플레이어용 API](msapi-topics/ms-at-effectiveness/notvsdk-csat-ms-interface.md)
-      + [EXT-X-MARKER 파섹](msapi-topics/ms-at-effectiveness/ms-api-playlists.md)
+      + [플레이어가 매니페스트 서버와 상호 작용하는 API](msapi-topics/ms-at-effectiveness/notvsdk-csat-ms-interface.md)
+      + [EXT-X-MARKER Directive](msapi-topics/ms-at-effectiveness/ms-api-playlists.md)
    + [쿠키](msapi-topics/ms-cookies.md)
    + [WebVTT 캡션 지원](msapi-topics/ms-webvtt-captions.md)
    + 파일 포맷 목록 {#list}
