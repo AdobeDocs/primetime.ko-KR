@@ -6,7 +6,7 @@ seo-title: Primetime DRM 인터페이스 개요
 title: Primetime DRM 인터페이스 개요
 uuid: 5e794147-cc58-448c-b8ec-065e80ef01fd
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -46,9 +46,9 @@ DRM 메타데이터가 변경되면 TVSDK에서 `PTMediaPlayerItemDRMMetadataCha
 
 DRM으로 보호된 스트림이 MBR(다중 비트 전송률)로 인코딩된 경우 변형 재생 목록에 사용되는 DRM 메타데이터는 모든 비트 전송률 스트림에 사용되는 메타데이터와 동일해야 합니다.
 
-[!TIP]
-
-iOS 앱에서 DRM으로 보호된 자산 URL을 참조하는 경우 쿼리 문자열 매개 변수를 (MBR) 세트 수준 M3U8 URL에 추가해야 `?faxs=1` 합니다. 예:
+>[!TIP]
+>
+>iOS 앱에서 DRM으로 보호된 자산 URL을 참조하는 경우 쿼리 문자열 매개 변수를 (MBR) 세트 수준 M3U8 URL에 추가해야 `?faxs=1` 합니다. 예:
 
 ```
 https://your.domain.com/hls/[...]/index.m3u8?faxs=1
