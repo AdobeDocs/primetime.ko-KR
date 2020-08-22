@@ -2,22 +2,26 @@
 cloud: experience-cloud
 product: primetime
 audience: end-user
-user-guide-title: Primetime Reference Implementation Help
+user-guide-title: Primetime 참조 구현 도움말
+user-guide-description: Helps understand the TVSDK and modify the feature managers to customize your personal player.
 translation-type: tm+mt
-source-git-commit: abcbe6991d9a024f62554c3b5ec057f9b3c71c53
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
 
-# Android용 PSDK 1.4 참조 구현 {#reference-implementation}
+# Android 참조 구현을 위한 PSDK 1.4 {#reference-implementation}
 
 + [Android 참조 구현 개요](home.md)
 + Primetime 참조 구현 {#reference}
-   + [Primetime 참조 구현을 사용하는 방법](ref-implementation/how-to-use-ref-player.md)
+   + [Primetime 참조 구현 사용 방법](ref-implementation/how-to-use-ref-player.md)
    + [참조 구현 구조](ref-implementation/ref-player-structure.md)
    + 기능 관리자를 사용하는 방법 {#feature-managers}
       + [기능 관리자를 사용하는 방법](ref-implementation/using-feature-managers/how-to-use-feature-managers.md)
-      + [MediaPlayer에 구성 정보를 전달하여 기능 관리자를 만드는 중...](ref-implementation/using-feature-managers/creating-feature-managers.md)
+      + [MediaPlayer에 구성 정보를 전달하여 기능 관리자를 만드는 중..](ref-implementation/using-feature-managers/creating-feature-managers.md)
       + [ManagerFactory를 사용하여 기능 활성화 또는 비활성화](ref-implementation/using-feature-managers/turning-features-on-off.md)
       + [이벤트 처리](ref-implementation/using-feature-managers/handling-events.md)
    + 개발 환경 설정 {#setup-dev}
@@ -31,18 +35,18 @@ source-git-commit: abcbe6991d9a024f62554c3b5ec057f9b3c71c53
       + [설정 활동](set-up-dev-environment/exploring-code/settings-activity.md)
       + [카탈로그 형식](set-up-dev-environment/exploring-code/catalog-format.md)
       + [Primetime 광고를 위한 JSON 개체](set-up-dev-environment/exploring-code/json-pt-ads.md)
-      + [직접 광고 분할을 위한 JSON 개체](set-up-dev-environment/exploring-code/json-direct-ad-breaks.md)
+      + [직접 광고 나누기를 위한 JSON 개체](set-up-dev-environment/exploring-code/json-direct-ad-breaks.md)
       + [사용자 정의 광고 마커용 JSON 개체](set-up-dev-environment/exploring-code/json-custom-ad-markers.md)
-      + [권한 부여 리소스 ID에 대한 JSON 개체](set-up-dev-environment/exploring-code/json-entitlement-resource-id.md)
+      + [권한 부여 리소스 ID용 JSON 개체](set-up-dev-environment/exploring-code/json-entitlement-resource-id.md)
       + [JSON 피드 형식 예](set-up-dev-environment/exploring-code/example-json-feed-format.md)
    + 비디오 재생 구현 {#implement-video}
       + [비디오 재생에 필수적인 작업](implement-video-playback/video-playback.md)
       + [비디오 재생 활성화](implement-video-playback/enable-video-playback.md)
       + [DRM 컨텐츠 보호](implement-video-playback/content-protection.md)
    + [다양한 비트 전송률](implement-video-playback/mbr.md)
-   + 광고를 사용하여 DVR 재생을 위한 플레이어 설정 {#dvr}
+   + 광고가 포함된 DVR 재생을 위한 플레이어 설정 {#dvr}
       + [광고 삽입 없이 DVR](implement-video-playback/dvr/dvr-without-ad-insertion.md)
-      + [광고 삽입 기능이 있는 DVR](implement-video-playback/dvr/dvr-with-ad-insertion.md)
+      + [광고 삽입 시 DVR](implement-video-playback/dvr/dvr-with-ad-insertion.md)
       + [DVR에 대한 사용자 정의 시작 지점 선택](implement-video-playback/dvr/dvr-custom-start-point.md)
       + [참조 구현에서 사용자 지정 시작 시간 설정](implement-video-playback/dvr/set-custom-start-time-dvr.md)
    + [QoS 재생 및 디바이스 통계 표시](implement-video-playback/qos-statistics.md)
