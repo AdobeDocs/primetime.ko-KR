@@ -4,9 +4,9 @@ seo-description: '이 표에서는 매출 최적화 알림에 대한 자세한 �
 seo-title: 수익 최적화 코드
 title: 수익 최적화 코드
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: df3d60874701383325be1afdd1ec5fe036f855f8
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >대부분의 정보 알림에는 관련 메타데이터가 포함되어 있습니다. 예를 들어 다운로드하지 못한 리소스의 URL입니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
 
-|코드 |이름 |내부 알림 |메타데이터 키 |주석 |
-||—|—|—|—|—|
-|401001 | REVENUE_OPTIMIZATION_REPORTING | 없음 | 다른 이벤트를 기반으로 한 메타데이터 키는 아래 표를 참조하십시오. | 없음 |
+| 코드 | 이름 | 내부 알림 | 메타데이터 키 | 댓글 |
+|---|---|---|---|---|
+| 401001 | REVENUE_OPTIMIZATION_REPORTING | 없음 | 다른 이벤트를 기반으로 한 메타데이터 키는 아래 표를 참조하십시오. | 없음 |
 
 | 이벤트 세부 사항 | 컨텍스트 메타데이터 |
 |---|---|
