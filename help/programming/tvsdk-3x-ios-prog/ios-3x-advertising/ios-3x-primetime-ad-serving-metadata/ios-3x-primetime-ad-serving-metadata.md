@@ -5,7 +5,10 @@ seo-title: Primetime 광고 서버 메타데이터
 title: Primetime 광고 서버 메타데이터
 uuid: 61e224dd-551a-438f-8560-e64915087fef
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 9d60bff4035963572e49fa49effa576ca854f799
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 
@@ -14,12 +17,12 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
 
 TVSDK는 VOD 및 라이브/리니어 스트림에 대한 광고 해결 및 삽입을 지원합니다.
 
-[!PREREQUISITE] {othertype=&quot;Prequisite&quot;}
+## 사전 요구 사항
 
-비디오 컨텐츠에 광고를 포함하려면 먼저 다음 메타데이터 정보를 제공합니다.
+비디오 컨텐츠에 광고를 포함하려면 먼저 다음 메타데이터 정보를 제공해야 합니다.
 
 * 재생할 특정 컨텐츠를 식별하는 `mediaID`A.
-* 회사 또는 웹 사이트를 식별하는 `zoneID`사용자.
+* 귀하 `zoneID`는 회사 또는 웹사이트를 식별합니다.
 * 지정된 광고 서버의 도메인을 지정하는 광고 서버 도메인.
 * 기타 타깃팅 매개 변수.
 
@@ -39,7 +42,7 @@ TVSDK는 VOD 및 라이브/리니어 스트림에 대한 광고 해결 및 삽�
    adMetadata.userAgent = @"INSERT_AGENT_NAME_HERE; 
    ```
 
-1. 을 사용하여 `PTAuditudeMetadata` 인스턴스를 현재 `PTMediaPlayerItem` 메타데이터에 대한 메타데이터로 설정합니다 `PTAdResolvingMetadataKey`.
+1. 인스턴스를 사용하여 `PTAuditudeMetadata` 현재 `PTMediaPlayerItem` 메타데이터의 메타데이터로 설정합니다 `PTAdResolvingMetadataKey`.
 
    ```
    // Metadata is an instance of PTMetadata that is used to create the PTMediaPlayerItem 
@@ -47,7 +50,7 @@ TVSDK는 VOD 및 라이브/리니어 스트림에 대한 광고 해결 및 삽�
    [adMetadata release];
    ```
 
-   다음은 예입니다.
+   다음은 한 예입니다.
 
    ```
    PTMetadata *metadata = [self createMetadata]; 
