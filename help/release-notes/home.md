@@ -4,9 +4,9 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 6b2aaa96f8604af27810cceee5a8a98c4feebd6f
+source-git-commit: ca603507f696f75a32b4a4fc8cc35f9e1c14c214
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서에서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 20.8.1의 개선 사항 및 수정 사항
+## PTAI 20.9.1의 개선 사항 및 수정 사항
 
-이 릴리스는 유지 관리 업데이트에 중점을 두고 있습니다.
+이 릴리스는 DVR 창에서 EXT-X-MAP에 CDN 토큰 또는 EXT-X-MAP 태그가 잘못 롤아웃된 주요 고객 문제를 수정하는 데 중점을 두었습니다.
 
 현재 출시된 동적 Ad Insertion 버전에 대한 자세한 내용은 [PTAI 릴리스 노트를 참조하십시오](ptai-20x-release-notes.md).
 
