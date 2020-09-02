@@ -2,7 +2,7 @@
 title: PTAI 20.9.1 릴리스 노트
 description: PTAI 20.9.1 릴리스 노트는 2020년 Primetime 동적 Ad Insertion에서 해결되고 알려진 새로운 문제점과 변경된 내용을 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: f17a9fdf2a7c22d1d7b0833c7eac8f1202cebe87
+source-git-commit: c23b052f14c6673d4ba2aae6a317a55a2e611e8a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **수정 사항**
 
-・ HLS/CMAF를 사용하는 고객의 경우, 때로 EXT-X-MAP에 CDN 토큰 또는 EXT-X-MAP 태그가 DVR 창에서 잘못 롤아웃되는 문제가 해결되었습니다.
+* 때때로 DVR 창에서 EXT-X-MAP 태그 또는 EXT-X-MAP 태그가 잘못 롤아웃되는 HLS/CMAF를 사용하는 고객의 문제를 해결했습니다.
 
 ### 이전 릴리스 버전의 개선 사항 및 수정 사항
 
