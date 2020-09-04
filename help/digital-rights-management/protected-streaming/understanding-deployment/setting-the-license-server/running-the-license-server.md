@@ -3,9 +3,9 @@ seo-title: 보호된 스트리밍을 위한 DRM 서버 실행
 title: 보호된 스트리밍을 위한 DRM 서버 실행
 uuid: 9bbe211d-268b-43c2-9e55-7ce62de40d30
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 51b3713e04fcb4adeaa7a8d1b700372b1dba7cf6
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Tomcat 및 라이센스 서버를 시작하려면 Tomcat의 [!DNL catalina.bat start] [!DNL catalina.sh start] [!DNL bin] 디렉토리에서 실행하거나 실행해야 합니다.
 
-서버가 시작된 후 [!DNL https://<lic<span></span>license-server-host:port>/flashaccess server/<tenant-name>브라우저 창에서 /flashaccess/license/v1] . 테넌트 구성이 성공적으로 로드되면 확인 메시지가 나타납니다.
+서버가 시작된 후 브라우저 창에서 열어서 서버가 올바르게 구성되었는지 확인해야 `https://<lic<span></span>ense-server-host:port>/flashaccessserver/<tenant-name>/flashaccess/license/v1` 합니다. 테넌트 구성이 성공적으로 로드되면 확인 메시지가 나타납니다.
 
 ## 로그 파일 {#log-files}
 
@@ -54,11 +54,11 @@ Tomcat 및 라이센스 서버를 시작하려면 Tomcat의 [!DNL catalina.bat s
 
 ### 파티션 로그 파일 {#section_5660137CD6AA40519E72A4315534846B}
 
-파티션 로그 파일 [!DNL flashaccess-partition.log]은 [!DNL <LicenseServer.LogRoot>/flashaccesserver] 디렉토리에 있습니다. 여기에는 라이센스 요청을 처리하는 동안 생성된 로그 메시지가 포함됩니다.
+파티션 로그 파일 [!DNL flashaccess-partition.log]은 `<LicenseServer.LogRoot>/flashaccesserver` 디렉토리에 있습니다. 여기에는 라이센스 요청을 처리하는 동안 생성된 로그 메시지가 포함됩니다.
 
 ### 테넌트 로그 파일 {#section_F0257CC0831647F18A746B4F02E3E910}
 
-각 테넌트의 테넌트 로그 파일 [!DNL flashaccess-tenant.log]은 [!DNL &lt;LicenseServer.LogRoot>/flashaccesserver/세입자/<tenantname>]. 테넌트 로그에는 이 테넌트에 대해 생성된 각 라이선스를 설명하는 감사 정보가 포함됩니다.
+각 테넌트의 테넌트 로그 파일 [!DNL flashaccess-tenant.log]이 에 있습니다 `<LicenseServer.LogRoot>/flashaccesserver/tenants/<tenantname>`. 테넌트 로그에는 이 테넌트에 대해 생성된 각 라이선스를 설명하는 감사 정보가 포함됩니다.
 
 ## 구성 파일 업데이트 {#updating-configuration-files}
 
