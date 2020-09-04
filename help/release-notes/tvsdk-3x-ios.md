@@ -2,7 +2,7 @@
 title: iOS용 TVSDK 3.12 릴리스 노트
 description: iOS용 TVSDK 3.12 릴리스 노트는 TVSDK iOS 3.12의 새로운 기능 또는 변경된 기능, 해결되고 알려진 문제 및 디바이스 문제를 설명합니다.
 translation-type: tm+mt
-source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+source-git-commit: 51b3713e04fcb4adeaa7a8d1b700372b1dba7cf6
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -237,7 +237,7 @@ Primetime iOS TVSDK는 이제 VPAID 2.0 Javascript 크리에이티브를 지원�
 
 **대체 컨텐츠 교체를 통한 일시 중단 신호**
 
-1.4 TV SDK 업데이트의 일부로 이제 선형 컨텐츠에 대한 지역 단전의 시작 및 재사용을 지원합니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
+1.4 TV SDK 업데이트의 일부로 이제 선형 컨텐츠에 대한 지역 단전의 시작 및 재사용을 지원합니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로, 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
 
 **버전 1.4.8**
 
@@ -274,7 +274,7 @@ Primetime iOS TVSDK는 이제 VPAID 2.0 Javascript 크리에이티브를 지원�
 
 * **대체 컨텐츠 교체를 통한 일시 중단 신호**
 
-1.4 TV SDK 업데이트의 일부로, TVSDK는 또한 선형 컨텐츠에 대한 지역 내 단전이 도입되어 재사용을 지원하고 있습니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
+1.4 TV SDK 업데이트의 일부로, TVSDK는 또한 선형 컨텐츠에 대한 지역 내 단전이 도입되어 재사용을 지원하고 있습니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로, 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
 
 * **C3 광고 제거/바꾸기**
 
@@ -288,20 +288,17 @@ Primetime iOS TVSDK는 이제 VPAID 2.0 Javascript 크리에이티브를 지원�
 
 Comment Type: draft
 
-`<note type="note"> `
  <p>All TVSDK customers who use CRS are strongly encouraged to upgrade to TVSDK 1.4.39 or latest on iOS and Android. This upgrade is a drop-in replacement to the existing app implementation. After the upgrade, check for the CRS creative URL requests in a proxy tool (for example, Charles) to verify that the version in the path reflects version 3.1. For example:</p> 
  <p><span class="code">https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8</span></p> 
-`</note>`
 
- -->
+-->
 
 <!--
 Comment Type: draft
 
-`<note type="note"> `
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
-`</note>`
- -->
+-->
+
 **iOS TVSDK 3.12**
 
 * iOS 3.10용 TVSDK를 사용하는 경우 15분 동안 재생한 후 라이브 스트림에 실패합니다.
