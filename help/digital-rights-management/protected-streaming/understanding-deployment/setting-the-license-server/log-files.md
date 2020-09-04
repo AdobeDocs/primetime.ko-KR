@@ -5,9 +5,9 @@ seo-title: 로그 파일
 title: 로그 파일
 uuid: 4498fe60-65af-4f99-8f9b-e85013d0c9e9
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -42,12 +42,12 @@ ht-degree: 0%
 
 ## 전역 로그 파일 {#section_1CFA90748142439C9F3BE380969539DA}
 
-전역 로그 파일 [!DNL flashaccess-global.log]은 *LicenseServer.LogRoot에 있습니다*. Adobe Primetime DRM Java SDK 또는 로그 메시지가 서버가 초기화된 동안 생성된 로그 메시지를 로그에 포함할 수 있습니다.
+전역 로그 파일 `flashaccess-global.log`은 *LicenseServer.LogRoot에 있습니다*. Adobe Primetime DRM Java SDK 또는 로그 메시지가 서버가 초기화된 동안 생성된 로그 메시지를 로그에 포함할 수 있습니다.
 
 ## 파티션 로그 파일 {#section_5660137CD6AA40519E72A4315534846B}
 
-파티션 로그 파일 [!DNL flashaccess-partition.log]은 [!DNL <LicenseServer.LogRoot>/flashaccesserver] 디렉토리에 있습니다. 여기에는 라이센스 요청을 처리하는 동안 생성된 로그 메시지가 포함됩니다.
+파티션 로그 파일 `flashaccess-partition.log`은 `<LicenseServer.LogRoot>/flashaccesserver` 디렉토리에 있습니다. 여기에는 라이센스 요청을 처리하는 동안 생성된 로그 메시지가 포함됩니다.
 
 ## 테넌트 로그 파일 {#section_F0257CC0831647F18A746B4F02E3E910}
 
-각 테넌트의 테넌트 로그 파일 [!DNL flashaccess-tenant.log]은 [!DNL &lt;LicenseServer.LogRoot>/flashaccesserver/세입자/<tenantname>]. 테넌트 로그에는 이 테넌트에 대해 생성된 각 라이선스를 설명하는 감사 정보가 포함됩니다.
+각 테넌트의 테넌트 로그 파일 `flashaccess-tenant.log`이 에 있습니다 `<LicenseServer.LogRoot>/flashaccesserver/tenants/<tenantname>`. 테넌트 로그에는 이 테넌트에 대해 생성된 각 라이선스를 설명하는 감사 정보가 포함됩니다.
