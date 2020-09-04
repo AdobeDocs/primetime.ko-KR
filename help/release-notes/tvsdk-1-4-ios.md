@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 452f8699-7857-49ab-9caa-22204b19fe4a
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: 51b3713e04fcb4adeaa7a8d1b700372b1dba7cf6
 workflow-type: tm+mt
 source-wordcount: '6578'
 ht-degree: 0%
@@ -134,7 +134,7 @@ VPAID 2.0에 대한 자세한 내용은 VPAID [광고 지원을 참조하십시�
 
 * **대체 컨텐츠 교체를 통한 일시 중단 신호**
 
-1.4 TV SDK 업데이트의 일부로 이제 선형 컨텐츠에 대한 지역 단전의 시작 및 재사용을 지원합니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로, 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
+1.4 TV SDK 업데이트의 일부로 이제 선형 컨텐츠에 대한 지역 단전의 시작 및 재사용을 지원합니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
 
 **버전 1.4.8**
 
@@ -170,7 +170,7 @@ VPAID 2.0에 대한 자세한 내용은 VPAID [광고 지원을 참조하십시�
 
 * **대체 컨텐츠 교체를 통한 일시 중단 신호**
 
-   * 1.4 TV SDK 업데이트의 일부로, TVSDK는 또한 선형 컨텐츠에 대한 지역 내 단전이 도입되어 재사용을 지원하고 있습니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로, 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
+   * 1.4 TV SDK 업데이트의 일부로, TVSDK는 또한 선형 컨텐츠에 대한 지역 내 단전이 도입되어 재사용을 지원하고 있습니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
 
 * **C3 광고 제거/바꾸기**
 
@@ -221,22 +221,17 @@ VPAID 2.0에 대한 자세한 내용은 VPAID [광고 지원을 참조하십시�
 
 Comment Type: draft
 
-<note type="note"> 
  <p>All TVSDK customers who use CRS are strongly encouraged to upgrade to TVSDK 1.4.39 or latest on iOS and Android. This upgrade is a drop-in replacement to the existing app implementation. After the upgrade, check for the CRS creative URL requests in a proxy tool (for example, Charles) to verify that the version in the path reflects version 3.1. For example:</p> 
  <p><span class="code">https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8</span></p> 
-</note>
-
- -->
+-->
 
 <!-- 
 
 Comment Type: draft
 
-<note type="note"> 
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
-</note>
 
- -->
+-->
 
 **버전 1.4.45{#ios-tvsdk}**
 
@@ -245,7 +240,7 @@ Comment Type: draft
    * XCode 10에서 TVSDK와 관련된 컴파일 문제가 해결되었습니다. XCode 10 요구 사항으로 인해 iOS 1.4.45용 TVSDK에서 빌드되는 앱은 iOS 7.0과 같이 최소 배포 대상이 필요합니다
 
 * 티켓 번호 36321 - &quot;재생&quot; 상태에서 PTMediaPlayer와 AVPlayer 인스턴스 사이의 검색 가능한 범위에서 불일치가 관찰되었습니다.
-* 티켓 번호 36493 - iOS 12에서 `libstdc++` 지원
+* 티켓 번호 36493 - `libstdc++` iOS 12에서 지원
 
    * iOS 12에서 TVSDK와 관련된 컴파일 문제가 해결되었습니다. iOS 1.4.45용 TV SDK를 기반으로 앱을 구축하려면 iOS 7.0과 같이 최소 배포 타겟이 필요합니다.
 
@@ -441,7 +436,7 @@ FER 스트림의 경우 광고 브레이크 끝 뒤에 광고 나누기 전 키�
 
 * (ZD# 21701) 하위 계정에 대해 CRS 활성화
 
-CRS 백엔드 요구 사항에 따라 표준화된 URL 대신 1401 CRS 요청에 대한 원래 크리에이티브 URL을 전송하여 활성화합니다.
+CRS 백 엔드에 대한 요구 사항에 따라 표준화된 URL 대신 1401 CRS 요청에 대한 원래 크리에이티브 URL을 전송하여 활성화됩니다.
 
 * (ZD# 26218) - PSDKResources.bundle 로드 문제
 
@@ -455,7 +450,7 @@ CRS 백엔드 요구 사항에 따라 표준화된 URL 대신 1401 CRS 요청에
 
 * (ZD# 27132) VMAP 광고 분리에 대한 십진수 값 지원.
 
-정의된 광고 분리를 따라 컨텐츠가 세그먼트화되지 않은 경우 정수로 인해 예기치 않은 광고 배치가 발생했습니다. 소수 값을 정수로 변환하지 않아 문제가 해결되었습니다.
+정의된 광고 분리를 따라 컨텐츠가 세그먼트화되지 않은 경우 정수로 인해 예기치 않은 광고 배치가 발생했습니다. decimal 값을 정수로 변환하지 않아 문제가 해결되었습니다.
 
 * (ZD# 27189) EXT-X-DISCONTINUITY-SEQUENCE 태그가 있는 AES 콘텐츠가 올바르게 재생되지 않습니다.
 
@@ -672,7 +667,7 @@ VPAID 광고 재생이 실패할 경우 플레이어 보기를 숨김 취소하�
 
 이 문제는 AVFfoundation에서 치명적인 오류가 발생하는 경우 오류 알림을 개선하고 오류 후에 앱이 다시 시작을 처리하도록 허용함으로써 해결되었습니다.
 
-* (ZD #20580) - PTSplicerManager에서 작동 중단
+* (ZD #20580) - PTSplicerManager 충돌
 
 이 문제는 충돌을 일으키는 동시 실행 문제로부터 추가적인 보호를 제공하여 해결되었습니다.
 
@@ -793,7 +788,7 @@ JavaScript MIME 유형이 항상 포함되거나 유효한 MIME 유형으로 간
 
 * (ZD#18956) - player.drmManager는 중단점이 iOS Demo Player에서 설정되면 nil입니다.
 
-이 문제는 DRM 프레임워크에서 DRMManager를 가져오기 위해 PTMediaPlayer.drmManager API 구현을 업데이트하여 해결되었습니다.
+이 문제는 DRM 프레임워크에서 DRMManager를 선택하도록 PTMediaPlayer.drmManager API 구현을 업데이트하여 해결되었습니다.
 
 **iOS 6.0용 버전 1.4.18** (1.4.18.557)+
 
@@ -825,7 +820,7 @@ Auditude SDK가 시작 부분에 추적 URL에 공백이 있는 경우 Ping을 �
 
 * Zendesk #18008 - 토큰화된 스트림을 지원하기 위해 iOS8+용 쿠키 지원
 
-Akamai 토큰화된 스트림은 세그먼트 요청 시 쿠키를 전송해야 하며, 이는 iOS 7 및 이전 버전에서는 불가능했습니다. iOS 8부터 Apple은 세그먼트 요청에 대해 쿠키를 전달할 수 있는 API를 추가했습니다. 이제 TVSDK에서 이 지원을 이용할 수 있습니다. 사용 가능한 경우 사용자 에이전트 전송에 대한 지원도 추가되었습니다.
+Akamai 토큰화된 스트림은 세그먼트 요청 시 쿠키를 전송해야 하며, 이는 iOS 7 및 이전 버전에서는 불가능했습니다. iOS 8부터 Apple은 세그먼트 요청에 대해 쿠키를 전달할 수 있는 API를 추가했습니다. 이 지원은 이제 TVSDK에서 사용할 수 있습니다. 사용 가능한 경우 사용자 에이전트 전송에 대한 지원도 추가되었습니다.
 
 * Zendesk #18166 - TVSDK 1.4.15는 dSYM 파일 옵션이 있는 DWARF를 사용하여 컴파일할 때 수백 개의 경고를 제공합니다
 
@@ -888,7 +883,7 @@ TVSDK 라이브러리가 YUV -> RGB 색상 변환을 수행하는 네온 코드�
    * 인라인 및 크리에이티브가 불량한 경우 오류 코드 400이 노출됩니다.
    * `[ERRORCODE]` 매크로는 URL로 인코딩됩니다.
 
-* (ZD #3865) IMA 광고와의 하트비트 통합
+* (ZD #3865) IMA 광고와 하트비트 통합
 
 비디오 길이가 잘못 보고되던 버그를 수정했습니다.
 
@@ -975,7 +970,7 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 * (ZD #1107) CocoaLumberjack 심볼 복제
 * (ZD #1644) 타깃팅 및 보고를 위한 iOS 사용자 에이전트 수정
 * (ZD #1850) iOS SDK에 포함된 Cocoa Lumberjack 파일
-* (ZD#1908) 사용자 지정 태그가 1을 초과하는 경우 PSDK가 사용자 지정 태그를 무시합니다.
+* (ZD#1908) 사용자 지정 태그가 1을 초과하는 경우 PSDK에서 무시됩니다.
 
 **버전 1.4.0** (1.4.0.32)
 
@@ -991,7 +986,7 @@ PTPlaybackInformation을 업데이트하여 지정된 비트 전송률을 표시
 * 최소 타겟이 iOS7(이상)로 설정된 경우 drmNativeInterface.framework가 올바르게 링크되지 않습니다.\
    해결 방법:를 명시적으로 `libstdc++6`지정합니다.  dylib 라이브러리는 다음과 같습니다.Target->빌드 단계->바이너리를 라이브러리와 연결 및 추가합니다 `libstdc++.6.dylib`.
 
-* 포스트롤 API 교체에 삽입되지 않습니다.
+* API를 대체하기 위해 포스트롤 광고가 삽입되지 않습니다.
 * 광고 중단에서 검색하면(광고 중단 없이) 중복된 데이터가 발급되고 광고 중단 알림이 시작됩니다
 * currentTimeUpdateInterval 설정은 아무런 효과가 없습니다.\
    참고:특정 iOS 버전에서는 OS가 PSDKLibrary.framework 내에 리소스를 자동으로 로드하지 않습니다. PSDKResources.bundle을 애플리케이션의 번들 리소스에 수동으로 복사해야 합니다.&quot;빌드 단계&quot;로 이동하여 번들 리소스를 복사합니다.
