@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: e467153067bb10107054a5d4166b1d9c2ac646ab
+source-git-commit: 33509042e32c2167fab21788042bfb2bb877c0f4
 workflow-type: tm+mt
 source-wordcount: '5418'
 ht-degree: 0%
@@ -195,7 +195,7 @@ Android Studio를 사용하여 참조 앱을 설정하고 실행하려면 `TVSDK
 
 * **CRS 요청에 AdSystem 및 Creative Id 추가**
 
-   이제 1401 및 1403 요청 `AdSystem` 에 새 매개 변수 `CreativeId` 를 포함하거나 새 매개 변수로 포함시킬 수 있습니다.
+   이제 1401 및 1403 요청 `AdSystem` 에 새 매개 변수 `CreativeId` 를 포함시키고
 
 * **NetworkConfiguration 클래스의 API setEncodeUrlForTracking은 URL에 안전하지 않은 문자가 인코딩되어야 하므로 제거되었습니다** .
 
@@ -339,7 +339,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
 | 기능 | 컨텐츠 유형 | HLS |
 |---|---|---|
-| 일반 재생(재생, 일시 중지, 검색) | VOD + 라이브 | Y |
+| 일반 재생(재생, 일시 정지, 검색) | VOD + 라이브 | Y |
 | FER - 일반 재생(재생, 일시 중지, 검색) | FER VOD | Y |
 | 광고 재생 시 검색 | VOD + 라이브 | 지원되지 않음 |
 | HEVC 재생 | VOD + 라이브 | fMP4 컨테이너만 |
@@ -522,7 +522,7 @@ Android용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위�
 
    * 변수 m_nOutputHeight(AndroidMCVideoDecoder 내부의) 때문에 실제 출력 높이 대신 프레임 높이로 업데이트됩니다. getVideoFrame 함수에서 m_nOutputHeight를 올바르게 계산하도록 관련 변경 작업이 수행되었습니다.
 
-* ZD #26614 - 긴급 — 서드파티 광고 서비스/프로그래머틱 광고 서비스 — 노출 횟수 실패
+* ZD #26614 - 긴급 — 서드파티 광고 서비스/프로그래머틱 광고 서비스 — 광고 노출 횟수
 
    * &quot;space&quot;가 &lt;VAST version =&quot;2.0&quot;>과 같은 &quot;equal&quot; 기호 앞에 있을 때 문제가 재생산될 수 있는 XML 파싱의 사례를 처리하여 이전 수정 사항을 개선했습니다.
 
@@ -702,7 +702,7 @@ WebViewDebuging은 기본적으로 False로 설정됩니다. 디버깅을 활성
 
 * TVSDK 3.2는 CMAF 샘플 AES 및 AES128 스트림 재생을 지원하지 않습니다.
 * HEVC CMAF 스트림에는 자막 재생에 대한 지원이 포함되어 있지 않습니다.
-* 비밀번호화되지 않은 세그먼트 주변에서 검색을 수행할 때 WV 암호화된 스트림에 대해 녹색 색조가 표시됩니다.
+* 비밀번호화되지 않은 세그먼트 주변에서 검색을 수행할 때 WV 암호화된 스트림에 대해 녹색 색상이 표시됩니다.
 * CMAF 스트림은 ID3 이벤트를 지원하지 않습니다.
 * HLS 스트림은 TTML 캡션 형식을 지원하지 않습니다.
 
