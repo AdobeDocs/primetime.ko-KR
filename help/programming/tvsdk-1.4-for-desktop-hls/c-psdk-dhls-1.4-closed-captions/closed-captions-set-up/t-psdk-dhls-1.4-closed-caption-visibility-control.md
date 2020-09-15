@@ -5,7 +5,10 @@ seo-title: 자막 가시성 제어
 title: 자막 가시성 제어
 uuid: 360d1158-67d9-40d9-b4b6-8ef46f9d73c0
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
@@ -16,27 +19,26 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
 
 >[!TIP]
 >
->플레이어가 검색 모드로 들어갈 때 닫힌 캡션 텍스트가 표시되는 경우 검색이 완료된 후 텍스트가 더 이상 표시되지 않습니다. 대신, 몇 초 후 TVSDK는 종료 검색 위치 후 비디오에 다음 닫힌 캡션 텍스트를 표시합니다.
+>플레이어가 검색 모드로 들어갈 때 닫힌 캡션 텍스트가 표시되는 경우 검색이 완료된 후 텍스트가 더 이상 표시되지 않습니다. 대신, 몇 초 후 TVSDK는 마지막 검색 위치 이후 비디오에 다음 닫힌 캡션 텍스트를 표시합니다.
 
 >[!NOTE]
 >
->자막의 가시성 값은 에 정의되어 `ClosedCaptionsVisibility`있습니다.>
+>닫힌 캡션의 가시성 값은 에 정의되어 있습니다 `ClosedCaptionsVisibility`.
 >
-```>
+>
+```
 >public static const HIDDEN:String = hidden; 
 >public static const VISIBLE:String = visible;
->```>
+>```
 
-
-
-1. 준비 상태 `MediaPlayer` 이상이 준비될 때까지 기다립니다( [유효한 상태](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)대기 참조).
-1. 닫힌 캡션의 현재 가시성 설정을 가져오려면 에서 getter 메서드를 `MediaPlayer`사용합니다. 이 메서드는 가시성 값을 반환합니다.
+1. 준비 상태 이상 `MediaPlayer` 이 있을 때까지 기다립니다( [유효한 상태](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)대기 참조).
+1. 닫힌 캡션에 대한 현재 가시성 설정을 얻으려면 가시성 값을 반환하는 getter 방법 `MediaPlayer`을 사용하십시오.
 
    ```
    public function get ccVisibility():String
    ```
 
-1. 닫힌 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 가시성 값을 에서 전달하십시오 `ClosedCaptionsVisibility`.
+1. 닫힌 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 가시성 값을 전달하십시오 `ClosedCaptionsVisibility`.
 
    예:
 
@@ -67,7 +69,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
    player.addEventListener(MediaPlayerItemEvent.CAPTIONS_UPDATED, onCaptionUpdated);
    ```
 
-   폐기 코드에서 리스너를 제거하려면 다음을 수행합니다.
+   폐기 코드에서 수신기를 제거하려면 다음을 수행합니다.
 
    ```
    player.removeEventListener(MediaPlayerItemEvent.ITEM_CREATED, onItemCreated); 
