@@ -5,7 +5,7 @@ seo-title: 자막 스타일 제어
 title: 자막 스타일 제어
 uuid: fa4f637f-f13c-465d-8eee-5e66a6dd9db2
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 4ccc99f1ad6536ceb5e09c898dba3f71fa2de3f3
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%
@@ -143,10 +143,11 @@ TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있�
       >다양한 기능을 사용할 수 있습니다.
       >
       >응용 프로그램에서 색상 스타일 정보를 전달할 때마다 전과 같이 열거형 `TextFormatBuilder`을 사용하지만 이제 값을 문자열로 가져오려면 색상 `Color` `getValue()` 에 추가해야 합니다. 예:
-
+      >
+      >
       ```
-      tfb = tfb.setBackgroundColor(TextFormat.Color.RED <b>.getValue()</b>);
-      ```
+      >tfb = tfb.setBackgroundColor(TextFormat.Color.RED <b>.getValue()</b>);
+      >```
 
 
 
@@ -174,7 +175,8 @@ public TextFormatBuilder(
 ```
 
 >[!TIP]
-기본값(예: `DEFAULT`)을 정의하는 옵션에서 해당 값은 캡션이 처음 지정된 시점을 나타냅니다.
+>
+>기본값(예: `DEFAULT`)을 정의하는 옵션에서 해당 값은 캡션이 처음 지정된 시점을 나타냅니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_87205DEFEE384AF4AF83952B15E18A42"> 
  <thead> 
