@@ -5,9 +5,9 @@ seo-title: Primetime DRM 인터페이스 개요
 title: Primetime DRM 인터페이스 개요
 uuid: 3aae7c7a-fd0c-430e-9018-fd72801ab778
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -47,14 +47,14 @@ DRM으로 보호된 스트림이 MBR(다중 비트 전송률)로 인코딩된 �
 
 >[!TIP]
 >
->iOS 앱에서 DRM으로 보호된 자산 URL을 참조하는 경우 쿼리 문자열 매개 변수를 (MBR) 세트 수준 M3U8 URL에 추가해야 `?faxs=1` 합니다. 예:>
+>iOS 앱에서 DRM으로 보호된 자산 URL을 참조하는 경우 쿼리 문자열 매개 변수를 (MBR) 세트 수준 M3U8 URL에 추가해야 `?faxs=1` 합니다. 예:
 >
-```>
+>
+```
 >https://your.domain.com/hls/[...]/index.m3u8?faxs=1
->```>
->The `faxs=1` query string parameter signals that the content is DRM protected, and triggers the DRM decryption workflow accordingly in the iOS TVSDK. You can also append the `faxs=1` tag on DRM-protected HLS asset URLs that are destined for other platforms; it is observed as required on iOS or treated as a non-op in players on other platforms.
-
-
+>```
+>
+>쿼리 `faxs=1` 문자열 매개 변수는 컨텐츠가 DRM으로 보호되었다는 신호를 주고 iOS TVSDK에서 DRM 암호 해독 워크플로우를 트리거합니다. DRM으로 보호되는 HLS 자산 URL에 다른 플랫폼용으로 지정된 `faxs=1` 태그를 추가할 수도 있습니다.iOS에서는 필요에 따라 처리되거나 다른 플랫폼의 플레이어에서는 비상업적인 것으로 처리됩니다.
 
 <!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
