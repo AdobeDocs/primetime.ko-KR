@@ -1,28 +1,43 @@
 ---
-title: PTAI 20.9.1 릴리스 노트
-description: PTAI 20.9.1 릴리스 노트는 2020년 Primetime 동적 Ad Insertion에서 해결되고 알려진 새로운 문제점과 변경된 내용을 담고 있습니다.
+title: PTAI 20.9.2 릴리스 노트
+description: PTAI 20.9.2 릴리스 노트는 2020년 Primetime 동적 Ad Insertion에서 해결되고 알려진 새로운 문제점과 변경된 내용을 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 699e6a463bce4f7853406cb7fe529fb09f87ca92
+source-git-commit: e3d2811e40bc34bfdaacdab1529fa9b01e416a98
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
 
 
-# Primetime 동적 Ad Insertion 20.9.1 릴리스 노트
+# Primetime 동적 Ad Insertion 20.9.2 릴리스 노트
 
-동적 Ad Insertion 20.9.1 릴리스 노트는 2020년 Primetime 동적 Ad Insertion의 새로운 기능 또는 변경된 기능, 해결된 문제 및 알려진 문제를 설명합니다.
+동적 Ad Insertion 20.9.2 릴리스 노트는 2020년 Primetime 동적 Ad Insertion의 새로운 기능 또는 변경된 기능, 해결된 문제 및 알려진 문제를 설명합니다.
 
-## PTAI 20.9.1의 새로운 기능
+## PTAI 20.9.2의 새로운 기능
+
+**시기:** 2020년 9월 15일 화요일 오전 3:30부터 오전 6:30까지 동부 시간
+
+**향상된 기능**
+
+* 태그를 사용하는 비선형 광고 유형 포함에 대한 지원을 `EXT-X-MARKER` 제공합니다.
+자세한 내용이나 이 기능을 활성화하려면 기술 지원 담당자에게 문의하십시오.
+
+* 제공자가 응답하는 데 시간이 너무 오래 걸리는 경우 전체 광고 해상도 시간을 제한하기 위한 지원을 제공했습니다. 제한을 활성화하려면 부트스트랩 API 매개 변수 `ptadtimeout` 를 밀리초 단위로 설정합니다.
+
+   >[!NOTE]
+   >
+   >이 시간 제한은 광고 요청에만 적용되며 광고 크리에이티브 요청에는 적용되지 않습니다.
+
+### 이전 릴리스 버전의 개선 사항 및 수정 사항
+
+#### 버전 20.9.1
 
 **시기:** 2020년 9월 1일 화요일 오전 3:30부터 오전 7:30 까지 동부 시간
 
 **변경 사항**
 
 * 때때로 DVR 창에서 EXT-X-MAP 태그 또는 EXT-X-MAP 태그가 잘못 롤아웃되는 HLS/CMAF를 사용하는 고객의 문제를 해결했습니다.
-
-### 이전 릴리스 버전의 개선 사항 및 수정 사항
 
 #### 버전 20.8.4
 
