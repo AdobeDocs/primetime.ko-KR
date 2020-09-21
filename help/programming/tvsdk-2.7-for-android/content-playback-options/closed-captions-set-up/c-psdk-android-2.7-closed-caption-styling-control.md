@@ -5,9 +5,9 @@ seo-title: 자막 스타일 제어
 title: 자막 스타일 제어
 uuid: fa4f637f-f13c-465d-8eee-5e66a6dd9db2
 translation-type: tm+mt
-source-git-commit: 4ccc99f1ad6536ceb5e09c898dba3f71fa2de3f3
+source-git-commit: b02dfafdc78ca209da5ba0ed855342952be4288f
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -133,11 +133,11 @@ TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있�
       >
       >**색상 설정:** Android TV SDK 2.X에서는 자막 색상 스타일링을 향상시켰습니다. 향상된 기능을 통해 RGB 색상 값을 나타내는 16진수 문자열을 사용하여 닫힌 캡션 색상을 설정할 수 있습니다. RGB 16진수 색상 표현은 Photoshop과 같은 애플리케이션에서 사용하는 익숙한 6바이트 문자열입니다.
       >
-      >    * FFFF = 검정
-      >    * 000000 = 흰색
-      >    * FF0000 = 빨간색
-      >    * 00FF00 = 녹색
-      >    * 0000FF = 파란색
+      >* FFFF = 검정
+      >* 000000 = 흰색
+      >* FF0000 = 빨간색
+      >* 00FF00 = 녹색
+      >* 0000FF = 파란색
 
       >
       >다양한 기능을 사용할 수 있습니다.
