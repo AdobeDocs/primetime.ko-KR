@@ -1,13 +1,13 @@
 ---
-description: 쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 정렬 및 매니페스트 서버가 수행할 작업을 알려줍니다. 일부 포맷은 필수이며 일부 포맷이나 값은 허용되는 특정 포맷이 있습니다.
-seo-description: 쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 정렬 및 매니페스트 서버가 수행할 작업을 알려줍니다. 일부 포맷은 필수이며 일부 포맷이나 값은 허용되는 특정 포맷이 있습니다.
+description: 쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 정렬 및 매니페스트 서버가 수행할 작업을 알려줍니다. 일부 포맷은 필수이며 일부 포맷이나 값은 허용되는 특정 포맷을 가지고 있습니다.
+seo-description: 쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 정렬 및 매니페스트 서버가 수행할 작업을 알려줍니다. 일부 포맷은 필수이며 일부 포맷이나 값은 허용되는 특정 포맷을 가지고 있습니다.
 seo-title: 매니페스트 서버 쿼리 매개 변수
 title: 매니페스트 서버 쿼리 매개 변수
 uuid: 03632da3-ae20-427c-bd24-4794ab627cc8
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: 6d25fc11bc4ca91556cae0b944322cd224c89fb5
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # 매니페스트 서버 쿼리 매개 변수 {#manifest-server-query-parameters}
 
-쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 정렬 및 매니페스트 서버가 수행할 작업을 알려줍니다. 일부 포맷은 필수이며 일부 포맷이나 값은 허용되는 특정 포맷이 있습니다.
+쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 정렬 및 매니페스트 서버가 수행할 작업을 알려줍니다. 일부 포맷은 필수이며 일부 포맷이나 값은 허용되는 특정 포맷을 가지고 있습니다.
 
-전체 URL은 기본 URL 뒤에 물음표, `parameterName=value` 인수 순으로 구성됩니다. `Base URL?name1=value1&name2=value2& . . .&name n=value n`
+전체 URL은 기본 URL 뒤에 물음표, `parameterName=value` 인수 순으로 구성됩니다. `Base URL?name1=value1&name2=value2& . . .&name n=value n`.
 
-## 인식된 매개 변수 {#section_072845B7FA94468C8068E9092983C9E6}
+## 인식된 매개 변수 {#recognized-parameters}
 
 매니페스트 서버는 다음 매개 변수를 인식합니다. 인식할 수 없는 모든 매개 변수와 함께 광고 서버에 전달하거나 프로세스를 처리합니다.
 
@@ -50,3 +50,5 @@ ht-degree: 0%
 | scteTracking | JSON V2 sidecar에서 SCTE 추적 정보를 가져오기 전에 M3U8을 반입합니다.  <br/>이 매개 변수는 M3U8을 가져오는 플레이어에서 SCTE 태그 정보를 검색해야 함을 매니페스트 서버에 나타냅니다. | 아니요(기본값: false ) | 참 또는 거짓 참고: SCTE-35 데이터는 다음과 같은 쿼리 매개 변수 값의 조합으로 JSON sidecar에서 반환됩니다. <ul><li>`ptcueformat=turner | elemental | nfl | DPIScte35` </li><li>pttrackingversion=v2 </li><li>scteTracking=true</li></ul> |
 | peargetmultiple | 라이브 포인트의 세그먼트 수 프리롤 오프셋이 다음을 사용하여 구성됩니다.  `(  vetargetmultiplier  *  targetduration ) +  vebufferlength`  <br/><br/>**참고**: 라이브/선형 전용 | 아니요(기본값: 3.0 ) | 부동 |
 | vebufferLength | 라이브 포인트의 시간(초): 라이브/선형 전용 | 아니요(기본값: 3.0 ) | 부동 |
+| ptadtimeout | 제공자가 응답하는 데 시간이 너무 오래 걸리는 경우 전체 광고 해상도 시간을 제한합니다. | 예. | 밀리초 단위 값 |
+| pparallstream | 오디오 및 비디오 트랙의 광고가 일관되게 나타나도록 CMAF 요청 오디오 또는 비디오 스트림을 병렬로 요청하는 플레이어를 사용할 수 있습니다. | 예. 기능을 활성화하거나 비활성화할 수 없습니다. | true |
