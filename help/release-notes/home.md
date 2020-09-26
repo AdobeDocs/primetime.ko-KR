@@ -4,9 +4,9 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: e3d2811e40bc34bfdaacdab1529fa9b01e416a98
+source-git-commit: 6d25fc11bc4ca91556cae0b944322cd224c89fb5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,9 @@ ht-degree: 0%
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서에서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 20.9.2의 개선 사항 및 수정 사항
+## PTAI 20.9.3의 개선 사항 및 수정 사항
 
-이번 릴리스는 태그를 사용하여 비선형 광고 유형을 포함할 수 있도록 지원하고 제공자가 응답하는 데 시간이 너무 오래 걸리는 전반적인 광고 해상도 시간을 제한하는 데 중점을 두었습니다. `EXT-X-MARKER`
-
-현재 출시된 동적 Ad Insertion 버전에 대한 자세한 내용은 [PTAI 릴리스 노트를 참조하십시오](ptai-20x-release-notes.md).
+이 릴리스는 부트스트랩 API 매개 변수 `ptparallelstream`를 제공하는 데 중점을 두었으며, CMAF를 필요로 하는 오디오 또는 비디오 스트림을 동시에 요청하는 플레이어를 사용하는 고객이 오디오 및 비디오 트랙의 광고가 일관되게 전달되도록 할 수 있습니다.
 
 ## TVSDK 3.12 Android의 수정 사항
 
