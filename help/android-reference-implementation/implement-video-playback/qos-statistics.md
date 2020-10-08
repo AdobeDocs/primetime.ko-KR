@@ -5,7 +5,10 @@ seo-title: QoS 재생 및 디바이스 통계 표시
 title: QoS 재생 및 디바이스 통계 표시
 uuid: 8fc45a2f-03d4-4fa0-979b-eb816419c4f7
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: e1c6ab1d50f9262aaf70aef34854cf293fb4f30d
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,39 +23,41 @@ source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
 
 ![](assets/qos-configuration.jpg)
 
-디바이스 정보를 가져오고 미디어 플레이어에 연결하며 최신 QoS 정보를 업데이트하여 QoS 통계를 `QoSManager` 추적합니다.
+디바이스 정보를 얻고 미디어 플레이어에 연결하며 최신 QoS 정보를 업데이트하여 QoS 통계를 추적합니다. `QoSManager`
 
 **QoS 통계 보고 활성화 또는 비활성화**
 
 1. QosManager를 만들거나 ManagerFactory를 사용하여 QoS 보고를 활성화합니다.
 
    * QosManager를 만들려면
-      * 이 애플리케이션은 광고 워크플로우 기능을 사용해야 합니다.
-   QoSManager qosManager = new QosManagerOn();
+      * 이 응용 프로그램은 광고 워크플로우 기능을 사용해야 합니다
 
-   * ManagerFactory를 사용하여 QoS 통계 표시를 활성화하려면
+   QoSManager qosManager = 새로운 QosManagerOn();
+
+   * ManagerFactory를 사용하여 QoS 통계 표시를 활성화하려면:
+
    qosManager = ManagerFactory.getQosManager(
    <b>true</b>, config, mediaPlayer);
 
    >[!NOTE]
    >
-   >부울 값을 QoS 보고를 `false` 비활성화하도록 변경합니다.
+   >QoS 보고를 `false` 비활성화하도록 부울 값을 변경합니다.
 
-2. 이벤트 리스너 추가:
+2. 이벤트 리스너를 추가합니다.
 
    `qosManager.addEventListener(qosManagerEventListener);`
 
-3. QoS 공급자를 만들어 플레이어 활동 컨텍스트에 연결합니다.
+3. QoS 공급자를 만들고 플레이어 활동 컨텍스트에 연결합니다.
 
    `qosManager.createQOSProvider(getActivity());`
 
    >[!NOTE]
    >
-   >플레이어 활동이 삭제될 경우, [미디어 플레이어에서 분리하여 QOS](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html#destroyQOSProvider()) 공급자를 정리하려면 qosManager.destroyQOSProvider에 문의하십시오.
+   >플레이어 활동이 파괴되는 경우, 미디어 플레이어에서 분리하여 QOS 공급자를 정리하려면 [qosManager.destroyQOSProvider](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html#destroyQOSProvider()) 에 전화하십시오.
 
 **관련 API 설명서**
 
 * [클래스 QosManager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html)
-* [QosManagerOn 클래스](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManagerOn.html)
+* [클래스 QosManagerOn](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManagerOn.html)
 * [QosManagerEventListener](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.QosManagerEventListener.html)
 * [QosItem](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.QosItem.html)
