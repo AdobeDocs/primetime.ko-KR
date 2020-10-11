@@ -1,28 +1,36 @@
 ---
-title: PTAI 20.9.3 릴리스 노트
-description: PTAI 20.9.3 릴리스 노트는 2020년 Primetime 동적 Ad Insertion에서 해결되고 알려진 새로운 문제점과 변경된 내용을 담고 있습니다.
+title: PTAI 20.10.1 릴리스 노트
+description: PTAI 20.10.1 릴리스 노트는 2020년 Primetime Ad Insertion에서 해결되고 알려진 새로운 것과 변경된 내용을 담고 있습니다.
 translation-type: tm+mt
-source-git-commit: 6d25fc11bc4ca91556cae0b944322cd224c89fb5
+source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
 
 
-# Primetime 동적 Ad Insertion 20.9.3 릴리스 노트
+# Primetime Ad Insertion 20.10.1 릴리스 노트
 
-동적 Ad Insertion 20.9.3 릴리스 노트는 2020년 Primetime 동적 Ad Insertion의 새로운 기능 또는 변경된 기능, 해결된 문제 및 알려진 문제를 설명합니다.
+Primetime Ad Insertion 20.10.1 릴리스 노트는 2020년 Primetime Ad Insertion의 새로운 기능 또는 변경된 기능, 해결된 문제 및 알려진 문제를 설명합니다.
 
-## PTAI 20.9.3의 새로운 기능
+## PTAI 20.10.1의 새로운 기능
+
+**시기:** 2020년 10월 13일 화요일 오전 3:00부터 오전 07:00까지 동부 시간
+
+**변경 사항**
+
+* 유지 관리 업데이트.
+
+### 이전 릴리스 버전의 개선 사항 및 수정 사항
+
+#### 버전 20.9.3
 
 **시기:** 2020년 9월 30일 수요일 오전 3:30 ~ 오전 6:30 동부 시간
 
 **변경 사항**
 
 * Bootstrap API 매개 변수가 추가되었습니다 `ptparallelstream`. 이를 통해 오디오 및 비디오 트랙의 광고가 일관되게 나타나도록 CMAF 요구 오디오 또는 비디오 스트림을 동시에 요청하는 플레이어를 사용하는 고객이 이를 이용할 수 있습니다. 이 기능을 활성화하거나 사용하지 않도록 설정하려면 매개 변수 값을 true로 설정합니다.
-
-### 이전 릴리스 버전의 개선 사항 및 수정 사항
 
 #### 버전 20.9.2
 
@@ -220,6 +228,6 @@ ht-degree: 0%
 
 ## 알려진 문제 및 제한 사항
 
-**PTAI 20.3.3**
+**PTAI 20.10.1**
 
 새로운 제한이 추가되지 않았습니다.
