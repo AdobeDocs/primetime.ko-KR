@@ -2,20 +2,28 @@
 cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime 동적 Ad Insertion 도움말
+user-guide-title: Primetime Dynamic Ad Insertion 도움말
 user-guide-description: Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads.
 translation-type: tm+mt
-source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
 
 
-# 동적 Ad Insertion 도움말 {#ad-insertion}
+# Dynamic Ad Insertion Help {#ad-insertion}
 
 + [동적 Ad Insertion 개요](home.md)
++ Primetime Ad Insertion 시작하기{#get-started}
+   + [개요](get-started-ptai.md)
+   + [Primetime Ad Insertion 사용 준비](setup-ptai.md)
+   + [광고 서버 통합](integrate-ad-server.md)
+   + [CDN 통합](integrate-cdn.md)
+   + [라이브/선형 스트림에서 광고 삽입 사용](ad-insertion-live-linear-stream.md)
+   + [VOD에 광고 삽입 사용](ad-insertion-vod.md)
+   + [광고 추적 설정](set-up-ad-tracking.md)
 + [동적 Ad Insertion 릴리스 노트](https://docs.adobe.com/content/help/en/primetime/release-notes/ptai/ptai-19x-release-notes.html)
 + [매니페스트 서버 디버깅 도구](manifest-server-debugging-tool.md)
 
