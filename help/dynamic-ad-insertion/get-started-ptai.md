@@ -2,9 +2,9 @@
 title: Adobe Primetime Ad Insertion 시작하기
 description: Adobe Primetime Ad Insertion 시작하기
 translation-type: tm+mt
-source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
+source-git-commit: 2a9bb089cda2b315f91b30d5cab0db9b3e372799
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Primetime Ad Insertion은 각 뷰어에 대한 대상 광고 및 개인화된 �
 
 1. Primetime Ad Insertion은 요청된 스트림을 컨텐츠 CDN에서 가져오고, 큐 정보를 구문/읽고, 광고 서버에 전화를 걸며, 필요에 따라 광고 중단을 바꿉니다.
 
-1. Primetime Ad Insertion은 리소스 URL을 다시 작성하고 광고 크리에이티브가 트랜스코딩해야 하는지 여부를 확인하여 매니페스트를 정규화합니다. [지정된 시간 광고 트랜스코딩](just-in-time-transcoding.md) 및 [패키징](just-in-time-repackaging.md)참조
+1. Primetime Ad Insertion은 리소스 URL을 다시 작성하고 광고 크리에이티브 전문가가 트랜스코딩해야 하는지 여부를 확인하여 매니페스트를 정규화합니다. <!-- see [Just-in-time ad transcoding](just-in-time-transcoding.md) and [packaging](just-in-time-repackaging.md).-->
 
 1. Primetime Ad Insertion은 필요한 광고 크리에이티브를 가져오고 해당 조각을 매니페스트에 삽입합니다.
 
