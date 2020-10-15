@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 릴리스 노트
-user-guide-description: Provides release-specific information, system requirements, limitations, fixed issues, and known issues.
+user-guide-description: 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 translation-type: tm+mt
-source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
+source-git-commit: fac84687085f289e984c189665bfe775337592b3
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 5%
+source-wordcount: '111'
+ht-degree: 15%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 # Primetime 릴리스 노트 {#release-notes}
 
 + [릴리스 노트 개요](home.md)
-+ Primetime Dynamic Ad Insertion {#ptai}
++ Primetime Ad Insertion {#ptai}
    + [PTAI 20.10.1 릴리스 노트](ptai-20x-release-notes.md)
    + [PTAI 19.11.1 릴리스 노트](ptai-19x-release-notes.md)
 + iOS용 TVSDK {#tvsdk-ios}
