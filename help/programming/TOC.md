@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Primetime 프로그래밍 도움말
 user-guide-description: Android 장치에서 Java를 사용하는 응용 프로그램 및 비디오 플레이어를 개발하는 방법과 iOS 장치에서 Objective-C를 사용하는 방법을 배울 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+source-git-commit: 02ac57d14cf5c4c2819d17413a9d3e9a31237715
 workflow-type: tm+mt
 source-wordcount: '4327'
 ht-degree: 0%
