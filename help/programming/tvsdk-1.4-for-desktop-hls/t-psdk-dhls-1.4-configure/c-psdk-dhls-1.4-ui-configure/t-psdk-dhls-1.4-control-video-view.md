@@ -37,8 +37,7 @@ MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 �
    >
    >예:
    >
-   >
-   ```
+   >```
    >public class CustomScalePolicy implements MediaPlayerViewScalePolicy { 
    >       /** 
    >         * Default constructor. 
