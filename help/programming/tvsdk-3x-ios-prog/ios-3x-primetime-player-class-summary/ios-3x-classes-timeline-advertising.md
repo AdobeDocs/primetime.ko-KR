@@ -78,13 +78,14 @@ ht-degree: 0%
   <tr rowsep="1"> 
    <td colname="1"> 
     <pre>
-     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> 클래스, <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> 프로토콜
+     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTContentResolver.html" format="html" scope="external"> PTContentResolverclass, </a>   
+     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolver.html" format="html" scope="external"> </a> PTContentResolverprotocol
     </pre> </td> 
    <td colname="2"> Adobe Primetime 광고 결정 프로세스의 광고 해결 부분을 처리하는 클래스입니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolverDelegate.html" format="html" scope="external"> PTContentResolverDelegate</a> </td> 
-   <td colname="2"> 사용자 지정 컨텐츠 확인자( <span class="codeph"> PTContentResolver</span> )가 컨텐츠 해결 상태를 위임하는 데 사용해야 하는 방법을 설명하는 프로토콜입니다. </td> 
+   <td colname="2"> 사용자 지정 컨텐츠 확인자( <span class="codeph"> PTContentResolver</span> )가 컨텐츠 해결 상태를 위임자에게 통신하는 데 사용해야 하는 방법을 설명하는 프로토콜입니다. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Constants/PTPlacementType.html" format="html" scope="external"> PTPlacementType</a> </td> 
