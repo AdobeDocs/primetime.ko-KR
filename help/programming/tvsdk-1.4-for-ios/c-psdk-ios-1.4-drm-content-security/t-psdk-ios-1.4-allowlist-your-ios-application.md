@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# iOS 애플리케이션 허용 목록 {#allowlist-your-ios-application}
+# iOS 응용 프로그램 {#allowlist-your-ios-application} 허용 목록
 
 Adobe의 machotools 도구를 사용하여 iOS 앱을 허용 목록할 수 있습니다.
 
@@ -33,11 +33,11 @@ iOS 앱을 제출하기 전에 앱을 서명하여 Apple에 게시해야 합니�
 
 재서명 때문에 Apple App Store에 제출하기 전에 생성된 목록 정보를 사용할 수 없습니다.
 
-이 제출 정책을 해결하기 위해 Adobe은 iOS 응용 프로그램을 지문하여 다이제스트 값을 만들고, 이 값을 서명하고, iOS 응용 프로그램에서 이 값을 주입하는 `machotools` 도구를 만들었습니다. iOS 앱을 지문한 후 Apple App Store에 앱을 제출할 수 있습니다. 사용자가 App Store에서 앱을 실행하면 Primetime DRM은 애플리케이션 지문에 대한 런타임 계산을 수행하고 이전에 애플리케이션에 삽입된 다이제스트 값으로 이를 확인합니다. 지문이 일치하면 앱이 나열된 것으로 확인되고 보호된 콘텐츠는 재생이 허용됩니다.
+이 제출 정책을 해결하기 위해 Adobe은 iOS 응용 프로그램을 지문 인식하여 다이제스트 값을 만들고, 이 값을 서명하고, iOS 응용 프로그램에서 이 값을 주입하는 `machotools` 도구를 만들었습니다. iOS 앱을 지문한 후 Apple App Store에 앱을 제출할 수 있습니다. 사용자가 App Store에서 앱을 실행하면 Primetime DRM은 애플리케이션 지문에 대한 런타임 계산을 수행하고 이전에 애플리케이션에 삽입된 다이제스트 값으로 이를 확인합니다. 지문이 일치하면 앱이 나열된 것으로 확인되고 보호된 콘텐츠는 재생이 허용됩니다.
 
-Adobe `machotools` 도구는 [!DNL..]의 iOS TVSDK SDK에 포함되어 [있습니다.]/tools/DRM] 폴더.
+Adobe `machotools` 도구는 [!DNL [의 iOS TVSDK SDK에 포함되어 있습니다..]/tools/DRM] 폴더
 
-사용 방법 `machotools`:
+`machotools`을(를) 사용하려면:
 
 1. 키 쌍을 생성합니다.
 
@@ -83,7 +83,7 @@ Adobe `machotools` 도구는 [!DNL..]의 iOS TVSDK SDK에 포함되어 [있습�
    자체 서명된 인증서를 사용하여 iOS 앱에 서명할 수 있습니다.
 
 1. PFX 파일 및 암호 위치를 업데이트합니다.
-1. Xcode에서 애플리케이션을 빌드하기 전에 **[!UICONTROL Build Phases]** > **[!UICONTROL Run Script]** 으로 이동하여 실행 스크립트에 다음 명령을 추가합니다.
+1. Xcode에서 응용 프로그램을 빌드하기 전에 **[!UICONTROL Build Phases]** > **[!UICONTROL Run Script]**&#x200B;로 이동하여 실행 스크립트에 다음 명령을 추가합니다.
 
    ```shell
    mkdir -p "${PROJECT_DIR}/generatedRes" "${PROJECT_DIR}/machotools" sign  
@@ -93,14 +93,14 @@ Adobe `machotools` 도구는 [!DNL..]의 iOS TVSDK SDK에 포함되어 [있습�
      -pass PASSWORD
    ```
 
-1. 실행 [!DNL machotools] 을 통해 앱 게시자 ID 해시 값을 생성합니다.
+1. [!DNL machotools]을(를) 실행하여 앱 게시자 ID 해시 값을 생성합니다.
 
    ```shell
    ./machotools dumpMachoSignature -in ${PROJECT_DIR}/generatedRes/AAXSAppDigest.digest
    ```
 
 1. 새 DRM 정책을 만들거나 반환된 게시자 ID 해시 값을 포함하도록 기존 정책을 업데이트합니다.
-1. 을 [!DNL AdobePolicyManager.jar]사용하여 새 DRM 정책을 만들고(기존 정책 업데이트) 반환된 게시자 ID 해시 값, 선택적 앱 ID, 포함된 [!DNL flashaccess-tools.properties] 파일에 최소 및 최대 버전 속성을 포함합니다.
+1. [!DNL AdobePolicyManager.jar]을(를) 사용하여 반환된 게시자 ID 해시 값, 선택적 앱 ID, 포함된 [!DNL flashaccess-tools.properties] 파일에 최소 및 최대 버전 속성을 포함하도록 새 DRM 정책(기존 정책 업데이트)을 만듭니다.
 
    ```shell
    java -jar libs/AdobePolicyManager.jar new app_allowlist.pol
