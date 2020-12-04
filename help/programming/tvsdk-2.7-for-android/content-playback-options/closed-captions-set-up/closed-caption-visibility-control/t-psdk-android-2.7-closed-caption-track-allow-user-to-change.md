@@ -6,11 +6,14 @@ title: 사용자가 캡션 추적 변경 허용
 uuid: 043dc492-1dd4-4b7f-8541-d60a1d3d7c4a
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 0%
 
 ---
 
 
-# 사용자가 캡션 추적 변경 허용 {#allow-users-to-change-the-caption-track}
+# 사용자가 캡션 추적 {#allow-users-to-change-the-caption-track}을(를) 변경할 수 있도록 허용
 
 이 절차는 사용자가 닫힌 캡션 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
 
@@ -30,7 +33,7 @@ source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
 
 1. 사용 가능한 닫힌 캡션 트랙 목록을 문자열 배열로 변환합니다.
 
-   자막은 활동이 있는 추적, 즉 TVSDK에서 데이터를 검색한 채널이 그에 따라 표시됩니다.
+   자막은 TVSDK에서 데이터를 검색한 채널의 활동을 추적하며 그에 따라 표시됩니다.
 
    ```java
    /** 
@@ -58,7 +61,7 @@ source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
    } 
    ```
 
-1. 사용자가 단추를 클릭하면 모든 기본 닫힌 캡션 트랙을 나열하는 대화 상자가 표시됩니다.
+1. 사용자가 단추를 클릭하면 기본 닫힌 캡션 트랙을 모두 나열하는 대화 상자가 표시됩니다.
 
    ```java
    public void selectClosedCaptioningClick(View view) { 
