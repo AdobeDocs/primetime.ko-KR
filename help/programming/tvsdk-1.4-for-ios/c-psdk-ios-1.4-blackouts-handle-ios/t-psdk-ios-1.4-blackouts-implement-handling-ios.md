@@ -1,22 +1,25 @@
 ---
-description: TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
-seo-description: TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
+description: TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제공합니다.
+seo-description: TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제공합니다.
 seo-title: 일시 중단 처리 구현
 title: 일시 중단 처리 구현
 uuid: 38a78a57-b641-439a-a7d8-da571a0902e4
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 0%
 
 ---
 
 
 # 일시 중단 처리 구현 {#implement-blackout-handling}
 
-TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
+TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제공합니다.
 
-일시 중단 처리를 구현하고 일시 중단 중에 대체 컨텐츠를 제공하려면
+일시 중단 처리를 구현하고 일시 중단 중에 대체 컨텐츠를 제공하려면:
 
-1. 라이브 스트림 매니페스트의 일시 중단 태그에 구독하도록 앱을 설정합니다.
+1. 라이브 스트림 매니페스트의 일시 중단 태그에 가입하도록 앱을 설정합니다.
 
 ```
  - (void) createMediaPlayer:(PTMediaPlayerItem *)item
@@ -27,7 +30,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
  }
 ```
 
-1. 에 대한 알림 수신기를 `PTTimedMetadataChangedNotification`추가합니다.
+1. `PTTimedMetadataChangedNotification`에 대한 알림 수신기를 추가합니다.
 
    ```
    - (void)addobservers 
@@ -37,7 +40,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 전경의 `PTTimedMetadata` 개체에 대한 리스너 메서드를 구현합니다.
+1. 전경에 있는 `PTTimedMetadata` 개체에 대한 수신기 메서드를 구현합니다.
 
    예:
 
@@ -61,7 +64,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 재생하는 동안 지속적으로 업데이트되는 `TimedMetadata` 객체를 처리할 수 있습니다.
+1. 재생하는 동안 지속적인 업데이트를 통해 `TimedMetadata` 개체를 처리합니다.
 
    ```
    - (void)onMediaPlayerTimeChange:(NSNotification *)notification 
@@ -82,7 +85,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 대체 컨텐츠로 전환하고 개체 및 재생 시간에 지정된 대로 기본 컨텐츠로 돌아갈 수 있는 `PTTimedMetadata` 핸들러를 `PTTimedMetadata` 추가합니다.
+1. `PTTimedMetadata` 핸들러를 추가하여 대체 컨텐츠로 전환하고 `PTTimedMetadata` 개체 및 해당 재생 시간에 지정된 기본 컨텐츠로 돌아갑니다.
 
    ```
    - (void)handleCollectionAtTime:(int)currentTime 
@@ -197,7 +200,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 백그라운드에서 `PTTimedMetadata` 객체에 대한 리스너 메서드를 구현합니다.
+1. 백그라운드에서 `PTTimedMetadata` 개체에 대한 수신기 메서드를 구현합니다.
 
    ```
    - (void)onSubscribedTagInBackground:(NSNotification *)notification 
@@ -218,7 +221,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 백그라운드 오류에 대한 리스너 메서드를 구현합니다.
+1. 배경 오류에 대한 리스너 메서드를 구현합니다.
 
    ```
    - (void) onBackgroundManifestError:(NSNotification *)notification 
