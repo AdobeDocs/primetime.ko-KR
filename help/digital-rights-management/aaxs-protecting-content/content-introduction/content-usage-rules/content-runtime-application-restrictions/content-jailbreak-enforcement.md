@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# Jailbreak Enforcement (Adobe Primetime 필요) {#jailbreak-enforcement-requires-adobe-primetime}
+# Titlebreak Enforcement (Adobe Primetime 필요) {#jailbreak-enforcement-requires-adobe-primetime}
 
-탈옥을 지원하는 플랫폼(예: Android 및 iOS 모바일 장치)에서 가드레인출을 사용하면 장치에서 감지된 컨텐츠의 재생을 중단할 수 [!DNL jailbreak/root] 있습니다.
+Android 및 iOS 모바일 디바이스와 같은 탈옥을 지원하는 플랫폼에서 [!DNL jailbreak/root]이(가) 장치에서 감지된 경우 탈옥을 통해 콘텐츠를 재생할 수 없습니다.
 
 >[!NOTE]
 >
