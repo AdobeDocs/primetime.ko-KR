@@ -23,7 +23,7 @@ SDK는 HSM 또는 PKCS12 파일 등 여러 가지 방법으로 자격 증명(공
 >
 >Java1.7부터 64비트 Sun Java for Windows는 HSM 디바이스와 통신하기 위해 Adobe 액세스 DRM이 필요한 PKCS11 인터페이스를 지원하지 않습니다. HSM을 사용하려는 경우 32비트 Java 버전을 사용하거나 전체 PKCS11 인터페이스를 지원하는 JDK를 사용하십시오.
 
-HSM(Hardware Security Module)에 개인 키를 유지하고 SDK를 사용하여 HSM에서 얻은 자격 증명을 전달할 수 있습니다. HSM에 저장된 자격 증명을 사용하려면 HSM과 통신할 수 있는 JCE 공급자를 사용하여 개인 키에 대한 핸들을 가져옵니다. 그런 다음 공개 키가 들어 있는 개인 키 핸들, 공급자 이름 및 인증서를 전달하십시오 `ServerCredentialFactory.getServerCredential()`.
+HSM(Hardware Security Module)에 개인 키를 유지하고 SDK를 사용하여 HSM에서 얻은 자격 증명을 전달할 수 있습니다. HSM에 저장된 자격 증명을 사용하려면 HSM과 통신할 수 있는 JCE 공급자를 사용하여 개인 키에 대한 핸들을 가져옵니다. 그런 다음 공개 키가 포함된 개인 키 핸들, 공급자 이름 및 인증서를 `ServerCredentialFactory.getServerCredential()`에 전달합니다.
 
 SunPKCS11 제공자는 HSM의 개인 키에 액세스하는 데 사용할 수 있는 JCE 공급자의 한 예입니다(이 공급자 사용에 대한 지침은 Sun Java 설명서 참조). 일부 HSM에는 JCE 제공자가 포함된 Java SDK도 포함되어 있습니다.
 
