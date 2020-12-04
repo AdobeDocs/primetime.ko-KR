@@ -19,7 +19,7 @@ ht-degree: 0%
 
 기본 동작을 사용하려면:
 
-* 고유한 `ContentFactory` 클래스를 구현하는 경우, 구현에서 새 인스턴스 `DefaultAdPolicySelector` 를 반환합니다 `doRetrieveAdPolicySelector`.
+* 자신의 `ContentFactory` 클래스를 구현하는 경우 `doRetrieveAdPolicySelector` 구현에서 `DefaultAdPolicySelector`의 새 인스턴스를 반환합니다.
 
    ```
    public class CustomContentFactory extends ContentFactory { 
@@ -38,4 +38,4 @@ ht-degree: 0%
    }
    ```
 
-* 클래스에 대한 사용자 정의 구현이 없는 경우 TVSDK는 `ContentFactory` 사용합니다 `DefaultAdPolicySelector`.
+* `ContentFactory` 클래스에 대한 사용자 지정 구현이 없는 경우 TVSDK는 `DefaultAdPolicySelector`을 사용합니다.
