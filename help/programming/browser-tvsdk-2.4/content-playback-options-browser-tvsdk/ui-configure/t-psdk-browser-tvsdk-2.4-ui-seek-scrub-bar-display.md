@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 검색 막대를 사용할 때 검색 처리{#handle-seek-when-using-the-seek-bar}
+# 검색 막대{#handle-seek-when-using-the-seek-bar} 사용 시 검색 처리
 
 Browser TVSDK에서는 스트림의 특정 위치(시간)를 찾을 수 있습니다. 스트림은 슬라이딩 윈도우 재생 목록 또는 VOD(Video-On-Demand) 컨텐츠일 수 있습니다.
 
@@ -23,11 +23,11 @@ Browser TVSDK에서는 스트림의 특정 위치(시간)를 찾을 수 있습�
 
 1. 브라우저 TV SDK가 유효한 검색 상태를 유지할 때까지 기다립니다.
 
-   유효한 상태는 준비, 완료, 일시 중지 및 재생됩니다. 유효한 상태이면 미디어 리소스가 성공적으로 로드됩니다. 플레이어가 올바른 검색 가능 상태가 아니면 다음 메서드를 호출하려고 하면 오류가 발생합니다 `IllegalStateException`.
+   유효한 상태는 준비, 완료, 일시 중지 및 재생됩니다. 유효한 상태이면 미디어 리소스가 성공적으로 로드됩니다. 플레이어가 올바른 검색 가능 상태가 아니면 다음 메서드를 호출하려고 하면 `IllegalStateException`이 발생합니다.
 
-   예를 들어 브라우저 TVSDK가 트리거될 때까지 `AdobePSDK.MediaPlayerStatusChangeEvent` 기다릴 수 `event.status` 있습니다 `AdobePSDK.MediaPlayerStatus.PREPARED`.
+   예를 들어 브라우저 TVSDK가 `event.status`의 &lt;a1/>과 함께 `AdobePSDK.MediaPlayerStatusChangeEvent`을(를) 트리거할 때까지 기다릴 수 있습니다.`AdobePSDK.MediaPlayerStatus.PREPARED`
 
-1. 요청된 검색 위치를 `MediaPlayer.seek` 메서드로 밀리초 단위로 전달합니다.
+1. 요청된 검색 위치를 밀리초 단위의 매개 변수로 `MediaPlayer.seek` 메서드에 전달합니다.
 
    그러면 재생 헤드가 스트림의 다른 위치로 이동합니다.
 
@@ -39,7 +39,7 @@ Browser TVSDK에서는 스트림의 특정 위치(시간)를 찾을 수 있습�
    void seek(long position) throws IllegalStateException;
    ```
 
-1. 브라우저 TV SDK가 이벤트를 트리거할 때까지 기다리십시오. 그러면 이벤트의 속성에 조정된 위치가 `AdobePSDK.PSDKEventType.SEEK_END` `actualPosition` 반환됩니다.
+1. 브라우저 TV SDK가 `AdobePSDK.PSDKEventType.SEEK_END` 이벤트를 트리거할 때까지 기다리십시오. 이 이벤트는 이벤트의 `actualPosition` 속성에서 조정된 위치를 반환합니다.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.SEEK_END, onSeekComplete); 
@@ -53,7 +53,7 @@ Browser TVSDK에서는 스트림의 특정 위치(시간)를 찾을 수 있습�
    * 재생 동작은 검색 또는 다른 위치 지정이 광고 중단 중간에 종료되거나 광고 분기를 건너뛰는 경우에 영향을 받습니다.
    * 자산의 검색 가능한 기간에서만 검색할 수 있습니다. VOD의 경우, 0부터 자산의 지속 시간입니다.
 
-1. 위 예에서 만든 검색 막대의 경우 사용자가 스크러빙 중인 시간을 확인할 수 `setPositionChangeListener()` 있습니다.
+1. 위 예에서 만든 검색 막대의 경우 사용자가 스크러빙 중인 시간을 보려면 `setPositionChangeListener()`에 귀를 기울입니다.
 
    ```js
    seekBar.setPositionChangeListener(function (pos) { 
