@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# NATIVE_ERROR 알림에 대한 세부 사항 {#details-for-the-native-error-notification}
+# NATIVE_ERROR 알림 {#details-for-the-native-error-notification} 세부 정보
 
 TVSDK가 기본 오류를 처리하면 다음 메타데이터 키 값의 일부 또는 전체를 설정합니다.
 
@@ -24,7 +24,7 @@ TVSDK가 기본 오류를 처리하면 다음 메타데이터 키 값의 일부 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> NATIVE_ERROR_CODE </span> </td> 
+   <td colname="col1"> <span class="codeph"> NATIVE_ERROR_CODE  </span> </td> 
    <td colname="col2"> 
     <pre>
       AVE의 기본 오류 코드입니다. 
@@ -36,19 +36,19 @@ TVSDK가 기본 오류를 처리하면 다음 메타데이터 키 값의 일부 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> NATIVE_ERROR_NAME </span> </td> 
-   <td colname="col2"> 오류 이름이 포함된 문자열;예: <span class="codeph"> AAXS_InvalidVoucher </span> 또는 <span class="codeph"> DECODER_FAILED </span> </td> 
+   <td colname="col1"> <span class="codeph"> NATIVE_ERROR_NAME  </span> </td> 
+   <td colname="col2"> 오류 이름이 포함된 문자열;예: <span class="codeph"> AAXS_InvalidVoucher </span> 또는 <span class="codeph"> DECODER_FAILED </span>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> NATIVE_SUBERROR_CODE </span> </td> 
-   <td colname="col2"> DRM 오류의 경우 하위 오류 코드도 반환됩니다. 이러한 코드는 Flash Player에서 반환되는 <span class="codeph"> DRMErrorEvents </span> 하위 오류 코드에 해당합니다. Adobe에 오류를 보고할 때 문제 해결 지원을 위해 이 숫자 값을 포함시키십시오. </td> 
+   <td colname="col1"> <span class="codeph"> NATIVE_SUBERROR_CODE  </span> </td> 
+   <td colname="col2"> DRM 오류의 경우 하위 오류 코드도 반환됩니다. 이러한 코드는 Flash Player에서 반환하는 <span class="codeph"> DRMErrorEvents </span> 하위 오류 코드에 해당합니다. Adobe에 오류를 보고할 때 문제 해결 지원을 위해 이 숫자 값을 포함시키십시오. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> DRM_ERROR_STRING </span> </td> 
+   <td colname="col1"> <span class="codeph"> DRM_ERROR_STRING  </span> </td> 
    <td colname="col2"> DRM의 경우 DRM 서버 배포의 사용자 지정 오류 문자열입니다(정의된 경우). Adobe에 오류를 보고할 때도 이 항목을 포함합니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> 설명 </span> </td> 
+   <td colname="col1"> <span class="codeph"> 설명  </span> </td> 
    <td colname="col2"> 오류에 대한 문자열 설명입니다. 일반적으로 미디어의 URL입니다. </td> 
   </tr> 
  </tbody> 
@@ -58,4 +58,4 @@ TVSDK는 비디오 엔진으로부터 이러한 오류 코드와 문자열을 �
 
 >[!IMPORTANT]
 >
->Adobe Primetime DRM 클라이언트 오류 코드의 전체 목록은 [DRM 클라이언트 오류 메시지 참조를 참조하십시오](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_client_error_message_reference.pdf).
+>Adobe Primetime DRM 클라이언트 오류 코드의 전체 목록은 [DRM 클라이언트 오류 메시지 참조](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_client_error_message_reference.pdf)를 참조하십시오.
