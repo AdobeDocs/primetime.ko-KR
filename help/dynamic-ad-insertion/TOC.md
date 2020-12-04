@@ -8,12 +8,12 @@ translation-type: tm+mt
 source-git-commit: fac84687085f289e984c189665bfe775337592b3
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
 
-# Primetime Ad Insertion Help {#ad-insertion}
+# Primetime Ad Insertion 도움말  {#ad-insertion}
 
 + [Primetime Ad Insertion 개요](home.md)
 + Primetime Ad Insertion 시작하기{#get-started}
@@ -28,9 +28,9 @@ ht-degree: 9%
 + [매니페스트 서버 디버깅 도구](manifest-server-debugging-tool.md)
 
 <!-- + [Server Side Ad Insertion debugging dashboard](ssai-debugging-dashboard.md)-->
-+ Ad Insertion용 매니페스트 서버 API {#manifest-server}
++ Ad Insertion {#manifest-server}에 대한 매니페스트 서버 API
    + [매니페스트 서버 상호 작용 개요](msapi-topics/ms-overview.md)
-   + Manifest Server 시작하기 {#get-started}
+   + 매니페스트 서버 {#get-started} 시작하기
       + [매니페스트 서버로 명령 보내기](msapi-topics/ms-getting-started/ms-sending-cmd.md)
       + [매니페스트 서버 쿼리 매개 변수](msapi-topics/ms-getting-started/ms-api-query-params.md)
    + 광고 삽입 요청 {#ad-insert}
@@ -40,7 +40,7 @@ ht-degree: 9%
       + [다중 비트 전송률 스트림](msapi-topics/ms-insert-ads/ms-api-mbr-streams.md)
       + [부분 광고 중단 삽입](msapi-topics/ms-insert-ads/partial-ad-break-insetion.md)
       + [CRS 광고 전달을 위한 다양한 CDN 지원](msapi-topics/ms-insert-ads/ms-api-multi-cdns-for-crs.md)
-   + VOD 타임라인 교체 {#replace-vod}
+   + VOD 타임라인 {#replace-vod} 교체
       + [VOD 변경](msapi-topics/ms-changes-vod-timeline/ms-replace-vod-timeline.md)
       + [VOD 타임라인 포맷](msapi-topics/ms-changes-vod-timeline/ms-api-timeline-format.md)
       + [VOD 타임라인 교체](msapi-topics/ms-changes-vod-timeline/t-ms-replace-vod-timeline.md)
@@ -52,13 +52,13 @@ ht-degree: 9%
       + [EXT-X-MARKER Directive](msapi-topics/ms-at-effectiveness/ms-api-playlists.md)
    + [쿠키](msapi-topics/ms-cookies.md)
    + [WebVTT 캡션 지원](msapi-topics/ms-webvtt-captions.md)
-   + 파일 포맷 목록 {#list}
+   + 파일 형식 목록 {#list}
       + [파일 포맷](msapi-topics/ms-list-file-formats/ms-api-file-formats.md)
       + [변형 매니페스트 재생 목록을 요청하는 URL용 JSON 형식](msapi-topics/ms-list-file-formats/ms-json-m3u8.md)
       + [URL 추적을 위한 JSON 포맷](msapi-topics/ms-list-file-formats/notvsdk-csat-sidecar.md)
       + [URL 추적을 위한 VMAP 형식](msapi-topics/ms-list-file-formats/notvsdk-csat-vmap.md)
    + [비디오 플레이어 요구 사항](msapi-topics/ms-player-req.md)
-+ Primetime 크리에이티브 리패키징 서비스 {#crs}
++ Primetime 크리에이티브 재패키징 서비스 {#crs}
    + [CRS 개요](creative-repackaging-service/crs-overview.md)
    + [CRS의 주요 사용](creative-repackaging-service/jit-async-hls-conv.md)
    + [다중 CDN 지원](creative-repackaging-service/multi-cdn-supportt.md)
