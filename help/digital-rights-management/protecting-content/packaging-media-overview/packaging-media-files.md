@@ -29,14 +29,14 @@ ht-degree: 0%
 >
 >이 아키텍처는 컨텐츠를 패키지화할 때 사용 DRM 정책을 지정하고 컨텐츠에 바인딩하도록 허용합니다. 클라이언트가 콘텐트를 재생하려면 먼저 지정된 컴퓨터에 대한 라이센스를 취득해야 합니다. 라이선스는 적용되는 사용 규칙을 지정하며 콘텐츠의 암호를 해독하는 데 사용해야 하는 키를 제공합니다. DRM 정책은 라이선스를 생성하기 위한 템플릿을 나타냅니다. 그러나 라이센스 서버가 라이센스를 발급할 때 사용 규칙을 무시할 수 있습니다. 만료 시간 또는 재생 창과 같은 제한 사항으로 인해 라이센스가 유효하지 않게 될 수 있습니다.
 
-Primetime DRM은 CEK에 전달할 수 있는 API를 제공합니다. CEK를 지정하지 않으면 SDK에서 임의로 생성합니다. 일반적으로 각 컨텐츠 섹션에 대해 다른 CEK가 필요합니다. 그러나 Dynamic Streaming에서는 해당 컨텐츠를 구성하는 모든 파일에 동일한 CEK를 사용할 수 있습니다. 따라서 한 비트 전송률에서 다른 비트 전송률로 매끄럽게 전환할 수 있는 단일 라이선스만 필요합니다. 여러 개의 컨텐츠에 대해 동일한 키와 라이선스를 사용하려면 동일한 `DRMParameters` 객체를 CK에 전달하거나 CEK를 사용하여 통과해야 `MediaEncrypter.encryptContent()`합니다 `V2KeyParameters.setContentEncryptionKey()`. 컨텐츠의 각 섹션에 대해 다른 키 및 라이센스를 사용하려면 각 파일에 대해 새 `DRMParameters` 인스턴스를 만들어야 합니다.
+Primetime DRM은 CEK에 전달할 수 있는 API를 제공합니다. CEK를 지정하지 않으면 SDK에서 임의로 생성합니다. 일반적으로 각 컨텐츠 섹션에 대해 다른 CEK가 필요합니다. 그러나 Dynamic Streaming에서는 해당 컨텐츠를 구성하는 모든 파일에 동일한 CEK를 사용할 수 있습니다. 따라서 한 비트 전송률에서 다른 비트 전송률로 매끄럽게 전환할 수 있는 단일 라이선스만 필요합니다. 여러 콘텐트에 대해 동일한 키와 라이센스를 사용하려면 동일한 `DRMParameters` 개체를 `MediaEncrypter.encryptContent()`에 전달하거나 `V2KeyParameters.setContentEncryptionKey()`를 사용하여 CEK에 전달해야 합니다. 컨텐츠의 각 섹션에 대해 다른 키 및 라이센스를 사용하려면 각 파일에 대해 새 `DRMParameters` 인스턴스를 만들어야 합니다.
 
-키 회전을 사용하여 컨텐츠를 패키지할 때 사용되는 순환 키와 키가 변경되는 빈도를 제어할 수 있습니다. `F4VDRMParameters` 인터페이스를 `FLVDRMParameters` 구현합니다 `KeyRotationParameters` . 이 인터페이스를 통해 키 회전을 활성화할 수 있습니다. 또한 을 지정해야 합니다 `RotatingContentEncryptionKeyProvider`. 암호화된 각 샘플에 대해 이 클래스는 사용할 순환 키를 결정합니다. 귀하는 자체 공급자를 구현하거나 SDK에 `TimeBasedKeyProvider` 포함된 제품을 사용할 수 있습니다. 이 구현은 지정된 시간(초) 후 새 키를 임의로 생성합니다.
+키 회전을 사용하여 컨텐츠를 패키지할 때 사용되는 순환 키와 키가 변경되는 빈도를 제어할 수 있습니다. `F4VDRMParameters` 를  `FLVDRMParameters` 사용하여  `KeyRotationParameters` 인터페이스를 구현합니다. 이 인터페이스를 통해 키 회전을 활성화할 수 있습니다. `RotatingContentEncryptionKeyProvider`도 지정해야 합니다. 암호화된 각 샘플에 대해 이 클래스는 사용할 순환 키를 결정합니다. 귀하는 자체 공급자를 구현하거나 SDK에 포함된 `TimeBasedKeyProvider`을 사용할 수 있습니다. 이 구현은 지정된 시간(초) 후 새 키를 임의로 생성합니다.
 
-경우에 따라 컨텐츠 메타데이터를 별도의 파일로 저장하고 클라이언트가 컨텐츠와 별도로 사용하도록 설정해야 할 수도 있습니다. 이 경우 `MediaEncrypter.encryptContent()``MediaEncrypterResult` 개체를 반환하는 호출해야 합니다. 전화 `MediaEncrypterResult.getKeyInfo()` 를 통해 결과를 전달하십시오 `V2KeyStatus`. 그런 다음 컨텐츠 메타데이터를 검색하여 파일에 저장합니다.
+경우에 따라 컨텐츠 메타데이터를 별도의 파일로 저장하고 클라이언트가 컨텐츠와 별도로 사용하도록 설정해야 할 수도 있습니다. 이 경우 `MediaEncrypterResult` 개체를 반환하는 `MediaEncrypter.encryptContent()`을 호출해야 합니다. `MediaEncrypterResult.getKeyInfo()`을(를) 호출하고 결과를 `V2KeyStatus`에 캐스팅합니다. 그런 다음 컨텐츠 메타데이터를 검색하여 파일에 저장합니다.
 
 이러한 모든 작업은 Java API로 수행할 수 있습니다.
 
-Java API에 대한 자세한 내용은 *Adobe Primetime DRM API 참조* 자료를 참조하십시오.
+Java API에 대한 자세한 내용은 *Adobe Primetime DRM API 참조*&#x200B;를 참조하십시오.
 
-Media *Packager 참조 구현에* 대한 자세한 내용은 Adobe Primetime DRM 참조 구현 사용을 참조하십시오.
+Media Packager 참조 구현에 대한 자세한 내용은 *Adobe Primetime DRM 참조 구현 사용*&#x200B;을 참조하십시오.
