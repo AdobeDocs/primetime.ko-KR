@@ -1,18 +1,21 @@
 ---
-description: TVSDK 파섹
-seo-description: TVSDK 파섹
+description: TVSDK는 여러 개의 초기 배치 정보를 설정할 수 있습니다.
+seo-description: TVSDK는 여러 개의 초기 배치 정보를 설정할 수 있습니다.
 seo-title: 여러 초기 배치정보
 title: 여러 초기 배치정보
 uuid: e0f549d7-3092-45e9-bd67-ee41d01075b5
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '30'
+ht-degree: 0%
 
 ---
 
 
-# 여러 초기 배치정보{#multiple-initial-placementinformations}
+# 여러 개의 초기 배치정보{#multiple-initial-placementinformations}
 
-TVSDK 파섹
+TVSDK는 여러 개의 초기 배치 정보를 설정할 수 있습니다.
 
 ```java
 ArrayList<PlacementInformation> placementInformations = new ArrayList<PlacementInformation>(); 
