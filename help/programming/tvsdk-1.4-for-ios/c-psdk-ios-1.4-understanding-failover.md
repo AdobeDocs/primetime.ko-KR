@@ -1,20 +1,23 @@
 ---
-description: 변형 재생 목록에 동일한 비트 전송률에 대한 여러 변환이 있고 변환 중 하나가 중지되면 장애 조치 처리가 발생합니다. TVSDK는 변환 간에 전환됩니다.
-seo-description: 변형 재생 목록에 동일한 비트 전송률에 대한 여러 변환이 있고 변환 중 하나가 중지되면 장애 조치 처리가 발생합니다. TVSDK는 변환 간에 전환됩니다.
+description: 변형 재생 목록에 동일한 비트 전송률에 대한 여러 변환이 있고 변환 중 하나가 작동을 중지하면 장애 조치(failover) 처리가 발생합니다. TVSDK는 변환 간에 전환됩니다.
+seo-description: 변형 재생 목록에 동일한 비트 전송률에 대한 여러 변환이 있고 변환 중 하나가 작동을 중지하면 장애 조치(failover) 처리가 발생합니다. TVSDK는 변환 간에 전환됩니다.
 seo-title: 장애 조치
 title: 장애 조치
 uuid: 53cf611f-59e6-4728-a287-b98907d7f7bb
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 
-# 장애 조치{#failover}
+# 장애 조치(failover){#failover}
 
-변형 재생 목록에 동일한 비트 전송률에 대한 여러 변환이 있고 변환 중 하나가 중지되면 장애 조치 처리가 발생합니다. TVSDK는 변환 간에 전환됩니다.
+변형 재생 목록에 동일한 비트 전송률에 대한 여러 변환이 있고 변환 중 하나가 작동을 중지하면 장애 조치(failover) 처리가 발생합니다. TVSDK는 변환 간에 전환됩니다.
 
-다음 예제는 장애 조치 URL이 같은 비트 속도의 변형 재생 목록을 보여줍니다.
+다음 예는 장애 조치(failover) URL이 동일한 비트 속도의 변형 재생 목록을 보여줍니다.
 
 ```
 #EXTM3U
@@ -25,11 +28,11 @@ https://sj2slu225.corp.adobe.com:8090/_default_/_default_/livestream.m3u8
 https://sj2slu225.corp.adobe.com:8091/_default_/_default_/livestream.m3u8
 ```
 
-TVSDK 파섹 URL에 대한 요청이 실패하면 TVSDK는 장애 조치 큐에서 동일한 비트 속도의 다음 URL을 사용합니다. 특정 실패 시 TVSDK는 제대로 작동하는 URL을 찾거나 사용 가능한 모든 URL을 시도하기 전까지 사용 가능한 모든 URL을 한 번 순환합니다. TVSDK가 사용 가능한 모든 URL을 시도했지만 URL이 작동하지 않으면 TVSDK가 컨텐츠 재생을 중지합니다.
+TVSDK가 변형 재생 목록을 로드하면 동일한 비트 전송률에 대한 컨텐츠의 모든 변환에 대한 URL을 포함하는 큐를 만듭니다. URL 요청이 실패하면 TVSDK는 장애 조치 큐에서 동일한 비트 속도의 다음 URL을 사용합니다. 특정 실패 시 TVSDK는 제대로 작동하는 URL을 찾거나 사용 가능한 모든 URL을 시도하기 전까지 사용 가능한 모든 URL을 한 번 순환합니다. TVSDK가 사용 가능한 모든 URL을 시도했지만 URL이 작동하지 않으면 TVSDK가 컨텐츠 재생을 중단합니다.
 
-페일오버는 M3U8 레벨에서만 수행되므로, 이는 다음을 의미합니다.
+페일오버는 M3U8 수준에서만 실행되며, 이는 다음을 의미합니다.
 
-* VOD의 경우 재생을 시작할 때만 장애 조치(failover)가 발생할 수 있으며, 재생을 시작한 후로는 발생하지 않습니다.
+* VOD의 경우 재생이 시작된 이후가 아니라 재생을 시작한 경우에만 장애 조치(failover)가 발생할 수 있습니다.
 * 실시간 스트리밍의 경우 스트림 중간에 장애 조치가 발생할 수 있습니다.
 
 >[!TIP]
