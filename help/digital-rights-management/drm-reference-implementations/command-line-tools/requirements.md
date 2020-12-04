@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 명령줄 툴 요구 사항 {#command-line-tools-requirements}
+# 명령줄 도구 요구 사항 {#command-line-tools-requirements}
 
 * Java 1.5 이상
 * Adobe에서 발급한 패키지, 전송 및 라이센스 서버 자격 증명(인증서 및 암호).
