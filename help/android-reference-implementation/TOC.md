@@ -13,7 +13,7 @@ ht-degree: 7%
 ---
 
 
-# Android 참조 구현을 위한 PSDK 1.4 {#reference-implementation}
+# Android용 PSDK 1.4 참조 구현 {#reference-implementation}
 
 + [Android 참조 구현 개요](home.md)
 + Primetime 참조 구현 {#reference}
@@ -28,7 +28,7 @@ ht-degree: 7%
       + [개발 환경 설정](set-up-dev-environment/set-up-dev-environment-overview.md)
       + [사전 요구 사항 소프트웨어 다운로드 및 구성](set-up-dev-environment/download-prereqs-android.md)
       + [Primetime 참조 구현 구축](set-up-dev-environment/install-the-ref-player-project.md)
-   + 코드 살펴보기 {#explore-code}
+   + 코드 {#explore-code} 살펴보기
       + [PlayerFragment](set-up-dev-environment/exploring-code/player-fragment.md)
       + [기능 관리자](set-up-dev-environment/exploring-code/about-psdk-feature-managers.md)
       + [ConfigProvider](set-up-dev-environment/exploring-code/config-provider.md)
@@ -44,23 +44,23 @@ ht-degree: 7%
       + [비디오 재생 활성화](implement-video-playback/enable-video-playback.md)
       + [DRM 컨텐츠 보호](implement-video-playback/content-protection.md)
    + [다양한 비트 전송률](implement-video-playback/mbr.md)
-   + 광고가 포함된 DVR 재생을 위한 플레이어 설정 {#dvr}
+   + 광고 {#dvr}이(가) 있는 DVR 재생을 위한 플레이어 설정
       + [광고 삽입 없이 DVR](implement-video-playback/dvr/dvr-without-ad-insertion.md)
       + [광고 삽입 시 DVR](implement-video-playback/dvr/dvr-with-ad-insertion.md)
       + [DVR에 대한 사용자 정의 시작 지점 선택](implement-video-playback/dvr/dvr-custom-start-point.md)
       + [참조 구현에서 사용자 지정 시작 시간 설정](implement-video-playback/dvr/set-custom-start-time-dvr.md)
    + [QoS 재생 및 디바이스 통계 표시](implement-video-playback/qos-statistics.md)
-   + 광고 삽입 {#insert-ads}
+   + 광고 {#insert-ads} 삽입
       + [광고 삽입](insert-ads/ad-insertion.md)
       + [광고 삽입 유형](insert-ads/ad-insertion-types.md)
       + [광고 추가](insert-ads/add-advertising.md)
       + [관련 API 설명서](insert-ads/aps-callbacks-ad-insertion.md)
-   + 지연 바인딩 오디오 {#late-binding-audio}
+   + 늦게 바인딩 오디오 {#late-binding-audio}
       + [개요](late-binding-audio/late-binding-audio-overview.md)
       + [지연 바인딩 오디오 통합](late-binding-audio/aa-enable.md)
       + [오디오 트랙 선택](late-binding-audio/select-audio-tracks.md)
       + [관련 API 설명서](late-binding-audio/aa-api-callbacks.md)
-   + Primetime 인증 권한 부여 흐름 {#primetime-authentications}
+   + Primetime 인증 자격 부여 흐름 {#primetime-authentications}
       + [개요](paytvpass-entitlement/paytvpass-entitlement-overview.md)
       + [권한 부여 관리자 개요](paytvpass-entitlement/entitlement-overvivew.md)
       + [Primetime 인증 통합](paytvpass-entitlement/integrate-pass.md)
