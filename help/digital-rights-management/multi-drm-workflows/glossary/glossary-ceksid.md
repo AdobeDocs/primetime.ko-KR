@@ -2,13 +2,16 @@
 uuid: a03d9753-0133-4d37-8136-cad6c78645e4
 translation-type: tm+mt
 source-git-commit: ed1430bdcb590a53fa69b324ef340ad636b2fa7c
+workflow-type: tm+mt
+source-wordcount: '26'
+ht-degree: 0%
 
 ---
 
 
 # null {#no-title}
 
-컨텐츠 암호화 키 저장소 IDTCEKSID(Content Encryption Key Storage ID)는 키 관리 시스템에서 컨텐츠 암호화 키를 검색하는 데 사용되는 ID입니다.
+컨텐츠 암호화 키 저장소 IDT컨텐츠 암호화 키 저장소 ID(CEKSID)는 키 관리 시스템에서 컨텐츠 암호화 키를 검색하기 위한 ID입니다.
 
 ```
 :    
