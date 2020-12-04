@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 동기화를 위한 요구 사항{#requirements-for-synchronization}
+# 동기화 요구 사항{#requirements-for-synchronization}
 
 클라이언트가 서버와 상태를 동기화할 빈도를 지정합니다. 클라이언트가 대역 외 라이센스를 발급받은 경우(라이센스 서버에 연결하지 않음), 사용 규칙은 클라이언트의 보안 시간과 클라이언트 상태를 서버에 동기화하기 위해 클라이언트가 동기화 메시지를 서버에 전송해야 한다고 지정할 수 있습니다.
 
@@ -23,5 +23,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 사용 규칙은 Adobe Access 클라이언트 버전 3.0 이상에서 지원됩니다. 이전 클라이언트의 동작은 라이선스 서버에서 지원하는 최소 클라이언트 버전에 따라 달라집니다. 최소 [클라이언트 버전을 참조하십시오](../../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md).
+>이 사용 규칙은 Adobe Access 클라이언트 버전 3.0 이상에서 지원됩니다. 이전 클라이언트의 동작은 라이선스 서버에서 지원하는 최소 클라이언트 버전에 따라 달라집니다. [최소 클라이언트 버전](../../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md)을 참조하십시오.
 
