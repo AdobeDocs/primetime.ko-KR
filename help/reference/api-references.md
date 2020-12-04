@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Primetime API 참조 {#api-references}
+# Adobe Primetime API가 {#api-references} 참조
 
 + TVSDK 3.12 {#tvsdk-312}
    + [Android용 TVSDK 3.12](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.12/index.html)
