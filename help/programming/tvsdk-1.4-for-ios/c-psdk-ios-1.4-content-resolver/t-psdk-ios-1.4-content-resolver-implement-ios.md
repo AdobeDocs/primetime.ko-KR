@@ -6,11 +6,14 @@ title: 사용자 지정 기회/컨텐츠 해결 프로그램 구현
 uuid: bfc14318-ca4b-46cc-8128-e3743af06d9a
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
 
-# 사용자 지정 기회/컨텐츠 해결 프로그램 구현{#implement-a-custom-opportunity-content-resolver}
+# 사용자 지정 기회/컨텐츠 확인자 구현{#implement-a-custom-opportunity-content-resolver}
 
 기본 해상도에 따라 해상도를 구현할 수 있습니다.
 
@@ -18,13 +21,13 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 ![](assets/ios_psdk_content_resolver.png)
 
-1. 추상 클래스를 확장하여 사용자 지정 광고 해결 프로그램을 `PTContentResolver` 개발합니다.
+1. `PTContentResolver` 추상 클래스를 확장하여 사용자 지정 광고 확인자를 개발합니다.
 
-   `PTContentResolver` 는 컨텐츠 해결 프로그램 클래스에서 구현해야 하는 인터페이스입니다. 같은 이름의 추상 클래스를 사용할 수 있으며, 위임 가져오기를 사용하여 구성을 자동으로 처리합니다.
+   `PTContentResolver` 는 content resolver 클래스에 의해 구현되어야 하는 인터페이스입니다. 같은 이름의 추상 클래스도 사용할 수 있으며 구성을 자동으로 처리합니다(위임 가져오기).
 
    >[!TIP]
    >
-   >`PTContentResolver` 이 `PTDefaultMediaPlayerClientFactory` 클래스를 통해 노출됩니다. 클라이언트는 `PTContentResolver` 추상 클래스를 확장하여 새 컨텐츠 해결 프로그램을 등록할 수 있습니다. 기본적으로, 그리고 구체적으로 제거하지 않는 한, 는 `PTDefaultAdContentResolver` 에 등록되어 `PTDefaultMediaPlayerClientFactory`있습니다.
+   >`PTContentResolver` 는  `PTDefaultMediaPlayerClientFactory` 클래스를 통해 노출됩니다. 클라이언트는 `PTContentResolver` 추상 클래스를 확장하여 새 컨텐츠 확인자를 등록할 수 있습니다. 기본적으로, 구체적으로 제거되지 않는 한 `PTDefaultAdContentResolver`은 `PTDefaultMediaPlayerClientFactory`에 등록되어 있습니다.
 
    ```
    @protocol PTContentResolver <NSObject> 
@@ -52,27 +55,28 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
    @end
    ```
 
-1. 수신한 내용을 처리해야 `shouldResolveOpportunity` 하는 경우 구현하고 `YES` `PTPlacementOpportunity`반환합니다.
-1. 대체 컨텐츠 또는 광고 로드를 시작하는 구현 `resolvePlacementOpportunity`.
-1. 광고가 로드되면 삽입할 컨텐트에 대한 정보가 `PTTimeline` 포함된 내용을 준비합니다.
+1. `shouldResolveOpportunity`을(를) 구현하고 `YES`이 수신된 `PTPlacementOpportunity`를 처리해야 하는 경우 반환합니다.
+1. 대체 컨텐츠 또는 광고 로드를 시작하는 `resolvePlacementOpportunity`을 구현합니다.
+1. 광고가 로드되면 삽입할 컨텐트에 대한 정보가 있는 `PTTimeline`을 준비하십시오.
 
-       다음은 타임라인에 대한 유용한 정보입니다.
+       타임라인에 대한 유용한 정보는 다음과 같습니다.
    
-   * 프리롤, 미드롤 및 포스트롤 유형의 `PTAdBreak`여러 가지가 있을 수 있습니다.
+   * 프리롤, 미드롤 및 포스트롤 유형의 `PTAdBreak`이 여러 개 있을 수 있습니다.
 
-      * A `PTAdBreak` 에는 다음이 포함됩니다.
+      * `PTAdBreak`에 다음이 있습니다.
 
-         * 시작 `CMTimeRange` 시간과 휴식 기간이 있는 A.
+         * 시작 시간과 휴식 시간이 포함된 `CMTimeRange`
 
-            이것은 의 범위 속성으로 `PTAdBreak`설정됩니다.
+            이 값은 `PTAdBreak`의 범위 속성으로 설정됩니다.
 
-         * `NSArray` 의 `PTAd`두 개.
+         * `NSArray` 의 `PTAd`를 참조하십시오.
 
-            이것은 광고 속성으로 `PTAdBreak`설정됩니다.
-   * A `PTAd` 는 광고를 나타내며 각 `PTAd` 광고에는 다음이 포함됩니다.
+            이것은 `PTAdBreak`의 광고 속성으로 설정됩니다.
+   * `PTAd`은 광고를 나타내며 각 `PTAd`에는 다음이 포함됩니다.
 
-      * 광고의 기본 자산 속성으로 `PTAdHLSAsset` 설정된 경우입니다.
-      * 클릭 가능한 광고 또는 배너 광고와 같은 여러 `PTAdAsset` 인스턴스가 있을 수 있습니다.
+      * 광고의 기본 자산 속성으로 설정된 `PTAdHLSAsset`
+      * 클릭 가능한 광고 또는 배너 광고로 여러 개의 `PTAdAsset` 인스턴스가 있을 수 있습니다.
+
    예:
 
    ```
@@ -102,8 +106,8 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
    _timeline.adBreaks = ptBreaks;
    ```
 
-1. Call `didFinishResolvingPlacementOpportunity`을 참조하십시오 `PTTimeline`.
-1. 사용자 지정 컨텐츠/광고 확인자를 기본 미디어 플레이어 팩터리에 등록하려면 `registerContentResolver`전화하십시오.
+1. `PTTimeline`을(를) 제공하는 `didFinishResolvingPlacementOpportunity`을(를) 호출합니다.
+1. `registerContentResolver`을(를) 호출하여 사용자 지정 컨텐츠/광고 확인자를 기본 미디어 플레이어 팩터리로 등록합니다.
 
    ```
    //Remove default content/ad resolver 
