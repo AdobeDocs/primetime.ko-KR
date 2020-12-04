@@ -1,20 +1,23 @@
 ---
-description: 매니페스트 서버는 제안된 HTTP Live Streaming 표준을 준수하면서 M3U8 형식의 마스터 재생 목록을 반환합니다. 이 TS(Variant Transport Stream)는 서로 다른 비트 전송률 및 형식에 대해 동일한 컨텐츠의 변환을 포함하는 TS(Variant Transport Streams) 세트로 구성됩니다. Adobe Primetime 광고 삽입을 통해 클라이언트 비디오 플레이어에서 해석할 수 있는 EXT-X-MARKER 디렉티브 태그가 추가됩니다.
-seo-description: 매니페스트 서버는 제안된 HTTP Live Streaming 표준을 준수하면서 M3U8 형식의 마스터 재생 목록을 반환합니다. 이 TS(Variant Transport Stream)는 서로 다른 비트 전송률 및 형식에 대해 동일한 컨텐츠의 변환을 포함하는 TS(Variant Transport Streams) 세트로 구성됩니다. Adobe Primetime 광고 삽입을 통해 클라이언트 비디오 플레이어에서 해석할 수 있는 EXT-X-MARKER 디렉티브 태그가 추가됩니다.
-seo-title: EXT-X-MARKER 파섹
-title: EXT-X-MARKER 파섹
+description: 매니페스트 서버는 제안된 HTTP 라이브 스트리밍 표준을 준수하며 M3U8 형식의 마스터 재생 목록을 반환합니다. 이 TS(Variant Transport Streams) 세트로 구성되어 있으며 각 TS는 서로 다른 비트 전송률과 포맷에 대해 동일한 컨텐츠의 변환을 포함합니다. Adobe Primetime 광고 삽입은 클라이언트 비디오 플레이어에서 해석할 EXT-X-MARKER 디렉티브 태그를 추가합니다.
+seo-description: 매니페스트 서버는 제안된 HTTP 라이브 스트리밍 표준을 준수하며 M3U8 형식의 마스터 재생 목록을 반환합니다. 이 TS(Variant Transport Streams) 세트로 구성되어 있으며 각 TS는 서로 다른 비트 전송률과 포맷에 대해 동일한 컨텐츠의 변환을 포함합니다. Adobe Primetime 광고 삽입은 클라이언트 비디오 플레이어에서 해석할 EXT-X-MARKER 디렉티브 태그를 추가합니다.
+seo-title: EXT-X-MARKER Directive
+title: EXT-X-MARKER Directive
 uuid: e349bf89-b196-47b4-a362-9913fa28b2c6
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 0%
 
 ---
 
 
-# EXT-X-MARKER 파섹 {#ext-x-marker-directive}
+# EXT-X-MARKER Directive {#ext-x-marker-directive}
 
-매니페스트 서버는 제안된 HTTP Live Streaming 표준을 준수하면서 M3U8 형식의 마스터 재생 목록을 반환합니다. 이 TS(Variant Transport Stream)는 서로 다른 비트 전송률 및 형식에 대해 동일한 컨텐츠의 변환을 포함하는 TS(Variant Transport Streams) 세트로 구성됩니다. Adobe Primetime 광고 삽입을 통해 클라이언트 비디오 플레이어에서 해석할 수 있는 EXT-X-MARKER 디렉티브 태그가 추가됩니다.
+매니페스트 서버는 제안된 HTTP 라이브 스트리밍 표준을 준수하며 M3U8 형식의 마스터 재생 목록을 반환합니다. 이 TS(Variant Transport Streams) 세트로 구성되어 있으며 각 TS는 서로 다른 비트 전송률과 포맷에 대해 동일한 컨텐츠의 변환을 포함합니다. Adobe Primetime 광고 삽입은 클라이언트 비디오 플레이어에서 해석할 EXT-X-MARKER 디렉티브 태그를 추가합니다.
 
-EXT-X-MARKER 태그에 대한 자세한 내용은 Adobe Primetime [HTTP Live 스트리밍 프로필을 참조하십시오](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/primetime/PrimetimeHLS_April2014.pdf).
+EXT-X-MARKER 태그에 대한 자세한 내용은 [Adobe Primetime HTTP 라이브 스트리밍 프로필](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/primetime/PrimetimeHLS_April2014.pdf)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -24,51 +27,51 @@ EXT-X-MARKER 태그에 대한 자세한 내용은 Adobe Primetime [HTTP Live 스
 >
 >EXT-X-MARKER 태그는 컨텐츠 세그먼트가 아니라 광고 세그먼트에 추가됩니다.
 
-HTTP 라이브 스트리밍의 [초안](https://tools.ietf.org/html/draft-pantos-http-live-streaming-23) 표준은 변형 재생 목록의 내용과 형식을 설명합니다. EXT-X-MARKER 태그는 클라이언트가 콜백을 호출하도록 지시합니다. 여기에는 다음 구성 요소가 포함됩니다.
+[HTTP 라이브 스트리밍](https://tools.ietf.org/html/draft-pantos-http-live-streaming-23)의 초안 표준은 변형 재생 목록의 내용과 형식을 설명합니다. EXT-X-MARKER 태그는 클라이언트가 콜백을 호출하도록 지시합니다. 여기에는 다음 구성 요소가 포함됩니다.
 
-* **ID** 프로그램 스트림 컨텍스트 내에서 이 콜백 이벤트에 대한 고유 식별자(문자열)입니다.
+* **프로그램** 스트림 컨텍스트 내에서 이 콜백 이벤트에 대한 IDUnique 식별자(문자열)입니다.
 
-* **TYPE** 콜백 이벤트의 유형(문자열):PodBegin, PodEnd, PrerollPodBegin, PrerollPodEnd 또는 AdBegin
+* **콜백** 이벤트의 TYPEype(문자열):PodBegin, PodEnd, PrerollPodBegin, PrerollPodEnd 또는 AdBegin
 
-* **지속** 시간 지시문이 유효한 태그를 포함하는 세그먼트 시작으로부터 경과한 시간(초)입니다.
+* **지시어가 유효한 태그를** 포함하는 세그먼트 시작으로부터 시간(초)입니다.
 
-* **오프셋** 선택 사항. 콜백을 호출해야 하는 경우 세그먼트 재생 시작을 기준으로 하는 오프셋(초)입니다.
+* **선택** 사항. 콜백을 호출해야 하는 경우 세그먼트 재생 시작을 기준으로 하는 오프셋(초)입니다.
 
-   * `PodBegin` 및 DATA 속성에 비콘 정보를 `PrerollPodBegin` 포함하며 세그먼트 시작 시 실행됩니다. 따라서 `OFFSET` 태그는 여기에서 사용할 수 없습니다.
+   * `PodBegin` 및 `PrerollPodBegin` 는 DATA 속성에 비콘 정보를 포함하고 세그먼트 시작 시 실행됩니다. 따라서 `OFFSET` 태그는 여기에서 사용할 수 없습니다.
 
-   * `AdBegin` 에는 DATA 속성에 비콘 정보가 들어 있으며 해당 세그먼트 시작 시 노출 태그가 실행됩니다. 따라서 `OFFSET` 태그도 여기에서 사용할 수 없습니다.
+   * `AdBegin` 에는 DATA 속성에 비콘 정보가 들어 있으며, 노출 태그는 해당 세그먼트의 시작 시 실행됩니다. 따라서 `OFFSET` 태그도 여기에서 사용할 수 없습니다.
 
-   * `PodEnd` 및 DATA 속성에 비콘 정보를 `PrerollPodEnd` 포함하지만 이 태그는 창에서 마지막 광고의 마지막 세그먼트 끝에 실행되어야 하므로 현재 세그먼트의 끝에 실행됩니다. 이 경우 `OFFSET` 비콘이 현재 세그먼트의 끝에 실행되도록 `<duration of segment>` 설정됩니다.
+   * `PodEnd` 및 DATA 속성에 비콘 정보를  `PrerollPodEnd` 포함하지만 이 태그는 창에서 마지막 광고의 마지막 세그먼트 끝에 실행되어야 하므로 현재 세그먼트의 끝에 실행됩니다. 이 경우, `OFFSET`이(가) `<duration of segment>`(으)로 설정되어 비콘이 현재 세그먼트의 끝에 실행되도록 지정합니다.
 
-* **콜백을** 호출할 때 애플리케이션에 전달할 데이터를 포함하는 큰따옴표로 묶은 DATA Base64 인코딩 문자열. 여기에는 VMAP1.0 및 VAST 파섹 3.0 사양을 준수하는 광고 추적 정보가 포함되어 있습니다.
+* **콜백을** 호출할 때 애플리케이션에 전달할 데이터를 포함하는 큰 따옴표로 묶은 DATABase64 인코딩 문자열. VMAP1.0 및 VAST3.0 사양을 준수하는 광고 추적 정보가 포함되어 있습니다.
 
-* **COUNT** 광고 중단에 붙여넣을 광고 수입니다.
+* **광고** 중단에 사용할 광고의 수입니다.
 
-   TYPE 구성 요소가 PodBegin 또는 PrerollPodBegin으로 설정된 경우에만 적용 가능
+   TYPE 구성 요소가 PodBegin 또는 PrerollPodBegin으로 설정된 경우에만 해당됩니다.
 
-* **BREAKDUR** 채워진 광고 중단의 총 지속 시간(초)입니다.
+* **채워진 광고** 중단의 총 지속 시간(초)입니다.
 
-   TYPE 구성 요소가 PodBegin 또는 PrerollPodBegin으로 설정된 경우에만 적용 가능
+   TYPE 구성 요소가 PodBegin 또는 PrerollPodBegin으로 설정된 경우에만 해당됩니다.
 
-콜백을 구성할 때 EXT-X-MARKER 파섹 구성 요소를 다음과 같이 해석하십시오.
+콜백을 구성할 때 EXT-X-MARKER 구성 요소를 다음과 같이 해석하십시오.
 
-* 태그에 포함된 `OFFSET`경우 해당 세그먼트에서 컨텐츠 재생의 시작을 기준으로 지정된 오프셋에서 콜백을 실행합니다. 그렇지 않으면 해당 세그먼트의 콘텐츠가 재생되기 시작하는 즉시 콜백을 실행합니다.
-* 광고 컨텐츠의 진행 상태를 추적하고 이벤트를 추적하기 위해 URL을 요청하는 `DURATION` 데 사용합니다.
-* 콜백으로 `ID`전달, `TYPE`및 `DATA` 전달하십시오.
+* 태그에 `OFFSET`이 포함되어 있으면 해당 세그먼트에서 재생되는 콘텐츠의 시작을 기준으로 지정된 오프셋에서 콜백을 시작합니다. 그렇지 않으면 해당 세그먼트의 콘텐츠가 재생되기 시작하면 콜백을 시작합니다.
+* `DURATION`을(를) 사용하여 광고 컨텐츠의 진행 상태를 추적하고 이벤트를 추적하기 위해 URL을 요청합니다.
+* 콜백에 `ID`, `TYPE` 및 `DATA`를 전달합니다.
 
-의 `PrerollPodBegin`및 `PrerollPodEnd` 값을 `TYPE` 사용하여 라이브/선형 스트림에서 먼저 재생할 TS 세그먼트를 결정합니다.
+`TYPE`에 대한 `PrerollPodBegin` 및 `PrerollPodEnd` 값을 사용하여 실시간/선형 스트림에서 먼저 재생할 TS 세그먼트를 결정합니다.
 
 >[!NOTE]
 >
->및 `PrerollPodBegin`값은 프리롤 광고가 라이브 스트림에 삽입된 경우에만 사용할 수 `PrerollPodEnd` 있습니다.
+>`PrerollPodBegin` 및 `PrerollPodEnd` 값은 프리롤 광고가 라이브 스트림에 삽입된 경우에만 사용할 수 있습니다.
 
 매니페스트 서버에는 다음 세그먼트에 EXT-X-MARKER 태그가 포함됩니다.
 
-* 광고 분할의 첫 번째 세그먼트로, 광고 창의 시작을 추적합니다.
-* 광고 창의 첫 번째 세그먼트로, 광고 창 내에서 개별 광고의 시작/완료/진행 상태를 추적합니다.
-* 광고 분할의 마지막 세그먼트로, 광고 창의 끝을 추적합니다.
+* 광고 중단의 첫 번째 세그먼트로, 광고 창의 시작을 추적합니다.
+* 광고 창의 첫 번째 세그먼트로, 광고 창 내의 개별 광고의 시작/완료/진행 상태를 추적합니다.
+* 광고 중단의 마지막 세그먼트로, 광고 창의 끝을 추적합니다.
 
-매니페스트 서버는 각 광고 중단의 시작과 끝을 추적하기 위해 `VMAP1.0-conformant` XML 문서를 전송합니다. 이것은 광고 서버에서 반환되는 실제 VMAP1.0 응답의 필터링된 버전이며, 주로 다음과 같이 추적 이벤트를 포함합니다.
+매니페스트 서버는 각 광고 중단의 시작과 끝을 추적하기 위해 `VMAP1.0-conformant` XML 문서를 보냅니다. 광고 서버에서 반환되는 실제 VMAP1.0 응답의 필터링된 버전이며, 주로 여기에 표시된 추적 이벤트를 포함합니다.
 
 ```xml
 <?xml version="1.0"?> 
@@ -93,7 +96,7 @@ HTTP 라이브 스트리밍의 [초안](https://tools.ietf.org/html/draft-pantos
 </AdTrackingFragments>
 ```
 
-매니페스트 서버가 프로그램 컨텐츠에 삽입하는 각 광고 크리에이티브의 경우 VAST3.0 준수 XML 문서를 전송하여 해당 광고를 추적합니다. 각 XML 문서에는 삽입된 선형 광고 크리에이티브를 설명하는 `<InLine>` `<Wrapper>` 요소나 래퍼 광고(즉, 연결되거나 리디렉션된 광고)의 경우 요소, 그리고 이와 연계된 모든 광고 및 확장을 포함합니다. VAST 응답에 광고 창의 일부인 경우와 같이 시퀀스 속성이 포함된 경우 문서에 해당 속성이 포함됩니다. 다음은 개별 광고를 추적하기 위한 샘플 VAST3.0 준수 XML 문서입니다.
+매니페스트 서버가 프로그램 컨텐츠에 삽입하는 각 광고 크리에이티브의 경우 VAST3.0에 호환되는 XML 문서를 전송하여 해당 광고를 추적합니다. 각 XML 문서에는 삽입된 선형 광고 크리에이티브를 설명하는 `<InLine>` 요소 또는 래퍼 광고(즉, 연결되거나 리디렉션된 광고)의 경우 `<Wrapper>` 요소, 그리고 관련 부록 광고 및 익스텐션이 포함되어 있습니다. VAST 응답에 광고 창의 일부인 경우와 같이 시퀀스 속성이 포함된 경우 문서에 해당 속성이 포함됩니다. 다음은 개별 광고를 추적하기 위한 샘플 VAST3.0 준수 XML 문서입니다.
 
 ```xml
 <?xml version="1.0"?> 
