@@ -6,15 +6,18 @@ title: 현재 시간 및 남은 시간 표시
 uuid: 800996ff-afc0-4e17-9d70-5ec1e1fcfdc7
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
 
-# 현재 시간 및 남은 시간 표시 {#display-the-current-time-and-remaining-time}
+# 현재 시간 및 남은 시간 {#display-the-current-time-and-remaining-time} 표시
 
 재생되는 컨텐츠의 현재 및 남은 시간을 표시할 수 있습니다.
 
-1. 활성 컨텐츠의 현재 시간 및 남은 시간을 보여주는 디스플레이를 구현하려면 다음 샘플 코드를 사용하십시오.
+1. 활성 컨텐츠의 현재 및 남은 시간을 보여주는 표시를 구현하려면 다음 샘플 코드를 사용하십시오.
 
    ```
    // 1. Register for the PTMediaPlayerTimeChangeNotification 
