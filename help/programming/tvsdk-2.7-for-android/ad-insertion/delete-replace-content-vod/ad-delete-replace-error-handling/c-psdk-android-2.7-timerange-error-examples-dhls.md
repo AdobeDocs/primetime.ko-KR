@@ -6,6 +6,9 @@ title: 시간 범위 오류 예
 uuid: f6cc1e61-8f42-4559-b643-2134180a8c5e
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ TVSDK는 시간 범위를 적절하게 병합하거나 대체하여 잘못된 �
 
 **DELETE 시간 범위**
 
-다음 예에서는 교차하는 4개의 DELETE 시간 범위가 정의됩니다. TVSDK 파섹
+다음 예에서는 네 개의 교차하는 DELETE 시간 범위가 정의됩니다. TVSDK는 4개의 시간 범위를 1개로 병합하므로 실제 삭제 범위는 0-50입니다.
 
 ```
 "time-ranges": {
@@ -42,9 +45,9 @@ TVSDK는 시간 범위를 적절하게 병합하거나 대체하여 잘못된 �
 }
 ```
 
-**바꾸기 시간 범위**
+**REPLACE time range**
 
-다음 예에서는 네 개의 REPLACE 시간 범위가 충돌하는 시간 범위로 정의됩니다. 이 경우 TV SDK는 0-50을 25초 광고로 대체합니다. 이후 범위에 충돌이 있기 때문에 정렬 순서에서 첫 번째 대체 기간과 함께 합니다.
+다음 예에서는 네 개의 REPLACE 시간 범위가 충돌하는 시간 범위로 정의됩니다. 이 경우 TVSDK는 0-50s 광고를 25개의 광고로 대체합니다. 이후 범위에 충돌이 있기 때문에 정렬 순서에서 첫 번째 대체 기간과 함께 사용됩니다.
 
 ```
 "time-ranges": {
