@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# 광활한 광고 {#vast-ads}
+# VAST 광고 {#vast-ads}
 
 브라우저 TVSDK가 기본 광고 서버에 없는 광고를 요청하는 경우, 플레이어는 보조 서버에서 광고를 요청해야 합니다. VAST(Video Ad Serving Template)는 광고 서버와 비디오 플레이어 간의 통신 표준을 설정하며 광고가 요청될 때 보조 광고 서버가 보내는 응답입니다.
 
-VAST에 대한 자세한 내용은 VAST( [Digital Video Ad Serving Template) 3.0을 참조하십시오](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf).
+VAST에 대한 자세한 내용은 [VAST(Digital Video Ad Serving Template) 3.0](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf)을 참조하십시오.
 
 브라우저 TVSDK는 다음과 같은 VAST 광고 요소를 지원합니다.
 
@@ -41,13 +41,13 @@ VAST에 대한 자세한 내용은 VAST( [Digital Video Ad Serving Template) 3.0
 
 ## 크리에이티브 {#section_0121F948CB074E49A8132D202786CAA4}
 
-이 요소는 VAST 광고의 일부인 파일이며 선형 광고, 비선형 광고 또는 동반자 광고를 지원할 수 있는 `creative` 요소를 포함합니다. 요소 `creative` 에서 `id`, `sequence`및 `adId` 요소가 지원됩니다.
+이 요소는 VAST 광고의 일부인 파일이며 선형 광고, 비선형 광고 또는 컴패니언 광고를 지원할 수 있는 `creative` 요소를 포함합니다. `creative` 요소에서 `id`, `sequence` 및 `adId` 요소가 지원됩니다.
 
 다음은 광고 유형에 대한 자세한 정보입니다.
 
-* **선형 광고** 다음 요소가 지원됩니다.
+* **선형** 광고다음 요소가 지원됩니다.
 
-   * `TrackingEvent`가 들어 있는 `Tracking` 경우,
+   * `TrackingEvent`를  `Tracking` 찾습니다.
       * `Duration`
       * `AdParameters`
       * `VideoClicks`, including following:
@@ -62,15 +62,15 @@ VAST에 대한 자세한 내용은 VAST( [Digital Video Ad Serving Template) 3.0
 
          >[!TIP]
          >
-         >이 요소에서는, `id`, `bitrate``delivery`, `width``height`,, `scalable`및 `maintainAspectRatio``apiFramework``type` 특성이 지원됩니다.
+         >이 요소에서는 `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework` 및 `type` 속성이 지원됩니다.
 
-* **비선형 광고** 다음 요소가 지원됩니다.
+* **비선형** 광고다음 요소가 지원됩니다.
 
    * `Non-linear`
 
       >[!TIP]
       >
-      >이 요소에서는, `id`, `width``height`, `apiFramework``expandedWidth`,, `expandedHeight`및 `scalable``maintainAspectRatio``minSuggestedDuration` 특성이 지원됩니다.
+      >이 요소에서는 `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio` 및 `minSuggestedDuration` 속성이 지원됩니다.
 
       * `StaticResource`
       * `IFrameResource`
@@ -78,20 +78,20 @@ VAST에 대한 자세한 내용은 VAST( [Digital Video Ad Serving Template) 3.0
       * `NonLinearClickThrough`
       * `AdParameters`
 
-* **부록 광고** 다음 요소가 지원됩니다.
+* **부록** 광고다음 요소가 지원됩니다.
 
    * `Companion`
 
       >[!TIP]
       >
-      >이 요소에서는 `id`, `width``height`, `apiFramework`및 `expandedWidth`속성이 `expandedHeight` 지원됩니다.
+      >이 요소에서는 `id`, `width`, `height`, `apiFramework`, `expandedWidth` 및 `expandedHeight` 특성이 지원됩니다.
 
       * `StaticResource`
       * `IFrameResource`
       * `HTMLResource`
       * `TrackingEvents`
 
-## 익스텐션 {#section_17401C75F419453BAE83637EEB6E1E60}
+## 확장 {#section_17401C75F419453BAE83637EEB6E1E60}
 
 >[!TIP]
 >
