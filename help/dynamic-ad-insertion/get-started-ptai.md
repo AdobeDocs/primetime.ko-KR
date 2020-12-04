@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Primetime Ad Insertion 시작하기 {#ptai-get-started}
+# Adobe Primetime Ad Insertion {#ptai-get-started} 시작하기
 
 Primetime Ad Insertion은 개인화된 인스트림 광고 경험을 만든 다음 광고업체를 위해 광고 재생을 추적하는 컨텐츠와 광고를 제공하는 시스템을 공동으로 구성했습니다.
 
@@ -18,7 +18,7 @@ Primetime Ad Insertion은 각 뷰어에 대한 대상 광고 및 개인화된 �
 
 시스템이 올바르게 설정되면 일반적인 워크플로우는 다음과 같이 표시될 수 있습니다.
 
-1. 클라이언트 응용 프로그램은 비디오 스트림에 대한 정보가 포함된 [Bootstrap URL을](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md) 생성하고 GET 요청을 Primetime Ad Insertion에 보냅니다.
+1. 클라이언트 응용 프로그램은 비디오 스트림에 대한 정보가 포함된 [Bootstrap URL](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md)을 생성하고 GET 요청을 Primetime Ad Insertion에 보냅니다.
 
 1. Primetime Ad Insertion은 게시자의 CDN에서 클라이언트 애플리케이션으로 콘텐츠 매니페스트를 다시 전송함으로써 응답합니다.
 
@@ -26,12 +26,12 @@ Primetime Ad Insertion은 각 뷰어에 대한 대상 광고 및 개인화된 �
 
 1. Primetime Ad Insertion은 요청된 스트림을 컨텐츠 CDN에서 가져오고, 큐 정보를 구문/읽고, 광고 서버에 전화를 걸며, 필요에 따라 광고 중단을 바꿉니다.
 
-1. Primetime Ad Insertion은 리소스 URL을 다시 작성하고 광고 크리에이티브 전문가가 트랜스코딩해야 하는지 여부를 확인하여 매니페스트를 정규화합니다. <!-- see [Just-in-time ad transcoding](just-in-time-transcoding.md) and [packaging](just-in-time-repackaging.md).-->
+1. Primetime Ad Insertion은 리소스 URL을 다시 작성하고 광고 크리에이티브 전문가가 트랜스코딩해야 하는지 여부를 확인하여 매니페스트를 정규화합니다.<!-- see [Just-in-time ad transcoding](just-in-time-transcoding.md) and [packaging](just-in-time-repackaging.md).-->
 
 1. Primetime Ad Insertion은 필요한 광고 크리에이티브를 가져오고 해당 조각을 매니페스트에 삽입합니다.
 
 1. Primetime Ad Insertion은 광고를 포함한 최종 연결된 매니페스트를 클라이언트 애플리케이션에 전달하여 재생합니다.
 
-1. 광고 전달 및 보기 기능은 클라이언트 또는 서버측 광고 추적을 통해 측정할 수 있습니다. 광고 추적 [설정을 참조하십시오](set-up-ad-tracking.md).
+1. 광고 전달 및 보기 기능은 클라이언트 또는 서버측 광고 추적을 통해 측정할 수 있습니다. 광고 추적 설정[을 참조하십시오.](set-up-ad-tracking.md)
 
 Primetime Ad Insertion은 HLS/DASH에 대한 대부분의 클라이언트 구성을 지원합니다.
