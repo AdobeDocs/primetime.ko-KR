@@ -15,9 +15,9 @@ ht-degree: 0%
 
 컨텐츠가 암호화되고 라이센스가 사전 생성되면 라이센스가 암호화된 컨텐츠에 포함될 수 있습니다.
 
-라이선스를 포함하려면 해당 인스턴스를 얻어야 합니다 `com.adobe.flashaccess.sdk.media.drm.contentupdate.MediaKeyMetaDataUpdater`. 암호화된 컨텐츠의 유형을 알고 있는 경우 `FLVKeyMetaDataUpdater` 또는 `F4VKeyMetaDataUpdater`;그렇지 않은 경우, 검색된 파일 유형을 기준으로 인스턴스 `MediaProcessorFactory.getMediaProcessor()` 를 반환하는 데 사용합니다. 그런 다음 A를 구조화하고 호출해야 `KeyMetaDataCallback` 합니다 `modifyKeyMetaData()`. 그러면 DRM 메타데이터가 암호화된 내용에 있을 때 콜백 구현이 호출됩니다. 검색된 메타데이터를 기반으로 임베드할 라이센스를 선택하고 라이센스를 `EmbedLicenseKeyMetaData.setEmbeddedLicenses()`
+라이센스를 포함하려면 `com.adobe.flashaccess.sdk.media.drm.contentupdate.MediaKeyMetaDataUpdater` 인스턴스를 구해야 합니다. 암호화된 콘텐츠의 유형을 알고 있는 경우 `FLVKeyMetaDataUpdater` 또는 `F4VKeyMetaDataUpdater`;의 생성자를 사용하십시오.그렇지 않은 경우 `MediaProcessorFactory.getMediaProcessor()`를 사용하여 검색된 파일 유형을 기반으로 인스턴스를 반환합니다. 그런 다음 `KeyMetaDataCallback`을(를) 구성하고 `modifyKeyMetaData()`을(를) 호출해야 합니다. 그러면 DRM 메타데이터가 암호화된 내용에 있을 때 콜백 구현이 호출됩니다. 검색된 메타데이터를 기반으로 임베드할 라이센스를 선택하고 `EmbedLicenseKeyMetaData.setEmbeddedLicenses()`을(를) 사용하여 라이센스를 설정할 수 있습니다.
 
-임베드된 라이선스 `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense` 를 보여주는 샘플 코드는 참조 구현 명령줄 도구 [!DNL Samples] 디렉토리에서 을 참조하십시오.
+임베디드 라이선스를 시연하는 샘플 코드는 참조 구현 명령줄 도구 [!DNL Samples] 디렉토리의 `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense`을 참조하십시오.
 
 >[!NOTE]
 >
