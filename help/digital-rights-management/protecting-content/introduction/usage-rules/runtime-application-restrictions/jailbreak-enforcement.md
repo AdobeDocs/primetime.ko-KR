@@ -13,9 +13,9 @@ ht-degree: 0%
 ---
 
 
-# Titlebreak enforcement (Adobe Primetime DRM 필요){#jailbreak-enforcement-requires-adobe-primetime-drm}
+# Titlebreak enforcement (requires Adobe Primetime DRM){#jailbreak-enforcement-requires-adobe-primetime-drm}
 
-Android 및 iOS 모바일 디바이스와 같은 탈옥 감지를 지원하는 플랫폼에서는 디바이스에서 감지된 컨텐츠가 재생되는 것을 허용하지 않도록 탈옥을 설정할 수 [!DNL jailbreak/root] 있습니다.
+Android 및 iOS 모바일 디바이스와 같은 탈옥을 지원하는 플랫폼에서 [!DNL jailbreak/root]이(가) 장치에서 감지된 경우 탈옥 적용을 통해 콘텐츠의 재생을 허용하지 않을 수 있습니다.
 
 >[!NOTE]
 >
