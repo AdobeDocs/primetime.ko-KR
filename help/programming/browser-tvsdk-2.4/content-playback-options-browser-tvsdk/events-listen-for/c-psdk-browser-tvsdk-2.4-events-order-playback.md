@@ -1,16 +1,19 @@
 ---
 description: 브라우저 TVSDK는 일반적으로 예상 시퀀스로 이벤트/알림을 전달합니다. 플레이어는 예상 시퀀스의 이벤트를 기반으로 동작을 구현할 수 있습니다.
 seo-description: 브라우저 TVSDK는 일반적으로 예상 시퀀스로 이벤트/알림을 전달합니다. 플레이어는 예상 시퀀스의 이벤트를 기반으로 동작을 구현할 수 있습니다.
-seo-title: 이벤트 재생 순서
-title: 이벤트 재생 순서
+seo-title: 재생 이벤트 순서
+title: 재생 이벤트 순서
 uuid: 259a9a2d-3d28-4240-b392-cc81f5c3f0cf
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 
 
-# 이벤트 재생 순서{#order-of-playback-events}
+# 재생 이벤트 순서{#order-of-playback-events}
 
 브라우저 TVSDK는 일반적으로 예상 시퀀스로 이벤트/알림을 전달합니다. 플레이어는 예상 시퀀스의 이벤트를 기반으로 동작을 구현할 수 있습니다.
 
@@ -18,23 +21,23 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 
 다음 예는 재생 이벤트를 포함하는 일부 이벤트의 순서를 보여줍니다.
 
-* 미디어 리소스를 성공적으로 로드할 `replaceCurrentResource`경우 이벤트 순서는 다음과 같습니다.
+* `replaceCurrentResource`을(를) 통해 미디어 리소스를 성공적으로 로드할 경우 이벤트의 순서는 다음과 같습니다.
 
-   * `AdobePSDK.MediaPlayerStatusChangeEvent` with `event.status =`
+   * `AdobePSDK.MediaPlayerStatusChangeEvent` with  `event.status =`
 
       * `MediaPlayerStatus.INITIALIZING`
       * `MediaPlayerStatus.INITIALIZED`
 
-* 재생을 준비하는 `MediaPlayer.prepareToPlay`경우 이벤트의 순서는 다음과 같습니다.
+* `MediaPlayer.prepareToPlay`을 통해 재생을 준비하는 경우 이벤트의 순서는 다음과 같습니다.
 
-   * `AdobePSDK.MediaPlayerStatusChangeEvent` with `event.status =`
+   * `AdobePSDK.MediaPlayerStatusChangeEvent` with  `event.status =`
 
       * `MediaPlayerStatus.PREPARING`
       * `MediaPlayerStatus.PREPARED`
 
 <!--<a id="section_76C13548AF934868B70757CA5489E516"></a>-->
 
-다음 예는 일반적인 이벤트 진행 상태를 보여줍니다.
+다음 예제는 이벤트의 일반적인 진행 상태를 보여줍니다.
 
 ```js
 player.addEventListener(AdobePSDK.PSDKEventType.STATUS_CHANGED,  
