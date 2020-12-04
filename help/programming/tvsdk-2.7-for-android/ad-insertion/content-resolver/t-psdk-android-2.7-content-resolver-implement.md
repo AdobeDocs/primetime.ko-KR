@@ -6,17 +6,20 @@ title: 사용자 지정 컨텐츠 해결 프로그램 구현
 uuid: bc0eda17-9b5d-4733-8e93-790758e68df5
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
 
-# 사용자 지정 컨텐츠 해결 프로그램 구현 {#implement-a-custom-content-resolver}
+# 사용자 지정 컨텐츠 확인자 {#implement-a-custom-content-resolver} 구현
 
 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
 
-TVSDK가 새 기회를 생성할 때 등록된 컨텐츠 해결자는 해당 기회를 해결할 수 있는 컨텐츠를 찾습니다. The first that return `true` is selected to resolve the opportunity. 컨텐츠 해결 프로그램이 없으면 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기적이므로 컨텐츠 확인자는 프로세스가 완료되면 TVSDK에 알릴 책임이 있습니다.
+TVSDK가 새로운 기회를 생성하는 경우 등록된 컨텐츠 해결에서 해당 기회를 해결할 수 있는 컨텐츠를 찾습니다. `true`을(를) 반환하는 첫 번째 값이 선택되어 기회를 확인합니다. 컨텐츠 확인자가 없으면 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기 방식이므로, 컨텐츠 확인자는 프로세스가 완료되면 TVSDK에 알릴 책임이 있습니다.
 
-1. 인터페이스를 확장하고 `ContentFactory`재정의하여 고유한 사용자 지정 `ContentFactory` 인터페이스를 구현할 수 `retrieveResolvers`있습니다.
+1. `ContentFactory` 인터페이스를 확장하고 `retrieveResolvers`을(를) 대체하여 고유한 사용자 지정 `ContentFactory`을 구현합니다.
 
    예:
 
@@ -51,7 +54,7 @@ TVSDK가 새 기회를 생성할 때 등록된 컨텐츠 해결자는 해당 기
    } 
    ```
 
-1. 을 `ContentFactory` 에 `MediaPlayer`등록합니다.
+1. `ContentFactory`을 `MediaPlayer`에 등록합니다.
 
    예:
 
@@ -68,9 +71,9 @@ TVSDK가 새 기회를 생성할 때 등록된 컨텐츠 해결자는 해당 기
    itemLoader.load(resource, id, config);
    ```
 
-1. 다음과 같이 객체를 TVSDK에 `AdvertisingMetadata` 전달합니다.
-   1. 객체를 `AdvertisingMetadata` 만듭니다.
-   1. 객체를 `AdvertisingMetadata` 저장할 `MediaPlayerItemConfig`위치.
+1. 다음과 같이 `AdvertisingMetadata` 개체를 TVSDK에 전달합니다.
+   1. `AdvertisingMetadata` 개체를 만듭니다.
+   1. `AdvertisingMetadata` 개체를 `MediaPlayerItemConfig`에 저장합니다.
 
       ```java
       AdvertisingMetadata advertisingMetadata = new AdvertisingMetadata(); 
@@ -81,8 +84,8 @@ TVSDK가 새 기회를 생성할 때 등록된 컨텐츠 해결자는 해당 기
       mediaPlayerItemConfig.setAdvertisingMetadata(advertisingMetadata); 
       ```
 
-1. 클래스를 확장하는 사용자 지정 광고 해결 프로그램 클래스를 `ContentResolver` 만듭니다.
-   1. 사용자 지정 광고 확인자에서 override `doConfigure`, `doCanResolve`, `doResolve`, `doCleanup`다음을 수행합니다.
+1. `ContentResolver` 클래스를 확장하는 사용자 지정 광고 확인자 클래스를 만듭니다.
+   1. 사용자 지정 광고 확인자에서 `doConfigure`, `doCanResolve`, `doResolve`, `doCleanup`:
 
       ```java
       void doConfigure(MediaPlayerItem item); 
@@ -91,7 +94,7 @@ TVSDK가 새 기회를 생성할 때 등록된 컨텐츠 해결자는 해당 기
       void doCleanup();
       ```
 
-      전달된 `advertisingMetadata` 항목에서 다음 항목을 가져옵니다 `doConfigure`.
+      `doConfigure`에 전달된 항목에서 `advertisingMetadata`을(를) 가져옵니다.
 
       ```java
       MediaPlayerItemConfig itemConfig = item.getConfig(); 
@@ -100,9 +103,9 @@ TVSDK가 새 기회를 생성할 때 등록된 컨텐츠 해결자는 해당 기
         mediaPlayerItemConfig.getAdvertisingMetadata(); 
       ```
 
-   1. 각 배치 기회에 대해 를 `List<TimelineOperation>`만듭니다.
+   1. 각 배치 기회에 대해 `List<TimelineOperation>`을(를) 만듭니다.
 
-      이 샘플에서는 `TimelineOperation` 다음과 같은 구조를 `AdBreakPlacement`제공합니다.
+      이 샘플 `TimelineOperation`은 `AdBreakPlacement`에 대한 구조를 제공합니다.
 
       ```java
       AdBreakPlacement( 
@@ -115,14 +118,14 @@ TVSDK가 새 기회를 생성할 때 등록된 컨텐츠 해결자는 해당 기
 
    1. 광고가 해결되면 다음 기능 중 하나를 호출합니다.
 
-      * 광고 확인이 성공하면 `process(List<TimelineOperation> proposals)` `notifyCompleted(Opportunity opportunity)` 에 대한 `ContentResolverClient`
+      * 광고 확인이 성공하면 `ContentResolverClient`에서 `process(List<TimelineOperation> proposals)` 및 `notifyCompleted(Opportunity opportunity)`을(를) 호출합니다.
 
          ```java
          _client.process(timelineOperations); 
          _client.notifyCompleted(opportunity); 
          ```
 
-      * 광고 해결에 실패하는 경우, `notifyResolveError``ContentResolverClient`
+      * 광고 확인이 실패하면 `ContentResolverClient`에서 `notifyResolveError`을(를) 호출합니다.
 
          ```java
          _client.notifyFailed(Opportunity opportunity, PSDKErrorCode error);
