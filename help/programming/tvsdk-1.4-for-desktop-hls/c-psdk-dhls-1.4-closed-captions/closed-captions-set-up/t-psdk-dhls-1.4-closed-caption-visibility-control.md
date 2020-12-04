@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 자막 가시성 제어{#control-closed-caption-visibility}
+# 자막 표시 제어{#control-closed-caption-visibility}
 
 자막의 가시성을 제어할 수 있습니다. 가시성이 켜지면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->닫힌 캡션의 가시성 값은 에 정의되어 있습니다 `ClosedCaptionsVisibility`.
+>닫힌 캡션의 가시성 값은 `ClosedCaptionsVisibility`에 정의됩니다.
 >
 >
 ```
@@ -31,14 +31,14 @@ ht-degree: 0%
 >public static const VISIBLE:String = visible;
 >```
 
-1. 준비 상태 이상 `MediaPlayer` 이 있을 때까지 기다립니다( [유효한 상태](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)대기 참조).
-1. 닫힌 캡션에 대한 현재 가시성 설정을 얻으려면 가시성 값을 반환하는 getter 방법 `MediaPlayer`을 사용하십시오.
+1. `MediaPlayer`이(가) PREMITED 상태 이상을 가질 때까지 기다리십시오([유효한 상태](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md) 대기 참조).
+1. 닫힌 캡션의 현재 가시성 설정을 가져오려면 가시성 값을 반환하는 `MediaPlayer`의 getter 메서드를 사용합니다.
 
    ```
    public function get ccVisibility():String
    ```
 
-1. 닫힌 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 가시성 값을 전달하십시오 `ClosedCaptionsVisibility`.
+1. 닫힌 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 `ClosedCaptionsVisibility`의 가시성 값을 전달합니다.
 
    예:
 
