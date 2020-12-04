@@ -1,22 +1,25 @@
 ---
-description: TVSDK 파섹 FreeWheel은 VAST 응답 내에서 해자 서비스에서 정보를 제공합니다. 해자 서비스는 크리에이티브가 고객의 관심을 사로잡고 방치하는지 여부를 보다 정확하게 보여주는 정확성을 통해 광고 임프레션을 계산합니다.
-seo-description: TVSDK 파섹 FreeWheel은 VAST 응답 내에서 해자 서비스에서 정보를 제공합니다. 해자 서비스는 크리에이티브가 고객의 관심을 사로잡고 방치하는지 여부를 보다 정확하게 보여주는 정확성을 통해 광고 임프레션을 계산합니다.
-seo-title: 해자의 광고 측정
-title: 해자의 광고 측정
+description: TVSDK는 FreeWheel 및 기타 광고 서버에서 방대한 응답을 제공합니다. FreeWheel은 VAST 응답 내에서 해자 서비스에서 정보를 제공합니다. 해자 서비스는 크리에이티브가 고객의 관심사를 캡처하거나 무시하는지를 보다 정확하게 보여주는 정확성을 통해 광고 노출 횟수를 계산합니다.
+seo-description: TVSDK는 FreeWheel 및 기타 광고 서버에서 방대한 응답을 제공합니다. FreeWheel은 VAST 응답 내에서 해자 서비스에서 정보를 제공합니다. 해자 서비스는 크리에이티브가 고객의 관심사를 캡처하거나 무시하는지를 보다 정확하게 보여주는 정확성을 통해 광고 노출 횟수를 계산합니다.
+seo-title: 해자에서 광고 측정
+title: 해자에서 광고 측정
 uuid: b89f900f-50ab-4152-9c0f-11f82d92bffa
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
 
-# 해자의 광고 측정{#ad-measurements-from-moat}
+# 해자{#ad-measurements-from-moat}의 광고 측정
 
-TVSDK 파섹 FreeWheel은 VAST 응답 내에서 해자 서비스에서 정보를 제공합니다. 해자 서비스는 크리에이티브가 고객의 관심을 사로잡고 방치하는지 여부를 보다 정확하게 보여주는 정확성을 통해 광고 임프레션을 계산합니다.
+TVSDK는 FreeWheel 및 기타 광고 서버에서 방대한 응답을 제공합니다. FreeWheel은 VAST 응답 내에서 해자 서비스에서 정보를 제공합니다. 해자 서비스는 크리에이티브가 고객의 관심사를 캡처하거나 무시하는지를 보다 정확하게 보여주는 정확성을 통해 광고 노출 횟수를 계산합니다.
 
-해자는 브라우저에서부터 응용 프로그램 내에서 다양한 용도로 측정 및 보는 서비스입니다. 해자는 마케팅 분석 데이터를 여러 플랫폼에서 실시간으로 생성합니다.
+해자는 브라우저에서부터 응용 프로그램 내의 다양한 용도에 걸쳐 측정하고 보는 서비스입니다. 해자는 다양한 플랫폼에서 마케팅 분석 데이터를 실시간으로 생성합니다.
 
-VAST 응답 XML에는 코드가 읽을 수 있는 속성, 가장 바깥쪽 `Ad id` 속성 및 가장 바깥쪽 `Extension` 요소가 있습니다. 어떤 방식으로든, 코드에서는 TVSDK를 사용하여 `Ad id` 정보와 `Extension` 정보를 모두 저장한 다음 트리 구조로 정보를 구성할 수 있습니다. 이 조직을 사용하면 모든 수준에서 데이터를 수집하여 필요한 곳에 전달할 수 있습니다. 가장 바깥쪽 `Ad id` 속성 값을 사용하면 코드가 연결된 캠페인의 정보를 조정할 수 있습니다.
+VAST 응답 XML에는 속성 및 코드가 읽을 수 있는 요소, 가장 바깥쪽 `Ad id` 속성 및 가장 바깥쪽 `Extension` 요소가 있습니다. 어느 방법으로든, 코드에서는 TVSDK를 사용하여 `Ad id` 정보와 `Extension` 정보를 모두 저장한 다음 트리 구조로 정보를 구성할 수 있습니다. 이 조직을 사용하면 모든 수준에서 데이터를 수집하여 필요한 곳에 전달할 수 있습니다. 가장 바깥쪽 `Ad id` 속성 값을 사용하면 코드가 연관된 캠페인의 정보를 조정할 수 있습니다.
 
 예를 들어 FreeWheel은 Extensions 요소의 데이터를 반환할 수 있습니다. 다음은 샘플 요소입니다.
 
@@ -36,10 +39,10 @@ VAST 응답 XML에는 코드가 읽을 수 있는 속성, 가장 바깥쪽 `Ad i
 </Extensions> 
 ```
 
-또한 Freewheel은 아래 샘플에서와 같이 `id` `Ad` 요소의 속성을 설정할 수 있습니다.
+또한 자유 휠은 아래 샘플에서와 같이 `Ad` 요소의 `id` 속성을 설정할 수도 있습니다.
 
 ```xml
 <Ad id="118566" sequence="1">
 ```
 
-API 정보는 NetworkAdInfo 클래스의 API 설명서를 [참조하십시오](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/)
+API 정보는 클래스 [NetworkAdInfo](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/)에 대한 API 설명서를 참조하십시오.
