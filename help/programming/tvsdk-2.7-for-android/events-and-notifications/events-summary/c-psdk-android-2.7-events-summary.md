@@ -1,18 +1,21 @@
 ---
-description: 애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변경 상태를 모니터링할 수 있습니다.
-seo-description: 애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변경 상태를 모니터링할 수 있습니다.
+description: 애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
+seo-description: 애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
 seo-title: Primetime 플레이어 이벤트 요약
 title: Primetime 플레이어 이벤트 요약
 uuid: ed3be4c2-8df3-4d96-a30b-74c196262798
 translation-type: tm+mt
 source-git-commit: a33e1f290fcf78e6f131910f6037f4803f7be98d
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 0%
 
 ---
 
 
 # Primetime 플레이어 이벤트 요약 {#primetime-player-events-summary-overview}
 
-애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변경 상태를 모니터링할 수 있습니다.
+애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
 
 ## 이벤트 {#events}
 
@@ -24,13 +27,13 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## AdBreakCompletedEventListener {#section_D7A74A4EACA44E54806D040491B7D879}
 
-* ** 의미 ** 광고 브레이크가 재생되었습니다.
+* ** 의미 ** 광고 중단 재생이 완료되었습니다.
 
 * ** 구현하기 위한 콜백 ** `onAdBreakCompleted(AdBreakPlaybackEvent event)`
 
 * ** 이벤트 코드 ** `AD_BREAK_COMPLETE`
 
-## AdBreakSwitchedEventListener {#section_7AE5442442484F45B521D3309691C59C}
+## AdBreakBrusedEventListener {#section_7AE5442442484F45B521D3309691C59C}
 
 * ** 의미 ** 재생 중에 광고 나누기를 건너뛰었습니다.
 
@@ -64,7 +67,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## AdProgressEventListener {#section_C26ACC4B941942B0A24DB06585EF52AB}
 
-* *** 재생 중 진행 상황 보고
+* ** 이것은 ** 재생 중 진행 상황을 보고하는 것을 의미합니다.
 
 * ** 구현하기 위한 콜백 ** `onAdProgress(AdPlaybackEvent event)`
 
@@ -72,7 +75,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## AdResolutionCompleteEventListener {#section_E9D545408CBA448EA2A8606DA629FB0B}
 
-* ** 의미 ** Primetime 광고 결정 광고 해상도가 완료되었습니다. 이 이벤트는 VOD 컨텐츠에만 적용됩니다.
+* ** 의미 ** Primetime 광고 결정 해상도가 완료되었습니다. 이 이벤트는 VOD 컨텐츠에만 해당됩니다.
 
 * ** 구현하기 위한 콜백 ** `onAdResolutionComplete()`
 
@@ -104,13 +107,13 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## BufferingEndEventListener {#section_9107E0ED59474F11A04E243C6B117E21}
 
-* ** 즉 ** 플레이어가 버퍼링을 중지했습니다.
+* ** 의미함 ** 플레이어가 버퍼링을 중지했습니다.
 
 * ** 구현하기 위한 콜백 ** `onBufferingEnd(BufferEvent event)`
 
 * ** 이벤트 코드 ** `BUFFERING_END`
 
-## BufferPreparedEventListener {#section_F6BFDF525D8B41B7B6E0EFCCE3065811}
+## BufferPrepartedEventListener {#section_F6BFDF525D8B41B7B6E0EFCCE3065811}
 
 * ** 의미 ** 버퍼가 준비되었습니다.
 
@@ -192,7 +195,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## PlaybackRateSelectedEventListener {#section_B303BAAFA6D14C1599AD3D7D79D722DD}
 
-* ** 의미 ** MediaPlayer 속도 속성이 설정되었습니다.
+* ** 의미 ** MediaPlayer의 속도 속성이 설정되었습니다.
 
 * ** 구현하기 위한 콜백 ** `onRateSelected(PlaybackRateEvent event)`
 
@@ -238,7 +241,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 * ** 이벤트 코드 ** `SEEK_END`
 
-## SeekPositionZadedEventListener {#section_01F89B73DBB84BEBBA60D820BF5FAC9A}
+## SeekPositionAdjutedEventListener {#section_01F89B73DBB84BEBBA60D820BF5FAC9A}
 
 * ** 의미 ** 내부 재생 규칙 또는 외부 비즈니스 규칙으로 검색 위치가 조정되었습니다.
 
@@ -270,7 +273,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 * ** 이벤트 코드 ** `TIME_CHANGED`
 
-## TimedEventEventListener {#section_5E62C2C81C3B4F93B46E7518578456EA}
+## TimedEventListener {#section_5E62C2C81C3B4F93B46E7518578456EA}
 
 * ** 의미 ** 작업에 소요되는 시간과 함께 작업이 완료됩니다.
 
@@ -280,7 +283,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## TimelineMetadataAddedInBackgroundEventListener {#section_7B923C7116154CCFBAE1FCA92C928EB2}
 
-* ** 의미 ** 새로운 시간 지정 메타데이터가 백그라운드에서 항목에 추가되었습니다.
+* ** 의미 ** 새로운 시간 메타데이터가 백그라운드에서 항목에 추가되었습니다.
 
 * ** 구현하기 위한 콜백 ** `onTimedMetadata(TimedMetadataEvent event)`
 
@@ -288,7 +291,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## TimedMetadataEventListener {#section_9741EA321ACF403FB8E9AB311BAACDD7}
 
-* ** 의미 ** 미디어 스트림에서 새로운 시간 메타데이터를 검색했습니다.
+* ** 의미 ** 미디어 스트림에서 새로운 시간 메타데이터가 검색되었습니다.
 
 * ** 구현하기 위한 콜백 ** `onTimedMetadata(TimedMetadataEvent event)`
 
@@ -296,7 +299,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 ## TimelineUpdatedEventListener {#section_D0755BD2AF3347C7861395706E31B861}
 
-* ** 의미 ** 타임라인이 수정되었습니다. 타임라인에 광고가 추가되었거나 타임라인에서 제거되었을 수 있습니다.
+* ** 의미 ** 타임라인이 수정되었습니다. 타임라인에 광고가 추가되었거나 제거되었을 수 있습니다.
 
 * ** 구현하기 위한 콜백 ** `onTimelineUpdated(TimelineEvent event)`
 
