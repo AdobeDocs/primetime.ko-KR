@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 사용 모델 데모 사용{#enable-the-usage-model-demo}
 
-1. 패키징 시 사용자 지정 속성 `RI_UsageModelDemo=true` 을 지정합니다.
+1. 패키징 시 사용자 지정 속성 `RI_UsageModelDemo=true`을(를) 지정합니다.
 
    Media Packager 명령줄 도구를 사용하여 컨텐츠를 패키지하는 경우 다음을 입력합니다.
 
