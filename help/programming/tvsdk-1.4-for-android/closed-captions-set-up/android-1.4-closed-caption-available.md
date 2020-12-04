@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->자막은 항상 활성화되어 있습니다. 모든 기본 자막 트랙은 존재하는 것으로 간주됩니다. 기본 트랙(예: CC1-CC4, CS1-CS6)은 에서 열거됩니다 `ClosedCaptionsTrack.DefaultCCTypes`. 재생이 시작되면 TVSDK가 이러한 채널에서 활동을 찾습니다. 활동을 찾으면 해당 트랙에 대한 `isActive` 메서드를 설정하고 `MediaPlayer.PlaybackEventListener.onUpdated` 이벤트를 전달합니다.
+>자막은 항상 활성화되어 있습니다. 모든 기본 자막 트랙은 존재하는 것으로 간주됩니다. 기본 트랙(예: CC1-CC4, CS1-CS6)은 `ClosedCaptionsTrack.DefaultCCTypes`에 열거됩니다. 재생이 시작되면 TVSDK가 이러한 채널에서 활동을 찾습니다. 활동을 찾으면 해당 트랙에 대해 `isActive` 메서드를 설정하고 `MediaPlayer.PlaybackEventListener.onUpdated` 이벤트를 전달합니다.
 
 1. 미디어 플레이어가 준비 상태 이상이어야 합니다.
 1. 다음 이벤트에 대한 의견 수렴:
