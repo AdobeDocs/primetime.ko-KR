@@ -4,13 +4,16 @@ title: 인증서 정보
 uuid: 0b7818b4-bd6a-4f2e-94c2-565e0d735bf8
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
 
-# 인증서 정보 {#about-certificates}
+# 인증서 {#about-certificates} 정보
 
-Adobe Primetime DRM SDK는 다음 구성으로 제공됩니다.
+Adobe Primetime DRM SDK는 다음 구성에서 사용할 수 있습니다.
 
 * Primetime DRM Production SDK
 * Primetime DRM 평가 SDK
@@ -22,18 +25,18 @@ Primetime DRM SDK를 사용하여 라이선스 서버를 만들려면 Adobe에�
 
 * 라이선스 서버 인증서
 
-   SDK 파섹
-* Packager 인증서
+   SDK는 이 인증서를 사용하여 클라이언트에 발급된 컨텐츠 라이선스에 서명합니다.
+* 패키지 인증서
 
    SDK는 콘텐츠를 패키징(암호화)할 때 이 인증서를 사용하여 DRM 메타데이터를 생성합니다.
 * 전송 인증서
 
-   SDK 파섹
+   SDK는 이 인증서를 사용하여 클라이언트와 라이센스 서버 간의 통신을 보호합니다.
 * 도메인 CA 인증서
 
-   도메인 서버를 구현하려는 고객은 도메인 CA 인증서가 필요합니다. 다른 인증서와 달리 도메인 CA 인증서는 Adobe에서 발행하지 않습니다.
+   도메인 서버를 구현하려는 고객은 도메인 CA 인증서가 필요합니다. 다른 인증서와 달리 도메인 CA 인증서는 Adobe에서 발급되지 않습니다.
 
 >[!NOTE]
 >
->평가판 SDK 및 시험버전의 경우 라이선스 서버, 패키지 및 전송 인증서가 단일 인증서로 결합됩니다.
+>평가판 SDK 및 시험버전 SDK의 경우, 라이센스 서버, 패키지 및 전송 인증서가 단일 인증서로 결합됩니다.
 
