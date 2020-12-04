@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# ID 기반의 라이선스 {#identity-based-licenses}
+# ID 기반 라이센스 {#identity-based-licenses}
 
-ID 기반 라이센스를 사용하는 경우 서버는 라이선스를 발급하기 전에 유효한 인증 토큰을 확인합니다. 인증 토큰 처리에 대한 자세한 내용은 [사용자 인증을](../../../aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md) 참조하십시오.
+ID 기반 라이센스를 사용하는 경우 서버는 라이선스를 발급하기 전에 유효한 인증 토큰을 확인합니다. 인증 토큰 처리에 대한 자세한 내용은 [사용자 인증](../../../aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)을 참조하십시오.
 
 >[!NOTE]
 >
