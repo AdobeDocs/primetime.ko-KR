@@ -1,18 +1,21 @@
 ---
-description: 토큰 요청을 적절한 Express 토큰 서버로 전송하여 암호화된 내용에 대한 Express 토큰을 생성할 수 있습니다.
-seo-description: 토큰 요청을 적절한 Express 토큰 서버로 전송하여 암호화된 내용에 대한 Express 토큰을 생성할 수 있습니다.
-seo-title: Express 토큰
-title: Express 토큰
+description: 토큰 요청을 해당 ExpressPlay 토큰 서버로 보내 암호화된 콘텐츠에 대한 Express 토큰을 생성할 수 있습니다.
+seo-description: 토큰 요청을 해당 ExpressPlay 토큰 서버로 보내 암호화된 콘텐츠에 대한 Express 토큰을 생성할 수 있습니다.
+seo-title: 표현 토큰
+title: 표현 토큰
 uuid: 6103e1b2-127d-4758-a589-15f0f3c73db1
 translation-type: tm+mt
 source-git-commit: d0ba1f98b16f6350ae842ca2ce1261bf49dd8a66
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
 
 
-# Express 토큰 {#expressplay-tokens}
+# 표현식 토큰 {#expressplay-tokens}
 
-토큰 요청을 적절한 Express 토큰 서버로 전송하여 암호화된 내용에 대한 Express 토큰을 생성할 수 있습니다.
+토큰 요청을 해당 ExpressPlay 토큰 서버로 보내 암호화된 콘텐츠에 대한 Express 토큰을 생성할 수 있습니다.
 
 예를 들면 다음과 같습니다.
 
@@ -25,7 +28,7 @@ token?customerAuthenticator=<your expressplay customer authenticator>
 &hdcpOutputControl=0
 ```
 
-매개 변수에 지정된 컨텐츠 암호화 키 저장소 ID 또는 CEKSID와 매개 변수에 제공된 컨텐츠 암호화 키 또는 CEK는 패키징에 사용되는 컨텐츠 암호화 키 저장소 ID 및 컨텐츠 암호화 키와 일치해야 합니다. `kid` `contentKey` 다음 텍스트는 토큰 서버 응답의 예입니다.
+`kid` 매개 변수에 지정된 컨텐츠 암호화 키 저장소 ID 또는 CEKSID와 `contentKey` 매개 변수에 지정된 컨텐츠 암호화 키 또는 CEK는 패키징에 사용되는 컨텐츠 암호화 키 저장소 ID 및 컨텐츠 암호화 키와 일치해야 합니다. 다음 텍스트는 토큰 서버 응답의 예입니다.
 
 ```
 https://wv.service.expressplay.com/hms/wv/rights/
@@ -34,7 +37,7 @@ https://wv.service.expressplay.com/hms/wv/rights/
  SJ4o-d8teAkUZUtW3Od5V-SHsCLnAlbFW84K71h2xNUiMAvRcUFBG3bjxMQ
 ```
 
-그런 다음
+그러면 다음 중 하나를 수행할 수 있습니다.
 
 * 반환된 URL 및 쿼리를 라이센스 서버 URL로 사용하거나
-* url에서 쿼리를 가져와서 ExpressPlayToken을 HTTP POST 헤더로 개별적으로 전달합니다.
+* URL에서 쿼리를 가져와서 ExpressPlayToken을 HTTP POST 헤더로 개별적으로 전달합니다.
