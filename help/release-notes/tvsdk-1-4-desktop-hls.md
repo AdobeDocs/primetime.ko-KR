@@ -21,7 +21,7 @@ ht-degree: 0%
 
 데스크탑 HLS용 TVSDK 릴리스 노트는 TVSDK DHLS의 새로운 기능 또는 변경된 기능, 해결된 문제 및 알려진 문제에 대해 설명합니다.
 
-## 새로운 기능 {#new-features}
+## 새 기능 {#new-features}
 
 **1.4.31**
 
@@ -58,9 +58,9 @@ ht-degree: 0%
 
 **1.4.10**
 
-* **광고 폴백, 광고 선택 로직 데이지 체인(Zendesk #3103)** 폴백 규칙이 활성화된 VAST 광고(크리에이티브)의 경우 TVSDK는 잘못된 MIME 유형의 광고를 빈 광고로 취급하고 대신 폴백 광고를 사용합니다. 폴백 동작의 일부 측면을 구성할 수 있습니다.
+* **광고 폴백, 광고 선택 로직 데이지 체인(Zendesk #3103) 폴백 규칙이 활성화된 VAST 광고(크리에이티브)** 의 경우 TVSDK는 잘못된 MIME 유형의 광고를 빈 광고로 취급하고 대신 대체 광고를 사용합니다. 폴백 동작의 일부 측면을 구성할 수 있습니다.
 
-자세한 내용은 VAST 및 [VMAP 광고에 대한 광고 폴백을 참조하십시오](../programming/tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md).
+자세한 내용은 [VAST 및 VMAP 광고 대비 대체(a1/>를 참조하십시오.](../programming/tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md)
 
 **1.4.8**
 
@@ -91,9 +91,9 @@ ht-degree: 0%
 
 **1.4.0**
 
-* **대체 컨텐츠 교체를** 통한 일시 중단 신호 1.4 TVSDK 업데이트의 일부로, TVSDK는 또한 선형 컨텐츠에 대한 지역 단전의 시작 및 재시작을 지원합니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
+* **대체 컨텐츠 교체를 통한 일시 중단 신호** 는 1.4 TVSDK 업데이트의 일부로, TVSDK는 또한 선형 컨텐츠에 대한 지역 단전의 시작 및 회수를 지원합니다. 이제 TVSDK에서 두 개의 매니페스트 파일을 병렬로, 주 및 대체 형식으로 처리할 수 있으므로 원래 프로그래밍 대신 대체 프로그램이 보여지는 경우에도 정전 신호를 모니터링할 수 있습니다.
 
-* **지금 C3 광고** 제거/바꾸기 C3 창에서 나오고 있는 VOD(Video-On-Demand) 자산에 새로운 광고를 동적으로 삽입하는 데 추가 준비 작업이 필요하지 않습니다. 이제 TVSDK에서 사용자 지정 컨텐츠 범위를 제거하고 새 광고를 동적으로 삽입하는 API를 제공합니다. 이 강력한 새로운 기능은 브로드캐스트 중에 라이브/선형 컨텐츠가 실행되고 에셋을 &quot;정리&quot;하는 데 적절한 시간 없이 on-demand 컨텐츠로 사용하기 위해 즉시 축소되는 경우에도 유용합니다.
+* **C3** 광고 제거/교체 이제 C3 창에서 나오고 있는 VOD(Video-On-Demand) 자산에 새로운 광고를 동적으로 삽입하는 데 별도의 준비 작업이 필요하지 않습니다. 이제 TVSDK에서 사용자 지정 컨텐츠 범위를 제거하고 새 광고를 동적으로 삽입하는 API를 제공합니다. 이 강력한 새로운 기능은 브로드캐스트 중에 라이브/선형 컨텐츠가 실행되고 에셋을 &quot;정리&quot;하는 데 적절한 시간 없이 on-demand 컨텐츠로 사용하기 위해 즉시 축소되는 경우에도 유용합니다.
 
 ## 해결된 문제 {#resolved-issues}
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
    DHLS에서 PMP 데모용 로컬 호스트 토큰 업데이트
 
-### 이전 릴리스의 문제 해결 {#resolved-issues-previous}
+### 이전 릴리스 {#resolved-issues-previous}에서 해결된 문제
 
 **버전 1.4.38** (891)
 
@@ -358,7 +358,7 @@ storeVoucher()가 호출될 때 deviceID를 제대로 초기화하여 발생한 
 
 **버전 1.4.21** (782)
 
-* Zendesk #19580 TVSDK가 알림을 보내기 전에 컨텐츠 해결 프로그램의 완료를 `PTTimedMetadataChangedNotification` 기다립니다
+* Zendesk #19580 TVSDK가 내용 확인자의 완료를 기다렸다가 `PTTimedMetadataChangedNotification` 알림을 보냅니다.
 
 **참고**:이 문제는 Flash 플레이어 21.0.0.182 이상이 필요합니다.
 
@@ -658,11 +658,11 @@ pageDomain이 swf 도메인과 다를 때 와일드카드 토큰을 찾는 문�
 
 외부 모니터에서 재생되는 스트림이 더 높은 비트 전송률 스트림으로 전환될 때 Mac의 Firefox에서 가끔 발생하는 Flash Player 충돌을 해결했습니다.(Flash Player 18.0.0.160 필요)
 
-* Zendesk #3268 - 데스크탑:비디오 플레이어는 `+-` 40/50초 후 깜박거리기 시작하며 `+-` 90초 후 검은색으로 변하기 시작합니다
+* Zendesk #3268 - 데스크탑:비디오 플레이어는 `+-` 40/50초 후 깜박거리기 시작하며 `+-` 90초 후 검은색으로 사라지기 시작합니다.
 
 Mac Chrome에서 스트림이 깜박거리기 시작하고 결국 검은색으로 표시되는 문제가 해결되었습니다. (Flash Player 18.0.0.161 필요)
 
-* Zendesk #3304 - VAST 3.0 매크로를 `[ERRORCODE]` 채울 수 없음
+* Zendesk #3304 - VAST 3.0 `[ERRORCODE]` 매크로를 채우지 않음
 
    * 인라인 및 크리에이티브가 불량한 경우 오류 코드 400이 노출됩니다.
    * `[ERRORCODE]` 매크로는 URL로 인코딩됩니다.
@@ -711,7 +711,7 @@ HLS 형식의 MIME 형식은 대/소문자를 구분했습니다. 이 형식이 
 
 **버전 1.4.4**
 
-* Zendesk #1561 - Re: `[Adobe Primetime]` 업데이트:데스크탑 PSDK의 PROGRAM-DATE-TIME에 대한 HLS 클라이언트 기반 페일오버 지원(Flash Player 버전 16.0.0.305 이상 필요)
+* Zendesk #1561 - Re:`[Adobe Primetime]` 업데이트:데스크탑 PSDK의 PROGRAM-DATE-TIME에 대한 HLS 클라이언트 기반 페일오버 지원(Flash Player 버전 16.0.0.305 이상 필요)
 * Zendesk #2197 - `[Ads]` 추적 및 오류
 * Zendesk #2286 - 기능 요청:광고 로드 상태(VPAID)에 대한 정보 제공
 * Zendesk #2285 - 기능 요청:지정된 제한 시간 후 광고 건너뛰기
@@ -722,8 +722,8 @@ HLS 형식의 MIME 형식은 대/소문자를 구분했습니다. 이 형식이 
 * Zendesk #1303 - 자막 수직 오프셋(Flash Player 버전 16.0.0.235 이상 필요, 예상 릴리스 날짜:2014년 12월)
 * Zendesk #1870 - 닫힌 캡션 켜기 및 끄기(Flash Player 버전 16.0.0.235 이상 필요, 예상 릴리스 날짜:2014년 12월)
 * Zendesk #2110 - VPAID 광고 중 전체 화면으로 전환하려고 하면 재생이 정지됩니다(Flash Player 버전 16.0.0.235 이상 필요, 예상 릴리스 날짜:2014년 12월)
-* Zendesk #2199 - `[VPAID]` 이전 광고 중단 시 플레이어가 응답하지 않음
-* Zendesk #2358 - Re: `[Analytics]` 잘못된 장 데이터
+* Zendesk #2199 - `[VPAID]` 지난 광고 휴가를 요청할 때 플레이어가 응답하지 않음
+* Zendesk #2358 - Re:`[Analytics]` 잘못된 장 데이터
 
 **버전 1.4.1**
 
@@ -740,7 +740,7 @@ HLS 형식의 MIME 형식은 대/소문자를 구분했습니다. 이 형식이 
 * 캡션 시스템에 비디오가 필요하므로 닫힌 캡션은 오디오 전용 콘텐츠에서는 작동하지 않습니다.
 비디오가 없으면 뷰포트 차원이 없으며 뷰포트 차원이 없으면 캡션에 대한 그래픽을 표시할 수 없습니다.
 * Chrome 샌드박스 제한 사항으로 인해 Google Chrome에서 스트림 무결성이 약간 느립니다.
-* TVSDK 1.4에서 자동 재생을 비활성화하면 플레이어가 1분 이상 유휴 상태로 남아 있을 때 DRM 오류가 발생할 수 있습니다. 이 문제를 해결하려면, 자동 재생을 비활성화하고 자산을 미리 로드할 때, 다음 `ReferenceCore.as` 의 내용을 변경하여 수정합니다 `onPlaybackManagerPrepared`.
+* TVSDK 1.4에서 자동 재생을 비활성화하면 플레이어가 1분 이상 유휴 상태로 남아 있을 때 DRM 오류가 발생할 수 있습니다. 이 문제를 해결하려면 자동 재생을 비활성화하고 자산을 미리 로드할 때 `onPlaybackManagerPrepared`의 내용을 변경하여 `ReferenceCore.as`을 수정하십시오.
 
 ```
 if (_playbackManager.autoPlay) {
@@ -751,9 +751,9 @@ _playbackManager.pause();
 }
 ```
 
-* **버전 1.4.13** PTPLAY-8501 - VMAP에서 트랜스코딩되지 않은 두 개의 직접 MP4 광고를 반환하면 동일한 폴백 광고가 두 번 재생됩니다.
+* **버전 1.4.13** PTPLAY-8501 - VMAP이 두 개의 직접 MP4 비코드 광고를 반환하는 경우 동일한 폴백 광고가 두 번 재생됩니다.
 
-* **버전 1.4.2** Flash Player 버전 16 릴리스에서는 플레이어가 빈 버퍼링 이벤트로 전환된 후 ABR &quot;스위칭 다운&quot; 로직을 사용하여 문제가 발견되었습니다. 이 문제는 플레이어가 버퍼링 상태로 전환되면 잘못된 대역폭 환경에서 비트 전송률이 다운되는 것을 방지합니다. 이 문제를 해결하려면 응용 프로그램이 버퍼링 상태(이벤트 `BufferControlParameters.initialBufferTime` 에서) `BufferControlParameters.playbackBufferTime` 동안 임시로 설정된 것과 동일한 값(즉, 이벤트 `BufferEvent.BUFFERING_BEGIN` 에서)을 설정한 다음 다시 `BufferEvent.BUFFERING_END` 이벤트에 설정된 값으로 재설정합니다. 이 문제에 대한 수정 사항은 Flash Player 버전 16의 다음 패치 릴리스에서 사용할 수 있습니다.
+* **버전 1.4.2 Flash Player 버전 16 릴리스** 에서 플레이어가 빈 버퍼링 이벤트로 전환된 후 ABR &quot;스위칭 다운&quot; 로직을 사용하여 문제가 발견되었습니다. 이 문제는 플레이어가 버퍼링 상태로 전환되면 잘못된 대역폭 환경에서 비트 전송률이 다운되는 것을 방지합니다. 이 문제를 해결하려면 버퍼링 상태(즉, `BufferEvent.BUFFERING_BEGIN` 이벤트)가 발생하는 동안 앱이 일시적으로 `BufferControlParameters.playbackBufferTime`과 같도록 `BufferControlParameters.initialBufferTime`을 설정한 다음 다시 `BufferEvent.BUFFERING_END` 이벤트의 설정 값으로 재설정합니다. 이 문제에 대한 수정 사항은 Flash Player 버전 16의 다음 패치 릴리스에서 사용할 수 있습니다.
 
 * **버전 1.4.0**
 
@@ -769,4 +769,4 @@ _playbackManager.pause();
 
 ## 유용한 리소스 {#helpful-resources}
 
-* 자세한 도움말 설명서는 [Adobe Primetime 학습 및 지원](https://helpx.adobe.com/support/primetime.html) 페이지를 참조하십시오.
+* [Adobe Primetime 학습 및 지원](https://helpx.adobe.com/support/primetime.html) 페이지에서 전체 도움말 문서를 참조하십시오.
