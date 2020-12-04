@@ -15,12 +15,12 @@ ht-degree: 0%
 
 컨텐츠가 암호화되고 라이센스가 사전 생성되면 라이센스가 암호화된 컨텐츠에 포함될 수 있습니다.
 
-라이센스를 포함하려면 인스턴스 `com.adobe.flashaccess.sdk.media.drm.contentupdate.MediaKeyMetaDataUpdater`를 가져옵니다. 암호화된 컨텐츠의 유형을 알고 있는 경우 `FLVKeyMetaDataUpdater` 또는 `F4VKeyMetaDataUpdater`;그렇지 않은 경우, 검색된 파일 유형을 기준으로 인스턴스 `MediaProcessorFactory.getMediaProcessor()` 를 반환하는 데 사용합니다. Construction a `KeyMetaDataCallback` and invoke `modifyKeyMetaData()`. DRM 메타데이터가 암호화된 내용에 있으면 콜백 구현이 호출됩니다. 검색된 메타데이터를 기반으로 임베드할 라이센스를 선택하고 라이센스를 `EmbedLicenseKeyMetaData.setEmbeddedLicenses()`
+라이센스를 포함하려면 `com.adobe.flashaccess.sdk.media.drm.contentupdate.MediaKeyMetaDataUpdater`의 인스턴스를 가져옵니다. 암호화된 콘텐츠의 유형을 알고 있는 경우 `FLVKeyMetaDataUpdater` 또는 `F4VKeyMetaDataUpdater`;의 생성자를 사용하십시오.그렇지 않은 경우 `MediaProcessorFactory.getMediaProcessor()`를 사용하여 검색된 파일 유형을 기반으로 인스턴스를 반환합니다. `KeyMetaDataCallback`을 만들고 `modifyKeyMetaData()`을(를) 호출합니다. DRM 메타데이터가 암호화된 내용에 있으면 콜백 구현이 호출됩니다. 검색된 메타데이터를 기반으로 임베드할 라이센스를 선택하고 `EmbedLicenseKeyMetaData.setEmbeddedLicenses()`을(를) 사용하여 라이센스를 설정할 수 있습니다.
 
-임베디드 라이센스를 시연하는 샘플 코드는 참조 구현 명령줄 도구 &quot;샘플&quot; 디렉토리 `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense` 에서 참조하십시오.
+임베디드 라이센스를 시연하는 샘플 코드는 참조 구현 명령줄 도구 &quot;샘플&quot; 디렉토리의 `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense`을 참조하십시오.
 
 >[!NOTE]
 >
 >Adobe 액세스 2.0 클라이언트는 컨텐츠에 임베드된 모든 라이센스를 무시하고 메타데이터에 지정된 라이센스 서버에서 라이센스를 얻으려고 시도합니다. 그러나 메타데이터에 사용 가능한 라이센스 서버가 없다는 메시지가 표시되면 Adobe Access 2.0 클라이언트를 업그레이드하여 컨텐츠를 확인해야 합니다.
 
-대역 [외 라이선스를 참조하십시오](../../aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md).
+[대역 외 라이센스](../../aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md)를 참조하십시오.
