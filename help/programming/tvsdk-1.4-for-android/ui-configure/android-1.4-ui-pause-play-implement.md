@@ -6,6 +6,9 @@ title: 비디오 재생 및 일시 중지
 uuid: 24b26364-5cb8-4a95-9574-cc52ddfa876b
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ TVSDK 비헤이비어를 추가하여 단추를 일시 정지하고 재생할 �
       void pause() throws IllegalStateException;
       ```
 
-1. 콜백을 사용하여 `MediaPlayer.PlaybackEventListener.onStateChanged` 오류를 확인하거나 다른 적절한 작업을 수행합니다.
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` 콜백을 사용하여 오류를 확인하거나 다른 적절한 작업을 수행합니다.
 
-   일시 중지 또는 재생 메서드가 호출되면 TVSDK에서 이 콜백을 호출합니다. TVSDK는 PAUSED 또는 PLAYING과 같은 새로운 상태를 포함하여 콜백의 상태 변경에 대한 정보를 전달합니다.
+   일시 정지 또는 재생 메서드가 호출되면 TVSDK에서 이 콜백을 호출합니다. TVSDK는 PAUSED 또는 PLAYING과 같은 새로운 상태를 포함하여 콜백에서의 상태 변경에 대한 정보를 전달합니다.
 
