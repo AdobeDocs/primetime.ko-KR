@@ -20,7 +20,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >동일한 Tomcat 인스턴스에서 여러 웹 애플리케이션을 실행하고 경로에 있는 경우 `jsafe.dll` 는 첫 번째 웹 애플리케이션만 `jsafe.dll` 라이브러리를 로드할 수 있습니다. 따라서 기본 지원을 통해 첫 번째 웹 애플리케이션만 혜택을 받을 수 있습니다. 이러한 경우 모든 웹 애플리케이션의 성능을 향상시키려면 WAR 파일 `cryptoj.jar`외부에 추가하십시오. 예: in the directory. `<tomcat_installation_folder>/lib`
+   >동일한 Tomcat 인스턴스에서 여러 웹 응용 프로그램을 실행하고 경로에 `jsafe.dll`이 있는 경우 로드되는 첫 번째 웹 응용 프로그램만 `jsafe.dll` 라이브러리를 로드할 수 있습니다. 따라서 기본 지원을 통해 첫 번째 웹 애플리케이션만 혜택을 받을 수 있습니다. 이러한 경우 모든 웹 응용 프로그램의 성능을 향상시키려면 WAR 파일 외부에 `cryptoj.jar`를 넣습니다. 예를 들어 `<tomcat_installation_folder>/lib` 디렉토리에 있습니다.
 
 * 64비트 버전의 Red Hat® 또는 Windows와 같은 64비트 운영 체제는 32비트 운영 체제에서 훨씬 향상된 성능을 제공합니다.
 
