@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 향상된 라이선스 체인 {#enhanced-license-chaining}
+# {#enhanced-license-chaining} 라이선스 체인 개선
 
 라이선스 일괄 업데이트에 상위 루트 라이선스를 사용하여 고급 라이선스 체인을 사용하여 라이선스를 업데이트할 수 있습니다.
 
