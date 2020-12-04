@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 라이브/선형 스트림에서 Ad Insertion 사용 {#ad-insertion-live-linear-stream}
+# 라이브/선형 스트림에 Ad Insertion 사용 {#ad-insertion-live-linear-stream}
 
 Primetime Ad Insertion을 통해 발행자는 실시간/선형 스트림 중에 발생하는 표준 및 복잡한 광고 삽입 상황을 처리할 수 있습니다.
 
