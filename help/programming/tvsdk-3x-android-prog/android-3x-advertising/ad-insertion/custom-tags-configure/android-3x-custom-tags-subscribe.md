@@ -1,26 +1,29 @@
 ---
-description: TVSDK 파섹
-seo-description: TVSDK 파섹
+description: TVSDK는 컨텐츠 매니페스트에서 이러한 개체가 나타날 때마다 구독 태그의 TimedMetadata 개체를 준비합니다.
+seo-description: TVSDK는 컨텐츠 매니페스트에서 이러한 개체가 나타날 때마다 구독 태그의 TimedMetadata 개체를 준비합니다.
 seo-title: 사용자 정의 태그 구독
 title: 사용자 정의 태그 구독
 uuid: f1a934bd-772e-435f-84b5-cb48db23c06e
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
 
-# 사용자 정의 태그 구독 {#subscribe-to-custom-tags}
+# 사용자 지정 태그 {#subscribe-to-custom-tags} 구독
 
-TVSDK 파섹
+TVSDK는 컨텐츠 매니페스트에서 이러한 개체가 나타날 때마다 구독 태그의 TimedMetadata 개체를 준비합니다.
 
-재생이 시작되기 전에 태그에 가입해야 합니다. HLS 매니페스트의 사용자 지정 태그에 대한 알림을 받으려면:
+재생을 시작하기 전에 태그에 가입해야 합니다. HLS 매니페스트의 사용자 지정 태그에 대한 알림을 받으려면:
 
-1. 사용자 지정 태그가 포함된 배열을 전달하여 사용자 지정 광고 태그 이름을 전체적으로 `setSubscribedTags` 설정합니다 `MediaPlayerItemConfig`.
+1. 사용자 지정 태그가 포함된 배열을 `MediaPlayerItemConfig`의 `setSubscribedTags`으로 전달하여 사용자 지정 광고 태그 이름을 전역적으로 설정합니다.
 
    >[!IMPORTANT]
    >
-   >HLS 스트림을 사용하여 작업할 때는 `#` 접두사를 포함해야 합니다.
+   >HLS 스트림을 사용하여 작업할 때는 `#` 접두어를 포함해야 합니다.
 
    예:
 
