@@ -4,18 +4,21 @@ title: Java 시스템 속성
 uuid: ad1f3d9b-7d95-4e19-a0f8-fd7d4dd4dc32
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 0%
 
 ---
 
 
 # Java 시스템 속성 {#java-system-properties}
 
-다음 두 개의 Java 시스템 속성을 설정하여 라이센스 서버에 대한 구성 및 로그 파일의 위치를 수정할 수도 있습니다.
+라이센스 서버의 구성 및 로그 파일의 위치를 수정하도록 다음 두 개의 Java 시스템 속성을 선택적으로 설정할 수 있습니다.
 
-* *LicenseServer.ConfigRoot* — 라이센스 서버에 대한 모든 구성 파일이 들어 있는 디렉토리입니다. 이러한 파일의 내용에 대한 자세한 내용은 &quot;서버[구성 파일](../../aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-configuration-directory-structure.md)라이센스&quot;을 참조하십시오. 설정되지 않은 경우 기본값은 *CATALINA_BASE/licensserver입니다*.
-* *LicenseServer.LogRoot* — 라이센스 서버 애플리케이션 로그가 기록되는 &quot;로그&quot; 폴더의 디렉토리 설정되지 않은 경우 기본값은 *LicenseServer.ConfigRoot입니다*.
+* *LicenseServer.ConfigRoot* — 라이센스 서버의 모든 구성 파일을 포함하는 디렉토리입니다. 이러한 파일의 내용에 대한 자세한 내용은 &quot;[라이센스 서버 구성 파일](../../aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-configuration-directory-structure.md)&quot;을 참조하십시오. 설정하지 않으면 기본값은 *CATALINA_BASE/licenserver*&#x200B;입니다.
+* *LicenseServer.LogRoot* — 라이센스 서버 응용 프로그램 로그가 기록되는 &quot;로그&quot; 폴더의 디렉토리입니다. 설정하지 않으면 기본값은 *LicenseServer.ConfigRoot*&#x200B;입니다.
 
-Tomcat을 사용하거나 [!DNL catalina.bat] 시작하는 경우 [!DNL catalina.sh] `JAVA_OPTS` 환경 변수를 사용하여 이러한 시스템 속성을 쉽게 설정할 수 있습니다. 여기에 설정된 모든 Java 옵션은 Tomcat이 시작될 때 사용됩니다. 예를 들어 다음과 같이 설정합니다.
+[!DNL catalina.bat] 또는 [!DNL catalina.sh]을 사용하여 Tomcat을 시작하는 경우 `JAVA_OPTS` 환경 변수를 사용하여 이러한 시스템 속성을 쉽게 설정할 수 있습니다. 여기에 설정된 모든 Java 옵션은 Tomcat이 시작될 때 사용됩니다. 예를 들어 다음과 같이 설정합니다.
 
 ```
 JAVA_OPTS=-DLicenseServer.ConfigRoot="absolute-path-to-config-folder" -DLicenseServer.LogRoot="absolute-path-to-log-folder"
