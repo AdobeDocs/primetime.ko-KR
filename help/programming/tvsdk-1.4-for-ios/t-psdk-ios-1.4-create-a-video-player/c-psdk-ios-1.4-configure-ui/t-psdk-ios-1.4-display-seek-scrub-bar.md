@@ -6,15 +6,18 @@ title: 현재 재생 시간 위치에 검색 스크럽 막대 표시
 uuid: db57eb6f-3c67-4a64-a0f4-7e39027eb3e0
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 0%
 
 ---
 
 
-# 현재 재생 시간 위치에 검색 스크럽 막대 표시 {#display-a-seek-scrub-bar-with-the-current-playback-time-position}
+# 현재 재생 시간 위치가 {#display-a-seek-scrub-bar-with-the-current-playback-time-position}인 검색 스크럽 막대 표시
 
 재생되는 컨텐츠의 현재 및 남은 시간을 표시할 수 있습니다.
 
-스크러빙 막대를 구현하려면 다음 샘플 코드를 사용하십시오.
+스크럽 막대를 구현하려면 다음 샘플 코드를 사용하십시오.
 
 ```
 // 1. Register for the PTMediaPlayerTimeChangeNotification 
