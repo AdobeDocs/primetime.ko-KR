@@ -6,11 +6,14 @@ title: 크리에이티브 선택 규칙 샘플
 uuid: 1d63e26c-6fe0-4643-a568-f1c34cf46c53
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
 
 
-# 크리에이티브 선택 규칙 샘플{#sample-creative-selection-rules}
+# 디자인 선택 규칙 샘플{#sample-creative-selection-rules}
 
 AdobeTVSDKConfig.json에서는 기본 규칙과 특정 영역에 대한 규칙을 지정할 수 있습니다.
 
@@ -64,9 +67,9 @@ AdobeTVSDKConfig.json에서는 기본 규칙과 특정 영역에 대한 규칙�
 }
 ```
 
-## 추가 영역 규칙이 있는 샘플 기본 규칙 {#section_ocv_3fx_hz}
+## 추가 영역 규칙 {#section_ocv_3fx_hz}이 있는 기본 규칙 샘플
 
-다음은 기본 규칙을 정의하는 [!DNL AdobeTVSDKConfig.json] 파일과 특정 영역 ID에 대한 추가 규칙(이 경우 영역 **&quot;1234&quot;**)의 예입니다.
+다음은 기본 규칙을 정의하는 [!DNL AdobeTVSDKConfig.json] 파일과 특정 영역 ID에 대한 추가 규칙의 예입니다(이 경우 **&quot;1234&quot;** 영역).
 
 ```
 {
