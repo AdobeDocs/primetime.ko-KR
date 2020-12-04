@@ -4,13 +4,16 @@ title: 사용자 지정된 VOD 자산의 예
 uuid: 23ff3778-09d4-43ef-89c3-67f8fc56f5da
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
 
-# 사용자 지정된 VOD 자산의 예 {#example-of-a-customized-vod-asset}
+# 사용자 지정된 VOD 자산 {#example-of-a-customized-vod-asset} 예
 
-다음은 사용자 지정된 VOD 자산의 예입니다.
+사용자 지정된 VOD 자산의 예는 다음과 같습니다.
 
 ```
 #EXTM3U
@@ -38,8 +41,8 @@ seg5.ts
 #EXT-X-ENDLIST
 ```
 
-응용 프로그램에서 다음 시나리오를 설정할 수 있습니다.
+애플리케이션은 다음 시나리오를 설정할 수 있습니다.
 
-* 태그 또는 구독한 기타 모든 사용자 지정 태그 이름 세트가 파일에 있을 때의 알림. `#EXT-X-ASSET`
-* 스트림에서 `#EXT-X-AD` 태그 또는 다른 사용자 지정 태그 이름이 발견될 때 광고를 삽입합니다.
+* `#EXT-X-ASSET` 태그 또는 구독한 다른 사용자 지정 태그 이름 세트가 파일에 있을 때의 알림.
+* 스트림에서 `#EXT-X-AD` 태그 또는 기타 사용자 지정 태그 이름이 발견되면 광고를 삽입합니다.
 
