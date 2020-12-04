@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe® Primetime용 허용 목록으로 보호된 콘텐츠 재생 가능 {#allowlist-for-adobe-primetime-applications-allowed-to-play-protected-content}
+# Adobe® Primetime 애플리케이션의 허용 목록에서 보호된 콘텐츠 재생 {#allowlist-for-adobe-primetime-applications-allowed-to-play-protected-content}
 
 컨텐츠를 재생할 수 있는 AIR/iOS 애플리케이션을 지정합니다. AIR/iOS 응용 프로그램 ID, 최소 버전, 최대 버전 및 게시자 ID를 지정합니다.
 
