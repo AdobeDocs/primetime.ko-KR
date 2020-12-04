@@ -6,6 +6,9 @@ title: 광고 신호 모드
 uuid: 111b7e43-e97c-4069-a273-4f9f6280453e
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
 
 광고 신호 모드는 비디오 스트림이 광고 정보를 얻을 위치를 지정합니다.
 
-유효한 값은 `DEFAULT`, `SERVER_MAP`및 `MANIFEST_CUES`입니다.
+유효한 값은 `DEFAULT`, `SERVER_MAP` 및 `MANIFEST_CUES`입니다.
 
 다음 표에서는 다양한 유형의 HLS 스트림에 대한 `AdSignalingMode` 값의 효과를 설명합니다.
 
@@ -32,18 +35,18 @@ source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
    <td colname="1"> 주문형 비디오(VOD) </td> 
    <td colname="2"> 
     <ul id="ul_E79DA79107364D0D8B46A1859CA75B5C"> 
-     <li id="li_B259ED87743F463095071F58DC840E39"> 배치 탐지를 위해 서버 맵을 사용합니다. </li> 
+     <li id="li_B259ED87743F463095071F58DC840E39"> 배치 탐지를 위한 서버 맵 사용 </li> 
      <li id="li_8957E4151466467BA6C954E5010E34EA"> 광고가 삽입됩니다. </li> 
     </ul> </td> 
    <td colname="3"> 
     <ul id="ul_D462C76717D94DE09915BDF6E9B3FB68"> 
      <li id="li_FB46108F4AD9457D99D2618ABEF7DBD1"> 배치 탐지를 위한 인스트림 큐 사용 </li> 
-     <li id="li_C3F7FBB98F524CEF97D17318C292E9EA"> 프리롤 광고는 기본 스트림에 삽입됩니다. </li> 
-     <li id="li_A56E1545F84840DFA6D065DA60E98C31"> Mid-roles ads replace main stream </li> 
+     <li id="li_C3F7FBB98F524CEF97D17318C292E9EA"> 프리롤 광고는 기본 스트림에 삽입됩니다 </li> 
+     <li id="li_A56E1545F84840DFA6D065DA60E98C31"> 메인 스트림 대신 mid-rols 광고 </li> 
     </ul> </td> 
    <td colname="4"> 
     <ul id="ul_F10192B1B6F745CBB0D4C1A6D52A57B4"> 
-     <li id="li_2ADACF71FA5F4A08A00A3399F5593420"> 배치 탐지를 위해 서버 맵을 사용합니다. </li> 
+     <li id="li_2ADACF71FA5F4A08A00A3399F5593420"> 배치 탐지를 위한 서버 맵 사용 </li> 
      <li id="li_1201085B9C554A4BBD471E7EB2E363AC"> 광고가 삽입됩니다. </li> 
     </ul> </td> 
   </tr> 
