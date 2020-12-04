@@ -7,13 +7,13 @@ uuid: 5796d5af-0018-4c69-a755-65e4819ee838
 translation-type: tm+mt
 source-git-commit: e1c6ab1d50f9262aaf70aef34854cf293fb4f30d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 
-# TVSDK 애플리케이션의 Apple FairPlay {#apple-fairplay-in-tvsdk-applications}
+# TVSDK 응용 프로그램의 Apple FairPlay {#apple-fairplay-in-tvsdk-applications}
 
 TVSDK 앱에서 FairPlay 스트리밍을 구현하려면 Resource Loader를 작성하여 FairPlay 스트리밍 서버에 라이선스 획득 요청을 보내야 합니다.
 
@@ -31,17 +31,17 @@ https://fp-gen.service.expressplay.com
 
 리소스 로더는 요청을 포맷하고 URL에 재생을 승인하는 ExpressPlay 토큰을 첨부합니다. ExpressPlay 토큰을 가져올 때 고려해야 할 몇 가지 옵션이 있습니다. 이러한 옵션은 컨텐츠를 패키지한 방법에 따라 결정됩니다.
 
-컨텐츠를 패키지하면 Packager가 M3U8 매니페스트에 `skd:` URL을 삽입합니다. 항목이 `skd:` 끝나면 매니페스트에 데이터를 넣을 수 있습니다. 애플리케이션 코드에서 이 데이터를 사용하여 위에 나열된 작업을 완료할 수 있습니다. 예를 들어, 앱이 재생되는 콘텐츠의 ID를 확인하고 해당 특정 콘텐츠에 대한 토큰을 요청할 수 `skd:{content_id}` 있도록 사용할 수 있습니다. 예를 들어, 앱에서 권한 부여 서버 URL `skd:{entitlement_server_url}?cid={content_id}`을 하드 코딩하지 않아도 되도록 사용할 수도 있습니다.
+콘텐츠를 패키지하면 패키저가 M3U8 매니페스트에 `skd:` URL을 삽입합니다. `skd:` 항목 후에 매니페스트에 데이터를 넣을 수 있습니다. 애플리케이션 코드에서 이 데이터를 사용하여 위에 나열된 작업을 완료할 수 있습니다. 예를 들어, 앱이 재생되는 콘텐츠의 ID를 확인하고 해당 특정 콘텐츠에 대한 토큰을 요청할 수 있도록 `skd:{content_id}`을 사용할 수 있습니다. 예를 들어 응용 프로그램에 자격 부여 서버 URL이 하드 코딩되지 않아도 되도록 `skd:{entitlement_server_url}?cid={content_id}`을 사용할 수도 있습니다.
 
-재생이 시작될 때 다른 채널을 통해 이미 컨텐츠 ID를 알고 있는 경우 `skd:` URL에 어떤 정보도 필요하지 않을 수 있습니다. 두 번째 예는 설정을 테스트하는 데 이상적인 솔루션이지만 프로덕션 환경에서도 사용할 수 있습니다.
+재생이 시작되면 이미 다른 채널을 통해 콘텐트 ID를 알고 있는 경우 `skd:` URL에 정보가 필요하지 않을 수 있습니다. 두 번째 예는 설정을 테스트하는 데 이상적인 솔루션이지만 프로덕션 환경에서도 사용할 수 있습니다.
 
 >[!TIP]
 >
->형식을 결정합니다 `skd:`.
+>`skd:`의 형식을 결정합니다.
 
-귀하의 컨텐트는 `skd:` 프로토콜을 사용하여 얻지만 라이센스 요청은 이를 사용합니다 `https:`. 이러한 프로토콜을 처리하기 위한 가장 일반적인 옵션은 다음과 같습니다.
+컨텐츠는 `skd:` 프로토콜을 사용하여 얻지만 라이센스 요청에서는 `https:`을 사용합니다. 이러한 프로토콜을 처리하기 위한 가장 일반적인 옵션은 다음과 같습니다.
 
-* **엔드 투 엔드 재생** 초기 테스트 컨텐츠를 패키지화할 때 `skd:` URL을 선택합니다. 앱을 테스트할 때 ExpressPlay에서 라이선스를 수동으로 획득하고 로더의 라이선스( `https:` URL)와 콘텐츠 URL을 하드코딩합니다.
+* **엔드 투 엔드** 재생 초기 테스트컨텐츠를 패키지화할 때  `skd:` URL을 선택합니다. 앱을 테스트할 때 ExpressPlay에서 라이선스를 수동으로 획득하고 로더의 라이선스(`https:` URL)와 콘텐츠 URL을 하드코딩합니다.
 
    예:
 
@@ -53,7 +53,7 @@ https://fp-gen.service.expressplay.com
        ExpressPlayToken={copy_your_token_to_here}";
    ```
 
-* **대부분의 경우** 컨텐츠를 패키지할 때 컨텐츠의 ID를 고유하게 나타내는 `skd:` URL을 선택합니다. 로더에서 `skd:` URL을 분석한 다음 서버로 보내 토큰을 확보한 다음 결과 토큰을 URL로 사용합니다.
+* **대부분의** 경우 컨텐츠를 패키지할 때 컨텐츠의 ID를 고유하게 나타내는  `skd:` URL을 선택합니다. 로더에서 `skd:` URL을 분석한 다음 서버로 보내 토큰을 구하고 결과 토큰을 URL로 사용합니다.
 
    예:
 
@@ -155,19 +155,19 @@ https://fp-gen.service.expressplay.com
 
 TVSDK 애플리케이션에서 Apple의 DRM 솔루션인 Apple FairPlay Streaming을 구현할 수 있습니다.
 
-1. 구현하여 FairPlay 고객 리소스 로더를 만듭니다 `PTAVAssetResourceLoaderDelegate`. 자세한 내용은 TVSDK 애플리케이션에서 Apple FairPlay를 참조하십시오.
+1. `PTAVAssetResourceLoaderDelegate`을(를) 구현하여 FairPlay 고객 리소스 로더를 만듭니다. 자세한 내용은 TVSDK 애플리케이션에서 Apple FairPlay를 참조하십시오.
 
    >[!NOTE]
    >
-   >FPS 인식 앱 *개발을 위한* FairPlay Server SDK에 포함되어 있는 FairPlay 스트리밍 프로그램 안내서 *(* FairPlayStreaming_PG.pdf [)의 지침을 따라야 합니다](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip).
+   >[FPS 인식 앱 개발을 위한 FairPlay Server SDK](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)에 포함되어 있는 *FairPlay 스트리밍 프로그램 안내서*(*FairPlayStreaming_PG.pdf*)의 지침을 따라야 합니다.
 
-   이 방법 `resourceLoader:shouldWaitForLoadingOfRequestedResource` 은 안에 있는 것과 같습니다 `AVAssetResourceLoaderDelegate`.
+   `resourceLoader:shouldWaitForLoadingOfRequestedResource` 메서드는 `AVAssetResourceLoaderDelegate`에 있는 메서드에 해당합니다.
 
    >[!NOTE]
    >
-   >ExpressPlay 라이선스 서버 시나리오에서 콘텐트를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL의 URL 체계를 (또는) `skd://` 에서 ( `https://` 또는 `https://`)로 변경합니다.
+   >ExpressPlay 라이선스 서버 시나리오에서 콘텐트를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL의 URL 체계를 `skd://`에서 `https://`(또는 `https://`)으로 변경하십시오.
 
-1. FairPlay *고객 리소스* 로더를 등록하십시오 `registerPTAVAssetResourceLoader`.
+1. *FairPlay* 고객 리소스 로더를 `registerPTAVAssetResourceLoader`와(와) 등록하십시오.
 
    ```
    PTFairPlayResourceLoader *resourceLoader =  
