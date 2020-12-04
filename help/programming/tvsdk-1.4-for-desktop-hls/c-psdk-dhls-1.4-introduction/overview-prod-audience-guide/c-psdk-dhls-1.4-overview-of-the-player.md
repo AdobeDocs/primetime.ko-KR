@@ -1,11 +1,14 @@
 ---
-description: '데스크탑 HLS용 TVSDK에는 다양한 기능이 포함되어 있으며 다음과 같은 주요 기능이 제공됩니다. '
-seo-description: '데스크탑 HLS용 TVSDK에는 다양한 기능이 포함되어 있으며 다음과 같은 주요 기능이 제공됩니다. '
+description: '데스크탑 HLS용 TVSDK에는 다양한 기능이 포함되어 있으며 다음과 같은 주요 기능이 제공됩니다 '
+seo-description: '데스크탑 HLS용 TVSDK에는 다양한 기능이 포함되어 있으며 다음과 같은 주요 기능이 제공됩니다 '
 seo-title: Primetime TVSDK 기능
 title: Primetime TVSDK 기능
 uuid: 0a7ebb05-7da5-49ff-928a-4d2124eaa115
 translation-type: tm+mt
 source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
@@ -16,12 +19,12 @@ source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
 
 * VOD 및 실시간/선형 재생
 
-   * 재생, 중지, 일시 중지, 검색 및 재생 헤드 위치를 가져오는 방법을 비롯하여 재생 창 관리
+   * 재생 헤드 위치를 재생, 중지, 일시 중지, 검색 및 검색하는 방법을 비롯하여 재생 창 관리
    * 액세스 가능성 향상을 위한 자막(608, 708, WebVTT) 및 오디오 대체 형식
    * 캡션의 텍스트 스타일 제어
-   * DVR 기능, 빨리 감기/빨리 되감기(트릭 재생 모드)
-   * 실시간 및 VOD 컨텐츠 재생
-   * 적응형 비트 전송률(ABR) 로직 및 ABR 컨트롤의 초기 설정
+   * DVR 기능, 빨리 감기/빨리 되감기(트릭 플레이 모드)
+   * 실시간 및 VOD 컨텐츠를 위한 트릭 플레이
+   * ABR(응용 비트 전송률) 로직 및 ABR 컨트롤의 초기 설정
    * 실시간 매니페스트 장애 조치 지원
    * 조정 가능한 재생 버퍼
    * 302 리디렉션 최적화
@@ -30,16 +33,16 @@ source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
 * 광고
 
    * VPAID 2.0
-   * 클라이언트측 광고 스티칭
+   * 클라이언트측 광고 연결
 
       * VAST/VMAP 지원을 비롯한 완벽한 광고 삽입
       * 광고에 대한 사용자 정의 큐 태그 지원
-      * C3 광고 표시, 대체 및 삭제 지원
-      * 일시 중단 신호를 비롯한 맞춤형 컨텐츠/광고 삽입 워크플로우
+      * C3 광고 표시, 교체 및 삭제 지원
+      * 일시 중단 신호를 비롯한 사용자 정의 가능한 컨텐츠/광고 삽입 워크플로우
 
 * 컨텐츠 보호
 
-   * DRM(Digital Rights Management) 관련 서비스 이용
+   * 디지털 저작권 관리(DRM) 관련 서비스 이용
    * 암호화되지 않은 HLS 스트림 또는 보호된 PHLS(HTTP Live Streaming)를 통한 HLS 재생
    * DRM 정책을 기반으로 하는 해상도 기반의 출력 제어
    * 세션 쿠키 및 미디어 인증 쿠키 지원
@@ -48,7 +51,7 @@ source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
 * 비디오 및 광고 추적
 
    * QoS 이벤트 추적
-   * TVSDK 및 응용 프로그램이 비디오, 광고 및 기타 요소의 상태와 로그 활동에 대해 비동기식으로 통신할 수 있도록 도와주는 알림입니다.
+   * TVSDK 및 응용 프로그램이 비디오, 광고 및 기타 요소의 상태와 로그 활동에도 비동기식으로 통신할 수 있도록 하는 알림입니다.
    * Adobe Analytics 및 하트비트 지원과 통합
 
 * 로깅
