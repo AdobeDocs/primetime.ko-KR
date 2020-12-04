@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: fac84687085f289e984c189665bfe775337592b3
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 36%
+ht-degree: 37%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 36%
 
 Adobe Primetime용 Android 및 iOS 프로그래밍 도움말입니다. 왼쪽 탐색 메뉴에 나와 있는 문서를 통해 Android 장치에서 Java를 사용하는 응용 프로그램 및 비디오 플레이어를 개발하는 방법과 iOS 장치에서 Objective-C를 사용하는 방법을 배울 수 있습니다.
 
-현재 출시된 버전에 대한 자세한 내용을 [확인하십시오](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md).
+[현재 릴리스된 버전](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md)에 대한 자세한 내용을 확인하십시오.
 
 ## 자세한 내용은
 
