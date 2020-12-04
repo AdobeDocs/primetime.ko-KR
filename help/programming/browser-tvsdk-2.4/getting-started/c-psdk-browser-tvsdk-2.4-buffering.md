@@ -1,20 +1,23 @@
 ---
-description: 컨텐츠가 버퍼링되고 있음을 사용자에게 알리도록 시각적 요소를 구성할 수 있습니다.
-seo-description: 컨텐츠가 버퍼링되고 있음을 사용자에게 알리도록 시각적 요소를 구성할 수 있습니다.
+description: 콘텐츠가 버퍼링되고 있음을 사용자에게 알리기 위해 시각적 요소를 구성할 수 있습니다.
+seo-description: 콘텐츠가 버퍼링되고 있음을 사용자에게 알리기 위해 시각적 요소를 구성할 수 있습니다.
 seo-title: 버퍼링
 title: 버퍼링
 uuid: da9498ee-c736-4093-97a2-250d3ad56d49
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '69'
+ht-degree: 0%
 
 ---
 
 
 # 버퍼링{#buffering}
 
-컨텐츠가 버퍼링되고 있음을 사용자에게 알리도록 시각적 요소를 구성할 수 있습니다.
+콘텐츠가 버퍼링되고 있음을 사용자에게 알리기 위해 시각적 요소를 구성할 수 있습니다.
 
-이벤트 `AdobePSDK.PSDKEventType.BUFFERING_BEGIN` `AdobePSDK.PSDKEventType.BUFFERING_END` 수신 예:
+`AdobePSDK.PSDKEventType.BUFFERING_BEGIN` 및 `AdobePSDK.PSDKEventType.BUFFERING_END` 이벤트를 수신합니다. 예:
 
 ```js
 player.addEventListener(AdobePSDK.PSDKEventType.BUFFERING_BEGIN,  
