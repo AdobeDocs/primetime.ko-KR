@@ -6,6 +6,9 @@ title: 신호 모드 및 시간 범위
 uuid: a4d2b0f3-49ce-4a07-a460-9e63bb91b5d3
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
   <tr> 
    <th class="entry"> </th> 
    <th class="entry"> MARK </th> 
-   <th class="entry"> 삭제 </th> 
+   <th class="entry"> DELETE </th> 
    <th class="entry"> 바꾸기 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td> <span class="codeph"> CustomRange OpportunityGenerator </span> </td> 
+   <td> <span class="codeph"> CustomRange OpportunityGenerator  </span> </td> 
    <td> 
     <code>
       (range.begin,&nbsp; 
@@ -42,7 +45,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
     </code> </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> ServerMap </span> 신호 모드 </td> 
+   <td> <span class="codeph"> ServerMap  </span> 신호 모드 </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -65,7 +68,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
    <td> N/A(자동 CustomRange 신호 모드) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> ManifestCue </span> 신호 모드 </td> 
+   <td> <span class="codeph"> ManifestCue  </span> 신호 모드 </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -89,7 +92,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
    <td> N/A(자동 CustomRange 신호 모드) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> 사용자 지정 범위 </span> 신호 모드 </td> 
+   <td> <span class="codeph"> 사용자 지정 범위  </span> 신호 모드 </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -136,13 +139,13 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
   <tr> 
    <th class="entry"> </th> 
    <th class="entry"> MARK </th> 
-   <th class="entry"> 삭제 </th> 
+   <th class="entry"> DELETE </th> 
    <th class="entry"> 바꾸기 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td> <span class="codeph"> AdSigningMode OpportunityGenerator </span> </td> 
+   <td> <span class="codeph"> AdSigningMode OpportunityGenerator  </span> </td> 
    <td> 
     <code>
       (range.begin,&nbsp; 
@@ -161,8 +164,8 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
     </code> </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> ServerMap </span> 신호 모드 </td> 
-   <td> 존재하지 않음(광고가 비활성화됨). </td> 
+   <td> <span class="codeph"> ServerMap  </span> 신호 모드 </td> 
+   <td> 존재하지 않음(광고 비활성화). </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -175,8 +178,8 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
    <td> N/A(자동 <span class="codeph"> CustomRange </span> 신호 모드) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> ManifestCue </span> 신호 모드 </td> 
-   <td> 존재하지 않음(광고가 비활성화됨). </td> 
+   <td> <span class="codeph"> ManifestCue  </span> 신호 모드 </td> 
+   <td> 존재하지 않음(광고 비활성화). </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -189,10 +192,10 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
    <td> N/A(자동 <span class="codeph"> CustomRange </span> 신호 모드) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> 사용자 지정 범위 </span> 신호 모드 </td> 
-   <td> 존재하지 않음(광고가 비활성화됨). </td> 
+   <td> <span class="codeph"> 사용자 지정 범위  </span> 신호 모드 </td> 
+   <td> 존재하지 않음(광고 비활성화). </td> 
    <td> 없음 </td> 
-   <td> 없음(CustomRangeOpportunityGenerator에서 <span class="codeph"> 관리됨 </span>) </td> 
+   <td> 없음(CustomRangeOpportunityGenerator <span class="codeph">에서 처리됨)</span> </td> 
   </tr> 
  </tbody> 
 </table>
