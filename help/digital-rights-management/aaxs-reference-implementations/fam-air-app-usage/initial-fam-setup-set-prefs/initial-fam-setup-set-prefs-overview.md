@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 환경 설정 개요 {#setting-preferences-overview}
 
-Packager Server URL을 제외하고 아래에 지정된 모든 환경 설정이 서버의 [!DNL flashaccess-refimpl-packager.properties] 파일에 저장됩니다. 모든 설정은 속성 파일에서 직접 또는 AIR 애플리케이션을 통해 수정할 수 있습니다. 암호는 서버의 속성 파일에 저장될 때 암호화됩니다. 암호화되지 않은 암호를 UI에 입력하면 파일에 저장되기 전에 암호화됩니다.
+Packager 서버 URL을 제외하고 아래에 지정된 모든 환경 설정이 서버의 [!DNL flashaccess-refimpl-packager.properties] 파일에 저장됩니다. 모든 설정은 속성 파일에서 직접 또는 AIR 애플리케이션을 통해 수정할 수 있습니다. 암호는 서버의 속성 파일에 저장될 때 암호화됩니다. 암호화되지 않은 암호를 UI에 입력하면 파일에 저장되기 전에 암호화됩니다.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Packager Server URL을 제외하고 아래에 지정된 모든 환경 설정이 
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> Packager 서버 URL </td> 
-   <td colname="2" class="- topic/entry "> flashaccess-packager.war를 실행하는 서버 <span class="filepath"> 위치 </span>;예를 들어 https://localhost:8080을 <span class="filepath"> 참조하십시오. </span> </td> 
+   <td colname="2" class="- topic/entry "> <span class="filepath"> flashaccess-packager.war </span>;을(를) 실행하는 서버 위치예: <span class="filepath"> https://localhost:8080 </span> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 리소스 디렉터리 </td> 
@@ -41,7 +41,7 @@ Packager Server URL을 제외하고 아래에 지정된 모든 환경 설정이 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 라이선스 서버 URL </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 라이센스를 요청해야 하는 서버의 URL;예를 들어 https://mylicenseserver.com:8080을 <span class="filepath"> 참조하십시오. </span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 라이센스를 요청해야 하는 서버의 URL;예: <span class="filepath"> https://mylicenseserver.com:8080 </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
