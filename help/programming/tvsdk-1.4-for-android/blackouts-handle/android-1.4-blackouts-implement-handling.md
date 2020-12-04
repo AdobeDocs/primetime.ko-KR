@@ -1,22 +1,25 @@
 ---
-description: TVSDK 파섹
-seo-description: TVSDK 파섹
+description: TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
+seo-description: TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
 seo-title: 일시 중단 처리 구현
 title: 일시 중단 처리 구현
 uuid: db7f831c-5069-4426-bfe3-5fc51fec7930
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
 
 # 일시 중단 처리 구현{#implement-blackout-handling}
 
-TVSDK 파섹
+TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
 
 일시 중단 동안 대체 컨텐츠 제공을 포함하여 일시 중단 처리를 구현하려면
 
-1. 라이브 스트림 매니페스트에서 일시 중단 태그를 검색하도록 앱을 설정합니다.
+1. 라이브 스트림 매니페스트에서 블랙아웃 태그를 검색하도록 앱을 설정합니다.
 
    ```java
    public void createMediaPlayer { 
@@ -27,7 +30,7 @@ TVSDK 파섹
    }
    ```
 
-1. 전경 및 백그라운드 스트림에서 시간 지정된 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
+1. 전경 및 배경 스트림에서 시간 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
 
    ```java
    private MediaPlayer createMediaPlayer() { 
@@ -36,7 +39,7 @@ TVSDK 파섹
    }
    ```
 
-1. 전경 및 백그라운드 스트림에 대한 시간 지정 메타데이터 이벤트 핸들러를 구현합니다.
+1. 전경 스트림과 배경 스트림 모두에 대해 시간 지정 메타데이터 이벤트 핸들러를 구현합니다.
 
    전경:
 
@@ -75,7 +78,7 @@ TVSDK 파섹
    }; 
    ```
 
-1. 시간 실행 시 `TimedMetadata` 개체를 `MediaPlayer` 처리합니다.
+1. `MediaPlayer` 시간이 실행될 때 `TimedMetadata` 개체를 처리합니다.
 
    ```java
    _playbackClockEventListener = new Clock.ClockEventListener() { 
@@ -98,7 +101,7 @@ TVSDK 파섹
    };
    ```
 
-1. 일시 중단 기간이 시작 및 끝날 때 컨텐츠를 전환하는 방법을 만듭니다.
+1. 일시 중단 기간의 시작과 끝에 컨텐츠를 전환하는 방법을 만듭니다.
 
    ```java
    private void handleTimedMetadataList(long currentTime) { 
@@ -150,7 +153,7 @@ TVSDK 파섹
    }
    ```
 
-1. 일시 중단 범위가 재생 스트림의 DVR에 있는 경우 검색할 수 없는 범위를 업데이트합니다.
+1. 재생 스트림의 일시 중단 범위가 DVR에 있는 경우 검색할 수 없는 범위를 업데이트합니다.
 
    ```java
    // prepare and update blackout nonSeekable ranges 
@@ -183,7 +186,7 @@ TVSDK 파섹
 
    >[!NOTE]
    >
-   >현재 다양한 비트 전송률 실시간 스트림을 위해 ABR(Bit-Rate) 프로파일이 동기화되지 않을 수도 있습니다. 이렇게 하면 동일한 구독 태그에 대해 중복된 `timedMetadata` 개체가 생성됩니다. 검색할 수 없는 잘못된 계산을 방지하려면 다음 예와 같이 계산 후 검색할 수 없는 범위가 겹치는지 확인하는 것이 좋습니다.
+   >현재 다양한 비트 전송률의 실시간 스트림을 위해 ABR(Bit-Rate) 프로파일을 조정하면 동기화되지 않습니다. 이렇게 하면 동일한 구독 태그에 대해 `timedMetadata` 개체가 중복됩니다. 검색할 수 없는 잘못된 계산을 방지하려면 다음 예와 같이 계산 후 볼 수 없는 범위가 중복되는지 확인하는 것이 좋습니다.
 
    ```java
    List<TimeRange> rangesToRemove = new ArrayList<TimeRange>(); 
