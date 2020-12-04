@@ -6,6 +6,9 @@ title: 사용자 지정 시간 업데이트 구현
 uuid: 2b46eca9-3815-4c44-ab5e-21678c35f410
 translation-type: tm+mt
 source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
 
 >[!TIP]
 >
->기본 위치가 아닌 다른 재생 헤드 위치를 제공하려는 경우에만 이 메서드를 재정의합니다.
+>기본 위치와 다른 재생 헤드 위치를 제공하려는 경우에만 이 메서드를 재정의합니다.
 
 1. 기본 재생 헤드 위치를 재정의하려면
 
