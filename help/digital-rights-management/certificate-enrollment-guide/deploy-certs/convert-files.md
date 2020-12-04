@@ -4,6 +4,9 @@ title: 파일 변환
 uuid: e17ee003-5ac2-4bb8-83b7-81ee8fa9ee46
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
 
    >[!NOTE]
    >
-   >이 임시 PEM 파섹 이러한 인증서를 사용하여 PFX 파일을 생성합니다.
+   >이 임시 PEM에는 사용자의 인증서와 중간 CA에 대한 인증서가 포함되어 있습니다. 이러한 인증서를 사용하여 PFX 파일을 생성합니다.
 
 1. 임시 PEM 파일을 PFX 파일로 변환합니다.
 
@@ -58,5 +61,5 @@ source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
 
    >[!NOTE]
    >
-   >DER 파일은 HTTP Dynamic Streaming Packager에만 필요합니다.
+   >DER 파일은 HTTP Dynamic Streaming 패키저에만 필요합니다.
 
