@@ -6,6 +6,9 @@ title: 타임라인 해상도 클래스
 uuid: a36349b2-23ee-4774-99b2-7e1cd9168686
 translation-type: tm+mt
 source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
 
 이러한 클래스는 광고와 같은 타임라인에 배치할 컨텐츠를 해결하는 데 도움이 됩니다.
 
-패키지: [com.adobe.mediacore.timeline.resolvers](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/resolvers/package-detail.html)
+패키지:[com.adobe.mediacore.timeline.resolvers](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/resolvers/package-detail.html)
 
 | 이름 | 설명 |
 |---|---|
