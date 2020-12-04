@@ -6,15 +6,18 @@ title: Primetime 광고 결정 광고를 사용하여 범위 삭제
 uuid: efd36a2f-db61-434a-bc2a-50a866f44b33
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
 
-# Primetime 광고 결정 광고를 사용하여 범위 삭제{#delete-ranges-with-primetime-ad-decisioning-ad}
+# Primetime 광고 결정 광고{#delete-ranges-with-primetime-ad-decisioning-ad}이(가) 있는 범위 삭제
 
 타임라인에서 localTime의 시작과 끝 사이의 TimeRange를 제거합니다.
 
-구문 광고로 범위를 삭제합니다.
+구문 광고를 사용하여 범위를 삭제합니다.
 
 ```
 {   
