@@ -13,23 +13,23 @@ ht-degree: 0%
 ---
 
 
-# 컨텐츠 패키징 및 보호 {#packaging-protecting-content}
+# 콘텐츠 패키징 및 보호 {#packaging-protecting-content}
 
 컨텐츠 패키징 및 보호에 대한 정보를 통해 컨텐츠를 보호할 수 있습니다.
 
-## 서버 보안 {#securing-the-server}
+## 서버 {#securing-the-server} 보안
 
 정책 관리와 컨텐츠 패키징이 발생하는 컴퓨터를 물리적으로 보호해야 합니다.
 
-자세한 내용은 [물리적 보안 및 액세스를 참조하십시오](../../secure-deployment-guidelines/physical-sec-and-access.md).
+자세한 내용은 [물리적 보안 및 액세스](../../secure-deployment-guidelines/physical-sec-and-access.md)를 참조하십시오.
 
-컨텐츠 패키징 구현에 네트워크 연결이 필요한 경우 운영 체제를 강화하고 적절한 방화벽 솔루션을 구현해야 합니다. 자세한 내용은 [네트워크 토폴로지를 참조하십시오](../../secure-deployment-guidelines/overview/network-topology.md).
+컨텐츠 패키징 구현에 네트워크 연결이 필요한 경우 운영 체제를 강화하고 적절한 방화벽 솔루션을 구현해야 합니다. 자세한 내용은 [네트워크 토폴로지](../../secure-deployment-guidelines/overview/network-topology.md)를 참조하십시오.
 
-## 안전하게 컨텐츠 패키징 {#securely-packaging-content}
+## 안전하게 내용 패키징{#securely-packaging-content}
 
 Adobe Primetime DRM Media Packager 명령줄 도구의 구성 파일을 사용하려면 패키징 중에 사용되는 PKCS12 자격 증명이 필요합니다.
 
-참조 구현 명령-틴 도구에서 PKCS12 자격 증명 파일의 암호는 파일에 일반 텍스트로 `flashaccess.properties` 저장됩니다. 이러한 이유로 이 파일을 호스팅하는 컴퓨터를 보호할 때 각별히 주의하고 컴퓨터가 보안 환경에 있는지 확인하십시오. 자세한 내용은 [물리적 보안 및 액세스를 참조하십시오](../../secure-deployment-guidelines/physical-sec-and-access.md).
+참조 구현 명령-틴 도구에서 PKCS12 자격 증명 파일의 암호는 `flashaccess.properties` 파일에 일반 텍스트로 저장됩니다. 이러한 이유로 이 파일을 호스팅하는 컴퓨터를 보호할 때 각별히 주의하고 컴퓨터가 보안 환경에 있는지 확인하십시오. 자세한 내용은 [물리적 보안 및 액세스](../../secure-deployment-guidelines/physical-sec-and-access.md)를 참조하십시오.
 
 또한 Packager는 License Server 및 License Server Transport 인증서를 사용하므로 이 정보의 무결성과 기밀성을 보호해야 합니다. Packager는 승인된 엔터티만 사용할 수 있어야 합니다. 개인 키가 손상될 경우 즉시 Adobe Systems Incorporated에 알려 인증서를 취소할 수 있습니다.
 
@@ -47,7 +47,7 @@ Primetime DRM 패키징 API는 특정 조건에서 경고를 발생시킵니다.
 
 패키징이 완료되면 패키징 키가 가비지 수집되며 명시적으로 삭제되지 않습니다. 그 결과, 포장 키가 메모리에 남아 있습니다. 시스템에 대한 무단 액세스를 방지하고 이 정보를 알려주는 코어 덤프와 같은 파일을 노출하지 않도록 해야 합니다.
 
-## 정책 안전한 저장 {#securely-storing-policies}
+## 정책 {#securely-storing-policies}의 안전한 저장
 
 Adobe Primetime DRM SDK를 사용하면 컨텐츠 패키징 및 정책 제작에 사용할 수 있는 애플리케이션을 개발할 수 있습니다.
 
@@ -55,13 +55,13 @@ Adobe Primetime DRM SDK를 사용하면 컨텐츠 패키징 및 정책 제작에
 
 정책은 패키징에 사용할 때까지 서명하거나 수정되지 않습니다. 패키징 도구 사용자가 정책을 수정할 수 있다는 우려 사항이 있는 경우 정책을 수정할 수 없도록 정책에 서명하십시오.
 
-SDK를 사용하여 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [API Primetime API 참조에서 Primetime DRM API를 참조하십시오](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References).
+SDK를 사용하여 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [API Primetime API 참조](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References)의 Primetime DRM API를 참조하십시오.
 
 ## 비대칭 키 암호화 {#asymmetric-key-encryption}
 
 공용 키 암호라고도 하는 비대칭 키 암호화는 키 쌍을 사용합니다. 하나는 암호화에 대한 것이고 다른 하나는 암호 해독에 대한 것입니다.
 
-암호 해독 키 또는 암호 해독 키 *`private key`*&#x200B;는 비밀로 유지됩니다.암호화 키 *`public key`*&#x200B;는 컨텐츠를 암호화할 수 있는 권한이 있는 모든 사용자가 사용할 수 있습니다. 공개 키에 액세스할 수 있는 사람은 누구나 내용을 암호화할 수 있습니다. 그러나 개인 키에 액세스할 수 있는 사용자만 콘텐트의 암호를 해독할 수 있습니다. 개인 키는 공개 키에서 다시 만들 수 없습니다.
+암호 해독 키 또는 *`private key`*&#x200B;는 비밀로 유지됩니다.암호화 키 또는 *`public key`*&#x200B;는 컨텐츠를 암호화할 수 있는 권한이 있는 모든 사용자가 사용할 수 있습니다. 공개 키에 액세스할 수 있는 사람은 누구나 내용을 암호화할 수 있습니다. 그러나 개인 키에 액세스할 수 있는 사용자만 콘텐트의 암호를 해독할 수 있습니다. 개인 키는 공개 키에서 다시 만들 수 없습니다.
 
 콘텐츠를 패키지화하면 라이센스 서버의 공개 키가 DRM 메타데이터의 CEK(Content Encryption Key)를 암호화하는 데 사용됩니다. 라이센스 서버만이 라이센스 서버의 개인 키에 액세스할 수 있도록 해야 합니다. 다른 사람이 키를 가지고 있으면 암호를 해독하여 내용을 볼 수 있습니다.
 
@@ -69,4 +69,4 @@ SDK를 사용하여 응용 프로그램을 만드는 방법에 대한 자세한 
 >
 >신뢰할 수 있는 소스에서 공개 키가 포함된 라이센스 서버의 인증서를 구해야 합니다. 이렇게 하면 라이센스 서버의 키가 아니라 잘못된 공개 키인지 확인할 수 있습니다. 공격자가 라이센스 서버의 키를 공개 키로 대체하려고 하면 사용자의 컨텐츠를 해독할 수 있습니다.
 
-콘텐츠 패키지 방법에 대한 자세한 내용은 콘텐츠 보호를 [위해 Adobe Primetime DRM SDK 사용을 참조하십시오](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_protecting_content.pdf).
+콘텐츠 패키지 방법에 대한 자세한 내용은 콘텐츠 보호를 위한 Adobe Primetime DRM SDK 사용[을 참조하십시오.](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_protecting_content.pdf)
