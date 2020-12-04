@@ -1,20 +1,23 @@
 ---
-description: DRM(Digital Rights Management) 특정 워크플로우를 완료할 수 있습니다.
-seo-description: DRM(Digital Rights Management) 특정 워크플로우를 완료할 수 있습니다.
-seo-title: 디지털 권한 관리
-title: 디지털 권한 관리
+description: Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
+seo-description: Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
+seo-title: Digital Rights Management
+title: Digital Rights Management
 uuid: 011605c7-50c4-4ad5-9961-8cd92d0e6fd8
 translation-type: tm+mt
 source-git-commit: 5a786d8001326f874a51d65b8e8badca44f46e96
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 0%
 
 ---
 
 
-# 디지털 권한 관리 {#digital-rights-management}
+# Digital Rights Management {#digital-rights-management}
 
-DRM(Digital Rights Management) 특정 워크플로우를 완료할 수 있습니다.
+Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
 
-이벤트를 수신하여 DRM 워크플로우를 처리할 수 `AdobePSDK.DRMMetadataInfoEvent` 있습니다.
+`AdobePSDK.DRMMetadataInfoEvent` 이벤트를 수신하여 DRM 워크플로우를 처리할 수 있습니다.
 
 ```js
 ... 
@@ -22,15 +25,15 @@ player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onD
 ...
 ```
 
-## 디지털 권한 관리 추가 {#add-digital-rights-management}
+## Digital Rights Management {#add-digital-rights-management} 추가
 
-1. 을 `DRMMetadataInfoAvailableEvent` 추가하여 `DRMMetadata`가져옵니다.
+1. `DRMMetadataInfoAvailableEvent`을(를) 추가하여 `DRMMetadata`을(를) 가져옵니다.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onDRMMetadataInfoAvaialble);
    ```
 
-1. 1단계에서 라인 위의 `onDRMMetadataInfoAvailable` 섹션을 구현합니다.
+1. 1단계에서 줄 위에 `onDRMMetadataInfoAvailable` 섹션을 구현합니다.
 
    ```js
    var onDRMMetadataInfoAvaialble = function(event) { 
