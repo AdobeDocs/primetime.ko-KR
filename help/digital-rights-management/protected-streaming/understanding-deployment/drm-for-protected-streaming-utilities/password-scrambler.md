@@ -44,7 +44,7 @@ Encrypted password:
 </i class="+ topic>
 ```
 
-및 파일에서 지정한 모든 암호 [!DNL flashaccess-global.xml] 를 [!DNL flashaccess-tenant.xml] 암호화해야 합니다.
+[!DNL flashaccess-global.xml] 및 [!DNL flashaccess-tenant.xml] 파일에서 지정한 모든 암호는 암호화되어야 합니다.
 
 >[!NOTE]
 >
