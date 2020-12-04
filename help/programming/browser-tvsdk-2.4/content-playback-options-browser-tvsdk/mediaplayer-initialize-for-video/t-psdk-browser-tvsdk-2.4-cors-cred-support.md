@@ -1,32 +1,35 @@
 ---
-description: XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 CORS(교차 도메인 리소스 공유) 요청이 대상 도메인의 쿠키를 포함할 수 있습니다.
+description: XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 대상 도메인의 쿠키를 포함할 CORS(교차 도메인 리소스 공유) 요청을 허용합니다.
 keywords: CORS;cross origin;resource sharing;cookies;withCredentials
-seo-description: XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 CORS(교차 도메인 리소스 공유) 요청이 대상 도메인의 쿠키를 포함할 수 있습니다.
-seo-title: 교차 출처 리소스 공유
-title: 교차 출처 리소스 공유
+seo-description: XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 대상 도메인의 쿠키를 포함할 CORS(교차 도메인 리소스 공유) 요청을 허용합니다.
+seo-title: 원본 간 리소스 공유
+title: 원본 간 리소스 공유
 uuid: e788b542-d4ac-48aa-91e2-1e88068cbba1
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
 
-# 교차 출처 리소스 공유 {#cross-origin-resource-sharing}
+# 상호 원본 리소스 공유 {#cross-origin-resource-sharing}
 
-XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 CORS(교차 도메인 리소스 공유) 요청이 대상 도메인의 쿠키를 포함할 수 있습니다.
+XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 대상 도메인의 쿠키를 포함할 CORS(교차 도메인 리소스 공유) 요청을 허용합니다.
 
-클라이언트가 매니페스트, 세그먼트 또는 키를 요청하면 서버는 클라이언트가 후속 요청에 대해 전달해야 하는 쿠키를 설정할 수 있습니다. 쿠키를 읽고 쓸 수 있도록 허용하려면 클라이언트는 `withCredentials` 속성을 `true` 크로스 원본 요청에 대해 설정해야 합니다.
+클라이언트가 매니페스트, 세그먼트 또는 키를 요청하면 서버는 클라이언트가 후속 요청에 대해 전달해야 하는 쿠키를 설정할 수 있습니다. 쿠키를 읽고 쓸 수 있도록 허용하려면 클라이언트는 상호 출처 요청에 대해 `withCredentials` 속성을 `true`으로 설정해야 합니다.
 
-지정된 미디어 리소스를 재생할 때 대부분의 유형의 요청에 대한 `withCredentials` 지원을 활성화하려면
+지정된 미디어 리소스를 재생할 때 대부분의 유형의 요청에 대해 `withCredentials` 지원을 활성화하려면:
 
-1. 개체를 `CORSConfig` 만듭니다.
+1. `CORSConfig` 개체를 만듭니다.
 
    ```js
    var corsConfig = new AdobePSDK.CORSConfig();  
    corsConfig.enableEncryptionRequest = true; 
    ```
 
-1. 객체를 `corsConfig` 개체에 `NetworkConfiguration` 연결하고 로 `useCookieHeaderForAllRequests` 설정합니다 `true`.
+1. `corsConfig`을(를) `NetworkConfiguration` 개체에 연결하고 `useCookieHeaderForAllRequests`를 `true`에 설정합니다.
 
    ```js
    var networkConfig = new AdobePSDK.NetworkConfiguration();  
@@ -34,14 +37,14 @@ XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 �
    networkConfiguration.useCookieHeaderForAllRequests= true;
    ```
 
-1. 개체에 `networkConfig` 설정합니다 `MediaPlayerItemConfig` .
+1. `MediaPlayerItemConfig` 개체에서 `networkConfig`을 설정합니다.
 
    ```js
    var mediaPlayerItemConfig = new AdobePSDK.MediaPlayerItemConfig();  
    mediaPlayerItemConfig.networkConfiguration = networkConfig; 
    ```
 
-1. 메서드에 `MediaPlayerItemConfig` 전달합니다 `MediaPlayer.replaceCurrentResource` .
+1. `MediaPlayerItemConfig`을(를) `MediaPlayer.replaceCurrentResource` 메서드에 전달합니다.
 
    ```js
    var player = new AdobePSDK.MediaPlayer(); 
@@ -52,7 +55,7 @@ XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 �
 
 >[!IMPORTANT]
 >
->이 `useCookieHeaderForAllRequests` 플래그는 라이센스 요청에 영향을 주지 않습니다. 라이센스 요청에 대한 `withCredentials` 속성을 `true` 로 설정하려면 `withCredentials` 보호 데이터에 속성을 설정하거나 보호 데이터의 인증 키를 `httpRequestHeaders` 지정해야 합니다. 예:
+>`useCookieHeaderForAllRequests` 플래그는 라이센스 요청에 영향을 주지 않습니다. 라이센스 요청에 대해 `withCredentials` 속성을 `true`으로 설정하려면, 보호 데이터에 `withCredentials` 속성을 설정하거나 보호 데이터의 `httpRequestHeaders`에 인증 키를 지정해야 합니다. 예:
 
 ```
 # Example 1 
@@ -75,9 +78,9 @@ XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 �
 }
 ```
 
-일부 서버가 응답에서 필드를 와일드카드(&#39;*&#39;)로 설정하므로 플래그가 라이센스 요청에 영향을 주지 않습니다. `Access-Control-Allow-Origin` 그러나 자격 증명 플래그가 로 설정되어 `true`있으면 와일드카드를 사용할 수 없습니다 `Access-Control-Allow-Origin`. 모든 유형의 요청에 대해 `useCookieHeaderForAllRequests` `true` 로 설정하면 라이센스 요청에 대해 다음 오류가 표시될 수 있습니다.
+일부 서버에서 응답에서 `Access-Control-Allow-Origin` 필드를 와일드카드(&#39;*&#39;)로 설정했기 때문에 플래그가 라이센스 요청에 영향을 주지 않습니다. 그러나 자격 증명 플래그가 `true`으로 설정된 경우 와일드카드를 `Access-Control-Allow-Origin`에서 사용할 수 없습니다. 모든 유형의 요청에 대해 `useCookieHeaderForAllRequests`을 `true`으로 설정하면 라이센스 요청에 대해 다음 오류가 표시될 수 있습니다.
 
 다음 정보를 기억하십시오.
 
-* 호출이 실패할 `withCredentials=true` 경우 브라우저 TVSDK는 호출 없이 다시 시도합니다 `withCredentials`.
-* 로 호출이 수행되면 `networkConfiguration.useCookieHeaderForAllRequests=false`XHR 요청은 `withCredentials` 속성 없이 수행됩니다.
+* `withCredentials=true`이(가) 호출되지 않으면 브라우저 TVSDK가 `withCredentials` 없이 호출을 재시도합니다.
+* `networkConfiguration.useCookieHeaderForAllRequests=false`으로 호출이 수행되면 `withCredentials` 특성 없이 XHR 요청이 수행됩니다.
