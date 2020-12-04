@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 로그 파일{#log-files}
 
-보호된 스트리밍 응용 프로그램의 Adobe Access Server에서 생성된 로그 파일은 *LicenseServer.LogRoot에서 지정한 디렉토리에 있습니다*.
+보호된 스트리밍 응용 프로그램의 Adobe Access Server에서 생성된 로그 파일은 *LicenseServer.LogRoot*&#x200B;에서 지정한 디렉터리에 있습니다.
 
 >[!NOTE]
 >
