@@ -19,8 +19,8 @@ AdBannerAsset의 콘텐츠는 컴패니언 배너를 설명합니다.
 
 <!--<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>-->
 
-이 `AdobePSDK.PSDKEventType.AD_STARTED` 이벤트는 속성()이 포함된 `Ad` 인스턴스를 `companionAssets` `Array<AdBannerAsset>`반환합니다.
-각 `AdBannerAsset` 은 자산 표시에 대한 정보를 제공합니다.
+`AdobePSDK.PSDKEventType.AD_STARTED` 이벤트는 `companionAssets` 속성( `Array<AdBannerAsset>`)을 포함하는 `Ad` 인스턴스를 반환합니다.
+각 `AdBannerAsset`은 자산 표시에 대한 정보를 제공합니다.
 
 <table id="table_760C885E2DCA4BE983CC57FDA7BD5B14"> 
  <thead> 
@@ -52,7 +52,7 @@ AdBannerAsset의 콘텐츠는 컴패니언 배너를 설명합니다.
     <pre>
       배너 데이터
     </pre> </td> 
-   <td colname="col2"> 이 컴패니언 배너에 대해 resource <span class="codeph"> Type에서</span> 지정한 형식의 데이터입니다. </td> 
+   <td colname="col2"> 이 컴패니언 배너에 대해 <span class="codeph"> resourceType</span>이(가) 지정한 형식의 데이터입니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 정적 URL </td> 
