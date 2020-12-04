@@ -1,24 +1,27 @@
 ---
-description: ABR 컨트롤 값은 ABRControlParameters에서만 설정할 수 있지만 언제든지 새 컨트롤을 만들 수 있습니다.
-seo-description: ABR 컨트롤 값은 ABRControlParameters에서만 설정할 수 있지만 언제든지 새 컨트롤을 만들 수 있습니다.
-seo-title: ABRControlParameters를 사용하여 적응형 비트 전송률 구성
-title: ABRControlParameters를 사용하여 적응형 비트 전송률 구성
+description: ABR 컨트롤 값은 ABRControlParameters로만 설정할 수 있지만 언제든지 새 컨트롤을 만들 수 있습니다.
+seo-description: ABR 컨트롤 값은 ABRControlParameters로만 설정할 수 있지만 언제든지 새 컨트롤을 만들 수 있습니다.
+seo-title: ABRConcontrolParameters를 사용하여 응용 비트 전송률 구성
+title: ABRConcontrolParameters를 사용하여 응용 비트 전송률 구성
 uuid: c877c5cc-ad72-46dc-afc4-d41ee097a9a4
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 0%
 
 ---
 
 
-# ABRControlParameters를 사용하여 적응형 비트 전송률 구성{#configure-adaptive-bit-rates-using-abrcontrolparameters}
+# ABRControlParameters{#configure-adaptive-bit-rates-using-abrcontrolparameters}를 사용하여 응용 비트 전송률 구성
 
-ABR 컨트롤 값은 ABRControlParameters에서만 설정할 수 있지만 언제든지 새 컨트롤을 만들 수 있습니다.
+ABR 컨트롤 값은 ABRControlParameters로만 설정할 수 있지만 언제든지 새 컨트롤을 만들 수 있습니다.
 
-다음 조건이 `ABRControlParameters`적용됩니다.
+다음 조건이 `ABRControlParameters`에 적용됩니다.
 
-* 구성 시 모든 매개 변수에 대한 값을 제공해야 합니다.
+* 구성 시 모든 매개변수에 대한 값을 제공해야 합니다.
 * 구성 시간 후에는 개별 값을 변경할 수 없습니다.
-* 지정한 매개 변수가 허용된 범위를 벗어나는 경우 `ArgumentError` 가 발생합니다.
+* 지정한 매개 변수가 허용된 범위를 벗어나는 경우 `ArgumentError`이(가) throw됩니다.
 
 1. 초기, 최소 및 최대 비트 전송률을 결정할 수 있습니다.
 1. ABR 정책 결정:
@@ -27,7 +30,7 @@ ABR 컨트롤 값은 ABRControlParameters에서만 설정할 수 있지만 언�
    * `ABR_MODERATE`
    * `ABR_AGGRESSIVE`
 
-1. 생성자에서 ABR 매개 변수 값을 `ABRControlParameters` 설정하고 Media Player에 할당합니다.
+1. `ABRControlParameters` 생성자에서 ABR 매개 변수 값을 설정하고 미디어 플레이어에 할당합니다.
 
    ```java
    public ABRControlParameters(int initialBitRate, 
