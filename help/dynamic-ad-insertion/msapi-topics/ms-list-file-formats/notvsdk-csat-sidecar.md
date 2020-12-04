@@ -1,22 +1,25 @@
 ---
-description: 클라이언트가 JSON 형식으로 추적 정보를 요청하면 매니페스트 서버는 JSON 형식 중 하나로 파일을 다시 전송합니다.
-seo-description: 클라이언트가 JSON 형식으로 추적 정보를 요청하면 매니페스트 서버는 JSON 형식 중 하나로 파일을 다시 전송합니다.
+description: 클라이언트가 JSON 형식의 추적 정보를 요청하는 경우 매니페스트 서버는 JSON 형식 중 하나의 파일을 다시 전송합니다.
+seo-description: 클라이언트가 JSON 형식의 추적 정보를 요청하는 경우 매니페스트 서버는 JSON 형식 중 하나의 파일을 다시 전송합니다.
 seo-title: URL 추적을 위한 JSON 포맷
 title: URL 추적을 위한 JSON 포맷
 uuid: 4b17639b-c0de-4ef4-931b-aa7c4c036c0a
 translation-type: tm+mt
 source-git-commit: 2c7ac5c1b2d30b7eb819157ee4568739c1bdfb9d
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
 
-# URL 추적을 위한 JSON 포맷 {#json-formats-for-tracking-urls}
+# 추적 URL을 위한 JSON 형식 {#json-formats-for-tracking-urls}
 
-클라이언트가 JSON 형식으로 추적 정보를 요청하면 매니페스트 서버는 JSON 형식 중 하나로 파일을 다시 전송합니다.
+클라이언트가 JSON 형식의 추적 정보를 요청하는 경우 매니페스트 서버는 JSON 형식 중 하나의 파일을 다시 전송합니다.
 
-## 버전 1을 추적하는 JSON 형식 {#json_v1}
+## 추적 버전 1용 JSON 형식 {#json_v1}
 
-매니페스트 서버가 보내는 JSON 파일은 다음과 같은 일반 형식을 `pttrackingversion=v1` 가진 경우 전송됩니다.
+`pttrackingversion=v1`에 다음과 같은 일반 형식이 있는 경우 매니페스트 서버가 전송하는 JSON 파일:
 
 ```
 { 
@@ -32,11 +35,11 @@ source-git-commit: 2c7ac5c1b2d30b7eb819157ee4568739c1bdfb9d
 }, ...]}
 ```
 
-## 버전 2를 추적하기 위한 JSON 포맷 {#json_v2}
+## 추적 버전 2용 JSON 형식 {#json_v2}
 
-매니페스트 서버가 전송하는 JSON 파일은 일반적인 JSON 블록에서 `pttrackingversion=v2` 나오는 다음 예제의 형식이 있을 경우 전송됩니다.
+`pttrackingversion=v2`의 형식이 일반적인 JSON 블록에서 나오는 경우 매니페스트 서버가 전송하는 JSON 파일입니다.
 
-불필요한 반복을 피하기 위해 단축되어 구조가 더 명확해졌다. 줄임표(세 점, 공백으로 구분)는 일부 URL 내와 일부 코드 블록 사이에서 생략된 정보를 나타냅니다. 단축되지 않은 URL은 JSON 파일의 한 줄에 표시되지만 여러 줄에 표시됩니다.
+불필요한 반복을 피하기 위해 짧게 해서 구조가 더 분명해졌다. 줄임표(공백으로 구분된 세 점)는 일부 URL 내와 일부 코드 블록 사이에 누락된 정보를 나타냅니다. 단축되지 않은 URL은 JSON 파일의 한 줄에 표시되지만 여러 줄에 표시됩니다.
 
 ```
 { 
@@ -364,11 +367,11 @@ source-git-commit: 2c7ac5c1b2d30b7eb819157ee4568739c1bdfb9d
 
 >[!NOTE]
 >
->추출된 `offset` 속성 `scte35` 값은 음수일 `ad breaks` 수 있습니다. 이는 JSON V2 사이드카에 현재 재생 창의 일부에 있는 광고 중단에 대한 정보가 포함되어 있기 때문입니다. 따라서 이 `scte35` 속성에는 이러한 광고 중단에 대한 정보도 포함되어 있습니다.
+>`ad breaks`에서 추출된 `scte35` 속성의 `offset` 값은 음수일 수 있습니다. 이는 JSON V2 사이드카가 현재 재생 창의 일부에 있는 광고 중단에 대한 정보를 포함하고 있기 때문입니다. 따라서 `scte35` 속성에는 이러한 광고 중단에 대한 정보도 포함되어 있습니다.
 
-## 버전 3을 추적하기 위한 JSON 포맷 {#json_v3}
+## 추적 버전 3 {#json_v3}에 대한 JSON 형식
 
-매니페스트 서버가 보내는 JSON 파일은 다음과 같은 일반 형식을 `pttrackingversion=v3` 가진 경우 전송됩니다.
+`pttrackingversion=v3`에 다음과 같은 일반 형식이 있는 경우 매니페스트 서버가 전송하는 JSON 파일:
 
 ```
 { 
