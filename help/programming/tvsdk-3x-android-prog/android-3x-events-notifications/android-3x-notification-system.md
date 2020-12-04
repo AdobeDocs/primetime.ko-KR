@@ -17,15 +17,15 @@ ht-degree: 0%
 
 이벤트 및 알림은 비디오 애플리케이션의 비동기 측면을 관리하는 데 도움이 됩니다.
 
-`MediaPlayerStatus` 개체는 플레이어 상태 변화에 대한 정보를 제공합니다. `Notification` 개체는 경고 및 오류에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류도 플레이어의 상태가 변경됩니다. 이벤트 리스너를 구현하여 이벤트( `MediaPlayerEvent` 객체)를 캡처하고 응답합니다.
+`MediaPlayerStatus` 개체는 플레이어 상태 변화에 대한 정보를 제공합니다. `Notification` 개체는 경고 및 오류에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류도 플레이어의 상태가 변경됩니다. 이벤트 리스너를 구현하여 이벤트( `MediaPlayerEvent` 개체)를 캡처하고 응답합니다.
 
 응용 프로그램에서 알림 및 상태 정보를 검색할 수 있습니다. 이 정보를 사용하여 진단 및 유효성 검사를 위한 로깅 시스템을 만들 수도 있습니다.
 
-## 알림 컨텐츠 {#section_DF951FF601794CF592841BB7406DC1A1}
+## 알림 내용 {#section_DF951FF601794CF592841BB7406DC1A1}
 
 `MediaPlayerNotification` 플레이어 상태와 관련된 정보를 제공합니다.
 
-TVSDK는 시간순 알림 목록을 제공하며 각 알림은 다음 정보를 포함합니다. `MediaPlayerNotification`
+TVSDK는 `MediaPlayerNotification` 알림의 시간순 목록을 제공하며 각 알림에 다음 정보가 포함되어 있습니다.
 
 * 타임스탬프
 * 다음 요소로 구성된 진단 메타데이터:
@@ -33,26 +33,26 @@ TVSDK는 시간순 알림 목록을 제공하며 각 알림은 다음 정보를 
    * `type`:정보, 경고 또는 오류입니다.
    * `code`:알림의 숫자 표현입니다.
    * `name`:사용자가 읽을 수 있는 알림 설명(예: SEEK_ERROR)
-   * `metadata`:알림에 대한 관련 정보가 들어 있는 키/값 쌍입니다. 예를 들어 이름이 지정된 키는 알림과 관련된 URL인 값을 `URL` 제공합니다.
+   * `metadata`:알림에 대한 관련 정보가 들어 있는 키/값 쌍입니다. 예를 들어 `URL`이라는 키는 알림과 관련된 URL인 값을 제공합니다.
 
-   * `innerNotification`:이 알림에 직접 영향을 주는 다른 `MediaPlayerNotification` 개체에 대한 참조입니다.
+   * `innerNotification`:이 알림에 직접 영향을 주는 다른  `MediaPlayerNotification` 개체에 대한 참조입니다.
 
 나중에 분석을 위해 이 정보를 로컬에 저장하거나 원격 서버에 보내 로깅 및 그래픽 표현을 할 수 있습니다.
 
-## 알림 시스템 설정 {#section_9E37C09ECFA54B3DA8D3AA9ED1BAFC17}
+## 알림 시스템 {#section_9E37C09ECFA54B3DA8D3AA9ED1BAFC17} 설정
 
 알림을 수신할 수 있습니다.
 
-Primetime 플레이어 알림 시스템의 핵심은 `Notification` 클래스입니다. 이는 독립 실행형 알림을 의미합니다.
+Primetime 플레이어 알림 시스템의 핵심은 독립형 알림을 나타내는 `Notification` 클래스입니다.
 
 알림을 수신하려면 다음과 같이 알림을 수신합니다.
 
-1. 콜백을 `NotificationEventListener.onNotification()` 구현합니다.
-1. TVSDK는 `NotificationEvent` 객체를 콜백으로 전달합니다.
+1. `NotificationEventListener.onNotification()` 콜백을 구현합니다.
+1. TVSDK는 콜백으로 `NotificationEvent` 개체를 전달합니다.
 
    >[!NOTE]
    >
-   >알림 유형은 열거형에 열거됩니다. `Notification.Type`
+   >알림 유형은 `Notification.Type` 열거형에 열거됩니다.
 
    * `ERROR`
    * `INFO`
