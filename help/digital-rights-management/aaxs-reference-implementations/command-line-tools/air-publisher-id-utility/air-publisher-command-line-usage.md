@@ -29,11 +29,11 @@ java -jar AdobePublisherIDUtility.jar
 ```
 
 * 
-   * `signaturefile`* 응용 프로그램 [!DNL META-INF] 디렉토리에 있는 AIR 응용 프로그램의 signatures.xml 파일의 경로를 지정합니다.
+   * `signaturefile`* 응용 프로그램  [!DNL META-INF] 디렉토리에 있는 AIR 응용 프로그램의 signatures.xml 파일의 경로를 지정합니다.
 
 * `signingcert` AIR 응용 프로그램을 서명하는 데 사용되는 인증서를 지정합니다.
 
 >[!NOTE]
 >
->iOS 응용 프로그램의 게시자 ID를 결정하려면 `-s` 옵션을 사용하고 iOS 응용 프로그램 서명에 사용되는 인증서를 지정합니다. ***Adobe Primetime은 액세스 보호된 내용을 재생할 수 있는 iOS 애플리케이션을 구축해야 합니다***.
+>iOS 응용 프로그램의 게시자 ID를 결정하려면 `-s` 옵션을 사용하고 iOS 응용 프로그램을 서명하는 데 사용되는 인증서를 지정합니다. ***Adobe Primetime은 액세스 보호된 내용을 재생할 수 있는 iOS 애플리케이션을 구축해야 합니다***.
 
