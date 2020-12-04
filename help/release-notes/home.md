@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: fac84687085f289e984c189665bfe775337592b3
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -24,13 +24,13 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 
 이 릴리스는 Primetime Reference 애플리케이션의 버전 버전을 버전 5.6.4로 업데이트하는 데 중점을 두었습니다.
 
-현재 출시된 [Android 버전에 대한 자세한 내용을 확인하십시오](../release-notes/tvsdk-3x-android.md).
+현재 출시된 [Android](../release-notes/tvsdk-3x-android.md)에 대한 자세한 내용을 확인하십시오.
 
 ## TVSDK 3.12 iOS 릴리스 노트의 개선 사항 및 수정 사항
 
 이 릴리스는 주요 고객 문제 해결에 중점을 두고 있습니다.
 
-현재 출시된 [iOS에 대한 자세한 내용을 확인하십시오](../release-notes/tvsdk-3x-ios.md).
+[iOS](../release-notes/tvsdk-3x-ios.md)의 현재 릴리스 버전에 대한 자세한 내용을 확인하십시오.
 
 ## 자세한 내용은
 
