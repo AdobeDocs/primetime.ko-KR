@@ -29,29 +29,29 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> id </span> </td> 
+   <td colname="col1"> <span class="codeph"> id  </span> </td> 
    <td colname="col02"> long </td> 
-   <td colname="col2"> 시간 지정 메타데이터의 고유 식별자입니다. 이 값은 일반적으로 큐/태그 ID 속성에서 추출됩니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. get <span class="codeph"> Id를 </span>사용합니다. </td> 
+   <td colname="col2"> 시간 지정 메타데이터의 고유 식별자입니다. 이 값은 일반적으로 큐/태그 ID 속성에서 추출됩니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. <span class="codeph"> getId </span>를 사용하십시오. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> 메타데이터 </span> </td> 
+   <td colname="col1"> <span class="codeph"> 메타데이터  </span> </td> 
    <td colname="col02"> 메타데이터 </td> 
-   <td colname="col2"> 재생 목록/매니페스트 사용자 지정 태그에서 처리/추출 정보입니다. 메타데이터 <span class="codeph"> 가져오기를 사용하십시오 </span>. </td> 
+   <td colname="col2"> 재생 목록/매니페스트 사용자 지정 태그에서 처리/추출 정보입니다. <span class="codeph"> getMetadata </span>를 사용합니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> name </span> </td> 
+   <td colname="col1"> <span class="codeph"> name  </span> </td> 
    <td colname="col02"> 문자열 </td> 
-   <td colname="col2"> 시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG인 </span>경우 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3이면 </span>null입니다. get <span class="codeph"> Name을 사용합니다 </span>. </td> 
+   <td colname="col2"> 시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG </span>이면 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3 </span>이면 null입니다. <span class="codeph"> getName </span>을 사용하십시오. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> time </span> </td> 
+   <td colname="col1"> <span class="codeph"> time  </span> </td> 
    <td colname="col02"> long </td> 
-   <td colname="col2"> 이 시간 메타데이터가 스트림에 있는 기본 컨텐츠의 시작을 기준으로 시간 위치(밀리초)입니다. get <span class="codeph"> Time </span>사용 </td> 
+   <td colname="col2"> 이 시간 메타데이터가 스트림에 있는 기본 컨텐츠의 시작을 기준으로 시간 위치(밀리초)입니다. <span class="codeph"> getTime </span>을 사용하십시오. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> type </span> </td> 
+   <td colname="col1"> <span class="codeph"> type  </span> </td> 
    <td colname="col02"> 유형 </td> 
-   <td colname="col2"> 시간 지정 메타데이터의 유형입니다. get <span class="codeph"> Type을 </span>사용합니다. 
+   <td colname="col2"> 시간 지정 메타데이터의 유형입니다. <span class="codeph"> getType </span>을 사용하십시오. 
     <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - 재생 목록/매니페스트의 태그에서 시간 메타데이터를 만들었음을 나타냅니다. </li> 
      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - 미디어 스트림의 ID3 태그에서 시간 메타데이터를 만들었음을 나타냅니다. </li> 
