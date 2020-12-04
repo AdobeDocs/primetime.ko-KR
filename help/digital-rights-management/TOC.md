@@ -13,10 +13,10 @@ ht-degree: 0%
 ---
 
 
-# Digital Rights Management Help {#drm}
+# Digital Rights Management 도움말 {#drm}
 
 + [DRM 개요](home.md)
-+ 인증서 등록 가이드 {#certificate-enrollment-guide}
++ 인증서 등록 안내서 {#certificate-enrollment-guide}
    + [인증서 정보](certificate-enrollment-guide/about-certs.md)
    + [사전 요구 사항](certificate-enrollment-guide/prerequisites.md)
    + [인증서 등록 역할 정보](certificate-enrollment-guide/about-cert-enrollment.md)
@@ -39,7 +39,7 @@ ht-degree: 0%
    + [Adobe Primetime DRM 정보](drm-sdk-overview/about-adobe-access.md)
    + [주요 기능](drm-sdk-overview/key-features.md)
    + [용어 및 핵심 개념](drm-sdk-overview/terminology-and-core-concepts.md)
-   + 컨텐츠 배포 워크플로우 {#content-distribution-workflow}
+   + 콘텐츠 배포 워크플로 {#content-distribution-workflow}
       + [컨텐츠 준비](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
       + [컨텐츠 확보](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
    + Adobe Primetime DRM 구성 요소 {#adobe-access-components}
@@ -61,7 +61,7 @@ ht-degree: 0%
    + [Flash Player 및 재생 테스트 컨텐츠 설치](quick-start/install-fp-playback-test.md)
    + [로컬로 패키지된 비디오 재생](quick-start/playback-locally-pkgd-video.md)
    + [다음 단계](quick-start/next-steps.md)
-+ Adobe Primetime 클라우드 DRM 빠른 시작 가이드 {#cloud-drm-quickstart}
++ Adobe Primetime 클라우드 DRM 빠른 시작 안내서 {#cloud-drm-quickstart}
    + [Primetime Cloud DRM에 포함된 제품](cloud-quick-start/whats-included.md)
    + [Primetime Cloud DRM에서 지원되지 않는 사항](cloud-quick-start/not-supported.md)
    + [사전 요구 사항](cloud-quick-start/prerequisites.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
       + [Adobe Media Server 사용](cloud-quick-start/packaging-options/use-adobe-media-server.md)
    + [패키지된 컨텐츠 테스트](cloud-quick-start/test-packaged-content.md)
    + [트리징 오류](cloud-quick-start/triaging-errors/client-error-triaging.md)
-   + 사용자 정의 인증/권한 부여 {#custom-auth-ent}
+   + 사용자 정의 인증/자격 부여 {#custom-auth-ent}
       + [사용자 정의 인증/권한 부여(선택 사항)](cloud-quick-start/custom-auth-ent/custom-overview.md)
       + [BEES 개요](cloud-quick-start/custom-auth-ent/overview.md)
       + [BEES 워크플로우](cloud-quick-start/custom-auth-ent/workflow-summary/policy-workflow.md)
@@ -99,11 +99,11 @@ ht-degree: 0%
    + [물리적 보안 및 액세스](secure-deployment-guidelines/physical-sec-and-access.md)
    + [컨텐츠 패키징 및 보호](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content.md)
    + [Flash Media Rights Management Server 1.x와의 호환성 보장](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
-   + 라이센스 서버 문제 및 보호 {#issuing-licenses}
+   + 라이센스 서버 {#issuing-licenses} 문제 및 보호
       + [라이센스 서버 보호](secure-deployment-guidelines/issuing-licenses/issuing-licenses-protect-license-server.md)
       + [라이선스 사전 생성](secure-deployment-guidelines/issuing-licenses/issuing-licenses-pre-gen.md)
       + [도메인 관리](secure-deployment-guidelines/issuing-licenses/issuing-licenses-domains.md)
-+ 다중 DRM 워크플로우 {#multi-drm-workflows}
++ 다중 DRM 워크플로 {#multi-drm-workflows}
    + [다중 DRM 워크플로우](multi-drm-workflows/title-page/overview.md)
    + Primetime DRM Cloud 빠른 시작 {#quick-start}
       + [개요](multi-drm-workflows/quick-start/quick-overview.md)
@@ -114,7 +114,7 @@ ht-degree: 0%
       + [라이선스](multi-drm-workflows/quick-start/handle-the-licensing.md)
       + [보호된 콘텐츠 재생](multi-drm-workflows/quick-start/playback-protected-content.md)
       + [빠른 시작 문제 해결](multi-drm-workflows/quick-start/troubleshoot-quickstart.md)
-   + 워크플로우:패키지, 라이선스 및 재생 {#package-license-play}
+   + 워크플로우:패키지, 라이센스 및 재생 {#package-license-play}
       + [FairPlay를 위한 멀티 DRM 워크플로우](multi-drm-workflows/p-l-and-p/fairplay-workflow.md)
       + [Widevine 및 PlayReady를 위한 멀티 DRM 워크플로우](multi-drm-workflows/p-l-and-p/widevine-workflow.md)
       + [Bento4로 컨텐츠 패키징](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine-with-bento.md)
@@ -125,7 +125,7 @@ ht-degree: 0%
       + [Android PSDK의 주요 요청 워크플로우](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-android-psdk.md)
       + [HTML5 TVSDK의 주요 요청 워크플로우](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-html5-tvsdk.md)
       + [장치 바인딩](multi-drm-workflows/p-l-and-p/licensing-widevine-client-device-binding.md)
-   + 일반 워크플로우 {#generic-workflows}
+   + 일반 워크플로 {#generic-workflows}
       + [Primetime Packager / 클라우드 DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/plp-1.md)
       + [ExpressPlay Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/package-and-play.md)
    + 기능 항목 {#feature-topics}
@@ -159,7 +159,7 @@ ht-degree: 0%
    + [클라이언트 통합](on-premises-i15n-server/server-configuration-section/client-integration.md)
    + [샘플 클라이언트 요청](on-premises-i15n-server/server-configuration-section/sample-client-requests.md)
    + [FAQ](on-premises-i15n-server/server-configuration-section/faq.md)
-+ 안전한 스트리밍 5.3.1을 위한 Primetime DRM Server {#server-for-protected-streaming}
++ 보호된 스트리밍 5.3.1용 Primetime DRM Server {#server-for-protected-streaming}
    + [보호된 스트리밍을 위한 Adobe Primetime DRM 서버 정보](protected-streaming/about-drm-for-protected-streaming.md)
    + [사용 규칙 정보](protected-streaming/usage-rules.md)
    + [요구 사항](protected-streaming/requirements.md)
@@ -168,7 +168,7 @@ ht-degree: 0%
       + [Java 시스템 속성](protected-streaming/understanding-deployment/java-system-properties.md)
       + [Adobe Primetime DRM 자격 증명 정보](protected-streaming/understanding-deployment/drm-credentials.md)
       + [HSM 구성](protected-streaming/understanding-deployment/hsm-configuration.md)
-      + 라이센스 서버 구성 파일 설정 {#configuration-files}
+      + 라이센스 서버 구성 파일 {#configuration-files} 설정
          + [라이센스 서버 구성 파일](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-license-server-config-files.md)
          + [구성 디렉토리 구조](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-configuration-directory-structure.md)
          + [전역 구성 파일](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-global-configuration-file.md)
@@ -189,7 +189,7 @@ ht-degree: 0%
       + [사용 규칙 및 인증](protecting-content/introduction/usage-rules/authentication/user-authentication.md)
       + [시간 기반 규칙](protecting-content/introduction/usage-rules/authentication/time-based-rules.md)
       + [동기화를 위한 요구 사항](protecting-content/introduction/usage-rules/authentication/synchronization.md)
-   + 런타임 및 애플리케이션 제한 사항 {#runtime-application-restrictions}
+   + 런타임 및 응용 프로그램 제한 사항 {#runtime-application-restrictions}
       + [Primetime DRM 응용 프로그램의 허용 목록에서 보호된 내용을 재생할 수 있습니다...](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-air.md)
       + [Adobe® Flash® 플레이어 SWF용 허용 목록](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-flash.md)
       + [보호된 콘텐츠에 대한 액세스가 제한된 DRM 클라이언트의 차단 목록](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md)
@@ -213,7 +213,7 @@ ht-degree: 0%
       + [명확성을 통해 콘텐츠의 초기 부분](protecting-content/introduction/packaging-options/initial-portion-content-clear.md)
       + [사용자 정의 메타데이터](protecting-content/introduction/packaging-options/custom-metadata.md)
       + [다양한 DRM 정책](protecting-content/introduction/packaging-options/multiple-policies.md)
-   + SDK 설정 {#setting-up-the-sdk}
+   + SDK {#setting-up-the-sdk} 설정
       + [개발 환경 설정](protecting-content/setting-up-the-sdk/setup-dev-env.md)
       + [Adobe Primetime DRM 자격 증명](protecting-content/setting-up-the-sdk/drm-credentials.md)
       + [인증서 요청](protecting-content/setting-up-the-sdk/requesting-certs.md)
@@ -229,7 +229,7 @@ ht-degree: 0%
       + [패키지 옵션](protecting-content/packaging-media-overview/content-packaging-options.md)
       + [컨텐츠 암호화](protecting-content/packaging-media-overview/encrypting-content.md)
       + [암호화된 파일 컨텐츠 검사](protecting-content/packaging-media-overview/examining-encrypted-file-content.md)
-   + 사전 생성 및 임베드 라이선스 {#pre-generating-and-embedded-licenses}
+   + 라이선스 {#pre-generating-and-embedded-licenses} 사전 생성 및 포함
       + [라이선스 사전 생성](protecting-content/pre-generating-and-embedded-licenses/pre-generating-licenses.md)
       + [라이선스 포함](protecting-content/pre-generating-and-embedded-licenses/embedding-licenses.md)
    + 라이센스 서버 구현 {#implementing-the-license-server}
@@ -251,7 +251,7 @@ ht-degree: 0%
          + [라이선스 미리 보기](protecting-content/implementing-the-license-server/handling-license-reqs/license-preview.md)
          + [ID 기반의 라이선스](protecting-content/implementing-the-license-server/handling-license-reqs/identity-based-licenses.md)
          + [DRM 정책 업데이트](protecting-content/implementing-the-license-server/handling-license-reqs/updating-policies.md)
-      + 라이선스 체인 {#license-chaining}
+      + {#license-chaining} 라이센스 체인
          + [향상된 라이센스 체인](protecting-content/implementing-the-license-server/license-chaining/gen-enhanced-license-chaining.md)
       + [동기화 요청 처리](protecting-content/implementing-the-license-server/handling-synch-reqs.md)
       + [FMRMS 호환성 처리](protecting-content/implementing-the-license-server/handling-fmrms-compatibility.md)
@@ -272,11 +272,11 @@ ht-degree: 0%
 + Adobe Primetime DRM 참조 구현 5.3.1 {#drm-reference-implementation-5-3-1}
    + [참조 구현 정보](drm-reference-implementations/overview.md)
    + [일반적인 워크플로우](drm-reference-implementations/typical-scenario.md)
-   + 명령줄 툴 {#command-line-tools}
+   + 명령줄 도구 {#command-line-tools}
       + [개요](drm-reference-implementations/command-line-tools/command-line-tools-overview.md)
       + [명령줄 툴 요구 사항](drm-reference-implementations/command-line-tools/requirements.md)
       + [명령줄 도구 설치](drm-reference-implementations/command-line-tools/install-command-line-tools.md)
-   + 명령줄 도구 구성 및 실행 {#configure-and-run}
+   + 명령줄 도구 {#configure-and-run} 구성 및 실행
       + [개요](drm-reference-implementations/command-line-tools/configure-command-line-tools/configure-command-line-tools.md)
       + [명령줄 도구 구성 파일 정보](drm-reference-implementations/command-line-tools/configure-command-line-tools/config-file.md)
       + [DRM 정책 관리자](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-overview.md)
@@ -341,16 +341,16 @@ ht-degree: 0%
    + [라이선스 미리 보기](tvsdk-drm-workflow/license-preview.md)
    + [컨텐츠 제공](tvsdk-drm-workflow/delivering-content.md)
 + [DRM 클라이언트 오류 메시지 참조](client-error-message-reference.md)
-+ 외부 키 관리 시스템에서 Adobe 액세스 DRM 사용 {#external-cek}
++ 외부 키 관리 시스템 {#external-cek}에서 Adobe 액세스 DRM 사용
    + [Adobe 액세스 DRM 외부 CEK 개요](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md)
    + [표준 AAXS DRM 워크플로우](aaxs-drm-xkey-mgmt/aaxs-drm-standard-workflow.md)
    + [AAXS DRM 외부 CEK 워크플로우](aaxs-drm-xkey-mgmt/aaxs-drm-external-cek-workflow.md)
    + [외부 CEK를 사용하여 라이선스 구매 및 패키지](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek.md)
-+ 안전한 스트리밍을 위한 Adobe Access Server 사용 {#adobe-access-server}
++ 보호된 스트리밍에 Adobe Access Server 사용 {#adobe-access-server}
    + [안전한 스트리밍을 위한 Adobe Access Server 정보](aaxs-protected-streaming/about-aaxs-protect-stream.md)
    + [사용 규칙](aaxs-protected-streaming/usage-rules.md)
    + [요구 사항](aaxs-protected-streaming/requirements.md)
-   + 안전한 스트리밍을 위한 Adobe Access Server 배포 {#deploying-aaxs-protect-stream}
+   + 보호된 스트리밍을 위한 Adobe Access Server 배포 {#deploying-aaxs-protect-stream}
       + [안전한 스트리밍을 위한 Adobe Access Server 배포 개요](aaxs-protected-streaming/deplying-aaxs-protect-stream/deplying-aaxs-protect-stream-overview.md)
       + [Java 시스템 속성](aaxs-protected-streaming/deplying-aaxs-protect-stream/java-system-properties.md)
       + [Adobe 액세스 자격 증명](aaxs-protected-streaming/deplying-aaxs-protect-stream/aaxs-credentials.md)
@@ -363,19 +363,19 @@ ht-degree: 0%
    + [사용자 정의 인증 확장](aaxs-protected-streaming/custom-authorization-extensions.md)
    + 성능 조정 {#performance-tuning}
       + [전역 구성 파일](aaxs-protected-streaming/performance-tuning/global-configuration-file.md)
-   + 안전한 스트리밍을 위한 Adobe Access Server 업그레이드 {#upgrading-the-license-server}
+   + 보호된 스트리밍을 위한 Adobe Access Server 업그레이드 {#upgrading-the-license-server}
       + [안전한 스트리밍을 위한 Adobe Access Server 실행](aaxs-protected-streaming/upgrading-the-license-server/running-the-license-server.md)
       + [로그 파일](aaxs-protected-streaming/upgrading-the-license-server/log-files.md)
       + [로그 디렉토리 구조](aaxs-protected-streaming/upgrading-the-license-server/log-directory-structure.md)
       + [전역 로그 파일](aaxs-protected-streaming/upgrading-the-license-server/global-log-file.md)
       + [파티션 로그 파일](aaxs-protected-streaming/upgrading-the-license-server/partition-log-file.md)
       + [테넌트 로그 파일](aaxs-protected-streaming/upgrading-the-license-server/tenant-log-file.md)
-   + 구성 파일 업데이트 {#updating-configuration-files}
+   + 구성 파일 {#updating-configuration-files} 업데이트
       + [구성 파일 업데이트 개요](aaxs-protected-streaming/updating-configuration-files/updating-configuration-files-overview.md)
       + [전역 구성 파일 업데이트](aaxs-protected-streaming/updating-configuration-files/updating-global-configuration.md)
       + [테넌트 구성 파일 업데이트](aaxs-protected-streaming/updating-configuration-files/updating-tenant-configuration.md)
    + [콘텐츠 패키징](aaxs-protected-streaming/packaging-content.md)
-   + 안전한 스트리밍 유틸리티용 Adobe Access Server {#aaxs-protected-streaming-utilities}
+   + 보호된 스트리밍 유틸리티용 Adobe Access Server {#aaxs-protected-streaming-utilities}
       + [구성 유효성 검사기](aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)
       + [암호 스크램블러](aaxs-protected-streaming/aaxs-protected-streaming-utilities/password-scrambler.md)
       + [SWF 해시 계산기](aaxs-protected-streaming/aaxs-protected-streaming-utilities/swf-hash-calculator.md)
@@ -389,13 +389,13 @@ ht-degree: 0%
       + [SSL 구성](aaxs-secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
    + [공급업체별 보안 정보](aaxs-secure-deployment-guidelines/vendor-specific-sec-info.md)
    + [물리적 보안 및 액세스](aaxs-secure-deployment-guidelines/physical-sec-and-access.md)
-   + 컨텐츠 패키징 및 보호 {#packaging}
+   + 콘텐츠 패키징 및 보호 {#packaging}
       + [서버 보안](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
       + [안전하게 컨텐츠 패키징](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
       + [정책 안전한 저장](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-storing-policies.md)
       + [비대칭 키 암호화](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
       + [Flash Media Rights Management Server 1.x와의 호환성 보장](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ensure-compat-fmrms.md)
-   + Protect 및 발행 라이선스 {#issuing-licenses}
+   + Protect 및 발행 라이센스 {#issuing-licenses}
       + [로컬에서 생성된 CRL 소비](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-local-crls.md)
       + [Adobe에 의해 게시된 CRL 사용](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-crls-by-adobe.md)
       + [Adobe에서 게시한 CRL을 보완하기 위해 CRL 생성](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-gen-crls-to-supplement-adobe.md)
@@ -407,12 +407,12 @@ ht-degree: 0%
       + [정책 옵션 무시](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
       + [라이선스 사전 생성](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
       + [도메인 관리](aaxs-secure-deployment-guidelines/issuing-licenses/managing-domains.md)
-+ Adobe 액세스 SDK 개요 {#overview}
++ Adobe 액세스 SDK {#overview} 개요
    + [Adobe 액세스 SDK 개요](aaxs-sdk-overview/overview.md)
    + [Adobe 액세스 정보](aaxs-sdk-overview/about-adobe-access.md)
    + [주요 기능](aaxs-sdk-overview/key-features.md)
    + [용어 및 핵심 개념](aaxs-sdk-overview/terminology-and-core-concepts.md)
-   + 컨텐츠 배포 워크플로우 {#content-distribution-workflow}
+   + 콘텐츠 배포 워크플로 {#content-distribution-workflow}
       + [컨텐츠 준비](aaxs-sdk-overview/content-distribution-workflow/content-preparation.md)
       + [컨텐츠 확보](aaxs-sdk-overview/content-distribution-workflow/content-acquisition.md)
    + [Adobe 액세스 구성 요소](aaxs-sdk-overview/adobe-access-components/adobe-access-sdk.md)
@@ -420,11 +420,11 @@ ht-degree: 0%
    + 추가 배포 시나리오 {#additional-scenarios}
       + [Ultra보라 미디어 및 Adobe 액세스](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
       + [Adobe Pass 및 Adobe 액세스](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
-+ 컨텐츠 보호를 위해 Adobe 액세스 SDK 사용 {#using-adobe-access-sdk}
++ 콘텐트 보호를 위해 Adobe 액세스 SDK 사용 {#using-adobe-access-sdk}
    + [소개](aaxs-protecting-content/content-introduction/content-whats-new.md)
    + [사용자 인증](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
    + [시간 기반 규칙](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
-   + 런타임 및 애플리케이션 제한 사항 {#runtime-and-application-restrictions}
+   + 런타임 및 응용 프로그램 제한 사항 {#runtime-and-application-restrictions}
       + [Adobe® Primetime용 허용 목록으로 보호된 콘텐츠 재생 가능](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
       + [Adobe® Flash® 플레이어 SWF용 허용 목록으로 보호된 내용 재생 가능](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
       + [보호된 콘텐츠에 대한 액세스가 제한된 DRM 클라이언트의 차단 목록](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
@@ -447,12 +447,12 @@ ht-degree: 0%
       + [명확성을 통해 콘텐츠의 초기 부분](aaxs-protecting-content/content-introduction/packaging-options/content-initial-portion-content-clear.md)
       + [사용자 정의 메타데이터](aaxs-protecting-content/content-introduction/packaging-options/content-custom-metadata.md)
       + [다양한 정책](aaxs-protecting-content/content-introduction/packaging-options/content-multiple-policies.md)
-   + SDK 설정 {#setting-up-the-sdk}
+   + SDK {#setting-up-the-sdk} 설정
       + [개발 환경 설정](aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md)
       + [Adobe 액세스 자격 증명](aaxs-protecting-content/content-setting-up-the-sdk/content-aaxs-credentials.md)
       + [인증서 요청](aaxs-protecting-content/content-setting-up-the-sdk/content-requesting-certs.md)
       + [자격 증명 저장](aaxs-protecting-content/content-setting-up-the-sdk/content-storing-credentials.md)
-   + 정책 사용 {#working-with-policies}
+   + 정책 작업 {#working-with-policies}
       + [정책 사용](aaxs-protecting-content/content-working-with-policies/content-working-with-policies-overview.md)
       + [Java API를 사용하여 정책 만들기](aaxs-protecting-content/content-working-with-policies/content-creating-policy-using-java-api.md)
       + [Java API를 사용하여 정책 업데이트](aaxs-protecting-content/content-working-with-policies/content-updating-policy-using-java-api.md)
@@ -463,14 +463,14 @@ ht-degree: 0%
       + [미디어 파일 패키징](aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files-overview.md)
       + [컨텐츠 암호화](aaxs-protecting-content/content-packaging-media-files/content-encrypting-content.md)
       + [암호화된 파일 컨텐츠 검사](aaxs-protecting-content/content-packaging-media-files/content-examining-encrypted-file-content.md)
-   + 사전 생성 및 임베드 라이선스 {#pre-generating-and-embedding-liceses}
+   + 라이선스 {#pre-generating-and-embedding-liceses} 사전 생성 및 포함
       + [사전 생성 및 임베드 라이선스](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-pre-generating-embedded-licenses-overview.md)
       + [라이선스 사전 생성](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-pre-generating-licenses.md)
       + [라이선스 포함](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-embedding-licenses.md)
    + 라이센스 서버 구현 {#implementing-license-server}
       + [라이센스 서버 구현](aaxs-protecting-content/content-implementing-the-license-server/content-implementing-license-server-overview.md)
       + [라이선스 서버 배포 옵션](aaxs-protecting-content/content-implementing-the-license-server/content-license-server-deployment-options.md)
-   + Adobe 액세스 요청 처리 {#processing-adobe-access-requests}
+   + Adobe 액세스 요청 처리 중 {#processing-adobe-access-requests}
       + [Adobe 액세스 요청 처리](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-processing-aaxs-requests-overview.md)
       + [컴퓨터 식별자 사용](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-using-machine-ids.md)
       + [사용자 인증](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-licenses-user-authentication.md)
@@ -492,7 +492,7 @@ ht-degree: 0%
       + [iOS 클라이언트에 원격 키 전달을 위한 라이선스 발급(Adobe Primetime 필요)](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-issuing-licenses-remote-ios.md)
       + [최소 클라이언트 버전](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md)
       + [라이선스 미리 보기](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-license-preview.md)
-      + ID 기반의 라이선스 {#licenses}
+      + ID 기반 라이센스 {#licenses}
          + [ID 기반 라이선스 개요](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-identity-based-licenses.md)
          + [정책 업데이트](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-updating-policies.md)
          + [동기화 요청 처리](aaxs-protecting-content/content-implementing-the-license-server/content-handling-synch-reqs.md)
@@ -510,7 +510,7 @@ ht-degree: 0%
    + [비디오 플레이어 만들기](aaxs-protecting-content/content-creating-video-players.md)
 + Adobe 액세스 참조 구현 {#reference-implementation}
    + [개요 - 참조 구현 사용](aaxs-reference-implementations/overview.md)
-   + [컨텐츠 패키징 및 취소 목록 생성을 위한 명령줄 툴 ](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
+   + [컨텐츠 패키징 및 취소 목록 생성을 위한 명령줄 툴  ](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
    + 정책 관리자 {#policy-manager}
       + [정책 관리자 사용](aaxs-reference-implementations/command-line-tools/policy-manager/using-aaxs-policy-manager.md)
       + [구성 파일 속성](aaxs-reference-implementations/command-line-tools/policy-manager/config-file-properties.md)
@@ -537,7 +537,7 @@ ht-degree: 0%
    + 라이선스 임베드 {#license-embedder}
       + [라이선스 임베드 개요](aaxs-reference-implementations/command-line-tools/license-embedder/license-embedder-overview.md)
       + [명령줄 사용](aaxs-reference-implementations/command-line-tools/license-embedder/license-embedder-command-line-usage.md)
-   + 라이선스 서버 및 감시 폴더 패키저{#license-server-and-wfp}
+   + 라이선스 서버 및 감시 폴더 패키지{#license-server-and-wfp}
       + [라이선스 서버 및 감시 폴더 패키지 개요](aaxs-reference-implementations/license-server-and-wfp/license-server-wfp-overview.md)
       + [요구 사항](aaxs-reference-implementations/license-server-and-wfp/license-server-and-wfp-reqs.md)
       + [라이선스 서버 빌드](aaxs-reference-implementations/license-server-and-wfp/building-the-license-server.md)
@@ -567,7 +567,7 @@ ht-degree: 0%
    + [FMRMS 1.0 또는 1.5에서 Adobe Access 2.0 이상으로 마이그레이션](aaxs-reference-implementations/license-server-migrating-fmrms-aaxs.md)
    + [기존 배포 업그레이드](aaxs-reference-implementations/license-server-upgrading-existing-deplys.md)
    + [도메인 서버 설정](aaxs-reference-implementations/license-server-upgrading-existing-deplys-setup-ds.md)
-   + Flash Access 관리자 AIR 애플리케이션 사용 {#flash-access-manager-air-app-usage}
+   + Flash Access 관리자 AIR 응용 프로그램 사용 {#flash-access-manager-air-app-usage}
       + Flash Access 관리자 구성 요소 {#flash-manager-components}
          + [Packager Server 및 AIR 응용 프로그램 빌드](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-overview.md)
          + [Packager 서버 빌드](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-bld-pkg-srv.md)
@@ -578,7 +578,7 @@ ht-degree: 0%
          + [패키지 기본 설정](aaxs-reference-implementations/fam-air-app-usage/initial-fam-setup-set-prefs/initial-fam-setup-pkg-prefs.md)
          + [정책 업데이트 목록 환경 설정](aaxs-reference-implementations/fam-air-app-usage/initial-fam-setup-set-prefs/initial-fam-setup-pul-prefs.md)
          + [HSM 환경 설정](aaxs-reference-implementations/fam-air-app-usage/initial-fam-setup-set-prefs/initial-fam-setup-hsm-prefs.md)
-      + 정책 작성 {#policy-creation}
+      + 정책 만들기 {#policy-creation}
          + [새 정책 만들기](aaxs-reference-implementations/fam-air-app-usage/initial-fam-usage-policy-creation/initial-fam-usage-policy-create-new.md)
          + [기본 정책 옵션](aaxs-reference-implementations/fam-air-app-usage/initial-fam-usage-policy-creation/initial-fam-usage-basic-policy-options.md)
          + [재생 권한](aaxs-reference-implementations/fam-air-app-usage/initial-fam-usage-policy-creation/initial-fam-usage-policy-play-rights.md)
