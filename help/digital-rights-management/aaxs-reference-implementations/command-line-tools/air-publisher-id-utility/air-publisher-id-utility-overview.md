@@ -17,4 +17,4 @@ AIR 파일 작성 프로세스의 일부로 AIR Developer Tool(ADT)은 Publisher
 
 >[!NOTE]
 >
->AIR 허용 목록 실행에 사용되는 게시자 ID는 응용 프로그램 파일의 응용 프로그램 게시자가 지정한 게시자 ID와 다릅니다 [!DNL application.xml] .
+>AIR 허용 목록 실행에 사용되는 게시자 ID는 응용 프로그램의 [!DNL application.xml] 파일에서 응용 프로그램 게시자가 지정한 게시자 ID와 다릅니다.
