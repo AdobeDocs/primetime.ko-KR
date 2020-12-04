@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 원격 및 로컬 iOS 키 전달{#remote-and-local-ios-key-delivery}
+# 원격 및 로컬 iOS 키 배달{#remote-and-local-ios-key-delivery}
 
 Adobe Primetime은 iOS 클라이언트에 키 전달을 위한 두 가지 옵션을 지원합니다.
 
@@ -24,4 +24,4 @@ Adobe Primetime은 iOS 클라이언트에 키 전달을 위한 두 가지 옵션
 >
 >키 배달 선택은 iOS 클라이언트에만 영향을 줍니다. &quot;원격&quot;이 지정된 경우에도 HLS 컨텐츠를 사용하는 다른 모든 장치는 항상 &quot;로컬&quot; 키 제공을 사용합니다.
 
-자세한 내용은 Adobe 액세스 *키 서버 사용을 참조하십시오*.
+자세한 내용은 *Adobe 액세스 키 서버 사용*&#x200B;을 참조하십시오.
