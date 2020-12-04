@@ -6,8 +6,11 @@ title: 특정 비디오에 대한 미디어 플레이어 초기화
 uuid: aff3a71f-6e01-49af-9791-84db9f095238
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 0%
 
 ---
 
 
-# 특정 비디오에 대한 미디어 플레이어 초기화 {#initialize-the-media-player-for-a-specific-video}
+# 특정 비디오 {#initialize-the-media-player-for-a-specific-video}에 대한 미디어 플레이어 초기화
