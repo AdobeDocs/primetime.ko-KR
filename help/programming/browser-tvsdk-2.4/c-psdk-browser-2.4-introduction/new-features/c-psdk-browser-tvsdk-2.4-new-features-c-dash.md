@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->아래의 기능 매트릭스 표에서  ![](assets/supported15.png)
+>아래 기능 매트릭스 테이블에서 ![](assets/supported15.png)
 >는 현재 릴리스에서 기능이 지원됨을 의미합니다.
 
 지원되는 기능은 다음과 같습니다.
@@ -82,7 +82,7 @@ ht-degree: 0%
 
  -->
 
-## 대시 통합 {#dash-integrations}
+## DASH 통합 {#dash-integrations}
 
 | 범주 | 컨텐츠 유형 | 기능 | HTML5 FF, IE, Chrome, Android Chrome |
 |---|---|---|---|
