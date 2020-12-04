@@ -13,7 +13,7 @@ ht-degree: 15%
 ---
 
 
-# Primetime 릴리스 노트 {#release-notes}
+# Primetime 릴리스 노트  {#release-notes}
 
 + [릴리스 노트 개요](home.md)
 + Primetime Ad Insertion {#ptai}
