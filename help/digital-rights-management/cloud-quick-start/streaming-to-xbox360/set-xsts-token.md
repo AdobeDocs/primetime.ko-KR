@@ -6,13 +6,16 @@ title: 플레이어에서 XSTS 토큰 설정
 uuid: 8995e029-deee-4e23-9cda-a50de8c4f2c0
 translation-type: tm+mt
 source-git-commit: b7f52b71bde1d7bf59ef51d4f6f90dfaa07e347b
+workflow-type: tm+mt
+source-wordcount: '66'
+ht-degree: 0%
 
 ---
 
 
 # 플레이어에서 XSTS 토큰 설정{#set-the-xsts-token-in-your-player}
 
-Xbox 360에서는 `MediaPlayer.RequestKeyAttribute` 이벤트에 대한 응답으로 토큰을 비동기식으로 설정합니다.
+Xbox360에서는 `MediaPlayer.RequestKeyAttribute` 이벤트에 대한 비동기식으로 토큰을 설정합니다.
 
 XSTS 토큰을 설정합니다.
 
