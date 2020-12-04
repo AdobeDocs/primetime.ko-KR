@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 방화벽 규칙 {#firewall-rules}
 
-## 들어오는 URL {#section-F111526A9DB844CBBF21A3CAE5F50880}
+## 수신 URL {#section-F111526A9DB844CBBF21A3CAE5F50880}
 
 최종 사용자에게 제공하려는 응용 프로그램 기능에 대한 URL만 표시되도록 외부 방화벽을 구성합니다. 외부 사용자가 외부 방화벽을 통해 다음 표에 나열된 URL에만 액세스할 수 있도록 허용:
 
@@ -78,11 +78,11 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/headerconversion/v1/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 FMRMS 1.x DRM 메타데이터를 Adobe 액세스 DRM 메타데이터로 변환하기 위해 사용하는 URL. </p> <p class="- topic/p ">참고: <i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)을 사용해야 합니다</i>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 FMRMS 1.x DRM 메타데이터를 Adobe 액세스 DRM 메타데이터로 변환하기 위해 사용하는 URL. </p> <p class="- topic/p ">참고:<i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)</i>을 사용해야 합니다. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /edcws/services/urn:EDCLicenseService/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">LiveCycle Rights Management ES 웹 서비스 URL. 이전 버전의 FMRMS를 사용하여 컨텐츠를 게시한 경우 이 URL을 통해 이전 클라이언트가 서버에 연결하여 Adobe 액세스로 업그레이드하라는 메시지가 표시됩니다. </p> <p class="- topic/p ">참고: <i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)을 사용해야 합니다</i>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">LiveCycle Rights Management ES 웹 서비스 URL. 이전 버전의 FMRMS를 사용하여 컨텐츠를 게시한 경우 이 URL을 통해 이전 클라이언트가 서버에 연결하여 Adobe 액세스로 업그레이드하라는 메시지가 표시됩니다. </p> <p class="- topic/p ">참고:<i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)</i>을 사용해야 합니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/return/v5</span> </td> 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 라이센스 서버는 Adobe에서 다음 CRL을 다운로드하려면 방화벽을 통해 액세스해야 합니다.
 
-* <span></span>https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl
-* <span></span>https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl
-* <span></span>https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl
-* <span></span>https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl
+* h<span></span>ttps://crl2.adobe.com/Adobe/FlashAccessRootCA.crl
+* ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl
+* ht<span></span>tps://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl
+* ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl
