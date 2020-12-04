@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->닫힌 캡션의 가시성 값은 에 정의되어 있습니다 `MediaPlayer.Visibility`.
+>닫힌 캡션의 가시성 값은 `MediaPlayer.Visibility`에 정의됩니다.
 >
 >
 ```java
@@ -33,14 +33,14 @@ ht-degree: 0%
 >}
 >```
 
-1. MediaPlayer가 적어도 PREPARED 상태를 가질 때까지 기다립니다( [유효한 상태](../../../tvsdk-1.4-for-android/ui-configure/android-1.4-ui-state-prepared-wait-for.md)대기 참조).
+1. MediaPlayer가 적어도 PREPARTED 상태를 가질 때까지 기다립니다([유효한 상태](../../../tvsdk-1.4-for-android/ui-configure/android-1.4-ui-state-prepared-wait-for.md) 대기 참조).
 1. 닫힌 캡션의 현재 가시성 설정을 가져오려면 가시성 값을 반환하는 MediaPlayer의 getter 메서드를 사용합니다.
 
    ```java
    Visibility getCCVisibility() throws IllegalStateException;
    ```
 
-1. 닫힌 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 가시성 값을 전달하십시오 `MediaPlayer.Visibility`.
+1. 닫힌 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 `MediaPlayer.Visibility`의 가시성 값을 전달합니다.
 
    예:
 
