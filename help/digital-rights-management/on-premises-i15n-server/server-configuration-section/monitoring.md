@@ -4,18 +4,21 @@ title: 모니터링
 uuid: ee62c55f-0d44-40f4-a2c7-39456f4d3d99
 translation-type: tm+mt
 source-git-commit: 1547eb3dd220fafc08df923f40504736c16a866c
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 0%
 
 ---
 
 
 # 모니터링{#monitoring}
 
-개별 서버 및 키 생성 서버마다 상태 페이지가 있으며, 이 페이지에서는 서버의 상태를 확인할 수 있습니다.
+개인화 서버 및 키 생성 서버마다 상태 페이지가 있으며, 이 페이지에서는 서버의 상태를 확인할 수 있습니다.
 
 * **개인화 상태 페이지:** [!DNL https://SERVER:PORT/flashaccess/status]
 
    * 앱 서버가 실행 중이고 앱이 키 생성 서버에 GET 요청을 할 수 있는 경우 &quot;활성&quot; 보고
-   * 이 페이지는 &quot;Alive&quot; 또는 아무 것도 보고하지 않습니다. 응용 프로그램에 대한 정보가 없으므로 이 페이지를 방화벽 외부에서 모니터링하는 데 사용할 수 있습니다.
+   * 페이지는 &quot;Alive&quot;나 아무 것도 보고하지 않습니다. 응용 프로그램에 대한 정보가 표시되지 않으므로 이 페이지는 방화벽 외부에서 모니터링할 수 있습니다.
 
 * **키 생성 상태 페이지:** [!DNL https://SERVER:PORT/flashaccess-kgs/status]
 
