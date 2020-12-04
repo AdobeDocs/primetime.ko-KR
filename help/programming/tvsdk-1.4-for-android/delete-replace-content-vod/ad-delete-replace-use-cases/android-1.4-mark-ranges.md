@@ -6,6 +6,9 @@ title: 표시 범위
 uuid: eb99a1c2-6c0c-40a4-bac2-98dce45acfad
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 VOD 컨텐츠의 시간 간격을 광고 중단으로 지정할 수 있습니다.
 
-이 경우 `TimeRanges` 및 `begin` 에서 `end` 사이 `localTime` 는 타임라인에서 `AdBreak` 으로 표시됩니다. 다른 광고 설정은 무시됩니다.
+이 경우 `localTime`의 `begin`과 `end` 사이의 `TimeRanges`은 타임라인에서 `AdBreak`로 표시됩니다. 다른 광고 설정은 무시됩니다.
 
 >[!NOTE]
 >
