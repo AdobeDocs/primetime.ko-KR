@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# 애플리케이션 런타임 차단 목록 {#blocklist-of-application-runtimes}
+# 응용 프로그램 런타임의 차단 목록 {#blocklist-of-application-runtimes}
 
-애플리케이션 런타임의 차단 목록은 콘텐츠에 액세스할 수 없는 Primetime 클라이언트 또는 Flash 런타임의 버전을 지정합니다. 제한된 런타임(Flash Player, AIR 또는 iOS), 플랫폼 및 버전을 지정합니다.
+애플리케이션 런타임의 차단 목록은 Primetime 클라이언트 또는 Flash 런타임에서 콘텐츠에 액세스할 수 없는 버전을 지정합니다. 제한된 런타임(Flash Player, AIR 또는 iOS), 플랫폼 및 버전을 지정합니다.
 
-사용 사례 예: Primetime DRM 클라이언트 차단 목록과 유사한 Flash Player, AIR 또는 iOS 런타임의 최신 버전을 라이선스 취득 및 컨텐츠 재생에 필요한 최소 버전으로 지정할 수 있습니다.
+사용 사례 예:Primetime DRM 클라이언트 차단 목록과 유사한 최신 버전의 Flash Player, AIR 또는 iOS 런타임은 라이선스 취득 및 컨텐츠 재생에 필요한 최소 버전으로 지정할 수 있습니다.
 
 다음 속성 외에 Primetime DRM 클라이언트 버전에 지원되는 모든 속성을 통해 애플리케이션 런타임을 식별할 수 있습니다.
 
