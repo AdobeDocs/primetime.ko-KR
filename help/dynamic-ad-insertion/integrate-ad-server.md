@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 광고 서버 통합 {#integrate-ad-server}
+# 광고 서버 {#integrate-ad-server} 통합
 
 Primetime Ad Insertion이 선택한 광고 서버에 광고 요청을 전달하는 데 사용하는 규칙을 설정할 수 있는 Primetime Ad Insertion 콘솔에 액세스할 수 있는 로그인이 주어집니다. Primetime Ad Insertion은 대부분의 VAST 또는 VMAP 호환 광고 서버를 지원합니다.
 
@@ -33,4 +33,4 @@ Primetime Ad Insertion을 사용하면 모든 스트림에 대해 다음 광고 
 
 ## 고급 기능 {#advanced-features}
 
-또한 Primetime Ad Insertion에는 고급 기능을 지원하는 규칙 기반의 의사 결정 기능이 포함되어 있습니다. 인벤토리 권한을 기반으로 다른 광고 서버로 광고를 전달하거나 개별 광고에 대해 빈도 캡처를 활성화하려는 경우 이 기능이 중요합니다. <!--For more information, see [Advanced Features](route-ads-based-on-rules.md).-->
+또한 Primetime Ad Insertion에는 고급 기능을 지원하는 규칙 기반의 의사 결정 기능이 포함되어 있습니다. 인벤토리 권한을 기반으로 다른 광고 서버로 광고를 전달하거나 개별 광고에 대해 빈도 캡처를 활성화하려는 경우 이 기능이 중요합니다.<!--For more information, see [Advanced Features](route-ads-based-on-rules.md).-->
