@@ -6,6 +6,9 @@ title: 비디오 플레이어 요구 사항
 uuid: 29593d67-2901-4d9e-a08f-23c8a7667283
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Primetime 광고 삽입 API를 사용하려면 비디오 플레이어가 다음�
 * 지정된 시간에 추적 URL을 요청할 수 있습니다.
 * 다음을 포함하여 HLS v3 이상을 지원하는 장치 플랫폼에서 실행됩니다.
 
-   * PTS `EXT-X-DISCONTINUITY` 태그로 표시된 불연속
+   * `EXT-X-DISCONTINUITY` 태그로 표시된 PTS 불연속성
    * `EXT-X-DISCONTINUITY-SEQUENCE`
    * `EXT-X-PROGRAM-DATE-TIME`
    * `EXT-X-START`
