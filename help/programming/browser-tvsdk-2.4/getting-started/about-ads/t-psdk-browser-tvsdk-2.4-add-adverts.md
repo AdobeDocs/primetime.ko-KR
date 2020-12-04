@@ -6,11 +6,14 @@ title: 광고 추가
 uuid: 7762506f-b55e-445d-b8a2-c1208358a370
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '51'
+ht-degree: 0%
 
 ---
 
 
-# 광고 추가 {#add-advertising}
+# 광고 {#add-advertising} 추가
 
 1. 광고 메타데이터를 정의합니다.
 
@@ -21,7 +24,7 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
      auditudeSettings.zoneId = "123869";
    ```
 
-1. 광고 메타데이터를 에 추가합니다 `MediaResource`.
+1. 광고 메타데이터를 `MediaResource`에 추가합니다.
 
    ```js
    var mediaResource =  
@@ -36,8 +39,8 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
    config.advertisingFactory = new ExtCueOutContentFactory(auditudeSettings);
    ```
 
-1. 라이브러리 `ExtCueOutContentFactory` 섹션에 을 추가합니다.
-1. 라이브러리 `ExtCueOutContentFactory.js` 섹션에서 다운로드하여 작업 폴더에 배치합니다.
+1. 라이브러리 섹션에 `ExtCueOutContentFactory`을(를) 추가합니다.
+1. 라이브러리 섹션에서 `ExtCueOutContentFactory.js`을 다운로드하고 작업 폴더에 배치합니다.
 
    ```js
    <script src= "frameworks/player/dash.min.js"></script> 
