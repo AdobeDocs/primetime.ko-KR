@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 스크립트 데이터 암호화 {#encrypting-script-data}
+# 스크립트 데이터 {#encrypting-script-data} 암호화
 
 이 패키지 옵션은 컨텐츠에 포함된 스크립트 데이터가 암호화되는지 여부를 지정합니다.
 
