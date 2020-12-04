@@ -31,7 +31,8 @@ TVSDK는 광고가 포함된 컨텐츠의 재생 동작을 사용자 정의하�
    <td colname="col1"><span class="codeph"> 광고 메타데이터</span> </td> 
    <td colname="col2">뷰어에서 광고 나누기를 시청한 것으로 표시할지를, 그리고 예인 경우 언제 표시할지를 제어합니다. 다음 방법으로 감시 정책을 설정하고 
     <pre>
-     adBreakAsViewed <span class="codeph"> 속성</span> .
+     the 
+     <span class="codeph"> adBreakAsViewed</span> 속성
     </pre> </td> 
   </tr> 
   <tr> 
