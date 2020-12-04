@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 출력 보호 제어 {#output-protection-controls}
+# 출력 보호 컨트롤 {#output-protection-controls}
 
 **외부 렌더링 장치로의 출력 보호 여부를 제어합니다. 아날로그 및 디지털 출력을 독립적으로 지정합니다.**
 
@@ -49,22 +49,22 @@ ht-degree: 0%
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">예 </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">사용 가능한</b> 경우 ACP 사용 — 사용 가능한 경우 ACP 출력 보호를 활성화하지만 사용 가능한 경우 재생을 허용하십시오. CGMS-A에서는 보호를 받을 수 없습니다.Adobe 액세스 2.0 클라이언트는 이 옵션을 지원하지 않습니다. 설정된 경우 Adobe 액세스 2.0 클라이언트는 "보호 없음" 옵션이 지정된 것처럼 작동합니다. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">사용 가능한</b>  경우 ACP 사용— 사용 가능한 경우 ACP 출력 보호를 활성화하지만 사용 가능한 경우 재생을 허용하십시오. CGMS-A에서는 보호를 받을 수 없습니다.Adobe 액세스 2.0 클라이언트는 이 옵션을 지원하지 않습니다. 설정된 경우 Adobe 액세스 2.0 클라이언트는 "보호 없음" 옵션이 지정된 것처럼 작동합니다. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">예 </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">CGMS-A 사용(가능한 경우) </b>— CGMS-A 출력 보호 기능을 활성화하지만 사용 가능한 경우 재생을 허용합니다. ACP에서는 보호를 사용할 수 없습니다. Adobe 액세스 2.0 클라이언트는 이 옵션을 지원하지 않습니다. 설정된 경우 Adobe 액세스 2.0 클라이언트는 "보호 없음" 옵션이 지정된 것처럼 작동합니다. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">CGMS-A 사용(가능한 경우)  </b>— CGMS-A 출력 보호 기능을 활성화하지만 사용 가능한 경우 재생을 허용합니다. ACP에서는 보호를 사용할 수 없습니다. Adobe 액세스 2.0 클라이언트는 이 옵션을 지원하지 않습니다. 설정된 경우 Adobe 액세스 2.0 클라이언트는 "보호 없음" 옵션이 지정된 것처럼 작동합니다. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">예 </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">보호</b> 없음 — 아날로그 및 디지털 출력 시 출력 보호 기능이 적용되지 않습니다. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">보호</b>  없음 — 아날로그 및 디지털 출력 시 출력 보호 기능이 적용되지 않습니다. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">예 </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">예 </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">재생</b> 안 함 —아날로그 및 디지털 출력을 위해 외부 디바이스에 재생을 허용하지 마십시오. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">재생</b>  안 함 - 아날로그 및 디지털 출력을 위해 외부 디바이스에 재생을 허용하지 않습니다. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">예 </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">예 </p> </td> 
   </tr> 
