@@ -6,6 +6,9 @@ title: 요구 사항
 uuid: 9726b083-f52a-410c-8ab4-47b4913d5172
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 0%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
 
 Browser TVSDK 릴리스에는 다음 플레이어가 포함됩니다.
 
-* `Primetime.js` 데스크탑 및 모바일에서 HLS용
+* `Primetime.js` (데스크탑 및 모바일에서 HLS용)
 
-플레이어에는 다음과 같은 참조 API가 포함되어 있습니다.
+플레이어에는 다음과 같은 참조 API가 포함됩니다.
 
 * `Primetime.js` 브라우저 TVSDK
 * 코어 재생을 위한 JavaScript API
