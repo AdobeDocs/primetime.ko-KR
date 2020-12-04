@@ -6,6 +6,9 @@ title: 로더 이벤트
 uuid: 0ad37715-14b1-457c-892f-0db0d6220f0c
 translation-type: tm+mt
 source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
 
 TVSDK는 미디어 항목 로딩에 대한 응답으로 미디어 플레이어 항목 이벤트를 전달합니다.
 
-이러한 이벤트는 대체 워크플로우를 제공합니다. You are not required to implement this interface when creating a `MediaPlayer`. 이것을 가지고 싶을 때 `MediaPlayerItemLoader`사용하세요.
+이러한 이벤트는 대체 워크플로우를 제공합니다. `MediaPlayer`을(를) 만들 때는 이 인터페이스를 구현할 필요가 없습니다. `MediaPlayerItemLoader`을(를) 사용하려면 이 매개 변수를 사용하십시오.
 
-미디어 플레이어 리소스 로드와 관련된 이벤트에 대한 알림을 받으려면 `MediaPlayerItemLoader` 개체에 다음 이벤트에 대한 리스너를 등록합니다.
+미디어 플레이어 리소스 로드와 관련된 이벤트에 대한 알림을 받으려면 다음 이벤트에 대한 리스너를 `MediaPlayerItemLoader` 개체와 함께 등록합니다.
 
 | 이벤트 | 의미 |
 |---|---|
