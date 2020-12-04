@@ -17,7 +17,7 @@ ht-degree: 0%
 
 HSM을 지원하는 Sun PKCS#11 공급자를 사용하여 참조 구현을 구성할 수 있습니다. HSM을 사용할 필요는 없지만 권장됩니다.
 
-HSM에서 자격 증명을 사용하려면 Sun PKCS#11 공급자에 대한 구성 파일을 생성해야 합니다. 자세한 내용은 [Java PCKS#11 참조 안내서를 참조하십시오](https://docs.oracle.com/javase/1.5.0/docs/guide/security/p11guide.html).
+HSM에서 자격 증명을 사용하려면 Sun PKCS#11 공급자에 대한 구성 파일을 생성해야 합니다. 자세한 내용은 [Java PCKS#11 참조 안내서](https://docs.oracle.com/javase/1.5.0/docs/guide/security/p11guide.html)를 참조하십시오.
 
 HSM 및 Sun PKCS#11 구성 파일이 구성되어 있는지 확인하려면 Java JDK와 함께 설치된 키 도구를 사용하여 다음 명령을 입력합니다.
 
