@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe CRS(Creative Repackaging Service)를 사용하여 호환되지 않는 광고 재패키지 {#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}
+# Adobe CRS(Creative Repackaging Service) {#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}을(를) 사용하여 호환되지 않는 광고를 재패키징합니다.
 
 일부 타사 광고(또는 크리에이티브)는 비디오 형식이 HLS와 호환되지 않으므로 HLS(HTTP Live Streaming) 콘텐츠 스트림에 연결할 수 없습니다. Primetime 광고 삽입 및 TV SDK는 호환되지 않는 광고를 호환되는 M3U8 비디오로 재패키징할 수도 있습니다.
 
@@ -27,7 +27,7 @@ TVSDK에서 호환되지 않는 광고가 처음 발견되면 플레이어는 �
 >
 >CRS 버전 3.0 이전 버전 고객의 경우 CRS 버전 3.1부터 다음과 같은 변경 사항이 보안과 성능을 모두 개선했습니다.
 >
->* CRS 3.1은 다시 패키지되는 컨텐츠가 사용되는 `https:` 경우 계속 유지됩니다 `https:`. 따라서 일부 플레이어에서 안전하지 않은 컨텐츠를 제공할 가능성이 줄어듭니다.
+>* 다시 패키지되는 컨텐츠가 `https:`을(를) 사용하는 경우 CRS 3.1은 `https:`으로 계속됩니다. 따라서 일부 플레이어에서 안전하지 않은 컨텐츠를 제공할 가능성이 줄어듭니다.
    >
    >
 * CRS 3.1은 네트워크 호출을 크게 최소화하여 비디오 시작 시간을 향상시킵니다.
@@ -36,13 +36,13 @@ TVSDK에서 호환되지 않는 광고가 처음 발견되면 플레이어는 �
 
 
 
-CRS에 대한 자세한 내용은 [CRS(Creative Packaging Service)를 참조하십시오](../../../../../dynamic-ad-insertion/creative-repackaging-service/crs-overview.md).
+CRS에 대한 자세한 내용은 [CRS(Creative Packaging Service)](../../../../../dynamic-ad-insertion/creative-repackaging-service/crs-overview.md)을 참조하십시오.
 
-## TVSDK 애플리케이션에서 CRS 사용 {#enable-crs-in-tvsdk-applications}
+## TVSDK 응용 프로그램에서 CRS 활성화 {#enable-crs-in-tvsdk-applications}
 
 TVSDK 애플리케이션에서 CRS를 활성화하려면 Auditude 설정에서 다음 정보를 설정해야 합니다.
 
-1. CRS를 활성화합니다 `AuditudeSettings`.
+1. `AuditudeSettings`에서 CRS를 활성화합니다.
 
    ```
    ... 
