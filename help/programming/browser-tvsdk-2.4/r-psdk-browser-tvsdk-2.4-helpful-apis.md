@@ -1,18 +1,21 @@
 ---
-description: Adobe Flash Player를 사용하는 데 도움이 되는 일부 API가 있습니다.
-seo-description: Adobe Flash Player를 사용하는 데 도움이 되는 일부 API가 있습니다.
+description: Adobe Flash Player을 사용하는 데 도움이 되는 일부 API가 있습니다.
+seo-description: Adobe Flash Player을 사용하는 데 도움이 되는 일부 API가 있습니다.
 seo-title: Adobe Flash Player에 대한 유용한 API
 title: Adobe Flash Player에 대한 유용한 API
 uuid: eae314c0-fd9e-480f-ae1c-9b5f3eb4db4b
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 
 
-# Adobe Flash Player에 대한 유용한 API{#helpful-apis-for-the-adobe-flash-player}
+# Adobe Flash Player{#helpful-apis-for-the-adobe-flash-player}에 대한 유용한 API
 
-Adobe Flash Player를 사용하는 데 도움이 되는 일부 API가 있습니다.
+Adobe Flash Player을 사용하는 데 도움이 되는 일부 API가 있습니다.
 
 ## AdobePSDK.MediaResource {#section_8C339FA1386D4B1A926A1459B2619E5E}
 
@@ -20,7 +23,7 @@ Adobe Flash Player를 사용하는 데 도움이 되는 일부 API가 있습니�
 new MediaResource(url, type, metadata, forceFlash)
 ```
 
-지원되는 경우 이 `forceFlash` 매개 변수를 사용하여 재생 기술 결정 시퀀스를 무시할 수 있으며 구현에서 Flash Player를 사용하도록 할 수 있습니다.
+지원되는 경우 `forceFlash` 매개 변수를 사용하여 재생 기술 결정 시퀀스를 재정의하고 구현에서 Flash Player을 사용하도록 할 수 있습니다.
 
 <!--<a id="section_FEE3205B532446498771F7DD55B5E79F"></a>-->
 
