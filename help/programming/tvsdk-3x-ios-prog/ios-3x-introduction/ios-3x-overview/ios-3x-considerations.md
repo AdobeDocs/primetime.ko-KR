@@ -17,7 +17,7 @@ ht-degree: 0%
 
 TVSDK를 가장 효과적으로 사용하려면 구체적인 운영 사항을 고려하고 특정 모범 사례를 따라야 합니다.
 
-## 고려 사항 {#section_tvsdk_considerations}
+## {#section_tvsdk_considerations} 고려 사항
 
 TVSDK를 사용할 때는 다음 정보를 기억하십시오.
 
@@ -45,7 +45,7 @@ TVSDK를 사용할 때는 다음 정보를 기억하십시오.
 
       사용자 에이전트 문자열 값은 운영 체제에서 지정하는 값으로 기본값이 설정됩니다.
 
-## 모범 사례 {#section_tvsdk_best_practices}
+## 우수 사례 {#section_tvsdk_best_practices}
 
 다음은 TVSDK에 대한 권장 방법입니다.
 
