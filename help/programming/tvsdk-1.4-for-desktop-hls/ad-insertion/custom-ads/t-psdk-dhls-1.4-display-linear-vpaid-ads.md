@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# 선형 VPAID 광고를 광고 중단으로 표시{#display-linear-vpaid-ads-in-an-ad-break}
+# 선형 VPAID 광고를 광고 중단{#display-linear-vpaid-ads-in-an-ad-break}에 표시
 
 TVSDK는 광고 중단에서 선형 비디오 플레이어-광고 인터페이스 정의(VPAID) 광고 표시를 지원합니다. VPAID 버전 1.0에는 Flash이 필요하며 버전 2.0은 Browser TVSDK 및 JavaScript에서도 작동합니다.
 
-VPAID 광고를 올바로 표시하려면 인스턴스 내에 광고 컨테이너( `AdContainerView`)를 제공해야 `MediaPlayerContext` 합니다.
+VPAID 광고를 올바르게 표시하려면 `MediaPlayerContext` 인스턴스 내에 광고 컨테이너( `AdContainerView`)를 제공해야 합니다.
 
 VPAID 광고의 제한 사항:
 
