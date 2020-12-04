@@ -46,7 +46,7 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
   <tr> 
    <td colname="col1"><span class="codeph"> name</span> </td> 
    <td colname="col02"> 문자열 </td> 
-   <td colname="col2">시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG인</span>경우 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3이면</span>null입니다. </td> 
+   <td colname="col2">시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG</span>이면 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3</span>이면 null입니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> time</span> </td> 
