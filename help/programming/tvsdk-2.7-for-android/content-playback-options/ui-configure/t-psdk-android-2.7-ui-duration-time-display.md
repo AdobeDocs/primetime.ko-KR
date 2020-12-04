@@ -1,43 +1,46 @@
 ---
-description: TV SDK를 사용하여 플레이어의 미디어 위치에 대한 정보를 검색하고 검색 표시줄에 표시할 수 있습니다.
-seo-description: TV SDK를 사용하여 플레이어의 미디어 위치에 대한 정보를 검색하고 검색 표시줄에 표시할 수 있습니다.
+description: TVSDK를 사용하여 미디어 상의 플레이어의 위치에 대한 정보를 검색하고 검색 막대에 표시할 수 있습니다.
+seo-description: TVSDK를 사용하여 미디어 상의 플레이어의 위치에 대한 정보를 검색하고 검색 막대에 표시할 수 있습니다.
 seo-title: 비디오 지속 시간, 현재 시간 및 남은 시간 표시
 title: 비디오 지속 시간, 현재 시간 및 남은 시간 표시
 uuid: 13627fa2-8cd8-4336-bc4b-7e3226330389
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 0%
 
 ---
 
 
-# 비디오 지속 시간, 현재 시간 및 남은 시간 표시 {#display-the-duration-current-time-and-remaining-time-of-the-video}
+# 비디오 {#display-the-duration-current-time-and-remaining-time-of-the-video}의 지속 시간, 현재 시간 및 남은 시간을 표시합니다.
 
-TV SDK를 사용하여 플레이어의 미디어 위치에 대한 정보를 검색하고 검색 표시줄에 표시할 수 있습니다.
+TVSDK를 사용하여 미디어 상의 플레이어의 위치에 대한 정보를 검색하고 검색 막대에 표시할 수 있습니다.
 
 1. 플레이어가 준비 상태 이상 될 때까지 기다립니다.
-1. 메서드를 사용하여 현재 재생 헤드 시간을 `MediaPlayer.getCurrentTime` 검색합니다.
+1. `MediaPlayer.getCurrentTime` 메서드를 사용하여 현재 재생 헤드 시간을 검색합니다.
 
-   가상 타임라인에서 현재 재생 헤드 위치를 밀리초 단위로 반환합니다. 시간은 기본 스트림으로 분할된 여러 광고나 광고 중단과 같이 대체 컨텐츠의 여러 인스턴스가 포함될 수 있는 해결된 스트림에 대해 계산됩니다. 라이브/선형 스트림의 경우 반환된 시간은 항상 재생 창 범위에 있습니다.
+   가상 타임라인에서 현재 재생 헤드 위치를 밀리초 단위로 반환합니다. 여러 광고나 광고 분리가 기본 스트림에 분할되는 등 대체 컨텐츠의 여러 인스턴스가 포함될 수 있는 해결된 스트림에 대해 시간을 계산합니다. 라이브/선형 스트림의 경우 반환된 시간은 항상 재생 창 범위에 있습니다.
 
    ```java
    long getCurrentTime() throws MediaPlayerException;
    ```
 
 1. 스트림의 재생 범위를 검색하고 지속 시간을 결정합니다.
-   1. 이 `MediaPlayer.getPlaybackRange` 방법을 사용하여 가상 타임라인 시간 범위를 가져옵니다.
+   1. 가상 타임라인 시간 범위를 가져오려면 `MediaPlayer.getPlaybackRange` 메서드를 사용합니다.
 
       ```java
       TimeRange getPlaybackRange() throws MediaPlayerException;
       ```
 
-   1. 이 `MediaPlayer.getPlaybackRange` 방법을 사용하여 가상 타임라인 시간 범위를 가져옵니다.
+   1. 가상 타임라인 시간 범위를 가져오려면 `MediaPlayer.getPlaybackRange` 메서드를 사용합니다.
 
-      * VOD의 경우 범위는 항상 0으로 시작하고 종료 값은 기본 컨텐츠 지속 기간의 합계와 스트림(광고)의 추가 컨텐츠 지속 시간을 합한 값과 같습니다.
-      * 선형/라이브 자산의 경우 범위는 재생 창 범위를 나타냅니다. 이 범위는 재생 중에 변경됩니다.
+      * VOD의 경우 범위는 항상 0으로 시작하고 종료 값은 스트림(광고)의 기본 컨텐츠 지속 시간 및 추가 컨텐츠 지속 시간을 합한 값과 같습니다.
+      * 선형/라이브 자산의 경우 범위는 재생 창 범위를 나타냅니다. 이 범위는 재생되는 동안 변경됩니다.
 
-         TVSDK는 `ITEM_Updated` 콜백을 호출하여 미디어 항목이 새로 고쳐지고 재생 범위를 비롯한 해당 속성이 업데이트되었음을 나타냅니다.
+         TVSDK는 `ITEM_Updated` 콜백을 호출하여 미디어 항목을 새로 고치고 재생 범위를 포함한 해당 속성이 업데이트되었음을 나타냅니다.
 
-1. Android SDK의 클래스 `MediaPlayer` 및 `SeekBar` 클래스에서 사용할 수 있는 메서드를 사용하여 검색 막대 매개 변수를 설정합니다.
+1. Android SDK의 `MediaPlayer` 및 `SeekBar` 클래스에 사용할 수 있는 메서드를 사용하여 seek-bar 매개 변수를 설정합니다.
 
    예를 들어, 다음은 검색 막대와 두 개의 `TextView` 요소를 포함하는 가능한 레이아웃입니다.
 
@@ -77,7 +80,7 @@ TV SDK를 사용하여 플레이어의 미디어 위치에 대한 정보를 검�
 
    ![](assets/seek-bar.jpg){width=&quot;477.000pt&quot;}
 
-   다음 예제에서는 에서 사용할 수 있는 `Clock.java` 도우미 클래스를 `ReferencePlayer`타이머로 사용합니다. 이 클래스는 이벤트 리스너를 설정하고 매 초 또는 지정할 수 있는 다른 시간 초과 값을 트리거합니다. `onTick`
+   다음 예제에서는 `ReferencePlayer`에서 사용할 수 있는 `Clock.java` 도우미 클래스를 타이머로 사용합니다. 이 클래스는 이벤트 리스너를 설정하고 매 초마다 `onTick` 이벤트를 트리거하거나 지정할 수 있는 다른 시간 초과 값을 트리거합니다.
 
    ```java
    playbackClock = new Clock(PLAYBACK_CLOCK, CLOCK_TIMER); 
@@ -90,7 +93,7 @@ TV SDK를 사용하여 플레이어의 미디어 위치에 대한 정보를 검�
    playbackClock.addClockEventListener(playbackClockEventListener);
    ```
 
-   이 예에서는 모든 시계 눈금에 미디어 플레이어의 현재 위치를 검색하고 검색 막대를 업데이트합니다. 두 `TextView` 요소를 사용하여 현재 시간과 재생 범위 종료 위치를 숫자 값으로 표시합니다.
+   이 예제는 모든 클럭 확인 시 미디어 플레이어의 현재 위치를 검색하고 검색 막대를 업데이트합니다. 두 개의 `TextView` 요소를 사용하여 현재 시간과 재생 범위 종료 위치를 숫자 값으로 표시합니다.
 
    ```java
    @Override 
