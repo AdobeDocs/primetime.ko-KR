@@ -17,21 +17,21 @@ ht-degree: 0%
 
 TVSDK 애플리케이션에서 Apple의 DRM 솔루션인 Apple FairPlay Streaming을 구현할 수 있습니다.
 
-1. 구현하여 FairPlay 고객 리소스 로더를 만듭니다 `PTAVAssetResourceLoaderDelegate`.
+1. `PTAVAssetResourceLoaderDelegate`을(를) 구현하여 FairPlay 고객 리소스 로더를 만듭니다.
 
-   자세한 내용은 TVSDK 애플리케이션에서 [Apple FairPlay를 참조하십시오](../../c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md).
+   자세한 내용은 [TVSDK 응용 프로그램의 Apple FairPlay](../../c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)를 참조하십시오.
 
    >[!NOTE]
    >
-   >FPS 인식 앱 *개발을 위한* FairPlay Server SDK에 포함되어 있는 FairPlay 스트리밍 프로그램 안내서 *(* FairPlayStreaming_PG.pdf [)의 지침을 따라야 합니다](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip).
+   >[FPS 인식 앱 개발을 위한 FairPlay Server SDK](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)에 포함되어 있는 *FairPlay 스트리밍 프로그램 안내서*(*FairPlayStreaming_PG.pdf*)의 지침을 따라야 합니다.
 
-   그 `resourceLoader:shouldWaitForLoadingOfRequestedResource` 방법은 안에 있는 것과 같다 `AVAssetResourceLoaderDelegate`.
+   `resourceLoader:shouldWaitForLoadingOfRequestedResource` 메서드는 `AVAssetResourceLoaderDelegate`에 있는 메서드에 해당합니다.
 
    >[!IMPORTANT]
    >
-   >ExpressPlay 라이선스 서버 시나리오에서 콘텐트를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL의 URL 체계를 (또는) `skd://` 에서 ( `https://` 또는 `https://`)로 변경합니다.
+   >ExpressPlay 라이선스 서버 시나리오에서 콘텐트를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL의 URL 체계를 `skd://`에서 `https://`(또는 `https://`)으로 변경하십시오.
 
-1. FairPlay *고객 리소스* 로더를 등록하십시오 `registerPTAVAssetResourceLoader`.
+1. *FairPlay* 고객 리소스 로더를 `registerPTAVAssetResourceLoader`와(와) 등록하십시오.
 
    ```
    PTFairPlayResourceLoader *resourceLoader =  
