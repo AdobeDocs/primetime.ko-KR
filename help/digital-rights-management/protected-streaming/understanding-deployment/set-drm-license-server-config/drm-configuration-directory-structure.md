@@ -4,13 +4,16 @@ title: 구성 디렉토리 구조
 uuid: 90ddd205-9dc6-4be1-ab10-ac37d93192c2
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '16'
+ht-degree: 0%
 
 ---
 
 
-# 구성 디렉토리 구조{#configuration-directory-structure}
+# 구성 디렉터리 구조{#configuration-directory-structure}
 
-구성 디렉토리에는 다음과 같은 구조가 있습니다.
+구성 디렉토리는 다음과 같은 구조를 가집니다.
 
 ```
 <i class="+ topic ph hi-d="" i "="">
