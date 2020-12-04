@@ -1,27 +1,31 @@
 ---
-description: 미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환된 시간, 폭 및 높이 정보 또는 다른 비트 전송률이 사용된 이유 등 스위치에 대한 정보를 검색할 수 있습니다.
-seo-description: 미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환된 시간, 폭 및 높이 정보 또는 다른 비트 전송률이 사용된 이유 등 스위치에 대한 정보를 검색할 수 있습니다.
+description: 미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환된 시간, 너비 및 높이 정보 또는 다른 비트 전송률을 사용한 이유를 비롯하여 스위치에 대한 정보를 검색할 수 있습니다.
+seo-description: 미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환된 시간, 너비 및 높이 정보 또는 다른 비트 전송률을 사용한 이유를 비롯하여 스위치에 대한 정보를 검색할 수 있습니다.
 seo-title: 프로필 스위치에 대한 정보 얻기
 title: 프로필 스위치에 대한 정보 얻기
 uuid: e26ad9fb-6c54-450e-ab62-784d9033d214
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 0%
 
 ---
 
 
-# 프로필 스위치에 대한 정보 얻기{#get-information-about-profile-switch}
+# 프로필 전환{#get-information-about-profile-switch}에 대한 정보 얻기
 
-미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환된 시간, 폭 및 높이 정보 또는 다른 비트 전송률이 사용된 이유 등 스위치에 대한 정보를 검색할 수 있습니다.
+미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환된 시간, 너비 및 높이 정보 또는 다른 비트 전송률을 사용한 이유를 비롯하여 스위치에 대한 정보를 검색할 수 있습니다.
 
-1. 이벤트 `ProfileEvent.PROFILE_CHANGED` 수신
+1. `ProfileEvent.PROFILE_CHANGED` 이벤트를 수신합니다.
 
-   TVSDK 미디어 플레이어는 네트워크나 시스템 조건 때문에 응용 비트 전송률 전환 알고리즘을 다른 프로필로 전환할 때 이 이벤트를 전달합니다. (비트율 또는 기간이 변경될 때)
-1. 이벤트가 발생하면 스위치에 대한 자세한 내용은 다음 속성을 확인하십시오.
+   TVSDK 미디어 플레이어는 네트워크나 시스템 조건 때문에 응용 비트 전송률 전환 알고리즘이 다른 프로필로 전환될 때 이 이벤트를 전달합니다. (비트 전송률 또는 기간이 변경될 때)
+1. 이벤트가 발생하면 다음 속성을 확인하여 스위치에 대한 정보를 확인하십시오.
 
    * `profile`:사용 중인 새 프로필의 식별자입니다.
    * `time`:전환이 발생한 스트림 시간입니다.
-   * `description`:세미콜론으로 구분된 키/값 쌍의 문자열로, 비트율 변경 이유에 대한 텍스트 설명입니다. 최대 1개와 1개를 `Reason` 포함합니다 `Bitrate`. 정보를 사용할 수 없거나 비트 전송률이 변경되지 않은 경우 이 문자열은 비어 있습니다.
+   * `description`:세미콜론으로 구분된 키/값 쌍으로 이루어진 문자열, 비트율 변경 이유에 대한 텍스트 설명입니다. 최대 1개의 `Reason` 및 1개의 `Bitrate`을 포함합니다. 정보를 사용할 수 없거나 비트 속도가 변경되지 않은 경우 이 문자열은 비어 있습니다.
+
    <table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
     <thead> 
       <tr> 
@@ -31,7 +35,7 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <span class="codeph"> 이유 </span> </td> 
+      <td colname="col1"> <span class="codeph"> 이유  </span> </td> 
       <td colname="col2"> 
        <ul id="ul_37DDE3F297634ED6B47DF5D73F969369"> 
        <li id="li_E374B029E1AF40689D70A9D30E057C5B">네트워크 적용 </li> 
@@ -41,30 +45,30 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
        </ul> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <span class="codeph"> 비트 전송률 </span> </td> 
+      <td colname="col1"> <span class="codeph"> 비트 전송률  </span> </td> 
       <td colname="col2"> 
        <ul id="ul_1B49BD90A91147359712E1AFD8877E23"> 
-       <li id="li_1C8E593C65D34742B14A8D0EAD43E0A9"> <span class="codeph"> up </span>:비트 전송률 증가 </li> 
-       <li id="li_B1A00E3985A849B6855E15CF70D79BB8"> <span class="codeph"> 다운 </span>:비트 전송률이 감소했습니다 </li> 
+       <li id="li_1C8E593C65D34742B14A8D0EAD43E0A9"> <span class="codeph"> up  </span>:비트 전송률 증가 </li> 
+       <li id="li_B1A00E3985A849B6855E15CF70D79BB8"> <span class="codeph"> 다운  </span>:비트 전송률이 감소했습니다 </li> 
        </ul> </td> 
       </tr> 
     </tbody>
 </table>
 
-    다음은 반환된 &#39;description&#39; 문자열의 일부 예입니다.
+    다음은 반환된 &#39;description&#39; 문자열:
     
     &quot;
-    &quot;비트 전송률::=up;이유::=Network Adaptive;&quot;
+    &quot;비트 전송률::=up;Reason::=Network Adaptive;&quot;
     
     &quot;비트 전송률::=down;Reason:=Failover;&quot;
     &quot;
     
-    * &#39;width&#39;:너비를 픽셀 단위로 나타내는 정수
-    * &#39;height&#39;:높이를 픽셀 단위로 나타내는 정수.
+    * &#39;width&#39;의 몇 가지 예입니다.너비를 픽셀 단위로 나타내는 정수
+    * &#39;height&#39;:높이를 픽셀 단위로 나타내는 정수
     
     >[!NOTE]
     >
-    >너비 및 높이 데이터는 M3U8 매니페스트의 &#39;RESOLUTION&#39; 태그에 포함된 경우에만 사용할 수 있습니다. M3U8에 정보가 포함되지 않은 경우 프로파일 정보의 일부가 아니므로 너비와 높이 속성이 0으로 설정됩니다.
+    >너비 및 높이 데이터는 M3U8 매니페스트의 &#39;RESOLUTION&#39; 태그에 포함되는 경우에만 사용할 수 있습니다. M3U8에 정보가 포함되지 않은 경우 프로필 정보에 포함되지 않으므로 폭 및 높이 속성이 0으로 설정됩니다.
 
 <!--<a id="example_A713D420AE2E4E3CB7B78C6BC732BE90"></a>-->
 
