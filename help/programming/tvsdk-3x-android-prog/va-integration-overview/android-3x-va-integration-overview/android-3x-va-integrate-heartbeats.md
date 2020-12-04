@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 비디오 분석 초기화 및 구성 {#initialize-and-configure-video-analytics}
+# 비디오 분석 시작 및 구성 {#initialize-and-configure-video-analytics}
 
 비디오 사용을 추적 및 분석하도록 플레이어를 구성할 수 있습니다.
 비디오 추적(비디오 하트비트)을 활성화하기 전에 다음 사항을 확인하십시오.
@@ -26,8 +26,8 @@ ht-degree: 0%
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json </span> </td> 
-   <td colname="col2"> <p>중요: 이 JSON 구성 파일 이름은 ADBMobileConfig.json <span class="filepath"> 으로 유지되어야 합니다 </span>. 이 구성 파일의 이름과 경로는 변경할 수 없습니다. 이 파일의 경로는 <span class="filepath"> &lt;소스 루트&gt;/자산이어야 합니다 </span>. </p> </td> 
+   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json  </span> </td> 
+   <td colname="col2"> <p>중요: 이 JSON 구성 파일 이름은 <span class="filepath"> ADBMobileConfig.json </span>으로 유지되어야 합니다. 이 구성 파일의 이름과 경로는 변경할 수 없습니다. 이 파일의 경로는 <span class="filepath"> &lt;source root&gt;/assets </span>이어야 합니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> AppMeasurement 추적 서버 끝점 </td> 
@@ -35,7 +35,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> 비디오 분석 추적 서버 끝점 </td> 
-   <td colname="col2"> 비디오 분석 백엔드 컬렉션 끝점의 URL. 이 위치에서 모든 비디오 하트비트 추적 호출이 전송됩니다. <p>팁: 방문자 추적 서버의 URL은 분석 추적 서버의 URL과 동일합니다. 방문자 ID 서비스 구현에 대한 자세한 내용은 ID 서비스 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> 구현을 참조하십시오 </a>. </p> </td> 
+   <td colname="col2"> 비디오 분석 백엔드 컬렉션 끝점의 URL. 이 위치에서 모든 비디오 하트비트 추적 호출이 전송됩니다. <p>팁: 방문자 추적 서버의 URL은 분석 추적 서버의 URL과 동일합니다. 방문자 ID 서비스 구현에 대한 자세한 내용은 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> ID 서비스 구현 </a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 계정 이름 </td> 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 플레이어에서 비디오 추적을 구성하려면:
 
-1. 리소스 파일의 로드 시간 옵션이 `ADBMobileConfig.json` 올바른지 확인합니다.
+1. `ADBMobileConfig.json` 리소스 파일의 로드 시간 옵션이 올바른지 확인합니다.
 
    ```
    { 
@@ -84,7 +84,7 @@ ht-degree: 0%
    로드 시간 옵션을 구성하려면:
 
 
-   1. 파일에 `ADBMobileConfig.json` 적절한 값(Adobe에서 제공)이 포함되어 있는지 확인합니다.
+   1. `ADBMobileConfig.json` 파일에 적절한 값(Adobe에서 제공)이 포함되어 있는지 확인합니다.
    1. 이 파일이 `assets/` 폴더에 있는지 확인합니다.
 
       이 폴더는 응용 프로그램 소스 트리의 루트에 있어야 합니다.
@@ -92,7 +92,7 @@ ht-degree: 0%
    1. 애플리케이션을 컴파일하고 구축할 수 있습니다.
    1. 번들 애플리케이션을 배포 및 실행합니다.
 
-      이러한 AppMeasurement 설정에 대한 자세한 내용은 Adobe Analytics에서 [비디오 측정을 참조하십시오](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/).
+      이러한 AppMeasurement 설정에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/)을 참조하십시오.
 
 1. 비디오 하트비트 추적 메타데이터를 초기화하고 구성합니다.
 
@@ -135,13 +135,13 @@ ht-degree: 0%
       VideoAnalyticsProvider videoAnalyticsProvider = new VideoAnalyticsProvider(appContext); 
       ```
 
-   1. 인스턴스에 비디오 분석 메타데이터를 `videoAnalyticsProvider` 설정합니다.
+   1. `videoAnalyticsProvider` 인스턴스에서 비디오 분석 메타데이터를 설정합니다.
 
       ```java
       videoAnalyticsProvider.setVideoAnalyticsMetadata(vaMetadata);
       ```
 
-   1. 미디어 플레이어 인스턴스를 인스턴스에 `videoAnalyticsProvider` 첨부합니다.
+   1. 미디어 플레이어 인스턴스를 `videoAnalyticsProvider` 인스턴스에 첨부:
 
       ```java
       videoAnalyticsProvider.attachMediaPlayer(mediaPlayer); 
