@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 명령줄 사용 {#command-line-usage}
 
-Media Packager를 사용하기 전에 요구 사항에 나열된 요구 사항을 충족하고 구성 파일에 필요한 정보가 포함되어 있는지 확인하십시오(Adobe 액세스 참조 구현 사용 *의 구성 파일 참조*).
+Media Packager를 사용하기 전에 요구 사항에 나열된 요구 사항을 충족하고 구성 파일에 필요한 정보가 포함되어 있는지 확인하십시오(*Adobe 액세스 참조 구현 사용*&#x200B;의 구성 파일 참조).
 
 Media Packager는 DVD의 [!DNL \Reference Implementation\Command Line tools] 디렉토리에 있습니다. 단일 파일을 암호화하려면 다음 구문을 사용하십시오.
 
@@ -68,11 +68,11 @@ java -jar AdobePackager.jar -d
 java -jar AdobePackager.jar -dm <metadatafile> [-e]
 ```
 
-* `metadatafile` 은 DRM 메타데이터가 포함된 [!DNL .metadata] 파일입니다.
+* `metadatafile` 은 DRM 메타데이터가 포함된  [!DNL .metadata] 파일입니다.
 
 >[!NOTE]
 >
->패키징 중에 Media Packager는 기본적으로 .header 파일을 더 이상 생성하지 않습니다. 이 파일을 생성하려면 패키지하는 동안 옵션을 `-h` 사용하십시오.
+>패키징 중에 Media Packager는 기본적으로 .header 파일을 더 이상 생성하지 않습니다. 이 파일을 생성하려면 패키지하는 동안 `-h` 옵션을 사용하십시오.
 
 다음 표에는 위의 구문에 나와 있는 명령줄 옵션에 대한 설명이 나와 있습니다.
 
@@ -85,11 +85,11 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
  </thead>
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-c <span class="+ topic/ph pr-d/codeph codeph"> 구성 파일 </span> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">구성 파일의 위치를 지정합니다. 이 옵션을 사용하지 않으면 Media Packager에서 작업 디렉토리에서 flashaccesstools.properties <span class="filepath"> </span> 를 찾습니다. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-c <span class="+ topic/ph pr-d/codeph codeph"> configfile </span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">구성 파일의 위치를 지정합니다. 이 옵션을 사용하지 않으면 Media Packager는 작업 디렉토리에서 <span class="filepath"> flashaccesstools.properties </span>을 찾습니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-d <span class="+ topic/ph pr-d/codeph codeph"> 암호화 파일 </span> </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-d <span class="+ topic/ph pr-d/codeph codeph"> 암호화된 파일 </span> </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">이미 패키지된 파일에 대한 정보를 표시합니다. 소스 파일과 대상 파일은 필요하지 않습니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
@@ -98,27 +98,27 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-e </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">패키지 파일에서 정책을 추출하려면 이 옵션 <span class="codeph"> 과 -d </span> 를 함께 사용하십시오. 파일 이름 및 정책 식별자를 사용하여 암호화된 파일과 같은 디렉토리에 파일이 만들어집니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">패키지된 파일에서 정책을 추출하려면 <span class="codeph"> -d </span>와 함께 이 옵션을 사용하십시오. 파일 이름 및 정책 식별자를 사용하여 암호화된 파일과 같은 디렉토리에 파일이 만들어집니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-h </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">-d와 함께 <span class="codeph"> 사용하면 패키지된 파일 </span> 에서 DRM 헤더를 추출할 수 있습니다. 파일 이름 및 확장명을 사용하여 파일을 암호화된 파일과 동일한 디렉토리에 <span class="filepath"> .header </span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">패키징된 파일에서 DRM 헤더를 추출하려면 <span class="codeph"> -d </span>와 함께 사용하십시오. 파일 이름 및 확장명 <span class="filepath"> .header </span>을 사용하여 암호화된 파일과 동일한 디렉토리에 파일이 만들어집니다 </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-i content <span class="+ topic/ph pr-d/codeph codeph"> ID </span> </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-i <span class="+ topic/ph pr-d/codeph codeph"> contentID </span> </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">이 콘텐츠 부분에 대한 고유 식별자를 지정합니다. 식별자를 지정하지 않으면 대상 파일 이름이 사용됩니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-k <span class="+ topic/ph pr-d/codeph codeph"> key </span>= <span class="+ topic/ph pr-d/codeph codeph"> 값 </span> </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-k <span class="+ topic/ph pr-d/codeph codeph"> 키 </span>= <span class="+ topic/ph pr-d/codeph codeph"> 값 </span> </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">콘텐츠 메타데이터에 추가할 사용자 지정 키/값을 지정합니다. 다중 <span class="codeph"> -k </span> 옵션을 지정할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-m </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">패키지 파일에서 메타데이터를 추출하려면 이 옵션 <span class="codeph"> 과 -d </span> 를 함께 사용하십시오. 파일 이름 및 확장자 .metadata를 사용하여 암호화된 파일과 같은 디렉토리에 파일이 <span class="codeph"> 생성됩니다 </span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">패키지된 파일에서 메타데이터를 추출하려면 <span class="codeph"> -d </span>와 함께 이 옵션을 사용하십시오. 파일 이름 및 확장명 <span class="codeph"> .metadata </span>를 사용하여 암호화된 파일과 동일한 디렉토리에 파일이 생성됩니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-noprompt </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">대상 파일을 덮어쓸지 여부를 묻지 않습니다. 대상 파일이 이미 있고 - <span class="codeph"> o를 설정하지 </span> 않으면 오류가 반환됩니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">대상 파일을 덮어쓸지 여부를 묻지 않습니다. 대상 파일이 이미 있고 <span class="codeph"> -o </span>이(가) 설정되어 있지 않으면 오류가 반환됩니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-o </p> </td> 
