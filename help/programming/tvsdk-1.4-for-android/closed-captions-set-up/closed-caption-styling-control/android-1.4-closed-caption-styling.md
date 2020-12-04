@@ -17,18 +17,18 @@ ht-degree: 0%
 
 TextFormat 클래스를 사용하여 자막 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 자막의 스타일을 설정합니다.
 
-이 클래스는 글꼴 유형, 크기, 색상 및 배경 불투명도와 같은 자막 스타일 정보를 캡슐화합니다. 관련 헬퍼 클래스로, 자막 스타일 설정 `TextFormatBuilder`을 사용하여 쉽게 작업할 수 있습니다.
+이 클래스는 글꼴 유형, 크기, 색상 및 배경 불투명도와 같은 자막 스타일 정보를 캡슐화합니다. 연결된 헬퍼 클래스 `TextFormatBuilder`에서는 자막 스타일 설정을 사용하여 작업을 쉽게 할 수 있습니다.
 
-## 자막 스타일 설정 {#set-closed-caption-styles}
+## 닫힌 캡션 스타일 {#set-closed-caption-styles} 설정
 
 TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있습니다.
 
 1. 미디어 플레이어가 준비 상태 이상 될 때까지 기다립니다.
-1. 인스턴스를 `TextFormatBuilder` 만듭니다.
+1. `TextFormatBuilder` 인스턴스를 만듭니다.
 
    이제 모든 자막 스타일 지정 매개 변수를 제공하거나 나중에 설정할 수 있습니다.
 
-   TVSDK는 `TextFormat` 인터페이스에 자막 스타일 정보를 캡슐화합니다. 이 `TextFormatBuilder` 인터페이스를 구현하는 객체를 만듭니다.
+   TVSDK는 `TextFormat` 인터페이스에서 자막 스타일 정보를 캡슐화합니다. `TextFormatBuilder` 클래스는 이 인터페이스를 구현하는 개체를 만듭니다.
 
    ```java
    public TextFormatBuilder( 
@@ -44,7 +44,7 @@ TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있�
       int fillOpacity)
    ```
 
-1. 인터페이스를 구현하는 개체에 대한 참조를 얻으려면 `TextFormat` public 메서드를 `TextFormatBuilder.toTextFormat` 호출합니다.
+1. `TextFormat` 인터페이스를 구현하는 개체에 대한 참조를 얻으려면 `TextFormatBuilder.toTextFormat` public 메서드를 호출합니다.
 
    미디어 플레이어에 적용할 수 있는 `TextFormat` 개체를 반환합니다.
 
@@ -54,7 +54,7 @@ TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있�
 
 1. 원하는 경우 다음 중 하나를 수행하여 현재 자막 스타일 설정을 가져옵니다.
 
-   * 모든 스타일 설정을 사용할 수 있습니다 `MediaPlayer.getCCStyle`.
+   * `MediaPlayer.getCCStyle`으로 모든 스타일 설정을 가져옵니다.
 
       반환 값은 `TextFormat` 인터페이스의 인스턴스입니다.
 
@@ -68,7 +68,7 @@ TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있�
       public TextFormat getCCStyle() throws IllegalStateException;
       ```
 
-   * 인터페이스 getter 메서드를 통해 한 번에 하나씩 설정을 `TextFormat` 가져옵니다.
+   * `TextFormat` 인터페이스 getter 메서드를 통해 한 번에 하나씩 설정을 가져옵니다.
 
       ```js
       public Color getFontColor(); 
@@ -88,7 +88,7 @@ TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있�
    >
    >WebVTT 캡션의 크기는 변경할 수 없습니다.
 
-   * setter 메서드를 사용하여 인터페이스 인스턴스 `MediaPlayer.setCCStyle`를 `TextFormat` 전달합니다.
+   * setter 메서드 `MediaPlayer.setCCStyle`를 사용하여 `TextFormat` 인터페이스의 인스턴스를 전달합니다.
 
       ```js
       /** 
@@ -106,7 +106,7 @@ TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있�
 
    * 개별 setter 메서드를 정의하는 `TextFormatBuilder` 클래스를 사용하십시오.
 
-      인터페이스는 변경할 수 없는 객체를 정의하므로 getter 메서드만 있고 setter는 없습니다. `TextFormat` 닫힌 캡션 스타일 매개 변수는 `TextFormatBuilder` 클래스와 함께 설정할 수만 있습니다.
+      `TextFormat` 인터페이스는 변경할 수 없는 개체를 정의하므로 getter 메서드만 있고 setter는 없습니다. `TextFormatBuilder` 클래스로만 닫힌 캡션 스타일 매개 변수를 설정할 수 있습니다.
 
       ```js
       // set font type 
@@ -161,25 +161,25 @@ public TextFormatBuilder(
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> 글꼴 </td> 
-   <td colname="2"> <p>글꼴 유형입니다. </p> <p>TextFormat.Font 열거형으로 정의된 값 <span class="codeph"> </span> 으로 설정할 수 있으며 serifs를 포함하거나 포함하지 않는 고정 간격(예: </p> <p>팁: 장치에서 사용할 수 있는 실제 글꼴은 다를 수 있으며 필요한 경우 대체 글꼴을 사용합니다. 이 대체는 시스템별로 지정할 수 있지만, serifs가 있는 고정 공간은 일반적으로 대용으로 사용됩니다. </p> </td> 
+   <td colname="2"> <p>글꼴 유형입니다. </p> <p><span class="codeph"> TextFormat.Font </span> 열거형으로 정의된 값으로만 설정할 수 있으며 serifs를 포함하거나 포함하지 않고 고정 간격(예: )을 나타냅니다. </p> <p>팁: 장치에서 사용할 수 있는 실제 글꼴은 다를 수 있으며 필요한 경우 대체 글꼴을 사용합니다. 이 대체는 시스템별로 지정할 수 있지만, serifs가 있는 고정 공간은 일반적으로 대용으로 사용됩니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 크기 </td> 
-   <td colname="2"> <p>캡션의 크기입니다. </p> <p> TextFormat.Size 열거형으로 정의된 값만 설정할 수 <span class="codeph"> </span> 있습니다. 
+   <td colname="2"> <p>캡션의 크기입니다. </p> <p> <span class="codeph"> TextFormat.Size </span> 열거에 의해 정의된 값만 설정할 수 있습니다. 
      <ul compact="yes" id="ul_544BFC7A46474A74839477108F1AB1E9"> 
-      <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM </span> - 표준 크기 </li> 
-      <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> LARGE </span> - 중간 크기보다 약 30% 더 크게 </li> 
-      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> SMALL </span> - 중간 크기보다 약 30% 작음 </li> 
-      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> DEFAULT </span> - 캡션의 기본 크기입니다.미디어와 동일 </li> 
+      <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> 중간  </span> - 표준 크기 </li> 
+      <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> LARGE  </span> - 중간 크기보다 약 30% 큼 </li> 
+      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> 소형  </span> - 중간 크기보다 약 30% 작음 </li> 
+      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> DEFAULT  </span> - 캡션의 기본 크기입니다.미디어와 동일 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 글꼴 가장자리 </td> 
-   <td colname="2"> <p>글꼴 가장자리에 사용된 효과(예: 높이거나 없음). </p> <p>TextFormat.FontEdge 열거형으로 정의된 값만 설정할 <span class="codeph"> 수 </span> 있습니다. </p> </td> 
+   <td colname="2"> <p>글꼴 가장자리에 사용된 효과(예: 높이거나 없음). </p> <p><span class="codeph"> TextFormat.FontEdge </span> 열거형으로 정의된 값만 설정할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 글꼴 색상 </td> 
-   <td colname="2"> <p>글꼴 색상 </p> <p>TextFormat.Color 열거형으로 정의된 값만 설정할 수 <span class="codeph"> </span> 있습니다. </p> </td> 
+   <td colname="2"> <p>글꼴 색상 </p> <p><span class="codeph"> TextFormat.Color </span> 열거에 의해 정의된 값만 설정할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 가장자리 색상 </td> 
@@ -199,11 +199,11 @@ public TextFormatBuilder(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 배경 불투명도 </td> 
-   <td colname="2"> <p>배경 문자 셀의 불투명도입니다. </p> <p>0(완전 투명)에서 100(완전히 불투명)까지의 백분율로 표현됩니다. <span class="codeph"> 배경에 대한 DEFAULT_OPACITY </span> 는 100입니다. </p> </td> 
+   <td colname="2"> <p>배경 문자 셀의 불투명도입니다. </p> <p>0(완전 투명)에서 100(완전히 불투명)까지의 백분율로 표현됩니다. <span class="codeph"> 배경에  </span> 대한 DEFAULT_OPACITY는 100입니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 칠 불투명도 </td> 
-   <td colname="2"> <p>캡션 창의 배경 불투명도입니다. </p> <p>0(완전 투명)에서 100(완전히 불투명)까지의 백분율로 표현됩니다. <span class="codeph"> 채우기에 대한 DEFAULT_OPACITY </span> 는 0입니다. </p> </td> 
+   <td colname="2"> <p>캡션 창의 배경 불투명도입니다. </p> <p>0(완전 투명)에서 100(완전히 불투명)까지의 백분율로 표현됩니다. <span class="codeph"> 채우기에  </span> 대한 DEFAULT_OPACITY는 0입니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
