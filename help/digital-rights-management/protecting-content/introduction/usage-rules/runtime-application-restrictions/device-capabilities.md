@@ -46,5 +46,5 @@ ht-degree: 0%
 >
 >이 사용 규칙은 Adobe Primetime DRM 클라이언트 버전 2.0.2 이상에서 지원됩니다. 이전 클라이언트의 동작은 라이선스 서버에서 지원하는 최소 클라이언트 버전에 따라 달라집니다.
 >
->최소 [클라이언트 버전을 참조하십시오](../../../../protecting-content/setting-up-the-sdk/setup-dev-env.md).
+>[최소 클라이언트 버전](../../../../protecting-content/setting-up-the-sdk/setup-dev-env.md)을 참조하십시오.
 
