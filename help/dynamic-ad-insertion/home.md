@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: fac84687085f289e984c189665bfe775337592b3
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 18%
 
 Adobe Primetime Ad Insertion을 사용하면 버퍼링이나 재생 오류 없이 타겟팅된 광고 경험을 만들 수 있습니다. 광고를 실시간, 선형 또는 VOD 컨텐츠에 삽입할 수 있습니다. 또한 Primetime과 선도적인 광고 서버와의 기존 통합을 활용하여 복잡성을 최소화할 수 있습니다. Skipable VAST Ads에 대한 지원과 항상 정확한 광고 경험을 제공합니다. 다양한 디바이스에서 고객을 위한 보기 경험을 제공하여 고객 참여도와 매출을 높일 수 있습니다.
 
-## Primetime Ad Insertion Help {#ad-insertion-user-guide}
+## Primetime Ad Insertion 도움말 {#ad-insertion-user-guide}
 
 이 자가 도움말 가이드는 서버에 사용자 타깃팅된 동적 광고를 삽입하여 컨텐츠를 상용화하는 방법과 개인화된 광고를 통해 고객의 참여를 유도하는 방법을 설명합니다. 왼쪽의 탐색을 사용하여 다양한 구성이 어떻게 상호 작용하고 광고 삽입을 추적하는 방법을 드릴다운합니다.
 
-## 자세한 내용은 {#ptaisee-also}
+## {#ptaisee-also} 참조
 
 | 사용 안내서 | 설명 |
 |---|---|
@@ -31,7 +31,7 @@ Adobe Primetime Ad Insertion을 사용하면 버퍼링이나 재생 오류 없�
 | [매니페스트 서버 디버깅 도구](manifest-server-debugging-tool.md) | Manifest Server 디버깅 도구에 대한 통찰력과 광고 삽입 문제를 조사하는 데 제공하는 정보를 제공합니다. |
 | [Creative Repackaging Service 개요](creative-repackaging-service/crs-overview.md) | CRS가 HLS가 아닌 HLS 광고 크리에이티브가 HLS 스트림에서 제대로 재생되도록 보장하는 방법에 대해 설명합니다. |
 
-## Primetime 사용자 가이드 {#other-primetime-helps}
+## Primetime 사용자 안내서 {#other-primetime-helps}
 
 | 사용 안내서 | 설명 |
 |---|---|
