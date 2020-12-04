@@ -19,7 +19,7 @@ AIR 파일을 빌드하면 ADT(AIR Developer Tool)가 자동으로 Publisher ID�
 
 >[!NOTE]
 >
->AIR 허용 목록 실행에 사용되는 게시자 ID는 응용 프로그램 게시자가 응용 프로그램의 [!DNL application.xml] 파일에서 지정하는 게시자 ID와 다릅니다.
+>AIR 허용 목록 실행에 사용되는 게시자 ID는 응용 프로그램의 [!DNL application.xml] 파일에서 응용 프로그램 게시자가 지정하는 게시자 ID와 다릅니다.
 
 ## AIR 게시자 ID 유틸리티 명령줄 사용 {#air-publisher-id-utility-command-line-usage}
 
@@ -37,7 +37,7 @@ java -jar AdobePublisherIDUtility.jar
 ```
 
 * 
-   * `signaturefile`* 응용 프로그램 디렉토리에 있는 AIR 응용 프로그램 [!DNL signatures.xml] 파일의 경로를 [!DNL META-INF] 지정합니다.
+   * `signaturefile`* 응용 프로그램  [!DNL signatures.xml] 디렉토리에 있는 AIR 응용 프로그램  [!DNL META-INF] 파일의 경로를 지정합니다.
 
 * `signingcert` AIR 응용 프로그램 서명에 사용되는 인증서를 지정합니다.
 
