@@ -40,16 +40,17 @@ TVSDK 알림 시스템에서는 진단 메타데이터를 제공하는 다양한
      <li id="li_6D3EA03845294DC2BAD1ACF507639E51">정보 알림 이벤트(30000~39999) </li> 
     </ul> <p>오류와 같은 각 최상위 수준 범위는 재생 오류를 나타내는 101000부터 101999까지의 하위 범위로 나누어집니다. </p>
     <pre>
-     열거형 <span class="codeph"> mediacore.PSDKErrorCode는</span> 가능한 값을 나열합니다.
+     열거형 
+     <span class="codeph"> mediacore.PSDKErrorCode</span> 에는 가능한 값이 표시됩니다.
     </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> name </td> 
-   <td colname="2">SEEK_ERROR와 같이 사람이 읽을 수 있는 코드 설명을 포함하는 <span class="codeph"> 문자열입니다</span>. </td> 
+   <td colname="2"><span class="codeph"> SEEK_ERROR</span>과 같이, 읽을 수 있는 코드 설명이 들어 있는 문자열. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 메타데이터 </td> 
-   <td colname="2">알림에 대한 추가 관련 정보가 들어 있는 키/값 쌍입니다. 예를 들어, URL이라는 키 <span class="codeph"></span> 는 오류를 일으킨 잘못된 URL과 같이 알림과 관련된 URL인 값과 쌍을 이루게 됩니다. </td> 
+   <td colname="2">알림에 대한 추가 관련 정보가 들어 있는 키/값 쌍입니다. 예를 들어 <span class="codeph"> URL</span>이라는 키는 오류를 일으킨 잘못된 URL과 같이 알림과 관련된 URL인 값과 쌍을 이루게 됩니다. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"> innerNotification </td> 
