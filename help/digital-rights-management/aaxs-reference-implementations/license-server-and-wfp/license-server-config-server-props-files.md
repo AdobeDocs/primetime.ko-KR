@@ -21,7 +21,7 @@ ht-degree: 0%
 
 자격 증명 암호를 올바르게 준비하려면 다음을 수행하십시오.
 
-1. 로 [!DNL Reference Implementation\Server\refimpl\scrambler]이동합니다.
+1. [!DNL Reference Implementation\Server\refimpl\scrambler]으로 이동합니다.
 1. 명령 프롬프트에서 명령을 입력합니다.
 
    ```
