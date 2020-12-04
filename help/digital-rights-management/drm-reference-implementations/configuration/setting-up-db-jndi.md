@@ -32,18 +32,18 @@ ht-degree: 0%
 
 1. DVD에서 [!DNL Third Party\MySQL\Installer\5.1] 폴더로 이동하여 설치 프로그램을 시작합니다.
 1. MySQL 설치를 완료합니다.
-1. 구성 마법사 **[!UICONTROL Configure MySQL Server Now]** 를 시작하려면 선택합니다.
+1. **[!UICONTROL Configure MySQL Server Now]**&#x200B;을 선택하여 구성 마법사를 시작합니다.
 1. 다섯 번째 스크린까지 기본 설정을 사용하거나 테스트의 특정 설정을 선택하십시오.
-1. 다섯 번째 화면에서 **[!UICONTROL Online Transaction Processing (OLTP)]** 또는 **[!UICONTROL Manual Setting]** 허용되는 최대 연결 수를 입력합니다.
+1. 다섯 번째 화면에서 **[!UICONTROL Online Transaction Processing (OLTP)]** 또는 **[!UICONTROL Manual Setting]**&#x200B;을 선택하고 허용되는 최대 연결 수를 입력합니다.
 1. 루트 암호를 입력하십시오.
 1. MySQL을 다시 설치하려면 나중에 서버를 시작해야 하는 경우 다음 단계를 수행하십시오.
-   1. 다음 *시스템 드라이브를 삭제합니다.* 폴더.
+   1. *시스템 드라이브:* 폴더를 삭제합니다.
 
-      이 폴더는 에 있습니다 [!DNL \Documents and Settings\All Users\Application Data\MySQL].
+      이 폴더는 [!DNL \Documents and Settings\All Users\Application Data\MySQL]에 있습니다.
    1. 이전 MySQL 설치 폴더를 삭제합니다.
 
-      예를 들어 *시스템 드라이브:*(에 있음) [!DNL \Program Files\MySQL\MySQL Server 5.1].
-1. MySQL JDBC 드라이버 5.1.7을 설치하려면 DVD의 [!DNL mysql-connector-java-5.1.7-bin.jar] 폴더에 있는 파일을 Tomcat Server의 [!DNL Third Party\MySQL\Installer\5.1] [!DNL ...\Tomcat6.0\lib] 디렉토리로 복사합니다.
+      예를 들어 *시스템 드라이브:*&#x200B;에 있습니다.[!DNL \Program Files\MySQL\MySQL Server 5.1]
+1. MySQL JDBC 드라이버 5.1.7을 설치하려면 DVD의 [!DNL Third Party\MySQL\Installer\5.1] 폴더에 있는 [!DNL mysql-connector-java-5.1.7-bin.jar] 파일을 Tomcat Server의 [!DNL ...\Tomcat6.0\lib] 디렉토리로 복사합니다.
 
    >[!NOTE]
    >
