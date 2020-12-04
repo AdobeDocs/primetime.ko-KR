@@ -43,17 +43,17 @@ ht-degree: 0%
 
 디버깅 도구를 호출할 때 매니페스트 서버가 HTTP 헤더에서 반환하는 정보에 대한 여러 옵션이 있습니다. 매니페스트 서버가 로그 파일에 넣는 옵션에는 영향을 주지 않습니다.
 
-### ptdebug 지정 {#specifying-ptdebug}
+### ptdebug {#specifying-ptdebug} 지정
 
 매니페스트 서버 세션에 대한 디버그 로깅을 시작할 때 요청 URL에 ptdebug 매개 변수를 추가하여 매니페스트 서버가 HTTP 헤더에서 반환하는 정보에 대해 다음 옵션을 지정할 수 있습니다.
 
-* ptdebug=true 레코드 `TRACE_HTTP_HEADER` 를 제외한 `call/response data` 모든 레코드 `TRACE_AD_CALL` .
-* ptdebug=AdCall 전용 TRACE_AD_*type* (예: TRACE_AD_CALL) 레코드
+* ptdebug=true `TRACE_HTTP_HEADER` 및 `TRACE_AD_CALL` 레코드의 대부분의 `call/response data`를 제외한 모든 레코드
+* ptdebug=AdCall 전용 TRACE_AD_*type*(예: TRACE_AD_CALL) 레코드
 * ptdebug=헤더만 TRACE_HTTP_HEADER 레코드
 
 매니페스트 서버가 로그 파일에 넣는 옵션에는 영향을 주지 않습니다. 사용자는 이에 대한 제어권이 없지만 로그 파일은 텍스트 파일이므로 다양한 도구를 적용하여 원하는 정보를 추출하고 다시 포맷할 수 있습니다.
 
-다음은 반환된 HTTP 헤더의 예입니다 `ptdebug=Header`. 일부 16진수 문자열이 명확성을 위해 대체됩니다 `. . .` .
+다음은 `ptdebug=Header`에 반환되는 HTTP 헤더의 예입니다. 일부 16진수 문자열은 명확성을 위해 `. . .`으로 대체됩니다.
 
 ```
 X-ADBE-AI-DBG-1 TRACE_MISC    HTTP request received
@@ -262,7 +262,7 @@ Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 
 | 필드 | 유형 | 설명 |
 |--- |--- |--- |
-| ad_id | 문자열 | 정규화된 광고 ID `(FQ_AD_ID: Q_AD_ID[;Q_AD_ID[;Q_AD_ID...]]` Q_AD_ID: `PROTOCOL:AD_SYSTEM:AD_ID[:CREATIVE_ID[:MEDIA_ID]]` 프로토콜:AUDITUDE,VAST`)` |
+| ad_id | 문자열 | 정규화된 광고 ID `(FQ_AD_ID: Q_AD_ID[;Q_AD_ID[;Q_AD_ID...]]` Q_AD_ID:`PROTOCOL:AD_SYSTEM:AD_ID[:CREATIVE_ID[:MEDIA_ID]]` 프로토콜:AUDITUDE,VAST`)` |
 
 ### TRACE_TRANSCODING_REQUESTED 레코드 {#trace-transcoding-requested-records}
 
@@ -309,7 +309,7 @@ Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 
 ### TRACE_WEBVTT_RESPONSE 레코드 {#trace-webvtt-response-records}
 
-이 ``of ``자막 ``type ``에 이 ``responses ``를 ``manifest ``는 ``sends ``에 이 ``clients ``로그 `` `answer` ``를 기록합니다 ``requests `` `for` ``WEBVTT ``. TRACE_WEBVTT_RESPONSE 이외의 필드는 표에 표시된 순서대로 구분되어 `by`표시됩니다.
+``requests `` `for` ``WEBVTT ``캡션으로 ``type ``이 ``manifest ``서버 ``sends ``부터 ``clients ``까지 &lt;a4/>기록합니다. ``responses ````of ```` `answer` `` &quot;TRACE_WEBVTT_RESPONSE&quot; 이외의 필드는 표에 표시된 순서대로 구분되어 표시됩니다. `by` 탭
 
 | 필드 | 유형 | 설명 |
 |--- |--- |--- |
@@ -330,70 +330,70 @@ Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 
 이 유형의 레코드를 사용하면 매니페스트 서버가 광고를 가져올 때 특별히 계획하지 않은 이벤트와 정보를 기록할 수 있습니다. TRACE_MISC 이외의 필드는 메시지 문자열로 구성됩니다. 표시되는 메시지에는 다음이 포함됩니다.
 
-* 무시된 광고: AdPlacement `[adManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
-* AdAdManifestURL=*adManifestURL*, duration=*seconds*, ignore=*ignore*, redirectAd=redirectAdRedirectAd ***Priority=priority*
+* 광고 무시: AdPlacement `[adManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
+* AdPlacement adManifestURL=*adManifestURL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*, priority=* priority **
 * 광고 배치가 null을 반환했습니다.
 * 광고를 성공적으로 봉합했습니다.
-* 광고 호출 실패: *오류 메시지*.
-* 원시 매니페스트를 가져오기 위해 사용자-에이전트 추가: *user-agent*.
-* 원시 매니페스트 가져오기 쿠키 추가: [쿠키]
-* 잘못된 URL *요청 URL 오류 메시지입니다*. (변형 URL을 구문 분석하지 못했습니다.)
-* 호출된 url:URL이 *반환됨:응답 코드*. (라이브 URL)
+* 광고 호출 실패:*오류 메시지*.
+* 원시 매니페스트를 가져오기 위해 사용자-에이전트 추가:*user-agent*.
+* 원시 매니페스트 가져오기 쿠키 추가:[쿠키]
+* 잘못된 URL *요청된 URL 오류 메시지*&#x200B;입니다. (변형 URL을 구문 분석하지 못했습니다.)
+* 호출된 url:URL *에 반환:응답 코드*. (라이브 URL)
 * 호출된 url:URL *반환 코드:응답 코드*. (VOD URL)
 * 광고를 해결하는 동안 충돌이 발견되었습니다.중간 롤 시작 또는 중간 롤 끝 중 하나가 프리롤 또는 중간 롤(VOD)에 포함되어 있는 프리롤 또는 프리롤 내에 표시됩니다.
-* URI에 대한 핸들러에서 throw한 처리되지 않은 예외가 검색되었습니다. *요청 URL*.
+* URI에 대한 핸들러에서 throw한 처리되지 않은 예외가 검색되었습니다.*URL* 요청
 * 변형 매니페스트를 생성했습니다. (변형)
 * 변형 매니페스트를 생성했습니다.
-* VAST 리디렉션 *리디렉션 URL *오류 처리 예외: *오류 메시지*.
-* 광고 매니페스트 URL에 대한 광고 재생 목록을 *가져오지 못했습니다*.
+* VAST 리디렉션 *리디렉션 URL *오류 처리 예외:*오류 메시지*.
+* *광고 매니페스트 URL*&#x200B;에 대한 광고 재생 목록을 가져오지 못했습니다.
 * 타깃팅된 매니페스트를 생성하지 못했습니다. (HLSManifestResolver)
-* 첫 번째 광고 호출 응답을 구문 분석하지 못했습니다. *오류 메시지*.
-* *GET|POST *경로 요청을 처리하지 못했습니다. *요청 URL*. (실시간/VOD)
-* 라이브 매니페스트 요청을 처리하지 못했습니다. *요청 URL*. (라이브)
-* 변형 매니페스트를 반환하지 못했습니다. *오류 메시지*.
-* 그룹 ID의 유효성을 검사하지 못했습니다. *그룹 ID*.
-* 원시 매니페스트 가져오기: *콘텐트 URL*. (라이브)
-* 다음 VAST 리디렉션: *리디렉션 URL*.
+* 첫 번째 광고 호출 응답을 구문 분석하지 못했습니다.*오류 메시지*.
+* *GET|POST *경로 요청을 처리하지 못했습니다.*URL* 요청 (실시간/VOD)
+* 라이브 매니페스트 요청을 처리하지 못했습니다.*URL* 요청 (라이브)
+* 변형 매니페스트를 반환하지 못했습니다.*오류 메시지*.
+* 그룹 ID의 유효성을 검사하지 못했습니다.*그룹 ID*.
+* 원시 매니페스트 가져오기:*콘텐트 URL*. (라이브)
+* 다음 VAST 리디렉션:*리디렉션 URL*
 * 빈 사용 가능한 항목을 찾았습니다. (VOD)
 * 발견됨 *수 *광고. (VOD)
 * HTTP 요청을 받았습니다. (첫 번째 메시지)
 * 광고 응답 지속 시간(*ad 응답 지속 시간 *초)과 실제 광고 지속 시간(*실제 지속 시간 *초)의 차이가 제한보다 커서 광고를 무시합니다. (HLSManifestResolver)
 * ID 값을 제공하지 않은 사용 가능한 ID를 무시합니다. (GroupAdResolver.java)
-* 잘못된 시간 값을 제공한 사용 가능한 값을 무시합니다.*time *for availableId = *사용 가능한 ID*.
-* 잘못된 기간 값을 제공한 사용 가능을 무시합니다.*duration *for availableId = *사용 가능한 ID*.
+* 잘못된 시간 값을 제공한 사용 가능한 값을 무시합니다.*time *for availableId = *available ID*.
+* 잘못된 기간 값을 제공한 사용 가능을 무시합니다.*duration *for availableId = *available ID*
 * 새 세션을 초기화합니다. (변형)
 * HTTP 메서드가 잘못되었습니다. GET일 거야 (VOD)
 * HTTP 메서드가 잘못되었습니다. 추적 요청은 GET이어야 합니다. (라이브)
-* URL *요청 URL 오류 메시지가 잘못되었습니다*. (변형)
+* 잘못된 URL *요청한 URL 오류 메시지*&#x200B;입니다. (변형)
 * 그룹이 잘못되었습니다. (HLSManifestResolver)
 * 요청이 잘못되었습니다. 캡션은 올바른 추적 요청이 아닙니다. (VOD)
 * 요청이 잘못되었습니다. 캡션 요청은 세션이 설정된 후에 해야 합니다. (VOD)
 * 요청이 잘못되었습니다. 세션이 설정된 후에는 추적 요청을 해야 합니다. (VOD)
-* 오버로드 그룹 ID에 대한 서버 인스턴스가 잘못되었습니다. *그룹 ID*. (라이브)
-* VAST 리디렉션 제한 - *숫자*.
-* 광고 전화 걸기: *광고 호출 URL*.
-* 다음에 대한 매니페스트를 찾을 수 없습니다. *콘텐트 URL*. (라이브)
-* 사용 가능한 ID에 대해 일치하는 사용 가능한 ID가 없습니다. *사용 가능한 ID*. (HLSManifestResolver)
+* 오버로드 그룹 ID에 대한 서버 인스턴스가 잘못되었습니다.*그룹 ID*. (라이브)
+* VAST 리디렉션 제한 도달 - *number*
+* 광고 전화 걸기:*광고 호출 URL*.
+* 다음에 대한 매니페스트를 찾을 수 없습니다.*콘텐트 URL*. (라이브)
+* 사용 가능한 ID에 대해 일치하는 사용 가능한 ID가 없습니다.*사용 가능한 ID* (HLSManifestResolver)
 * 재생 세션을 찾을 수 없습니다. (HLSManifestResolver)
-* 매니페스트 *콘텐츠 URL에 대한 VOD 요청을 처리하는 중입니다*.
+* 매니페스트 *콘텐츠 URL*&#x200B;에 대한 VOD 요청을 처리하는 중입니다.
 * 변형 처리.
-* 매니페스트 *콘텐츠 URL에 대한 캡션 요청을 처리하는 중입니다*.
+* 매니페스트 *콘텐츠 URL*&#x200B;에 대한 캡션 요청을 처리하는 중입니다.
 * 추적 요청을 처리하는 중입니다. (VOD)
 * 리디렉션 광고 응답이 비어 있습니다. (VASTStAX)
-* 요청: *URL*.
+* 요청:*URL*
 * 재생 세션이 없으므로 GET 요청에 대한 오류 응답을 반환합니다. (VOD)
 * 내부 서버 오류로 인해 GET 요청에 대한 오류 응답을 반환합니다.
-* 잘못된 자산을 지정하는 GET 요청에 대한 오류 응답 반환: *광고 요청 ID*. (VOD)
-* 잘못된 또는 빈 그룹 ID를 지정하는 GET 요청에 대한 오류 응답 반환: *그룹 ID*. (VOD)
+* 잘못된 자산을 지정하는 GET 요청에 대한 오류 응답 반환:*광고 요청 ID*. (VOD)
+* 잘못된 또는 빈 그룹 ID를 지정하는 GET 요청에 대한 오류 응답 반환:*그룹 ID*. (VOD)
 * 잘못된 추적 위치 값을 지정하는 GET 요청에 대한 오류 응답을 반환합니다. (VOD)
-* 잘못된 구문으로 GET 요청에 대한 오류 응답 반환 - *요청 URL입니다*. (실시간/VOD)
-* 지원되지 않는 HTTP 메서드가 있는 요청에 대한 오류 응답 반환: *GET|POST*. (실시간/VOD)
+* 잘못된 구문으로 GET 요청에 대한 오류 응답을 반환합니다. *요청 URL*. (실시간/VOD)
+* 지원되지 않는 HTTP 메서드가 있는 요청에 대한 오류 응답 반환:*GET|POST*. (실시간/VOD)
 * 캐시에서 매니페스트를 반환합니다. (VOD)
 * 서버가 오버로드되었습니다. 광고 스티치 요청 없이 계속 진행합니다. (변형)
 * 타깃팅된 매니페스트 생성을 시작합니다. (HLSManifestResolver)
-* 다음 위치에서 변형 매니페스트 생성을 시작합니다. *콘텐트 URL*. (변형)
+* 다음 위치에서 변형 매니페스트 생성을 시작합니다.*콘텐트 URL*. (변형)
 * 광고를 매니페스트로 연결 (VODHLSResolver)
-* HH:MM: *SS에서 광고*&#x200B;연결 시도AdAdManifestURL=*광고 매니페스트 URL*, 지속 시간Seconds *=초*, redirect *=* ignore *, redirectAd=redirect* ad, priority=** placement무시 (HLSManifestResolver)
+* *HH:MM:SS*&#x200B;에서 광고를 연결하려고 합니다.AdPlacement adManifestURL=*광고 매니페스트 URL*, durationSeconds=*seconds*, ignore=*, redirectAd=*&#x200B;리디렉션 광고&#x200B;*, priority=* priority1/>입니다. ** (HLSManifestResolver)
 * 잘못된 타임라인으로 인해 광고를 가져올 수 없습니다. 광고가 없는 콘텐츠를 반환했습니다. (VOD)
 * 광고를 가져올 수 없습니다. 광고가 없는 콘텐츠를 반환했습니다. (VOD)
 * 광고 쿼리를 가져올 수 없으며 콘텐츠 URL이 제공되지 않았습니다. (VOD)
@@ -433,4 +433,4 @@ Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 
 ## 유용한 리소스 {#helpful-resources}
 
-* 자세한 도움말 설명서는 [Adobe Primetime 학습 및 지원](https://helpx.adobe.com/support/primetime.html) 페이지를 참조하십시오.
+* [Adobe Primetime 학습 및 지원](https://helpx.adobe.com/support/primetime.html) 페이지에서 전체 도움말 문서를 참조하십시오.
