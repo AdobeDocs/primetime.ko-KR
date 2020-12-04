@@ -40,7 +40,7 @@ TVSDK 패키지에 포함된 DRM 샘플 플레이어 코드를 참조하십시�
 
 <!--<a id="section_F986DB1EDD6F44CD8E57419CCA0921E8"></a>-->
 
-DRM 메타데이터가 변경되면 TVSDK에서 `PTMediaPlayerItemDRMMetadataChanged` 알림을 발행합니다. 이 메타데이터는 거의 모든 클래스 함수에 대한 입력으로 `DRMManager` 사용됩니다.
+DRM 메타데이터가 변경되면 TVSDK에서 `PTMediaPlayerItemDRMMetadataChanged` 알림을 발행합니다. 이 메타데이터는 `DRMManager` 클래스의 거의 모든 함수에 대한 입력으로 사용됩니다.
 
 <!--<a id="section_223DCF63BAB6438792A85352A79044CC"></a>-->
 
@@ -48,15 +48,15 @@ DRM으로 보호된 스트림이 MBR(다중 비트 전송률)로 인코딩된 �
 
 >[!TIP]
 >
->iOS 앱에서 DRM으로 보호된 자산 URL을 참조하는 경우 쿼리 문자열 매개 변수를 (MBR) 세트 수준 M3U8 URL에 추가해야 `?faxs=1` 합니다. 예:
+>iOS 앱에서 DRM으로 보호된 자산 URL을 참조하는 경우 쿼리 문자열 매개 변수 `?faxs=1`이(MBR) 설정된 수준 M3U8 URL에 추가되어야 합니다. 예:
 
 ```
 https://your.domain.com/hls/[...]/index.m3u8?faxs=1
 ```
 
-쿼리 `faxs=1` 문자열 매개 변수는 컨텐츠가 DRM으로 보호되었다는 신호를 주고 iOS TVSDK에서 DRM 암호 해독 워크플로우를 트리거합니다. DRM으로 보호되는 HLS 자산 URL에 다른 플랫폼용으로 지정된 `faxs=1` 태그를 추가할 수도 있습니다.iOS에서는 필요에 따라 처리되거나 다른 플랫폼의 플레이어에서는 비상업적인 것으로 처리됩니다.
+`faxs=1` 쿼리 문자열 매개 변수는 컨텐츠가 DRM으로 보호되었다는 신호를 주고 iOS TVSDK에서 DRM 암호 해독 워크플로우를 트리거합니다. DRM으로 보호된 다른 플랫폼용으로 지정된 HLS 자산 URL에 `faxs=1` 태그를 추가할 수도 있습니다.iOS에서는 필요에 따라 처리되거나 다른 플랫폼의 플레이어에서는 비상업적인 것으로 처리됩니다.
 
-## TSVDK 애플리케이션에서 Primetime DRM 구현 {#implement-primetime-drm-in-a-tsvdk-application}
+## TSVDK 응용 프로그램 {#implement-primetime-drm-in-a-tsvdk-application}에서 Primetime DRM 구현
 
 Primetime DRM은 TVSDK에 통합되어 TVSDK 애플리케이션에서 컨텐츠 보호 구현을 간소화합니다.
 
