@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# Java를 사용하여 암호 준비{#prepare-passwords-using-java}
+# Java{#prepare-passwords-using-java}을(를) 사용하여 암호 준비
 
-Java로 `ScrambleUtil.class` 실행:
+Java를 사용하여 `ScrambleUtil.class`을 실행합니다.
 
-1. 탐색 `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl/scrambler/ refimpl/scrambler/`
+1. `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl/scrambler/ refimpl/scrambler/`으로 이동합니다.
 1. 명령줄에서 다음을 입력합니다.
 
    ```
