@@ -1,20 +1,23 @@
 ---
-seo-title: 직접 광고 분할을 위한 JSON 개체
-title: 직접 광고 분할을 위한 JSON 개체
+seo-title: 직접 광고 나누기를 위한 JSON 개체
+title: 직접 광고 나누기를 위한 JSON 개체
 uuid: ffb901f4-0a8b-40fe-b6ba-5ffebc324cf2
-description: 유형 값이 직접 광고 분할인 경우 JSON 개체에 대한 세부 정보
-seo-description: 유형 값이 직접 광고 분할인 경우 JSON 개체에 대한 세부 정보
+description: 형식 값이 직접 광고 분할인 경우 JSON 개체에 대해 자세히 설명합니다.
+seo-description: 형식 값이 직접 광고 분할인 경우 JSON 개체에 대해 자세히 설명합니다.
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
-# 직접 광고 분할을 위한 JSON 개체{#json-object-for-direct-ad-breaks}
+# 직접 광고 중단에 대한 JSON 개체{#json-object-for-direct-ad-breaks}
 
-다음 코드 블록은 유형 값이 직접 광고 분할일 때 JSON 개체에 대한 세부 사항을 정의합니다.
+다음 코드 블록은 형식 값이 직접 광고 분할일 때 자세한 JSON 개체를 정의합니다.
 
-에서 `MetadataNode` 반환되는 `IFeedItemAdapter:getStreamMetadata()` 항목에는 아래의 세부 JSON 개체 값에 대한 문자열 표현 `com.adobe.mediacore.metadata.DefaultMetadataKeys.JSON_METADATA_KEY` 및 유형의 키가 포함된 항목이 포함되어 있습니다.
+`IFeedItemAdapter:getStreamMetadata()`에서 반환되는 `MetadataNode`에는 `com.adobe.mediacore.metadata.DefaultMetadataKeys.JSON_METADATA_KEY` 유형의 키와 아래 JSON 개체 값의 세부 정보를 나타내는 문자열 표현값을 가진 항목이 포함되어 있습니다.
 
 ```
 “metadata”: { 
@@ -50,12 +53,12 @@ source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
 
 | 속성 | 설명 |
 |---|---|
-| `tag` | 의 태그 필드에 매핑되는 `com.adobe.mediacore.timeline.advertising.AdBreak`문자열입니다. |
-| `time` | 광고 중단의 시작 시간을 나타내며 의 시간 필드에 매핑합니다 `com.adobe.mediacore.timeline.advertising.AdBreak`. 0 값은 프리롤 광고를 나타냅니다. |
-| `replace` | 광고 나누기 대체 기간을 나타내며 의 `replaceDuration` 필드에 매핑됩니다 `com.adobe.mediacore.timeline.advertising.AdBreak`. |
-| `ad-list` | 지정된 광고 중단 동안 재생할 광고 목록이 의 `List<Ad>` 필드에 매핑됩니다 `com.adobe.mediacore.timeline.advertising.AdBreak`. |
+| `tag` | `com.adobe.mediacore.timeline.advertising.AdBreak`의 태그 필드에 매핑되는 문자열. |
+| `time` | 광고 중단의 시작 시간을 나타내며 `com.adobe.mediacore.timeline.advertising.AdBreak`의 시간 필드에 매핑됩니다. 0은 프리롤 광고를 나타냅니다. |
+| `replace` | 광고 나누기 대체 기간을 나타내며 `com.adobe.mediacore.timeline.advertising.AdBreak`의 `replaceDuration` 필드에 매핑됩니다. |
+| `ad-list` | 지정된 광고 중단 동안 재생할 광고 목록은 `com.adobe.mediacore.timeline.advertising.AdBreak`의 `List<Ad>` 필드에 매핑됩니다. |
 
-다음 코드 블록은 ads-list 배열에 대한 JSON 개체를 정의합니다.
+다음 코드 블록은 광고 목록 배열에 대한 JSON 개체를 정의합니다.
 
 ```
 "ad-list": [ 
@@ -74,7 +77,7 @@ source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
 
 | 속성 | 설명 |
 |---|---|
-| `url` | 광고 컨텐트에 대한 URL이 의 url 필드에 매핑됩니다 `com.adobe.mediacore.timeline.advertising.Ad`. |
-| `duration` | 광고의 지속 시간으로, 의 지속 시간 필드에 매핑됩니다 `com.adobe.mediacore.timeline.advertising.Ad`. |
-| `tag` | 설명 문자열입니다. |
+| `url` | 광고 컨텐츠의 URL이 `com.adobe.mediacore.timeline.advertising.Ad`의 url 필드에 매핑됩니다. |
+| `duration` | 광고의 지속 시간, `com.adobe.mediacore.timeline.advertising.Ad`의 기간 필드에 매핑됩니다. |
+| `tag` | 설명 문자열. |
 
