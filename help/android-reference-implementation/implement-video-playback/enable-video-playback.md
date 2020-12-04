@@ -6,6 +6,9 @@ title: 비디오 재생 활성화
 uuid: ddc0defa-c40f-4ee6-a69f-d5eeca6c2fce
 translation-type: tm+mt
 source-git-commit: a33e1f290fcf78e6f131910f6037f4803f7be98d
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: a33e1f290fcf78e6f131910f6037f4803f7be98d
 
 HLS 스트림 설정 및 재생 작업을 처리하는 PlaybackManager를 만듭니다. 다른 구성은 필요하지 않습니다.
 
-1. 다음 코드가 에 있는지 확인하여 미디어 플레이어 개체를 만듭니다 [!DNL PlayerFragment.java].
+1. 다음 코드가 [!DNL PlayerFragment.java]에 있는지 확인하여 미디어 플레이어 개체를 만듭니다.
 
    ```java
    private MediaPlayer createMediaPlayer() { 
@@ -24,20 +27,20 @@ HLS 스트림 설정 및 재생 작업을 처리하는 PlaybackManager를 만듭
 
    <!-- I've duplicated this information. It also exists in the PlayerFragment section, just before the Feature manager section. I figured that I should have it here as well, in case they jump directly to this section.-->
 
-1. 다음을 통해 재생 관리자를 `ManagerFactory`만듭니다.
+1. `ManagerFactory`을(를) 통해 재생 관리자를 만듭니다.
 
    ```java
    playbackManager = ManagerFactory.getPlaybackManager(config, mediaPlayer);
    ```
 
-1. 재생 `PlaybackManagerEventListener` 이벤트를 `PlayerFragment` 처리하도록 에서 를 구현합니다.
+1. 재생 이벤트를 처리하려면 `PlayerFragment`에 `PlaybackManagerEventListener`을 구현합니다.
 
    ```java
    private final PlaybackManagerEventListener playbackManagerEventListener =  
      new PlaybackManagerEventListener() 
    ```
 
-1. 이벤트 리스너를 `PlayerFragment`다음과 같이 등록합니다.
+1. `PlayerFragment`에서 이벤트 리스너를 등록합니다.
 
    ```
    playbackManager.addEventListener(playbackManagerEventListener);
@@ -49,7 +52,7 @@ HLS 스트림 설정 및 재생 작업을 처리하는 PlaybackManager를 만듭
    playbackManager.setupVideo(url, adsManager); 
    ```
 
-1. 다음 위치에서 제어 막대 작업을 `PlayerFragment`설정합니다.
+1. `PlayerFragment`에서 제어 막대 작업을 설정합니다.
 
    ```
    controlBar.pressPlay() { 
@@ -59,7 +62,7 @@ HLS 스트림 설정 및 재생 작업을 처리하는 PlaybackManager를 만듭
 
 ## 관련 API 설명서 {#related-api-documentation}
 
-* [Class PlaybackManager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/PlaybackManager.html)
+* [클래스 재생 관리자](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/PlaybackManager.html)
 * [PlaybackManagerEventListener](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/PlaybackManager.PlaybackManagerEventListener.html)
 * [mediacore.utils.TimeRange](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/utils/TimeRange.html)
 * [mediacore.BufferControlParameters](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/BufferControlParameters.html)
