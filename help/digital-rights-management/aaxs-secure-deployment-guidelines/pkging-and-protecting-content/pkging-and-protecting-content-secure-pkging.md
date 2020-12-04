@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# 안전하게 컨텐츠 패키징 {#securely-packaging-content}
+# 안전하게 내용 패키징{#securely-packaging-content}
 
 Adobe 액세스 Media Packager 명령줄 도구에 대한 구성 파일을 사용하려면 패키징 중에 사용되는 PKCS12 자격 증명이 필요합니다.
 
-참조 구현 명령줄 도구에서 PKCS12 자격 증명 파일의 암호는 flashaccess.properties 파일에 일반 텍스트로 저장됩니다. 이러한 이유로 이 파일을 호스팅하는 컴퓨터의 보안을 강화할 때 각별히 주의하고 안전한 환경에 있는지 확인하십시오. 자세한 내용은 [물리적 보안 및 액세스](../../aaxs-secure-deployment-guidelines/physical-sec-and-access.md)참조).
+참조 구현 명령줄 도구에서 PKCS12 자격 증명 파일의 암호는 flashaccess.properties 파일에 일반 텍스트로 저장됩니다. 이러한 이유로 이 파일을 호스팅하는 컴퓨터의 보안을 강화할 때 각별히 유의하고 안전한 환경에 있는지 확인하십시오. ([물리적 보안 및 액세스](../../aaxs-secure-deployment-guidelines/physical-sec-and-access.md) 참조).
 
 또한 이 패키지 프로그램은 라이센스 서버 및 라이센스 서버 전송 인증서를 사용합니다. 이 정보의 무결성과 기밀성은 모두 보호되어야 합니다. Packager는 승인된 엔터티만 사용할 수 있어야 합니다. 개인 키가 손상될 경우 인증서를 취소할 수 있도록 Adobe Systems Incorporated에 즉시 알려 줍니다.
 
