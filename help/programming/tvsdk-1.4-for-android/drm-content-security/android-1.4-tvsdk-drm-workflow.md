@@ -6,11 +6,14 @@ title: TSVDK 애플리케이션에서 Primetime DRM 구현
 uuid: fe0f1672-3cfd-4cdc-846b-0ee92f6dcf2b
 translation-type: tm+mt
 source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 0%
 
 ---
 
 
-# TSVDK 애플리케이션에서 Primetime DRM 구현 {#implementing-primetime-drm-in-a-tsvdk-application}
+# TSVDK 응용 프로그램 {#implementing-primetime-drm-in-a-tsvdk-application}에서 Primetime DRM 구현
 
 Primetime DRM은 TVSDK에 통합되어 TVSDK 애플리케이션에서 컨텐츠 보호 구현을 간소화합니다.
 
