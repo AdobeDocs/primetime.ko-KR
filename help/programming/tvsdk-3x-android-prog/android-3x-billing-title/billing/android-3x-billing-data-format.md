@@ -1,22 +1,25 @@
 ---
-description: TVSDK 파섹
-seo-description: TVSDK 파섹
-seo-title: 청구 지표 전송
-title: 청구 지표 전송
+description: TVSDK는 청구 지표를 XML 형식으로 Adobe으로 전송합니다.
+seo-description: TVSDK는 청구 지표를 XML 형식으로 Adobe으로 전송합니다.
+seo-title: 결제 지표 전송
+title: 결제 지표 전송
 uuid: c925800c-0fb7-4781-94e8-7e7ad94bb965
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 0%
 
 ---
 
 
 # 청구 지표 전송 {#transmit-billing-metrics}
 
-TVSDK 파섹
+TVSDK는 청구 지표를 XML 형식으로 Adobe으로 전송합니다.
 
 <!--<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>-->
 
-네트워크 캡처 도구를 사용하여 TVSDK가 Adobe로 전송하는 통계를 모니터링하는 경우 다음과 같은 장치가 표시됩니다.
+네트워크 캡처 도구를 사용하여 TVSDK가 Adobe으로 전송되는 통계를 모니터하는 경우 다음과 같은 단위가 표시됩니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,4 +43,4 @@ TVSDK 파섹
 </request>
 ```
 
-부울 속성은 `drmProtected`true인 경우에만 `adsEnabled`표시되고 `midrollEnabled` 표시됩니다.
+부울 속성 `drmProtected`, `adsEnabled` 및 `midrollEnabled`은 true인 경우에만 나타납니다.
