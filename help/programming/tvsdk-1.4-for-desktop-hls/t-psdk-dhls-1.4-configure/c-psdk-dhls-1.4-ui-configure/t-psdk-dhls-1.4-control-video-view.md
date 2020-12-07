@@ -13,17 +13,17 @@ ht-degree: 0%
 ---
 
 
-# 비디오 보기의 위치 및 크기 제어{#control-the-position-and-size-of-the-video-view}
+# 비디오 보기{#control-the-position-and-size-of-the-video-view}의 위치와 크기를 제어합니다.
 
 MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 제어할 수 있습니다.
 
 기본적으로 TVSDK는 비디오의 크기 또는 위치가 변경될 때마다(응용 프로그램, 프로필 전환 또는 컨텐츠 전환 등으로 인해) 비디오 보기의 종횡비를 유지하려고 합니다.
 
-다른 *비율 정책을 지정하여 기본 종횡비 동작을 재정의할 수 있습니다*. 개체의 속성을 사용하여 비율 정책 `MediaPlayerView` 을 `scalePolicy` 지정합니다. 기본 비율 정책 `MediaPlayerView`은 `MaintainAspectRatioScalePolicy` 클래스의 인스턴스로 설정됩니다. 비율 정책을 재설정하려면 기본 설정 인스턴스 `MaintainAspectRatioScalePolicy` 를 사용자 `MediaPlayerView.scalePolicy` 의 정책으로 바꾸십시오. 속성을 null 값으로 설정할 수 `scalePolicy` 없습니다.
+다른 *비율 정책*&#x200B;을 지정하여 기본 종횡비 동작을 재정의할 수 있습니다. `MediaPlayerView` 개체의 `scalePolicy` 속성을 사용하여 비율 정책을 지정합니다. `MediaPlayerView`의 기본 비율 정책이 `MaintainAspectRatioScalePolicy` 클래스의 인스턴스로 설정됩니다. 비율 정책을 재설정하려면 `MediaPlayerView.scalePolicy`의 기본 인스턴스 `MaintainAspectRatioScalePolicy`을(를) 자신의 정책으로 바꾸십시오. `scalePolicy` 속성은 null 값으로 설정할 수 없습니다.
 
-1. 고유한 비율 정책을 만들려면 `MediaPlayerViewScalePolicy` 인터페이스를 구현하십시오.
+1. `MediaPlayerViewScalePolicy` 인터페이스를 구현하여 고유한 비율 정책을 만듭니다.
 
-   이 `MediaPlayerViewScalePolicy` 에는 한 가지 방법이 있습니다.
+   `MediaPlayerViewScalePolicy`에는 다음 메서드가 있습니다.
 
    ```
    public function adjust(viewPort:Rectangle, 
@@ -32,12 +32,13 @@ MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 �
 
    >[!NOTE]
    >
-   >TVSDK는 비디오를 표시하기 위해 `StageVideo` 개체를 사용하고 `StageVideo` 개체가 표시 목록에 없으므로 `viewPort` 매개 변수에는 비디오의 절대 좌표가 포함됩니다.
+   >TVSDK는 `StageVideo` 개체를 사용하여 비디오를 표시하고 `StageVideo` 개체가 표시 목록에 없으므로 `viewPort` 매개 변수에는 비디오의 절대 좌표가 포함됩니다.
    >
    >
    >예:
    >
-   >```
+   >
+   ```
    >public class CustomScalePolicy implements MediaPlayerViewScalePolicy { 
    >       /** 
    >         * Default constructor. 
@@ -60,14 +61,14 @@ MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 �
    >}
    >```
 
-1. 속성에 구현을 `MediaPlayerView` 할당합니다.
+1. 구현을 `MediaPlayerView` 속성에 할당합니다.
 
    ```
    var view:MediaPlayerView = MediaPlayerView.create(stage.stageVideos[0]); 
    view.scalePolicy = new CustomScalePolicy();
    ```
 
-1. Media Player 속성에 보기를 `view` 추가합니다.
+1. 보기를 미디어 플레이어의 `view` 속성에 추가합니다.
 
    ```
    addChild(view); 
