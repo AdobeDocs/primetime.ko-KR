@@ -1,20 +1,23 @@
 ---
 description: Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체로 표시합니다.
 seo-description: Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체로 표시합니다.
-seo-title: Timed metadata class
-title: Timed metadata class
+seo-title: Timed metadata 클래스
+title: Timed metadata 클래스
 uuid: 3f276618-5f61-4b41-bd2d-78e7f32178d9
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
 
-# Timed metadata class{#timed-metadata-class}
+# Timed metadata 클래스{#timed-metadata-class}
 
 Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체로 표시합니다.
 
-이 `TimedMetadata` 클래스는 다음과 같은 요소를 제공합니다.
+`TimedMetadata` 클래스는 다음 요소를 제공합니다.
 
 <table id="table_5827A0626EDC45F68DC3E7644F3EFF69"> 
  <thead> 
@@ -42,7 +45,7 @@ Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감
   <tr> 
    <td colname="col1"> <p>id </p> </td> 
    <td colname="col02"> <p>문자열 </p> </td> 
-   <td colname="col2"> <p>시간 지정 메타데이터의 고유 식별자입니다. </p> <p>일반적으로 cue/tag ID 속성이 있는 경우 추출됩니다. 그렇지 않으면 고유한 임의 값입니다. </p> </td> 
+   <td colname="col2"> <p>시간 지정 메타데이터의 고유 식별자입니다. </p> <p>은 대개 큐/태그 ID 속성이 있는 경우 추출됩니다. 그렇지 않으면 고유한 임의 값입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
@@ -52,12 +55,12 @@ Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감
   <tr> 
    <td colname="col1"> <p>content </p> </td> 
    <td colname="col02"> <p>문자열 </p> </td> 
-   <td colname="col2"> <p>The raw content of the timed metadata. </p> <p>유형이 TAG인 경우 이 값은 cue/tag의 전체 속성 목록을 나타냅니다. 유형 ID3인 경우 값은 null입니다. </p> </td> 
+   <td colname="col2"> <p>The raw content of the timed metadata. </p> <p>유형이 TAG인 경우 값은 cue/tag의 전체 속성 목록을 나타냅니다. 유형 id ID3인 경우 값이 null입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>메타데이터 </p> </td> 
    <td colname="col02"> <p><span class="codeph"> 메타데이터</span> </p> </td> 
-   <td colname="col2"> <p>재생 목록/매니페스트 사용자 지정 태그에서 처리/압축을 푼 정보입니다. </p> </td> 
+   <td colname="col2"> <p>재생 목록/매니페스트 사용자 지정 태그에서 처리/추출 정보입니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
