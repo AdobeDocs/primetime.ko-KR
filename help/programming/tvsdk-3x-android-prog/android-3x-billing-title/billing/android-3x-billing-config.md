@@ -1,18 +1,21 @@
 ---
-description: 기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업이 필요하지 않습니다. Adobe Enablement 담당자로부터 다른 구성 매개 변수를 받은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
-seo-description: 기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업이 필요하지 않습니다. Adobe Enablement 담당자로부터 다른 구성 매개 변수를 받은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
+description: 기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업은 필요하지 않습니다. Adobe 활성 담당자로부터 다른 구성 매개 변수를 얻은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
+seo-description: 기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업은 필요하지 않습니다. Adobe 활성 담당자로부터 다른 구성 매개 변수를 얻은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
 seo-title: 청구 지표 구성
 title: 청구 지표 구성
 uuid: 340439bf-185b-4761-a481-010908842811
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
 # 청구 지표 구성 {#configure-billing-metrics}
 
-기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업이 필요하지 않습니다. Adobe Enablement 담당자로부터 다른 구성 매개 변수를 받은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
+기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업은 필요하지 않습니다. Adobe 활성 담당자로부터 다른 구성 매개 변수를 얻은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
 
 >[!TIP]
 >
