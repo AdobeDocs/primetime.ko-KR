@@ -13,9 +13,9 @@ pagecreatedat: en
 pagelayout: video
 sidecolumn: left
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: 3efbd1113e82c4d5f84798997b6f744daf6f508e
 workflow-type: tm+mt
-source-wordcount: '2430'
+source-wordcount: '2437'
 ht-degree: 0%
 
 ---
@@ -309,7 +309,7 @@ Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 
 ### TRACE_WEBVTT_RESPONSE 레코드 {#trace-webvtt-response-records}
 
-``requests `` `for` ``WEBVTT ``캡션으로 ``type ``이 ``manifest ``서버 ``sends ``부터 ``clients ``까지 &lt;a4/>기록합니다. ``responses ````of ```` `answer` `` &quot;TRACE_WEBVTT_RESPONSE&quot; 이외의 필드는 표에 표시된 순서대로 구분되어 표시됩니다. `by` 탭
+이 유형의 로그 레코드는 매니페스트 서버가 클라이언트에 보낸 응답으로 `WEBVTT` 캡션 요청에 응답합니다. `TRACE_WEBVTT_RESPONSE` 뒤의 필드는 표에 표시된 순서대로 탭으로 표시됩니다.
 
 | 필드 | 유형 | 설명 |
 |--- |--- |--- |
