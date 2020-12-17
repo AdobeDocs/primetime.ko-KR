@@ -4,35 +4,35 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: fac84687085f289e984c189665bfe775337592b3
+source-git-commit: 6e4d29f3fb85410943b960b179147b2fc2f1e7c4
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 35%
+source-wordcount: '280'
+ht-degree: 34%
 
 ---
 
 
 # Primetime 릴리스 노트
 
-Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서에서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
+Adobe Primetime 릴리스 노트입니다. 왼쪽 탐색에 나열된 문서는 릴리스별 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 20.10.1의 개선 사항 및 수정 사항
+## PTAI 20.12.1 개선 사항 및 수정 사항
 
-이 릴리스는 유지 관리 업데이트에 중점을 두고 있습니다.
+이 릴리스에는 간헐적인 클라이언트 연결 문제를 해결하기 위한 핫픽스가 포함되어 있습니다.
 
 ## TVSDK 3.12 Android의 수정 사항
 
-이 릴리스는 Primetime Reference 애플리케이션의 버전 버전을 버전 5.6.4로 업데이트하는 데 중점을 두었습니다.
+이 릴리스는 Primetime Reference 애플리케이션의 업그레이드 버전을 버전 5.6.4 버전으로 업데이트하는 데 중점을 두었습니다.
 
-현재 출시된 [Android](../release-notes/tvsdk-3x-android.md)에 대한 자세한 내용을 확인하십시오.
+[Android](../release-notes/tvsdk-3x-android.md)의 현재 릴리스 버전에 대한 자세한 내용을 확인하십시오.
 
 ## TVSDK 3.12 iOS 릴리스 노트의 개선 사항 및 수정 사항
 
-이 릴리스는 주요 고객 문제 해결에 중점을 두고 있습니다.
+이 릴리스는 주요 고객 문제 해결에 중점을 두었습니다.
 
-[iOS](../release-notes/tvsdk-3x-ios.md)의 현재 릴리스 버전에 대한 자세한 내용을 확인하십시오.
+[iOS](../release-notes/tvsdk-3x-ios.md)에 대해 현재 릴리스된 버전에 대한 자세한 내용을 확인하십시오.
 
-## 자세한 내용은
+## 참조 항목
 
 | 사용 안내서 | 설명 |
 |--- |--- |
@@ -40,13 +40,13 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 | [Primetime 마이그레이션 및 전환 도움말](/help/migration-guides/home.md) | 기존 Primetime TVSDK Suite에서 차세대 제품으로 전환하는 전환 및 마이그레이션 프로세스에 대해 설명합니다. |
 | [참조 구현](/help/android-reference-implementation/home.md) | TVSDK를 이해하고 기능 관리자를 수정하여 개인 플레이어를 사용자 정의할 수 있습니다. |
 | [Primetime API 참조](/help/reference/api-references.md) | TVSDK 함수, 데이터 구조 및 기타 프로그래밍 구문에 대한 자세한 정보를 제공합니다. |
-| [Digital Rights Management](/help/digital-rights-management/home.md) | Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대한 자세한 내용을 살펴볼 수 있습니다. |
+| [Digital Rights Management](/help/digital-rights-management/home.md) | Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대해 자세히 알아보려면 도움이 됩니다. |
 | [Primetime Ad Insertion 도움말](/help/dynamic-ad-insertion/home.md) | 서버에 사용자 타겟팅된 동적 광고를 삽입하여 컨텐츠를 상용화하고 개인화된 광고를 통해 고객의 참여를 유도하는 방법을 설명합니다. |
 | [아카이브](https://helpx.adobe.com/primetime/archives.html) | 보관된 문서의 PDF를 다운로드합니다. |
 
 ## 유용한 리소스
 
-* [Adobe Primetime에 대해 더 알아보기](https://www.adobe.com/in/marketing/primetime.html)
+* [Adobe Primetime 개요](https://www.adobe.com/in/marketing/primetime.html)
 
 * [동시 시청 모니터링](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
 
