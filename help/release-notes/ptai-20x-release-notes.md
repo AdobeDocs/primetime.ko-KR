@@ -2,7 +2,7 @@
 title: PTAI 20.12.1 릴리스 노트
 description: PTAI 릴리스 노트는 2020년 Primetime Ad Insertion의 새로운 것과 변경된 것, 해결되고 알려진 문제를 기술합니다.
 translation-type: tm+mt
-source-git-commit: 6e4d29f3fb85410943b960b179147b2fc2f1e7c4
+source-git-commit: 4790c8ab25ca6ecf118adf3037fc2e4e4f451cb3
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Primetime Ad Insertion 20.12.1 릴리스 노트는 2020년 Primetime Ad Insertio
 
 ### 이전 릴리스 버전의 개선 사항 및 수정 사항
 
-#### 버전 201.11.1
+#### 버전 20.11.1
 
 **2020년** 11월 5일 목요일 오전 2시부터 오전 5시(동부 표준시)
 
@@ -32,7 +32,7 @@ Primetime Ad Insertion 20.12.1 릴리스 노트는 2020년 Primetime Ad Insertio
 
 * 유지 관리 업데이트.
 
-#### 버전 201.10.2
+#### 버전 20.10.2
 
 **2020년 10월 29일** 목요일 오전 12:01 ~ 오전 06:00 동부 표준시
 
@@ -40,7 +40,7 @@ Primetime Ad Insertion 20.12.1 릴리스 노트는 2020년 Primetime Ad Insertio
 
 * 유지 관리 업데이트.
 
-#### 버전 201.10.1
+#### 버전 20.10.1
 
 **2020년 10월 13일** 화요일 오전 03:00에서 오전 07:00 동부 표준시
 
