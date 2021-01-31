@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Primetime 프로그래밍 도움말
 user-guide-description: Android 장치에서 Java를 사용하는 응용 프로그램 및 비디오 플레이어를 개발하는 방법과 iOS 장치에서 Objective-C를 사용하는 방법을 배울 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 02ac57d14cf5c4c2819d17413a9d3e9a31237715
+source-git-commit: aab96dcf5107be90534350156ee66a88de80613e
 workflow-type: tm+mt
-source-wordcount: '4327'
+source-wordcount: '4342'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 + [프로그래밍 개요](home.md)
 + Android용 TVSDK 3x {#tvsdk-3x-android-prog}
    + 소개 {#introduction}
-      + [제품 개요, 대상 및 이 안내서](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)
+      + [제품 개요, 사용자 및 이 안내서](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)
       + [Primetime TVSDK 기능](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-of-the-player.md)
       + [고려 사항 및 우수 사례](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-considerations.md)
       + [요구 사항](tvsdk-3x-android-prog/android-3x-introduction/android-3x-requirements.md)
@@ -26,12 +26,12 @@ ht-degree: 0%
       + [미디어 플레이어 설정](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-mediaplayer-set-up-android.md)
       + MediaPlayer 개체 {#work-with-media-player-objects} 사용
          + [MediaPlayerItem 클래스 정보](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayeritem-class-about.md)
-         + [Media Player 개체의 라이프사이클 및 상태](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayer-object-lifecycle-states.md)
+         + [MediaPlayer 객체의 라이프사이클 및 상태](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayer-object-lifecycle-states.md)
          + [MediaResource 정보에 액세스하기 위한 MediaPlayerItem 메서드](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayeritem-accessing-mediaresource.md)
          + [MediaPlayer 인스턴스 재사용 또는 제거](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayer-reuse-or-remove.md)
          + [Inspect 재생 타임라인](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-timeline-inspect-playback.md)
-         + [Media Player 일시 중단 및 복원](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-suspend-and-restore.md)
-      + Primetime 플레이어 이벤트 수신 대기 {#listen-primetime-player-events}
+         + [MediaPlayer 일시 중단 및 복원](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-suspend-and-restore.md)
+      + Primetime 플레이어 이벤트 {#listen-primetime-player-events} 수신 대기
          + [개요](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/events-listen-for/android-3x-events-listen-for.md)
          + [이벤트 리스너 및 콜백 구현](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/events-listen-for/android-3x-event-listeners-implement.md)
       + [오류 처리 설정](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-error-handling-set-up.md)
@@ -39,23 +39,23 @@ ht-degree: 0%
          + [유효한 상태 대기](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md)
          + [비디오 재생 및 일시 중지](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-pause-play-implement.md)
          + [컨텐츠가 실시간 또는 VOD인지 확인](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-content-live-vod-identify.md)
-         + [볼륨 컨트롤 제공](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-volume-control.md)
+         + [볼륨 제어 제공](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-volume-control.md)
          + [비디오 지속 시간, 현재 시간 및 남은 시간 표시](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-duration-time-display.md)
-         + [현재 재생 위치에 검색 스크럽 막대 표시](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-seek-scrub-bar-display.md)
-         + [DVR용으로 향상된 제어 막대 구성](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-ctrl-bar-for-dvr-construct.md)
+         + [현재 재생 위치에 검색 스크러빙 막대 표시](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-seek-scrub-bar-display.md)
+         + [DVR에 대한 향상된 제어 막대 구성](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-ctrl-bar-for-dvr-construct.md)
          + [특정 시간에 스트림 입력](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-stream-entry-control.md)
-      + 특정 비디오 {#initialize-the-media-player-for-a-specific-video}에 대한 미디어 플레이어 초기화
+      + 특정 비디오 {#initialize-the-media-player-for-a-specific-video}에 대한 미디어 플레이어를 초기화합니다.
          + [미디어 리소스 만들기](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-create.md)
          + [미디어 플레이어에서 미디어 리소스 로드](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-load.md)
          + [MediaPlayerItemLoader를 사용하여 미디어 리소스 로드](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md)
-      + 빨리 구현하고 {#implement-fast-forward} 되감기
+      + 빨리 구현 및 되감기 {#implement-fast-forward}
          + [개요](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/trick-play-implement/android-3x-trick-play-implement.md)
          + [속도 변경 API 요소](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/trick-play-implement/android-3x-trick-play-apis.md)
-         + [트릭 플레이 시 제한 사항 및 동작](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/trick-play-implement/android-3x-trick-play-limitations.md)
-         + [매끄러운 트릭 플레이 작업](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/trick-play-implement/android-3x-trick-play-smooth.md)
+         + [트릭 플레이의 제한 및 행동](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/trick-play-implement/android-3x-trick-play-limitations.md)
+         + [매끄러운 트릭 재생 작업](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/trick-play-implement/android-3x-trick-play-smooth.md)
       + [HTTP 302 리디렉션 최적화](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-302-redirect-overview.md)
       + [쿠키를 사용한 작업](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-cookies-work-with.md)
-      + 자막 작업 {#work-closed-captions}
+      + 닫힌 캡션 작업 {#work-closed-captions}
          + [개요](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/closed-captions-set-up/android-3x-closed-captions-set-up.md)
          + [사용 가능한 트랙 중에서 현재 캡션 트랙 선택](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/closed-captions-set-up/android-3x-closed-caption-available.md)
          + [자막 가시성 제어](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/closed-captions-set-up/closed-caption-visibility-control/android-3x-closed-caption-visibility-control.md)
@@ -63,22 +63,22 @@ ht-degree: 0%
          + [자막 스타일 제어](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/closed-captions-set-up/android-3x-closed-caption-styling.md)
       + 대체 오디오 {#alternate-audio}
          + [개요](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/alternate-audio/android-3x-alternate-audio.md)
-         + [AC-3 5.1 포맷](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/alternate-audio/android-3x-ac-format.md)
+         + [AC-3 5.1 형식](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/alternate-audio/android-3x-ac-format.md)
          + [재생 목록의 대체 오디오 트랙](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/alternate-audio/android-3x-alternate-audio-in-playlist.md)
          + [대체 오디오 트랙 액세스](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/alternate-audio/android-3x-alternate-audio-implement.md)
       + [백그라운드 오디오 사용](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-background-audio.md)
       + [ID3 태그](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-id3-metadata-retrieve.md)
-      + 버퍼링 {#buffering}
+      + 버퍼링 중 {#buffering}
          + [개요](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/buffering-configuration/android-3x-buffering-configuration.md)
          + [즉시 켜기](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/buffering-configuration/android-3x-instant-on.md)
       + [병렬 다운로드](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-parallel-downloads.md)
       + 비디오 품질 {#adaptive-bit-rates}에 대한 응용 비트 전송률(ABR)
          + [개요](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/abr-control-quality/android-3x-abr-control-quality.md)
-         + [ABRConcontrolParameters를 사용하여 응용 비트 전송률 구성](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/abr-control-quality/android-3x-abr-set-using-abrparameters.md)
+         + [ABRControlParameters를 사용하여 응용 비트 전송률 구성](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/abr-control-quality/android-3x-abr-set-using-abrparameters.md)
          + [서비스 품질 통계](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-qos-statistics-monitor.md)
       + 재생 및 페일오버 {#playback-failover}
          + [개요](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/failover-for-playback/android-3x-failover-for-playback.md)
-         + [미디어 재생 및 장애 조치](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/failover-for-playback/android-3x-failover-media-playback.md)
+         + [미디어 재생 및 페일오버](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/failover-for-playback/android-3x-failover-media-playback.md)
          + [VOD를 위한 광고 삽입 및 장애 조치](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/failover-for-playback/android-3x-failover-ad-insertion-for-vod.md)
       + [Android를 사용한 오프라인 재생](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-offline-playback-with-android.md)
       + [HTTPS를 통한 안전한 전달](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-secure-delivery.md)
@@ -92,17 +92,17 @@ ht-degree: 0%
          + [클라이언트 광고 추적](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-about/android-3x-ad-tracking-client.md)
          + [손상된 VMAP에 대한 클라이언트 오류 처리](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-about/android-3x-broken-vmap-error.md)
          + [HTTPS를 통한 안전한 광고 로딩](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-about/android-3x-secure-ad-loading.md)
-         + [광고를 사용한 기본 및 사용자 정의 재생 동작](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-playback-post.md)
-      + {#customize-playback} 광고로 재생 사용자 정의
+         + [광고를 사용한 기본 및 사용자 정의된 재생 동작](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-playback-post.md)
+      + 광고 {#customize-playback}을(를) 사용하여 재생 사용자 정의
          + [개요](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-playback-customize.md)
          + [광고 재생을 위한 API 요소](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-playback-ad-custom-elements.md)
          + [기본 재생 동작 사용](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-playback-use-default.md)
          + [일정 기간 동안 광고 중단 건너뛰기](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-playback-skip-breaks.md)
-         + [비디오 위치를 저장하고 나중에 다시 시작](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-playback-save-position.md)
-         + [부분 광고 분리 삽입](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-partial-ad-break-insertion.md)
+         + [비디오 위치를 저장하고 나중에 다시 시작합니다.](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-playback-save-position.md)
+         + [부분 광고 나누기 삽입](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-partial-ad-break-insertion.md)
       + 정시 광고 해결 {#just-in-time}
          + [개요](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md)
-         + [지연 및 해결](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/t-enable-lazy-ad-resolving.md)
+         + [게으른 광고 해결](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/t-enable-lazy-ad-resolving.md)
          + [2.7.x 레이지 광고 해결에서 3.x 레이지 광고 해결(API/워크플로우 변경)으로 업그레이드](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/t-upgrade-to-3x.md)
       + 광고 삽입 메타데이터 {#ad-insertion-metadata}
          + [개요](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md)
@@ -110,12 +110,12 @@ ht-degree: 0%
          + [전체 이벤트 재생에서 광고 활성화](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/ad-full-event-replay/android-3x-ad-full-event-replay.md)
          + [광고 신호 모드](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/ad-full-event-replay/android-3x-ad-signaling-mode.md)
       + 부록 배너 광고 {#companion-banner-ads}
-         + [컴패니언 배너 광고에 대한 모범 사례](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/comp-banner-ads/android-3x-banners-best-practices.md)
+         + [컴패니언 배너 광고에 대한 우수 사례](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/comp-banner-ads/android-3x-banners-best-practices.md)
          + [컴패니언 배너 데이터](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/comp-banner-ads/android-3x-companion-banner-data.md)
          + [배너 광고 표시](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/comp-banner-ads/android-3x-companion-banner-ads-display.md)
       + 클릭 가능한 광고 {#clickable-ads}
          + [광고 클릭 수에 응답](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/clickable-ads/android-3x-respond-to-ad-clicks.md)
-         + [클릭 가능한 광고 프로세스 분리](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/clickable-ads/android-3x-separate-clickable-ad-process.md)
+         + [클릭 가능한 광고 프로세스 구분](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/clickable-ads/android-3x-separate-clickable-ad-process.md)
          + [재생 일시 중지 및 다시 시작](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/clickable-ads/android-3x-pausing-resuming-playback.md)
       + [Adobe CRS 개요를 사용하여 호환되지 않는 광고 재패키지](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-transcoding/android-3x-ad-transcoding.md)
       + VAST 및 VMAP 광고에 대한 광고 폴백 {#ad-fallback}
@@ -128,8 +128,8 @@ ht-degree: 0%
          + [태그에 대한 구성 클래스 메서드](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-psdkconfig-methods.md)
          + [Timed metadata 클래스](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-timedmetadata-class.md)
          + [사용자 정의 태그 구독](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-subscribe.md)
-         + [시간 메타데이터 알림용 수신기 추가](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-receive-notifications.md)
-         + [전달될 때 시간 메타데이터 개체 저장](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-timed-metadata-store.md)
+         + [시간 지정 메타데이터 알림에 대한 리스너 추가](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-receive-notifications.md)
+         + [전달될 때 시간 메타데이터 객체 저장](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-timed-metadata-store.md)
       + VPAID 2.0 광고 지원 {#vpaid-ad-support}
          + [개요](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/vpaid-ads/android-3x-vpaid-ads.md)
          + [VPAID 2.0 통합 구현](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/vpaid-ads/android-3x-include-vpaid-support.md)
@@ -143,7 +143,7 @@ ht-degree: 0%
          + [사용자 정의 광고 마커 검색을 위한 재생 동작 제어](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-markers-add-custom/android-3x-ad-markers-control-seek.md)
       + 기회 생성기 및 컨텐츠 해상도 사용자 정의 {#customize-opportunity}
          + [개요](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/content-resolver/android-3x-content-resolver.md)
-         + [기회 생성기 및 컨텐츠 해결](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/content-resolver/android-3x-content-resolver-about.md)
+         + [기회 생성기 및 컨텐츠 해결 방법](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/content-resolver/android-3x-content-resolver-about.md)
          + [사용자 정의 기회 생성기 구현](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/content-resolver/android-3x-opp-detector-impl-android.md)
          + [사용자 지정 컨텐츠 해결 프로그램 구현](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/content-resolver/android-3x-content-resolver-implement.md)
       + VOD 스트림 {#delete-ads}에서 광고 삭제 및 바꾸기
@@ -170,11 +170,11 @@ ht-degree: 0%
       + [재생 전 DRM 인증](tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-auth-before-playback.md)
       + [재생 중 DRM 인증](tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-auth-during-playback.md)
    + 비디오 분석 {#video-analytics}
-      + [TVSDK와 Adobe Analytics 통합](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-integration-overview.md)
+      + [Adobe Analytics과 TVSDK 통합](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-integration-overview.md)
       + [비디오 분석 초기화 및 구성](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-integrate-heartbeats.md)
       + [사용자 정의 메타데이터 지원 구현](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-custom-metadata.md)
       + [장 지원 구현](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-chapter-support.md)
-      + [서버측에서 비디오 분석 보고 설정](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-server-side-reporting-set-up.md)
+      + [서버 측에 비디오 분석 보고 설정](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-server-side-reporting-set-up.md)
       + [비디오 분석 보고서 액세스](tvsdk-3x-android-prog/va-integration-overview/android-3x-va-integration-overview/android-3x-va-reports-access.md)
    + 이벤트 및 알림 {#events-and-notifications}
       + [플레이어 상태, 활동, 오류 및 로깅에 대한 알림 및 이벤트](tvsdk-3x-android-prog/android-3x-events-notifications/android-3x-notification-system.md)
@@ -202,16 +202,16 @@ ht-degree: 0%
       + [비디오 지속 시간 표시](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-video-duration.md)
       + [현재 시간 및 남은 시간 표시](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-current-remaining-time.md)
       + [현재 재생 시간 위치에 검색 스크럽 막대 표시](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-seek-scrub-bar.md)
-      + [비디오 품질을 위한 ABR(적응형 비트 전송률)](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-abr-control-quality.md)
+      + [비디오 품질을 위한 적응형 비트 전송률(ABR)](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-abr-control-quality.md)
    + [서비스 품질 통계](tvsdk-3x-ios-prog/ios-3x-qos-statistics-monitor.md)
-   + [Media Player 개체 사용](tvsdk-3x-ios-prog/ios-3x-mediaplayerobjects-working-with.md)
+   + [MediaPlayer 개체 사용](tvsdk-3x-ios-prog/ios-3x-mediaplayerobjects-working-with.md)
    + [인스턴트 온](tvsdk-3x-ios-prog/ios-3x-instant-on-ios.md)
    + 광고 {#advertising}
       + [광고 요구 사항](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-advertising-requirements.md)
       + [광고 시간 초과](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-timeout.md)
       + [부분 광고 분리 삽입](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-partialad-break-insertion.md)
       + [광고 삽입](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-insertion-about.md)
-      + [광고를 사용한 기본 및 사용자 정의 재생 동작](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-playback-post1.2.md)
+      + [광고를 사용한 기본 및 사용자 정의된 재생 동작](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-playback-post1.2.md)
       + [광고로 재생 맞춤화](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-playback-customize.md)
       + [적시 광고 해결](tvsdk-3x-ios-prog/ios-3x-advertising/c-ios-lazy-ad-resolving.md)
    + Primetime 광고 서버 메타데이터 {#ad-server-metadata}
@@ -223,7 +223,7 @@ ht-degree: 0%
    + [Adobe Creative Repackaging Service를 사용하여 호환되지 않는 광고 재패키지](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-transcoding.md)
    + [해자에서 광고 측정](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-measurements-from-moat.md)
    + [VPAID 2.0 광고 지원](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-vpaid-2.0-ads.md)
-   + [VAST 및 VMAP 광고에 대한 광고 폴백](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-fallback.md)
+   + [광활한 VMAP 광고 대비 폴백](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-fallback.md)
    + [DVR 창에 광고 로드](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-loading-for-a-dvr-window.md)
    + 사용자 지정 태그 {#custom-tags}
       + [개요](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-configure.md)
@@ -231,8 +231,8 @@ ht-degree: 0%
       + [태그에 대한 구성 클래스 메서드](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-psdkconfig-methods.md)
       + [Timed metadata 클래스](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-timedmetadata-class.md)
       + [사용자 정의 태그 구독](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-subscribe.md)
-      + [시간 메타데이터 알림용 수신기 추가](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-receive-notifications.md)
-      + [전달될 때 시간 메타데이터 개체 저장](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-timed-metadata-store.md)
+      + [시간 지정 메타데이터 알림에 대한 리스너 추가](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-receive-notifications.md)
+      + [전달될 때 시간 메타데이터 객체 저장](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-timed-metadata-store.md)
       + [시간 지정 메타데이터 사용](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-timed-metadata-use.md)
    + 광고 크리에이티브 선택 규칙 업데이트 {#update-rules}
       + [개요](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-updating-rules.md)
@@ -242,12 +242,12 @@ ht-degree: 0%
       + [크리에이티브 선택 규칙 적용](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-how-tvsdk-applies-csr.md)
    + [토큰화된 세그먼트 스트림](tvsdk-3x-ios-prog/ios-3x-tokenized-segment-streams.md)
    + 기회 감지기 및 컨텐츠 해상도 사용자 정의 {#customize-content-resolvers}
-      + [기회 생성기 및 컨텐츠 해결](tvsdk-3x-ios-prog/ios-3x-content-resolver/ios-3x-content-resolver-about.md)
+      + [기회 생성기 및 컨텐츠 해결 방법](tvsdk-3x-ios-prog/ios-3x-content-resolver/ios-3x-content-resolver-about.md)
       + [사용자 지정 기회/컨텐츠 해결 프로그램 구현](tvsdk-3x-ios-prog/ios-3x-content-resolver/ios-3x-content-resolver-implement-ios.md)
    + VOD 스트림 {#delete-replace-content-vod}에서 광고 삭제 및 바꾸기
       + [광고 삭제 및 교체 API 변경 사항](tvsdk-3x-ios-prog/ios-3x-delete-replace-content-vod/ios-3x-ad-deletion-replacement-api-changes-ios.md)
-      + [광고 삭제 및 바꾸기](tvsdk-3x-ios-prog/ios-3x-delete-replace-content-vod/ios-3x-ad-delete-replace-use-cases/ios-3x-mark-ranges-ios.md)
-   + 실시간 스트림의 일시 중단 처리 {#handle-blackouts-in-live-streams}
+      + [광고 삭제 및 바꾸기 사용 사례](tvsdk-3x-ios-prog/ios-3x-delete-replace-content-vod/ios-3x-ad-delete-replace-use-cases/ios-3x-mark-ranges-ios.md)
+   + 실시간 스트림에서 일시 중단 처리 {#handle-blackouts-in-live-streams}
       + [일시 중단 처리](tvsdk-3x-ios-prog/ios-3x-blackouts-handle-ios/c-ios-blackouts-handle-ios.md)
       + [일시 중단 API 요소](tvsdk-3x-ios-prog/ios-3x-blackouts-handle-ios/c-ios-blackout-apis.md)
       + [일시 중단 처리 구현](tvsdk-3x-ios-prog/ios-3x-blackouts-handle-ios/ios-3x-blackouts-implement-handling-ios.md)
@@ -265,18 +265,18 @@ ht-degree: 0%
       + [사용자 정의 메타데이터 지원 구현](tvsdk-3x-ios-prog/ios-3x-va-integration-overview/ios-3x-va-integration/ios-3x-va-custom-metadata.md)
       + [장 지원 구현](tvsdk-3x-ios-prog/ios-3x-va-integration-overview/ios-3x-va-integration/ios-3x-va-chapter-support.md)
       + [사용자 지정 시간 업데이트 구현](tvsdk-3x-ios-prog/ios-3x-va-integration-overview/ios-3x-va-integration/ios-3x-imp-cust-time-updates.md)
-      + [서버측에서 비디오 분석 보고 설정](tvsdk-3x-ios-prog/ios-3x-va-integration-overview/ios-3x-va-integration/ios-3x-va-server-side-reporting-set-up.md)
+      + [서버 측에 비디오 분석 보고 설정](tvsdk-3x-ios-prog/ios-3x-va-integration-overview/ios-3x-va-integration/ios-3x-va-server-side-reporting-set-up.md)
       + [비디오 분석 보고서 액세스](tvsdk-3x-ios-prog/ios-3x-va-integration-overview/ios-3x-va-integration/ios-3x-va-reports-access.md)
    + 내용 보호 {#content-protection}
       + [Primetime DRM 인터페이스 개요](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-drm-interface.md)
-      + [TVSDK 애플리케이션의 Apple FairPlay](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)
+      + [TVSDK 애플리케이션에서 Apple FairPlay](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)
       + [iOS 애플리케이션 허용 목록](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-allowlist-your-ios-application.md)
    + [플레이어 상태, 활동, 오류 및 로그에 대한 알림](tvsdk-3x-ios-prog/ios-3x-notification-system/ios-3x-notification-content.md)
    + [사용자 정의 로깅](tvsdk-3x-ios-prog/ios-3x-customized-logging/c-ios-customized-logging/c-ios-customized-logging.md)
-   + [장애 조치](tvsdk-3x-ios-prog/ios-3x-understanding-failover.md)
+   + [페일오버](tvsdk-3x-ios-prog/ios-3x-understanding-failover.md)
    + [청구 지표](tvsdk-3x-ios-prog/ios-3x-billing/ios-3x-billing-metrics/ios-3x-billing-metrics.md)
    + Primetime Player 클래스 요약 {#primetime-player-classes-summary}
-      + [미디어 플레이어 클릭](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-media-player-ios.md)
+      + [미디어 플레이어 클래스](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-media-player-ios.md)
       + [클래스 로깅](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-logging.md)
       + [메타데이터 클래스](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-metadata.md)
       + [알림 클래스](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-notifications.md)
@@ -290,7 +290,7 @@ ht-degree: 0%
       + [오류 알림 코드](tvsdk-3x-ios-prog/ios-3x-notification-codes/c-ios-notification-codes/ios-3x-notifications-errors.md)
       + [경고 알림 코드](tvsdk-3x-ios-prog/ios-3x-notification-codes/c-ios-notification-codes/ios-3x-notification-warnings.md)
       + [INFO 알림 코드](tvsdk-3x-ios-prog/ios-3x-notification-codes/c-ios-notification-codes/ios-3x-notification-info.md)
-      + [수익 최적화 코드](tvsdk-3x-ios-prog/ios-3x-notification-codes/c-ios-notification-codes/ios-3x-revenue-optimization.md)
+      + [매출 최적화 코드](tvsdk-3x-ios-prog/ios-3x-notification-codes/c-ios-notification-codes/ios-3x-revenue-optimization.md)
 + Android용 TVSDK 2.7 {#tvsdk-2-7-for-android}
    + 제품 개요, 대상 및 이 안내서 {#overview}
       + [제품 개요, 대상 및 이 안내서 개요](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-prod-audience-guide.md)
@@ -301,12 +301,12 @@ ht-degree: 0%
       + [MediaPlayer 설정](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-mediaplayer-set-up-android.md)
       + MediaPlayer 개체 {#work-with-mediaplayer-objects} 사용
          + [MediaPlayerItem 클래스 정보](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayeritem-class-about.md)
-         + [Media Player 개체의 라이프사이클 및 상태](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-object-lifecycle-states.md)
+         + [MediaPlayer 객체의 라이프사이클 및 상태](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-object-lifecycle-states.md)
          + [MediaResource 정보에 액세스하기 위한 MediaPlayerItem 메서드](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/r-psdk-android-2.7-mediaplayeritem-methods-for-accessing-mediaresource.md)
          + [MediaPlayer 인스턴스 재사용 또는 제거](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-reuse-or-remove.md)
          + [Inspect 재생 타임라인](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/t-psdk-android-2.7-timeline-inspect-playback.md)
-         + [Media Player 일시 중단 및 복원](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-suspend-and-restore.md)
-      + Primetime 플레이어 이벤트 듣기   {#listen-primetime-player-events}
+         + [MediaPlayer 일시 중단 및 복원](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-suspend-and-restore.md)
+      + Primetime 플레이어 이벤트 수신   {#listen-primetime-player-events}
          + [개요](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-events-listen-for.md)
          + [이벤트 리스너 및 콜백 구현](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-event-listeners-implement.md)
       + [오류 처리 설정](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-error-handling-set-up.md)
@@ -314,47 +314,47 @@ ht-degree: 0%
          + [유효한 상태 대기](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-state-prepared-wait-for.md)
          + [비디오 재생 및 일시 중지](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-pause-play-implement.md)
          + [컨텐츠가 실시간 또는 VOD인지 확인](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-content-live-vod-identify.md)
-         + [볼륨 컨트롤 제공](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-volume-control.md)
+         + [볼륨 제어 제공](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-volume-control.md)
          + [비디오 지속 시간, 현재 시간 및 남은 시간 표시](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-duration-time-display.md)
-         + [현재 재생 위치에 검색 스크럽 막대 표시](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md)
-         + [DVR용으로 향상된 제어 막대 구성](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-ctrl-bar-for-dvr-construct.md)
+         + [현재 재생 위치에 검색 스크러빙 막대 표시](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md)
+         + [DVR에 대한 향상된 제어 막대 구성](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-ctrl-bar-for-dvr-construct.md)
          + [특정 시간에 스트림 입력](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-stream-entry-control.md)
-      + 특정 비디오 {#initialize-specific-video}에 대한 미디어 플레이어 초기화
+      + 특정 비디오 {#initialize-specific-video}에 대한 미디어 플레이어를 초기화합니다.
          + [미디어 리소스 만들기](tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-create.md)
          + [미디어 플레이어에서 미디어 리소스 로드](tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-load.md)
          + [MediaPlayerItemLoader를 사용하여 미디어 리소스 로드](tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-load-using-mediaplayeritemloader.md)
-      + 빨리 구현하고 {#implement-fast-forward} 되감기
+      + 빨리 구현 및 되감기 {#implement-fast-forward}
          + [개요](tvsdk-2.7-for-android/content-playback-options/trick-play-implement/t-psdk-android-2.7-trick-play-implement.md)
          + [속도 변경 API 요소](tvsdk-2.7-for-android/content-playback-options/trick-play-implement/r-psdk-android-2.7-trick-play-apis.md)
-         + [트릭 플레이 시 제한 사항 및 동작](tvsdk-2.7-for-android/content-playback-options/trick-play-implement/c-psdk-android-2.7-trick-play-limitations.md)
-         + [매끄러운 트릭 플레이 작업](tvsdk-2.7-for-android/content-playback-options/trick-play-implement/c-psdk-android-2.7-trick-play-smooth.md)
+         + [트릭 플레이의 제한 및 행동](tvsdk-2.7-for-android/content-playback-options/trick-play-implement/c-psdk-android-2.7-trick-play-limitations.md)
+         + [매끄러운 트릭 재생 작업](tvsdk-2.7-for-android/content-playback-options/trick-play-implement/c-psdk-android-2.7-trick-play-smooth.md)
       + [HTTP 302 리디렉션 최적화](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-302-redirect-overview.md)
       + [쿠키를 사용한 작업](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-cookies-work-with.md)
-      + 자막 작업 {#closed-captions}
+      + 닫힌 캡션 작업 {#closed-captions}
          + [개요](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/c-psdk-android-2.7-closed-captions-set-up.md)
          + [사용 가능한 트랙 중에서 현재 캡션 트랙 선택](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/t-psdk-android-2.7-closed-caption-available-current.md)
-         + 자막 표시 제어 {#control-visibility}
+         + 닫힌 캡션 표시 제어 {#control-visibility}
             + [개요](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/closed-caption-visibility-control/t-psdk-android-2.7-closed-caption-visibility-control.md)
             + [사용자가 캡션 추적 변경 허용](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/closed-caption-visibility-control/t-psdk-android-2.7-closed-caption-track-allow-user-to-change.md)
          + [자막 스타일 제어](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/c-psdk-android-2.7-closed-caption-styling-control.md)
       + 대체 오디오 {#alternate-audio}
          + [개요](tvsdk-2.7-for-android/content-playback-options/alternate-audio/c-psdk-android-2.7-alternate-audio.md)
-         + [AC-3 5.1 포맷](tvsdk-2.7-for-android/content-playback-options/alternate-audio/c-psdk-android-2.7-ac-3-5.1-format.md)
+         + [AC-3 5.1 형식](tvsdk-2.7-for-android/content-playback-options/alternate-audio/c-psdk-android-2.7-ac-3-5.1-format.md)
          + [재생 목록의 대체 오디오 트랙](tvsdk-2.7-for-android/content-playback-options/alternate-audio/c-psdk-android-2.7-alternate-audio-in-playlist.md)
          + [대체 오디오 트랙 액세스](tvsdk-2.7-for-android/content-playback-options/alternate-audio/t-psdk-android-2.7-alternate-audio-implement.md)
       + [백그라운드 오디오 사용](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-background-audio.md)
       + [ID3 태그](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-id3-metadata-retrieve.md)
-      + 버퍼링 {#buffering}
+      + 버퍼링 중 {#buffering}
          + [개요](tvsdk-2.7-for-android/content-playback-options/buffering-configuration/c-psdk-android-2.7-buffering-configuration.md)
          + [즉시 켜기](tvsdk-2.7-for-android/content-playback-options/buffering-configuration/c-psdk-android-2.7-instant-on.md)
       + [병렬 다운로드](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-parallel-downloads.md)
       + 비디오 품질 {#adaptive}에 대한 응용 비트 전송률(ABR)
          + [개요](tvsdk-2.7-for-android/content-playback-options/abr-control-quality/c-psdk-android-2.7-abr-control-quality.md)
-         + [ABRConcontrolParameters를 사용하여 응용 비트 전송률 구성](tvsdk-2.7-for-android/content-playback-options/abr-control-quality/t-psdk-android-2.7-abr-set-using-abrparameters.md)
+         + [ABRControlParameters를 사용하여 응용 비트 전송률 구성](tvsdk-2.7-for-android/content-playback-options/abr-control-quality/t-psdk-android-2.7-abr-set-using-abrparameters.md)
       + [서비스 품질 통계](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-qos-statistics-monitor.md)
       + 재생 및 페일오버 {#playback-and-failover}
          + [개요](tvsdk-2.7-for-android/content-playback-options/failover-for-playback/c-psdk-android-2.7-failover-for-playback.md)
-         + [미디어 재생 및 장애 조치](tvsdk-2.7-for-android/content-playback-options/failover-for-playback/c-psdk-android-2.7-failover-media-playback.md)
+         + [미디어 재생 및 페일오버](tvsdk-2.7-for-android/content-playback-options/failover-for-playback/c-psdk-android-2.7-failover-media-playback.md)
          + [VOD를 위한 광고 삽입 및 장애 조치](tvsdk-2.7-for-android/content-playback-options/failover-for-playback/c-psdk-android-2.7-failover-ad-insertion-for-vod.md)
    + 광고 {#advertising}
       + [광고 및 요구 사항](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-ad-insertion.md)
@@ -366,31 +366,31 @@ ht-degree: 0%
          + [클라이언트 광고 추적](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-ad-tracking-client.md)
          + [손상된 VMAP에 대한 클라이언트 오류 처리](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-broken-vmap-error.md)
          + [HTTPS를 통한 안전한 광고 로딩](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-secure-ad-loading.md)
-         + [광고를 사용한 기본 및 사용자 정의 재생 동작](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-playback-post1.2.md)
-      + {#customize-playback} 광고로 재생 사용자 정의
+         + [광고를 사용한 기본 및 사용자 정의된 재생 동작](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-playback-post1.2.md)
+      + 광고 {#customize-playback}을(를) 사용하여 재생 사용자 정의
          + [개요](tvsdk-2.7-for-android/ad-insertion/playback-customize/c-psdk-android-2.7-playback-customize.md)
          + [광고 재생을 위한 API 요소](tvsdk-2.7-for-android/ad-insertion/playback-customize/c-psdk-android-2.7-playback-ad-custom-elements.md)
          + [기본 재생 동작 사용](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-use-default.md)
          + [일정 기간 동안 광고 중단 건너뛰기](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-skip-breaks.md)
-         + [비디오 위치를 저장하고 나중에 다시 시작](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-save-position.md)
-         + [부분 광고 분리 삽입](tvsdk-2.7-for-android/ad-insertion/playback-customize/c-psdk-android-2.7-partial-ad-break-insertion.md)
-      + 지연 및 해결 {#lazy-ad-resolving}
+         + [비디오 위치를 저장하고 나중에 다시 시작합니다.](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-save-position.md)
+         + [부분 광고 나누기 삽입](tvsdk-2.7-for-android/ad-insertion/playback-customize/c-psdk-android-2.7-partial-ad-break-insertion.md)
+      + {#lazy-ad-resolving} 해결 지연됨
          + [개요](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-lazy-ad-resolving/c-psdk-android-2.7-lazy-ad-resolving.md)
-         + [지연 및 해결](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-lazy-ad-resolving/t-psdk-android-2.7-enable-lazy-ad-resolving.md)
+         + [게으른 광고 해결](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-lazy-ad-resolving/t-psdk-android-2.7-enable-lazy-ad-resolving.md)
       + 광고 삽입 메타데이터 {#ad-insertion-metadata}
          + [개요](tvsdk-2.7-for-android/ad-insertion/ad-insertion-metadata/c-psdk-android-2.7-ad-insertion-metadata.md)
          + [광고 삽입 메타데이터 설정](tvsdk-2.7-for-android/ad-insertion/ad-insertion-metadata/t-psdk-android-2.7-ad-insertion-metadata-set-up.md)
          + [전체 이벤트 재생에서 광고 활성화](tvsdk-2.7-for-android/ad-insertion/ad-insertion-metadata/ad-full-event-replay/t-psdk-android-2.7-ad-full-event-replay.md)
          + [광고 신호 모드](tvsdk-2.7-for-android/ad-insertion/ad-insertion-metadata/ad-full-event-replay/r-psdk-android-2.7-ad-signaling-mode.md)
       + 부록 배너 광고 {#companion-banner-ads}
-         + [컴패니언 배너 광고에 대한 모범 사례](tvsdk-2.7-for-android/ad-insertion/comp-banner-ads/c-psdk-android-2.7-companion-banners-best-practices.md)
+         + [컴패니언 배너 광고에 대한 우수 사례](tvsdk-2.7-for-android/ad-insertion/comp-banner-ads/c-psdk-android-2.7-companion-banners-best-practices.md)
          + [컴패니언 배너 데이터](tvsdk-2.7-for-android/ad-insertion/comp-banner-ads/r-psdk-android-2.7-companion-banner-data.md)
          + [배너 광고 표시](tvsdk-2.7-for-android/ad-insertion/comp-banner-ads/t-psdk-android-2.7-companion-banner-ads-display.md)
       + 클릭 가능한 광고 {#clickable-ads}
          + [광고 클릭 수에 응답](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-respond-to-ad-clicks.md)
-         + [클릭 가능한 광고 프로세스 분리](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-separate-clickable-ad-process.md)
+         + [클릭 가능한 광고 프로세스 구분](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-separate-clickable-ad-process.md)
          + [재생 일시 중지 및 다시 시작](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-pausing-resuming-playback.md)
-      + [Adobe CRS(Creative Repackaging Service)를 사용하여 호환되지 않는 광고 재패키지](tvsdk-2.7-for-android/ad-insertion/ad-transcoding/c-psdk-android-2.7-ad-transcoding.md)
+      + [Adobe CRS(Creative Repackaging Service)를 사용하여 호환되지 않는 광고를 재패키징합니다.](tvsdk-2.7-for-android/ad-insertion/ad-transcoding/c-psdk-android-2.7-ad-transcoding.md)
       + VAST 및 VMAP 광고에 대한 광고 폴백 {#ad-fallback}
          + [개요](tvsdk-2.7-for-android/ad-insertion/ad-fallback/c-psdk-android-2.7-ad-fallback.md)
          + [VMAP 인라인 광고에 대한 대체 광고 동작 정의](tvsdk-2.7-for-android/ad-insertion/ad-fallback/t-psdk-android-2.7-ad-fallback-set-up.md)
@@ -401,8 +401,8 @@ ht-degree: 0%
          + [태그에 대한 구성 클래스 메서드](tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/c-psdk-android-2.7-custom-tags-psdkconfig-methods.md)
          + [Timed metadata 클래스](tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/r-psdk-android-2.7-custom-tags-timedmetadata-class.md)
          + [사용자 정의 태그 구독](tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/t-psdk-android-2.7-custom-tags-subscribe.md)
-         + [시간 메타데이터 알림용 수신기 추가](tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/t-psdk-android-2.7-custom-tags-receive-notifications.md)
-         + [전달될 때 시간 메타데이터 개체 저장](tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/t-psdk-android-2.7-timed-metadata-store.md)
+         + [시간 지정 메타데이터 알림에 대한 리스너 추가](tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/t-psdk-android-2.7-custom-tags-receive-notifications.md)
+         + [전달될 때 시간 메타데이터 객체 저장](tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/t-psdk-android-2.7-timed-metadata-store.md)
       + VPAID 2.0 광고 지원 {#vpaid-ad-support}
          + [개요](tvsdk-2.7-for-android/ad-insertion/vpaid-2.0-ads/c-psdk-android-2.7-vpaid-2.0-ads.md)
          + [VPAID 2.0 통합 구현](tvsdk-2.7-for-android/ad-insertion/vpaid-2.0-ads/t-psdk-android-2.7-include-vpaid20-support.md)
@@ -416,7 +416,7 @@ ht-degree: 0%
          + [사용자 정의 광고 마커 검색을 위한 재생 동작 제어](tvsdk-2.7-for-android/ad-insertion/ad-markers-add-custom/t-psdk-android-2.7-ad-markers-control-seek.md)
       + 기회 생성기 및 컨텐츠 해상도 사용자 정의 {#customize-opportunity}
          + [개요](tvsdk-2.7-for-android/ad-insertion/content-resolver/c-psdk-android-2.7-content-resolver.md)
-         + [기회 생성기 및 컨텐츠 해결](tvsdk-2.7-for-android/ad-insertion/content-resolver/c-psdk-android-2.7-content-resolver-about.md)
+         + [기회 생성기 및 컨텐츠 해결 방법](tvsdk-2.7-for-android/ad-insertion/content-resolver/c-psdk-android-2.7-content-resolver-about.md)
          + [사용자 정의 기회 생성기 구현](tvsdk-2.7-for-android/ad-insertion/content-resolver/t-psdk-android-2.7-opp-detector-impl-android.md)
          + [사용자 지정 컨텐츠 해결 프로그램 구현](tvsdk-2.7-for-android/ad-insertion/content-resolver/t-psdk-android-2.7-content-resolver-implement.md)
       + [VOD 스트림에서 광고 삭제 및 바꾸기](tvsdk-2.7-for-android/ad-insertion/delete-replace-content-vod/c-psdk-android-2.7-delete-replace-content-vod.md)
@@ -449,7 +449,7 @@ ht-degree: 0%
       + [비디오 분석 초기화 및 구성](tvsdk-2.7-for-android/va-integration-overview/t-psdk-android-2.7-va-integrate-heartbeats.md)
       + [사용자 정의 메타데이터 지원 구현](tvsdk-2.7-for-android/va-integration-overview/t-psdk-android-2.7-va-custom-metadata.md)
       + [장 지원 구현](tvsdk-2.7-for-android/va-integration-overview/t-psdk-android-2.7-va-chapter-support.md)
-      + [서버측에서 비디오 분석 보고 설정](tvsdk-2.7-for-android/va-integration-overview/t-psdk-android-2.7-va-server-side-reporting-set-up.md)
+      + [서버 측에 비디오 분석 보고 설정](tvsdk-2.7-for-android/va-integration-overview/t-psdk-android-2.7-va-server-side-reporting-set-up.md)
       + [비디오 분석 보고서 액세스](tvsdk-2.7-for-android/va-integration-overview/t-psdk-android-2.7-va-reports-access.md)
    + 이벤트 및 알림 {#event-notifications}
       + [플레이어 상태, 활동, 오류 및 로깅에 대한 알림 및 이벤트](tvsdk-2.7-for-android/events-and-notifications/c-psdk-android-2.7-notification-system.md)
@@ -463,12 +463,12 @@ ht-degree: 0%
          + [결제 지표 전송](tvsdk-2.7-for-android/billing/r-psdk-android-2.7-billing-data-format.md)
 + Android용 TVSDK 1.4 {#tvsdk-1-4-for-android}
    + 소개 {#introduction}
-      + [제품 개요, 대상 및 이 안내서](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-prod-audience-guide.md)
+      + [제품 개요, 사용자 및 이 안내서](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-prod-audience-guide.md)
       + [Primetime TVSDK 기능](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-of-the-player.md)
       + [고려 사항 및 우수 사례](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-considerations.md)
       + [요구 사항](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-requirements.md)
    + [MediaPlayer 설정](tvsdk-1.4-for-android/android-1.4-mediaplayer-set-up.md)
-   + Primetime 플레이어 이벤트 수신 대기 {#listen-primetime-player-events}
+   + Primetime 플레이어 이벤트 {#listen-primetime-player-events} 수신 대기
       + [개요](tvsdk-1.4-for-android/android-1.4-primetime-player-events/events-listen-for/android-1.4-events-listen-for.md)
       + [이벤트 리스너 및 콜백 구현](tvsdk-1.4-for-android/android-1.4-primetime-player-events/events-listen-for/android-1.4-event-listeners-implement.md)
    + [오류 처리 설정](tvsdk-1.4-for-android/android-1.4-error-handling-set-up.md)
@@ -476,20 +476,20 @@ ht-degree: 0%
       + [유효한 상태 대기](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-state-prepared-wait-for.md)
       + [비디오 재생 및 일시 중지](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-pause-play-implement.md)
       + [컨텐츠가 실시간 또는 VOD인지 확인](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-content-live-vod-identify.md)
-      + [볼륨 컨트롤 제공](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-volume-control.md)
+      + [볼륨 제어 제공](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-volume-control.md)
       + [비디오 지속 시간, 현재 시간 및 남은 시간 표시](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-duration-time-display.md)
-      + [현재 재생 위치에 검색 스크럽 막대 표시](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-seek-scrub-bar-display.md)
-      + [DVR용으로 향상된 제어 막대 구성](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-ctrl-bar-for-dvr-construct.md)
-      + 빨리 구현하고 {#implement-fast-forward-rewind} 되감기
+      + [현재 재생 위치에 검색 스크러빙 막대 표시](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-seek-scrub-bar-display.md)
+      + [DVR에 대한 향상된 제어 막대 구성](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-ctrl-bar-for-dvr-construct.md)
+      + 빨리 구현 및 되감기 {#implement-fast-forward-rewind}
          + [개요](tvsdk-1.4-for-android/ui-configure/trick-play-implement/android-1.4-trick-play-implement.md)
          + [속도 변경 API 요소](tvsdk-1.4-for-android/ui-configure/trick-play-implement/android-1.4-trick-play-apis.md)
-         + [트릭 플레이 시 제한 사항 및 동작](tvsdk-1.4-for-android/ui-configure/trick-play-implement/android-1.4-trick-play-limitations.md)
+         + [트릭 플레이의 제한 및 행동](tvsdk-1.4-for-android/ui-configure/trick-play-implement/android-1.4-trick-play-limitations.md)
       + [특정 시간에 스트림 입력](tvsdk-1.4-for-android/ui-configure/android-1.4-ui-stream-entry-control.md)
       + 비디오 품질 {#adaptive-bit-rates}에 대한 응용 비트 전송률(ABR)
          + [개요](tvsdk-1.4-for-android/ui-configure/abr-control-quality/android-1.4-abr-control-quality.md)
-         + [ABRConcontrolParameters를 사용하여 응용 비트 전송률 구성](tvsdk-1.4-for-android/ui-configure/abr-control-quality/android-1.4-abr-set-using-abrparameters.md)
+         + [ABRControlParameters를 사용하여 응용 비트 전송률 구성](tvsdk-1.4-for-android/ui-configure/abr-control-quality/android-1.4-abr-set-using-abrparameters.md)
       + [화면 캡처 사용](tvsdk-1.4-for-android/ui-configure/android-1.4-enable-screen-capture.md)
-      + 특정 비디오 {#initialize}에 대한 미디어 플레이어 초기화
+      + 특정 비디오 {#initialize}에 대한 미디어 플레이어를 초기화합니다.
          + [미디어 리소스 만들기](tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-create.md)
          + [MediaPlayer에서 미디어 리소스 로드](tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md)
          + [MediaPlayerItemLoader를 사용하여 미디어 리소스 로드](tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md)
@@ -502,32 +502,32 @@ ht-degree: 0%
          + [MediaPlayerItem 클래스 정보](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-mediaplayeritem-class-about.md)
          + [MediaPlayer 개체 라이프사이클](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-mediaplayer-object-lifecycle-states.md)
          + [MediaResource 정보에 액세스하기 위한 MediaPlayer 메서드](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-mediaplayer-mediaresource.md)
-         + [Media Player 인스턴스 재설정, 재사용 또는 제거](tvsdk-1.4-for-android/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/android-1.4-mediaplayer-reset-reuse-instance.md)
+         + [MediaPlayer 인스턴스 재설정, 재사용 또는 제거](tvsdk-1.4-for-android/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/android-1.4-mediaplayer-reset-reuse-instance.md)
          + [Inspect 재생 타임라인](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-timeline-inspect-playback.md)
       + [ID3 태그](tvsdk-1.4-for-android/notification-system/android-1.4-id3-metadata-retrieve.md)
       + [버퍼링](tvsdk-1.4-for-android/buffering-configuration/android-1.4-buffering-times-set.md)
-      + [즉시 사용](tvsdk-1.4-for-android/buffering-configuration/instant-on/android-1.4-instant-on.md)
+      + [즉시 켜기](tvsdk-1.4-for-android/buffering-configuration/instant-on/android-1.4-instant-on.md)
       + 광고 {#advertising}
          + [광고 요구 사항](tvsdk-1.4-for-android/ad-insertion/android-1.4-advertising-requirements.md)
       + 광고 {#inserting-ads} 삽입
          + [개요](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-ad-insertion-about.md)
          + [광고 삽입 및 배치](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-ad-loc-ad-placer.md)
          + [VOD 광고 해결 및 삽입](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-ad-resolving-client-vod.md)
-         + [라이브/선형 광고 삽입](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-ad-resolving-client-live-linear.md)
+         + [라이브/선형 광고 해결 및 삽입](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-ad-resolving-client-live-linear.md)
          + [조기 광고 중단 반환 구현](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-early-ad-break-return.md)
          + [클라이언트 광고 추적](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-ad-tracking-client.md)
          + [사용자 지정 시간 업데이트 구현](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-imp-cust-time-updates.md)
          + [HTTPS를 통한 안전한 광고 로딩](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-secure-ad-loading.md)
          + [프리롤 광고 비활성화](tvsdk-1.4-for-android/ad-insertion/ad-insertion-about/android-1.4-disable-preroll-ads.md)
-      + [광고를 사용한 기본 및 사용자 정의 재생 동작](tvsdk-1.4-for-android/ad-insertion/android-1.4-playback-post1.2.md)
-      + {#customize-playback} 광고로 재생 사용자 정의
+      + [광고를 사용한 기본 및 사용자 정의된 재생 동작](tvsdk-1.4-for-android/ad-insertion/android-1.4-playback-post1.2.md)
+      + 광고 {#customize-playback}을(를) 사용하여 재생 사용자 정의
          + [개요](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-playback-customize.md)
          + [광고 재생을 위한 API 요소](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-playback-ad-custom-elements.md)
          + [기본 재생 동작 사용](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-playback-use-default.md)
          + [사용자 정의 재생 설정](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-set-up-playback-customize.md)
          + [일정 기간 동안 광고 중단 건너뛰기](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-playback-skip-breaks.md)
-         + [비디오 위치를 저장하고 나중에 다시 시작](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-playback-save-position.md)
-         + [부분 광고 분리 삽입](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-partial-adbreak-insertion.md)
+         + [비디오 위치를 저장하고 나중에 다시 시작합니다.](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-playback-save-position.md)
+         + [부분 광고 나누기 삽입](tvsdk-1.4-for-android/ad-insertion/playback-customize/android-1.4-partial-adbreak-insertion.md)
       + 광고 삽입 메타데이터 {#ad-insertion-metadata}
          + [개요](tvsdk-1.4-for-android/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata.md)
          + [광고 삽입 메타데이터 설정](tvsdk-1.4-for-android/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata-set-up.md)
@@ -536,10 +536,10 @@ ht-degree: 0%
       + 클릭 가능한 광고 {#clickable-ads}
          + [개요](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-clickable-ads.md)
          + [광고 클릭 수에 응답](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-respond-to-ad-clicks.md)
-         + [클릭 가능한 광고 프로세스 분리](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-separate-clickable-ad-process.md)
+         + [클릭 가능한 광고 프로세스 구분](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-separate-clickable-ad-process.md)
          + [재생 일시 중지 및 다시 시작](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-pausing-resuming-playback.md)
       + [Adobe Creative Repackaging Service를 사용하여 호환되지 않는 광고 재패키지](tvsdk-1.4-for-android/ad-insertion/ad-transcoding/android-1.4-ad-transcoding.md)
-      + [VAST 및 VMAP 광고에 대한 광고 폴백](tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md)
+      + [광활한 VMAP 광고 대비 폴백](tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md)
       + [해자에서 광고 측정](tvsdk-1.4-for-android/ad-insertion/android-1.4-ad-measurements-from-moat.md)
       + [VPAID 2.0 광고 지원](tvsdk-1.4-for-android/ad-insertion/vpaid-2.0-ads/android-1.4-vpaid-2.0-ads.md)
       + 사용자 지정 태그 {#custom-tags}
@@ -548,8 +548,8 @@ ht-degree: 0%
          + [태그에 대한 구성 클래스 메서드](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-custom-tags-psdkconfig.md)
          + [Timed metadata 클래스](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-custom-tags-timedmetadata.md)
          + [사용자 정의 태그 구독](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-custom-tags-subscribe.md)
-         + [시간 메타데이터 알림용 수신기 추가](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-custom-tags-receive-notifications.md)
-         + [전달될 때 시간 메타데이터 개체 저장](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-timed-metadata-store.md)
+         + [시간 지정 메타데이터 알림에 대한 리스너 추가](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-custom-tags-receive-notifications.md)
+         + [전달될 때 시간 메타데이터 객체 저장](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-timed-metadata-store.md)
          + [시간 지정 메타데이터 사용](tvsdk-1.4-for-android/ad-insertion/custom-tags-configure/android-1.4-timed-metadata-use.md)
       + 사용자 지정 광고 마커 {#ad-markers} 추가
          + [개요](tvsdk-1.4-for-android/ad-insertion/ad-markers-add-custom/android-1.4-ad-markers-add-custom.md)
@@ -558,35 +558,35 @@ ht-degree: 0%
          + [TimeRangeCollection 클래스](tvsdk-1.4-for-android/ad-insertion/ad-markers-add-custom/android-1.4-timerangecollection-class.md)
          + [타임라인에 시간 범위 광고 마커 배치](tvsdk-1.4-for-android/ad-insertion/ad-markers-add-custom/android-1.4-timerange-markers-timeline.md)
          + [사용자 정의 광고 마커 검색을 위한 재생 동작 제어](tvsdk-1.4-for-android/ad-insertion/ad-markers-add-custom/android-1.4-ad-markers-control-seek.md)
-      + 광고 크리에이티브 선택 규칙 업데이트 {#updating-ad-rules}
+      + 광고 크리에이티브 선택 규칙 업데이트 중 {#updating-ad-rules}
          + [개요](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-updating-rules.md)
          + [우선 순위 규칙](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-priority-rule.md)
          + [규칙 표준화](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-normalize-rule.md)
          + [크리에이티브 선택 규칙 샘플](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-sample-rule-files.md)
          + [크리에이티브 선택 규칙 적용](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-how-tvsdk-applies-csr.md)
       + 기회 감지기 및 컨텐츠 해상도 사용자 정의 {#customize-opportunity-detectors}
-         + [기회 생성기 및 컨텐츠 해결](tvsdk-1.4-for-android/content-resolver/android-1.4-content-resolver-about.md)
-         + [사용자 지정 기회 탐지 구현](tvsdk-1.4-for-android/content-resolver/android-1.4-opp-detector-impl.md)
+         + [기회 생성기 및 컨텐츠 해결 방법](tvsdk-1.4-for-android/content-resolver/android-1.4-content-resolver-about.md)
+         + [사용자 정의 기회 탐지기 구현](tvsdk-1.4-for-android/content-resolver/android-1.4-opp-detector-impl.md)
          + [사용자 지정 컨텐츠 해결 프로그램 구현](tvsdk-1.4-for-android/content-resolver/android-1.4-content-resolver-implement.md)
       + VOD 스트림 {#delete-replace-ads}에서 광고 삭제 및 바꾸기
          + [사용자 지정 시간 범위 작업](tvsdk-1.4-for-android/delete-replace-content-vod/custom-time-range-ops/android-1.4-custom-time-range-ops.md)
          + [여러 초기 배치정보](tvsdk-1.4-for-android/delete-replace-content-vod/custom-time-range-ops/android-1.4-multi-initial-placementinfos.md)
          + [광고 삭제/교체를 위한 컨텐츠 해상도](tvsdk-1.4-for-android/delete-replace-content-vod/custom-time-range-ops/android-1.4-content-resolvers-ad-deletion.md)
          + [광고 신호 모드 및 광고 메타데이터 조합에서 광고 삽입 및 삭제에 미치는 영향](tvsdk-1.4-for-android/delete-replace-content-vod/android-1.4-signaling-metadata-combos.md)
-         + [시간 범위를 포함하는 광고 노드 구조](tvsdk-1.4-for-android/delete-replace-content-vod/android-1.4-ad-node-structure.md)
+         + [TimeRanges를 사용하는 광고 노드 구조](tvsdk-1.4-for-android/delete-replace-content-vod/android-1.4-ad-node-structure.md)
          + 광고 {#use-cases} 삭제 및 바꾸기
             + [표시 범위](tvsdk-1.4-for-android/delete-replace-content-vod/ad-delete-replace-use-cases/android-1.4-mark-ranges.md)
             + [시간 범위를 광고로 바꾸기](tvsdk-1.4-for-android/delete-replace-content-vod/ad-delete-replace-use-cases/android-1.4-replace-ranges-with-aud.md)
             + [범위 삭제](tvsdk-1.4-for-android/delete-replace-content-vod/ad-delete-replace-use-cases/android-1.4-delete-ranges-with-aud-ad.md)
          + [광고 삭제 및 교체 오류 처리](tvsdk-1.4-for-android/delete-replace-content-vod/ad-delete-replace-error-handling/android-1.4-ad-delete-replace-error-handling.md)
          + [광고 삭제 및 교체 API 변경 사항](tvsdk-1.4-for-android/delete-replace-content-vod/android-1.4-ad-deletion-replacement.md)
-      + 실시간 스트림의 일시 중단 처리 {#handle-blackouts}
+      + 실시간 스트림에서 일시 중단 처리 {#handle-blackouts}
          + [일시 중단 API 요소](tvsdk-1.4-for-android/blackouts-handle/android-1.4-blackout-apis.md)
          + [일시 중단 처리 구현](tvsdk-1.4-for-android/blackouts-handle/android-1.4-blackouts-implement-handling.md)
-      + 자막 작업 {#closed-captions}
+      + 닫힌 캡션 작업 {#closed-captions}
          + [개요](tvsdk-1.4-for-android/closed-captions-set-up/android-1.4-closed-caption-overview.md)
          + [사용 가능한 트랙 중에서 현재 캡션 트랙 선택](tvsdk-1.4-for-android/closed-captions-set-up/android-1.4-closed-caption-available.md)
-         + 자막 표시 제어 {#control-visibility}
+         + 닫힌 캡션 표시 제어 {#control-visibility}
             + [개요](tvsdk-1.4-for-android/closed-captions-set-up/closed-caption-visibility-control/android-1.4-closed-caption-visibility-control.md)
             + [사용자가 캡션 추적 변경 허용](tvsdk-1.4-for-android/closed-captions-set-up/closed-caption-visibility-control/android-1.4-closed-caption-allow-user-change.md)
          + [자막 스타일 제어](tvsdk-1.4-for-android/closed-captions-set-up/closed-caption-styling-control/android-1.4-closed-caption-styling.md)
@@ -599,8 +599,8 @@ ht-degree: 0%
          + [비디오 분석 초기화 및 구성](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-integrate-heartbeats.md)
          + [사용자 정의 메타데이터 지원 구현](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-custom-metadata.md)
          + [장 지원 구현](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-chapter-support.md)
-         + [사용자 지정 시간 업데이트 구현](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-imp-cust-time-updates.md)
-         + [서버측에서 비디오 분석 보고 설정](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-server-side-set-up.md)
+         + [사용자 지정 시간 업데이트 구현](https://experienceleague.adobe.com/docs/primetime/programming/tvsdk-1-4-for-android/configure-user-interface/inserting-ads/android-1.4-imp-cust-time-updates.html?lang=en#tvsdk-1-4-for-android)
+         + [서버 측에 비디오 분석 보고 설정](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-server-side-set-up.md)
          + [비디오 분석 보고서 액세스](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-reports-access.md)
       + 내용 보호 {#content-protection}
          + Primetime DRM 인터페이스 {#drm-interface}
@@ -610,10 +610,10 @@ ht-degree: 0%
             + [TSVDK 애플리케이션에서 Primetime DRM 구현](tvsdk-1.4-for-android/drm-content-security/android-1.4-tvsdk-drm-workflow.md)
       + [플레이어 상태, 활동, 오류 및 로깅에 대한 알림](tvsdk-1.4-for-android/notification-system/android-1.4-notification-content.md)
       + 재생 및 페일오버 {#playback-and-failover}
-         + [AC-3 5.1 포맷](tvsdk-1.4-for-android/failover-for-playback/android-1.4-ac-3-5.1-format.md)
-         + [미디어 재생 및 장애 조치](tvsdk-1.4-for-android/failover-for-playback/failover-media-playback/android-1.4-failover-media-playback.md)
+         + [AC-3 5.1 형식](tvsdk-1.4-for-android/failover-for-playback/android-1.4-ac-3-5.1-format.md)
+         + [미디어 재생 및 페일오버](tvsdk-1.4-for-android/failover-for-playback/failover-media-playback/android-1.4-failover-media-playback.md)
          + [재생 목록 장애 조치(failover)가 없습니다.](tvsdk-1.4-for-android/failover-for-playback/failover-media-playback/android-1.4-failover-missing-playlist.md)
-         + [세그먼트 장애 조치(failover) 없음](tvsdk-1.4-for-android/failover-for-playback/failover-media-playback/android-1.4-failover-missing-segment.md)
+         + [누락된 세그먼트 페일오버](tvsdk-1.4-for-android/failover-for-playback/failover-media-playback/android-1.4-failover-missing-segment.md)
       + VOD {#advertising-insertion-vod}에 대한 광고 삽입 및 장애 조치
          + [개요](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-insertion-vod.md)
          + [광고 해결 단계](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-resolving-phase.md)
@@ -627,7 +627,7 @@ ht-degree: 0%
          + [로더 이벤트](tvsdk-1.4-for-android/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-itemloader.md)
       + Primetime 플레이어 클래스 요약 {#classes-summary}
          + [Mediacore 클래스](tvsdk-1.4-for-android/class-summary/android-1.4-classes-mediacore.md)
-         + [정보 클래스](tvsdk-1.4-for-android/class-summary/android-1.4-classes-info.md)
+         + [Info 클래스](tvsdk-1.4-for-android/class-summary/android-1.4-classes-info.md)
          + [클래스 로깅](tvsdk-1.4-for-android/class-summary/android-1.4-classes-logging.md)
          + [메타데이터 클래스](tvsdk-1.4-for-android/class-summary/android-1.4-classes-metadata.md)
          + [알림 클래스](tvsdk-1.4-for-android/class-summary/android-1.4-classes-notifications.md)
@@ -658,16 +658,16 @@ ht-degree: 0%
       + [재생/일시 정지 단추 구현](tvsdk-1.4-for-ios/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-implement-pause-play.md)
       + [비디오 지속 시간 표시](tvsdk-1.4-for-ios/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-display-video-duration.md)
       + [현재 시간 및 남은 시간 표시](tvsdk-1.4-for-ios/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-display-current-remaining-time.md)
-      + [현재 재생 시간과 함께 검색 스크럽 막대 표시..](tvsdk-1.4-for-ios/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-display-seek-scrub-bar.md)
-      + [비디오 품질을 위한 ABR(적응형 비트 전송률)](tvsdk-1.4-for-ios/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/c-psdk-ios-1.4-abr-control-quality.md)
+      + [현재 재생 시간과 함께 검색 스크러빙 막대 표시...](tvsdk-1.4-for-ios/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-display-seek-scrub-bar.md)
+      + [비디오 품질을 위한 적응형 비트 전송률(ABR)](tvsdk-1.4-for-ios/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/c-psdk-ios-1.4-abr-control-quality.md)
    + [서비스 품질 통계](tvsdk-1.4-for-ios/c-psdk-ios-1.4-qos-statistics-monitor.md)
-   + [Media Player 개체 사용](tvsdk-1.4-for-ios/c-psdk-ios-1.4-mediaplayerobjects-working-with.md)
+   + [MediaPlayer 개체 사용](tvsdk-1.4-for-ios/c-psdk-ios-1.4-mediaplayerobjects-working-with.md)
    + [인스턴트 온](tvsdk-1.4-for-ios/c-psdk-ios-1.4-instant-on-ios.md)
    + 광고 {#advertising}
       + [광고 요구 사항](tvsdk-1.4-for-ios/ad-insertion/r-psdk-ios-1.4-advertising-requirements.md)
       + [부분 광고 분리 삽입](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-partialad-break-insertion.md)
       + [광고 삽입](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-insertion-about.md)
-      + [광고를 사용한 기본 및 사용자 정의 재생 동작](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-playback-post1.2.md)
+      + [광고를 사용한 기본 및 사용자 정의된 재생 동작](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-playback-post1.2.md)
       + [광고로 재생 맞춤화](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-playback-customize.md)
    + Primetime 광고 서버 메타데이터 {#ad-server-metadata}
       + [개요](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/c-psdk-ios-1.4-primetime-ad-serving-metadata.md)
@@ -677,7 +677,7 @@ ht-degree: 0%
    + [Adobe Creative Repackaging Service를 사용하여 호환되지 않는 광고 재패키지](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-transcoding.md)
    + [해자에서 광고 측정](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-measurements-from-moat.md)
    + [VPAID 2.0 광고 지원](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-vpaid-2.0-ads.md)
-   + [VAST 및 VMAP 광고에 대한 광고 폴백](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-fallback.md)
+   + [광활한 VMAP 광고 대비 폴백](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-fallback.md)
    + [DVR 창에 광고 로드](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-loading-for-a-dvr-window.md)
    + 사용자 지정 태그 {#custom-tags}
       + [개요](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-configure.md)
@@ -685,8 +685,8 @@ ht-degree: 0%
       + [태그에 대한 구성 클래스 메서드](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-psdkconfig-methods.md)
       + [Timed metadata 클래스](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/r-psdk-ios-1.4-custom-tags-timedmetadata-class.md)
       + [사용자 정의 태그 구독](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-custom-tags-subscribe.md)
-      + [시간 메타데이터 알림용 수신기 추가](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-custom-tags-receive-notifications.md)
-      + [전달될 때 시간 메타데이터 개체 저장](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md)
+      + [시간 지정 메타데이터 알림에 대한 리스너 추가](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-custom-tags-receive-notifications.md)
+      + [전달될 때 시간 메타데이터 객체 저장](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md)
       + [시간 지정 메타데이터 사용](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-use.md)
    + 광고 크리에이티브 선택 규칙 업데이트 {#update-rules}
       + [개요](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-updating-rules.md)
@@ -696,12 +696,12 @@ ht-degree: 0%
       + [크리에이티브 선택 규칙 적용](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-how-tvsdk-applies-csr.md)
    + [토큰화된 세그먼트 스트림](tvsdk-1.4-for-ios/c-psdk-ios-1.4-tokenized-segment-streams.md)
    + 기회 감지기 및 컨텐츠 해상도 사용자 정의 {#customize-opportunity-content}
-      + [기회 생성기 및 컨텐츠 해결](tvsdk-1.4-for-ios/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver-about.md)
+      + [기회 생성기 및 컨텐츠 해결 방법](tvsdk-1.4-for-ios/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver-about.md)
       + [사용자 지정 기회/컨텐츠 해결 프로그램 구현](tvsdk-1.4-for-ios/c-psdk-ios-1.4-content-resolver/t-psdk-ios-1.4-content-resolver-implement-ios.md)
    + VOD 스트림 {#delete-replace-content-vod}에서 광고 삭제 및 바꾸기
       + [광고 삭제 및 교체 API 변경 사항](tvsdk-1.4-for-ios/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-delete-replace-content-vod.md)
-      + [광고 삭제 및 바꾸기](tvsdk-1.4-for-ios/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-mark-ranges-ios.md)
-   + 실시간 스트림의 일시 중단 처리 {#blackouts}
+      + [광고 삭제 및 바꾸기 사용 사례](tvsdk-1.4-for-ios/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-mark-ranges-ios.md)
+   + 실시간 스트림에서 일시 중단 처리 {#blackouts}
       + [일시 중단 처리](tvsdk-1.4-for-ios/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackouts-handle-ios.md)
       + [일시 중단 API 요소](tvsdk-1.4-for-ios/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackout-apis.md)
       + [일시 중단 처리 구현](tvsdk-1.4-for-ios/c-psdk-ios-1.4-blackouts-handle-ios/t-psdk-ios-1.4-blackouts-implement-handling-ios.md)
@@ -719,15 +719,15 @@ ht-degree: 0%
       + [사용자 정의 메타데이터 지원 구현](tvsdk-1.4-for-ios/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-custom-metadata.md)
       + [장 지원 구현](tvsdk-1.4-for-ios/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-chapter-support.md)
       + [사용자 지정 시간 업데이트 구현](tvsdk-1.4-for-ios/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-imp-cust-time-updates.md)
-      + [서버측에서 비디오 분석 보고 설정](tvsdk-1.4-for-ios/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-server-side-reporting-set-up.md)
+      + [서버 측에 비디오 분석 보고 설정](tvsdk-1.4-for-ios/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-server-side-reporting-set-up.md)
       + [비디오 분석 보고서 액세스](tvsdk-1.4-for-ios/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-reports-access.md)
    + 내용 보호 {#content-protection}
       + [Primetime DRM 인터페이스 개요](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/r-psdk-ios-1.4-drm-interface.md)
-      + [TVSDK 애플리케이션의 Apple FairPlay](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
+      + [TVSDK 애플리케이션에서 Apple FairPlay](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
       + [iOS 애플리케이션 허용 목록](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-allowlist-your-ios-application.md)
    + [플레이어 상태, 활동, 오류 및 로그에 대한 알림  ](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
    + [사용자 정의 로깅](tvsdk-1.4-for-ios/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
-   + [장애 조치](tvsdk-1.4-for-ios/c-psdk-ios-1.4-understanding-failover.md)
+   + [페일오버](tvsdk-1.4-for-ios/c-psdk-ios-1.4-understanding-failover.md)
    + [청구 지표](tvsdk-1.4-for-ios/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md)
    + Primetime Player 클래스 요약 {#classes-summary}
       + [미디어 플레이어 클래스](tvsdk-1.4-for-ios/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-media-player-ios.md)
@@ -753,7 +753,7 @@ ht-degree: 0%
          + [시스템 및 소프트웨어 요구 사항](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-system.md)
          + [콘텐츠 및 매니페스트 요구 사항](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-content.md)
          + [#EXT-X-VERSION 요구 사항](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-ext-x-version.md)
-         + 스테이지 비디오 기능 및 제한 사항 {#stagevideo}
+         + StageVideo 기능 및 제한 사항 {#stagevideo}
             + [개요](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stagevideo-capabilities.md)
             + [StageVideo 사용 가능 여부 확인](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/t-psdk-dhls-1.4-stage-video-available.md)
             + [StageVideo에 대한 Flash 15 지원](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-flash15-support.md)
@@ -761,10 +761,10 @@ ht-degree: 0%
             + [스테이지 비디오 및 HTML 오버레이](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-and-overlays.md)
    + 내용 재생 옵션 {#content-playback-options}
       + [MediaPlayer 설정](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-mediaplayer-set-up.md)
-      + [서명된 토큰 로드](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-get-signed-token.md)
-   + Primetime 플레이어 이벤트 수신 대기 {#listen}
+      + [서명한 토큰 로드](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-get-signed-token.md)
+   + Primetime 플레이어 이벤트 {#listen} 수신 대기
       + [개요](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-listen-for.md)
-      + 이벤트 리스너 및 콜백 구현 {#implement}
+      + 이벤트 리스너 구현 및 콜백 {#implement}
          + [개요](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-listeners-overview.md)
          + [재생 이벤트 순서](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-playback.md)
          + [광고 이벤트 순서](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-ad-playback.md)
@@ -777,15 +777,15 @@ ht-degree: 0%
          + [유효한 상태 대기](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)
          + [비디오 재생 및 일시 중지](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-pause-play-implement.md)
          + [컨텐츠가 실시간 또는 VOD인지 확인](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-content-live-vod-identify.md)
-         + [볼륨 컨트롤 제공](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-volume-control.md)
+         + [볼륨 제어 제공](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-volume-control.md)
          + [비디오 지속 시간, 현재 시간 및 남은 시간 표시](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-duration-time-display.md)
-         + [현재 재생 위치에 검색 스크럽 막대 표시..](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-seek-scrub-bar-display.md)
-         + [DVR용으로 향상된 제어 막대 구성](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-ctrl-bar-for-dvr-construct.md)
-         + [신속하게 전달 및 되감기](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-browser-dhls-1.4-trickplay-implement.md)
+         + [현재 재생 위치로 검색 스크러빙 막대 표시...](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-seek-scrub-bar-display.md)
+         + [DVR에 대한 향상된 제어 막대 구성](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-ctrl-bar-for-dvr-construct.md)
+         + [빨리 전달 및 되감기 구현](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-browser-dhls-1.4-trickplay-implement.md)
          + [특정 시간에 스트림 입력](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-stream-entry-control.md)
-         + [비디오 품질을 위한 ABR(적응형 비트 전송률)](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-abr-control-quality.md)
+         + [비디오 품질을 위한 적응형 비트 전송률(ABR)](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-abr-control-quality.md)
          + [비디오 보기의 위치 및 크기 제어](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-control-video-view.md)
-      + 특정 비디오 {#initialize-media-player}에 대한 미디어 플레이어 초기화
+      + 특정 비디오 {#initialize-media-player}에 대한 미디어 플레이어를 초기화합니다.
          + [미디어 리소스 만들기](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-create.md)
          + [MediaPlayer에서 미디어 리소스 로드](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load.md)
          + [MediaPlayerItemLoader를 사용하여 미디어 리소스 로드](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load-using-mediaplayeritemloader.md)
@@ -798,9 +798,9 @@ ht-degree: 0%
       + [MediaResource 정보에 액세스하기 위한 MediaPlayer 메서드](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/r-psdk-dhls-1.4-mediaplayer-methods-for-accessing-mediaresource.md)
       + MediaPlayer 인스턴스 {#reuse-or-remove-mediaplayer} 재사용 또는 제거
          + [MediaPlayer 인스턴스 재설정 또는 재사용](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-reset-reuse-instance.md)
-         + [MediaPlayer 인스턴스 및 리소스 해제](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-release-instance.md)
+         + [MediaPlayer 인스턴스 및 리소스 릴리스](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-release-instance.md)
       + [Inspect 재생 타임라인](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/t-psdk-dhls-1.4-timeline-inspect-playback.md)
-   + 버퍼링 {#buffering}
+   + 버퍼링 중 {#buffering}
       + [버퍼링 시간 정책](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/c-psdk-dhls-1.4-buffering-policies.md)
       + [버퍼링 시간 설정](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/t-psdk-dhls-1.4-buffering-times-set.md)
    + [비디오 보기 숨기기](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-video-view-hiding.md)
@@ -809,18 +809,18 @@ ht-degree: 0%
       + 광고 {#inserting-ads} 삽입
          + [개요](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-insertion-about.md)
          + [VOD 광고 해결 및 삽입](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-resolving-client-vod.md)
-         + [라이브/선형 광고 삽입](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-resolving-client-live-linear.md)
-         + [조기 광고 중단 반품 구현](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/r-psdk-dhls-1.4-early-ad-break-return.md)
+         + [라이브/선형 광고 해결 및 삽입](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-resolving-client-live-linear.md)
+         + [조기 광고 중단 반환 구현](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/r-psdk-dhls-1.4-early-ad-break-return.md)
          + [클라이언트 광고 추적](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-tracking-client.md)
       + [레이지 광고 로딩 사용](tvsdk-1.4-for-desktop-hls/ad-insertion/t-psdk-dhls-1.4-ad-delay-enable.md)
-      + [광고를 사용한 기본 및 사용자 정의 재생 동작](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-playback-post1.2.md)
-      + {#customize-playback-with-ads} 광고로 재생 사용자 정의
+      + [광고를 사용한 기본 및 사용자 정의된 재생 동작](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-playback-post1.2.md)
+      + 광고 {#customize-playback-with-ads}을(를) 사용하여 재생 사용자 정의
          + [개요](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-customize.md)
          + [광고 재생을 위한 API 요소](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-ad-custom-elements.md)
          + [기본 재생 동작 사용](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-use-default.md)
          + [사용자 정의 재생 설정](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-customize.md)
          + [일정 기간 동안 광고 중단 건너뛰기](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-skip-breaks.md)
-         + [비디오 위치를 저장하고 나중에 다시 시작](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-save-position.md)
+         + [비디오 위치를 저장하고 나중에 다시 시작합니다.](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-save-position.md)
       + [광고 삽입 메타데이터](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/c-psdk-dhls-1.4-ad-insertion-metadata.md)
       + [컴패니언 배너 광고](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/c-psdk-dhls-1.4-companion-banner-ads.md)
       + [클릭 가능한 광고](tvsdk-1.4-for-desktop-hls/ad-insertion/clickable-ads/c-psdk-dhls-1.4-clickable-ads.md)
@@ -831,13 +831,13 @@ ht-degree: 0%
          + [Timed metadata 클래스](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/r-psdk-dhls-1.4-custom-tags-timedmetadata-class.md)
          + [매니페스트 태그에 대한 알림](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-notifications.md)
          + [사용자 정의 태그 구독](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-subscribe.md)
-         + [시간 메타데이터 알림용 수신기 추가](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-receive-notifications.md)
+         + [시간 지정 메타데이터 알림에 대한 리스너 추가](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-receive-notifications.md)
       + [Adobe Creative Repackaging Service를 사용하여 호환되지 않는 광고 재패키지](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-ad-transcoding.md)
-      + [VAST 및 VMAP 광고에 대한 광고 폴백](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/c-psdk-dhls-1.4-ad-fallback.md)
+      + [광활한 VMAP 광고 대비 폴백](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/c-psdk-dhls-1.4-ad-fallback.md)
       + 사용자 지정 광고 {#custom-ads}
          + [맞춤형 광고 요구 사항](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads-req.md)
          + [사용자 지정 광고 이벤트](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/r-psdk-dhls-1.4-custom-ad-events.md)
-         + [선형 VPAID 광고를 광고 중단으로 표시](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/t-psdk-dhls-1.4-display-linear-vpaid-ads.md)
+         + [광고 노출에 선형 VPAID 광고 표시](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/t-psdk-dhls-1.4-display-linear-vpaid-ads.md)
       + 사용자 지정 광고 마커 {#add-markers} 추가
          + [개요](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/c-psdk-dhls-1.4-ad-markers-add-custom.md)
          + [TimeRange 클래스](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-timerange-class.md)
@@ -845,7 +845,7 @@ ht-degree: 0%
          + [TimeRangeCollection 클래스](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-timerangecollection-class.md)
          + [타임라인에 시간 범위 광고 마커 배치](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/t-psdk-dhls-1.4-timerange-markers-on-timeline.md)
          + [사용자 정의 광고 마커 검색을 위한 재생 동작 제어](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/t-psdk-dhls-1.4-ad-markers-control-seek.md)
-      + 광고 크리에이티브 선택 규칙 업데이트 {#updating-ad-rules}
+      + 광고 크리에이티브 선택 규칙 업데이트 중 {#updating-ad-rules}
          + [개요](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-updating-rules.md)
          + [우선 순위 규칙](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-priority-rule.md)
          + [규칙 표준화](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-normalize-rule.md)
@@ -853,27 +853,27 @@ ht-degree: 0%
          + [크리에이티브 선택 규칙 적용](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-how-tvsdk-applies-csr.md)
    + 기회 감지기 및 컨텐츠 해상도 사용자 정의 {#customize-opportunities}
       + [개요](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver.md)
-      + [기회 생성기 및 컨텐츠 해결](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver-about.md)
-      + [사용자 지정 기회 탐지 구현](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-opp-detector-impl.md)
+      + [기회 생성기 및 컨텐츠 해결 방법](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver-about.md)
+      + [사용자 정의 기회 탐지기 구현](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-opp-detector-impl.md)
       + [사용자 지정 컨텐츠 해결 프로그램 구현](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-content-resolver-implement.md)
    + VOD 스트림 {#delete-replace-vod-streams}에서 광고 삭제 및 바꾸기
       + 사용자 지정 시간 범위 작업 {#custom-time-range}
          + [개요](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-custom-time-range-ops.md)
-         + [Opportunity Generator](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-opportunity-generator.md)
+         + [기회 생성기](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-opportunity-generator.md)
          + [광고 해상도](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-ad-resolvers.md)
          + [신호 모드 및 시간 범위](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-signalmode-timerange-combos.md)
       + 광고 {#use-cases} 삭제 및 바꾸기
          + [표시 범위](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-mark-ranges.md)
          + [시간 범위를 Adobe Primetime 광고 결정 광고로 바꾸기](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-replace-ranges-with-aud-ad.md)
-         + [Primetime 광고 결정 광고를 사용하여 범위 삭제](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-delete-ranges-with-aud-ad.md)
+         + [Primetime 광고 결정 광고가 있는 범위 삭제](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-delete-ranges-with-aud-ad.md)
          + [특별 사용 사례](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-special-use-cases.md)
       + [광고 삭제 및 교체 오류 처리](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-ad-delete-replace-error-handling.md)
       + [광고 삭제 및 교체 API 변경 사항](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/c-psdk-dhls-1.4-ad-deletion-replacement-api-changes.md)
-   + 실시간 스트림의 일시 중단 {#blackouts}
-      + [실시간 스트림의 일시 중단 처리](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/c-psdk-dhls-1.4-blackouts-handle.md)
+   + 라이브 스트림의 일시 중단 {#blackouts}
+      + [실시간 스트림에서 일시 중단 처리](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/c-psdk-dhls-1.4-blackouts-handle.md)
       + [일시 중단 API 요소](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/c-psdk-dhls-1.4-blackout-apis.md)
       + [일시 중단 처리 구현](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/t-psdk-dhls-1.4-blackouts-implement-handling.md)
-   + 자막 {#closed-captions}
+   + 닫힌 캡션 {#closed-captions}
       + [자막을 사용한 작업](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/closed-captions-set-up/c-psdk-dhls-1.4-closed-captions-set-up.md)
       + [자막 가시성 제어](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/closed-captions-set-up/t-psdk-dhls-1.4-closed-caption-visibility-control.md)
       + [자막 스타일 제어](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/closed-captions-set-up/c-psdk-dhls-1.4-closed-caption-styling-control.md)
@@ -887,7 +887,7 @@ ht-degree: 0%
       + [사용자 정의 메타데이터 지원 구현](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-custom-metadata.md)
       + [장 지원 구현](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-chapter-support.md)
       + [사용자 지정 시간 업데이트 구현](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-imp-cust-time-updates.md)
-      + [서버측에서 비디오 분석 보고 설정](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-server-side-reporting-set-up.md)
+      + [서버 측에 비디오 분석 보고 설정](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-server-side-reporting-set-up.md)
       + [비디오 분석 보고서 액세스](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-reports-access.md)
    + 내용 보호 {#content-protection}
       + [지원되는 DRM 시스템](tvsdk-1.4-for-desktop-hls/drm-content-security/t-psdk-dhls-1.4-drm-support.md)
@@ -895,29 +895,29 @@ ht-degree: 0%
       + [TSVDK 애플리케이션에서 Primetime DRM 구현](tvsdk-1.4-for-desktop-hls/drm-content-security/c-psdk-dhls-1.4-tvsdk-drm-workflow.md)
    + 플레이어 상태, 활동, 오류 및 로깅에 대한 알림 {#notifications}
       + [개요](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-system.md)
-      + [알림 컨텐츠](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-content.md)
+      + [알림 내용](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-content.md)
       + [알림 시스템 설정](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-notification-setup.md)
       + [실시간 로깅 및 디버깅 추가](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-notification-realtime-logging-debugging.md)
       + [ID3 태그](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-id3-metadata-retrieve.md)
       + [플레이어에서 AVE 경고 추적](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-track-ave-warnings-in-player.md)
    + 재생 및 페일오버 {#playback-and-failover}
       + [개요](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-for-playback.md)
-      + [미디어 재생 및 장애 조치](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-media-playback.md)
+      + [미디어 재생 및 페일오버](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-media-playback.md)
       + [VOD를 위한 광고 삽입 및 장애 조치](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-ad-insertion-for-vod.md)
       + [라이브 마스터 매니페스트 업데이트](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-manifest-update-intro.md)
       + [프로필 스위치에 대한 정보 얻기](tvsdk-1.4-for-desktop-hls/failover-for-playback/t-psdk-dhls-1.4-profile-switch-info.md)
    + Primetime 플레이어 이벤트 요약 {#events-summary}
       + [재생 이벤트](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-playback.md)
       + [광고 재생 이벤트](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-adplayback.md)
-      + [광고 서비스/시간 메타데이터 이벤트](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-adserving.md)
+      + [광고 제공/시간 지정 메타데이터 이벤트](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-adserving.md)
       + [QoS 이벤트](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-qos.md)
       + [DRM 이벤트](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-drm.md)
       + [로더 이벤트](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-itemloader.md)
    + Primetime 플레이어 클래스 요약 {#classes-summary}
       + [Mediacore 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-mediacore.md)
       + [오류 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-error.md)
-      + [이벤트 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-events.md)
-      + [정보 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-info.md)
+      + [Events 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-events.md)
+      + [Info 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-info.md)
       + [클래스 로깅](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-logging.md)
       + [메타데이터 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-metadata.md)
       + [알림 클래스](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-notifications.md)
@@ -946,11 +946,11 @@ ht-degree: 0%
       + [NATIVE_ERROR:암호화 값](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notifications-crypto-errors.md)
 + Browser-TVSDK-2.4 {#browser-tvsdk-2-4}
    + 소개 {#introduction}
-      + [제품 개요 및 고객](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/c-psdk-browser-tvsdk-2.4-overview-prod-audience-guide.md)
+      + [제품 개요 및 대상](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/c-psdk-browser-tvsdk-2.4-overview-prod-audience-guide.md)
       + 지원되는 기능 {#supported-features}
          + [지원되는 MP3 및 MP4 기능](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-a-mp3-mp4.md)
          + [지원되는 HLS 기능](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md)
-         + [지원되는 DASH 기능](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md)
+         + [지원되는 대시 기능](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md)
       + 요구 사항 {#requirements}
          + [개요](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/c-psdk-browser-tvsdk-2.4-requirements.md)
          + [Flash Player 요구 사항](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-flash-fallback-req.md)
@@ -980,16 +980,16 @@ ht-degree: 0%
       + [UI 프레임워크](browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-ui-framework.md)
       + [플레이어 스키닝](browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-skin-the-player.md)
    + 내용 재생 옵션 {#content-playback-options}
-      + [Flash 장애 조치](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-flash-failover.md)
+      + [Flash 장애 조치(failover)](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-flash-failover.md)
       + [MediaPlayer 설정](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-mediaplayer-set-up.md)
-      + 특정 비디오 {#initialize-specific-video}에 대한 미디어 플레이어 초기화
+      + 특정 비디오 {#initialize-specific-video}에 대한 미디어 플레이어를 초기화합니다.
          + [미디어 리소스 만들기](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-media-resource-create.md)
          + [원본 간 리소스 공유](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-cors-cred-support.md)
          + [MediaPlayer에서 미디어 리소스 로드](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-media-resource-load.md)
       + [브라우저 TVSDK용 Google Cast 앱](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/r-psdk-browser-tvsdk-2.4-chromecast.md)
-      + [확장 가능한 스트림](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-extensionless-streams.md)
+      + [확장 없는 스트림](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-extensionless-streams.md)
       + [버퍼링](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-buffering-configuration.md)
-      + Primetime 플레이어 이벤트 수신 대기 {#listen-events}
+      + Primetime 플레이어 이벤트 {#listen-events} 수신 대기
          + [개요](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-events-listen-for.md)
          + [이벤트 리스너 및 콜백 구현](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/t-psdk-browser-tvsdk-2.4-event-listeners-implement.md)
          + [콜백을 위한 이벤트 유형 및 클래스](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/r-psdk-browser-tvsdk-2.4-event-listeners-type-table.md)
@@ -998,36 +998,36 @@ ht-degree: 0%
          + [QoS 이벤트](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-events-order-qos.md)
          + [알림 시스템](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-notification-system.md)
       + [오류 처리 설정](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-error-handling-set-up.md)
-      + [신속하게 전달 및 되감기](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-trick-play-implement.md)
+      + [빨리 전달 및 되감기 구현](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-trick-play-implement.md)
       + 비디오 품질 {#abr-video-quality}에 대한 응용 비트 전송률(ABR)
          + [개요](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/c-psdk-browser-tvsdk-2.4-abr-control-quality.md)
-         + [ABRConcontrolParameters를 사용하여 응용 비트 전송률 구성](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/t-psdk-browser-tvsdk-2.4-abr-set-using-abrparameters.md)
+         + [ABRControlParameters를 사용하여 응용 비트 전송률 구성](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/t-psdk-browser-tvsdk-2.4-abr-set-using-abrparameters.md)
       + 플레이어 사용자 인터페이스 {#configure-ui} 구성
          + [유효한 상태 대기](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-state-prepared-wait-for.md)
          + [비디오 재생 및 일시 중지](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-pause-play-implement.md)
          + [컨텐츠가 실시간 또는 VOD인지 확인](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-content-live-vod-identify.md)
-         + [볼륨 컨트롤 제공](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-volume-control.md)
+         + [볼륨 제어 제공](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-volume-control.md)
          + [비디오 지속 시간, 현재 시간 및 남은 시간 표시](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-duration-time-display.md)
          + [검색 막대를 사용할 때 검색 처리](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-seek-scrub-bar-display.md)
-         + [DVR용으로 향상된 제어 막대 구성](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-ctrl-bar-for-dvr-construct.md)
+         + [DVR에 대한 향상된 제어 막대 구성](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-ctrl-bar-for-dvr-construct.md)
          + [특정 시간에 스트림 입력](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-enter-stream-specific-time.md)
          + [비디오 보기의 위치 및 크기 제어](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-control-video-view.md)
       + [서비스 품질 통계](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/qos-statistics-monitor/c-psdk-browser-tvsdk-2.4-qos-statistics-monitor.md)
       + [HTTP 302 리디렉션 최적화](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/302-redirect-overview/c-psdk-browser-tvsdk-2.4-302-redirect-overview.md)
       + MediaPlayer 개체 {#mediaplayer-objects} 사용
          + [MediaPlayerItem 클래스 정보](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayeritem-class-about.md)
-         + [MediaPlayer 개체의 라이프 사이클 및 상태](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayer-object-lifecycle-states.md)
-         + [MediaResource 정보에 액세스하기 위한 MediaPlayer 속성](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/r-psdk-browser-tvsdk-2.4-mediaplayer-methods-for-accessing-mediaresource.md)
+         + [MediaPlayer 객체의 라이프 사이클 및 상태](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayer-object-lifecycle-states.md)
+         + [MediaResource 정보에 액세스할 수 있는 MediaPlayer 속성](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/r-psdk-browser-tvsdk-2.4-mediaplayer-methods-for-accessing-mediaresource.md)
          + [MediaPlayer 인스턴스 재사용 또는 제거](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayer-reuse-or-remove.md)
          + [Inspect 재생 타임라인](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-inspect-playback.md)
-         + [TimelineUpdatedEvent용 청취자 추가](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-update-add-listener.md)
-      + 자막 작업 {#closed-captions}
+         + [TimelineUpdatedEvent용 리스너 추가](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-update-add-listener.md)
+      + 닫힌 캡션 작업 {#closed-captions}
          + [개요](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/c-psdk-browser-tvsdk-2.4-closed-captions-set-up.md)
          + [자막 가시성 제어](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/t-psdk-browser-tvsdk-2.4-closed-caption-visibility-control.md)
          + [사용자가 트랙을 변경할 수 있도록 허용](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/t-psdk-browser-tvsdk-2.4-closed-caption-track-allow-user-to-change.md)
-         + 자막 스타일 제어 {#styling}
+         + 닫힌 캡션 스타일 제어 {#styling}
             + [개요](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/c-psdk-browser-tvsdk-2.4-closed-caption-styling-control.md)
-            + [자막 스타일 설정](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/t-psdk-browser-tvsdk-2.4-closed-caption-styles-set.md)
+            + [닫힌 캡션 스타일 설정](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/t-psdk-browser-tvsdk-2.4-closed-caption-styles-set.md)
             + [닫힌 캡션 스타일 옵션](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/r-psdk-browser-tvsdk-2.4-closed-caption-styling-options.md)
             + [예:캡션 서식](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/r-psdk-browser-tvsdk-2.4-closed-caption-formatting-samples.md)
       + [미디어 재생](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-media-playback.md)
@@ -1035,13 +1035,13 @@ ht-degree: 0%
       + [iOS 자동 재생](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-autoplay-ios.md)
    + 광고 {#advertising}
       + [광고 요구 사항](browser-tvsdk-2.4/ad-insertion/r-psdk-browser-tvsdk-2.4-advertising-requirements.md)
-      + [광활한 광고](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-vast-ads.md)
+      + [광대한 광고](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-vast-ads.md)
       + [VPAID 2.0 광고 지원](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-vpaid-2.0-ads.md)
-      + 광고 삽입{#inserting-ads}
+      + 광고 {#inserting-ads} 삽입
          + [개요](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-insertion-about.md)
          + [VOD 광고 해결 및 삽입](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-vod.md)
-         + [라이브/선형 광고 삽입](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-live-linear.md)
-         + [FER 광고 해결 및 삽입](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-fer.md)
+         + [라이브/선형 광고 해결 및 삽입](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-live-linear.md)
+         + [FER 광고 확인 및 삽입](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-fer.md)
          + [클라이언트 광고 추적](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-tracking-client.md)
          + [HTTPS를 통한 안전한 광고 로딩](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-forced-https.md)
       + 사용자 지정 태그 {#custom-tags}
@@ -1049,21 +1049,21 @@ ht-degree: 0%
          + [태그에 대한 구성 클래스 메서드](browser-tvsdk-2.4/ad-insertion/custom-tags/c-psdk-browser-tvsdk-2.4-custom-tags-psdkconfig-methods.md)
          + [Timed metadata 클래스](browser-tvsdk-2.4/ad-insertion/custom-tags/r-psdk-browser-tvsdk-2.4-custom-tags-timedmetadata-class.md)
          + [매니페스트 태그에 대한 알림](browser-tvsdk-2.4/ad-insertion/custom-tags/r-psdk-browser-tvsdk-2.4-manifest-tag-notifications.md)
-         + [사용자 지정 광고 태그 구독](browser-tvsdk-2.4/ad-insertion/custom-tags/t-psdk-browser-tvsdk-2.4-custom-tags-subscribe.md)
-         + [시간 메타데이터 알림용 수신기 추가](browser-tvsdk-2.4/ad-insertion/custom-tags/t-psdk-browser-tvsdk-2.4-custom-tags-receive-notifications.md)
+         + [사용자 정의 광고 태그 구독](browser-tvsdk-2.4/ad-insertion/custom-tags/t-psdk-browser-tvsdk-2.4-custom-tags-subscribe.md)
+         + [시간 메타데이터 알림에 대한 리스너 추가](browser-tvsdk-2.4/ad-insertion/custom-tags/t-psdk-browser-tvsdk-2.4-custom-tags-receive-notifications.md)
       + 기회 감지기 및 컨텐츠 해상도 사용자 정의 {#customize}
          + [개요](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/c-psdk-browser-tvsdk-2.4-content-resolver.md)
-         + [기회 생성기 및 컨텐츠 해결](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/c-psdk-browser-tvsdk-2.4-content-resolver-about.md)
+         + [기회 생성기 및 컨텐츠 해결 방법](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/c-psdk-browser-tvsdk-2.4-content-resolver-about.md)
          + [사용자 정의 기회 생성기 구현](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/t-psdk-browser-tvsdk-2.4-opp-detector-impl.md)
          + [사용자 지정 컨텐츠 해결 프로그램 구현](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/t-psdk-browser-tvsdk-2.4-content-resolver-implement.md)
       + [해자에서 광고 측정](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-moat.md)
-      + [호환되지 않는 광고를 재패키지(트랜스코딩)](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-ad-transcoding.md)
-      + [광고를 사용한 기본 및 사용자 정의 재생 동작](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-playback-post1.2.md)
+      + [호환되지 않는 광고를 재패키지(코드 변환)](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-ad-transcoding.md)
+      + [광고를 사용한 기본 및 사용자 정의된 재생 동작](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-playback-post1.2.md)
       + 광고 삽입 메타데이터 {#ad-insertion-metadata}
          + [개요](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md)
          + [광고 삽입 메타데이터 설정](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/t-psdk-browser-tvsdk-2.4-ad-insertion-metadata-set-up.md)
          + [광고 삽입 메타데이터 사용자 정의](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/t-psdk-browser-tvsdk-2.4-cust-ad-metadata.md)
-         + [유효한 MIME 형식](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/r-psdk-browser-tvsdk-2.4-valid-mime-types.md)
+         + [유효한 MIME 유형](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/r-psdk-browser-tvsdk-2.4-valid-mime-types.md)
          + [타깃팅 정보](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/r-psdk-browser-tvsdk-2.4-targeting-info.md)
       + 부록 배너 광고 {#companion}
          + [개요](browser-tvsdk-2.4/ad-insertion/companion-banner-ads/c-psdk-browser-tvsdk-2.4-companion-banner-ads.md)
@@ -1081,7 +1081,7 @@ ht-degree: 0%
    + 내용 보호 {#content-protection}
       + [지원되는 DRM 시스템](browser-tvsdk-2.4/drm-content-security/t-psdk-browser-tvsdk-2.4-drm-support.md)
       + [DRM 인터페이스 개요](browser-tvsdk-2.4/drm-content-security/r-psdk-browser-tvsdk-2.4-drm-interface.md)
-      + [Safari HLS용 FairPlay 사용](browser-tvsdk-2.4/drm-content-security/t-psdk-browser-tvsdk-2.4-drm-enable-fairplay-safari.md)
+      + [Safari HLS에 FairPlay 사용](browser-tvsdk-2.4/drm-content-security/t-psdk-browser-tvsdk-2.4-drm-enable-fairplay-safari.md)
       + [샘플 AES 암호화 HLS 스트림](browser-tvsdk-2.4/drm-content-security/c-psdk-browser-tvsdk-2.4-sample-aes-encrypt.md)
       + 재생 및 페일오버 {#playback-and-failover}
          + [재생 및 장애 조치](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-for-playback.md)
