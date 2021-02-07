@@ -4,7 +4,7 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: d1b79fb39c0f51b6e06653caaaaa491aef7129d7
+source-git-commit: 22ed68a2aa5a85a37763186bd6802f980acfc9d8
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 34%
@@ -16,9 +16,9 @@ ht-degree: 34%
 
 Adobe Primetime 릴리스 노트입니다. 왼쪽 탐색에 나열된 문서는 릴리스별 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 21.1.2 개선 사항 및 수정 사항
+## PTAI 21.2.1 개선 사항 및 수정 사항
 
-이번 릴리스에는 Primetime Ad Insertion 백엔드 메모리 캐시 클러스터 업그레이드가 포함되어 있습니다.
+이번 릴리스에는 DASH 출력 최적화에 대한 지원이 포함되어 있습니다.시간 기반 노드 통합
 
 ## TVSDK 3.12 Android의 수정 사항
 
