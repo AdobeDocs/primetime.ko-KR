@@ -4,7 +4,7 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 22ed68a2aa5a85a37763186bd6802f980acfc9d8
+source-git-commit: ff723dd66ff4c576bf5c70f5fb061962d021e330
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 34%
@@ -41,7 +41,7 @@ Adobe Primetime 릴리스 노트입니다. 왼쪽 탐색에 나열된 문서는 
 | [참조 구현](/help/android-reference-implementation/home.md) | TVSDK를 이해하고 기능 관리자를 수정하여 개인 플레이어를 사용자 정의할 수 있습니다. |
 | [Primetime API 참조](/help/reference/api-references.md) | TVSDK 함수, 데이터 구조 및 기타 프로그래밍 구문에 대한 자세한 정보를 제공합니다. |
 | [Digital Rights Management](/help/digital-rights-management/home.md) | Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대해 자세히 알아보려면 도움이 됩니다. |
-| [Primetime Ad Insertion 도움말](/help/dynamic-ad-insertion/home.md) | 서버에 사용자 타겟팅된 동적 광고를 삽입하여 컨텐츠를 상용화하고 개인화된 광고를 통해 고객의 참여를 유도하는 방법을 설명합니다. |
+| [Primetime Ad Insertion 도움말](/help/primetime-ad-insertion/home.md) | 서버에 사용자 타겟팅된 동적 광고를 삽입하여 컨텐츠를 상용화하고 개인화된 광고를 통해 고객의 참여를 유도하는 방법을 설명합니다. |
 | [아카이브](https://helpx.adobe.com/primetime/archives.html) | 보관된 문서의 PDF를 다운로드합니다. |
 
 ## 유용한 리소스
