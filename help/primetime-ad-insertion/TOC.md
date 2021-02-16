@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime Ad Insertion 도움말
 translation-type: tm+mt
-source-git-commit: c6fe809ec079e08f5b1baba7ceeeb5a46b6e0a5a
+source-git-commit: bde82bd062a7980e08cdf2642c9e64be8f074a6e
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 + [Adobe Primetime Ad Insertion](home.md)
 + Primetime Ad Insertion 공지 사항{#announcements}
    + [공지 사항](announcements/overview.md)
-   + [릴리스 노트](/help/release-notes/ptai-20x-release-notes.md)
+   + [릴리스 노트](/help/release-notes/ptai-21x-release-notes.md)
 + Primetime Ad Insertion 시작{#get-started}
    + [개요](getting-started/get-started-overview.md)
    + [Primetime Ad Insertion 사용 준비](getting-started/setup-ptai.md)
