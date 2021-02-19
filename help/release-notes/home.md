@@ -4,10 +4,10 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: ff723dd66ff4c576bf5c70f5fb061962d021e330
+source-git-commit: 0c0ef7249688137a67482eab902e9d188b4c661c
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 34%
+source-wordcount: '297'
+ht-degree: 32%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 34%
 
 Adobe Primetime 릴리스 노트입니다. 왼쪽 탐색에 나열된 문서는 릴리스별 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 21.2.1 개선 사항 및 수정 사항
+## PTAI 21.2.2 개선 사항 및 수정 사항
 
-이번 릴리스에는 DASH 출력 최적화에 대한 지원이 포함되어 있습니다.시간 기반 노드 통합
+이번 릴리스에서는 HLS 스트림에서 EXT-X-IMAGE-STREAM-INF 스트림 삽입/동기화를 지원합니다. 이 기능은 서버측 구성을 통해 활성화됩니다. 이 기능을 활성화하려면 기술 계정 담당자에게 문의하십시오.
 
 ## TVSDK 3.12 Android의 수정 사항
 
