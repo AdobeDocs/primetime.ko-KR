@@ -2,7 +2,7 @@
 title: PTAI 21.2.2 릴리스 노트
 description: PTAI 릴리스 노트는 2021년 Primetime Ad Insertion의 새로운 것과 변경된 것, 해결되고 알려진 문제를 기술합니다.
 translation-type: tm+mt
-source-git-commit: 61a6c039685c3c6a937e2c98ffa3baf51455507b
+source-git-commit: 8133c35bed7fc72a6c642016a2a4b69204ad8f7a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion
 
 * HLS 스트림에서 EXT-X-IMAGE-STREAM-INF 스트림 삽입/동기화에 대한 지원을 추가했습니다. 이 기능은 서버측 구성을 통해 활성화됩니다. 이 기능을 활성화하려면 기술 계정 담당자에게 문의하십시오.
 
-### 이전 릴리스 버전의 개선 사항 및 수정 사항
+## 이전 릴리스 버전의 개선 사항 및 수정 사항
 
-#### 버전 21.2.1
+### 버전 21.2.1
 
 **2021년 2월 3일** 수요일 오전 1:00부터 오전 04:00까지 동부 표준시
 
@@ -32,7 +32,7 @@ Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion
 
 * DASH 출력 최적화에 대한 지원이 추가되었습니다.시간 기반 노드 통합
 
-#### 버전 21.1.2
+### 버전 21.1.2
 
 **2021년 1월 19일** 화요일 오전 12:30에서 오전 8:30까지 동부 시간
 
@@ -40,7 +40,7 @@ Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion
 
 * 유지 관리 업데이트:Primetime Ad Insertion 백엔드 메모리 캐시 클러스터 업그레이드
 
-#### 버전 21.1.1
+### 버전 21.1.1
 
 **2021년** 1월 13일 수요일 오전 01:00 ~ 오전 04:00 동부 표준시
 
