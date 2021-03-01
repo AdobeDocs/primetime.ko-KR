@@ -21,7 +21,7 @@ ht-degree: 7%
    + [참조 구현 구조](ref-implementation/ref-player-structure.md)
    + 기능 관리자를 사용하는 방법 {#feature-managers}
       + [기능 관리자를 사용하는 방법](ref-implementation/using-feature-managers/how-to-use-feature-managers.md)
-      + [MediaPlayer에 구성 정보를 전달하여 기능 관리자를 만드는 중..](ref-implementation/using-feature-managers/creating-feature-managers.md)
+      + [MediaPlayer에 구성 정보를 전달하여 기능 관리자를 만드는 중...](ref-implementation/using-feature-managers/creating-feature-managers.md)
       + [ManagerFactory를 사용하여 기능 활성화 또는 비활성화](ref-implementation/using-feature-managers/turning-features-on-off.md)
       + [이벤트 처리](ref-implementation/using-feature-managers/handling-events.md)
    + 개발 환경 설정 {#setup-dev}
@@ -32,7 +32,7 @@ ht-degree: 7%
       + [PlayerFragment](set-up-dev-environment/exploring-code/player-fragment.md)
       + [기능 관리자](set-up-dev-environment/exploring-code/about-psdk-feature-managers.md)
       + [ConfigProvider](set-up-dev-environment/exploring-code/config-provider.md)
-      + [설정 활동](set-up-dev-environment/exploring-code/settings-activity.md)
+      + [SettingsActivity](set-up-dev-environment/exploring-code/settings-activity.md)
       + [카탈로그 형식](set-up-dev-environment/exploring-code/catalog-format.md)
       + [Primetime 광고를 위한 JSON 개체](set-up-dev-environment/exploring-code/json-pt-ads.md)
       + [직접 광고 나누기를 위한 JSON 개체](set-up-dev-environment/exploring-code/json-direct-ad-breaks.md)
@@ -40,13 +40,13 @@ ht-degree: 7%
       + [권한 부여 리소스 ID용 JSON 개체](set-up-dev-environment/exploring-code/json-entitlement-resource-id.md)
       + [JSON 피드 형식 예](set-up-dev-environment/exploring-code/example-json-feed-format.md)
    + 비디오 재생 구현 {#implement-video}
-      + [비디오 재생에 필수적인 작업](implement-video-playback/video-playback.md)
+      + [비디오 재생의 필수 작업](implement-video-playback/video-playback.md)
       + [비디오 재생 활성화](implement-video-playback/enable-video-playback.md)
       + [DRM 컨텐츠 보호](implement-video-playback/content-protection.md)
    + [다양한 비트 전송률](implement-video-playback/mbr.md)
    + 광고 {#dvr}이(가) 있는 DVR 재생을 위한 플레이어 설정
       + [광고 삽입 없이 DVR](implement-video-playback/dvr/dvr-without-ad-insertion.md)
-      + [광고 삽입 시 DVR](implement-video-playback/dvr/dvr-with-ad-insertion.md)
+      + [광고 삽입이 포함된 DVR](implement-video-playback/dvr/dvr-with-ad-insertion.md)
       + [DVR에 대한 사용자 정의 시작 지점 선택](implement-video-playback/dvr/dvr-custom-start-point.md)
       + [참조 구현에서 사용자 지정 시작 시간 설정](implement-video-playback/dvr/set-custom-start-time-dvr.md)
    + [QoS 재생 및 디바이스 통계 표시](implement-video-playback/qos-statistics.md)
@@ -55,14 +55,14 @@ ht-degree: 7%
       + [광고 삽입 유형](insert-ads/ad-insertion-types.md)
       + [광고 추가](insert-ads/add-advertising.md)
       + [관련 API 설명서](insert-ads/aps-callbacks-ad-insertion.md)
-   + 늦게 바인딩 오디오 {#late-binding-audio}
+   + 지연 바인딩 오디오 {#late-binding-audio}
       + [개요](late-binding-audio/late-binding-audio-overview.md)
       + [지연 바인딩 오디오 통합](late-binding-audio/aa-enable.md)
       + [오디오 트랙 선택](late-binding-audio/select-audio-tracks.md)
       + [관련 API 설명서](late-binding-audio/aa-api-callbacks.md)
-   + Primetime 인증 자격 부여 흐름 {#primetime-authentications}
+   + Primetime 인증 권한 흐름 {#primetime-authentications}
       + [개요](paytvpass-entitlement/paytvpass-entitlement-overview.md)
-      + [권한 부여 관리자 개요](paytvpass-entitlement/entitlement-overvivew.md)
+      + [자격 부여 관리자 개요](paytvpass-entitlement/entitlement-overvivew.md)
       + [Primetime 인증 통합](paytvpass-entitlement/integrate-pass.md)
       + [Adobe Analytics 보고 구성](paytvpass-entitlement/pass-analytics-setup.md)
       + [관련 API 설명서](paytvpass-entitlement/pass-apis-callbacks.md)
