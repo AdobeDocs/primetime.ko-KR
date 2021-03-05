@@ -4,10 +4,10 @@ seo-title: Adobe Primetime 릴리스 노트
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 0c0ef7249688137a67482eab902e9d188b4c661c
+source-git-commit: a42c5b4478967822c920d96b05d5f04a6dec8c25
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 32%
+source-wordcount: '345'
+ht-degree: 27%
 
 ---
 
@@ -20,11 +20,13 @@ Adobe Primetime 릴리스 노트입니다. 왼쪽 탐색에 나열된 문서는 
 
 이번 릴리스에서는 HLS 스트림에서 EXT-X-IMAGE-STREAM-INF 스트림 삽입/동기화를 지원합니다. 이 기능은 서버측 구성을 통해 활성화됩니다. 이 기능을 활성화하려면 기술 계정 담당자에게 문의하십시오.
 
-## TVSDK 3.12 Android의 수정 사항
+## TVSDK 3.13 Android의 수정 사항
 
-이 릴리스는 Primetime Reference 애플리케이션의 업그레이드 버전을 버전 5.6.4 버전으로 업데이트하는 데 중점을 두었습니다.
+이 릴리스에서는 Fire TV 3세대 Pendant 및 Fire TV Cube 1세대 및 2세대 장치를 포함하는 FireTV 장치의 ABR 스위치에 검정 프레임이 표시되거나 Widevine DRM 스트림에 대한 문제를 해결합니다.
 
-[Android](../release-notes/tvsdk-3x-android.md)의 현재 릴리스 버전에 대한 자세한 내용을 확인하십시오.
+이 문제를 해결하려면 재생을 시작하기 전에 지정된 Fire TV 장치에 대한 API `MediaPlayer.flushVideoDecoderOnHeaderChange(true)`를 설정하십시오. 기본값은 false입니다.
+
+자세한 내용은 [TVSDK for Android 릴리스 노트](../release-notes/tvsdk-3x-android.md)를 참조하십시오.
 
 ## TVSDK 3.12 iOS 릴리스 노트의 개선 사항 및 수정 사항
 
