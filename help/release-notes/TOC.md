@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Primetime 릴리스 노트
 user-guide-description: 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 translation-type: tm+mt
-source-git-commit: 61a6c039685c3c6a937e2c98ffa3baf51455507b
+source-git-commit: a42c5b4478967822c920d96b05d5f04a6dec8c25
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 14%
@@ -24,7 +24,7 @@ ht-degree: 14%
    + [iOS용 TVSDK 3.12 릴리스 노트](tvsdk-3x-ios.md)
    + [iOS용 TVSDK 1.4 릴리스 노트](tvsdk-1-4-ios.md)
 + Android용 TVSDK {#tvsdk-android}
-   + [Android용 TVSDK 3.12 릴리스 정보](tvsdk-3x-android.md)
+   + [Android용 TVSDK 3.13 릴리스 정보](tvsdk-3x-android.md)
    + [Android용 TVSDK 2.7 릴리스 정보](tvsdk-27-android.md)
    + [Android용 TVSDK 2.4.1 릴리스 정보](tvsdk-24-android.md)
    + [Android용 TVSDK 1.4 릴리스 정보](tvsdk-1-4-android.md)
