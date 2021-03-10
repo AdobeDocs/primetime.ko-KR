@@ -1,13 +1,10 @@
 ---
-description: 기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업은 필요하지 않습니다. Adobe 활성 담당자로부터 다른 구성 매개 변수를 얻은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
-seo-description: 기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업은 필요하지 않습니다. Adobe 활성 담당자로부터 다른 구성 매개 변수를 얻은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
-seo-title: 청구 지표 구성
+description: 기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 필요한 다른 작업은 없습니다. Adobe 지원 담당자로부터 다른 구성 매개 변수를 받은 경우 미디어 플레이어를 초기화하기 전에 BillingMetricsConfiguration 클래스를 사용하여 이러한 매개 변수를 설정하십시오.
 title: 청구 지표 구성
-uuid: 04d3b53e-f08c-49d0-ba42-5375f1307d2e
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 청구 지표 구성{#configure-billing-metrics}
 
-기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 다른 작업은 필요하지 않습니다. Adobe 활성 담당자로부터 다른 구성 매개 변수를 얻은 경우 BillingMetricsConfiguration 클래스를 사용하여 미디어 플레이어를 초기화하기 전에 이러한 매개 변수를 설정하십시오.
+기본 구성을 사용하는 경우 청구를 활성화하거나 구성하는 데 필요한 다른 작업은 없습니다. Adobe 지원 담당자로부터 다른 구성 매개 변수를 받은 경우 미디어 플레이어를 초기화하기 전에 BillingMetricsConfiguration 클래스를 사용하여 이러한 매개 변수를 설정하십시오.
 
 대부분의 고객은 기본 구성을 사용해야 합니다.
 
@@ -36,5 +33,5 @@ ht-degree: 0%
    _player.replaceCurrentResource(_resource, config);
    ```
 
-   여기서 `_player`은 `AdobePSDK.MediaPlayer`의 인스턴스이고 `_resource`은 `AdobePSDK.MediaResource`의 인스턴스입니다.
+   여기서 `_player`은 `AdobePSDK.MediaPlayer`의 인스턴스이고 `_resource`는 `AdobePSDK.MediaResource`의 인스턴스입니다.
 
