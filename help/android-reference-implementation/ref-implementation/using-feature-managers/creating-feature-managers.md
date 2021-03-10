@@ -1,13 +1,10 @@
 ---
 description: TVSDK 기능은 구성에 따라 구현되며 MediaPlayer를 통해 구현됩니다.
-seo-description: TVSDK 기능은 구성에 따라 구현되며 MediaPlayer를 통해 구현됩니다.
-seo-title: MediaPlayer에 구성 정보를 전달하여 기능 관리자 만들기
 title: MediaPlayer에 구성 정보를 전달하여 기능 관리자 만들기
-uuid: 106ececd-a670-4360-b000-a31fec65233c
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -17,19 +14,19 @@ ht-degree: 0%
 
 TVSDK 기능은 구성에 따라 구현되며 MediaPlayer를 통해 구현됩니다.
 
-* 구성은 ABR 컨트롤의 초기 비트 전송률 및 기본 폐쇄자막 가시성과 같은 특정 기능 설정 목록입니다.
+* 구성은 ABR 컨트롤의 초기 비트 전송률 및 기본 닫힌 캡션 가시성과 같은 기능에 대한 특정 설정 목록입니다.
 
-   기능 관리자는 기능 동작을 결정하려면 구성을 받아야 합니다.
+   기능 작동 방식을 결정하려면 기능 관리자가 구성을 받아야 합니다.
 
-   Primetime 참조 구현에서는 구성이 공유 환경 설정에 저장되지만 환경에 맞는 방식으로 구성을 저장할 수 있습니다.
+   Primetime 참조 구현에서 구성은 공유 환경 설정에 저장되지만 환경에 적합한 방식으로 구성을 저장할 수 있습니다.
 
-* `MediaPlayer` 는 비디오 리소스를 포함하는 TVSDK 미디어 플레이어 개체입니다.
+* `MediaPlayer` 는 비디오 리소스를 포함하는 TVSDK 미디어 플레이어 객체입니다.
 
-   기능 관리자는 TVSDK 이벤트 리스너를 이 플레이어 개체에 등록하고 재생 세션에서 데이터를 검색하고 재생 세션에 TVSDK 기능을 트리거합니다.
+   기능 관리자는 TVSDK 이벤트 리스너를 이 플레이어 객체에 등록하고 재생 세션에서 데이터를 검색하고 재생 세션에 TVSDK 기능을 트리거합니다.
 
 각 기능에는 해당 구성 인터페이스가 있습니다. 예를 들어 `CCManager`은 `ICCConfig`을 사용하여 구성을 검색합니다. `ICCConfig` 에는 자막 전용 관련 구성 정보를 가져오는 메서드가 포함되어 있습니다.
 
-다음 예제는 `MediaPlayer`에서 닫힌 캡션 가시성, 글꼴 스타일 및 글꼴 가장자리에 대한 정보를 수신하도록 구성된 [!DNL ICCConfig.java] 파일을 보여줍니다.
+다음 예제에서는 `MediaPlayer`에서 닫힌 캡션 가시성, 글꼴 스타일 및 글꼴 가장자리에 대한 정보를 수신하도록 구성된 [!DNL ICCConfig.java] 파일을 보여 줍니다.
 
 ```java
 // Constructor of CCManager 
