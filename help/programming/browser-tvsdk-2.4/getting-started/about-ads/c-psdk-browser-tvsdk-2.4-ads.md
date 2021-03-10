@@ -1,13 +1,10 @@
 ---
-description: 컨텐츠가 재생되는 경우 Browser TVSDK는 MediaResource 객체를 만들 때 광고를 표시하고 광고에 대한 정보를 전달할 수 있습니다.
-seo-description: 컨텐츠가 재생되는 경우 Browser TVSDK는 MediaResource 객체를 만들 때 광고를 표시하고 광고에 대한 정보를 전달할 수 있습니다.
-seo-title: 광고
+description: 컨텐츠가 재생되는 경우 브라우저 TVSDK는 MediaResource 객체를 만들 때 광고를 표시하고 광고에 대한 정보를 전달할 수 있습니다.
 title: 광고
-uuid: 9a5e8c83-18ce-41e8-9cb1-fdc9da903faf
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 개요 {#ads-overview}
 
-컨텐츠가 재생되는 경우 Browser TVSDK는 MediaResource 객체를 만들 때 광고를 표시하고 광고에 대한 정보를 전달할 수 있습니다.
+컨텐츠가 재생되는 경우 브라우저 TVSDK는 MediaResource 객체를 만들 때 광고를 표시하고 광고에 대한 정보를 전달할 수 있습니다.
 
 `AdobePSDK.MediaPlayerStatus.INITIALIZED`을 받은 후 `prepareToPlay` 함수를 호출할 수도 있습니다.
 
