@@ -1,9 +1,9 @@
 ---
-seo-title: Java API로 DRM 정책 업데이트
 title: Java API로 DRM 정책 업데이트
-uuid: ec21351c-900e-48f5-845a-c0b430c210d7
+description: Java API로 DRM 정책 업데이트
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# Java API {#updating-a-drm-policy-with-the-java-api}로 DRM 정책 업데이트
+# Java API {#updating-a-drm-policy-with-the-java-api}으로 DRM 정책 업데이트
 
 Java API로 DRM 정책을 업데이트하려면:
 
-1. 개발 환경을 설정하고 프로젝트에 [개발 환경 설정](../../protecting-content/setting-up-the-sdk/setup-dev-env.md)에 나열된 모든 JAR 파일을 포함합니다.
+1. 개발 환경을 설정하고 [개발 환경 설정](../../protecting-content/setting-up-the-sdk/setup-dev-env.md)에 나열된 모든 JAR 파일을 프로젝트에 포함합니다.
 1. DRM `Policy` 인스턴스를 만들고 파일 또는 데이터베이스에서 DRM 정책을 읽습니다.
 
    ```
