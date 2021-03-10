@@ -1,13 +1,10 @@
 ---
-description: MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
-seo-description: MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
-seo-title: MediaPlayer 설정
+description: MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
 title: MediaPlayer 설정
-uuid: 2279e388-6fbc-49a2-8560-218d3d31e1d6
 translation-type: tm+mt
-source-git-commit: af9b865bc1627a97bf8957b5460ff9b46052a7dc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # MediaPlayer 설정{#set-up-the-mediaplayer}
 
-MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
+MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
 
 1. 다음을 사용하여 `MediaPlayer`을(를) 인스턴스화합니다.
 
@@ -23,15 +20,15 @@ MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡
    var player = new AdobePSDK.MediaPlayer();
    ```
 
-1. `MediaPlayerView` 인스턴스 만들기:
+1. `MediaPlayerView` 인스턴스를 만듭니다.
 
    ```js
    var view = new AdobePSDK.MediaPlayerView(container);
    ```
 
-   여기서 `container`은 `HTMLMediaElement`를 포함하는 target `div` 요소입니다.
+   여기서 `container`은 `HTMLMediaElement`가 포함된 대상 `div` 요소입니다.
 
-   예를 들어 HTML 페이지에서 다음을 수행합니다.
+   예를 들어, HTML 페이지에서:
 
    ```
    <div id="videoDiv"> 
@@ -59,9 +56,9 @@ MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡
    player.view = view;
    ```
 
-1. 사용자 지정 컨트롤 `div` 요소를 MediaPlayer 인스턴스에 첨부합니다.
+1. 사용자 정의 컨트롤 `div` 요소를 MediaPlayer 인스턴스에 첨부합니다.
 
-   예: HTML:
+   예를 들어, HTML에서는:
 
    ```
    <div id="videoDiv"> 
