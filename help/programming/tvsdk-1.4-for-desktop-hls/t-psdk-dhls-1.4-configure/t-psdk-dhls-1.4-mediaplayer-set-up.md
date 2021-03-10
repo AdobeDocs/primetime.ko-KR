@@ -1,13 +1,10 @@
 ---
-description: MediaPlayer 인터페이스는 미디어 플레이어의 기능과 동작을 캡슐화합니다.
-seo-description: MediaPlayer 인터페이스는 미디어 플레이어의 기능과 동작을 캡슐화합니다.
-seo-title: MediaPlayer 설정
+description: MediaPlayer 인터페이스는 미디어 플레이어의 기능과 비헤이비어를 캡슐화합니다.
 title: MediaPlayer 설정
-uuid: 4b27643c-9ccd-4abb-9793-475d06ee2a88
 translation-type: tm+mt
-source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -15,11 +12,11 @@ ht-degree: 0%
 
 # MediaPlayer {#set-up-the-mediaplayer} 설정
 
-TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하는 데 필요한 툴을 제공합니다.
+TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하기 위한 툴을 제공합니다.
 
-플랫폼의 툴을 사용하여 플레이어를 만들고 TVSDK의 미디어 플레이어 보기에 연결하여 비디오를 재생하고 관리하는 방법을 제공합니다. 예를 들어 TVSDK는 재생 및 일시 정지 방법을 제공합니다. 플랫폼에서 사용자 인터페이스 단추를 만들고 해당 TVSDK 메서드를 호출할 단추를 설정할 수 있습니다. MediaPlayer 인터페이스는 미디어 플레이어의 기능과 동작을 캡슐화합니다.
+플랫폼의 툴을 사용하여 플레이어를 만들고 TVSDK의 미디어 플레이어 보기에 연결하여 비디오를 재생하고 관리하는 방법을 살펴봅니다. 예를 들어 TVSDK는 재생 및 일시 정지 메서드를 제공합니다. 플랫폼에서 유저 인터페이스 버튼을 만들고 해당 TVSDK 메서드를 호출할 버튼을 설정할 수 있습니다. MediaPlayer 인터페이스는 미디어 플레이어의 기능과 비헤이비어를 캡슐화합니다.
 
-TVSDK는 `MediaPlayer` 인터페이스의 단일 구현을 제공합니다.DefaultMediaPlayer 클래스입니다. 비디오 재생 기능이 필요한 경우 `DefaultMediaPlayer`을(를) 인스턴스화합니다.
+TVSDK는 `MediaPlayer` 인터페이스의 단일 구현을 제공합니다.DefaultMediaPlayer 클래스입니다. 비디오 재생 기능이 필요하면 `DefaultMediaPlayer`을(를) 인스턴스화합니다.
 
 >[!NOTE]
 >
@@ -32,7 +29,7 @@ TVSDK는 `MediaPlayer` 인터페이스의 단일 구현을 제공합니다.Defau
        new MediaPlayerContext(authorizedFeatures)
    ```
 
-1. 공용 create factory 메서드를 사용하여 `MediaPlayer`을 인스턴스화하고 `MediaPlayerContext` 컨텍스트 개체를 전달합니다.
+1. `MediaPlayerContext` 컨텍스트 객체를 전달하여 public create factory 메서드를 사용하여 `MediaPlayer`을 인스턴스화합니다.
 
    ```
    public static function create(context:Context):MediaPlayer
