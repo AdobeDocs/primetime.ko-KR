@@ -1,13 +1,10 @@
 ---
 description: 발행자는 Primetime 매니페스트 서버 클라이언트측 광고 추적 워크플로우와 연동되는 HLS 호환 비디오 플레이어를 제작할 수 있습니다. 실시간 스트림 및 VOD(Video On Demand) 케이스의 매니페스트 서버에 대한 인터페이스는 약간 다릅니다.
-seo-description: 발행자는 Primetime 매니페스트 서버 클라이언트측 광고 추적 워크플로우와 연동되는 HLS 호환 비디오 플레이어를 제작할 수 있습니다. 실시간 스트림 및 VOD(Video On Demand) 케이스의 매니페스트 서버에 대한 인터페이스는 약간 다릅니다.
-seo-title: 비 TVSDK 클라이언트측 추적 개요
 title: 비 TVSDK 클라이언트측 추적 개요
-uuid: fb23be01-3327-443d-82c4-fb0993e7fec1
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
