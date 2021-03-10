@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Titlebreak enforcement (Adobe Primetime DRM 필요)
-title: Titlebreak enforcement (Adobe Primetime DRM 필요)
-uuid: 5cf8ebbc-17de-44cc-90d2-0857ea62c4a4
+title: Titlebreak 적용(Adobe Primetime DRM 필요)
+description: Titlebreak 적용(Adobe Primetime DRM 필요)
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---
 
 
-# Titlebreak enforcement (requires Adobe Primetime DRM){#jailbreak-enforcement-requires-adobe-primetime-drm}
+# Titlebreak 적용(Adobe Primetime DRM 필요){#jailbreak-enforcement-requires-adobe-primetime-drm}
 
-Android 및 iOS 모바일 디바이스와 같은 탈옥을 지원하는 플랫폼에서 [!DNL jailbreak/root]이(가) 장치에서 감지된 경우 탈옥 적용을 통해 콘텐츠의 재생을 허용하지 않을 수 있습니다.
+Android 및 iOS 모바일 디바이스와 같은 감지를 지원하는 플랫폼에서 [!DNL jailbreak/root]이(가) 장치에서 감지된 경우, 탈옥을 허용하지 않도록 할 수 있습니다.
 
 >[!NOTE]
 >
