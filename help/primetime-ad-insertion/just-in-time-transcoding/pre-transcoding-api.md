@@ -1,13 +1,10 @@
 ---
 title: 코드 변환 API
 description: JIT(Just-In-Time) 재패키징 API를 사용하여 광고 크리에이티브를 사전에 트랜스코딩할 수 있으므로 필요한 경우 컨텐츠 호환 버전을 사용할 수 있으므로 재패키징과 관련된 2-4분 지연을 방지할 수 있습니다.
-seo-description: JIT(Just-In-Time) 재패키징 API를 사용하여 광고 크리에이티브를 사전에 트랜스코딩할 수 있으므로 필요한 경우 컨텐츠 호환 버전을 사용할 수 있으므로 재패키징과 관련된 2-4분 지연을 방지할 수 있습니다.
-seo-title: 코드 변환 API
-uuid: 03cd2428-510a-4b99-8496-059a48d5abba
 translation-type: tm+mt
-source-git-commit: d5e948992d7c59e80b530c8f4619adbffc3c03d8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
