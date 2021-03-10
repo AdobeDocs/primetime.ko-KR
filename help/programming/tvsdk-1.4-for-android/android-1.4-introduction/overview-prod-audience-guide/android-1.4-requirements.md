@@ -1,13 +1,10 @@
 ---
 description: TVSDK에는 미디어 컨텐츠, 매니페스트 컨텐츠, DRM 및 소프트웨어 버전에 대한 특정 요구 사항이 필요합니다.
-seo-description: TVSDK에는 미디어 컨텐츠, 매니페스트 컨텐츠, DRM 및 소프트웨어 버전에 대한 특정 요구 사항이 필요합니다.
-seo-title: 요구 사항
 title: 요구 사항
-uuid: d5671444-cc83-48d4-8ce6-735d5f373795
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -26,21 +23,21 @@ TVSDK를 사용하려면 하드웨어, 운영 체제 및 애플리케이션 버�
 | CPU | 1GHz 단일 코어 또는 동급 프로세서 |
 | RAM | 256MB |
 | GPU | 재생에 필요한 하드웨어 GPU |
-| 건축 | x86 - Housidini, ARM64, ARMv7 및 ARMv8 |
+| 아키텍처 | x86 - Housdini, ARM64, ARMv7 및 ARMv8을 통해 |
 
-## 콘텐츠 및 매니페스트 요구 사항 {#section_72DD0E4DA9774DCCADB42887497F1386}
+## 콘텐트 및 매니페스트 요구 사항 {#section_72DD0E4DA9774DCCADB42887497F1386}
 
-DRM 암호화 키를 비롯한 스트림 및 재생 목록(매니페스트)에 대한 제한 사항과 요구 사항을 확인합니다.
+DRM 암호화 키를 비롯한 스트림 및 재생 목록(매니페스트)에 대한 제한 사항 및 요구 사항을 확인합니다.
 
-| Adobe 액세스 DRM | DRM으로 보호되는 스트림이 여러 비트 전송률(MBR)인 경우 MBR에 사용되는 DRM 암호화 키는 모든 비트율 스트림에 사용되는 키와 동일해야 합니다. |
+| Adobe 액세스 DRM | DRM으로 보호된 스트림이 여러 비트 전송률(MBR)인 경우 MBR에 사용되는 DRM 암호화 키는 모든 비트 전송률 스트림에 사용되는 키와 동일해야 합니다. |
 |---|---|
-| 광고 변형 매니페스트 | 기본 컨텐츠의 표현물과 동일한 비트 전송률 변환이 있어야 합니다. |
+| 광고 변형 매니페스트 | 기본 컨텐츠의 표현물과 동일한 비트율 변환이 있어야 합니다. |
 
-## #EXT-X-VERSION 요구 사항 {#section_49A33664651A46EC9ED888BA9C1C3F6D}
+## #EXT-X-VERSION requirements {#section_49A33664651A46EC9ED888BA9C1C3F6D}
 
 [!DNL .m3u8] 파일의 `#EXT-X-VERSION` 버전은 응용 프로그램에서 사용할 수 있는 기능과 재생 목록/매니페스트에서 사용할 수 있는 `EXT` 태그에 영향을 줍니다.
 
-다음은 HLS 프로토콜 버전을 지정하는 `#EXT-X-VERSION` 태그에 대한 일부 정보입니다.
+다음은 HLS 프로토콜 버전을 지정하는 `#EXT-X-VERSION` 태그에 대한 몇 가지 정보입니다.
 
 * 버전은 HLS 재생 목록의 기능과 속성과 일치해야 합니다.그렇지 않으면 재생 오류가 발생할 수 있습니다. 자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1)을 참조하십시오.
 * Adobe은 TVSDK 기반 클라이언트에서 재생하는 데 HLS 버전 2 이상을 사용하는 것이 좋습니다.
@@ -50,7 +47,7 @@ DRM 암호화 키를 비롯한 스트림 및 재생 목록(매니페스트)에 �
 <table frame="all" colsep="1" rowsep="1" id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="1" class="entry"> 이 버전 이상 사용 </th> 
+   <th colname="1" class="entry"> 적어도 이 버전 사용 </th> 
    <th colname="2" class="entry"> 이러한 기능을 사용하려면 </th> 
   </tr> 
  </thead>
@@ -63,7 +60,7 @@ DRM 암호화 키를 비롯한 스트림 및 재생 목록(매니페스트)에 �
    <td colname="1"> <span class="codeph"> EXT-X-VERSION:3  </span> </td> 
    <td colname="2"> 
     <ul id="ul_C9500D3F934848639C204BF248F139FF"> 
-     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">부동 소수점 <span class="codeph"> EXTENINF </span> 지속 시간 값 <p>지속 시간 태그( <span class="codeph"> #EXTENINF:버전 2의 </span>&lt;duration&gt;,&lt;title&gt;)이 정수 값으로 반올림되었습니다. 버전 3 이상에서는 부동 소수점에서 기간을 정확하게 지정해야 합니다. </p> </li> 
+     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">부동 소수점 <span class="codeph"> EXTENINF </span> 지속 시간 값 <p>기간 태그( <span class="codeph"> #EXTINF:버전 2의 </span>&lt;duration&gt;,&lt;title&gt;)이 정수 값으로 반올림되었습니다. 버전 3 이상에서는 부동 소수점 형식의 지속 시간을 정확하게 지정해야 합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr rowsep="0"> 
