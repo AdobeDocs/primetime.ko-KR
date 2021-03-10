@@ -1,13 +1,10 @@
 ---
 description: 광고 삽입에 대한 모든 요청은 동일한 URL 구조와 동일한 기본 쿼리 매개 변수를 사용합니다. 추가 쿼리 매개 변수를 사용하면 매니페스트 서버가 다양한 클라이언트와 상황에서 작동할 수 있습니다.
-seo-description: 광고 삽입에 대한 모든 요청은 동일한 URL 구조와 동일한 기본 쿼리 매개 변수를 사용합니다. 추가 쿼리 매개 변수를 사용하면 매니페스트 서버가 다양한 클라이언트와 상황에서 작동할 수 있습니다.
-seo-title: 광고 삽입 요청
 title: 광고 삽입 요청
-uuid: e42b3228-bff7-4202-86ed-7f631f3016ae
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
