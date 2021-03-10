@@ -1,13 +1,10 @@
 ---
 title: 매니페스트 서버 쿼리 매개 변수
 description: 쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 종류와 매니페스트 서버가 수행할 작업을 알려 줍니다. 일부 형식은 필수이며 일부는 허용되는 특정 형식 또는 값을 가집니다.
-seo-title: 매니페스트 서버 쿼리 매개 변수
-seo-description: 쿼리 매개 변수는 매니페스트 서버에 요청을 보낸 클라이언트 종류와 매니페스트 서버가 수행할 작업을 알려 줍니다. 일부 형식은 필수이며 일부는 허용되는 특정 형식 또는 값을 가집니다.
-uuid: 03632da3-ae20-427c-bd24-4794ab627cc8
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
