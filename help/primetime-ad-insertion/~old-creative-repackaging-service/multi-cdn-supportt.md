@@ -1,13 +1,10 @@
 ---
 description: 다중 CDN을 사용하면 하나 이상의 CDN 위치 설정을 통해 코드 변환된 광고를 제공할 수 있습니다.
-seo-description: 다중 CDN을 사용하면 하나 이상의 CDN 위치 설정을 통해 코드 변환된 광고를 제공할 수 있습니다.
-seo-title: 다중 CDN 지원
 title: 다중 CDN 지원
-uuid: 2b6d71f0-61c8-486b-a35a-f7ef3a9519d2
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
