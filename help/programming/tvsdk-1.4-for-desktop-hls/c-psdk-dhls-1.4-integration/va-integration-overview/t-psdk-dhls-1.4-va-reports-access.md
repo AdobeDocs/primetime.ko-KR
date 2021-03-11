@@ -1,13 +1,10 @@
 ---
 description: 비디오 분석 보고서는 Adobe Analytics 보고 플랫폼으로 전달됩니다.
-seo-description: 비디오 분석 보고서는 Adobe Analytics 보고 플랫폼으로 전달됩니다.
-seo-title: 비디오 분석 보고서 액세스
 title: 비디오 분석 보고서 액세스
-uuid: fa913061-5063-4605-bf72-674b5321bbd1
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '59'
 ht-degree: 0%
 
 ---
