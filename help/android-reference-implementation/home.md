@@ -1,13 +1,12 @@
 ---
 title: Primetime 참조 구현
-seo-title: Adobe Primetime 참조 구현 도움말
-description: 'null'
-seo-description: 'null'
+description: Primetime 참조 구현
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 242b5a2875ebc0e0020296ce9489dd54438b5ad0
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 42%
+source-wordcount: '207'
+ht-degree: 43%
 
 ---
 
