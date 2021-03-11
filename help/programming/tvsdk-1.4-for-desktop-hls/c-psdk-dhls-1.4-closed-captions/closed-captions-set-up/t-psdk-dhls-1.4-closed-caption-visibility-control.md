@@ -1,25 +1,22 @@
 ---
-description: 자막의 가시성을 제어할 수 있습니다. 가시성이 켜지면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
-seo-description: 자막의 가시성을 제어할 수 있습니다. 가시성이 켜지면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
-seo-title: 자막 가시성 제어
+description: 닫힌 캡션의 가시성을 제어할 수 있습니다. 가시성이 설정되어 있으면 현재 선택된 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
 title: 자막 가시성 제어
-uuid: 360d1158-67d9-40d9-b4b6-8ef46f9d73c0
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
 
-# 자막 표시 제어{#control-closed-caption-visibility}
+# 닫힌 캡션 표시 제어{#control-closed-caption-visibility}
 
-자막의 가시성을 제어할 수 있습니다. 가시성이 켜지면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
+닫힌 캡션의 가시성을 제어할 수 있습니다. 가시성이 설정되어 있으면 현재 선택된 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
 
 >[!TIP]
 >
->플레이어가 검색 모드로 들어갈 때 닫힌 캡션 텍스트가 표시되는 경우 검색이 완료된 후 텍스트가 더 이상 표시되지 않습니다. 대신, 몇 초 후 TVSDK는 마지막 검색 위치 이후 비디오에 다음 닫힌 캡션 텍스트를 표시합니다.
+>플레이어가 검색 모드로 들어갈 때 닫힌 캡션 텍스트가 표시되는 경우 검색이 완료된 후 텍스트가 표시되는 문제가 해결되었습니다. 대신, 몇 초 후 TVSDK는 끝 검색 위치 뒤에 비디오에 다음 닫힌 캡션 텍스트를 표시합니다.
 
 >[!NOTE]
 >
@@ -55,21 +52,21 @@ ht-degree: 0%
                    prompt="CC"/>
    ```
 
-1. 자막 트랙의 바인딩 가능한 배열을 정의합니다.
+1. 닫힌 캡션 트랙의 바인딩 가능한 배열을 정의합니다.
 
    ```
    [Bindable] private var _ccTracks:ArrayCollection =  
      new ArrayCollection(); // active tracks 
    ```
 
-1. 수신기를 설정합니다.
+1. 리스너를 설정합니다.
 
    ```
    player.addEventListener(MediaPlayerItemEvent.ITEM_CREATED, onItemCreated); 
    player.addEventListener(MediaPlayerItemEvent.CAPTIONS_UPDATED, onCaptionUpdated);
    ```
 
-   폐기 코드에서 수신기를 제거하려면 다음을 수행합니다.
+   파괴 코드에서 리스너를 제거하려면:
 
    ```
    player.removeEventListener(MediaPlayerItemEvent.ITEM_CREATED, onItemCreated); 
