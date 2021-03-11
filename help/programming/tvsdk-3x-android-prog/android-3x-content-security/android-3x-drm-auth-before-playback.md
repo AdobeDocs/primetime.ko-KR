@@ -1,13 +1,10 @@
 ---
 description: 비디오에 대한 DRM 메타데이터가 미디어 스트림과 분리된 경우 재생을 시작하기 전에 인증해야 합니다.
-seo-description: 비디오에 대한 DRM 메타데이터가 미디어 스트림과 분리된 경우 재생을 시작하기 전에 인증해야 합니다.
-seo-title: 재생 전 DRM 인증
 title: 재생 전 DRM 인증
-uuid: be319b04-a506-4278-8275-db32cd3f18aa
 translation-type: tm+mt
-source-git-commit: e300238be5a2bddc7c6b9bd26682dcb4401959b1
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -24,11 +21,11 @@ ht-degree: 0%
 
 이 예제에서는 `DRMHelper` 메서드를 사용하여 DRM 메타데이터 파일의 내용을 다운로드하고 분석한 다음 DRM 인증이 필요한지 여부를 확인할 수 있습니다.
 
-1. `loadDRMMetadata`을(를) 사용하여 메타데이터 URL 컨텐츠를 로드하고 다운로드한 바이트를 `DRMMetadata`에 구문 분석합니다.
+1. `loadDRMMetadata`을(를) 사용하여 메타데이터 URL 내용을 로드하고 다운로드한 바이트를 `DRMMetadata`에 파싱합니다.
 
    >[!TIP]
    >
-   >이 메서드는 비동기 메서드로 자체 스레드를 만듭니다.
+   >이 메서드는 비동기식으로 자체 스레드를 만듭니다.
 
    ```java
    public static void loadDRMMetadata( 
@@ -45,9 +42,9 @@ ht-degree: 0%
                                       new DRMLoadMetadataListener());
    ```
 
-1. 이 작업이 비동기 작업임을 사용자에게 알립니다. 이 작업은 사용자가 알 수 있도록 하는 것이 좋습니다.
+1. 이 작업은 비동기 작업임을 사용자에게 알립니다. 이 작업은 사용자가 알 수 있도록 하는 것이 좋습니다.
 
-   사용자가 비동기 작업인 것을 모를 경우 재생이 아직 시작되지 않은 이유를 알 수 있습니다. 예를 들어 DRM 메타데이터를 다운로드하고 파싱하는 동안 스피너 휠을 표시할 수 있습니다.
+   사용자가 비동기식으로 작업하는지 모를 경우 재생이 아직 시작되지 않은 이유를 알 수 있습니다. 예를 들어 DRM 메타데이터를 다운로드 및 파싱하는 동안 스피너 휠을 표시할 수 있습니다.
 
 1. `DRMLoadMetadataListener`에서 콜백을 구현합니다.
 
@@ -68,11 +65,11 @@ ht-degree: 0%
    } 
    ```
 
-   다음은 처리기에 대한 추가 정보입니다.
+   핸들러에 대한 자세한 내용은 다음과 같습니다.
 
    * `onLoadMetadataUrlStart` 메타데이터 URL 로드가 시작된 시기를 검색합니다.
    * `onLoadMetadataUrlComplete` 메타데이터 URL이 로드를 완료한 시점을 검색합니다.
-   * `onLoadMetadataUrlError` 메타데이터가 로드되지 않았음을 나타냅니다.
+   * `onLoadMetadataUrlError` 메타데이터를 로드하지 못했음을 나타냅니다.
 
 1. 로드가 완료되면 `DRMMetadata` 개체를 검사하여 DRM 인증이 필요한지 확인합니다.
 
@@ -121,7 +118,7 @@ ht-degree: 0%
            final DRMAuthenticationListener authenticationListener);
       ```
 
-      이 예에서는 간단하게 사용자의 이름과 암호가 명시적으로 코딩됩니다.
+      이 예에서 간단하게 볼 수 있도록 사용자의 이름과 암호는 명시적으로 코딩됩니다.
 
       ```java
       DRMHelper.performDrmAuthentication(drmManager,  
@@ -194,6 +191,6 @@ ht-degree: 0%
    ```
 
 1. 인증이 완료되면 재생을 시작합니다.
-1. 인증이 실패할 경우 사용자에게 알리고 재생을 시작하지 마십시오.
+1. 인증이 되지 않으면 사용자에게 알리고 재생을 시작하지 마십시오.
 
-   응용 프로그램이 모든 인증 오류를 처리해야 합니다. 재생 전에 성공적으로 인증하지 못하면 TVSDK가 오류 상태로 설정되고 재생이 중지됩니다. 응용 프로그램에서 문제를 해결하고 플레이어를 재설정하고 리소스를 다시 로드해야 합니다.
+   응용 프로그램에서 인증 오류를 처리해야 합니다. 재생 전에 성공적으로 인증하지 못하면 TVSDK가 오류 상태로 전환되고 재생이 중지됩니다. 응용 프로그램에서 문제를 해결하고 플레이어를 재설정하고 리소스를 다시 로드해야 합니다.
