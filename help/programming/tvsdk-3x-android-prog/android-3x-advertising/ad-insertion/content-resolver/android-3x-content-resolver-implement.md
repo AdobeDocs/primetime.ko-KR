@@ -1,25 +1,22 @@
 ---
 description: 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
-seo-description: 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
-seo-title: 사용자 지정 컨텐츠 해결 프로그램 구현
 title: 사용자 지정 컨텐츠 해결 프로그램 구현
-uuid: 5f63cc1e-3f4b-460c-9151-2b9d364800e2
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
 
-# 사용자 지정 컨텐츠 확인자 {#implement-a-custom-content-resolver} 구현
+# 사용자 지정 내용 확인자 {#implement-a-custom-content-resolver} 구현
 
 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
 
-TVSDK가 새로운 기회를 생성하는 경우 등록된 컨텐츠 해결에서 해당 기회를 해결할 수 있는 컨텐츠를 찾습니다. `true`을(를) 반환하는 첫 번째 값이 선택되어 기회를 확인합니다. 컨텐츠 확인자가 없으면 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기 방식이므로, 컨텐츠 확인자는 프로세스가 완료되면 TVSDK에 알릴 책임이 있습니다.
+TVSDK가 새로운 기회를 창출하는 경우 해당 기회를 해결할 수 있는 기회를 찾는 등록된 컨텐츠 해결자를 통해 반복합니다. `true`을(를) 반환하는 첫 번째 값이 선택되어 기회를 확인합니다. 컨텐츠 확인자가 없을 경우 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기적이므로, 컨텐츠 확인자는 프로세스가 완료되면 TVSDK에 알릴 책임이 있습니다.
 
-1. `ContentFactory` 인터페이스를 확장하고 `retrieveResolvers`을(를) 대체하여 고유한 사용자 지정 `ContentFactory`을 구현합니다.
+1. `ContentFactory` 인터페이스를 확장하고 `retrieveResolvers`을(를) 재정의하여 고유한 사용자 지정 `ContentFactory`을 구현합니다.
 
    예:
 
@@ -116,7 +113,7 @@ TVSDK가 새로운 기회를 생성하는 경우 등록된 컨텐츠 해결에�
       ); 
       ```
 
-   1. 광고가 해결되면 다음 기능 중 하나를 호출합니다.
+   1. 광고가 해결되면 다음 함수 중 하나를 호출합니다.
 
       * 광고 확인이 성공하면 `ContentResolverClient`에서 `process(List<TimelineOperation> proposals)` 및 `notifyCompleted(Opportunity opportunity)`을(를) 호출합니다.
 
@@ -125,7 +122,7 @@ TVSDK가 새로운 기회를 생성하는 경우 등록된 컨텐츠 해결에�
          _client.notifyCompleted(opportunity); 
          ```
 
-      * 광고 확인이 실패하면 `ContentResolverClient`에서 `notifyResolveError`을(를) 호출합니다.
+      * 광고 확인에 실패하는 경우 `ContentResolverClient`에서 `notifyResolveError`을(를) 호출합니다.
 
          ```java
          _client.notifyFailed(Opportunity opportunity, PSDKErrorCode error);
