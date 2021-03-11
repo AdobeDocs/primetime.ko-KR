@@ -1,13 +1,10 @@
 ---
-description: Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계를 수행하십시오.
-seo-description: Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계를 수행하십시오.
-seo-title: TVSDK를 사용하여 기본 플레이어 만들기
+description: 브라우저 TV SDK를 사용하여 기본 플레이어를 만들려면 다음 단계를 수행하십시오.
 title: TVSDK를 사용하여 기본 플레이어 만들기
-uuid: ec15cf53-197f-4190-a6b2-600a57815390
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -15,10 +12,10 @@ ht-degree: 0%
 
 # TVSDK{#create-a-basic-player-using-tvsdk}를 사용하여 기본 플레이어 만들기
 
-Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계를 수행하십시오.
+브라우저 TV SDK를 사용하여 기본 플레이어를 만들려면 다음 단계를 수행하십시오.
 
-1. Browser TVSDK용 압축 파일을 다운로드할 수 있는 새 디렉토리를 만듭니다.
-1. Zendesk에서 브라우저 TVSDK를 다운로드하고 파일을 압축 해제한 다음 frameworks 폴더를 새 디렉토리에 배치합니다.
+1. 브라우저 TVSDK용 압축 파일을 다운로드할 수 있는 새 디렉토리를 만듭니다.
+1. Zendesk에서 브라우저 TV SDK를 다운로드하고, 파일의 압축을 풀고, frameworks 폴더를 새 디렉토리에 넣습니다.
 1. 코드에 `div`이 포함된 간단한 HTML 상용구를 만듭니다.
 1. 1단계에서 만든 디렉토리에 이 상용구를 HTML 파일에 배치합니다.
 
@@ -36,7 +33,7 @@ Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계�
    </html>
    ```
 
-1. 헤드 섹션에 브라우저 TVSDK 라이브러리를 추가합니다.
+1. 헤드 섹션에 브라우저 TV SDK 라이브러리를 추가합니다.
 
    ```js
    <script src= "frameworks/player/dash.min.js"></script> 
@@ -45,7 +42,7 @@ Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계�
    <script src= "frameworks/player/primetimeei.min.js"></script>
    ```
 
-1. 본문 태그에 `onLoad` 섹션을 추가합니다.
+1. body 태그의 경우 `onLoad` 섹션을 추가합니다.
 
    ```
    <body onload="startVideo()">
@@ -81,13 +78,13 @@ Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계�
    player.view = view;
    ```
 
-1. 플레이어 이벤트 수신기를 추가합니다.
+1. 플레이어 이벤트 리스너를 추가합니다.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.STATUS_CHANGED, onStatusChange);
    ```
 
-1. 이벤트 핸들러를 구현하고 이벤트 추가 수신기 앞에 놓습니다.
+1. 이벤트 핸들러를 구현하고 이를 add 이벤트 리스너 앞에 놓습니다.
 
    ```js
    var onStatusChange = function (event) { 
@@ -152,7 +149,7 @@ Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계�
    var mediaResource = new AdobePSDK.MediaResource(resourceUrl, resourceType, null, false);
    ```
 
-1. 빈 구성을 만들고 리소스를 교체합니다.
+1. 빈 구성을 만들고 리소스를 바꿉니다.
 
    ```js
    var config = new AdobePSDK.MediaPlayerItemConfig(); 
@@ -160,7 +157,7 @@ Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계�
    player.replaceCurrentResource(mediaResource, config);
    ```
 
-1. 플레이어가 INITIALIZED 상태이면 `prepareToPlay`을(를) 호출합니다.
+1. 플레이어가 초기화된 상태이면 `prepareToPlay`을(를) 호출합니다.
 
    ```js
    case INITIALIZED: 
@@ -168,7 +165,7 @@ Browser TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계�
     break;
    ```
 
-1. 플레이어가 준비 상태가 되면 `play`을(를) 호출합니다.
+1. 플레이어가 준비 상태가 되면 `play`으로 전화하십시오.
 
    ```js
    case PREPARED: 
