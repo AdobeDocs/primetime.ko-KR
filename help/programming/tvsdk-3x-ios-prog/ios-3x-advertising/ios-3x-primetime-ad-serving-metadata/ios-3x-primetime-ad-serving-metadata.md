@@ -1,13 +1,10 @@
 ---
 description: TVSDK는 VOD 및 라이브/리니어 스트림에 대한 광고 해결 및 삽입을 지원합니다.
-seo-description: TVSDK는 VOD 및 라이브/리니어 스트림에 대한 광고 해결 및 삽입을 지원합니다.
-seo-title: Primetime 광고 서버 메타데이터
 title: Primetime 광고 서버 메타데이터
-uuid: 61e224dd-551a-438f-8560-e64915087fef
 translation-type: tm+mt
-source-git-commit: 9d60bff4035963572e49fa49effa576ca854f799
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -19,16 +16,16 @@ TVSDK는 VOD 및 라이브/리니어 스트림에 대한 광고 해결 및 삽�
 
 ## 사전 요구 사항
 
-비디오 컨텐츠에 광고를 포함하려면 먼저 다음 메타데이터 정보를 제공해야 합니다.
+비디오 컨텐츠에 광고를 포함하려면 먼저 다음 메타데이터 정보를 제공합니다.
 
 * 재생할 특정 컨텐츠를 식별하는 `mediaID`
-* 귀사 또는 웹 사이트를 식별하는 `zoneID`
-* 지정된 광고 서버의 도메인을 지정하는 광고 서버 도메인.
+* 회사 또는 웹 사이트를 식별하는 `zoneID`.
+* 할당된 광고 서버의 도메인을 지정하는 광고 서버 도메인입니다.
 * 기타 타깃팅 매개 변수.
 
 ## Primetime 광고 서버 메타데이터 {#section_86C4A3B2DF124770B9B7FD2511394313} 설정
 
-광고 서버에 연결하려면 응용 프로그램이 TVSDK에 필수 `PTAuditudeMetadata` 정보를 제공해야 합니다.
+광고 서버에 연결하려면 응용 프로그램에서 필요한 `PTAuditudeMetadata` 정보를 TVSDK에 제공해야 합니다.
 
 광고 서버 메타데이터를 설정하려면
 
@@ -42,7 +39,7 @@ TVSDK는 VOD 및 라이브/리니어 스트림에 대한 광고 해결 및 삽�
    adMetadata.userAgent = @"INSERT_AGENT_NAME_HERE; 
    ```
 
-1. `PTAuditudeMetadata` 인스턴스를 `PTAdResolvingMetadataKey`를 사용하여 현재 `PTMediaPlayerItem` 메타데이터의 메타데이터로 설정합니다.
+1. `PTAdResolvingMetadataKey`을(를) 사용하여 현재 `PTMediaPlayerItem` 메타데이터의 메타데이터로 `PTAuditudeMetadata` 인스턴스를 설정합니다.
 
    ```
    // Metadata is an instance of PTMetadata that is used to create the PTMediaPlayerItem 
