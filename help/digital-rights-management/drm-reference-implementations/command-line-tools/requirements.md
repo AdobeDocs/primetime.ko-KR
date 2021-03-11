@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 명령줄 툴 요구 사항
 title: 명령줄 툴 요구 사항
-uuid: 62f6e7ef-f593-4184-b217-2d086fead733
+description: 명령줄 툴 요구 사항
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -15,7 +13,7 @@ ht-degree: 0%
 
 # 명령줄 도구 요구 사항 {#command-line-tools-requirements}
 
-* Java 1.5 이상
+* Java 1.5 이상.
 * Adobe에서 발급한 패키지, 전송 및 라이센스 서버 자격 증명(인증서 및 암호).
 
    이러한 자격 증명은 비디오 파일을 암호화 및 서명하고, 정책 업데이트 및 해지 목록에 서명하고, 라이선스를 미리 생성하는 데 사용됩니다.
