@@ -1,13 +1,10 @@
 ---
 description: 클라이언트가 JSON 형식의 추적 정보를 요청하는 경우 매니페스트 서버는 JSON 형식 중 하나의 파일을 다시 전송합니다.
-seo-description: 클라이언트가 JSON 형식의 추적 정보를 요청하는 경우 매니페스트 서버는 JSON 형식 중 하나의 파일을 다시 전송합니다.
-seo-title: URL 추적을 위한 JSON 형식
 title: URL 추적을 위한 JSON 형식
-uuid: 4b17639b-c0de-4ef4-931b-aa7c4c036c0a
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
