@@ -1,13 +1,10 @@
 ---
 description: Bootstrap URL 요청에 pttrackingmode 및 pttrackingversion 매개 변수를 추가하여 클라이언트측 광고 추적을 활성화할 수 있습니다.
-seo-description: Bootstrap URL 요청에 pttrackingmode 및 pttrackingversion 매개 변수를 추가하여 클라이언트측 광고 추적을 활성화할 수 있습니다.
-seo-title: 클라이언트측 광고 추적 활성화
 title: 클라이언트측 광고 추적 활성화
-uuid: 0a825756-1d9a-43c5-bc22-9b366f39fdbb
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---
