@@ -1,13 +1,10 @@
 ---
 description: 이러한 클래스는 광고 배치를 포함하여 특정 미디어의 타임라인에 대한 정보를 제공합니다.
-seo-description: 이러한 클래스는 광고 배치를 포함하여 특정 미디어의 타임라인에 대한 정보를 제공합니다.
-seo-title: 타임라인 클래스
 title: 타임라인 클래스
-uuid: effb7308-f581-4bc2-808d-7f7ccb121a3a
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '82'
 ht-degree: 0%
 
 ---
