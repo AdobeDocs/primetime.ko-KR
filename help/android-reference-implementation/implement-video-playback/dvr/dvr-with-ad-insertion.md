@@ -1,21 +1,18 @@
 ---
-description: 기본적으로 DVR이 지원되는 라이브 스트림은 뷰어가 일시 중지되고 검색할 수 있는 검색 가능한 범위를 노출합니다.
-seo-description: 기본적으로 DVR이 지원되는 라이브 스트림은 뷰어가 일시 중지되고 검색할 수 있는 검색 가능한 범위를 노출합니다.
-seo-title: 광고 삽입 시 DVR
-title: 광고 삽입 시 DVR
-uuid: ed6cd8fe-ceb2-45c8-a76d-bc0532babd99
+description: 기본적으로 DVR이 지원되는 실시간 스트림은 뷰어가 일시 정지하거나 검색할 수 있는 검색 가능한 범위를 표시합니다.
+title: 광고 삽입이 포함된 DVR
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '73'
 ht-degree: 0%
 
 ---
 
 
-# 광고 삽입이 {#dvr-with-ad-insertion}인 DVR
+# 광고 삽입 {#dvr-with-ad-insertion}이(가) 있는 DVR
 
-기본적으로 DVR이 지원되는 라이브 스트림은 뷰어가 일시 중지되고 검색할 수 있는 검색 가능한 범위를 노출합니다.
+기본적으로 DVR이 지원되는 실시간 스트림은 뷰어가 일시 정지하거나 검색할 수 있는 검색 가능한 범위를 표시합니다.
 
 아래에 표시된 것처럼, 광고 나누기가 컨트롤 막대에 빨간색 막대로 표시됩니다.
 
@@ -23,4 +20,4 @@ ht-degree: 0%
 
 ![](assets/dvr-with-ads.jpg)
 
-검색 가능한 범위는 회색으로 표시되고 빨간색 점은 광고 분리를 나타냅니다.
+검색 가능한 범위는 회색이고 빨간색 점은 광고 분리를 나타냅니다.
