@@ -1,9 +1,9 @@
 ---
-seo-title: 보호된 컨텐츠에 액세스할 수 없도록 제한된 애플리케이션 런타임 차단 목록
-title: 보호된 컨텐츠에 액세스할 수 없도록 제한된 애플리케이션 런타임 차단 목록
-uuid: 462a2c09-b335-4768-bd0e-1359db169d69
+title: 보호된 콘텐츠에 대한 액세스를 제한하는 애플리케이션 런타임 차단 목록
+description: 보호된 콘텐츠에 대한 액세스를 제한하는 애플리케이션 런타임 차단 목록
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 사용 사례 예:DRM 클라이언트 차단 목록과 유사한 최신 버전의 Flash Player, AIR 또는 iOS 런타임은 라이선스 취득 및 컨텐츠 재생에 필요한 최소 버전으로 지정할 수 있습니다.
 
-다음 속성 외에 DRM 클라이언트 버전에 지원되는 모든 속성으로 애플리케이션 런타임을 식별할 수 있습니다.
+응용 프로그램 런타임은 다음 특성 외에 DRM 클라이언트 버전에 지원되는 모든 특성을 통해 식별될 수 있습니다.
 
 | **속성** | **지원되는 값** | **일치 기준** | **설명** |
 |---|---|---|---|
