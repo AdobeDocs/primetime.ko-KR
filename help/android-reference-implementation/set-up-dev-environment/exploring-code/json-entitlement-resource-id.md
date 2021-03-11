@@ -1,13 +1,10 @@
 ---
-seo-title: 권한 부여 리소스 ID용 JSON 개체
 title: 권한 부여 리소스 ID용 JSON 개체
-uuid: f5b659da-1732-404c-bf00-d32a0ae39aa1
 description: 권한 부여 리소스 ID가 간단한 텍스트 문자열인 경우 다음 코드 블록은 JSON 개체의 예를 제공합니다.
-seo-description: 권한 부여 리소스 ID가 간단한 텍스트 문자열인 경우 다음 코드 블록은 JSON 개체의 예를 제공합니다.
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 권한 부여 리소스 ID {#json-object-for-entitlement-resource-id}에 대한 JSON 개체
 
-권한 부여 리소스 ID가 간단한 텍스트 문자열인 경우 다음 코드 블록은 JSON 개체의 예를 제공합니다. 이 경우 리소스 ID는 문자열 &quot;resource&quot;입니다.
+권한 부여 리소스 ID가 간단한 텍스트 문자열인 경우 다음 코드 블록은 JSON 개체의 예를 제공합니다. 이 경우 리소스 ID는 &quot;resource&quot; 문자열입니다.
 
 ```
 "metadata" : { 
@@ -25,7 +22,7 @@ ht-degree: 0%
 }
 ```
 
-권한 부여 리소스 ID가 HTML 인코딩 mRSS 문자열인 경우 다음 코드 블록은 JSON 개체의 예를 제공합니다.
+다음 코드 블록은 권한 부여 리소스 ID가 HTML 인코딩된 mRSS 문자열인 경우 JSON 개체의 예를 제공합니다.
 
 ```
 <rss version="2.0" xmlns:media="https://search.yahoo.com/mrss/"> 
