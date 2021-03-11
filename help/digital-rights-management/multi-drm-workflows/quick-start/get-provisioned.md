@@ -16,8 +16,8 @@ ExpressPlay를 기반으로 하는 Primetime DRM Cloud를 시작하려면 Adobe 
 
 1. TVSDK로 다중 DRM을 구현하는 데 필요한 Adobe Cert 및 ExpressPlay 계정을 Adobe 담당자에게 요청하십시오.
 
-       Adobe 담당자에게 연락처로 사용할 이메일 주소를 제공합니다. 그러면 Adobe에서 
- 계정을 두 개 만듭니다.   
+   Adobe 담당자에게 연락처로 사용할 이메일 주소를 제공합니다. 그러면 Adobe에서 계정을 두 개 만듭니다.
+
    * ***인증서 포털 계정***  - ( <span></span>https://certportal.primetime.adobe.com):Adobe  *액세스/Primetime DRM 인증서* 등록 관리 팀은 제공한 주소로 이메일을 보냅니다. 전자 메일에는 Adobe 인증서 등록 문서(최신 문서 참조:[인증서 등록 안내서](../../../digital-rights-management/certificate-enrollment-guide/about-certs.md)).
 
    * ***ExpressPlay 계정***  - Adobe은 ExpressPlay 관리자 계정에 등록하는 데 사용하는 링크가 포함된 이메일을 보냅니다.
