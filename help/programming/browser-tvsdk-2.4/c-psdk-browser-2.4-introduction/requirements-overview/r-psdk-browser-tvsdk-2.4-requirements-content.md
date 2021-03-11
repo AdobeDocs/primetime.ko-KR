@@ -1,19 +1,16 @@
 ---
 description: 스트림 및 재생 목록(매니페스트)에 대한 제한 사항 및 요구 사항을 확인합니다.
-seo-description: 스트림 및 재생 목록(매니페스트)에 대한 제한 사항 및 요구 사항을 확인합니다.
-seo-title: 콘텐츠 및 매니페스트 요구 사항
 title: 콘텐츠 및 매니페스트 요구 사항
-uuid: 22ee7d02-b06d-4162-a8a4-a2391658fdb3
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
 
 
-# 콘텐츠 및 매니페스트 요구 사항{#content-and-manifest-requirements}
+# 내용 및 매니페스트 요구 사항{#content-and-manifest-requirements}
 
 스트림 및 재생 목록(매니페스트)에 대한 제한 사항 및 요구 사항을 확인합니다.
 
@@ -36,18 +33,18 @@ ht-degree: 0%
       <li id="li_5986DD33C0FE485D99D4C00E2E6012CA">불연속성이 있는 HLS 스트림이지만 불연속성 마커는 지원되지 않습니다. </li> 
       <li id="li_FED8686372DF4A39BAABC531BA4EB137">HLS Live에서는 타임스탬프 롤오버를 지원하지 않습니다. </li> 
       <li id="li_565CFBEAD9874BA48F6E25B0893BF131">HLS 라이브 스트림의 DVR 창에 있는 광고는 확인되지 않습니다. </li> 
-      <li id="li_7D22EA32C94240D79EDDA96D9E72FE8F">바이트 범위는 AES-128로 암호화된 콘텐츠에서 지원되지 않습니다. </li> 
+      <li id="li_7D22EA32C94240D79EDDA96D9E72FE8F">바이트 범위는 AES-128 암호화된 내용에서 지원되지 않습니다. </li> 
      </ul></p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 대시 컨텐츠 </td> 
+   <td colname="col1"> 대시 내용 </td> 
    <td colname="col2"> <p>다음 사항을 기억하십시오. 
      <ul id="ul_9D33C2418F9F49DEAE0E642301726F89"> 
-      <li id="li_74C69A21A7BD4831B92F0D57900E1CB1">라이브 스트림의 경우 - 동적 유형이 있는 라이브 프로필이 지원됩니다. </li> 
-      <li id="li_0C8743DB152047819D23C9F180998AD7">VOD 스트림의 경우 - 정적 유형의 실시간 프로필이 지원됩니다. </li> 
+      <li id="li_74C69A21A7BD4831B92F0D57900E1CB1">라이브 스트림의 경우 - 동적 유형의 라이브 프로필이 지원됩니다. </li> 
+      <li id="li_0C8743DB152047819D23C9F180998AD7">VOD 스트림의 경우 - 정적 유형의 라이브 프로필이 지원됩니다. </li> 
       <li id="li_FBC6828663FB413798A4BDAF0B9831AA">VOD 스트림의 경우 - 광고 워크플로우에 대해 온디맨드 프로필이 인증되지 않았습니다. </li> 
-      <li id="li_4393B9B1F6144BDEAE484C879750ED23">여러 점이 있는 DASH 스트림의 재생은 지원되지 않습니다. </li> 
-      <li id="li_6A2CEC4E974C4D44A45F5503A1A9D8D0">접근성 태그를 통해 표시되는 포함된 캡션(608/708)이 지원됩니다. </li> 
+      <li id="li_4393B9B1F6144BDEAE484C879750ED23">여러 기간이 있는 DASH 스트림의 재생은 지원되지 않습니다. </li> 
+      <li id="li_6A2CEC4E974C4D44A45F5503A1A9D8D0">액세스 가능성 태그를 통해 표시되는 포함된 캡션(608/708)이 지원됩니다. </li> 
       <li id="li_EDE93DF4F3A64A53BA80877F701A8F0D">조각화/세그먼트화된 VTT 파일은 지원되지 않습니다. </li> 
       <li id="li_8897F73611194030A490A4FF1178364C">인밴드 사용자 지정 태그가 있는 스트림은 인증되지 않습니다. </li> 
      </ul></p> </td> 
