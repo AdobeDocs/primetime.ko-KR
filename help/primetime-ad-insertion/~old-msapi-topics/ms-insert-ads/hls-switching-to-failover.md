@@ -1,13 +1,10 @@
 ---
 description: Apple HLS 스택은 기본 세트의 스트림을 검색할 수 없는 경우 페일오버/백업 스트림으로 전환하는 것을 지원합니다. Apple HLS 장치의 경우 장애 조치를 용이하게 하기 위해 매니페스트 서버에 신호를 보내 마스터 재생 목록에서 식별된 기본 및 장애 조치 스트림을 자체 UUID로 분리되어 있는 세트로 처리할 수 있습니다.
-seo-description: Apple HLS 스택은 기본 세트의 스트림을 검색할 수 없는 경우 페일오버/백업 스트림으로 전환하는 것을 지원합니다. Apple HLS 장치의 경우 장애 조치를 용이하게 하기 위해 매니페스트 서버에 신호를 보내 마스터 재생 목록에서 식별된 기본 및 장애 조치 스트림을 자체 UUID로 분리되어 있는 세트로 처리할 수 있습니다.
-seo-title: 페일오버/백업 스트림으로 HLS 플레이어 전환 촉진
 title: 페일오버/백업 스트림으로 HLS 플레이어 전환 촉진
-uuid: 2fea8a51-e4cb-4fc9-82d5-6305a1d96603
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
