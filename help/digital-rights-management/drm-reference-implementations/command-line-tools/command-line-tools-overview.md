@@ -1,9 +1,9 @@
 ---
-seo-title: 개요
 title: 개요
-uuid: effb6c5e-afce-4a96-8c95-041b2f183690
+description: 개요
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -22,5 +22,5 @@ Primetime DRM 참조 구현에는 다음과 같은 명령줄 도구가 포함되
 * 정책 업데이트 목록 관리자 - DRM 정책 업데이트 목록을 만들고 표시합니다.
 * 해지 목록 관리자 - 해지 목록을 만들고 표시합니다.
 * AIR 게시자 ID - AIR 응용 프로그램의 게시자 ID를 계산합니다.
-* 유틸리티 라이센스 생성기 - 로컬에서 라이센스를 생성합니다(서버에 대한 라이센스 요청 없음).
-* 라이선스 임베드 - 컨텐츠에 사전 생성된 라이선스 포함
+* 유틸리티 라이센스 생성기 - 로컬에서 라이센스를 생성합니다(서버에 대한 라이센스 요청 없이).
+* 라이선스 임베드 - 미리 생성된 라이선스를 컨텐츠에 포함
