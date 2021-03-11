@@ -1,9 +1,9 @@
 ---
-seo-title: 사용자 지정된 VOD 자산의 예
 title: 사용자 지정된 VOD 자산의 예
-uuid: 23ff3778-09d4-43ef-89c3-67f8fc56f5da
+description: 사용자 지정된 VOD 자산의 예
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%
@@ -43,6 +43,6 @@ seg5.ts
 
 애플리케이션은 다음 시나리오를 설정할 수 있습니다.
 
-* `#EXT-X-ASSET` 태그 또는 구독한 다른 사용자 지정 태그 이름 세트가 파일에 있을 때의 알림.
-* 스트림에서 `#EXT-X-AD` 태그 또는 기타 사용자 지정 태그 이름이 발견되면 광고를 삽입합니다.
+* `#EXT-X-ASSET` 태그 또는 가입한 다른 사용자 지정 태그 이름 세트가 파일에 있을 때의 알림.
+* 스트림에서 `#EXT-X-AD` 태그 또는 다른 사용자 지정 태그 이름이 발견되면 광고를 삽입합니다.
 
