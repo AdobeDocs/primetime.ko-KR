@@ -1,9 +1,9 @@
 ---
-seo-title: Primetime Player 클래스 요약
-title: Primetime Player 클래스 요약
-uuid: 19dbe885-0f04-4d58-a625-27d1aef6ded8
+title: Primetime 플레이어 클래스 요약
+description: Primetime 플레이어 클래스 요약
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '12'
 ht-degree: 0%
@@ -11,4 +11,4 @@ ht-degree: 0%
 ---
 
 
-# Primetime Player 클래스 요약{#primetime-player-classes-summary}
+# Primetime 플레이어 클래스 요약{#primetime-player-classes-summary}
