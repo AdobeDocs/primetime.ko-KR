@@ -1,13 +1,10 @@
 ---
 description: Password Scrambler 유틸리티는 보호된 스트리밍 구성 파일을 위한 Adobe Primetime DRM Server의 암호를 암호화합니다.
-seo-description: Password Scrambler 유틸리티는 보호된 스트리밍 구성 파일을 위한 Adobe Primetime DRM Server의 암호를 암호화합니다.
-seo-title: 암호 스크램블러
 title: 암호 스크램블러
-uuid: 56df0f49-f3fd-464d-b4ba-25e1b497158a
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
@@ -44,8 +41,8 @@ Encrypted password:
 </i class="+ topic>
 ```
 
-[!DNL flashaccess-global.xml] 및 [!DNL flashaccess-tenant.xml] 파일에서 지정한 모든 암호는 암호화되어야 합니다.
+[!DNL flashaccess-global.xml] 및 [!DNL flashaccess-tenant.xml] 파일에 지정한 모든 암호는 암호화되어야 합니다.
 
 >[!NOTE]
 >
->보호된 스트리밍을 위한 Primetime DRM Server의 암호 스크램블러 유틸리티는 참조 구현 라이선스 서버와 함께 제공되는 스크램블러와 호환되지 않습니다.
+>보호된 스트리밍을 위한 Primetime DRM Server의 암호 스크램블러 유틸리티는 참조 구현 라이선스 서버와 함께 제공되는 스크램블러(scrambler)와 호환되지 않습니다.
