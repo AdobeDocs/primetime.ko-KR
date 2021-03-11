@@ -1,13 +1,10 @@
 ---
 description: CRS(Creative Repackaging Service)를 사용하면 HLS가 아닌 광고 크리에이티브가 HLS 스트림에서 제대로 재생할 수 있습니다. 매니페스트 서버는 HLS가 아닌 광고가 발생하면 CRS에서 호출합니다.
-seo-description: CRS(Creative Repackaging Service)를 사용하면 HLS가 아닌 광고 크리에이티브가 HLS 스트림에서 제대로 재생할 수 있습니다. 매니페스트 서버는 HLS가 아닌 광고가 발생하면 CRS에서 호출합니다.
-seo-title: CRS 개요
 title: CRS 개요
-uuid: 3ae75fa7-397f-47ba-8e3d-50543ca25458
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
