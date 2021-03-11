@@ -1,23 +1,20 @@
 ---
-description: Adobe 비디오 엔진의 암호화 모듈은 NATIVE_ERROR 메타데이터 개체에서 이러한 알림을 반환합니다.
-seo-description: Adobe 비디오 엔진의 암호화 모듈은 NATIVE_ERROR 메타데이터 개체에서 이러한 알림을 반환합니다.
-seo-title: NATIVE_ERROR 암호화 값
+description: Adobe 비디오 엔진의 암호화 모듈은 NATIVE_ERROR 메타데이터 객체에 이러한 알림을 반환합니다.
 title: NATIVE_ERROR 암호화 값
-uuid: 5e86ba61-93e9-47cf-adad-8794957a1f7c
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 6%
+source-wordcount: '84'
+ht-degree: 8%
 
 ---
 
 
 # NATIVE_ERROR:암호화 값{#native-error-crypto-values}
 
-Adobe 비디오 엔진의 암호화 모듈은 NATIVE_ERROR 메타데이터 개체에서 이러한 알림을 반환합니다.
+Adobe 비디오 엔진의 암호화 모듈은 NATIVE_ERROR 메타데이터 객체에 이러한 알림을 반환합니다.
 
-| NATIVE_ERROR_CODE 메타데이터 키 값 | NATIVE_ERROR_NAME 메타데이터 키 값 | 의미 |
+| NATIVE_ERROR_CODE 메타데이터 키 값 | NATIVE_ERROR_NAME 메타데이터 키의 값 | 의미 |
 |---|---|---|
 | 300년 | `CRYPTO_ALGORITHM_NOT_SUPPORTED` | 사용 중인 알고리즘은 지원되지 않습니다. |
 | 301년 | `CRYPTO_ERROR_CORRUPTED_DATA` | 데이터가 손상되었습니다. |
