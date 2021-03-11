@@ -1,13 +1,10 @@
 ---
 description: 기본 CRS(Creative Repackaging Service) 시나리오는 하나의 CDN(Content Delivery Network)을 사용하는 것이지만, 두 개 이상의 CDN에 CRS 자산을 배포할 수 있습니다.
-seo-description: 기본 CRS(Creative Repackaging Service) 시나리오는 하나의 CDN(Content Delivery Network)을 사용하는 것이지만, 두 개 이상의 CDN에 CRS 자산을 배포할 수 있습니다.
-seo-title: CRS 광고 전달을 위한 다양한 CDN 지원
 title: CRS 광고 전달을 위한 다양한 CDN 지원
-uuid: c5557a38-aa49-4161-bb58-3e8dff9a4d64
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
