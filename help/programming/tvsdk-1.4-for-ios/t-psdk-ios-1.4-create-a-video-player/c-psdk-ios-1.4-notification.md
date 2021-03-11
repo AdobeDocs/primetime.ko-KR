@@ -1,13 +1,10 @@
 ---
 description: 플레이어는 플레이어의 상태를 나타내는 다양한 이벤트를 수신할 수 있습니다.
-seo-description: 플레이어는 플레이어의 상태를 나타내는 다양한 이벤트를 수신할 수 있습니다.
-seo-title: 알림 설정
 title: 알림 설정
-uuid: 77cc5b45-f91f-4b71-9a67-5d17cda81da3
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -74,7 +71,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerAdProgressNotification  </span> </td> 
-   <td colname="2"> 광고지광고가 재생되는 동안 지속적으로 전달됩니다. </td> 
+   <td colname="2"> 광고물광고가 재생되는 동안 지속적으로 전달됩니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerAdStartedNotification  </span> </td> 
@@ -82,7 +79,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTBackgroundManifestErrorNotification  </span> </td> 
-   <td colname="2"> 배경 매니페스트를 다운로드하지 못했습니다. </td> 
+   <td colname="2"> 백그라운드 매니페스트를 다운로드하지 못했습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerBufferingCompletedNotification  </span> </td> 
@@ -98,7 +95,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTAudioTrackChangeStarted  </span> </td> 
-   <td colname="2"> 현재 재생 중인 미디어의 오디오 트랙에 대한 변경이 시작됩니다. </td> 
+   <td colname="2"> 현재 재생 중인 미디어의 오디오 트랙에 대한 변경 사항이 시작됩니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerItemChangedNotification  </span> </td> 
@@ -114,7 +111,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerNewNotificationEntryAddedNotification  </span> </td> 
-   <td colname="2"> 알림 이벤트가 알림 내역에 추가될 때, 새 <span class="codeph"> PTNotificationHistoryItem </span>이 현재 <span class="codeph"> PTMediaPlayerItem </span>의 <span class="codeph"> PTNotificationHistoryItem &lt;a3/&gt;에 추가되었습니다.</span> </span></td> 
+   <td colname="2"> 알림 이벤트가 알림 기록에 추가될 때, 즉 현재 <span class="codeph"> PTMediaPlayerItem </span>의 <span class="codeph"> PTNotificationHistoryItem </span>에 새 <span class="codeph"> PTNotificationHistoryItem </span>이(가) 추가되었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerPlayCompletedNotification  </span> </td> 
@@ -122,7 +119,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerSeekCompletedNotification  </span> </td> 
-   <td colname="2"> 검색 완료 </td> 
+   <td colname="2"> 검색이 완료되었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerSeekErrorNotification  </span> </td> 
@@ -130,7 +127,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerSeekStartedNotification  </span> </td> 
-   <td colname="2"> 검색 시작 </td> 
+   <td colname="2"> 검색 시작. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerPlayStartedNotification  </span> </td> 
@@ -161,7 +158,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" colsep="1" rowsep="1"> <span class="codeph"> PTTimedMetadataChangedNotification  </span> </td> 
-   <td colname="2"> TVSDK에서 구독된 태그의 첫 번째 발생을 발견했습니다. </td> 
+   <td colname="2"> TVSDK에서 가입된 태그가 처음 발생했습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTTimedMetadataChangedInBackgroundNotification  </span> </td> 
