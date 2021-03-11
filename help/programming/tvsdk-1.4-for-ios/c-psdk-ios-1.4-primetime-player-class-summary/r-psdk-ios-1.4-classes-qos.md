@@ -1,13 +1,10 @@
 ---
 description: 이러한 클래스는 플레이어의 성능을 확인하는 데 도움이 되는 정보를 제공합니다.
-seo-description: 이러한 클래스는 플레이어의 성능을 확인하는 데 도움이 되는 정보를 제공합니다.
-seo-title: QoS 클래스
 title: QoS 클래스
-uuid: fc175269-ec4a-415e-91f3-7fa036290fa6
 translation-type: tm+mt
-source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -39,13 +36,13 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTPlaybackInformation.html" format="html" scope="external"> PTPlaybackInformation</a> </td> 
-   <td colname="2"> 재생의 성능에 대한 정보를 제공합니다. 여기에는 프레임 속도, 프로필 비트 전송률, 버퍼링에서 보낸 총 시간, 버퍼링 시도 횟수, 첫 번째 비디오 조각에서 첫 번째 바이트를 가져오는 데 걸린 시간, 첫 번째 프레임을 렌더링하는 데 걸린 시간, 현재 버퍼링된 길이 및 버퍼 시간이 포함됩니다. </td> 
+   <td colname="2"> 재생의 성능에 대한 정보를 제공합니다. 여기에는 프레임 속도, 프로필 비트 전송률, 버퍼링에서 보낸 총 시간, 버퍼링 시도 횟수, 첫 번째 비디오 조각의 첫 번째 바이트를 가져오는 데 걸린 시간, 첫 번째 프레임을 렌더링하는 데 걸린 시간, 현재 버퍼링된 길이 및 버퍼 시간이 포함됩니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTQoSProvider.html" format="html" scope="external"> PTQoSProvider</a> </td> 
    <td colname="2">
     <pre>
-      재생과 디바이스 모두에 필요한 QoS 지표를 제공합니다.
+      재생과 장치 모두에 필요한 QoS 지표를 제공합니다.
     </pre>
     <pre>
       QOS 정보 공급자 클래스입니다.
