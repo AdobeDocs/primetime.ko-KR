@@ -1,13 +1,10 @@
 ---
-description: TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하는 데 필요한 툴을 제공합니다. 또한 비디오 재생 품질을 극대화하기 위해 고안된 다양한 기능을 제공합니다.
-seo-description: TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하는 데 필요한 툴을 제공합니다. 또한 비디오 재생 품질을 극대화하기 위해 고안된 다양한 기능을 제공합니다.
-seo-title: 미디어 플레이어 설정
+description: TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하기 위한 툴을 제공합니다. 또한 비디오 재생 품질을 극대화하기 위해 고안된 다양한 기능을 제공합니다.
 title: 미디어 플레이어 설정
-uuid: 1f672484-b340-4f92-8a47-dad4c9f3b3fc
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
@@ -15,13 +12,13 @@ ht-degree: 0%
 
 # 미디어 플레이어 {#set-up-the-media-player} 설정
 
-TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하는 데 필요한 툴을 제공합니다. 또한 비디오 재생 품질을 극대화하기 위해 고안된 다양한 기능을 제공합니다.
+TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하기 위한 툴을 제공합니다. 또한 비디오 재생 품질을 극대화하기 위해 고안된 다양한 기능을 제공합니다.
 
 <!--<a id="section_1FE83A68DE624F20B52C0959851F5699"></a>-->
 
-`MediaPlayer`을 인스턴스화하고 해당 뷰를 프레임 레이아웃에 배치합니다.
+`MediaPlayer`을 인스턴스화하고 프레임 레이아웃에 해당 뷰를 배치합니다.
 
-1. `MediaPlayer`을(를) 인스턴스화하고 생성자에 `android.content.Context` 개체를 전달합니다.
+1. `MediaPlayer`을 인스턴스화하고 `android.content.Context` 객체를 생성자에게 전달합니다.
 
    ```java
    MediaPlayer mediaPlayer = new MediaPlayer(context);
@@ -47,7 +44,7 @@ TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오
     }
    ```
 
-1. 프레임 레이아웃 내에 `mediaPlayer`의 보기를 배치합니다.
+1. 프레임 레이아웃 내에 `mediaPlayer` 보기를 배치합니다.
 
    ```java
    playerFrame.addView(mediaPlayer.getView());
