@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 라이센스 서버 데이터베이스 구성
 title: 라이센스 서버 데이터베이스 구성
-uuid: 6d34e849-1616-46bd-ad18-4f98e6c45af7
+description: 라이센스 서버 데이터베이스 구성
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -19,9 +17,9 @@ ht-degree: 0%
 
 1. MySQL 명령줄을 불러옵니다.
 
-   **Windows에서 -** 클릭   **[!UICONTROL Window's Start Menu]** >  **[!UICONTROL MySQL]** >  **[!UICONTROL MySQL Server 5.1]**   **[!UICONTROL MySQL Command Line Client]**
+   **Windows의 경우 -** 클릭   **[!UICONTROL Window's Start Menu]** >  **[!UICONTROL MySQL]** >  **[!UICONTROL MySQL Server 5.1]** >  **[!UICONTROL MySQL Command Line Client]**
 
-   **Linux 등** - Type  `MySQL`.
+   **Linux 등의 경우** - 를  `MySQL`입력합니다.
 
 1. 다음 SQL 스크립트를 실행합니다.
 
@@ -44,9 +42,9 @@ ht-degree: 0%
 
    이 오류를 무시해도 됩니다. 이 스크립트는 이 스크립트를 처음 실행할 때만 발생합니다.
 
-Jakarta-Commons 데이터베이스 연결 풀을 사용하는 DBCP(데이터베이스 연결 풀링)를 구성해야 합니다. 이 응용 프로그램 서버 연결 풀링을 활용하도록 JDI Datasource TestDB가 구성됩니다. localhost에 없는 MySQL 서버를 가리키도록 데이터베이스 연결을 변경하려면 다음 파일 중 하나를 수정하십시오.
+Jakarta-Commons 데이터베이스 연결 풀을 사용하는 DBCP(데이터베이스 연결 풀링)를 구성해야 합니다. 이 응용 프로그램 서버 연결 풀링을 활용하도록 JNDI Datasource TestDB가 구성됩니다. localhost에 없는 MySQL 서버를 가리키도록 데이터베이스 연결을 변경하려면 다음 파일 중 하나를 수정합니다.
 
-* [!DNL META-INF\context.xml] 파일로서 [!DNL flashaccess.war] 파일에 있는 라이센스 서버 데이터베이스의 위치, 사용자 이름 및 암호를 지정합니다.
+* [!DNL META-INF\context.xml] 파일은 [!DNL flashaccess.war] 파일에 있는 라이센스 서버 데이터베이스의 위치, 사용자 이름 및 암호를 지정합니다.
 
 * `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl\WebContent/META-INF\context.xml` 파일.
 
