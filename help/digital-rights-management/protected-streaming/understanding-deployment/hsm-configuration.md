@@ -1,13 +1,10 @@
 ---
-description: HSM을 선택하여 서버 인증서를 저장하는 경우 HSM에 개인 키와 인증서를 로드하고 pkcs11.cfg 구성 파일을 생성해야 합니다.
-seo-description: HSM을 선택하여 서버 인증서를 저장하는 경우 HSM에 개인 키와 인증서를 로드하고 pkcs11.cfg 구성 파일을 생성해야 합니다.
-seo-title: HSM 구성
+description: 서버 자격 증명을 저장할 HSM을 선택하는 경우 전용 키와 인증서를 HSM에 로드하고 pkcs11.cfg 구성 파일을 생성해야 합니다.
 title: HSM 구성
-uuid: 3610840b-082e-4a73-8aa5-5065f9232e0b
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # HSM 구성{#hsm-configuration}
 
-HSM을 선택하여 서버 인증서를 저장하는 경우 HSM에 개인 키와 인증서를 로드하고 pkcs11.cfg 구성 파일을 생성해야 합니다.
+서버 자격 증명을 저장할 HSM을 선택하는 경우 전용 키와 인증서를 HSM에 로드하고 pkcs11.cfg 구성 파일을 생성해야 합니다.
 
 *LicenseServer.ConfigRoot* 디렉토리에서 구성 파일을 찾아야 합니다.
 
@@ -23,7 +20,7 @@ PKCS11 구성 파일의 예제는 Adobe Primetime DRM DVD의 [!DNL Adobe Primeti
 
 [!DNL pkcs11.cfg] 파일의 형식에 대한 Sun PKCS11 공급자 설명서를 참조하십시오.
 
-[!DNL pkcs11.cfg] 파일이 있는 디렉토리에서 다음 명령을 사용하여 Java JRE 및 JDK와 함께 [!DNL keytool]이(가) 설치되었고 HSM 및 Sun PKCS11 구성 파일이 올바르게 구성되었는지 확인할 수 있습니다.
+[!DNL pkcs11.cfg] 파일이 있는 디렉토리에서 다음 명령을 사용하여 HSM 및 Sun PKCS11 구성 파일이 올바르게 구성되었는지 확인할 수 있습니다( [!DNL keytool] Java JRE 및 JDK와 함께 설치).
 
 ```
 keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunPKCS11 
