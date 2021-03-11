@@ -1,25 +1,22 @@
 ---
-description: 매니페스트의 태그에 대한 알림을 수신하려면 AdobePSDK.TimedMetadataEvent를 수신합니다.
-seo-description: 매니페스트의 태그에 대한 알림을 수신하려면 AdobePSDK.TimedMetadataEvent를 수신합니다.
-seo-title: 시간 메타데이터 알림용 수신기 추가
-title: 시간 메타데이터 알림용 수신기 추가
-uuid: c82c5549-0ab6-4343-a766-5176e784d4cb
+description: 매니페스트의 태그에 대한 알림을 받으려면 AdobePSDK.TimedMetadataEvent를 수신합니다.
+title: 시간 메타데이터 알림에 대한 리스너 추가
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '67'
 ht-degree: 0%
 
 ---
 
 
-# Add listeners for timed-metadata notifications{#add-listeners-for-timed-metadata-notifications}
+# 시간 지정 메타데이터 알림의 리스너 추가{#add-listeners-for-timed-metadata-notifications}
 
-매니페스트의 태그에 대한 알림을 수신하려면 AdobePSDK.TimedMetadataEvent를 수신합니다.
+매니페스트의 태그에 대한 알림을 받으려면 AdobePSDK.TimedMetadataEvent를 수신합니다.
 
 새 `TimedMetadata` 개체가 만들어지면 MediaPlayer는 `AdobePSDK.TimedMetadataEvent`을(를) 전달합니다.
 
-1. 적절한 수신기를 구현합니다.
+1. 적절한 리스너를 구현합니다.
 
    ```js
    function onTimedMetadataEvent(event) { 
