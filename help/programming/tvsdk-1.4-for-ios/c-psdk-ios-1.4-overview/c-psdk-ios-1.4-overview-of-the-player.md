@@ -1,13 +1,10 @@
 ---
 description: iOS용 TVSDK에는 다양한 기능이 포함되어 있습니다.
-seo-description: iOS용 TVSDK에는 다양한 기능이 포함되어 있습니다.
-seo-title: Primetime TVSDK 기능
 title: Primetime TVSDK 기능
-uuid: 838d407c-84e1-4818-bec2-4abd7cbf5308
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -15,17 +12,17 @@ ht-degree: 0%
 
 # Primetime TVSDK 기능 {#primetime-tvsdk-features}
 
-iOS용 TVSDK에는 다양한 기능이 포함되어 있으며 다음과 같은 주요 기능이 제공됩니다.
+iOS용 TVSDK에는 다양한 기능이 포함되어 있으며 다음과 같은 주요 기능을 제공합니다.
 
 * VOD 및 실시간/선형 재생
 
-   * 재생, 중지, 일시 중지, 검색 및 재생 헤드 위치를 가져오는 방법을 비롯하여 재생 창 관리
+   * 재생 헤드 위치를 재생, 중지, 일시 정지, 검색 및 가져오는 방법을 포함하여 재생 창 관리
    * 전체 이벤트 재생 지원
    * 액세스 가능성 향상을 위한 자막(608, WebVTT) 및 오디오 대체 형식
    * DVR 기능
-   * ABR(응용 비트 전송률) 로직 및 ABR 컨트롤의 초기 설정
+   * 응용 비트 전송률(ABR) 논리 및 ABR 컨트롤의 초기 설정
    * 비HLS 및 HLS 태그 구독
-   * 실시간 매니페스트 장애 조치 지원
+   * 라이브 매니페스트 페일오버 지원
 
 * 광고
 
@@ -46,7 +43,7 @@ iOS용 TVSDK에는 다양한 기능이 포함되어 있으며 다음과 같은 �
 * 비디오 및 광고 추적
 
    * QoS 이벤트 추적
-   * TVSDK 및 응용 프로그램이 비디오, 광고 및 기타 요소의 상태와 해당 활동을 비동기식으로 알리는 데 도움이 되는 알림
+   * TVSDK 및 응용 프로그램이 비디오, 광고 및 기타 요소의 상태와 로그 활동을 비동기식으로 통신할 수 있도록 하는 알림
    * Adobe Analytics 및 하트비트 지원과 통합
 
 * 로깅
