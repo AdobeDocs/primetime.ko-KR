@@ -1,13 +1,10 @@
 ---
-description: 자막 서식을 지정할 수 있습니다.
-seo-description: 자막 서식을 지정할 수 있습니다.
-seo-title: 예제 캡션 서식
+description: 닫힌 캡션 서식을 지정할 수 있습니다.
 title: 예제 캡션 서식
-uuid: d55a506a-6662-4252-95f6-4073b2997f3b
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '33'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 예:캡션 서식{#examples-caption-formatting}
 
-자막 서식을 지정할 수 있습니다.
+닫힌 캡션 서식을 지정할 수 있습니다.
 
 ## 예 1:형식 값을 명시적으로 {#section_BD7B48F3B66D4E9290E1CB2F464E08E4} 지정합니다.
 
@@ -37,5 +34,5 @@ var tf = new AdobePSDK.TextFormat(
 
 >[!IMPORTANT]
 >
->브라우저 TVSDK는 글꼴 가장자리, 채우기 색상 또는 칠 불투명도를 지원하지 않습니다.
+>브라우저 TVSDK는 글꼴 가장자리, 칠 색상 또는 칠 불투명도를 지원하지 않습니다.
 
