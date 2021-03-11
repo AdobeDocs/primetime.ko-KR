@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 장 지원 구현
 title: 장 지원 구현
-uuid: f62a8244-6393-4a38-9ae2-8ac31f6a8a06
+description: 장 지원 구현
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---
@@ -17,13 +15,13 @@ ht-degree: 0%
 
 TVSDK 기반 응용 프로그램에서 비디오 추적을 위해 *custom* 장을 정의하고 추적할 수 있습니다.
 
-사용자 지정 장은 애플리케이션에서 관리되며, CMS 데이터 또는 애플리케이션에서 장(chapter)을 정의하는 데 사용하는 다른 방법을 기반으로 합니다.
+사용자 정의 장은 애플리케이션에서 관리되며, CMS 데이터 또는 애플리케이션에서 장 정의에 사용하는 다른 방법을 기반으로 합니다.
 
 >[!CAUTION]
 >
->기본 장은 2.5 Android TVSDK에서 지원되지 않습니다.
+>2.5 Android TVSDK에서는 기본 장이 지원되지 않습니다.
 
-1. 맞춤형 장 정의 및 추적
+1. 사용자 정의 장을 정의하고 추적할 수 있습니다.
 
    ```java
    // First, enable chapter tracking by setting   
