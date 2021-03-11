@@ -1,13 +1,10 @@
 ---
-description: VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 수신기를 추가하십시오.
-seo-description: VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 수신기를 추가하십시오.
-seo-title: VPAID 2.0 통합 구현
+description: VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 리스너를 추가하십시오.
 title: VPAID 2.0 통합 구현
-uuid: 7d11ffd8-240c-4a95-94e6-ff4417c8942e
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '50'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # VPAID 2.0 통합 구현{#implement-vpaid-integration}
 
-VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 수신기를 추가하십시오.
+VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 리스너를 추가하십시오.
 
 VPAID 2.0 지원을 추가하려면:
 
