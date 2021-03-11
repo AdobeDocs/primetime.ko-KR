@@ -1,9 +1,9 @@
 ---
-seo-title: WAR 파일 배포
 title: WAR 파일 배포
-uuid: 435a6a6e-c981-46fb-bca9-7f5f34eecd6a
+description: WAR 파일 배포
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -20,5 +20,5 @@ ht-degree: 0%
 
 1. Adobe에서 제공하는 패키지의 [!DNL ROOT] 폴더를 [!DNL webapps] 디렉토리로 복사합니다.
 
-   개인화 서버도 [!DNL crossdomain.xml] 파일을 호스팅해야 합니다. [!DNL ROOT] 폴더에는 [!DNL crossdomain.xml] 파일이 포함되어 있습니다.[!DNL ROOT]은(는) 모두 대문자여야 합니다.) 키 생성 서버에는 이 파일이 필요하지 않습니다.
+   개인화 서버도 [!DNL crossdomain.xml] 파일을 호스팅해야 합니다. ([!DNL ROOT] 폴더에는 [!DNL crossdomain.xml] 파일이 포함되어 있습니다.[!DNL ROOT]은(는) 모두 대문자로 되어 있어야 합니다.) 키 생성 서버는 이 파일을 필요로 하지 않습니다.
 
