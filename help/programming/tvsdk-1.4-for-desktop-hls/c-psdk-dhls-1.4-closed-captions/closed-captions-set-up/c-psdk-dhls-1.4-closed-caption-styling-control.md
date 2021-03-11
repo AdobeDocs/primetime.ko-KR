@@ -1,41 +1,38 @@
 ---
-description: ClosedCaptionStyles 클래스를 사용하여 닫힌 캡션 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 자막의 스타일을 설정합니다.
-seo-description: ClosedCaptionStyles 클래스를 사용하여 닫힌 캡션 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 자막의 스타일을 설정합니다.
-seo-title: 자막 스타일 제어
+description: ClosedCaptionStyles 클래스를 사용하여 닫힌 캡션 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 닫힌 캡션의 스타일을 설정합니다.
 title: 자막 스타일 제어
-uuid: 506c06d3-8fe0-46c9-9ed6-5b35d21c021c
 translation-type: tm+mt
-source-git-commit: b67a9dcb0abb07f4fdff4e03d9d6c0b07ff45127
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 
-# 자막 스타일 제어{#control-closed-caption-styling}
+# 닫힌 캡션 스타일 제어{#control-closed-caption-styling}
 
-ClosedCaptionStyles 클래스를 사용하여 닫힌 캡션 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 자막의 스타일을 설정합니다.
+ClosedCaptionStyles 클래스를 사용하여 닫힌 캡션 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 닫힌 캡션의 스타일을 설정합니다.
 
-이 클래스는 글꼴 유형, 크기, 색상 및 배경 불투명도와 같은 자막 스타일 정보를 캡슐화합니다. 연결된 헬퍼 클래스 `ClosedCaptionStylesBuilder`에서는 자막 스타일 설정을 사용하여 작업을 쉽게 할 수 있습니다.
+이 클래스는 글꼴 유형, 크기, 색상 및 배경 불투명도와 같은 닫힌 캡션 스타일 정보를 캡슐화합니다. 연결된 헬퍼 클래스 `ClosedCaptionStylesBuilder`에서는 자막 스타일 설정을 사용하여 작업을 쉽게 할 수 있습니다.
 
 ## 닫힌 캡션 스타일 {#section_DAE84659D1964DB1B518F91B59AF29D9} 설정
 
-TVSDK 방법을 사용하여 자막 텍스트의 스타일을 지정할 수 있습니다.
+TVSDK 메서드를 사용하여 자막 텍스트의 스타일을 지정할 수 있습니다.
 
-1. MediaPlayer가 최소 준비 상태를 가질 때까지 기다립니다([유효한 상태](../../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md) 대기 참조).
+1. MediaPlayer가 PREMITED 상태 이상을 가질 때까지 기다립니다([유효한 상태](../../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md) 대기 참조).
 1. 스타일 설정을 변경하려면 다음 중 하나를 수행합니다.
 
-   * `ClosedCaptionStylesBuilder` 도우미 클래스를 사용하십시오(숨겨진 `ClosedCaptionStyles`에서 작동).
-   * `ClosedCaptionStyles` 클래스를 직접 사용하십시오.
+   * `ClosedCaptionStylesBuilder` 도우미 클래스를 사용합니다(백그라운드에서 `ClosedCaptionStyles`에서 작동).
+   * `ClosedCaptionStyles` 클래스를 직접 사용합니다.
 
 >[!NOTE]
 >
->자막 스타일을 설정하는 것은 비동기 작업이므로 변경 사항이 화면에 나타나는 데 최대 몇 초가 걸릴 수 있습니다.
+>닫힌 캡션 스타일을 설정하는 것은 비동기 작업이므로 변경 사항이 화면에 표시되는 데 최대 몇 초가 걸릴 수 있습니다.
 
 ## 닫힌 캡션 스타일 옵션 {#section_D28F50B98C0D48CF89C4FB6DC81C5185}
 
-`ClosedCaptionStyles` 클래스를 사용하여 자막 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 자막의 스타일을 설정합니다.
+`ClosedCaptionStyles` 클래스를 사용하여 닫힌 캡션 트랙에 대한 스타일 정보를 제공할 수 있습니다. 플레이어에 표시되는 닫힌 캡션의 스타일을 설정합니다.
 
 ```
 public function TextFormat( 
@@ -65,7 +62,7 @@ public function TextFormat(
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> 글꼴 </td> 
-   <td colname="2"> <p>글꼴 유형입니다. </p> <p><span class="codeph"> ClosedCaptionStyles.FONT </span> 배열로 정의된 값으로만 설정할 수 있으며 serifs가 있거나 없는 고정 간격(예: )을 나타냅니다. 
+   <td colname="2"> <p>글꼴 유형입니다. </p> <p><span class="codeph"> ClosedCaptionStyles.FONT </span> 배열로 정의된 값으로만 설정할 수 있으며 일련 번호를 포함하거나 포함하지 않고 고정 폭(예: )을 나타냅니다. 
      <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;FONT&nbsp;:Array&nbsp;=&nbsp;[ 
       &nbsp;AVCaptionStyle.DEFAULT, 
@@ -77,7 +74,7 @@ public function TextFormat(
       &nbsp;AVCaptionStyle.CURSIVE, 
       &nbsp;AVCaptionStyle.SMALL_CAPITALS 
       &nbsp;]; 
-     </code> </p> <p>팁: 장치에서 사용할 수 있는 실제 글꼴은 다를 수 있으며 필요한 경우 대체 글꼴을 사용합니다. 이 대체는 시스템별로 지정할 수 있지만, serifs가 있는 고정 공간은 일반적으로 대용으로 사용됩니다. </p> </td> 
+     </code> </p> <p>팁: 장치에서 사용할 수 있는 실제 글꼴은 다양하며 필요한 경우 대체 글꼴을 사용합니다. 이 대체는 시스템별로 사용할 수 있지만 일반적으로 직렬이 있는 고정 공간은 대체용으로 사용됩니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 크기 </td> 
@@ -85,13 +82,13 @@ public function TextFormat(
      <ul compact="yes" id="ul_544BFC7A46474A74839477108F1AB1E9"> 
       <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> 중간  </span> - 표준 크기 </li> 
       <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> LARGE  </span> - 중간 크기보다 약 30% 큼 </li> 
-      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> 소형  </span> - 중간 크기보다 약 30% 작음 </li> 
+      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> 중소기업  </span> - 중간 크기보다 약 30% 작음 </li> 
       <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> DEFAULT  </span> - 캡션의 기본 크기입니다.미디어와 동일 </li> 
-     </ul> </p> <p>팁: <span class="codeph"> DefaultMediaPlayer.ccStyles setter </span> 함수의 크기 매개 변수를 변경하여 WebVTT 캡션의 글꼴 크기를 변경할 수 있습니다. </p> </td> 
+     </ul> </p> <p>팁: <span class="codeph"> DefaultMediaPlayer.ccStyles </span> 함수의 크기 매개 변수를 변경하여 WebVTT 캡션의 글꼴 크기를 변경할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 글꼴 가장자리 </td> 
-   <td colname="2"> <p>글꼴 가장자리에 사용된 효과(예: 높이거나 없음). </p> <p><span class="codeph"> ClosedCaptionStyles.FONT_EDGE </span> 배열로 정의된 값만 설정할 수 있습니다. 
+   <td colname="2"> <p>글꼴 가장자리에 사용되는 효과(예: 높이거나 없음). </p> <p><span class="codeph"> ClosedCaptionStyles.FONT_EDGE </span> 배열로 정의된 값만 설정할 수 있습니다. 
      <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;FONT_EDGE&nbsp;:Array&nbsp;=&nbsp;[ 
       &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEFAULT, 
@@ -106,7 +103,7 @@ public function TextFormat(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 글꼴 색상 </td> 
-   <td colname="2"> <p>글꼴 색상 </p> <p><span class="codeph"> ClosedCaptionStyles.COLOR </span> 배열로 정의된 값만 설정할 수 있습니다. 
+   <td colname="2"> <p>글꼴 색상입니다. </p> <p><span class="codeph"> ClosedCaptionStyles.COLOR </span> 배열로 정의된 값만 설정할 수 있습니다. 
      <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;COLOR&nbsp;:Array&nbsp;=&nbsp;[ 
       &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEFAULT, 
@@ -136,15 +133,15 @@ public function TextFormat(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 가장자리 색상 </td> 
-   <td colname="2"> <p>가장자리 효과의 색상 </p> <p>글꼴 색상에 사용할 수 있는 값으로 설정할 수 있습니다. </p> </td> 
+   <td colname="2"> <p>가장자리 효과의 색상입니다. </p> <p>글꼴 색상에 사용할 수 있는 값으로 설정할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 배경색 </td> 
-   <td colname="2"> <p>배경 문자 색상. </p> <p>글꼴 색상에 사용할 수 있는 값만 설정할 수 있습니다. </p> </td> 
+   <td colname="2"> <p>배경 문자 셀 색상입니다. </p> <p>글꼴 색상에 사용할 수 있는 값만 설정할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> 채우기 색상 </td> 
-   <td colname="2"> <p>텍스트가 있는 창의 배경색입니다. </p> <p>글꼴 색상에 사용할 수 있는 값으로 설정할 수 있습니다. </p> <p>중요: WebVTT에서는 이 기능을 사용하지 않으므로 WebVTT 캡션에는 적용되지 않습니다. </p> </td> 
+   <td colname="1"> 칠 색상 </td> 
+   <td colname="2"> <p>텍스트가 있는 창의 배경색입니다. </p> <p>글꼴 색상에 사용할 수 있는 값으로 설정할 수 있습니다. </p> <p>중요: WebVTT는 이 기능을 사용하지 않으므로 WebVTT 캡션에는 적용되지 않습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 글꼴 불투명도 </td> 
@@ -156,14 +153,14 @@ public function TextFormat(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 칠 불투명도 </td> 
-   <td colname="2"> <p>캡션 창의 배경 불투명도입니다. </p> <p>0(완전 투명)에서 100(완전히 불투명)까지의 백분율로 표현됩니다. <span class="codeph"> 채우기에  </span> 대한 DEFAULT_OPACITY는 0입니다. </p> </td> 
+   <td colname="2"> <p>캡션 창의 배경의 불투명도입니다. </p> <p>0(완전 투명)에서 100(완전히 불투명)까지의 백분율로 표현됩니다. <span class="codeph"> 채우기에  </span> 대한 DEFAULT_OPACITY는 0입니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 예:캡션 서식 {#section_63E33840B7A14D26990046E2ACF2ECA1}
 
-자막 서식을 지정할 수 있습니다.
+닫힌 캡션 서식을 지정할 수 있습니다.
 
 ## 예 1:형식 값을 명시적으로 {#section_BD7B48F3B66D4E9290E1CB2F464E08E4} 지정합니다.
 
