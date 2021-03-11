@@ -1,13 +1,10 @@
 ---
-description: Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 타사 DRM 솔루션을 Adobe의 통합 Primetime DRM 솔루션의 대안으로 사용할 수 있습니다.
-seo-description: Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 타사 DRM 솔루션을 Adobe의 통합 Primetime DRM 솔루션의 대안으로 사용할 수 있습니다.
-seo-title: Primetime DRM 인터페이스 개요
+description: Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 제3자 DRM 솔루션을 Adobe의 통합 Primetime DRM 솔루션의 대안으로 사용할 수 있습니다.
 title: Primetime DRM 인터페이스 개요
-uuid: 71479464-8356-4732-9774-da9f6084e6ad
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -15,11 +12,11 @@ ht-degree: 0%
 
 # 개요 {#primetime-drm-interface-overview}
 
-Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 타사 DRM 솔루션을 Adobe의 통합 Primetime DRM 솔루션의 대안으로 사용할 수 있습니다.
+Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 제3자 DRM 솔루션을 Adobe의 통합 Primetime DRM 솔루션의 대안으로 사용할 수 있습니다.
 
 <!--<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>-->
 
-타사 DRM 솔루션 사용 가능성에 대한 최신 정보는 Adobe 담당자에게 문의하십시오.
+제3자 DRM 솔루션의 사용 가능성에 대한 최신 정보는 Adobe 담당자에게 문의하십시오.
 
 Primetime 디지털 저작권 관리(DRM) 시스템의 주요 클라이언트측 요소는 DRM 관리자입니다. Android SDK에 포함된 샘플 응용 프로그램에는 특정 DRM 작업을 구현하기 쉽게 하는 방법을 보여 주는 `DRMHelper` 클래스가 포함되어 있습니다.
 
@@ -37,13 +34,13 @@ TVSDK 패키지에 포함된 DRM 샘플 플레이어 코드를 참조하십시�
 
    >[!TIP]
    >
-   >이 API는 `MediaPlayerEvent.DRM_METADATA`이(가) 실행된 후에만 유효한 `DRMManager` 개체를 반환합니다. 이 이벤트가 실행되기 전에 `getDRMManager()`을 호출하면 NULL이 반환될 수 있습니다.
+   >이 API는 `MediaPlayerEvent.DRM_METADATA`이(가) 실행된 후에만 유효한 `DRMManager` 개체를 반환합니다. 이 이벤트가 발생하기 전에 `getDRMManager()`을(를) 호출하면 NULL이 반환될 수 있습니다.
 
 * DRM 작업 과정을 구현할 때 유용한 `DRMHelper` 도우미 클래스입니다.
 
    `ReferencePlayer`에 `DRMHelper`이 표시됩니다.
 
-* 미디어와 별도의 URL에 있는 경우 DRM 메타데이터를 로드하는 `DRMHelper` 메타데이터 로더 메서드입니다.
+* 미디어와 별도의 URL에 있을 때 DRM 메타데이터를 로드하는 `DRMHelper` 메타데이터 로더 메서드입니다.
 
    ```java
    public static void loadDRMMetadata(final DRMManager drmManager,  
@@ -90,7 +87,7 @@ TVSDK 패키지에 포함된 DRM 샘플 플레이어 코드를 참조하십시�
    final DRMAuthenticationListener authenticationListener);
    ```
 
-* 응용 프로그램에 다양한 DRM 활동 및 상태를 알려주는 이벤트입니다.
+* 응용 프로그램에 다양한 DRM 활동 및 상태를 알리는 이벤트입니다.
 
 <!--<a id="section_899BD9061D484E1BBA46E84617C36867"></a>-->
 
