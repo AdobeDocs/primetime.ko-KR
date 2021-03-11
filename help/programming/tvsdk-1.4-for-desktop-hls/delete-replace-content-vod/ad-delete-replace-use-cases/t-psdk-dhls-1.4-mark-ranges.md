@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 표시 범위
 title: 표시 범위
-uuid: d98efb92-701e-4ee2-b574-823c1e5d5149
+description: 표시 범위
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '26'
+source-wordcount: '24'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 `localTime`의 `begin`과 `end` 사이의 `TimeRanges`을 타임라인의 `AdBreak`로 표시합니다. 다른 광고 설정은 무시됩니다.
 
-1. 표시 시간 범위를 참조하십시오.
+1. 시간 범위를 표시합니다.
 
    ```
    {   
