@@ -1,13 +1,10 @@
 ---
 description: 비디오 형식이 HLS와 호환되지 않으므로 일부 타사 광고(또는 크리에이티브)를 HLS(HTTP Live Streaming) 컨텐츠 스트림에 연결할 수 없습니다. Primetime 광고 삽입 및 TV SDK는 호환되지 않는 광고를 호환되는 M3U8 비디오에 선택적으로 재패키징할 수 있습니다.
-seo-description: 비디오 형식이 HLS와 호환되지 않으므로 일부 타사 광고(또는 크리에이티브)를 HLS(HTTP Live Streaming) 컨텐츠 스트림에 연결할 수 없습니다. Primetime 광고 삽입 및 TV SDK는 호환되지 않는 광고를 호환되는 M3U8 비디오에 선택적으로 재패키징할 수 있습니다.
-seo-title: Adobe Creative Repackaging Service를 사용하여 호환되지 않는 광고 재패키지
 title: Adobe Creative Repackaging Service를 사용하여 호환되지 않는 광고 재패키지
-uuid: 56a2405d-b395-4fea-820d-343590be7c19
 translation-type: tm+mt
-source-git-commit: cecc559480b9b52c412fefff4361603d6f14caf7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
