@@ -1,13 +1,10 @@
 ---
-description: 이러한 클래스를 사용하면 로깅을 사용자 정의할 수 있습니다.
-seo-description: 이러한 클래스를 사용하면 로깅을 사용자 정의할 수 있습니다.
-seo-title: 클래스 로깅
+description: 이러한 클래스를 사용하여 로깅을 사용자 정의할 수 있습니다.
 title: 클래스 로깅
-uuid: 8b07472e-b529-4c35-b49b-a499debfcff0
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 클래스 로깅{#logging-classes}
 
-이러한 클래스를 사용하면 로깅을 사용자 정의할 수 있습니다.
+이러한 클래스를 사용하여 로깅을 사용자 정의할 수 있습니다.
 
 패키지:[com.adobe.mediacore.logging](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/package-summary.html)
 
@@ -29,11 +26,11 @@ ht-degree: 0%
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/Log.html" format="html" scope="external"> 로그</a> </span></td> 
-   <td colname="2"> 수업. 로그 시스템에 대한 액세스를 제공합니다. </td> 
+   <td colname="2"> 클래스. 로그 시스템에 대한 액세스를 제공합니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" rowsep="0"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/LogEntry.html" format="html" scope="external"> LogEntry</a> </span></td> 
-   <td colname="2" rowsep="0"> 수업. 시작 로그를 정의하고 로그 메시지에 대한 정보를 저장합니다. </td> 
+   <td colname="2" rowsep="0"> 클래스. 시작 로그를 정의하고 로그 메시지에 대한 정보를 저장합니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/LogFactory.html" format="html" scope="external"> LogFactory</a> </span></td> 
@@ -41,7 +38,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/Logger.html" format="html" scope="external"> 로거</a> </span></td> 
-   <td colname="2">인터페이스. <code>primetime-sdk-name</code> 구문에 대한 사용자 정의 로거를 구현하는 데 필요한 방법입니다. </td> 
+   <td colname="2">인터페이스. <code>primetime-sdk-name</code> 구문에 대한 사용자 정의 로거를 구현하는 데 필요한 메서드입니다. </td> 
   </tr> 
  </tbody>
 </table>
