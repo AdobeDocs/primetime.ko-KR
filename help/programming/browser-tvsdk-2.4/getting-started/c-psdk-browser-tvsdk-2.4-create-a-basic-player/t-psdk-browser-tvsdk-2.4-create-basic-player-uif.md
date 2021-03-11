@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: UI 프레임워크를 사용하여 기본 플레이어 만들기
 title: UI 프레임워크를 사용하여 기본 플레이어 만들기
-uuid: d1a82dbb-1c05-4d0c-b6bc-e07cbede93cb
+description: UI 프레임워크를 사용하여 기본 플레이어 만들기
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 4102780d0c7d0b96d120c1c2b3d14c47bc1b0e6f
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -46,7 +44,7 @@ UI 프레임워크를 사용하여 기본 플레이어를 만들려면:
 
 1. UI 컨트롤을 추가합니다.
 
-   예를 들어 마우스를 플레이어 위로 가져가면 나타나는 컨트롤 막대를 추가합니다.
+   예를 들어 마우스를 플레이어 위에 놓으면 나타나는 컨트롤 막대를 추가합니다.
 
    ```js
    <script> 
@@ -73,7 +71,7 @@ UI 프레임워크를 사용하여 기본 플레이어를 만들려면:
    </div>
    ```
 
-호출에서 반환되는 개체는 TVSDK 미디어 플레이어 API를 래핑하는 비헤이비어를 제공하며 프로그래밍 방식으로 재생을 제어할 수 있습니다. `ptp.videoPlayer()` 미디어 플레이어 인스턴스를 호출하면 사용자 인터페이스는 미디어 플레이어에서 실행한 이벤트를 기반으로 자체적으로 업데이트됩니다.
+호출에서 반환되는 개체는 TVSDK 미디어 플레이어 API를 래핑하는 비헤이비어를 제공하며 프로그래밍 방식으로 재생을 제어할 수 있도록 합니다. `ptp.videoPlayer()` 미디어 플레이어 인스턴스를 호출하면 사용자 인터페이스가 미디어 플레이어에서 실행하는 이벤트를 기반으로 자체적으로 업데이트됩니다.
 
 ```js
 <script> 
