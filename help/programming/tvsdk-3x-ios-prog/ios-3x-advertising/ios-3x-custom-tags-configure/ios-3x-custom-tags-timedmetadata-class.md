@@ -1,21 +1,18 @@
 ---
-description: TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 PTTimedMetadata 개체의 형태로 해당 태그를 노출합니다.
-seo-description: TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 PTTimedMetadata 개체의 형태로 해당 태그를 노출합니다.
-seo-title: Timed metadata 클래스
+description: TVSDK가 재생 목록/매니페스트에서 구독 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 PTTimedMetadata 객체의 형태로 이를 노출합니다.
 title: Timed metadata 클래스
-uuid: d76b2a6b-2995-4559-b15d-82ded4c27eea
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
 
-# Timed metadata class {#timed-metadata-class}
+# Timed metadata 클래스 {#timed-metadata-class}
 
-TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 PTTimedMetadata 개체의 형태로 해당 태그를 노출합니다.
+TVSDK가 재생 목록/매니페스트에서 구독 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 PTTimedMetadata 객체의 형태로 이를 노출합니다.
 
 이 클래스는 다음과 같은 요소를 제공합니다.
 
@@ -36,12 +33,12 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
   <tr> 
    <td colname="col1"><span class="codeph"> name</span> </td> 
    <td colname="col02"><span class="codeph"> NSString</span></td> 
-   <td colname="col2"> 시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG</span>이면 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3</span>이면 null입니다. </td> 
+   <td colname="col2"> 시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG</span>인 경우 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3</span>이면 null입니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> time</span> </td> 
    <td colname="col02"><span class="codeph"> CMTime</span></td> 
-   <td colname="col2"> 이 시간 메타데이터가 스트림에 있는 기본 컨텐츠의 시작을 기준으로 시간 위치(밀리초)입니다. </td> 
+   <td colname="col2"> 이 시간 메타데이터가 스트림에 있는 기본 컨텐츠의 시작을 기준으로 하는 시간 위치(밀리초)입니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> type</span> </td> 
@@ -49,7 +46,7 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
    <td colname="col2">시간 지정 메타데이터의 유형입니다. 
     <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - 재생 목록/매니페스트의 태그에서 시간 메타데이터를 만들었음을 나타냅니다. </li> 
-     <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - 미디어 스트림의 ID3 태그에서 시간 메타데이터를 만들었음을 나타냅니다. </li> 
+     <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - 미디어 스트림의 ID3 태그에서 시간 지정 메타데이터를 만들었음을 나타냅니다. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -63,7 +60,7 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
 
    >[!TIP]
    >
-   >매니페스트의 사용자 지정 태그의 복잡한 데이터(예: 특수 문자가 있는 문자열)는 따옴표로 묶어야 합니다. 예:
+   >특수 문자가 있는 문자열 등 매니페스트의 사용자 지정 태그의 복잡한 데이터는 따옴표로 묶어야 합니다. 예:
    >
    >
    ```
@@ -71,12 +68,12 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
    >"www.example.com:8090?parameter1=xyz&parameter2=abc"
    >```
 
-* 사용자 지정 태그 형식으로 인해 추출이 실패하는 경우 컨텐츠 속성에는 항상 콜론 뒤에 오는 문자열인 태그의 원시 데이터가 포함됩니다. 이 경우 오류가 발생하지 않습니다.
+* 사용자 지정 태그 형식으로 인해 추출이 실패하는 경우 content 속성에는 항상 콜론 뒤에 오는 문자열인 태그의 원시 데이터가 포함됩니다. 이 경우 오류가 발생하지 않습니다.
 
 | **요소** | **설명** |
 |---|---|
-| 태그, ID3 | 시간 메타데이터에 사용할 수 있는 유형입니다. |
-| `@property (nonatomic, assign) CMTime time` | 기본 컨텐츠의 시작을 기준으로 스트림에 이 메타데이터가 삽입된 시간 위치입니다. |
+| 태그, ID3 | 시간 지정 메타데이터에 대해 가능한 유형입니다. |
+| `@property (nonatomic, assign) CMTime time` | 이 메타데이터가 스트림에 삽입된 기본 컨텐츠의 시작을 기준으로 하는 시간 위치입니다. |
 | `@property (nonatomic, assign) PTTimedMetadataType type` | 시간 지정 메타데이터의 유형을 반환합니다. |
-| `@property (nonatomic, retain) NSString *metadataId` | 큐/태그 속성에서 추출한 ID를 반환합니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. |
+| `@property (nonatomic, retain) NSString *metadataId` | 큐/태그 속성에서 추출된 ID를 반환합니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. |
 | `@property (nonatomic, retain) NSString *name` | 일반적으로 HLS 태그 이름인 큐 이름을 반환합니다. |
