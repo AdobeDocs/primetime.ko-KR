@@ -1,9 +1,9 @@
 ---
-seo-title: 트랙 암호화
 title: 트랙 암호화
-uuid: cbb852e1-6487-43f4-86c8-981780feb667
+description: 트랙 암호화
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
@@ -13,6 +13,6 @@ ht-degree: 0%
 
 # 트랙 암호화{#encrypting-tracks}
 
-컨텐츠의 어느 부분이 암호화되는지를 지정합니다.오디오, 비디오 또는 둘 다 사용할 수 있습니다.
+암호화된 내용의 일부를 지정합니다.오디오, 비디오 또는 둘 다를 선택합니다.
 
-사용 사례 예:보호를 필요로 하는 컨텐츠의 추적만 암호화하여 클라이언트의 암호 해독 오버헤드를 줄이고 재생 성능을 향상시킬 수 있습니다.
+사용 사례 예:보호가 필요한 컨텐츠의 트랙만 암호화하여 클라이언트의 암호 해독 오버헤드를 줄이고 재생 성능을 향상시킬 수 있습니다.
