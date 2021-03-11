@@ -1,9 +1,9 @@
 ---
-seo-title: HSM 구성
 title: HSM 구성
-uuid: 1cc5be99-c24c-4c1e-9348-fb69f96d8ca5
+description: HSM 구성
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -24,5 +24,5 @@ HSM을 사용할 필요는 없지만 권장됩니다. HSM 지원을 위한 Sun P
 
 >[!NOTE]
 >
->Java 1.7부터 64비트 Sun Java for Windows는 HSM 디바이스와 통신하기 위해 Adobe 액세스 DRM이 필요한 PKCS11 인터페이스를 지원하지 않습니다. HSM을 사용하려는 경우 32비트 버전의 Java를 사용하거나 전체 PKCS11 인터페이스를 지원하는 JDK를 사용하십시오.
+>Java 1.7부터 Windows용 64비트 Sun Java는 HSM 장치와 통신하기 위해 Adobe Access DRM에 필요한 PKCS11 인터페이스를 지원하지 않습니다. HSM을 사용하려는 경우 32비트 버전의 Java를 사용하거나 전체 PKCS11 인터페이스를 지원하는 JDK를 사용하십시오.
 
