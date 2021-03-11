@@ -1,13 +1,10 @@
 ---
-description: 사용자가 자막 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
-seo-description: 사용자가 자막 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
-seo-title: 예 사용자가 캡션 트랙을 변경할 수 있도록 허용
+description: 사용자가 닫힌 캡션 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
 title: 예 사용자가 캡션 트랙을 변경할 수 있도록 허용
-uuid: 4b69d569-0d6e-4388-9fe3-488e2a4d762d
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
@@ -15,9 +12,9 @@ ht-degree: 0%
 
 # 예:사용자가 캡션 트랙{#example-allow-users-to-change-the-caption-track} 변경 허용
 
-사용자가 자막 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
+사용자가 닫힌 캡션 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
 
-1. 간단한 단추를 만들어 자막 트랙을 변경합니다.
+1. 간단한 단추를 만들어 닫힌 캡션 트랙을 변경합니다.
 
    ```xml
       <Button 
@@ -31,7 +28,7 @@ ht-degree: 0%
      android:text="CC" /> 
    ```
 
-1. 사용 가능한 닫힌 캡션 트랙 목록을 문자열 배열로 변환합니다. 자막 트랙은 TVSDK에서 데이터를 발견한 채널 등 활동이 있는 채널로 표시됩니다.
+1. 사용 가능한 닫힌 캡션 트랙 목록을 문자열 배열로 변환합니다. 자막 트랙은 TVSDK에서 데이터를 검색한 채널(즉, TVSDK에서 데이터를 검색한 채널)에 따라 표시됩니다.
 
    ```java
    /** 
@@ -57,7 +54,7 @@ ht-degree: 0%
    } 
    ```
 
-1. 사용자가 버튼을 클릭하면 모든 기본 CC 트랙이 나열된 대화 상자가 표시됩니다.
+1. 사용자가 버튼을 클릭하면 기본 CC 트랙이 모두 나열된 대화 상자가 표시됩니다.
 
    ```java
       public void selectClosedCaptioningClick(View view) { 
