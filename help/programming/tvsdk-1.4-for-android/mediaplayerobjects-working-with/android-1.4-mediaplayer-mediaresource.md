@@ -1,13 +1,10 @@
 ---
-description: MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource가 나타내는 컨텐트 스트림에 대한 정보를 얻을 수 있습니다.
-seo-description: MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource가 나타내는 컨텐트 스트림에 대한 정보를 얻을 수 있습니다.
-seo-title: MediaResource 정보에 액세스하기 위한 MediaPlayer 메서드
+description: MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource로 표시되는 컨텐츠 스트림에 대한 정보를 얻을 수 있습니다.
 title: MediaResource 정보에 액세스하기 위한 MediaPlayer 메서드
-uuid: 5d83491c-6577-46fe-98af-83f0fde7a7d0
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # MediaResource 정보에 액세스하기 위한 MediaPlayer 메서드{#mediaplayer-methods-for-accessing-mediaresource-information}
 
-MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource가 나타내는 컨텐트 스트림에 대한 정보를 얻을 수 있습니다.
+MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource로 표시되는 컨텐츠 스트림에 대한 정보를 얻을 수 있습니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_77B55D506FE24326A03D97AA087231FF"> 
  <thead> 
@@ -30,7 +27,7 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
    <td colname="3"> </td>
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> ListgetAdTags() &lt;string&gt;   </span> </td> 
+   <td colname="2"> <span class="codeph"> &lt;string&gt; ListgetAdTags()  </span> </td> 
    <td colname="3"> <p>광고 배치 프로세스에 사용되는 광고 태그 목록을 제공합니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -39,7 +36,7 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isLive();  </span> </td> 
-   <td colname="3"> <p>스트림이 라이브인 경우 true;VOD인 경우 false입니다. </p> </td> 
+   <td colname="3"> <p>스트림이 라이브이면 true이고,VOD인 경우 false입니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <b>DRM 보호</b> </td> 
@@ -58,7 +55,7 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean hasClosedCaptions();  </span> </td> 
-   <td colname="3"> <p>자막 트랙을 사용할 수 있는 경우 true입니다. </p> </td> 
+   <td colname="3"> <p>닫힌 캡션 트랙을 사용할 수 있으면 true입니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> &lt;closedcaptionstrack&gt; ListgetClosedActionsTracks();  </span> </td> 
@@ -69,7 +66,7 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
    <td colname="3"> <p><span class="codeph"> SelectClosedCaptionsTrack </span>으로 선택한 현재 닫힌 캡션 트랙을 검색합니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> selectClosedCaptionsTrack(ClosedCaptionsTrack closedCaptionsTrack)  </span> </td> 
+   <td colname="2"> <span class="codeph"> selectClosedCaptionsTrack( ClosedCaptionsTrack closedCaptionsTrack)  </span> </td> 
    <td colname="3"> <p>자막 트랙을 현재 자막 트랙으로 설정합니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -78,7 +75,7 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean hasAlternateAudio();  </span> </td> 
-   <td colname="3"> <p>스트림에 대체 오디오 트랙이 있는 경우 true입니다. </p> <p>팁: 기본(기본) 오디오 트랙은 대체 오디오 트랙 목록에도 포함되어 있습니다. </p> <p>Android용 TVSDK는 기본 오디오 트랙을 대체 오디오 트랙 목록에 있는 항목 중 하나로 간주합니다. 이로 인해 스트림에 오디오가 전혀 없는 경우에만 <span class="codeph"> MediaPlayerItem.hasAlternateAudio </span>이 false를 반환합니다. 컨텐츠에 하나의 오디오 트랙만 있는 경우 이 메서드는 true를 반환하고 <span class="codeph"> MediaPlayerItem.getAudioTracks </span>는 단일 요소(기본 오디오 트랙)가 있는 목록을 반환합니다. </p> </td> 
+   <td colname="3"> <p>스트림에 대체 오디오 트랙이 있는 경우 true입니다. </p> <p>팁: 기본(기본) 오디오 트랙도 대체 오디오 트랙 목록에 포함되어 있습니다. </p> <p>Android용 TVSDK는 기본 오디오 트랙을 대체 오디오 트랙 목록의 항목 중 하나로 간주합니다. 이로 인해 스트림에 오디오가 전혀 없을 때는 <span class="codeph"> MediaPlayerItem.hasAlternateAudio </span>이 false를 반환하는 유일한 경우입니다. 내용에 오디오 트랙이 하나만 있으면 이 메서드는 true를 반환하고 <span class="codeph"> MediaPlayerItem.getAudioTracks </span> 는 단일 요소(기본 오디오 트랙)가 있는 목록을 반환합니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> &lt;audiotrack&gt; ListgetAudioTracks();  </span> </td> 
@@ -102,11 +99,11 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean hasTimedMetadata();  </span> </td> 
-   <td colname="3"> <p>스트림에 시간 지정 메타데이터가 연결된 경우 true입니다. </p> </td> 
+   <td colname="3"> <p>스트림에 시간 지정 메타데이터가 연결되어 있으면 true입니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> &lt;timedmetadata&gt; ListgetTimedMetadata();  </span> </td> 
-   <td colname="3"> <p>스트림과 연관된 시간 메타데이터 개체의 목록을 제공합니다. </p> </td> 
+   <td colname="3"> <p>스트림과 연관된 시간 메타데이터 객체의 목록을 제공합니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isDynamic();  </span> </td> 
@@ -114,7 +111,7 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> &lt;profile&gt; ListgetProfiles();  </span> </td> 
-   <td colname="3"> <p>연결된 비트 전송률 프로필 목록을 제공합니다. 각 프로필에 대해 해당 비트 전송률과 프로필의 높이와 너비를 검색할 수 있습니다. </p> </td> 
+   <td colname="3"> <p>연결된 비트 전송률 프로필 목록을 제공합니다. 각 프로파일에 대해 비트 전송률과 프로필의 높이와 너비를 검색할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <b>트릭 플레이</b> </td> 
@@ -122,11 +119,11 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isTrickPlaySupported();  </span> </td> 
-   <td colname="3"> <p>플레이어가 빨리 감기, 되감기 및 재시작을 지원하는 경우 true입니다. </p> </td> 
+   <td colname="3"> <p>플레이어가 빨리 감기, 되감기 및 다시 시작을 지원하는 경우 true입니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> ListgetAvailablePlaybackRate &lt; Float=""&gt;   </span> </td> 
-   <td colname="3"> <p>트릭 플레이 기능의 컨텍스트에서 사용 가능한 재생 속도 목록을 제공합니다. </p> </td> 
+   <td colname="2"> <span class="codeph"> &lt; Float=""&gt; ListgetAvailablePlaybackRate  </span> </td> 
+   <td colname="3"> <p>트릭 플레이 기능 컨텍스트에서 사용 가능한 재생 속도 목록을 제공합니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <b>미디어 리소스</b> </td> 
@@ -134,7 +131,7 @@ MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource�
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> MediaResource getResource();  </span> </td> 
-   <td colname="3"> <p>이 항목과 연결된 미디어 리소스를 반환합니다. </p> </td> 
+   <td colname="3"> <p>이 항목과 연관된 미디어 리소스를 반환합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
