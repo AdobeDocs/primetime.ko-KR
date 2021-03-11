@@ -1,13 +1,10 @@
 ---
 description: 선택적 pttrackingmode, pttrackingversion 및 pttrackingposition 쿼리 매개 변수를 사용하여 현재 비디오에 대한 광고 추적 정보를 보낼 URL을 가져옵니다. 응답은 추적 버전과 비디오 스트림이 실시간 또는 주문형(VOD)인지 여부에 따라 다릅니다.
-seo-description: 선택적 pttrackingmode, pttrackingversion 및 pttrackingposition 쿼리 매개 변수를 사용하여 현재 비디오에 대한 광고 추적 정보를 보낼 URL을 가져옵니다. 응답은 추적 버전과 비디오 스트림이 실시간 또는 주문형(VOD)인지 여부에 따라 다릅니다.
-seo-title: 플레이어가 매니페스트 서버와 상호 작용할 수 있는 API
 title: 플레이어가 매니페스트 서버와 상호 작용할 수 있는 API
-uuid: ab7a19e7-6c28-4960-a56b-3b33c525e6b3
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
