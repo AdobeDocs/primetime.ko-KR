@@ -1,25 +1,22 @@
 ---
-description: 브라우저 TVSDK는 결제 지표를 XML 형식으로 Adobe으로 전송합니다.
-seo-description: 브라우저 TVSDK는 결제 지표를 XML 형식으로 Adobe으로 전송합니다.
-seo-title: 결제 지표 전송
+description: 브라우저 TVSDK는 XML 포맷으로 결제 지표를 Adobe으로 전송합니다.
 title: 결제 지표 전송
-uuid: ed2638d2-7894-4840-b31a-51e48e0a3f49
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
 
-# 결제 지표 전송{#transmit-billing-metrics}
+# 청구 지표 전송{#transmit-billing-metrics}
 
-브라우저 TVSDK는 결제 지표를 XML 형식으로 Adobe으로 전송합니다.
+브라우저 TVSDK는 XML 포맷으로 결제 지표를 Adobe으로 전송합니다.
 
 <!--<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>-->
 
-네트워크 캡처 도구를 사용하여 통계 Browser TVSDK가 Adobe으로 전송하는 경우 다음과 같은 단위가 표시됩니다.
+네트워크 캡처 도구를 사용하여 통계 Browser TVSDK가 Adobe으로 전송되는 통계를 모니터하는 경우 다음과 같은 장치가 표시됩니다.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
