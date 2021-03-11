@@ -1,13 +1,10 @@
 ---
 description: 현재 재생 시간이 시작 시간과 일치하는 경우 TimedMetadata를 사용할 수 있습니다.
-seo-description: 현재 재생 시간이 시작 시간과 일치하는 경우 TimedMetadata를 사용할 수 있습니다.
-seo-title: 시간 지정 메타데이터 사용
 title: 시간 지정 메타데이터 사용
-uuid: 9bbdaefa-4ac5-4e08-92b4-15ebe5c46864
 translation-type: tm+mt
-source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -17,11 +14,11 @@ ht-degree: 0%
 
 현재 재생 시간이 시작 시간과 일치하는 경우 TimedMetadata를 사용할 수 있습니다.
 
-재생하는 동안 이러한 저장된 `PTTimedMetadata` 개체를 사용하려면 [Store의 저장된 사전(메타데이터 개체가 전달될 때)을 사용합니다](../../../tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md).
+재생하는 동안 이러한 저장된 `PTTimedMetadata` 개체를 사용하려면 [Store 시간 지정 메타데이터 개체가 전달되면 저장된 사전을 사용합니다](../../../tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md).
 
-1. 이 알림에서 현재 재생 시간을 추출 및 업데이트하고 현재 재생 시간과 일치하는 시작 시간이 있는 모든 `PTTimedMetadata` 개체를 찾습니다.
+1. 이 알림에서 현재 재생 시간을 추출 및 업데이트하고 현재 재생 시간과 일치하는 시작 시간이 있는 `PTTimedMetadata` 개체를 모두 찾습니다.
 
-   이러한 개체를 사용하여 다양한 작업을 완료할 수 있습니다.
+   이러한 객체를 사용하여 다양한 작업을 완료할 수 있습니다.
 
    예:
 
@@ -60,4 +57,4 @@ ht-degree: 0%
    }
    ```
 
-1. 메모리가 지속적으로 증가하지 않도록 목록에서 오래된 `PTTimedMetadata` 인스턴스를 주기적으로 플러시합니다.
+1. 메모리가 지속적으로 증가하지 않도록 목록에서 오래된 `PTTimedMetadata` 인스턴스를 정기적으로 플러시합니다.
