@@ -1,13 +1,10 @@
 ---
 description: HTTP GET 명령을 사용하여 매니페스트 서버와 상호 작용합니다.
-seo-description: HTTP GET 명령을 사용하여 매니페스트 서버와 상호 작용합니다.
-seo-title: 매니페스트 서버로 명령 보내기
 title: 매니페스트 서버로 명령 보내기
-uuid: e9680563-d268-406d-87ce-1521a677e9ec
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
