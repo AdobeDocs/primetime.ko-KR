@@ -1,13 +1,10 @@
 ---
 description: 클라이언트가 추적 정보를 요청하면 매니페스트 서버가 형식이 지정된 파일을 다시 전송합니다. 형식 및 내용은 쿼리 매개 변수 pttrackingversion의 값에 따라 달라집니다.
-seo-description: 클라이언트가 추적 정보를 요청하면 매니페스트 서버가 형식이 지정된 파일을 다시 전송합니다. 형식 및 내용은 쿼리 매개 변수 pttrackingversion의 값에 따라 달라집니다.
-seo-title: URL 추적을 위한 VMAP 형식
 title: URL 추적을 위한 VMAP 형식
-uuid: e3173fad-caa2-49cb-9a65-631573812e52
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
