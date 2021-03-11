@@ -1,13 +1,10 @@
 ---
 description: 다음은 광고를 삭제하고 바꾸는 프로세스의 몇 가지 예입니다.
-seo-description: 다음은 광고를 삭제하고 바꾸는 프로세스의 몇 가지 예입니다.
-seo-title: 광고 삭제 및 바꾸기 예
 title: 광고 삭제 및 바꾸기 예
-uuid: 6bf9d71a-73fe-4033-b97a-6b0cff8687f2
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '50'
 ht-degree: 0%
 
 ---
