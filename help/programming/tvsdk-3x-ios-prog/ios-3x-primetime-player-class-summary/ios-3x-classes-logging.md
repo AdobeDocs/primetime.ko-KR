@@ -1,13 +1,10 @@
 ---
-description: 이러한 클래스를 사용하면 로깅을 사용자 정의할 수 있습니다.
-seo-description: 이러한 클래스를 사용하면 로깅을 사용자 정의할 수 있습니다.
-seo-title: 클래스 로깅
+description: 이러한 클래스를 사용하여 로깅을 사용자 정의할 수 있습니다.
 title: 클래스 로깅
-uuid: b40dc619-0a52-477f-9879-56f75ab0c31f
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 클래스 로깅{#logging-classes}
 
-이러한 클래스를 사용하면 로깅을 사용자 정의할 수 있습니다.
+이러한 클래스를 사용하여 로깅을 사용자 정의할 수 있습니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_389797D3CEF14EA2862E0B20C6E6CC41"> 
  <thead> 
