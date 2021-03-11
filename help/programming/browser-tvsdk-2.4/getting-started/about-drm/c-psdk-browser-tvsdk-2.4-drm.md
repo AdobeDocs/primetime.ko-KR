@@ -1,13 +1,10 @@
 ---
-description: Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
-seo-description: Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
-seo-title: Digital Rights Management
+description: Digital Rights Management(DRM) 전용 워크플로우를 완료할 수 있습니다.
 title: Digital Rights Management
-uuid: 011605c7-50c4-4ad5-9961-8cd92d0e6fd8
 translation-type: tm+mt
-source-git-commit: 5a786d8001326f874a51d65b8e8badca44f46e96
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # Digital Rights Management {#digital-rights-management}
 
-Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
+Digital Rights Management(DRM) 전용 워크플로우를 완료할 수 있습니다.
 
 `AdobePSDK.DRMMetadataInfoEvent` 이벤트를 수신하여 DRM 워크플로우를 처리할 수 있습니다.
 
