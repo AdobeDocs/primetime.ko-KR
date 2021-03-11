@@ -1,13 +1,10 @@
 ---
 description: 미디어를 일시 중지하고 재생하기 위해 TVSDK 메서드를 호출하는 단추를 설정할 수 있습니다.
-seo-description: 미디어를 일시 중지하고 재생하기 위해 TVSDK 메서드를 호출하는 단추를 설정할 수 있습니다.
-seo-title: 재생/일시 정지 단추 구현
 title: 재생/일시 정지 단추 구현
-uuid: b0ce4103-819e-4a1c-8238-1d7728ec8770
 translation-type: tm+mt
-source-git-commit: a63768e51c911914a6ba9d884e2587fa34939f9d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---
