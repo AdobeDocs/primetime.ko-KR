@@ -1,13 +1,10 @@
 ---
 description: 기본 쿼리 매개 변수 외에도 선택적 쿼리 매개 변수를 사용하면 매니페스트 서버가 다른 클라이언트와 상황에서 작동할 수 있습니다.
-seo-description: 기본 쿼리 매개 변수 외에도 선택적 쿼리 매개 변수를 사용하면 매니페스트 서버가 다른 클라이언트와 상황에서 작동할 수 있습니다.
-seo-title: 클라이언트 및 상황별 선택적 쿼리 매개 변수
 title: 클라이언트 및 상황별 선택적 쿼리 매개 변수
-uuid: e3fae41e-9f7d-4f01-9a01-52a1d5f5dad5
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
