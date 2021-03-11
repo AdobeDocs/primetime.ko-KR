@@ -1,12 +1,10 @@
 ---
 description: 모든 비디오 플레이어는 매니페스트 서버가 광고를 삽입하고 광고 추적을 활성화하는 데 사용하는 기능을 제공해야 합니다.
-seo-description: 모든 비디오 플레이어는 매니페스트 서버가 광고를 삽입하고 광고 추적을 활성화하는 데 사용하는 기능을 제공해야 합니다.
-seo-title: 비디오 플레이어 요구 사항
 title: 비디오 플레이어 요구 사항
 translation-type: tm+mt
-source-git-commit: d5e948992d7c59e80b530c8f4619adbffc3c03d8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
