@@ -1,22 +1,19 @@
 ---
-description: 표준화 규칙은 VAST/VMAP 응답으로 얻은 소스 크리에이티브 URL에 적용할 URL 변환을 정의합니다.
-keywords: normalize rule;creative selection rules
-seo-description: 표준화 규칙은 VAST/VMAP 응답으로 얻은 소스 크리에이티브 URL에 적용할 URL 변환을 정의합니다.
-seo-title: 규칙 표준화
+description: 표준화 규칙은 VAST/VMAP 응답에서 얻은 소스 크리에이티브 URL에 적용할 URL 변형을 정의합니다.
+keywords: 규칙 정규화;크리에이티브 선택 규칙
 title: 규칙 표준화
-uuid: 8511000e-3a8a-42f3-b4be-d069d09112b0
 translation-type: tm+mt
-source-git-commit: 3fdae2b6babb578d2cacff970fd9c7b53ad2c5dc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '157'
 ht-degree: 1%
 
 ---
 
 
-# 규칙 정규화 {#normalize-rules}
+# 규칙 표준화 {#normalize-rules}
 
-표준화 규칙은 VAST/VMAP 응답으로 얻은 소스 크리에이티브 URL에 적용할 URL 변환을 정의합니다.
+표준화 규칙은 VAST/VMAP 응답에서 얻은 소스 크리에이티브 URL에 적용할 URL 변형을 정의합니다.
 
 <table id="table_ljp_tgx_hz">  
  <thead> 
@@ -51,12 +48,12 @@ ht-degree: 1%
      <li><span class="codeph"> co</span> - contains</li> 
      <li><span class="codeph"> nc</span>  - 포함하지 않음</li> 
      <li><span class="codeph"> sw</span>  - 다음으로 시작</li> 
-     <li><span class="codeph"> new</span>  - 다음으로 끝남</li> 
+     <li><span class="codeph"> 새</span>  - 다음으로 끝남</li> 
     </ul></td> 
   </tr> 
   <tr> 
-   <td><span class="codeph"> 값</span></td> 
-   <td><span class="codeph"> Array</span></td> 
+   <td><span class="codeph"> value</span></td> 
+   <td><span class="codeph"> 배열</span></td> 
    <td></td> 
    <td>TVSDK는 소스 크리에이티브의 <span class="codeph"> 항목</span>에 <span class="codeph"> 일치</span> 특성을 사용하고 이 배열에 정의된 값과 일치시킵니다.</td> 
   </tr> 
@@ -64,13 +61,13 @@ ht-degree: 1%
    <td><span class="codeph"> find</span></td> 
    <td><span class="codeph"> regex</span></td> 
    <td></td> 
-   <td> 일치하는 소스 크리에이티브 URL에 적용할 정규 표현식.</td> 
+   <td> 일치시킬 소스 크리에이티브 URL에 적용할 일반 표현식.</td> 
   </tr> 
   <tr> 
-   <td><span class="codeph"> 바꾸기</span></td> 
+   <td><span class="codeph"> replace</span></td> 
    <td><span class="codeph"> regex</span></td> 
    <td></td> 
-   <td> 일치에 따라 대체할 소스 크리에이티브 URL에 적용할 정규식.</td> 
+   <td> 일치에 따라 대체할 소스 크리에이티브 URL에 적용할 일반 표현식.</td> 
   </tr> 
  </tbody> 
 </table>
