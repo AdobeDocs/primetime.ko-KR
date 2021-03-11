@@ -1,9 +1,9 @@
 ---
-seo-title: DRM 및 런타임에 대한 최소 보안 수준
 title: DRM 및 런타임에 대한 최소 보안 수준
-uuid: b5f52ea4-b417-4643-9b3e-0d20e631df9b
+description: DRM 및 런타임에 대한 최소 보안 수준
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
