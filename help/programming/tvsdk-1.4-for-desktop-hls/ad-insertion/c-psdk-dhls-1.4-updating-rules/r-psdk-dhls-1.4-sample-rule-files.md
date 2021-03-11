@@ -1,21 +1,18 @@
 ---
-description: AdobeTVSDKConfig.json에서는 기본 규칙과 특정 영역에 대한 규칙을 지정할 수 있습니다.
-seo-description: AdobeTVSDKConfig.json에서는 기본 규칙과 특정 영역에 대한 규칙을 지정할 수 있습니다.
-seo-title: 크리에이티브 선택 규칙 샘플
+description: AdobeTVSDKConfig.json에서 기본 규칙과 특정 영역에 대한 규칙을 지정할 수 있습니다.
 title: 크리에이티브 선택 규칙 샘플
-uuid: 4e5fd912-6f87-4fa2-9bf7-7185a5d434e1
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '85'
 ht-degree: 0%
 
 ---
 
 
-# 디자인 선택 규칙 샘플{#sample-creative-selection-rules}
+# 크리에이티브 선택 규칙 샘플{#sample-creative-selection-rules}
 
-AdobeTVSDKConfig.json에서는 기본 규칙과 특정 영역에 대한 규칙을 지정할 수 있습니다.
+AdobeTVSDKConfig.json에서 기본 규칙과 특정 영역에 대한 규칙을 지정할 수 있습니다.
 
 ## 샘플 기본 규칙 {#section_xy4_3fx_hz}
 
@@ -67,9 +64,9 @@ AdobeTVSDKConfig.json에서는 기본 규칙과 특정 영역에 대한 규칙�
 }
 ```
 
-## 추가 영역 규칙 {#section_ocv_3fx_hz}이 있는 기본 규칙 샘플
+## 추가 영역 규칙 {#section_ocv_3fx_hz}이(가) 있는 기본 규칙 샘플
 
-다음은 기본 규칙을 정의하는 [!DNL AdobeTVSDKConfig.json] 파일과 특정 영역 ID에 대한 추가 규칙의 예입니다(이 경우 **&quot;1234&quot;** 영역).
+다음은 기본 규칙을 정의하는 [!DNL AdobeTVSDKConfig.json] 파일과 특정 영역 ID에 대한 추가 규칙(이 경우 영역 **&quot;1234&quot;**)의 예입니다.
 
 ```
 {
