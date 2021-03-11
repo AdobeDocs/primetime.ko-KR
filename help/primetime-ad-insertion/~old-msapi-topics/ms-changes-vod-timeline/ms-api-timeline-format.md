@@ -1,13 +1,10 @@
 ---
 description: 형식화된 광고 및 pods라는 컨텐츠 세그먼트 목록을 사용하여 VOD 컨텐츠에서 광고 중단의 타임라인을 지정하거나 재정의할 수 있습니다.
-seo-description: 형식화된 광고 및 pods라는 컨텐츠 세그먼트 목록을 사용하여 VOD 컨텐츠에서 광고 중단의 타임라인을 지정하거나 재정의할 수 있습니다.
-seo-title: VOD 타임라인 포맷
 title: VOD 타임라인 포맷
-uuid: 6daaf605-e5ee-48dc-a222-a5973b3d915a
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
