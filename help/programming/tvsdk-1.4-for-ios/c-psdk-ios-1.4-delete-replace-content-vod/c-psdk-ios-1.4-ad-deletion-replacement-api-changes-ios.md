@@ -1,13 +1,10 @@
 ---
 description: TVSDK 지원 및 삭제 및 대체에서 다음 변경 사항이 적용됩니다.
-seo-description: TVSDK 지원 및 삭제 및 대체에서 다음 변경 사항이 적용됩니다.
-seo-title: 광고 삭제 및 교체 API 변경 사항
 title: 광고 삭제 및 교체 API 변경 사항
-uuid: 7cc50e7a-666f-4588-9c16-ad6d7d75cb65
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -19,32 +16,32 @@ TVSDK 지원 및 삭제 및 대체에서 다음 변경 사항이 적용됩니다
 
 **새 API**
 
-* `PTTimeRangeCollection` 는 사전 정의된 범위 세트와 유형을 정의하는 공개 클래스입니다.
+* `PTTimeRangeCollection` 는 미리 정의된 범위 세트와 유형을 정의하는 공개 클래스입니다.
 
    * `property PTTimeRangeCollectionType type` 시간 범위 유형을 나타냅니다.
    * `property NSArray* ranges` 시간 범위를 설정하는 데 사용됩니다.
 
-      배열에서 필요한 개체 유형은 `PTReplacementTimeRange` 또는 `CMTimeRange`입니다.
+      배열에 있는 개체 유형은 `PTReplacementTimeRange` 또는 `CMTimeRange`입니다.
 
       >[!TIP]
       >
-      >배열의 모든 개체는 같은 형식이어야 합니다.
+      >배열의 모든 개체는 같은 유형이어야 합니다.
 
-   * `PTTimeRangeCollectionType` 는 다음 위치에 정의된 범위의 동작을 정의하는 열거형입니다.  `PTTimeRangeCollection`
+   * `PTTimeRangeCollectionType` 는 다음 항목에 정의된 범위의 비헤이비어를 정의하는 열거형입니다.  `PTTimeRangeCollection`:
 
-      * `PTTimeRangeCollectionTypeMarkRanges`:범위 유형은  *표시입니다*. 범위의 범위를 광고로 표시하는 데 사용됩니다.
+      * `PTTimeRangeCollectionTypeMarkRanges`:범위의 유형은  *표시입니다*. 범위는 컨텐츠의 범위를 광고로 표시하는 데 사용됩니다.
 
       * `PTTimeRangeCollectionTypeDeleteRanges`:범위 유형은 삭제입니다. 광고 삽입 전에 기본 컨텐츠에서 정의된 범위가 제거됩니다.
-      * `PTTimeRangeCollectionTypeReplaceRanges`:범위 유형은 바꾸기입니다. 정의된 범위가 중심에서 광고로 대체됩니다(광고 신호 모드는 `PTAdSignalingModeCustomTimeRanges`으로 설정됨).
+      * `PTTimeRangeCollectionTypeReplaceRanges`:범위 유형은 바꾸기입니다. 정의된 범위가 기본에서 광고로 바뀝니다(광고 신호 모드는 `PTAdSignalingModeCustomTimeRanges`으로 설정됨).
 
-* `PTReplacementTimeRange` - 다음과 같은 단일 범위를 정의하는 새 공개 클래스 `PTTimeRangeCollection`:
+* `PTReplacementTimeRange` - 다음 범위의 단일 범위를 정의하는 새 공개  `PTTimeRangeCollection`클래스:
 
    * `property CMTimeRange range` - 범위의 시작 및 지속 시간을 정의합니다.
-   * `property long replacementDuration` - 유형 `TimeRangeCollection` 이 `PTTimeRangeCollectionTypeReplaceRanges` 이면 `replacementDuration` 는 지속 시간이 있는 배치 기회(광고 삽입)를 생성하는 데  `replacementDuration`사용됩니다. `replacementDuration`이(가) 설정되지 않은 경우 광고 서버가 해당 배치 기회의 지속 시간과 광고 수를 결정합니다.
+   * `property long replacementDuration` - 유형 `TimeRangeCollection` 이  `PTTimeRangeCollectionTypeReplaceRanges`이면 `replacementDuration` 는 지속 시간이 있는 배치 기회(광고 삽입)를 만드는 데  `replacementDuration`사용됩니다. `replacementDuration`이(가) 설정되어 있지 않으면 광고 서버가 해당 배치 기회의 지속 시간과 광고 수를 결정합니다.
 
 * `PTAdSignalingMode`:
 
-   * `PTAdSignalingModeCustomTimeRanges` - 새 유형을 추가했습니다 `PTAdSignalingMode`. 이 모드는 `PTTimeRangeCollection`과(와) 함께 사용하여 대체 범위를 기반으로 광고를 삽입합니다.`PTTimeRangeCollectionReplace`
+   * `PTAdSignalingModeCustomTimeRanges` - 새로운 유형의 항목이 추가되었습니다 `PTAdSignalingMode`. 이 모드는 `PTTimeRangeCollection`과(와) 함께 사용하여 대체 범위를 기반으로 광고를 삽입합니다.`PTTimeRangeCollectionReplace`
 
 * `PTAdMetadata`:
 
@@ -59,12 +56,12 @@ TVSDK 지원 및 삭제 및 대체에서 다음 변경 사항이 적용됩니다
    * `INVALID_TIME_RANGES`
 
       * 유형 - 경고
-      * 설명 - 하나 이상의 시간 범위가 잘못되어 무시되거나 수정됩니다.
+      * 설명 - 하나 이상의 시간 범위가 유효하지 않으며 무시되거나 수정됩니다.
 
 
 **사용되지 않는 API**
 
 * `PTAdMetadata`:
 
-   * `property NSArray* externalAdRanges` - 이전에 이 속성은 표시를 위한 C3 범위를 정의하는 데 사용되었습니다. 이제 이 범위는 `PTTimeRangeCollection`을 통해 설정되므로 더 이상 사용되지 않습니다.
+   * `property NSArray* externalAdRanges` - 이 속성은 이전에 표시를 위한 C3 범위를 정의하는 데 사용되었습니다. 이제 이 범위는 `PTTimeRangeCollection`을 통해 설정되므로 더 이상 사용되지 않습니다.
 
