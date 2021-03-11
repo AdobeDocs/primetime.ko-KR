@@ -1,13 +1,10 @@
 ---
 description: 광고 삽입에 대한 클라이언트 요청은 일반적으로 변형 M3U8 형식 재생 목록에서 둘 이상의 비트 전송률을 지정합니다. 매니페스트 서버는 각 비트 전송률에 대해 별도의 M3U8 링크를 포함하는 새 변형 M3U8 파일을 생성하고 반환합니다. 또한 고유한 그룹 ID를 생성하여 이 M3U8s를 함께 묶습니다.
-seo-description: 광고 삽입에 대한 클라이언트 요청은 일반적으로 변형 M3U8 형식 재생 목록에서 둘 이상의 비트 전송률을 지정합니다. 매니페스트 서버는 각 비트 전송률에 대해 별도의 M3U8 링크를 포함하는 새 변형 M3U8 파일을 생성하고 반환합니다. 또한 고유한 그룹 ID를 생성하여 이 M3U8s를 함께 묶습니다.
-seo-title: 다중 비트 전송률 스트림
 title: 다중 비트 전송률 스트림
-uuid: f59cb765-e000-43e0-8d3a-8149a3c5b96e
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
