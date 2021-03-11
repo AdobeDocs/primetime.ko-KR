@@ -1,14 +1,11 @@
 ---
 description: XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 대상 도메인의 쿠키를 포함할 CORS(교차 도메인 리소스 공유) 요청을 허용합니다.
-keywords: CORS;cross origin;resource sharing;cookies;withCredentials
-seo-description: XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 유형에 대해 대상 도메인의 쿠키를 포함할 CORS(교차 도메인 리소스 공유) 요청을 허용합니다.
-seo-title: 원본 간 리소스 공유
+keywords: CORS;교차 도메인;리소스 공유;쿠키;자격 증명 포함
 title: 원본 간 리소스 공유
-uuid: e788b542-d4ac-48aa-91e2-1e88068cbba1
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -29,7 +26,7 @@ XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 �
    corsConfig.enableEncryptionRequest = true; 
    ```
 
-1. `corsConfig`을(를) `NetworkConfiguration` 개체에 연결하고 `useCookieHeaderForAllRequests`를 `true`에 설정합니다.
+1. `corsConfig`을 `NetworkConfiguration` 개체에 첨부하고 `useCookieHeaderForAllRequests`를 `true`에 설정합니다.
 
    ```js
    var networkConfig = new AdobePSDK.NetworkConfiguration();  
@@ -55,7 +52,7 @@ XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 �
 
 >[!IMPORTANT]
 >
->`useCookieHeaderForAllRequests` 플래그는 라이센스 요청에 영향을 주지 않습니다. 라이센스 요청에 대해 `withCredentials` 속성을 `true`으로 설정하려면, 보호 데이터에 `withCredentials` 속성을 설정하거나 보호 데이터의 `httpRequestHeaders`에 인증 키를 지정해야 합니다. 예:
+>`useCookieHeaderForAllRequests` 플래그는 라이센스 요청에 영향을 주지 않습니다. 라이센스 요청에 대해 `withCredentials` 속성을 `true`으로 설정하려면 보호 데이터에 `withCredentials` 속성을 설정하거나 보호 데이터의 `httpRequestHeaders`에 인증 키를 지정해야 합니다. 예:
 
 ```
 # Example 1 
@@ -78,9 +75,9 @@ XMLHttpRequests의 withCredentials 속성을 지원하므로 다양한 요청 �
 }
 ```
 
-일부 서버에서 응답에서 `Access-Control-Allow-Origin` 필드를 와일드카드(&#39;*&#39;)로 설정했기 때문에 플래그가 라이센스 요청에 영향을 주지 않습니다. 그러나 자격 증명 플래그가 `true`으로 설정된 경우 와일드카드를 `Access-Control-Allow-Origin`에서 사용할 수 없습니다. 모든 유형의 요청에 대해 `useCookieHeaderForAllRequests`을 `true`으로 설정하면 라이센스 요청에 대해 다음 오류가 표시될 수 있습니다.
+일부 서버에서 응답에서 `Access-Control-Allow-Origin` 필드를 와일드카드(&#39;*&#39;)로 설정했기 때문에 플래그는 라이선스 요청에 영향을 주지 않습니다. 그러나 자격 증명 플래그가 `true`으로 설정된 경우 와일드카드를 `Access-Control-Allow-Origin`에서 사용할 수 없습니다. 모든 유형의 요청에 대해 `useCookieHeaderForAllRequests`을 `true`으로 설정한 경우 라이센스 요청에 대해 다음 오류가 표시될 수 있습니다.
 
 다음 정보를 기억하십시오.
 
-* `withCredentials=true`이(가) 호출되지 않으면 브라우저 TVSDK가 `withCredentials` 없이 호출을 재시도합니다.
-* `networkConfiguration.useCookieHeaderForAllRequests=false`으로 호출이 수행되면 `withCredentials` 특성 없이 XHR 요청이 수행됩니다.
+* `withCredentials=true` 호출이 실패하면 브라우저 TVSDK가 `withCredentials` 없이 호출을 다시 시도합니다.
+* `networkConfiguration.useCookieHeaderForAllRequests=false`으로 호출을 수행하면 `withCredentials` 특성 없이 XHR 요청이 수행됩니다.
