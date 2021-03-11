@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 신호 모드 및 시간 범위
 title: 신호 모드 및 시간 범위
-uuid: a4d2b0f3-49ce-4a07-a460-9e63bb91b5d3
+description: 신호 모드 및 시간 범위
+copied-description: true
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -165,7 +163,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="codeph"> ServerMap  </span> 신호 모드 </td> 
-   <td> 존재하지 않음(광고 비활성화). </td> 
+   <td> 존재하지 않음(광고가 비활성화됨). </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -179,7 +177,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="codeph"> ManifestCue  </span> 신호 모드 </td> 
-   <td> 존재하지 않음(광고 비활성화). </td> 
+   <td> 존재하지 않음(광고가 비활성화됨). </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -193,9 +191,9 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="codeph"> 사용자 지정 범위  </span> 신호 모드 </td> 
-   <td> 존재하지 않음(광고 비활성화). </td> 
+   <td> 존재하지 않음(광고가 비활성화됨). </td> 
    <td> 없음 </td> 
-   <td> 없음(CustomRangeOpportunityGenerator <span class="codeph">에서 처리됨)</span> </td> 
+   <td> 없음(<span class="codeph"> CustomRangeOpportunityGenerator </span>에서 관리) </td> 
   </tr> 
  </tbody> 
 </table>
