@@ -1,9 +1,9 @@
 ---
-seo-title: 테넌트 로그 파일
 title: 테넌트 로그 파일
-uuid: 9637c72a-b90e-442a-be3c-d6875275c28b
+description: 테넌트 로그 파일
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '32'
 ht-degree: 0%
