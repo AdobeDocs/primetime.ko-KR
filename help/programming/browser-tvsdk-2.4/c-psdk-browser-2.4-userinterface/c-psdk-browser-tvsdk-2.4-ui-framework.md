@@ -1,13 +1,10 @@
 ---
-description: UI 프레임워크는 Browser TVSDK 위에 있는 UI 레이어로, 기본적으로 다양한 비디오 플레이어 관련 UI 구조를 제공합니다. 환경에 적합한 포인트 변경을 수행하여 사용자 정의 가능한 플레이어를 만들 수 있습니다.
-seo-description: UI 프레임워크는 Browser TVSDK 위에 있는 UI 레이어로, 기본적으로 다양한 비디오 플레이어 관련 UI 구조를 제공합니다. 환경에 적합한 포인트 변경을 수행하여 사용자 정의 가능한 플레이어를 만들 수 있습니다.
-seo-title: UI 프레임워크
+description: UI 프레임워크는 브라우저 TV SDK 상단에 있는 UI 레이어로, 즉시 다양한 비디오 플레이어 관련 UI 구조를 제공합니다. 환경에 적합한 포인트 변경을 수행하여 사용자 정의 가능한 플레이어를 만들 수 있습니다.
 title: UI 프레임워크
-uuid: 8460d65c-b9aa-40d0-9e68-771b9f73a7b4
 translation-type: tm+mt
-source-git-commit: 2399515edaad49341cfa406a13887bcc8a3562be
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -15,17 +12,17 @@ ht-degree: 0%
 
 # UI 프레임워크 {#the-ui-framework}
 
-UI 프레임워크는 Browser TVSDK 위에 있는 UI 레이어로, 기본적으로 다양한 비디오 플레이어 관련 UI 구조를 제공합니다. 환경에 적합한 포인트 변경을 수행하여 사용자 정의 가능한 플레이어를 만들 수 있습니다.
+UI 프레임워크는 브라우저 TV SDK 상단에 있는 UI 레이어로, 즉시 다양한 비디오 플레이어 관련 UI 구조를 제공합니다. 환경에 적합한 포인트 변경을 수행하여 사용자 정의 가능한 플레이어를 만들 수 있습니다.
 
 >[!TIP]
 >
 >시각적(스키닝) 및 UI 비헤이비어를 사용자 정의할 수 있습니다.
 
-자신의 동작을 다시 작성하거나 특정 기본 비헤이비어의 기능을 재정의할 수 있습니다. 또한 비헤이비어를 처음부터 작성하여 SDK와 함께 제공된 비헤이비어를 재사용할 수도 있습니다.
+자신의 비헤이비어를 다시 작성하거나 특정 기본 비헤이비어의 기능을 재정의할 수 있습니다. 비헤이비어를 처음부터 작성하여 SDK와 함께 제공되는 비헤이비어를 다시 사용할 수도 있습니다.
 
 ## 기본 플레이어 {#section_30E4812C4DDA4B519C9C837930B6AE45} 만들기
 
-`primetimevisualapi.min.js` 는 UI 프레임워크 라이브러리이고 모든 기능이 전역 개체 ptp를 통해 노출됩니다. 다음 예에서 `videoPlayer` 메서드는 기본 플레이어를 만듭니다.
+`primetimevisualapi.min.js` 는 UI 프레임워크 라이브러리이며 모든 기능이 전역 개체 ptp를 통해 노출됩니다. 다음 예에서 `videoPlayer` 메서드는 기본 플레이어를 만듭니다.
 
 ```js
 <script src="scripts/primetimevisualapi.min.js"></script> 
@@ -43,16 +40,16 @@ UI 프레임워크는 Browser TVSDK 위에 있는 UI 레이어로, 기본적으�
 * JSON 개체 사용
 * API 사용
 
-JSON 개체를 생성하기 위해 브라우저 TVSDK는 UI 구성자 도구를 제공합니다. 도구에서 다양한 설정을 선택하고 **[!UICONTROL Test Configuration]**&#x200B;을 클릭하여 설정을 확인하고 **[!UICONTROL Download Configuration]**&#x200B;을 클릭하여 설정을 다운로드할 수 있습니다. 다운로드한 파일의 컨텐츠는 `ptp.videoPlayer` API로 전달되는 JSON 개체로 사용됩니다.
+JSON 개체를 생성하기 위해 브라우저 TVSDK는 UI 구성기 도구를 제공합니다. 도구에서 다양한 설정을 선택하고 **[!UICONTROL Test Configuration]**&#x200B;을 클릭하여 설정을 확인하고 **[!UICONTROL Download Configuration]**&#x200B;을 클릭하여 설정을 다운로드할 수 있습니다. 다운로드한 파일의 내용은 `ptp.videoPlayer` API에 전달될 JSON 개체로 사용됩니다.
 
-**UI 구성자 도구를 실행하는 방법**:
+**UI Configurator 도구를 실행하는 방법**:
 
-1. 로컬 웹 서버의 Browser TVSDK에서 사용할 수 있는 `frameworks` 폴더를 호스팅합니다.
+1. 로컬 웹 서버의 브라우저 TV SDK에서 사용할 수 있는 `frameworks` 폴더를 호스팅합니다.
 1. 도구를 열려면 브라우저를 열고 `< path-to-hosted-frameworks-folder>/ui-framework/ui-configurator/`으로 이동합니다.
 
 **플레이어의 동작 구성**
 
-다음 방법 중 하나를 사용하여 플레이어 동작을 구성할 수 있습니다.
+다음 방법 중 하나로 플레이어 비헤이비어를 구성할 수 있습니다.
 
 >[!TIP]
 >
@@ -64,7 +61,7 @@ JSON 개체를 생성하기 위해 브라우저 TVSDK는 UI 구성자 도구를 
    player.setAbrControlParameters ({object})
    ```
 
-* **videoPlayer** 함수에 구성 개체 전달이 개체를 사용하는 경우 위에서 설명한 재생 설정 외에 UI의 동작을 구성할 수 있습니다. 호출자는 변경해야 하는 매개 변수를 지정해야 하며, 플레이어는 지정되지 않은 매개 변수에 대해 기본값을 계속 사용합니다.
+* **videoPlayer 함수에 구성 객체** 전달이 객체를 사용하면 위에서 설명한 재생 설정 외에 UI의 비헤이비어를 구성할 수 있습니다. 호출자는 변경해야 하는 매개 변수를 지정해야 하며, 플레이어는 지정되지 않은 매개 변수에 대해 기본값을 계속 사용합니다.
 
    ```js
    var player = ptp.videoPlayer('#video1', { 
@@ -75,17 +72,17 @@ JSON 개체를 생성하기 위해 브라우저 TVSDK는 UI 구성자 도구를 
    });
    ```
 
-   위의 예에서 ABR 제어 매개 변수는 구성 개체를 사용하여 구성되었습니다. 또한 제어 막대 동작을 구성하기 위해 개체가 전달되었습니다.
+   위의 예에서 ABR 제어 매개 변수는 구성 개체를 사용하여 구성되었습니다. 제어 막대 비헤이비어를 구성하기 위해 객체도 전달되었습니다.
 
-   구성 객체의 구조에 대해서는 아래의 구성 객체 구조 보기 섹션을 참조하십시오.
+   구성 객체의 구조는 아래의 구성 객체 구조 보기 섹션을 참조하십시오.
 
-* **AdobePSDK.** MediaPlayer 액세스Browser TVSDK의 MediaPlayer `videoPlayer.getMediaPlayer` 에 액세스해야 하는 특정 고급 사용 사례에서 사용할 수 있습니다.
+* **AdobePSDK.** MediaPlayer 액세스Browser TVSDK `videoPlayer.getMediaPlayer` 의 MediaPlayer에 액세스해야 하는 특정 고급 사용 경우에 사용할 수 있습니다.
 
-* **플레이어 스키닝 구성플레이어 스키닝에 대한 자세한 내용은 플레이어** 스키닝 [ ](../../browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-skin-the-player.md)을 참조하십시오.
+* **플레이어 스키닝 구성플레이어의** 스킨에 대한 자세한 내용은 플레이어  [스키닝](../../browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-skin-the-player.md) 구성을 참조하십시오.
 
 ## 기본 동작 수정 {#section_D5D692638FFF4BEF81F7BE70E438CCE9}
 
-UI 프레임워크 용어에서는 비헤이비어가 특정 구성 요소의 시각적 부분 및 상호 작용 부분을 정의하는 구조입니다. 아래에 설명된 개체 구조를 사용하면 동작에서 변경할 내용을 수정할 수 있습니다.
+UI 프레임워크 용어에서는 비헤이비어가 특정 구성 요소의 상호 작용 부분과 시각적 부분을 정의하는 구조입니다. 아래에 설명된 개체 구조를 사용하면 동작에서 변경할 내용을 수정할 수 있습니다.
 
 예를 들어 볼륨 슬라이더가 표시된 후 슬라이더를 숨기지 않으려면 다음 샘플을 사용합니다.
 
@@ -118,9 +115,9 @@ var player = ptp.videoPlayer('.videoHolder', {
 
 ## 참조 {#section_0A76A3F44D8A49B09FE4C83F3FACCB76}
 
-다음은 추가 참조 정보입니다.
+다음은 추가적인 참조 정보입니다.
 
-* **구성 객체** 구조 보기이는 비헤이비어의 기본 요소와 함께 모든 기본 동작을 계층적으로 언급하는 완벽한 객체 구조입니다. 샘플 구성에서 UI 팩터리는 요소를 만드는 데 사용되었습니다. 동일한 방법을 사용하거나 원하는 방법으로 요소를 구성할 수 있습니다.
+* **구성 객체 구조** 보기이는 비헤이비어의 기본 요소와 함께 모든 기본 비헤이비어를 계층적으로 언급하는 완벽한 객체 구조입니다. 샘플 구성에서 UI 팩터리는 요소를 만드는 데 사용되었습니다. 동일한 방법을 사용하거나 원하는 방법으로 요소를 구성할 수 있습니다.
 
    변경할 부품만 지정해야 하며 나머지 기능은 기본값에서 선택됩니다. 시작하려면 사용 사례에 따라 `SingleViewConfigurationObject` 또는 `MultiViewConfigurationObject` 구조를 제공해야 합니다.
 
@@ -773,9 +770,9 @@ var player = ptp.videoPlayer('.videoHolder', {
 
    * **공장** 시각적 요소를 만들려면  `ptp.factories.simpleButtonFactory`,  `ptp.factories.simpleDivFactory`및 `ptp.factories.simpleHRFactory`를 사용할 수  `ptp.factories.simpleSliderFactory`있습니다. 자세한 내용은 [UI 프레임워크](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API 설명서를 참조하십시오.
 
-   * **MixinsMixins** 는 일반적인 구문을 사용하기 위해 비헤이비어에서 작성할 수 있는 합성 가능한 모듈입니다. 예를 들어, 많은 구성 요소는 예를 들어 광고가 재생되는 경우 해당 동작에 영향을 줄 수 있는 변경 사항을 알고 싶어합니다. 이러한 모든 요소에는 `adBreak` 클래스가 추가됩니다.
+   * **MixinsMixins** 는 일반적인 구문을 사용하기 위해 비헤이비어로 구성할 수 있는 합성 가능한 모듈입니다. 예를 들어, 많은 구성 요소는 예를 들어 광고가 재생되는 경우 자신의 동작에 영향을 줄 수 있는 변경 사항을 알고 싶어합니다. 이러한 모든 요소는 `adBreak` 클래스를 추가합니다.
 
-      다음은 내장된 믹신 `adBreakStyling`을 구현하는 방법에 대한 예입니다.
+      다음은 내장된 혼합을 구현하는 방법에 대한 예입니다. `adBreakStyling`:
 
       ```js
       adBreakStyling = function (element, player) { 
@@ -788,7 +785,7 @@ var player = ptp.videoPlayer('.videoHolder', {
       }
       ```
 
-      다음은 비헤이비어가 이 혼합을 사용하는 방법입니다.
+      비헤이비어가 이 믹싱을 사용하는 방법은 다음과 같습니다.
 
       ```js
       customBehavior = function (element, configuration, player) { 
@@ -801,7 +798,7 @@ var player = ptp.videoPlayer('.videoHolder', {
       }
       ```
 
-      이제 `customBehavior`은 `adBreakStyling`에 의해 노출되는 모든 메서드를 사용할 수 있습니다. 이 예제에서는 `manageAdBreakStyle`입니다. 한 가지 추가적인 사용 사례는 믹싱에서 이벤트 리스너를 추가할 수 있고 핸들러에서 혼합이 요소를 어떤 방식으로 수정할 수 있는 경우입니다. 그런 다음 이 혼합을 사용하는 구성 요소에 이 기능이 자동으로 적용됩니다.
+      이제 `customBehavior`은 `adBreakStyling`에 의해 노출되는 모든 메서드를 사용할 수 있습니다. 이 예제에서는 `manageAdBreakStyle`입니다. 한 가지 추가적인 사용 사례는 믹싱에서 이벤트 리스너를 추가할 수 있고 핸들러에서 믹싱이 요소를 어떤 방식으로 수정할 수 있는 경우입니다. 그런 다음 이 믹싱을 사용하는 구성 요소에 이 기능이 자동으로 적용됩니다.
 
-   * **유틸리티** 구성 섹션 및 `ptp.elementGetter`에서 사용되는 일부 유틸리티와 같은 `ptp.deepmerge` 경우 동작을 작성하거나 확장하는 데 도움이 될 수 있습니다. 자세한 내용은 [UI 프레임워크](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API 설명서를 참조하십시오.
+   * **유틸리티** 구성 섹션 및 `ptp.elementGetter`에서 사용되는 유틸리티와 같은 일부 유틸리티는 비헤이비어를 작성하거나 확장하는 데  `ptp.deepmerge`도움이 될 수 있습니다. 자세한 내용은 [UI 프레임워크](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API 설명서를 참조하십시오.
 
