@@ -1,25 +1,22 @@
 ---
-description: 이 표에서는 INFO에 대한 자세한 정보를 제공합니다. 문자 알림.
-seo-description: 이 표에서는 INFO에 대한 자세한 정보를 제공합니다. 문자 알림.
-seo-title: INFO 알림 코드
+description: 이 표에서는 INFO에 대한 자세한 정보를 제공합니다. 유형 알림을 참조하십시오.
 title: INFO 알림 코드
-uuid: 2b9f9328-4e09-44b7-8ea5-237c46e65e73
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '490'
 ht-degree: 4%
 
 ---
 
 
-# INFO 알림 코드{#info-notification-codes}
+# 정보 알림 코드{#info-notification-codes}
 
-이 표에서는 INFO에 대한 자세한 정보를 제공합니다. 문자 알림.
+이 표에서는 INFO에 대한 자세한 정보를 제공합니다. 유형 알림을 참조하십시오.
 
 <!--<a id="section_ED4302E363AE48CBA2C3E0B71AE612D8"></a>-->
 
-대부분의 정보 알림에는 관련 메타데이터가 포함되어 있습니다. 예를 들어 다운로드하지 못한 리소스의 URL입니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
+대부분의 정보 알림에는 관련 메타데이터(예: 다운로드하지 못한 리소스의 URL)가 포함되어 있습니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_503463046E764A87B10EB5D8B294EB23"> 
  <thead> 
@@ -40,7 +37,7 @@ ht-degree: 4%
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 30000  </span> </td> 
+   <td colname="1"><span class="codeph"> 300000  </span> </td> 
    <td colname="2"><span class="codeph"> PLAYBACK_START  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> 없음 </td> 
@@ -72,28 +69,28 @@ ht-degree: 4%
    <td colname="2"><span class="codeph"> CONTENT_CHANGE  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> CONTENT_</span> <span class="codeph"> IDCURRENT_MEDIA_TIME</span> </td> 
-   <td colname="5"> 현재 재생 시간이 기본 컨텐츠와 대체 컨텐츠 간의 테두리를 벗어났습니다. </td> 
+   <td colname="5"> 현재 재생 시간이 기본 컨텐츠와 대체 컨텐츠 사이의 테두리를 넘었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 300005  </span> </td> 
    <td colname="2"><span class="codeph"> PLAYER_STATE_CHANGE  </span> </td> 
    <td colname="3"> <p>오류 알림. </p> </td> 
    <td colname="4"><span class="codeph"> 주  </span> </td> 
-   <td colname="5"> 플레이어 상태가 변경되었습니다. state가 ERROR이면 내부 알림이 ERROR 상태로 전환을 트리거한 오류 알림 오브젝트입니다. </td> 
+   <td colname="5"> 플레이어 상태가 변경되었습니다. 상태가 ERROR이면 내부 알림은 스위치를 ERROR 상태로 트리거한 오류 알림 객체입니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 300006  </span> </td> 
    <td colname="2"><span class="codeph"> CONTENT_MARKER  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"><span class="codeph"> CONTENT_ID CURRENT_MEDIA_TIME  </span> </td> 
-   <td colname="5"> 콘텐츠 마커를 받았습니다. </td> 
+   <td colname="5"> 콘텐츠 마커가 수신되었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 300100  </span> </td> 
    <td colname="2"><span class="codeph"> LOAD_INFO_AVAILABLE  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"> <span class="codeph"> FRAGMENT_</span> <span class="codeph"> URLFRAGMENT_</span> <span class="codeph"> SIZFRAGMENT_DOWNLOAD_</span> <span class="codeph"> DURATIONPERIOD_INDEX</span> </td> 
-   <td colname="5"> 비디오 세그먼트 다운로드 방법과 관련된 정보를 제공합니다. </td> 
+   <td colname="5"> 비디오 세그먼트 다운로드 방식과 관련된 정보를 제공합니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 300101  </span> </td> 
@@ -114,7 +111,7 @@ ht-degree: 4%
    <td colname="2"><span class="codeph"> BITRATE_CHANGE  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"><span class="codeph"> 비트 전송률  </span><span class="codeph"> CURRENT_MEDIA_TIME  </span> </td> 
-   <td colname="5"> 비디오 비트 전송률이 변경되었습니다. </td> 
+   <td colname="5"> 비디오의 비트 전송률이 변경되었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>광고 처리</b> </td> 
@@ -134,7 +131,7 @@ ht-degree: 4%
    <td colname="1"><span class="codeph"> 303001  </span> </td> 
    <td colname="2"><span class="codeph"> AD_BREAK_PLACEMENT_COMPLETE  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
-   <td colname="4"> <span class="codeph"> PROPOSED_AD_</span> <span class="codeph"> BREAKABLE_AD_BREAK</span> </td> 
+   <td colname="4"> <span class="codeph"> PROPOSED_AD_</span> <span class="codeph"> BREAKACTED_AD_BREAK</span> </td> 
    <td colname="5"> 제안된 광고 브레이크는 <code>primetime-sdk-name</code>에서 수락되고 재생 타임라인에 (전부 또는 일부) 배치됩니다. </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -142,14 +139,14 @@ ht-degree: 4%
    <td colname="2"><span class="codeph"> AD_BREAK_START  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"><span class="codeph"> AD_BREAK  </span> </td> 
-   <td colname="5"> 특정 광고 중단의 재생이 시작되었습니다. </td> 
+   <td colname="5"> 특정 광고 브레이크의 재생이 시작되었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 303003  </span> </td> 
    <td colname="2"><span class="codeph"> AD_BREAK_COMPLETE  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"><span class="codeph"> AD_BREAK  </span> </td> 
-   <td colname="5"> 특정 광고 중단의 재생이 완료되었습니다. </td> 
+   <td colname="5"> 특정 광고 브레이크의 재생이 완료되었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 303004  </span> </td> 
@@ -169,14 +166,14 @@ ht-degree: 4%
    <td colname="1"><span class="codeph"> 303006  </span> </td> 
    <td colname="2"><span class="codeph"> AD_PROGRESS  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
-   <td colname="4"> <span class="codeph"> AD_BREAK</span> <p><span class="codeph"> AD</span> </p> <span class="codeph"> 진행률</span> </td> 
-   <td colname="5"> 특정 광고 재생이 특정 광고의 일정 비율에 도달했습니다. </td> 
+   <td colname="4"> <span class="codeph"> AD_BREAK</span> <p><span class="codeph"> AD</span> </p> <span class="codeph"> 진행 상황</span> </td> 
+   <td colname="5"> 특정 광고 재생이 해당 특정 광고의 일정 비율에 도달했습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 303007  </span> </td> 
    <td colname="2"><span class="codeph"> TIMED_METADATA_ADD  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
-   <td colname="4"> <span class="codeph"> TYPE</span> <p><span class="codeph"> ID</span> </p> <span class="codeph"> 이름</span> <p><span class="codeph"> TIME</span> </p> </td> 
+   <td colname="4"> <span class="codeph"> 유형</span> <p><span class="codeph"> ID</span> </p> <span class="codeph"> 이름</span> <p><span class="codeph"> 시간</span> </p> </td> 
    <td colname="5"> 매니페스트에서 새 시간 메타데이터가 발견되었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -188,10 +185,10 @@ ht-degree: 4%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 303009</span> </td> 
-   <td colname="2"><span class="codeph"> AD_BREAK_SKULLED</span> </td> 
+   <td colname="2"><span class="codeph"> AD_BREAK_OVERSEED</span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"> <span class="codeph"> AD_BREAK</span> <p><span class="codeph"> AD</span> </p> <span class="codeph"> AD_CLICK</span> </td> 
-   <td colname="5"> 광고 휴가를 건너뛰었습니다. </td> 
+   <td colname="5"> 광고 나누기를 건너뛰었습니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname=""><b>늦은 바인딩 오디오(LBA)</b> </td> 
@@ -229,11 +226,11 @@ ht-degree: 4%
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="0"> 
-   <td colname="1"><span class="codeph"> 39999  </span> </td> 
+   <td colname="1"><span class="codeph"> 399999  </span> </td> 
    <td colname="2"><span class="codeph"> GENERIC_INFO  </span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>일반 정보 이벤트를 표시합니다. 실제로 TVSDK에서 발행되지 않은 경우 TVSDK 정보 이벤트에 해당하는 숫자 코드의 끝 부분에 대한 표식일 뿐입니다. </p> </td> 
+   <td colname="5"> <p>일반 정보 이벤트를 표시합니다. 실제로 TVSDK에서 발행되지 않습니다. TVSDK 정보 이벤트에 해당하는 숫자 코드의 끝 부분에 대한 표시자에 불과합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
