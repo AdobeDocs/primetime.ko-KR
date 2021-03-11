@@ -1,13 +1,10 @@
 ---
-description: 다양한 광고 신호 모드 및 광고 메타데이터 조합을 사용하여 VOD 스트림의 시간 범위를 표시, 삭제 및 바꿀 수 있습니다. 신호 모드 및 메타데이터의 서로 다른 조합으로 인해 다른 동작이 발생합니다.
-seo-description: 다양한 광고 신호 모드 및 광고 메타데이터 조합을 사용하여 VOD 스트림의 시간 범위를 표시, 삭제 및 바꿀 수 있습니다. 신호 모드 및 메타데이터의 서로 다른 조합으로 인해 다른 동작이 발생합니다.
-seo-title: 광고 신호 모드 및 광고 메타데이터 조합에서 광고 삽입 및 삭제에 미치는 영향
+description: 다른 광고 신호 모드 및 광고 메타데이터 조합을 사용하여 VOD 스트림의 시간 범위를 표시, 삭제 및 바꿀 수 있습니다. 신호 모드와 메타데이터의 서로 다른 조합으로 인해 다른 동작이 발생합니다.
 title: 광고 신호 모드 및 광고 메타데이터 조합에서 광고 삽입 및 삭제에 미치는 영향
-uuid: 7b2a5588-110d-4ce5-aa9c-706d357f211d
 translation-type: tm+mt
-source-git-commit: 21d1eae53cea303221de00765724e787cf6e84ef
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -15,13 +12,13 @@ ht-degree: 0%
 
 # 광고 신호 모드 및 광고 메타데이터 조합에서 광고 삽입 및 삭제에 미치는 영향 {#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}
 
-다양한 광고 신호 모드 및 광고 메타데이터 조합을 사용하여 VOD 스트림의 시간 범위를 표시, 삭제 및 바꿀 수 있습니다. 신호 모드 및 메타데이터의 서로 다른 조합으로 인해 다른 동작이 발생합니다.
+다른 광고 신호 모드 및 광고 메타데이터 조합을 사용하여 VOD 스트림의 시간 범위를 표시, 삭제 및 바꿀 수 있습니다. 신호 모드와 메타데이터의 서로 다른 조합으로 인해 다른 동작이 발생합니다.
 
 >[!TIP]
 >
 >시간 범위와 광고 신호 모드 간에 충돌이 발생하는 경우 TVSDK는 시간 범위 우선 순위를 제공합니다.
 
-다음 표에서는 신호 모드 및 메타데이터 조합 동작에 대한 세부 사항을 제공합니다.
+다음 표는 신호 모드 및 메타데이터 조합 비헤이비어에 대한 세부 정보를 제공합니다.
 
 <table id="table_6044AA1ACFA244FA814EA2D0766C6D12"> 
  <thead> 
@@ -83,7 +80,7 @@ ht-degree: 0%
   <tr> 
    <td></td> 
    <td> Mark, Auditude </td> 
-   <td> 사용자 지정 광고, Auditude </td> 
+   <td> CustomAd, Auditude </td> 
    <td><span class="codeph"> PlacementInfo(Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> 표시된 범위, 삽입된 광고 없음 </td> 
   </tr> 
@@ -159,7 +156,7 @@ ht-degree: 0%
    <td> 삭제, Auditude </td> 
    <td> 삭제, Auditude </td> 
    <td><span class="codeph"> PlacementInfo(Type.CUSTOM_TIME_RANGE, Mode.DELETE)</span> </td> 
-   <td> 삭제된 범위, 삽입된 광고 없음 </td> 
+   <td> 삭제된 범위, 광고가 삽입되지 않음 </td> 
   </tr> 
   <tr> 
    <td></td> 
@@ -173,7 +170,7 @@ ht-degree: 0%
    <td> 바꾸기, Auditude </td> 
    <td> 삭제, Auditude </td> 
    <td><span class="codeph"> PlacementInfo(Type.CUSTOM_TIME_RANGE, Mode.DELETE), PlacementInfo(Type.CUSTOM_TIME_RANGE, Mode.REPLACE)</span> </td> 
-   <td> 광고로 대체되는 범위 </td> 
+   <td> 광고로 대체된 범위 </td> 
   </tr> 
   <tr> 
    <td></td> 
@@ -222,7 +219,7 @@ ht-degree: 0%
    <td> 바꾸기, Auditude </td> 
    <td> 삭제, Auditude </td> 
    <td><span class="codeph"> PlacementInfo(Type.CUSTOM_TIME_RANGE, Mode.DELETE), PlacementInfo(Type.CUSTOM_TIME_RANGE, Mode.REPLACE)</span> </td> 
-   <td> 광고로 대체되는 범위 </td> 
+   <td> 광고로 대체된 범위 </td> 
   </tr> 
   <tr> 
    <td></td> 
@@ -234,7 +231,7 @@ ht-degree: 0%
   <tr> 
    <td></td> 
    <td> Mark, Auditude </td> 
-   <td> 사용자 지정 광고, Auditude </td> 
+   <td> CustomAd, Auditude </td> 
    <td><span class="codeph"> PlacementInfo(Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> 표시된 범위 </td> 
   </tr> 
