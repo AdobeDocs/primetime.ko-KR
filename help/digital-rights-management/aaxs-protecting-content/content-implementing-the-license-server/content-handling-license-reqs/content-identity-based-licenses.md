@@ -1,9 +1,9 @@
 ---
-seo-title: ID 기반의 라이선스
 title: ID 기반의 라이선스
-uuid: 3340833c-404a-4647-86b9-6f67ca354f58
+description: ID 기반의 라이선스
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
@@ -17,5 +17,5 @@ ID 기반 라이센스를 사용하는 경우 서버는 라이선스를 발급�
 
 >[!NOTE]
 >
->ID 기반 컨텐츠의 라이선스를 미리 보려면 클라이언트가 인증해야 합니다.
+>ID 기반 콘텐츠에 대한 라이선스를 미리 보려면 클라이언트가 인증을 받아야 합니다.
 
