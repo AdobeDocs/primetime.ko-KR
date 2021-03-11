@@ -1,19 +1,16 @@
 ---
 description: 참조 구현 프레임워크를 기반으로 사용자 지정 사용자 인터페이스를 쉽게 만들 수 있습니다.
-seo-description: 참조 구현 프레임워크를 기반으로 사용자 지정 사용자 인터페이스를 쉽게 만들 수 있습니다.
-seo-title: 사용자 정의 유저 인터페이스 구축
 title: 사용자 정의 유저 인터페이스 구축
-uuid: b785f6a4-3ef8-4f7a-a087-0d6551da9750
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
 
 
-# 사용자 지정 사용자 인터페이스 {#build-a-custom-user-interface} 빌드
+# 사용자 지정 사용자 인터페이스 {#build-a-custom-user-interface} 만들기
 
 참조 구현 프레임워크를 기반으로 사용자 지정 사용자 인터페이스를 만들 수 있습니다.
 
@@ -23,9 +20,9 @@ ht-degree: 0%
 * 광고 오버레이
 * 지연 바인딩 오디오
 * 자막
-* 위의 모든 구성 요소에 대한 청취자
+* 위의 모든 구성 요소에 대한 리스너
 
-1. 플레이어에서 사용할 UI 구성 요소를 초기화하려면 [!DNL PlayerFragment.java] 파일을 편집합니다.
+1. [!DNL PlayerFragment.java] 파일을 편집하여 플레이어에서 사용할 UI 구성 요소를 초기화합니다.
 
 1. [!DNL res/player/player_fragment.xml] 파일을 편집하여 사용자 인터페이스를 사용자 정의합니다.
 1. 프로젝트를 빌드합니다.
