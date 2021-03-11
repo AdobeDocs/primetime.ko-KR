@@ -1,13 +1,10 @@
 ---
 description: MediaResource를 직접 인스턴스화하고 재생할 비디오 컨텐츠를 로드하여 리소스를 로드합니다. 미디어 리소스를 로드하는 한 가지 방법입니다.
-seo-description: MediaResource를 직접 인스턴스화하고 재생할 비디오 컨텐츠를 로드하여 리소스를 로드합니다. 미디어 리소스를 로드하는 한 가지 방법입니다.
-seo-title: MediaPlayer에서 미디어 리소스 로드
 title: MediaPlayer에서 미디어 리소스 로드
-uuid: 6ee8032f-0728-423f-a1d2-5030aa7db14f
 translation-type: tm+mt
-source-git-commit: 4ef05be045334a2e723da4c7c6a7ee22fb0f776c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -17,16 +14,16 @@ ht-degree: 0%
 
 MediaResource를 직접 인스턴스화하고 재생할 비디오 컨텐츠를 로드하여 리소스를 로드합니다. 미디어 리소스를 로드하는 한 가지 방법입니다.
 
-1. 재생할 새 리소스로 Media Player의 재생 가능한 항목을 설정합니다.
+1. 재생할 새 리소스로 MediaPlayer 재생 가능 항목을 설정합니다.
 
-   `MediaPlayer.replaceCurrentItem`을(를) 호출하고 기존 `MediaResource` 인스턴스를 전달하여 기존 Media Player의 현재 재생 가능한 항목을 교체합니다.
+   `MediaPlayer.replaceCurrentItem`을(를) 호출하고 기존 `MediaResource` 인스턴스를 전달하여 기존 MediaPlayer의 현재 재생 가능한 항목을 바꿉니다.
 
 1. `MediaPlayer.PlaybackEventListener` 인터페이스의 구현을 `MediaPlayer` 인스턴스와 등록합니다.
 
    * `onPrepared`
-   * `onStateChanged`, and check for INITIALIZED and ERROR.
+   * `onStateChanged`을 클릭하고 초기화된 오류 및 오류를 확인합니다.
 
-1. 미디어 플레이어의 상태가 INITIALIZED로 변경되면 `MediaPlayer.prepareToPlay`을 호출할 수 있습니다
+1. 미디어 플레이어의 상태가 INITIALIZED로 변경되면 `MediaPlayer.prepareToPlay`을 호출할 수 있습니다.
 
    INITIALIZED 상태는 미디어가 성공적으로 로드되었음을 나타냅니다. `prepareToPlay`을(를) 호출하면 광고 해상도 및 배치 프로세스가 시작됩니다.
 
@@ -36,14 +33,14 @@ MediaResource를 직접 인스턴스화하고 재생할 비디오 컨텐츠를 �
 
 >오류가 발생하면 `MediaPlayer`은 ERROR 상태로 전환됩니다. 또한 `PlaybackEventListener.onStateChanged`콜백을 호출하여 응용 프로그램에 알립니다.
 >
->이 프로세스에서는 다음과 같은 여러 매개 변수를 전달합니다.
+>다음과 같은 여러 매개 변수를 전달합니다.
 >* `MediaPlayer.PlayerState.ERROR` 값이 있는 `MediaPlayer.PlayerState` 유형의 `state` 매개 변수입니다.
    >
    >
-* 오류 이벤트에 대한 진단 정보를 포함하는 `MediaPlayerNotification` 유형의 `notification` 매개 변수입니다.
+* 오류 이벤트에 대한 진단 정보가 포함된 `MediaPlayerNotification` 유형의 `notification` 매개 변수입니다.
 
 
-다음 간소화된 샘플 코드는 미디어 리소스를 로드하는 프로세스를 보여 줍니다.
+다음 간단한 샘플 코드는 미디어 리소스를 로드하는 프로세스를 보여 줍니다.
 
 ```java
 // mediaResource is a properly configured MediaResource instance 
