@@ -1,21 +1,17 @@
 ---
 title: 매니페스트 서버 디버깅 도구
-seo-title: 매니페스트 서버 디버깅 도구
 description: 매니페스트 서버 디버깅 도구
-seo-description: 매니페스트 서버 디버깅 도구
-uuid: 0b4f06f5-4b1f-4f88-980a-5b4df28e0094
 products: SG_PRIMETIME
 topic-tags: ad-insertion
-discoiquuid: 00b49659-ce56-4b5c-87cd-c357a0936641
-donotlocalize: false
+discoiqdonotlocalize: false
 moreHelpPaths: /content/help/en/primetime/morehelp/ad-insertion;/content/help/en/primetime/morehelp/ad-insertion
 pagecreatedat: en
 pagelayout: video
 sidecolumn: left
 translation-type: tm+mt
-source-git-commit: d5e948992d7c59e80b530c8f4619adbffc3c03d8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2414'
 ht-degree: 0%
 
 ---
