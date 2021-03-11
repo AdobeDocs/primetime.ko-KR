@@ -1,13 +1,10 @@
 ---
 description: Primetime 디지털 저작권 관리(DRM) 시스템의 주요 클라이언트측 요소는 DRM 관리자입니다.
-seo-description: Primetime 디지털 저작권 관리(DRM) 시스템의 주요 클라이언트측 요소는 DRM 관리자입니다.
-seo-title: Primetime DRM 인터페이스 개요
 title: Primetime DRM 인터페이스 개요
-uuid: 01714ee6-a937-4ca3-b535-6a6ef681ee6d
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
