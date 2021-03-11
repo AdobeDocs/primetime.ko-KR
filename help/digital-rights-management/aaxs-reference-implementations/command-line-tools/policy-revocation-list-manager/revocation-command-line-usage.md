@@ -1,9 +1,9 @@
 ---
-seo-title: 명령줄 사용
 title: 명령줄 사용
-uuid: 273e9d3b-efeb-46fa-a4b1-f13247b4e498
+description: 명령줄 사용
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 명령줄 사용 {#command-line-usage}
 
-해지 목록 관리자는 DVD의 \Reference Implementation\Command Line Tools 디렉토리에 있습니다. 도구를 실행하려면 다음 구문 중 하나를 사용하십시오.
+해지 목록 관리자는 DVD의 \Reference Implementation\Command Line Tools 디렉토리에 있습니다. 도구를 실행하려면 다음 구문 중 하나를 사용합니다.
 
 ```
     java -jar AdobeRevocationListManager.jar 
@@ -47,7 +47,7 @@ ht-degree: 0%
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-c configfile</span> </td> 
-   <td colname="2" class="- topic/entry ">구성 파일의 위치를 지정합니다. 이 옵션을 사용하지 않으면 해지 목록 관리자가 작업 디렉토리에서 <span class="filepath"> flashaccesstools.properties</span>을 찾습니다. </td> 
+   <td colname="2" class="- topic/entry ">구성 파일의 위치를 지정합니다. 이 옵션을 사용하지 않으면 해지 목록 관리자에서 작업 디렉토리에서 <span class="filepath"> flashaccesstools.properties</span>을 찾습니다. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-d 파일 이름</span> </td> 
@@ -55,15 +55,15 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-e 날짜</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">(선택 사항) 해지 목록의 만료 날짜입니다. <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd</span> 또는 <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd-h24:min:sec</span> 형식을 사용하십시오(예: 2009-01-31-14:30:00은 1월 31일 오후 2시 30분). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">(선택 사항) 해지 목록의 만료 날짜입니다. <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd</span> 또는 <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd-h24:min:sec</span> 형식을 사용합니다(예: 2009-01-31-14:30:00은 1월 31일을 오후 2:30으로 나타냅니다). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">-f filename[certfile]</span> </td> 
-   <td colname="2" class="- topic/entry ">기존 해지 목록의 모든 항목을 추가합니다. 기존 파일은 하나만 지정할 수 있습니다. <p class="- topic/p ">이 기존 목록이 새 목록에 서명하는 데 사용되는 목록과 다른 자격 증명으로 서명된 경우 인증서 파일 옆에 해당 인증서 파일을 지정하여 서명을 확인할 수 있습니다. </p> </td> 
+   <td colname="2" class="- topic/entry ">기존 해지 목록의 모든 항목을 추가합니다. 기존 파일은 하나만 지정할 수 있습니다. <p class="- topic/p ">이 기존 목록이 새 목록에 서명하는 데 사용하는 자격 증명과 다른 자격 증명으로 서명된 경우 다음 인증서 파일을 지정하여 서명을 확인할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> -noprompt</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">대상 파일을 덮어써야 하는지 묻지 않습니다. 대상 파일이 이미 있고 -o가 설정되어 있지 않으면 오류가 반환됩니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">대상 파일을 덮어쓸지 묻지 않습니다. 대상 파일이 이미 있고 -o가 설정되어 있지 않으면 오류가 반환됩니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> -o</span> </td> 
@@ -71,7 +71,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">-r issuerName serialNumber revocationDate</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">지정된 날짜에 <span class="codeph"> issuerName</span> 및 <span class="codeph"> serialNumber</span>에 의해 식별된 인증서를 해지합니다. <span class="codeph"> issuerName</span>은 509 이름 형식을 따라야 합니다(예: <span class="codeph"> CN=12345,O=Adobe Systems Incorporated,C=US</span>). 일련 번호를 16진수 형식으로 지정합니다. 2008년 12월 1일 자정에 대해 <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd</span> 또는 <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd-h24:min:sec</span>(예: 2008-12-1-00:00:00)으로 해지 날짜를 지정합니다. 08. 해지 날짜가 지정되지 않으면 현재 날짜가 사용됩니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">지정된 날짜에 <span class="codeph"> issuerName</span> 및 <span class="codeph"> serialNumber</span>에 의해 식별된 인증서를 취소합니다. <span class="codeph"> issuerName</span>은 509 이름 형식을 따라야 합니다(예: <span class="codeph"> CN=12345,O=Adobe Systems Incorporated,C=US</span>). 일련 번호를 16진수 형식으로 지정합니다. 해지 날짜를 <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd</span> 또는 <span class="+ topic/ph pr-d/codeph codeph">yyyy-mm-dd-h24:min:sec</span>(예: 2008년 12월 1일 자정에는 2008-12-1 또는 2008-12-1-00:00:00)으로 지정합니다. 해지 날짜를 지정하지 않으면 현재 날짜가 사용됩니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
