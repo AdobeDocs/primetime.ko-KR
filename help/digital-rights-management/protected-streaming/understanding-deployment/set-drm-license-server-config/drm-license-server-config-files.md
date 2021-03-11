@@ -1,9 +1,9 @@
 ---
-seo-title: 라이센스 서버 구성 파일
 title: 라이센스 서버 구성 파일
-uuid: 7c7e0f76-2ced-45af-9542-99e06ec31cda
+description: 라이센스 서버 구성 파일
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# 라이선스 서버 구성 파일{#license-server-configuration-files}
+# 라이센스 서버 구성 파일{#license-server-configuration-files}
 
-보호된 스트리밍을 위한 Adobe Primetime DRM 서버에는 다음과 같은 유형의 구성 파일이 필요합니다.
+보호된 스트리밍을 위한 Adobe Primetime DRM Server에는 다음과 같은 유형의 구성 파일이 필요합니다.
 
 * 전역 구성 파일( [!DNL flashaccess-global.xml])
 * 각 테넌트에 대한 테넌트 구성 파일( [!DNL flashaccess-tenant.xml])
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 *구성 유효성 검사기*&#x200B;를 참조하십시오.
 
-구성 파일의 투명 텍스트로 암호를 사용할 수 없도록 하려면 Adobe에서 제공한 스크램블러 도구를 사용하여 전역 및 테넌트 구성 파일에 지정한 모든 암호를 암호화해야 합니다.
+구성 파일의 투명한 텍스트에서 암호를 사용할 수 없도록 하려면 Adobe에서 제공한 Scrambler 도구를 사용하여 전역 및 테넌트 구성 파일에 지정한 모든 암호를 암호화해야 합니다.
 
 암호 암호화 방법에 대한 자세한 내용은 *암호 스크램블러*&#x200B;를 참조하십시오.
