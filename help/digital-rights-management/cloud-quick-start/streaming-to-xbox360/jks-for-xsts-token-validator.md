@@ -1,9 +1,9 @@
 ---
-seo-title: XSTS 유효성 검사기용 JKS 만들기
 title: XSTS 유효성 검사기용 JKS 만들기
-uuid: e02b517d-0b72-4e95-92b2-09b8f785cce6
+description: XSTS 유효성 검사기용 JKS 만들기
+copied-description: true
 translation-type: tm+mt
-source-git-commit: ed1430bdcb590a53fa69b324ef340ad636b2fa7c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
    <alias> -destalias xsts
    ```
 
-   (여기서 `<alias>`은 1단계에서 발견한 개인 인증서의 별칭 이름입니다.)
+   여기서 `<alias>`은 1단계에서 발견한 개인 인증서의 별칭 이름입니다.
 1. [!DNL x_secure_token_service.part.xboxlive.com.cer]을(를) 가져옵니다.
 
    ```
@@ -35,7 +35,7 @@ ht-degree: 0%
            -file x_secure_token_service.part.xboxlive.com.cer 
    ```
 
-1. [!DNL xsts.jks]을(를) Tomcat 홈 디렉토리에 넣고 Tomcat에 대해 `-Dxsts-keystore-password=****`을 정의합니다.
+1. [!DNL xsts.jks]을(를) Tomcat 홈 디렉토리에 배치하고 Tomcat에 대해 `-Dxsts-keystore-password=****`을 정의합니다.
 
 [!DNL xsts_partner_cert.pfx] 및 [!DNL xsts.jks]에서 다른 암호를 사용하는 경우 `jks`에서 `xsts` 암호를 업데이트하여 동일하게 만듭니다.
 
