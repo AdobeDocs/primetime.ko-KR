@@ -1,46 +1,43 @@
 ---
 description: Flash 런타임 TV는 애플리케이션이 있는 도메인에서 TVSDK API를 호출할 권한이 있는지 확인하기 위해 서명된 토큰이 필요합니다.
-seo-description: Flash 런타임 TV는 애플리케이션이 있는 도메인에서 TVSDK API를 호출할 권한이 있는지 확인하기 위해 서명된 토큰이 필요합니다.
-seo-title: 서명된 토큰 로드
-title: 서명된 토큰 로드
-uuid: 8760eab3-3d6d-47c6-9aa7-f64f6aa5ddcf
+title: 서명한 토큰 로드
 translation-type: tm+mt
-source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 
-# 서명된 토큰 {#load-your-signed-token} 로드
+# 서명한 토큰 {#load-your-signed-token} 로드
 
 Flash 런타임 TV는 애플리케이션이 있는 도메인에서 TVSDK API를 호출할 권한이 있는지 확인하기 위해 서명된 토큰이 필요합니다.
 
-1. 각 도메인(각 도메인이 특정 도메인 또는 와일드카드 도메인일 수 있음)에 대한 Adobe 담당자의 서명된 토큰을 가져옵니다.
+1. 각 도메인(각 도메인이 특정 도메인 또는 와일드카드 도메인일 수 있음)에 대해 Adobe 담당자로부터 서명된 토큰을 가져옵니다.
 
-       토큰을 얻으려면 응용 프로그램이 저장되거나 로드되는 도메인 또는 SHA256 해시로 도메인을 제공하십시오. 그 대신 Adobe은 각 도메인에 대해 서명된 토큰을 제공합니다. 이러한 토큰은 다음 양식 중 하나를 사용합니다.
+       토큰을 가져오려면 응용 프로그램을 저장 또는 로드할 도메인을 Adobe에 제공하거나, 원하는 경우 도메인을 SHA256 해시로 입력하십시오. 그 대신 Adobe은 각 도메인에 대해 서명된 토큰을 제공합니다. 이러한 토큰은 다음 양식 중 하나를 사용합니다:
    
-   * 단일 도메인 또는 와일드카드 도메인에 대한 토큰으로 동작하는 [!DNL .xml] 파일입니다.
+   * 단일 도메인 또는 와일드카드 도메인의 토큰으로 작동하는 [!DNL .xml] 파일.
 
       >[!NOTE]
       >
-      >와일드카드 도메인에 대한 토큰은 해당 도메인과 모든 하위 도메인을 포괄합니다. 예를 들어 도메인 [!DNL mycompany.com]에 대한 와일드카드 토큰은 [!DNL vids.mycompany.com] 및 [!DNL private.vids.mycompany.com];도 덮습니다.[!DNL vids.mycompany.com]에 대한 와일드카드 토큰도 [!DNL private.vids.mycompany.com]에 포함됩니다. *와일드카드 도메인 토큰은 특정 Flash Player 버전에만 지원됩니다.*
+      >와일드카드 도메인의 토큰은 해당 도메인과 모든 하위 도메인을 포함합니다. 예를 들어 도메인 [!DNL mycompany.com]에 대한 와일드카드 토큰은 [!DNL vids.mycompany.com] 및 [!DNL private.vids.mycompany.com];도 덮습니다.[!DNL vids.mycompany.com]의 와일드카드 토큰도 [!DNL private.vids.mycompany.com]에 포함됩니다. *와일드카드 도메인 토큰은 특정 Flash Player 버전에만 지원됩니다.*
 
-   * 응용 프로그램이 동적으로 로드될 수 있는 다중 도메인(와일드카드를 포함하지 않음)에 대한 토큰 정보가 포함된 [!DNL .swf] 파일.
+   * 응용 프로그램이 동적으로 로드될 수 있는 다중 도메인(와일드카드를 포함하지 않음)(단일 또는 와일드카드)에 대한 토큰 정보를 포함하는 [!DNL .swf] 파일.
 
 1. 토큰 파일을 응용 프로그램과 동일한 위치 또는 도메인에 저장합니다.
 
    기본적으로 TVSDK는 이 위치에서 토큰을 찾습니다. 또는 HTML 파일의 `flash_vars`에서 토큰의 이름과 위치를 지정할 수 있습니다.
 1. 토큰 파일이 단일 XML 파일인 경우:
-   1. `utils.AuthorizedFeaturesHelper.loadFrom`을(를) 사용하여 지정된 URL(토큰 파일)에 저장된 데이터를 다운로드하고 이 정보에서 `authorizedFeatures` 정보를 추출합니다.
+   1. `utils.AuthorizedFeaturesHelper.loadFrom`을(를) 사용하여 지정된 URL(토큰 파일)에 저장된 데이터를 다운로드하고 해당 정보에서 `authorizedFeatures` 정보를 추출합니다.
 
-      이 단계는 다를 수 있습니다. 예를 들어 애플리케이션을 시작하기 전에 인증을 수행하거나 CMS(Content Management System)에서 직접 토큰을 받을 수 있습니다.
+      이 단계는 다를 수 있습니다. 예를 들어 응용 프로그램을 시작하기 전에 인증을 수행하거나 CMS(Content Management System)로부터 직접 토큰을 받을 수 있습니다.
 
-   1. 로드가 성공하면 `COMPLETED` 이벤트를 전달하고 그렇지 않으면 `FAILED` 이벤트를 전달합니다. 두 이벤트 중 하나를 감지할 때 적절한 작업을 수행합니다.
+   1. TVSDK는 로드가 성공한 경우 `COMPLETED` 이벤트를 전달하거나 그렇지 않은 경우 `FAILED` 이벤트를 전달합니다. 두 이벤트 중 하나를 감지할 때 적절한 작업을 수행합니다.
 
-      애플리케이션이 `MediaPlayerContext` 형식의 필수 `authorizedFeatures` 개체를 TVSDK에 제공하려면 이 작업이 성공적으로 완료되어야 합니다.
-   이 예에서는 단일 토큰 [!DNL .xml] 파일을 사용하는 방법을 보여줍니다.
+      응용 프로그램에서 `MediaPlayerContext` 형식으로 필수 `authorizedFeatures` 개체를 TVSDK에 제공하려면 이 작업을 성공적으로 수행해야 합니다.
+   이 예는 단일 토큰 [!DNL .xml] 파일을 사용하는 방법을 보여줍니다.
 
    ```
    private function loadDirectTokenURL():void { 
@@ -57,13 +54,13 @@ Flash 런타임 TV는 애플리케이션이 있는 도메인에서 TVSDK API를 
 
 1. 토큰이 [!DNL .swf] 파일인 경우:
    1. `Loader` 클래스를 정의하여 [!DNL .swf] 파일을 동적으로 로드합니다.
-   1. `LoaderContext`을(를) 설정하여 현재 응용 프로그램 도메인에 로드할 내용을 지정합니다. 이렇게 하면 TVSDK가 [!DNL .swf] 파일 내에서 올바른 토큰을 선택할 수 있습니다. `LoaderContext`이(가) 지정되지 않은 경우 `Loader.load`의 기본 동작은 현재 도메인의 하위 도메인에 .swf를 로드하는 것입니다.
-   1. COMPLETE 이벤트를 수신합니다. TVSDK는 로드가 성공하면 전달합니다.
+   1. `LoaderContext`을(를) 설정하여 현재 응용 프로그램 도메인에 로드할 내용을 지정합니다. 이렇게 하면 TVSDK가 [!DNL .swf] 파일 내에서 올바른 토큰을 선택할 수 있습니다. `LoaderContext`이(가) 지정되지 않은 경우 `Loader.load`의 기본 작업은 현재 도메인의 하위 도메인에 .swf를 로드하는 것입니다.
+   1. COMPLETE 이벤트를 수신합니다. TVSDK는 로드가 성공적으로 완료될 때 전달합니다.
 
-      또한 ERROR 이벤트를 듣고 적절한 조치를 취합니다.
-   1. 로드가 성공하면 `AuthorizedFeaturesHelper`을(를) 사용하여 PCKS-7 인코딩 보안 데이터가 포함된 `ByteArray`을(를) 가져옵니다.
+      또한 ERROR 이벤트를 수신하고 적절한 작업을 수행합니다.
+   1. 로드가 성공하면 `AuthorizedFeaturesHelper`을 사용하여 PCKS-7 인코딩 보안 데이터가 포함된 `ByteArray`을(를) 가져옵니다.
 
-      이 데이터는 AVE V11 API를 통해 Flash 런타임 플레이어에서 인증 승인을 얻는 데 사용됩니다. 바이트 배열에 콘텐츠가 없는 경우 이 절차를 사용하여 단일 도메인 토큰 파일을 찾습니다.
+      이 데이터는 AVE V11 API를 통해 Flash 런타임 플레이어에서 인증 승인을 얻는 데 사용됩니다. 바이트 배열에 내용이 없으면 이 절차를 사용하여 단일 도메인 토큰 파일을 찾습니다.
    1. 바이트 배열에서 필요한 데이터를 가져오려면 `AuthorizedFeatureHelper.loadFeatureFromData`을 사용합니다.
    1. [!DNL .swf] 파일을 언로드합니다.
 
