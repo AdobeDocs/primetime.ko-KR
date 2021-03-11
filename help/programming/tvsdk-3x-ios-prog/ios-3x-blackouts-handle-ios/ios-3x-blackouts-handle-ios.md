@@ -1,9 +1,9 @@
 ---
-seo-title: 실시간 스트림의 일시 중단 처리
-title: 실시간 스트림의 일시 중단 처리
-uuid: 717f0242-1a6e-4347-ba4c-ea0450a37874
+title: 실시간 스트림에서 일시 중단 처리
+description: 실시간 스트림에서 일시 중단 처리
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '15'
 ht-degree: 0%
@@ -11,4 +11,4 @@ ht-degree: 0%
 ---
 
 
-# 실시간 스트림의 일시 중단 처리{#handle-blackouts-in-live-streams}
+# 실시간 스트림에서 일시 중단 처리{#handle-blackouts-in-live-streams}
