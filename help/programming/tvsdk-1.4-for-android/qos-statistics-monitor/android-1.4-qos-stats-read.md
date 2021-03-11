@@ -1,30 +1,27 @@
 ---
 description: QOSProvider 클래스에서 재생, 버퍼링 및 장치 통계를 읽을 수 있습니다.
-seo-description: QOSProvider 클래스에서 재생, 버퍼링 및 장치 통계를 읽을 수 있습니다.
-seo-title: QOS 재생, 버퍼링 및 디바이스 통계 읽기
 title: QOS 재생, 버퍼링 및 디바이스 통계 읽기
-uuid: 19228a50-3721-4dc1-89b6-97458518e272
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
 
-# QOS 재생, 버퍼링 및 디바이스 통계 읽기{#read-qos-playback-buffering-and-device-statistics}
+# QOS 재생, 버퍼링 및 장치 통계 읽기{#read-qos-playback-buffering-and-device-statistics}
 
 QOSProvider 클래스에서 재생, 버퍼링 및 장치 통계를 읽을 수 있습니다.
 
 `QOSProvider` 클래스는 버퍼링, 비트 속도, 프레임 속도, 시간 데이터 등에 대한 정보를 포함하여 다양한 통계를 제공합니다.
 
-또한 제조업체, 모델, 운영 체제, SDK 버전, 제조업체 디바이스 ID, 화면 크기/밀도 등 디바이스에 대한 정보도 제공합니다.
+또한 제조업체, 모델, 운영 체제, SDK 버전, 제조업체 디바이스 ID 및 화면 크기/밀도와 같은 장치에 대한 정보도 제공합니다.
 
 1. 미디어 플레이어를 인스턴스화합니다.
-1. `QOSProvider` 개체를 만들어 미디어 플레이어에 연결합니다.
+1. `QOSProvider` 개체를 만들어 미디어 플레이어에 첨부합니다.
 
-   `QOSProvider` 생성자는 장치별 정보를 검색할 수 있도록 플레이어 컨텍스트를 가져옵니다.
+   `QOSProvider` 생성자는 장치별 정보를 검색할 수 있도록 플레이어 컨텍스트를 사용합니다.
 
    ```java
    // Create Media Player. 
@@ -34,7 +31,7 @@ QOSProvider 클래스에서 재생, 버퍼링 및 장치 통계를 읽을 수 �
 
 1. (선택 사항) 재생 통계를 확인합니다.
 
-   재생 통계를 읽는 한 가지 방법은 타이머를 갖는 것입니다. 타이머는 정기적으로 `QOSProvider`에서 새로운 QoS 값을 가져옵니다. 예:
+   재생 통계를 읽을 수 있는 한 가지 방법은 타이머를 갖는 것입니다. 타이머는 정기적으로 `QOSProvider`에서 새로운 QoS 값을 가져옵니다. 예:
 
    ```java
    _playbackClock = new Clock(PLAYBACK_CLOCK, 1000); // every 1 second 
@@ -64,7 +61,7 @@ QOSProvider 클래스에서 재생, 버퍼링 및 장치 통계를 읽을 수 �
    }; 
    ```
 
-1. (선택 사항) 디바이스별 정보를 확인합니다.
+1. (선택 사항) 장치별 정보를 읽습니다.
 
    ```java
    // Show device information 
