@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 서버측에서 비디오 분석 보고 설정
-title: 서버측에서 비디오 분석 보고 설정
-uuid: 46af6094-3607-4c37-968e-2633e3895315
+title: 서버 측에 비디오 분석 보고 설정
+description: 서버 측에 비디오 분석 보고 설정
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
 
-# 서버측 {#set-up-video-analytics-reporting-on-the-server-side}에 비디오 분석 보고를 설정합니다.
+# 서버 쪽 {#set-up-video-analytics-reporting-on-the-server-side}에 비디오 분석 보고를 설정합니다.
 
-Adobe 담당자가 Adobe Analytics 보고를 위한 서버측 설정의 대부분의 측면을 처리합니다. 자세한 내용은 [Analytics 도움말 및 참조 - 보고서 세트 관리자](https://microsite.omniture.com/t2/help/en_US/reference/#Report_Suite_Manager)를 참조하십시오.
+Adobe 담당자가 Adobe Analytics 보고를 위해 서버측 설정의 대부분의 측면을 처리합니다. 자세한 내용은 [분석 도움말 및 참조 - 보고서 세트 관리자](https://microsite.omniture.com/t2/help/en_US/reference/#Report_Suite_Manager)를 참조하십시오.
 1. 보고서 세트 ID(RSID)에 대한 전환 수준을 활성화하려면:
    1. **[!UICONTROL Admin Tools]**&#x200B;에 액세스합니다.
    1. **[!UICONTROL Report Suites]**&#x200B;을 선택합니다.
