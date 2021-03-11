@@ -1,13 +1,10 @@
 ---
 description: 대부분의 광고주는 광고가 언제, 얼마나 오래, 그리고 얼마나 성공적으로 보는지에 대한 몇 가지 세부 정보를 요구합니다. 가장 효율적인 방법은 클라이언트 플레이어가 광고를 재생하면서 보고서를 전송하도록 하는 것이지만 매니페스트 서버는 서버측 및 하이브리드 광고 추적도 지원합니다.
-seo-description: 대부분의 광고주는 광고가 언제, 얼마나 오래, 그리고 얼마나 성공적으로 보는지에 대한 몇 가지 세부 정보를 요구합니다. 가장 효율적인 방법은 클라이언트 플레이어가 광고를 재생하면서 보고서를 전송하도록 하는 것이지만 매니페스트 서버는 서버측 및 하이브리드 광고 추적도 지원합니다.
-seo-title: 광고 추적
 title: 광고 추적
-uuid: 184b8c36-5e51-42a7-b905-53f2b7b15e49
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
