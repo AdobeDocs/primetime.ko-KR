@@ -1,13 +1,10 @@
 ---
-description: 광고 삽입을 통해 실시간 스트리밍을 위한 VOD(Video-On-Demand) 광고, 광고 추적 및 광고 재생을 통한 선형 스트리밍을 해결할 수 있습니다. TVSDK는 광고 서버에 필요한 요청을 수행하고, 지정된 컨텐츠에 대한 광고에 대한 정보를 수신하며, 광고를 단계적으로 전달합니다.
-seo-description: 광고 삽입을 통해 실시간 스트리밍을 위한 VOD(Video-On-Demand) 광고, 광고 추적 및 광고 재생을 통한 선형 스트리밍을 해결할 수 있습니다. TVSDK는 광고 서버에 필요한 요청을 수행하고, 지정된 컨텐츠에 대한 광고에 대한 정보를 수신하며, 광고를 단계적으로 전달합니다.
-seo-title: 광고 삽입
+description: 광고 삽입은 광고 추적 및 광고 재생을 통해 실시간 스트리밍과 선형 스트리밍을 위한 VOD(Video-On-Demand) 광고 해결을 지원합니다. TVSDK는 광고 서버에 필요한 요청을 수행하고, 지정된 컨텐츠에 대한 광고에 대한 정보를 수신하고, 광고를 컨텐트에 순차적으로 배치합니다.
 title: 광고 삽입
-uuid: 25c79822-a861-427b-b6a8-24714b21aae4
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -15,9 +12,9 @@ ht-degree: 0%
 
 # 개요 {#inserting-ads-overview}
 
-광고 삽입을 통해 실시간 스트리밍을 위한 VOD(Video-On-Demand) 광고, 광고 추적 및 광고 재생을 통한 선형 스트리밍을 해결할 수 있습니다. TVSDK는 광고 서버에 필요한 요청을 수행하고, 지정된 컨텐츠에 대한 광고에 대한 정보를 수신하며, 광고를 단계적으로 전달합니다.
+광고 삽입은 광고 추적 및 광고 재생을 통해 실시간 스트리밍과 선형 스트리밍을 위한 VOD(Video-On-Demand) 광고 해결을 지원합니다. TVSDK는 광고 서버에 필요한 요청을 수행하고, 지정된 컨텐츠에 대한 광고에 대한 정보를 수신하고, 광고를 컨텐트에 순차적으로 배치합니다.
 
-*`ad break`*&#x200B;에는 차례로 재생되는 하나 이상의 광고가 포함되어 있습니다. TVSDK는 하나 이상의 광고 중단의 구성원으로 기본 컨텐츠에 광고를 삽입합니다.
+*`ad break`*&#x200B;에는 차례로 재생되는 하나 이상의 광고가 포함되어 있습니다. TVSDK는 하나 이상의 광고 분류의 멤버로 기본 컨텐츠에 광고를 삽입합니다.
 
 ## 프리롤 광고 비활성화 {#disable-preroll-ads}
 
@@ -34,7 +31,7 @@ return result;
 }
 ```
 
-라이브 스트림에서 프리롤 기능을 비활성화하려면 위의 내용을 SpliceOutOpportunityGenerator만 포함하도록 변경하십시오.
+실시간 스트림에서 프리롤 기능을 비활성화하려면 SpliceOutOpportunityGenerator만 포함하도록 위의 내용을 변경합니다.
 
 ```
 @inheritDoc 
