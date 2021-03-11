@@ -1,13 +1,10 @@
 ---
-description: MediaPlayer 개체는 미디어 플레이어를 나타냅니다. MediaPlayerItem은 플레이어에서 오디오 또는 비디오를 나타냅니다.
-seo-description: MediaPlayer 개체는 미디어 플레이어를 나타냅니다. MediaPlayerItem은 플레이어에서 오디오 또는 비디오를 나타냅니다.
-seo-title: Media Player 개체 사용
-title: Media Player 개체 사용
-uuid: 3545f7a7-260c-4004-aca8-b33b99b36d89
+description: MediaPlayer 객체는 미디어 플레이어를 나타냅니다. MediaPlayerItem은 플레이어에서 오디오 또는 비디오를 나타냅니다.
+title: MediaPlayer 개체 사용
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '44'
+source-wordcount: '24'
 ht-degree: 0%
 
 ---
