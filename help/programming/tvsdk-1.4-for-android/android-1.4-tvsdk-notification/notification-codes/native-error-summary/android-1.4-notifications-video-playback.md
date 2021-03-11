@@ -1,13 +1,10 @@
 ---
-description: AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개체에서 이러한 비디오 재생 알림을 반환합니다.
-seo-description: AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개체에서 이러한 비디오 재생 알림을 반환합니다.
-seo-title: NATIVE_ERROR 비디오 재생 값
+description: AVE의 Video Encoder 인터페이스는 NATIVE_ERROR 메타데이터 객체에 이러한 비디오 재생 알림을 반환합니다.
 title: NATIVE_ERROR 비디오 재생 값
-uuid: fbc08ecd-2e28-41ad-955b-557358bccdc8
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1407'
 ht-degree: 6%
 
 ---
@@ -15,13 +12,13 @@ ht-degree: 6%
 
 # NATIVE_ERROR:비디오 재생 값{#native-error-video-playback-values}
 
-AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개체에서 이러한 비디오 재생 알림을 반환합니다.
+AVE의 Video Encoder 인터페이스는 NATIVE_ERROR 메타데이터 객체에 이러한 비디오 재생 알림을 반환합니다.
 
 <table> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> NATIVE_ERROR_CODE 메타데이터 키 값 </th> 
-   <th colname="col2" class="entry"> NATIVE_ERROR_NAME 메타데이터 키 값 </th> 
+   <th colname="col2" class="entry"> NATIVE_ERROR_NAME 메타데이터 키의 값 </th> 
    <th colname="col3" class="entry"> 설명 </th> 
   </tr>
  </thead>
@@ -83,7 +80,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   </tr> 
   <tr> 
    <td colname="col1"> 10 </td> 
-   <td colname="col2"><span class="codeph"> NOT_IMPROVED  </span> </td> 
+   <td colname="col2"><span class="codeph"> NOT_IMPLEMENTED  </span> </td> 
    <td colname="col3"> 기능이 구현되지 않았습니다. </td> 
   </tr> 
   <tr> 
@@ -99,7 +96,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 13 </td> 
    <td colname="col2"><span class="codeph"> SIZE_UNKNOWN  </span> </td> 
-   <td colname="col3"> 리소스 크기가 있지만 알 수 없습니다. </td> 
+   <td colname="col3"> 리소스의 크기는 다르지만 알 수 없습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 14 </td> 
@@ -122,7 +119,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
    <td colname="col3"> 아직 초기화되지 않았습니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 18년 </td> 
+   <td colname="col1"> 18 </td> 
    <td colname="col2"><span class="codeph"> INVALID_PARAMETER  </span> </td> 
    <td colname="col3"> 매개 변수가 잘못되었습니다. </td> 
   </tr> 
@@ -134,7 +131,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 20년 </td> 
    <td colname="col2"><span class="codeph"> OP_ONLY_ALLOWED_IN_PAUSED_STATE</span> </td> 
-   <td colname="col3"> 작업은 일시 중지된 동안에만 허용됩니다. </td> 
+   <td colname="col3"> 작업은 일시 중지된 상태에만 허용됩니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 21 </td> 
@@ -164,7 +161,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 26 </td> 
    <td colname="col2"><span class="codeph"> FILE_STRUCTURE_INVALID</span> </td> 
-   <td colname="col3"> 지정한 파일이 필요한 구문을 따르지 않습니다. </td> 
+   <td colname="col3"> 지정된 파일이 예상 구문을 따르지 않습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 27 </td> 
@@ -204,7 +201,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 34 </td> 
    <td colname="col2"><span class="codeph"> 오버플로</span> </td> 
-   <td colname="col3"> 오버플로. </td> 
+   <td colname="col3"> 오버플로입니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 35 </td> 
@@ -219,12 +216,12 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 37 </td> 
    <td colname="col2"><span class="codeph"> INVALID_REPLACE_DURATION</span> </td> 
-   <td colname="col3"> 지정한 대체 기간이 잘못되었거나 스트림 끝을 지나 확장됩니다. </td> 
+   <td colname="col3"> 지정된 대체 기간이 잘못되었거나 스트림의 끝을 지나 확장됩니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 38 </td> 
    <td colname="col2"><span class="codeph"> CALLED_FROM_WRONG_THREAD</span> </td> 
-   <td colname="col3"> 잘못된 스레드에서 API를 호출할 수 없습니다. 대부분, Main 스레드에서만 호출되어야 하는 API 요소의 경우. </td> 
+   <td colname="col3"> 잘못된 스레드에서 API를 호출할 수 없습니다. 대부분, Main 스레드에서만 호출해야 하는 API 요소의 경우. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 39 </td> 
@@ -233,7 +230,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   </tr> 
   <tr> 
    <td colname="col1"> 40 </td> 
-   <td colname="col2"><span class="codeph"> 중단됨</span> </td> 
+   <td colname="col2"><span class="codeph"> ABORTED</span> </td> 
    <td colname="col3"> 명시적 중단 또는 제거 호출로 작업이 중단되었습니다. </td> 
   </tr> 
   <tr> 
@@ -254,7 +251,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 44 </td> 
    <td colname="col2"><span class="codeph"> NETWORK_DOWN  </span> </td> 
-   <td colname="col3"> 사용자의 네트워크 연결이 끊어졌습니다. 재생을 중단하거나 연결이 해제되면 다시 시작됩니다. </td> 
+   <td colname="col3"> 사용자의 네트워크 연결이 끊겼습니다. 재생은 언제라도 중지될 수 있으며 연결을 사용할 수 있으면 다시 시작됩니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 45 </td> 
@@ -264,7 +261,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 46 </td> 
    <td colname="col2"><span class="codeph"> BAD_MANIFEST_SIGNATURE</span> </td> 
-   <td colname="col3"> 매니페스트의 서명이 잘못되었습니다. 매니페스트 서명 테스트에 실패했습니다. </td> 
+   <td colname="col3"> 매니페스트에 잘못된 서명이 있습니다. 매니페스트 서명 테스트에 실패했습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 47 </td> 
@@ -274,17 +271,17 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 48 </td> 
    <td colname="col2"><span class="codeph"> REPLACEMENT_FAILED</span> </td> 
-   <td colname="col3"> 삽입 API에 지정된 대체가 실패할 수 있습니다. 삽입에 성공했지만 대체가 되지 않았음을 의미합니다. 교체할 매니페스트를 타임라인에서 제거한 경우 교체가 실패할 수 있습니다. </td> 
+   <td colname="col3"> 삽입 API에 지정된 대체가 실패했습니다. 삽입에 성공했지만 대체가 되지 않았음을 의미합니다. 교체할 매니페스트를 타임라인에서 제거한 경우 교체가 실패할 수 있습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 49 </td> 
    <td colname="col2"><span class="codeph"> SWITCH_TO_비대칭_PROFILE</span> </td> 
-   <td colname="col3"> DRM이 비대칭 프로파일로 전환하고 있습니다. 모든 프로파일은 지속 시간 동안 정렬될 예정입니다. 그렇지 않으면 이 경고가 발생하고 재생 중에 이동할 수 있습니다. </td> 
+   <td colname="col3"> DRM이 비대칭 프로파일로 전환되고 있습니다. 모든 프로필은 지속 시간 단위로 정렬될 예정입니다. 그렇지 않으면 이 경고가 발생하고 재생 중에 이동할 수 있습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 50 </td> 
    <td colname="col2"><span class="codeph"> LIVE_WINDOW_MOVED_BACKWARD</span> </td> 
-   <td colname="col3"> 라이브 창은 앞으로만 이동할 예정입니다. 그렇지 않으면 이 경고가 발생하고 창을 읽을 수 없습니다. 이로 인해 재생에 이동(또는 중지/장시간 일시 중지)이 있을 수 있습니다. </td> 
+   <td colname="col3"> 라이브 창은 앞으로 이동만 예상됩니다. 그렇지 않으면 이 경고가 발생하고 윈도우를 읽을 수 없습니다. 이로 인해 재생에 이동(또는 중지/긴 일시 중지)이 있을 수 있습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 51 </td> 
@@ -299,21 +296,21 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 53 </td> 
    <td colname="col2"><span class="codeph"> PERIOD_HOLD</span> </td> 
-   <td colname="col3"> 미디어 판독기가 setHoldAt API에서 설정한 시간에 도달했기 때문에 더 이상 읽을 수 없습니다. </td> 
+   <td colname="col3"> 미디어 판독기가 setHoldAt API에 의해 설정된 시간에 도달했으므로 더 이상 읽을 수 없습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 54 </td> 
    <td colname="col2"><span class="codeph"> LIVE_HOLD  </span> </td> 
-   <td colname="col3"> 미디어 판독기가 라이브 창의 끝에 도달하여 세그먼트를 로드할 수 없습니다. 서버가 새 미디어를 라이브 창에 광고를 하면 세그먼트 로드가 다시 시작됩니다. 이 상태는 일반적으로 다음과 같은 경우에 도달합니다. 
+   <td colname="col3"> 미디어 판독기가 라이브 창의 끝에 도달하여 세그먼트를 로드할 수 없습니다. 서버가 새 미디어를 라이브 창에 추가하면 세그먼트 로드가 다시 시작됩니다. 이 상태는 일반적으로 다음과 같은 경우에 도달합니다. 
     <ul id="ul_FCFF658EDA4144E59970B317D6DEB624"> 
-     <li id="li_2F6EEEB782D54CD999BC7CC7C0B78B48">bufferTime이 너무 높음(라이브 창 지속 시간과 같거나 높음). </li> 
-     <li id="li_25CE97115ED64E44AA89977FB5F0DCF7">하나 이상의 삽입/지우기 API가 조합되어 추가된 것보다 더 많은 미디어를 대체합니다. </li> 
+     <li id="li_2F6EEEB782D54CD999BC7CC7C0B78B48">bufferTime이 너무 높음(라이브 윈도우 지속 시간과 같거나 높음). </li> 
+     <li id="li_25CE97115ED64E44AA89977FB5F0DCF7">하나 이상의 삽입/지우기 API를 조합하여 추가한 것보다 더 많은 미디어를 대체합니다. </li> 
      <li id="li_1B14716B2157492AB1859306D1250523">다음 기간은 보류 중인 미디어 교체(InsertBy API 호출로 인해)가 있는 라이브 기간입니다 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 55 </td> 
-   <td colname="col2"><span class="codeph"> BAD_MEDIA_INTERLEAVING  </span> </td> 
+   <td colname="col2"><span class="codeph"> BAD_MEDIA_INTERLEWING  </span> </td> 
    <td colname="col3"> 미디어의 오디오 및 비디오 인터리브가 제대로 수행되지 않습니다. 패키징 오류입니다. 차이가 2초를 초과하면 경고가 전달됩니다. </td> 
   </tr> 
   <tr> 
@@ -322,49 +319,49 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 57년 </td> 
+   <td colname="col1"> 57 </td> 
    <td colname="col2"><span class="codeph"> PLAYBACK_NOT_AUTHORIZED</span> </td> 
    <td colname="col3"> Flash Player에서 HLS 재생이 활성화되지 않았습니다. AuthorizedFeatures.enableHLSPlayback을 참조하십시오. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 58년 </td> 
+   <td colname="col1"> 58 </td> 
    <td colname="col2"><span class="codeph"> BAD_MEDIA_SAMPLE_FOUND</span> </td> 
-   <td colname="col3"> 디코더가 디코딩할 수 없는 잘못된 샘플을 받았습니다. 이는 일반적으로 치명적인 오류가 아니지만 오디오/비디오에 문제가 있을 수 있음을 나타냅니다. 이 오류의 인스턴스가 너무 많으면 인코딩이 잘못되거나 파일이 잘못되었음을 나타냅니다. </td> 
+   <td colname="col3"> 디코더가 디코딩할 수 없는 잘못된 샘플을 받았습니다. 이것은 보통 치명적인 오류는 아니지만 오디오/비디오에 문제가 있을 수 있음을 나타냅니다. 이 오류의 인스턴스가 너무 많으면 인코딩이 잘못되거나 파일이 잘못되었음을 나타냅니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 59 </td> 
    <td colname="col2"><span class="codeph"> RANGE_SPANS_READ_HEAD</span> </td> 
-   <td colname="col3"> 재생을 시작한 후에는 삽입/바꾸기 범위에 읽기 헤드가 포함되어서는 안 됩니다. </td> 
+   <td colname="col3"> 재생이 시작되면 삽입/바꾸기 범위에 읽기 헤드가 포함되지 않아야 합니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 60 </td> 
    <td colname="col2"><span class="codeph"> POSTROLL_WITH_LIVE_NOT_ALLOWED</span> </td> 
-   <td colname="col3"> 라이브 미디어에서는 포스트롤 삽입이 허용되지 않습니다. 그러나 서버가 미디어를 완료로 표시한 후에 허용됩니다. </td> 
+   <td colname="col3"> 포스트롤 삽입은 라이브 미디어에 사용할 수 없습니다. 그러나 서버가 미디어를 완료로 표시한 후에 허용됩니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 81 </td> 
+   <td colname="col1"> 61 </td> 
    <td colname="col2"><span class="codeph"> INTERNAL_ERROR</span> </td> 
-   <td colname="col3"> 절대 일어나서는 안 되는 매우 드문 문제죠. </td> 
+   <td colname="col3"> 절대로 일어나지 말아야 할 아주 드문 문제입니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 62 </td> 
    <td colname="col2"><span class="codeph"> SPS_PPS_FOUND_OUTSIDE_AVCC</span> </td> 
-   <td colname="col3"> 스트림은 항상 H264 SPS/PPS를 AVCC에 넣는 패키지 권장 사항을 따르지 않습니다. 검색/재생 문제가 표시될 수 있습니다. </td> 
+   <td colname="col3"> 스트림은 항상 H264 SPS/PPS를 AVCC에 배치하는 패키징 권장 사항을 따르지 않습니다. 검색/재생 문제가 표시될 수 있습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 63 </td> 
    <td colname="col2"><span class="codeph"> PARTIAL_REPLACEMENT</span> </td> 
-   <td colname="col3"> 삽입 API에 지정된 대체는 부분적으로만 수행되었습니다. 이 문제는 ReplaceDuration 범위가 타임라인 기간에 걸쳐 있을 때 발생합니다. </td> 
+   <td colname="col3"> 삽입 API에 지정된 대체는 부분적으로만 수행되었습니다. 이 문제는 타임라인 지속 시간에 걸쳐 replaceDuration 범위가 확장될 때 발생합니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 64 </td> 
    <td colname="col2"><span class="codeph"> RENDITION_M3U8_ERROR</span> </td> 
-   <td colname="col3"> 변환 재생 목록을 로드하는 동안 오류가 발생했습니다. 이는 AVE용이지 FlashPlayer용은 아닙니다. </td> 
+   <td colname="col3"> 변환 재생 목록을 로드하는 동안 오류가 발생했습니다. 이것은 AVE용이지 FlashPlayer용은 아닙니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 65 </td> 
    <td colname="col2"><span class="codeph"> NULL_OPERATION</span> </td> 
-   <td colname="col3"> 수술은 아무 것도 하지 않습니다. </td> 
+   <td colname="col3"> 작업이 아무 작업도 수행되지 않습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 66 </td> 
@@ -414,7 +411,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 75 </td> 
    <td colname="col2"><span class="codeph"> LISTENER_NOT_FOUND</span> </td> 
-   <td colname="col3"> 내부 데이터 구조에 수신기가 없습니다. </td> 
+   <td colname="col3"> 내부 데이터 구조에 리스너가 없습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 76 </td> 
@@ -427,7 +424,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
    <td colname="col3"> 내부 데이터 구조에 오디오 싱크가 없습니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 78 </td> 
+   <td colname="col1"> 58 </td> 
    <td colname="col2"><span class="codeph"> FILE_OPEN_ERROR</span> </td> 
    <td colname="col3"> 파일을 열 수 없습니다. </td> 
   </tr> 
@@ -442,7 +439,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
    <td colname="col3"> 파일에서 읽을 수 없습니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 81 </td> 
+   <td colname="col1"> 61 </td> 
    <td colname="col2"><span class="codeph"> ID3PARSE_ERROR</span> </td> 
    <td colname="col3"> ID3 데이터를 구문 분석하는 동안 오류가 발생했습니다. </td> 
   </tr> 
@@ -464,7 +461,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
    <td colname="col1"> 85 </td> 
    <td colname="col2"><span class="codeph"> AUDIO_ONLY_STREAM_END</span> </td> 
-   <td colname="col3"> 스트림은 오디오 전용 스트림에서 비디오가 포함된 스트림으로 전환되었습니다. </td> 
+   <td colname="col3"> 스트림이 비디오가 포함된 스트림으로 오디오 전용에서 전환되었습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 87 </td> 
@@ -477,7 +474,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
    <td colname="col3"> 키가 잘못되었습니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 89년 </td> 
+   <td colname="col1"> 89 </td> 
    <td colname="col2"> <span class="codeph"> KEY_SERVER_NOT_FOUND</span> </td> 
    <td colname="col3"> 키 서버에서 키를 반환하지 않습니다. </td> 
   </tr> 
@@ -487,14 +484,14 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
    <td colname="col3"> 주 매니페스트 업데이트를 처리할 수 없습니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 91년 </td> 
+   <td colname="col1"> 91 </td> 
    <td colname="col2"> <span class="codeph"> UNREPORTED_TIME_DISCONTINUITY_FOUND</span> </td> 
    <td colname="col3"> 보고되지 않은 시간(PTS) 불연속성이 있습니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 92년 </td> 
+   <td colname="col1"> 92 </td> 
    <td colname="col2"> <span class="codeph"> UNMATCHED_AV_DISCONTINUITY_FOUND</span> </td> 
-   <td colname="col3"> 탁월한 오디오 및 비디오 연속성이 없습니다. </td> 
+   <td colname="col3"> 일치하지 않는 오디오 및 비디오 연속성이 있습니다. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 93 </td> 
@@ -502,9 +499,9 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
    <td colname="col3"><i>trick play</i> 모드에서 미디어를 재생하는 동안 오류가 발생했습니다. 트릭 재생 모드가 종료되고 스트림이 일시 중지됩니다. 일반 모드에서 미디어를 재생하려면 <span class="codeph"> Play()</span>를 호출합니다. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 95년 </td> 
+   <td colname="col1"> 95 </td> 
    <td colname="col2"><span class="codeph"> LIVE_WINDOW_MOVED_AHEAD</span> </td> 
-   <td colname="col3"> 그 선수는 라이브 윈도우 밖에 있어서 앞으로 나아가 따라잡아야 한다. </td> 
+   <td colname="col3"> 그 선수는 라이브 윈도우를 벗어나서 앞으로 나아가 따라가야 한다. </td> 
   </tr> 
  </tbody> 
 </table>
