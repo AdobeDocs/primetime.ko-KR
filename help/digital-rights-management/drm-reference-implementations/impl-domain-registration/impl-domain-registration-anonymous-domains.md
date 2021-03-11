@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 익명 도메인 논리
 title: 익명 도메인 논리
-uuid: bd0e8e51-27dc-4ccf-b285-a80c2ab9e260
+description: 익명 도메인 논리
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -28,7 +26,7 @@ ht-degree: 0%
    * `authentication is not required`
    * `no membership maximum`
 
-   요청된 도메인에 인증이 필요한 경우 유효한 인증 토큰이 요청에 있는지 확인하십시오. 데이터베이스에 인증 네임스페이스가 지정된 경우 토큰이 지정된 인증 네임스페이스와 일치해야 합니다.
+   요청된 도메인에 인증이 필요한 경우 유효한 인증 토큰이 요청에 있는지 확인하십시오. 데이터베이스에 인증 네임스페이스가 지정된 경우 토큰은 지정된 인증 네임스페이스와 일치해야 합니다.
 1. 인증이 필요하지만 유효한 인증 토큰을 사용할 수 없는 경우 오류 `DOM_AUTHENTICATION_REQUIRED (503)`을(를) 반환합니다.
 1. 장치가 도메인에 등록되어 있는지 확인합니다.
 
@@ -37,10 +35,10 @@ ht-degree: 0%
    1. 새 컴퓨터인 경우 `DomainMembership` 테이블에 항목을 추가합니다.
    1. 새 장치이고 `Max Membership` 값에 도달한 경우 `DOM_LIMIT_REACHED (502)` 오류를 반환합니다.
 
-1. `DomainKeys` 테이블에서 이 도메인에 대한 모든 도메인 키를 찾습니다.
+1. `DomainKeys` 테이블에서 이 도메인의 모든 도메인 키를 찾습니다.
 
    1. `DomainServerInfo`이 키를 롤오버해야 함을 나타내는 경우 새 키 쌍을 생성합니다.
-   1. 키 버전은 기존 키보다 한 배 더 높은 `DomainKeys` 테이블에 키를 저장합니다.
+   1. 키 버전이 기존 키보다 1배 높은 `DomainKeys` 테이블에 키 쌍을 저장합니다.
    1. `DomainServerInfo`에서 `Key Rollover Required` 플래그를 재설정합니다.
 
    1. 각 도메인 키에 대해 도메인 자격 증명을 생성합니다.
@@ -53,11 +51,11 @@ ht-degree: 0%
 1. `DomainServerInfo` 테이블에서 요청된 도메인 이름을 찾습니다.
 1. 요청된 도메인에 인증이 필요한 경우 요청에 유효한 인증 토큰이 있는지 확인하십시오.
 
-   토큰은 데이터베이스에 지정된 인증 네임스페이스와 일치해야 합니다.
+   토큰도 데이터베이스에 지정된 인증 네임스페이스와 일치해야 합니다.
 1. `DomainMembership` 테이블에서 도메인 이름과 컴퓨터 GUID를 찾습니다.
 
-   일치하는 항목을 찾을 수 없으면 오류 `DEREG_DENIED (401)`을(를) 반환합니다.
+   일치하는 항목을 찾을 수 없으면 `DEREG_DENIED (401)` 오류를 반환합니다.
 
 1. 미리 보기 요청이 아닌 경우 `DomainMembership`에서 항목을 삭제하고 `DomainServerInfo`에서 `Key Rollover Required` 플래그를 설정합니다.
 
-많은 수의 컴퓨터가 도메인에 참여할 수 있으므로 컴퓨터 ID와 일치하면 안 됩니다. 대신 개인화 동안 컴퓨터에 할당된 무작위 컴퓨터 GUID가 적용됩니다.
+많은 수의 컴퓨터가 도메인에 참여할 수 있으므로 컴퓨터 ID와 일치하면 안 됩니다. 대신 개별 설정 중에 컴퓨터에 할당된 임의 컴퓨터 GUID가 적용됩니다.
