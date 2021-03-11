@@ -1,13 +1,10 @@
 ---
 description: 폴백 규칙을 사용하는 VAST(Digital Video Ad Serving Template) 광고(또는 크리에이티브)의 경우 TVSDK는 잘못된 미디어 유형의 광고를 빈 광고로 취급하며 대신 폴백 광고를 사용합니다. 폴백 동작의 일부 측면을 구성할 수 있습니다.
-seo-description: 폴백 규칙을 사용하는 VAST(Digital Video Ad Serving Template) 광고(또는 크리에이티브)의 경우 TVSDK는 잘못된 미디어 유형의 광고를 빈 광고로 취급하며 대신 폴백 광고를 사용합니다. 폴백 동작의 일부 측면을 구성할 수 있습니다.
-seo-title: 광활한 VMAP 광고 대비 폴백
 title: 광활한 VMAP 광고 대비 폴백
-uuid: 7b44abf9-50cf-4e39-b594-ceb52208a865
 translation-type: tm+mt
-source-git-commit: cecc559480b9b52c412fefff4361603d6f14caf7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
