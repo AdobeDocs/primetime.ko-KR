@@ -1,13 +1,10 @@
 ---
-description: MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 제어할 수 있습니다.
-seo-description: MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 제어할 수 있습니다.
-seo-title: 비디오 보기의 위치 및 크기 제어
+description: MediaPlayerView 객체를 사용하여 비디오 보기의 위치와 크기를 제어할 수 있습니다.
 title: 비디오 보기의 위치 및 크기 제어
-uuid: 2231c574-03cd-45a8-ab00-4a42f8e044f0
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -15,15 +12,15 @@ ht-degree: 0%
 
 # 비디오 보기{#control-the-position-and-size-of-the-video-view}의 위치와 크기를 제어합니다.
 
-MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 제어할 수 있습니다.
+MediaPlayerView 객체를 사용하여 비디오 보기의 위치와 크기를 제어할 수 있습니다.
 
-기본적으로 TVSDK는 비디오의 크기 또는 위치가 변경될 때마다(응용 프로그램, 프로필 전환 또는 컨텐츠 전환 등으로 인해) 비디오 보기의 종횡비를 유지하려고 합니다.
+TVSDK는 기본적으로 비디오의 크기 또는 위치가 변경될 때마다(응용 프로그램, 프로필 스위치 또는 컨텐츠 전환 등으로 인해) 비디오 보기의 종횡비를 유지하려고 합니다.
 
-다른 *비율 정책*&#x200B;을 지정하여 기본 종횡비 동작을 재정의할 수 있습니다. `MediaPlayerView` 개체의 `scalePolicy` 속성을 사용하여 비율 정책을 지정합니다. `MediaPlayerView`의 기본 비율 정책이 `MaintainAspectRatioScalePolicy` 클래스의 인스턴스로 설정됩니다. 비율 정책을 재설정하려면 `MediaPlayerView.scalePolicy`의 기본 인스턴스 `MaintainAspectRatioScalePolicy`을(를) 자신의 정책으로 바꾸십시오. `scalePolicy` 속성은 null 값으로 설정할 수 없습니다.
+다른 *비율 정책*&#x200B;을 지정하여 기본 종횡비 동작을 재정의할 수 있습니다. `MediaPlayerView` 개체의 `scalePolicy` 속성을 사용하여 비율 정책을 지정합니다. `MediaPlayerView`의 기본 비율 정책은 `MaintainAspectRatioScalePolicy` 클래스의 인스턴스로 설정됩니다. 비율 정책을 재설정하려면 `MediaPlayerView.scalePolicy`에 있는 `MaintainAspectRatioScalePolicy`의 기본 인스턴스를 자신의 정책으로 바꾸십시오. `scalePolicy` 속성은 null 값으로 설정할 수 없습니다.
 
 1. `MediaPlayerViewScalePolicy` 인터페이스를 구현하여 고유한 비율 정책을 만듭니다.
 
-   `MediaPlayerViewScalePolicy`에는 다음 메서드가 있습니다.
+   `MediaPlayerViewScalePolicy`에는 하나의 메서드가 있습니다.
 
    ```
    public function adjust(viewPort:Rectangle, 
@@ -78,7 +75,7 @@ MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 �
 
 <!--<a id="example_7B08ECCDA17B4DD191FC672BD1F4C850"></a>-->
 
-**예:종횡비를 유지하면서 전체 비디오 보기를 채우도록 비디오 크기를 조정합니다.**
+**예:종횡비를 유지하지 않고 전체 비디오 보기를 채우도록 비디오 크기를 조정합니다.**
 
 ```
 package com.adobe.mediacore.samples.utils { 
