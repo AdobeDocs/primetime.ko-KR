@@ -1,25 +1,22 @@
 ---
-description: 기본적으로 DVR이 지원되는 라이브 스트림은 뷰어가 일시 중지되고 검색할 수 있는 검색 가능한 범위를 노출합니다.
-seo-description: 기본적으로 DVR이 지원되는 라이브 스트림은 뷰어가 일시 중지되고 검색할 수 있는 검색 가능한 범위를 노출합니다.
-seo-title: 광고 삽입 없이 DVR
+description: 기본적으로 DVR이 지원되는 실시간 스트림은 뷰어가 일시 정지하거나 검색할 수 있는 검색 가능한 범위를 표시합니다.
 title: 광고 삽입 없이 DVR
-uuid: e516be00-bb18-4119-ae0d-a79a35f4bd20
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
 
-# 광고 삽입 없이 DVR{#dvr-without-ad-insertion}
+# 광고 삽입 없이 DVR {#dvr-without-ad-insertion}
 
-기본적으로 DVR이 지원되는 라이브 스트림은 뷰어가 일시 중지되고 검색할 수 있는 검색 가능한 범위를 노출합니다.
+기본적으로 DVR이 지원되는 실시간 스트림은 뷰어가 일시 정지하거나 검색할 수 있는 검색 가능한 범위를 표시합니다.
 
 다음과 같은 추가 기능을 사용하여 DVR용 플레이어 제어 막대를 향상시킬 수 있습니다.
 
-* 컨트롤 막대 측면에 현재 재생 타임스탬프와 나머지 타임스탬프를 숨깁니다.
+* 컨트롤 모음 측면에 현재 재생 타임스탬프와 나머지 타임스탬프를 숨깁니다.
 * 컨트롤 모음에서 검색 가능한 범위를 강조 표시합니다.
 * 스트림 재생 범위 대신 컨트롤 막대의 지속 시간을 스트림의 검색 가능한 범위로 변경합니다.
 
