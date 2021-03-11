@@ -1,13 +1,10 @@
 ---
 description: Bento4 Packager와 Adobe 오프라인 패키지를 모두 사용하여 암호화된 DASH 컨텐츠를 작성합니다. Bento4는 암호화되지 않은 mp4 컨텐츠를 입력으로 사용합니다.
-seo-description: Bento4 Packager와 Adobe 오프라인 패키지를 모두 사용하여 암호화된 DASH 컨텐츠를 작성합니다. Bento4는 암호화되지 않은 mp4 컨텐츠를 입력으로 사용합니다.
-seo-title: Bento4로 컨텐츠 패키징
 title: Bento4로 컨텐츠 패키징
-uuid: 88323a4e-d0b5-4a41-acec-7126d3e0c90b
 translation-type: tm+mt
-source-git-commit: 75702ea2a524d7b38bb9ac83cb094c8482b1098f
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -19,11 +16,11 @@ Bento4 Packager와 Adobe 오프라인 패키지를 모두 사용하여 암호화
 
 ## Bento4{#package-your-content-with-bento}로 컨텐츠 패키징
 
-Bento4 패키저에서는 입력 mp4가 미리 조각화되어 있어야 합니다. Bento4 Packager 배포에는 이를 위한 도구가 포함되어 있습니다.
+Bento4 패키저에서는 입력 mp4가 사전에 조각화되어 있을 것으로 예상하고 있습니다. Bento4 Packager 배포에는 이와 관련된 도구가 포함되어 있습니다.
 
-**Bento4 호출**
+**벤토4를 호출하는 중**
 
-일반적인 Bento4 Packager 호출은 아래 예제와 비슷합니다.
+일반적인 Bento4 Packager 호출은 아래 예와 비슷합니다.
 
 ```
 ./mp4dash
@@ -48,7 +45,7 @@ Bento4 패키저에서는 입력 mp4가 미리 조각화되어 있어야 합니�
 --playready-header=\"LA_URL:http://pr.test.expressplay.com/playready/RightsManager.asmx\"
 ```
 
-아래 예에는 PlayReady 및 Widevin 체계가 결합되어 있습니다. 이 경우 Packager는 Widevine 컨텐츠 보호 및 PlayReady 컨텐츠 보호 초기화 데이터를 출력 DASH 컨텐츠에 추가하고 있습니다.
+아래 예제는 PlayReady 및 Widevin 스킴을 결합합니다. 이 경우 Packager는 Widevine 컨텐츠 보호 및 PlayReady 컨텐츠 보호 초기화 데이터를 출력 DASH 컨텐츠에 추가하고 있습니다.
 
 ```
 /mp4dash
@@ -70,13 +67,13 @@ where
 
 `--widevine-header=provider:intertrust#content_id:2a` 플래그는 현재 재생에 필요한 TVSDK인 매니페스트에 pssh 상자를 포함하도록 패키저에게 알립니다.
 
-`-playready-header`의 값은 PlayReady 라이선스 계정에 사용됩니다.
+`-playready-header`의 값은 PlayReady 라이센스 획득에 사용됩니다.
 
-## Adobe Offline Packager {#package-your-content-with-adobe-offline-packager}로 콘텐트 패키징
+## Adobe Offline Packager {#package-your-content-with-adobe-offline-packager}을(를) 사용하여 콘텐트 패키징
 
-Adobe Offline Packager는 암호화되지 않은 mp4 컨텐츠를 입력으로 사용합니다.
+Adobe Offline Packager는 암호화되지 않은 mp4 콘텐츠를 입력으로 사용합니다.
 
-**Adobe 오프라인 패키저 호출**
+**Adobe Offline Packager 호출**
 
 일반적인 adobe 오프라인 패키지 호출은 아래 호출과 비슷합니다.
 
@@ -92,7 +89,7 @@ http://pr.test.expressplay.com/playready/RightsManager.asmx
 -content_id c595f214d84dc7ecf31a8ebf1b7ddda5
 ```
 
-이 경우 오프라인 패키저가 Widevine 컨텐츠 보호 및 PlayReady 컨텐츠 보호 초기화 데이터를 출력 DASH 컨텐츠에 추가하고 있습니다. `-key_file_path`의 값은 base64 인코딩 키에 해당합니다. `-playready_LA_URL`의 값은 PlayReady 라이선스 계정에 사용됩니다.
+이 경우 오프라인 패키저에서 Widevine 컨텐츠 보호 및 PlayReady 컨텐츠 보호 초기화 데이터를 출력 DASH 컨텐츠에 추가하고 있습니다. `-key_file_path`의 값은 base64 인코딩 키에 해당합니다. `-playready_LA_URL`의 값은 PlayReady 라이센스 획득에 사용됩니다.
 
 conf_path 인수는 다음을 포함하는 구성 파일을 가리킵니다.
 
