@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 특별 사용 사례
 title: 특별 사용 사례
-uuid: 066bc256-4fdf-4083-b23e-0a916b3b532f
+description: 특별 사용 사례
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
@@ -65,4 +63,4 @@ TVSDK는 표준 광고 설정에 비해 사용자 지정 범위 설정을 선호
 
 1. 교체 기간이 있는 표시 및 DELETE 범위
 
-   대체 기간이 더 길지 않습니다.
+   대체 기간이 더 이상 무시됩니다.
