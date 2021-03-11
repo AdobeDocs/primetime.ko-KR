@@ -1,13 +1,10 @@
 ---
 description: Adobe Primetime 광고 결정 인터페이스를 사용하여 VOD 및 라이브/선형 컨텐츠에 광고를 삽입할 수 있습니다.
-seo-description: Adobe Primetime 광고 결정 인터페이스를 사용하여 VOD 및 라이브/선형 컨텐츠에 광고를 삽입할 수 있습니다.
-seo-title: 광고 요구 사항
 title: 광고 요구 사항
-uuid: 0287f1e4-746f-42e5-b811-409064dd9b13
 translation-type: tm+mt
-source-git-commit: 48ad8aad89701f8414e752a4d4e41da252d28d62
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
