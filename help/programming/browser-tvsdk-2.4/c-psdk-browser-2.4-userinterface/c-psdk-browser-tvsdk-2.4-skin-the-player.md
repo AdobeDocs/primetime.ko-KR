@@ -1,25 +1,22 @@
 ---
-description: 다음 정보를 사용하여 플레이어의 스킨을 지정할 수 있습니다. 각 시각적 구문에 대해 해당 동작이 기본 동작으로 언급됩니다.
-seo-description: 다음 정보를 사용하여 플레이어의 스킨을 지정할 수 있습니다. 각 시각적 구문에 대해 해당 동작이 기본 동작으로 언급됩니다.
-seo-title: 플레이어 스키닝
+description: 다음 정보를 사용하여 플레이어의 스킨을 지정할 수 있습니다. 각 시각적 구문에 대해 해당 비헤이비어가 기본 동작으로 언급됩니다.
 title: 플레이어 스키닝
-uuid: 516ff846-d76d-4062-b64b-3032f7a70470
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
 
 
-# 플레이어 스키닝 {#skinning-the-player}
+# 플레이어 {#skinning-the-player} 스키닝
 
-다음 정보를 사용하여 플레이어의 스킨을 지정할 수 있습니다. 각 시각적 구문에 대해 해당 동작이 기본 동작으로 언급됩니다.
+다음 정보를 사용하여 플레이어의 스킨을 지정할 수 있습니다. 각 시각적 구문에 대해 해당 비헤이비어가 기본 동작으로 언급됩니다.
 
 >[!IMPORTANT]
 >
->이 문서의 스키닝 세부 사항은 UI 프레임워크에서 만든 기본 UI 요소에 대한 것입니다. 플레이어에서 이러한 요소를 수정한 경우 스키닝 요소도 변경해야 합니다.
+>이 문서의 스키닝 세부 사항은 UI 프레임워크에서 만든 기본 UI 요소를 위한 것입니다. 플레이어에서 이러한 요소를 수정한 경우 스키닝 요소도 변경해야 합니다.
 
 ## 컨테이너 div {#section_99B0D598219D4150B57E97D5381B118F}
 
@@ -29,7 +26,7 @@ ht-degree: 0%
 >
 >이러한 div는 `common-styles.css` 파일에 나열됩니다.
 
-주 div의 스타일은 다음과 같습니다.
+main div의 스타일은 다음과 같습니다.
 
 <table id="table_AC5745DF725543ADBBCD68BA6130DF12"> 
  <thead> 
@@ -65,7 +62,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .view-as-main-video</span> </td> 
-   <td colname="col2"> <p>교체될 때 초기 PIP에 적용되어 기본 비디오로 표시됩니다. </p> </td> 
+   <td colname="col2"> <p>교체될 때 초기 PIP에 적용되며 기본 비디오로 표시됩니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>다중 비디오 보기</b> </p> </td> 
@@ -81,18 +78,18 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .multiview</span> </td> 
-   <td colname="col2"> <p>여러 보기에 있는 각 비디오가 들어 있는 컨테이너가 다중 보기에 있는 경우 </p> </td> 
+   <td colname="col2"> <p>여러 보기에 있는 각 비디오가 들어 있는 컨테이너가 다중 보기에 있는 경우. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 다양한 컨트롤 {#section_E9E4A8E3AEBF4BDC89840B84B3B0E737}
 
-다음은 일반 플레이어 컨트롤에 대한 스타일입니다.
+다음은 일반 플레이어 컨트롤의 스타일입니다.
 
 >[!TIP]
 >
->이러한 스타일은 `default-controls.css` 파일에 나열되어 있습니다.
+>이러한 스타일은 `default-controls.css` 파일에 나열됩니다.
 
 <table id="table_0ACB6BAB5DAD42DBBD18CA7C0385A261"> 
  <thead> 
@@ -112,7 +109,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-panel-header</span> </td> 
-   <td colname="col2"> <p>패널 헤더 </p> </td> 
+   <td colname="col2"> <p>패널 머리글 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-vertical-list-menu-item</span> </td> 
@@ -120,7 +117,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-fill-spacer</span> </td> 
-   <td colname="col2"> <p>컨트롤 막대의 공간 </p> </td> 
+   <td colname="col2"> <p>제어 막대의 공간 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-hr-separator</span> </td> 
@@ -140,7 +137,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-txt-control</span> </td> 
-   <td colname="col2"> <p>텍스트 컨트롤에 대한 기본 스타일입니다. </p> </td> 
+   <td colname="col2"> <p>텍스트 컨트롤의 기본 스타일입니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -158,7 +155,7 @@ ht-degree: 0%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><span class="codeph"> ptp-control-bar</span> (기본 동작)</td>
+   <td colname="col1"><span class="codeph"> ptp-control-bar</span> (기본 비헤이비어)</td>
    <td colname="col2"> <p>컨트롤 막대에 적용 가능 </p> </td> 
   </tr> 
  </tbody> 
@@ -168,9 +165,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음 표의 문자는 이 그림에 나와 있는 문자에 해당합니다.
+>다음 표의 문자는 이 그림에 있는 문자에 해당합니다.
 
-다음은 스크럽 막대의 스타일입니다.
+스크럽 막대의 스타일은 다음과 같습니다.
 
 <table id="table_2207AD72E72A47FFA03AC748F06A54FD"> 
  <thead> 
@@ -182,7 +179,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-scrub-bar</span> </td> 
-   <td colname="col2"> <p>컨트롤 막대의 스크롤 막대 </p> </td> 
+   <td colname="col2"> <p>컨트롤 막대의 스크러빙 막대 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-scrub-bar.ptp-buffer-progress-bar</span> </td> 
@@ -190,11 +187,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-scrub-bar.ptp-seek-to-bar</span> </td> 
-   <td colname="col2"> <p>사용자가 스크럽 표시줄을 검색하는 경우의 상태 </p> </td> 
+   <td colname="col2"> <p>사용자가 스크러빙 표시줄을 검색하는 경우의 상태 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-scrub-bar.ptp-playback-progress-bar</span> </td> 
-   <td colname="col2"> <p>일반 재생에서 스크럽 막대의 상태 </p> </td> 
+   <td colname="col2"> <p>일반 재생에서 스크러빙 막대의 상태 </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-scrub-bar.ptp-progress-bar-play-head</span> </td>
@@ -211,7 +208,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-기본 동작은 다음과 같습니다.
+기본 비헤이비어는 다음과 같습니다.
 
 * `scrubBarBehavior`
 * `bufferProgressBarBehavior`
@@ -221,7 +218,7 @@ ht-degree: 0%
 
 ## 재생/일시 정지 단추 {#section_F1F40A948D0049C5A4D8EA5F2A475CAA}
 
-재생/일시 정지 단추에 대한 스타일은 다음과 같습니다.
+재생/일시 정지 단추의 스타일은 다음과 같습니다.
 
 <table id="table_975C2293222A4782A8C75A6149C1AD27">
  <thead>
@@ -233,15 +230,15 @@ ht-degree: 0%
  <tbody>
   <tr>
    <td colname="col1"><span class="codeph"> ptp-btn-playpause</span> </td>
-   <td colname="col2"> <p>컨트롤 막대에서 [일시 정지] 단추 재생. </p> </td>
+   <td colname="col2"> <p>컨트롤 모음에서 [일시 정지] 단추 재생. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td>
-   <td colname="col2"> <p><span class="codeph"> ptp-btn-</span> playpage in pause state </p> </td>
+   <td colname="col2"> <p><span class="codeph"> ptp-btn-</span> playpause일시 정지 상태의 </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td> 
-   <td colname="col2"> <p><span class="codeph"> ptp-btn-</span> playpage in play state </p> </td>
+   <td colname="col2"> <p><span class="codeph"> 재생 </span> 상태의 ptp-btn-playpausein </p> </td>
   </tr>
  </tbody>
 </table>
@@ -287,7 +284,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-기본 동작은 `volumeBehavior` 및 `muteButtonBehavior`입니다.
+기본 비헤이비어는 `volumeBehavior` 및 `muteButtonBehavior`입니다.
 
 다음은 볼륨 슬라이더의 스타일입니다.
 
@@ -301,11 +298,11 @@ ht-degree: 0%
  <tbody>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-volume-slider</span> </td>
-   <td colname="col2"> <p>볼륨 슬라이더 </p> </td>
+   <td colname="col2"> <p>볼륨 슬라이더입니다. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-volume-hidden</span> </td>
-   <td colname="col2"> <p>숨겨진 상태의 볼륨 슬라이더 </p> </td>
+   <td colname="col2"> <p>숨겨진 상태의 볼륨 슬라이더입니다. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -325,8 +322,8 @@ ht-degree: 0%
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"><span class="codeph"> .ptp-btn-fastreaming</span> </td>
-   <td colname="col2"> <p>컨트롤 막대의 되감기 단추입니다. </p> </td>
+   <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td>
+   <td colname="col2"> <p>컨트롤 막대의 [되감기] 단추입니다. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -335,7 +332,7 @@ ht-degree: 0%
 
 ## 시간 {#section_0E6549B3DF6D4C10947D445A5F8EEA7F}
 
-다음은 컨트롤 막대에 남은 시간을 표시하는 스타일입니다.
+다음은 제어 막대에 남은 시간을 표시하는 스타일입니다.
 
 <table id="table_CEE62BFF5FB04FDCBBE1331E0D727EBA">
  <thead>
@@ -347,16 +344,16 @@ ht-degree: 0%
  <tbody>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-txt-display-time</span> </td>
-   <td colname="col2"> <p>컨트롤 막대에 남은 시간을 표시합니다. </p> </td>
+   <td colname="col2"> <p>제어 막대에 남은 시간을 표시합니다. </p> </td>
   </tr>
 </tbody>
 </table>
 
 기본 동작은 `timeRemainingBehavior`입니다.
 
-## 빨리 되감기 {#section_F6E6C65BD3BD493A89915DF9B92933BA}
+## {#section_F6E6C65BD3BD493A89915DF9B92933BA} 되감기
 
-패스트 되감기 버튼의 스타일은 다음과 같습니다.
+[빨리 감기] 단추의 스타일은 다음과 같습니다.
 
 <table id="table_25BB4966B709402383AB6A6822FC1999">
  <thead>
@@ -367,17 +364,17 @@ ht-degree: 0%
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"><span class="codeph"> .ptp-btn-fastreaming</span> </td>
-   <td colname="col2"> <p>컨트롤 막대의 [되감기] 단추 </p> </td>
+   <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td>
+   <td colname="col2"> <p>컨트롤 막대의 [되감기] 단추입니다. </p> </td>
   </tr>
  </tbody>
 </table>
 
 기본 동작은 `fastRewindButtonBehavior`입니다.
 
-## 느린 되감기 {#section_38A22BB8681B430F8C6808C3BD21FB4E}
+## {#section_38A22BB8681B430F8C6808C3BD21FB4E} 뒤로 감기
 
-다음은 느린 되감기 버튼의 스타일입니다.
+느린 되감기 버튼의 스타일은 다음과 같습니다.
 
 <table id="table_E623C374622A497C91E22333D77AF8F6">
  <thead>
@@ -388,8 +385,8 @@ ht-degree: 0%
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"><span class="codeph"> .ptp-btn-flowback</span> </td>
-   <td colname="col2"> <p>컨트롤 막대의 [되감기] 단추 </p> </td>
+   <td colname="col1"><span class="codeph"> .ptp-btn-slowback</span> </td>
+   <td colname="col2"> <p>컨트롤 막대의 느린 되감기 단추입니다. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -410,7 +407,7 @@ ht-degree: 0%
  <tbody>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-slowforward</span> </td>
-   <td colname="col2"> <p>컨트롤 막대의 [앞으로] 단추 </p> </td>
+   <td colname="col2"> <p>컨트롤 막대의 [뒤로] 단추. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -419,7 +416,7 @@ ht-degree: 0%
 
 ## 빨리 감기 {#section_F90ED8B3739B49ACAB1F12DF18F0E4D6}
 
-다음은 빠른 앞으로 단추 스타일입니다.
+다음은 빨리 감기 버튼의 스타일입니다.
 
 <table id="table_F166BD1E8B934B34AF3690BBBAD894B7">
  <thead>
@@ -488,7 +485,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-menu</span> </td>
-   <td colname="col2"> <p><span class="codeph"> ptp-audio-track-selection-panel</span>의 메뉴 항목입니다. </p> </td>
+   <td colname="col2"> <p><span class="codeph"> ptp-audio-track-selection-panel</span>의 메뉴 항목. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -506,7 +503,7 @@ ht-degree: 0%
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <p><b>소셜 미디어 공유 단추(O)</b> </p> </td>
+   <td colname="col1"> <p><b>소셜 미디어 공유 단추 (O)</b> </p> </td>
    <td colname="col2"> </td>
   </tr>
   <tr>
@@ -538,7 +535,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .share-video-panel-menu</span> </td>
-   <td colname="col2"> <p>소셜 미디어에서 컨텐츠를 공유하는 모든 옵션을 표시하는 <span class="codeph"> ptp-share-video-panel</span>의 메뉴 </p> </td>
+   <td colname="col2"> <p>소셜 미디어에서 컨텐츠를 공유하는 모든 옵션을 표시하는 <span class="codeph"> ptp-share-video-panel</span>의 메뉴. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-share-video-panel-menu-item</span> </td>
@@ -563,9 +560,9 @@ ht-degree: 0%
  </tbody>
 </table>
 
-## 자막 {#section_A01BA68218564DA0B7D6BF51F045D7AB}
+## 닫힌 캡션 {#section_A01BA68218564DA0B7D6BF51F045D7AB}
 
-다음은 자막을 구성하는 스타일입니다.
+다음은 폐쇄 캡션을 구성하는 스타일입니다.
 
 <table id="table_777C7034C9424F8C841DABD480FFAC47">
  <thead>
@@ -576,12 +573,12 @@ ht-degree: 0%
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <p><b>자막 단추(R)</b> </p> </td>
+   <td colname="col1"> <p><b>닫힌 캡션 단추(R)</b> </p> </td>
    <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-closed-caption</span> </td>
-   <td colname="col2"> <p>컨트롤 막대의 <span class="uicontrol"> 자막</span> 단추 </p> </td>
+   <td colname="col2"> <p>컨트롤 막대의 <span class="uicontrol"> 닫힌 캡션</span> 단추. </p> </td>
   </tr>
   <tr>
    <td colname="col1">기본 동작은 <span class="codeph"> closedCaptionButtonBehavior</span>입니다. </td>
@@ -589,15 +586,15 @@ ht-degree: 0%
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .on-state</span> </td>
-   <td colname="col2"> <p>비디오에 캡션이 활성화되어 있습니다. </p> </td>
+   <td colname="col2"> <p>비디오에 대해 캡션이 활성화되어 있습니다. </p> </td>
   </tr>
   <tr>
-   <td colname="col1"> <p><b>자막 패널</b> </p> </td>
+   <td colname="col1"> <p><b>닫힌 캡션 패널(S)</b> </p> </td>
    <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-panel</span> </td>
-   <td colname="col2"> <p>자막 패널. </p> </td>
+   <td colname="col2"> <p>닫힌 캡션의 패널입니다. </p> </td>
   </tr>
   <tr>
    <td colname="col1">기본 동작은 <span class="codeph"> closedCaptionLanguagePanelBehavior</span>입니다. </td>
@@ -613,19 +610,19 @@ ht-degree: 0%
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-menu:  </span> </td>
-   <td colname="col2"> <p>닫힌 캡션 패널의 메뉴 </p> </td>
+   <td colname="col2"> <p>닫힌 캡션 패널의 메뉴입니다. </p> </td>
   </tr>
   <tr>
-   <td colname="col1"> <p><b>자막 옵션(U)</b> </p> </td>
+   <td colname="col1"> <p><b>닫힌 캡션 옵션(U)</b> </p> </td>
    <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-btn</span> </td>
-   <td colname="col2"> <p>자막 옵션 패널의 <span class="uicontrol"> 옵션</span> 단추. </p> </td>
+   <td colname="col2"> <p>닫힌 캡션 옵션 패널의 <span class="uicontrol"> 옵션</span> 단추. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-panel</span> </td>
-   <td colname="col2"> <p>자막 패널의 옵션 패널 </p> </td>
+   <td colname="col2"> <p>닫힌 캡션 패널의 옵션 패널. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-menu-item</span> </td>
@@ -633,11 +630,11 @@ ht-degree: 0%
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .selected</span> </td>
-   <td colname="col2"> <p>선택한 상태에서 </p> </td>
+   <td colname="col2"> <p>선택한 상태에서. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-done-btn</span> </td> 
-   <td colname="col2"> <p>자막 옵션 패널의 헤더에 있는 <span class="uicontrol"> 완료</span> 단추. </p> </td> 
+   <td colname="col2"> <p>닫힌 캡션 옵션 패널의 헤더에 있는 <span class="uicontrol"> 완료</span> 단추. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-menu</span> </td> 
@@ -645,15 +642,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-main-menu</span> </td> 
-   <td colname="col2"> <p>닫힌 캡션 옵션의 주 메뉴. </p> </td> 
+   <td colname="col2"> <p>닫힌 캡션 옵션에 대한 기본 메뉴입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-sub-menu</span> </td> 
-   <td colname="col2"> <p>닫힌 캡션 옵션에 대한 하위 메뉴. </p> </td> 
+   <td colname="col2"> <p>닫힌 캡션 옵션에 대한 하위 메뉴입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-opacity-slider</span> </td> 
-   <td colname="col2"> <p>닫힌 캡션 옵션에 대한 불투명도 슬라이더 </p> </td> 
+   <td colname="col2"> <p>닫힌 캡션 옵션에 대한 불투명도 슬라이더입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-menu-separator</span> </td> 
@@ -673,7 +670,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-reset-button</span> </td> 
-   <td colname="col2"> <p>닫힌 캡션 옵션 패널의 바닥글에 있는 <span class="uicontrol"> 재설정</span> 단추입니다. </p> </td> 
+   <td colname="col2"> <p>닫힌 캡션 옵션 패널의 바닥글에 있는 <span class="uicontrol"> 재설정</span> 단추. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-apply-button</span> </td> 
@@ -703,19 +700,19 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-btn-more-options.ptp-control-bar-btn</span> </td> 
-   <td colname="col2"> <p>컨트롤 막대에 사용되는 <span class="codeph"> ptp-btn-more-options</span> </p> </td> 
+   <td colname="col2"> <p>제어 막대에 사용되는 <span class="codeph"> ptp-btn-more-options</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-more-options-control-panel</span> </td> 
-   <td colname="col2"> <p>추가 옵션 컨트롤 패널 </p> </td> 
+   <td colname="col2"> <p>추가 옵션 제어판. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-more-options-control-panel-menu</span> </td> 
-   <td colname="col2"> <p>추가 옵션 컨트롤 패널 메뉴 </p> </td> 
+   <td colname="col2"> <p>추가 옵션 제어판 메뉴 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-more-options-control-panel-menu-item</span> </td> 
-   <td colname="col2"> <p>추가 옵션 컨트롤 패널 메뉴 항목입니다. </p> </td> 
+   <td colname="col2"> <p>추가 옵션 컨트롤 패널 메뉴 항목. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -736,7 +733,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-btn-pip</span> </td> 
-   <td colname="col2"> <p>컨트롤 막대의 PIP 단추입니다. </p> </td> 
+   <td colname="col2"> <p>제어 막대의 PIP 단추입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1">기본 동작은 <span class="codeph"> pipButtonBehavior</span>입니다. </td> 
@@ -747,7 +744,7 @@ ht-degree: 0%
 
 ## 전체 화면(X) {#section_158A19DFB30E4432A67E4A74A7CBA563}
 
-전체 화면을 구성하는 스타일은 다음과 같습니다.
+다음은 전체 화면을 구성하는 스타일입니다.
 
 <table id="table_5941835F31AC4E9CBA9702AB8D813B8F"> 
  <thead> 
@@ -759,16 +756,16 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-btn-fullscreen</span> </td> 
-   <td colname="col2"> <p>컨트롤 막대의 <span class="uicontrol"> 전체 화면</span> 단추. </p> </td> 
+   <td colname="col2"> <p>제어 막대의 <span class="uicontrol"> 전체 화면</span> 단추. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 기본 동작은 `fullScreenButtonBehavior`입니다.
 
-## 트릭 플레이(Y) {#section_AE6F83BB7EE2497FB13CD94A8316192D}
+## 트릭 플레이 (Y) {#section_AE6F83BB7EE2497FB13CD94A8316192D}
 
-트릭 플레이를 구성하는 스타일입니다.
+다음은 트릭 재생을 구성하는 스타일입니다.
 
 <table id="table_F1ADAC0A4B4E48669828690BDEB4BC09"> 
  <thead> 
@@ -789,7 +786,7 @@ ht-degree: 0%
 
 ## 다중 보기(Z) {#section_58EFAE7263BA45D3A4E2AB7309A9CAA7}
 
-다중 보기를 구성하는 스타일입니다.
+다중 보기를 구성하는 스타일은 다음과 같습니다.
 
 <table id="table_84B37D7410EE40DFA7A8BB8431C6DCF0"> 
  <thead> 
@@ -801,7 +798,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-btn-multiview</span> </td> 
-   <td colname="col2"> <p>컨트롤 막대의 <span class="uicontrol"> MultiView</span> 단추 및 <span class="uicontrol"> Multisview</span> 단추의 초기 상태입니다. </p> </td> 
+   <td colname="col2"> <p>제어 막대의 <span class="uicontrol"> MultiView</span> 단추 및 <span class="uicontrol"> 다중 보기</span> 단추의 초기 상태. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1">기본 동작은 <span class="codeph"> multiViewButtonBehavior</span>입니다. </td> 
@@ -853,7 +850,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-error-message-panel-message</span> </td> 
-   <td colname="col2"> <p>표시되는 오류 메시지 </p> </td> 
+   <td colname="col2"> <p>표시되는 오류 메시지. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -883,7 +880,7 @@ ht-degree: 0%
 
 ## 특정 선택기 {#section_51F735AEF82E41E890FF59E031A0DB89}
 
-다음은 빠른 앞으로 단추 스타일입니다.
+다음은 빨리 감기 버튼의 스타일입니다.
 
 <table id="table_E77EDC7D227348E79C7E73FB5D46F992"> 
  <thead> 
@@ -898,17 +895,17 @@ ht-degree: 0%
    <td colname="col2"> <p>광고가 재생되는 동안 제어판의 상태입니다. </p> <p>다음 항목에 적용됩니다. 
      <ul id="ul_D5076303DCD94D968682289823D1A9F2"> 
       <li id="li_4290C4B2D48546E3AD023BED6CAAE395"><span class="codeph"> .ptp-btn-fastforward</span> </li> 
-      <li id="li_72A3D3E916E44A55BA170407EAB0527D"><span class="codeph"> .ptp-btn-fastreaming</span> </li> 
-      <li id="li_A0BAEBB0E01B402EB83E3CE9B92B15CC"><span class="codeph"> .ptp-btn-fastreaming</span> </li> 
+      <li id="li_72A3D3E916E44A55BA170407EAB0527D"><span class="codeph"> .ptp-btn-fastrewind</span> </li> 
+      <li id="li_A0BAEBB0E01B402EB83E3CE9B92B15CC"><span class="codeph"> .ptp-btn-fastrewind</span> </li> 
       <li id="li_FDF2CEDB0A854098907FF9CBCF1A61C1"><span class="codeph"> .ptp-btn-slowforward</span> </li> 
       <li id="li_CD2E14DB3DD64C10A253DA23FBE04A04"><span class="codeph"> .ptp-btn-slowforward</span> </li> 
-      <li id="li_A230359E8F7F4571A9EBFF0E4C2462D7"><span class="codeph"> .ptp-btn-flowback</span> </li> 
+      <li id="li_A230359E8F7F4571A9EBFF0E4C2462D7"><span class="codeph"> .ptp-btn-slowback</span> </li> 
       <li id="li_5711A315872F4FA59FDDF0EF0AFD03C6"><span class="codeph"> .ptp-btn-more-options  </span> </li> 
       <li id="li_71C8E76077A84ED590160AB5ABFCC0D7"><span class="codeph"> .ptp-btn-share-video</span> </li> 
       <li id="li_4A3113C0360F4F708AAA96AB316FA057"><span class="codeph"> .ptp-btn-closed-caption  </span> </li> 
       <li id="li_901A0186D65A48A1B774DC555CEC5367"><span class="codeph"> .ptp-btn-audio-track</span> </li> 
       <li id="li_2331583C01C2482B8EE72979FBF111DB"><span class="codeph"> .ptp-btn-pip  </span> </li> 
-      <li id="li_7BB39BDF5E294AEB8FA3DCD9F9A29468"><span class="codeph"> .ptp-btn-reflect</span> </li> 
+      <li id="li_7BB39BDF5E294AEB8FA3DCD9F9A29468"><span class="codeph"> .ptp-btn-rewind</span> </li> 
       <li id="li_E4FEF5A7486A40F6A5FE1119BD63AFEF"><span class="codeph"> .ptp-scrub-bar</span> </li> 
       <li id="li_12153547558A4871842EE0416BCCA8B2"><span class="codeph"> .ptp-seek-to-bar</span> </li> 
      </ul> </p> </td> 
