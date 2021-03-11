@@ -1,23 +1,20 @@
 ---
 description: 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
-seo-description: 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
-seo-title: 사용자 지정 컨텐츠 해결 프로그램 구현
 title: 사용자 지정 컨텐츠 해결 프로그램 구현
-uuid: 88627fdc-3b68-4a9f-847e-a490ea8e3034
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 
-# 사용자 지정 컨텐츠 확인자 {#implement-a-custom-content-resolver} 구현
+# 사용자 지정 내용 확인자 {#implement-a-custom-content-resolver} 구현
 
 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
 
-TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 해당 기회를 해결할 수 있는 기회를 찾습니다. true를 반환한 첫 번째 값이 기회를 해결하기 위해 선택됩니다. 컨텐츠 확인자가 없으면 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기적이므로, 컨텐츠 확인자는 프로세스가 완료되면 이를 알릴 책임이 있습니다.
+TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 해당 기회를 해결할 수 있는 기회를 찾습니다. true를 반환한 첫 번째 값이 기회를 해결하기 위해 선택됩니다. 컨텐츠 해결 프로그램을 사용할 수 없는 경우 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기적이므로, 컨텐츠 확인자는 프로세스가 완료되면 이를 알릴 책임이 있습니다.
 
 1. 사용자 지정 `AdvertisingFactory` 인스턴스를 만들고 `createContentResolver`을(를) 재정의합니다.
 
@@ -46,7 +43,7 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
    }
    ```
 
-1. 광고 클라이언트 팩터리를 `MediaPlayer`에 등록합니다.
+1. 광고 클라이언트 팩토리를 `MediaPlayer`에 등록합니다.
 
    예:
 
@@ -67,7 +64,7 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
    ```
 
 1. `ContentResolver` 클래스를 확장하는 사용자 지정 광고 확인자 클래스를 만듭니다.
-   1. 사용자 지정 광고 확인자에서 이 보호된 함수를 무시합니다.
+   1. 사용자 지정 광고 확인자에서 이 보호된 함수를 재정의합니다.
 
       ```java
       void doResolveAds(Metadata metadata,  
@@ -93,9 +90,9 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
       )
       ```
 
-   1. 광고가 해결되면 다음 기능 중 하나를 호출합니다.
+   1. 광고가 해결되면 다음 함수 중 하나를 호출합니다.
 
-      * 광고 해결이 성공한 경우:`notifyResolveComplete(Vector<TimelineOperation> proposals)`
+      * 광고 해결에 성공한 경우:`notifyResolveComplete(Vector<TimelineOperation> proposals)`
       * 광고 해결에 실패하는 경우:`notifyResolveError(Error error)`
 
       예를 들어, 실패할 경우:
