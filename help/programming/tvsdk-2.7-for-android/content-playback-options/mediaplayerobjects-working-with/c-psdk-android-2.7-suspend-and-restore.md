@@ -1,14 +1,11 @@
 ---
-description: 장치 화면이 꺼지고 켜져 있을 때 TVSDK MediaPlayer를 일시 중단하거나 복원하는 작업은 애플리케이션에서 처리해야 합니다.
-keywords: SurfaceView;Suspend;Restore;BroadcastReceiver
-seo-description: 장치 화면이 꺼지고 켜져 있을 때 TVSDK MediaPlayer를 일시 중단하거나 복원하는 작업은 애플리케이션에서 처리해야 합니다.
-seo-title: Media Player 일시 중단 및 복원
-title: Media Player 일시 중단 및 복원
-uuid: 7777af91-547c-4f7a-8818-3d46dccee7d6
+description: 장치 화면이 꺼지고 켜져 있을 때 TVSDK MediaPlayer를 일시 중단하거나 복원하는 작업은 응용 프로그램에서 처리해야 합니다.
+keywords: SurfaceView;일시 중단;복원;BroadcastReceiver
+title: MediaPlayer 일시 중단 및 복원
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -16,13 +13,13 @@ ht-degree: 0%
 
 # MediaPlayer 일시 중단 및 복원 {#suspend-and-restore-mediaplayer}
 
-장치 화면이 꺼지고 켜져 있을 때 TVSDK MediaPlayer를 일시 중단하거나 복원하는 작업은 애플리케이션에서 처리해야 합니다.
+장치 화면이 꺼지고 켜져 있을 때 TVSDK MediaPlayer를 일시 중단하거나 복원하는 작업은 응용 프로그램에서 처리해야 합니다.
 
-화면 켜기/끄기에 대해 Android의 브로드캐스트 수신기에서 `MediaPlayer`의 일시 중단 및 복원 작업을 처리할 수 있습니다.
+화면 켜기/끄기에 대해 Android의 브로드캐스트 수신기 내에서 `MediaPlayer`에 대해 일시 중단 및 복원 작업을 처리할 수 있습니다.
 
-TVSDK는 조각(또는 활동)이 배경 또는 전경에 있는 시기를 확인할 수 없습니다. 또한 Android `SurfaceView`은 장치 화면이 꺼져도(활동이 일시 중지됨) Android가 파괴되지 않습니다. 그러나 장치에서 응용 프로그램을 백그라운드로 가져올 때 `SurfaceView` *은 파괴됩니다.* TVSDK는 이러한 변경 사항을 감지할 수 없으므로 응용 프로그램에서 이 변경 사항을 처리해야 합니다.
+TVSDK는 조각(또는 활동)이 배경 또는 전경에 있는 시기를 확인할 수 없습니다. 또한 Android `SurfaceView`은 장치 화면이 꺼져도(활동이 일시 중지됨) Android는 삭제되지 않습니다. 그러나 장치에서 응용 프로그램을 배경에 넣으면 `SurfaceView` *이*&#x200B;가 삭제됩니다. TVSDK는 이러한 변경 사항을 감지할 수 없으므로 응용 프로그램에서 처리해야 합니다.
 
-다음 샘플 코드는 장치 화면이 애플리케이션 수준에서 켜지고 꺼질 때 응용 프로그램에서 `MediaPlayer`의 일시 중단 및 복원을 처리하는 방법입니다.
+다음 샘플 코드는 응용 프로그램 수준에서 장치 화면이 켜지고 꺼질 때 응용 프로그램에서 `MediaPlayer`의 일시 중단 및 복원을 처리하는 방법입니다.
 
 ```java
 // Track the state of a fragment to determine if it is PAUSED or RESUMED 
