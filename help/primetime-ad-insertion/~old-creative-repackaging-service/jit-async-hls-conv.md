@@ -1,13 +1,10 @@
 ---
-description: CRS는 적시(JIT) 및 비동기 재패키징 및 HLS-HLS 간 변환을 제공합니다. 재패키징 결과는 원본 광고 크리에이티브의 HLS 형식 버전입니다. CRS는 HLS 형식 버전을 필요할 때 사용할 수 있도록 CDN(Content Delivery Network) 서버에 배치합니다.
-seo-description: CRS는 적시(JIT) 및 비동기 재패키징 및 HLS-HLS 간 변환을 제공합니다. 재패키징 결과는 원본 광고 크리에이티브의 HLS 형식 버전입니다. CRS는 HLS 형식 버전을 필요할 때 사용할 수 있도록 CDN(Content Delivery Network) 서버에 배치합니다.
-seo-title: CRS의 기본 사용
+description: CRS는 JIT(Just-In-Time) 및 비동기 재패키징 및 HLS-HLS 간 변환을 제공합니다. 재패키징 결과는 원본 광고 크리에이티브의 HLS 형식 버전입니다. CRS는 HLS 형식 버전을 필요할 때 사용할 수 있도록 CDN(Content Delivery Network) 서버에 배치합니다.
 title: CRS의 기본 사용
-uuid: df2caa67-bc94-4146-9b93-14edc060c3d5
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # CRS {#main-uses-of-crs}의 기본 사용
 
-CRS는 적시(JIT) 및 비동기 재패키징 및 HLS-HLS 간 변환을 제공합니다. 재패키징 결과는 원본 광고 크리에이티브의 HLS 형식 버전입니다. CRS는 HLS 형식 버전을 필요할 때 사용할 수 있도록 CDN(Content Delivery Network) 서버에 배치합니다.
+CRS는 JIT(Just-In-Time) 및 비동기 재패키징 및 HLS-HLS 간 변환을 제공합니다. 재패키징 결과는 원본 광고 크리에이티브의 HLS 형식 버전입니다. CRS는 HLS 형식 버전을 필요할 때 사용할 수 있도록 CDN(Content Delivery Network) 서버에 배치합니다.
 
 JIT에서 Adobe Primetime 광고 삽입은 HLS가 아닌 광고 크리에이티브가 발견되면 재패키징 프로세스를 시작합니다. 일반적으로 재패키징 프로세스 중에 광고를 실행할 수 있는 기회를 잃게 됩니다.
 
