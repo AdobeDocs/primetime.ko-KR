@@ -1,13 +1,10 @@
 ---
-description: Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체로 표시합니다.
-seo-description: Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체로 표시합니다.
-seo-title: Timed metadata 클래스
+description: Browser TVSDK가 재생 목록/매니페스트에서 구독 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 객체로 표시합니다.
 title: Timed metadata 클래스
-uuid: 3f276618-5f61-4b41-bd2d-78e7f32178d9
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # Timed metadata 클래스{#timed-metadata-class}
 
-Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체로 표시합니다.
+Browser TVSDK가 재생 목록/매니페스트에서 구독 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 객체로 표시합니다.
 
 `TimedMetadata` 클래스는 다음 요소를 제공합니다.
 
@@ -34,13 +31,13 @@ Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감
    <td colname="col2"> <p>다음은 시간 지정 메타데이터 유형입니다. 
      <ul id="ul_E79C375A54C64BF09A927EE8983E98E3"> 
       <li id="li_F1907521CDBE47E282A87AF0A7A1477A">TAG - 재생 목록/매니페스트의 태그에서 시간 메타데이터를 만들었습니다. </li> 
-      <li id="li_5B0C0B0F247144709F86E6654A5AB500">ID3 - 미디어 스트림의 ID3 태그에서 시간 메타데이터를 만들었습니다. </li> 
+      <li id="li_5B0C0B0F247144709F86E6654A5AB500">ID3 - 미디어 스트림의 ID3 태그에서 시간 지정 메타데이터를 만들었습니다. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>time </p> </td> 
    <td colname="col02"> <p>숫자 </p> </td> 
-   <td colname="col2"> <p>스트림에 이 시간 메타데이터가 있는 기본 컨텐츠의 시작을 기준으로 하는 로컬 시간 위치(밀리초)입니다. </p> </td> 
+   <td colname="col2"> <p>이 시간 지정 메타데이터가 스트림에 있는 기본 컨텐츠의 시작을 기준으로 하는 로컬 시간 위치(밀리초)입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>id </p> </td> 
@@ -53,9 +50,9 @@ Browser TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감
    <td colname="col2"> <p>시간 지정 메타데이터의 이름입니다. </p> <p>유형이 TAG인 경우 값은 cue/tag 이름을 나타냅니다. 유형이 ID3이면 값은 null입니다. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>content </p> </td> 
+   <td colname="col1"> <p>콘텐트 </p> </td> 
    <td colname="col02"> <p>문자열 </p> </td> 
-   <td colname="col2"> <p>The raw content of the timed metadata. </p> <p>유형이 TAG인 경우 값은 cue/tag의 전체 속성 목록을 나타냅니다. 유형 id ID3인 경우 값이 null입니다. </p> </td> 
+   <td colname="col2"> <p>시간 지정 메타데이터의 원시 컨텐츠입니다. </p> <p>유형이 TAG인 경우 이 값은 cue/tag의 전체 속성 목록을 나타냅니다. 유형 ID3의 경우 이 값은 null입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>메타데이터 </p> </td> 
