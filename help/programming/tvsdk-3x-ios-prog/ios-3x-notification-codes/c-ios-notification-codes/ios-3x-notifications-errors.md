@@ -1,13 +1,10 @@
 ---
 description: TVSDK 알림 시스템에서는 진단 메타데이터를 제공하는 다양한 오류, 경고 및 정보 알림을 생성합니다.
-seo-description: TVSDK 알림 시스템에서는 진단 메타데이터를 제공하는 다양한 오류, 경고 및 정보 알림을 생성합니다.
-seo-title: 'null'
-title: 'null'
-uuid: 20828188-817a-471c-acbc-aeb5f336356b
+title: 오류 알림 코드
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '448'
 ht-degree: 5%
 
 ---
@@ -17,7 +14,7 @@ ht-degree: 5%
 
 이 표에서는 ERROR 유형 알림에 대한 자세한 정보를 제공합니다.
 
-대부분의 오류에는 다운로드하지 못한 리소스의 URL과 같은 관련 메타데이터가 포함됩니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
+대부분의 오류에는 관련 메타데이터가 포함됩니다(예: 다운로드하지 못한 리소스의 URL). 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_8B61210A406A45ACBE37FC29729DDE22"> 
  <thead> 
@@ -38,7 +35,7 @@ ht-degree: 5%
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 10000  </span> </td> 
+   <td colname="1"><span class="codeph"> 100000  </span> </td> 
    <td colname="2"><span class="codeph"> DRM_ERROR  </span> </td> 
    <td colname="3"> </td> 
    <td colname="4"><span class="codeph"> MAJOR_DRM_CODE  </span><span class="codeph"> MINOR_DRM_CODE  </span><span class="codeph"> 설명  </span> </td> 
@@ -66,18 +63,18 @@ ht-degree: 5%
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 101008  </span> </td> 
+   <td colname="1"><span class="codeph"> 101008년  </span> </td> 
    <td colname="2"><span class="codeph"> SEEK_ERROR  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"><span class="codeph"> 설명</span> </td> 
    <td colname="5"> <p>검색 작업을 수행하는 동안 오류가 발생했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 101009  </span> </td> 
+   <td colname="1"><span class="codeph"> 101009년  </span> </td> 
    <td colname="2"><span class="codeph"> PAUSE_ERROR  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>일시 중지 작업을 수행하는 동안 오류가 발생했습니다. </p> </td> 
+   <td colname="5"> <p>일시 정지 작업을 수행하는 동안 오류가 발생했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 101101  </span> </td> 
@@ -113,14 +110,14 @@ ht-degree: 5%
    <td colname="2"><span class="codeph"> AD_RESOLVER_METADATA_INVALID  </span> </td> 
    <td colname="3"> <span class="codeph"> AD_NOT_INSERTED</span> </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>잘못된 광고 메타데이터 형식으로 인해 광고 확인이 실패했습니다. </p> </td> 
+   <td colname="5"> <p>잘못된 광고 메타데이터 형식으로 인해 광고 해결에 실패했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104005  </span> </td> 
    <td colname="2"><span class="codeph"> AD_INSERTION_FAIL  </span> </td> 
    <td colname="3"> <span class="codeph"> AD_NOT_INSERTED  </span> </td> 
    <td colname="4"> <p>없음 </p> </td> 
-   <td colname="5"> <p>광고 단계 해결에 실패했습니다. </p> </td> 
+   <td colname="5"> <p>광고 단계를 확인하지 못했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104006  </span> </td> 
@@ -141,7 +138,7 @@ ht-degree: 5%
    <td colname="2"><span class="codeph"> NATIVE_ERROR  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> INTERNAL_ERROR  </span> </td> 
-   <td colname="5"> <p>낮은 수준의 iOS 오류가 발생했습니다. </p> </td> 
+   <td colname="5"> <p>하위 수준 iOS 오류가 발생했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>구성</b> </td> 
@@ -172,7 +169,7 @@ ht-degree: 5%
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 17000  </span> </td> 
+   <td colname="1"><span class="codeph"> 170000  </span> </td> 
    <td colname="2"><span class="codeph"> AD_HLS_VERSION_ 호환되지 않음  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
@@ -243,7 +240,7 @@ ht-degree: 5%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170010  </span> </td> 
-   <td colname="2"><span class="codeph"> SITECATALYST_ERROR  </span> </td> 
+   <td colname="2"><span class="codeph"> SiteCatalyst_오류  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"><span class="codeph"> 설명  </span> </td> 
    <td colname="5"> <p>Site catalyst 오류입니다. 설명을 참조하십시오. </p> </td> 
@@ -253,7 +250,7 @@ ht-degree: 5%
    <td colname="2"><span class="codeph"> AD_TARGET_DURATION_INCOMPATIBLE  </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
-   <td colname="5"> <p>광고의 TARGET 지속 시간이 컨텐츠의 TARGET 지속 기간보다 높습니다. </p> </td> 
+   <td colname="5"> <p>광고의 TARGET 지속 시간은 컨텐츠의 TARGET 지속 시간보다 높습니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
