@@ -1,25 +1,22 @@
 ---
-description: 응용 프로그램은 적절한 시기에 적절한 PTTimedMetadata 개체를 사용해야 합니다.
-seo-description: 응용 프로그램은 적절한 시기에 적절한 PTTimedMetadata 개체를 사용해야 합니다.
-seo-title: 전달될 때 시간 메타데이터 개체 저장
-title: 전달될 때 시간 메타데이터 개체 저장
-uuid: d26ed49e-fb29-4765-86e9-9ebbe5fa0a2b
+description: 응용 프로그램은 적절한 시기에 적절한 PTTimedMetadata 객체를 사용해야 합니다.
+title: 전달될 때 시간 메타데이터 객체 저장
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
 
-# {#store-timed-metadata-objects-as-they-are-dispatched}이(가) 전달될 때 시간 지정된 메타데이터 개체를 저장합니다.
+# {#store-timed-metadata-objects-as-they-are-dispatched}이(가) 전달될 때 시간 지정된 메타데이터 객체를 저장합니다.
 
-응용 프로그램은 적절한 시기에 적절한 PTTimedMetadata 개체를 사용해야 합니다.
+응용 프로그램은 적절한 시기에 적절한 PTTimedMetadata 객체를 사용해야 합니다.
 
-컨텐츠 구문 분석 중 재생 전에 발생하는 TVSDK는 구독 태그를 식별하고 애플리케이션에 이러한 태그에 대해 알립니다. 각 `PTTimedMetadata`과 연결된 시간은 재생 타임라인에서 절대 시간입니다.
+컨텐츠 구문 분석 중 재생 전에 발생하는 TVSDK는 구독 태그를 식별하고 애플리케이션에 이러한 태그에 대해 알립니다. 각 `PTTimedMetadata`에 연결된 시간은 재생 타임라인에서 절대 시간입니다.
 
-애플리케이션은 다음 작업을 완료해야 합니다.
+응용 프로그램은 다음 작업을 완료해야 합니다.
 
 1. 현재 재생 시간을 추적할 수 있습니다.
 1. 현재 재생 시간을 전달된 `PTTimedMetadata` 개체와 일치시킵니다.
@@ -28,9 +25,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >아래 코드에서는 한 번에 하나의 `PTTimedMetadata` 인스턴스만 있다고 가정합니다. 인스턴스가 여러 개 있는 경우 응용 프로그램은 이를 사전에 적절히 저장해야 합니다. 한 가지 방법은 지정된 시간에 배열을 만들고 해당 배열에 모든 인스턴스를 저장하는 것입니다.
+   >아래 코드에서는 한 번에 하나의 `PTTimedMetadata` 인스턴스만 있다고 가정합니다. 인스턴스가 여러 개 있는 경우 응용 프로그램은 사전에 해당 인스턴스를 적절히 저장해야 합니다. 한 가지 방법은 지정된 시간에 배열을 만들고 해당 배열에 모든 인스턴스를 저장하는 것입니다.
 
-   다음 예에서는 각 `timedMetadata`의 시작 시간까지 `NSMutableDictionary (timedMetadataCollection)`에 `PTTimedMetadata` 개체를 저장하는 방법을 보여 줍니다.
+   다음 예제에서는 각 `timedMetadata`의 시작 시간만큼 `NSMutableDictionary (timedMetadataCollection)`에 `PTTimedMetadata` 개체를 저장하는 방법을 보여 줍니다.
 
    ```
    NSMutableDictionary *timedMetadataCollection; 
@@ -57,7 +54,7 @@ ht-degree: 0%
 
 ## Nielsen ID3 태그 구문 분석 중 {#example_3B51E9D4AF2449FAA8E804206F873ECF}
 
-구문 분석하기 위해 ID3 태그를 추출하려면 `onMediaPlayerSubscribedTagIdentified` 메서드에서 다음을 사용하십시오.
+구문 분석을 위해 ID3 태그를 추출하려면 `onMediaPlayerSubscribedTagIdentified` 메서드에서 다음을 사용합니다.
 
 ```
 (void)onMediaPlayerSubscribedTagIdentified:(NSNotification *)notification 
@@ -70,7 +67,7 @@ Unknown macro: { PTMetadata *metadata = (PTMetadata *)timedMetadata; NSString * 
 }
 ```
 
-ID3 태그를 분석한 후 다음을 사용하여 Nielsen 특정 메타데이터를 추출합니다.
+ID3 태그를 분석한 후 다음을 사용하여 Nielsen 관련 메타데이터를 추출합니다.
 
 ```
     (NSString *)parseNielsenUrlFromID3Tag:(NSString *)str 
