@@ -1,13 +1,10 @@
 ---
 description: VOD 컨텐츠 재생 중 하나에 적합한 광고 타임라인은 후속 재생에 부적절할 수 있습니다. 콘텐츠를 변경하지 않고 VOD 타임라인을 교체할 수 있습니다.
-seo-description: VOD 컨텐츠 재생 중 하나에 적합한 광고 타임라인은 후속 재생에 부적절할 수 있습니다. 콘텐츠를 변경하지 않고 VOD 타임라인을 교체할 수 있습니다.
-seo-title: VOD 변경 사항
 title: VOD 변경 사항
-uuid: e734aacd-b42e-4c8e-a16a-c7a0739a0492
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
