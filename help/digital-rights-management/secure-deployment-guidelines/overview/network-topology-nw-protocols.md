@@ -1,13 +1,10 @@
 ---
-description: 보안 네트워크 아키텍처를 구성할 때 기업 네트워크에서 Adobe Primetime DRM과 다른 시스템 간의 상호 작용에 네트워크 프로토콜이 필요합니다.
-seo-description: 보안 네트워크 아키텍처를 구성할 때 기업 네트워크에서 Adobe Primetime DRM과 다른 시스템 간의 상호 작용에 네트워크 프로토콜이 필요합니다.
-seo-title: Adobe Primetime DRM 네트워크 프로토콜
+description: 보안 네트워크 아키텍처를 구성할 때 네트워크 프로토콜은 기업 네트워크의 Adobe Primetime DRM과 다른 시스템 간의 상호 작용을 위해 필요합니다.
 title: Adobe Primetime DRM 네트워크 프로토콜
-uuid: 8954e33c-83ac-4b40-9e45-005d4954b44e
 translation-type: tm+mt
-source-git-commit: c78d3c87848943a0be3433b2b6a543822a7e1c15
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -15,9 +12,9 @@ ht-degree: 0%
 
 # Adobe Primetime DRM 네트워크 프로토콜 {#adobe-primetime-drm-network-protocols}
 
-보안 네트워크 아키텍처를 구성할 때 기업 네트워크에서 Adobe Primetime DRM과 다른 시스템 간의 상호 작용에 네트워크 프로토콜이 필요합니다.
+보안 네트워크 아키텍처를 구성할 때 네트워크 프로토콜은 기업 네트워크의 Adobe Primetime DRM과 다른 시스템 간의 상호 작용을 위해 필요합니다.
 
-보안 네트워크 아키텍처를 구성할 때 이러한 상호 작용에 다음 네트워크 프로토콜이 필요합니다.
+보안 네트워크 아키텍처를 구성할 때 이러한 상호 작용에 다음과 같은 네트워크 프로토콜이 필요합니다.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_itc_33z_n4"> 
  <thead class="- topic/thead "> 
@@ -42,10 +39,10 @@ ht-degree: 0%
 
 모든 네트워크 포트를 사용하도록 Adobe Primetime DRM 라이선스 서버를 구성할 수 있습니다.
 
-Primetime DRM을 실행하는 응용 프로그램 서버에 연결하는 클라이언트를 허용하려는 네트워크 기능에 따라 내부 방화벽에서 이 포트를 활성화하거나 비활성화해야 합니다.
+Primetime DRM을 실행하는 응용 프로그램 서버에 연결하는 클라이언트를 허용하려는 네트워크 기능에 따라, 내부 방화벽에서 이 포트를 활성화하거나 비활성화해야 합니다.
 
 ## SSL {#configuring-ssl} 구성
 
-SSL(Secure Sockets Layer)은 Flash Media Rights Management Server 1.x 클라이언트에 대한 지원이 필요한 경우에만 필요합니다.
+SSL(Secure Sockets Layer)은 Flash Media Library Server 1.x 클라이언트에 대한 지원이 필요한 경우에만 필요합니다.
 
-Adobe Primetime DRM 키 서버에 클라이언트 인증이 있는 SSL이 필요합니다. 자세한 내용은 Adobe Primetime DRM 키 서버 사용[을 참조하십시오.](../../using-the-drm-key-server/requirements.md)
+Adobe Primetime DRM 키 서버에 클라이언트 인증을 사용하는 SSL이 필요합니다. 자세한 내용은 [Adobe Primetime DRM 키 서버 사용](../../using-the-drm-key-server/requirements.md)을 참조하십시오.
