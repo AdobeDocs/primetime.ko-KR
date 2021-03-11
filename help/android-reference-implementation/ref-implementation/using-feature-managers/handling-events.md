@@ -1,13 +1,10 @@
 ---
-description: 응용 프로그램이 기능 관리자에서 발송된 이벤트를 처리해야 하는 경우 PlayerFragment.java 파일에서 관리자를 등록해야 합니다.
-seo-description: 응용 프로그램이 기능 관리자에서 발송된 이벤트를 처리해야 하는 경우 PlayerFragment.java 파일에서 관리자를 등록해야 합니다.
-seo-title: 이벤트 처리
+description: 응용 프로그램이 기능 관리자에서 전달된 이벤트를 처리해야 하는 경우 PlayerFragment.java 파일에서 관리자를 등록해야 합니다.
 title: 이벤트 처리
-uuid: 13639f02-0dcc-4a0a-8524-515da5478006
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '50'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 이벤트 처리 {#handling-events}
 
-응용 프로그램이 기능 관리자에서 발송된 이벤트를 처리해야 하는 경우 PlayerFragment.java 파일에서 관리자를 등록해야 합니다.
+응용 프로그램이 기능 관리자에서 전달된 이벤트를 처리해야 하는 경우 PlayerFragment.java 파일에서 관리자를 등록해야 합니다.
 
 예:
 
