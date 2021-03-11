@@ -1,13 +1,10 @@
 ---
-description: 다음의 새로운 API를 사용하여 DRM 콜백을 정의할 수 있습니다.
-seo-description: 다음의 새로운 API를 사용하여 DRM 콜백을 정의할 수 있습니다.
-seo-title: DRM 콜백 구현
+description: 다음 새로운 API를 사용하여 DRM 콜백을 정의할 수 있습니다.
 title: DRM 콜백 구현
-uuid: a54c5ec2-299f-47b0-b65b-eed5656ab6aa
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -15,11 +12,11 @@ ht-degree: 0%
 
 # DRM 콜백 구현{#implementing-drm-callbacks}
 
-다음의 새로운 API를 사용하여 DRM 콜백을 정의할 수 있습니다.
+다음 새로운 API를 사용하여 DRM 콜백을 정의할 수 있습니다.
 
 <!--<a id="section_1090BFDB2C1D4EA4AAC9F9A6EC9DCD51"></a>-->
 
-호출 백 함수(예: `parseContentIdCallback`)를 정의하여 콘텐츠 ID를 구문 분석하고 `setParseContentIdCallback` API를 사용하여 `drmManager`으로 설정할 수 있습니다.
+호출 백 함수(예: `parseContentIdCallback`)를 정의하여 내용 ID를 구문 분석하고 `setParseContentIdCallback` API를 사용하여 `drmManager`으로 설정할 수 있습니다.
 
 ```js
 var arrayToString = function (array) { 
@@ -140,4 +137,4 @@ drmManager.acquireLicense(drmMetadata, null, acquireLicenseListener, onLicenseMe
 }
 ```
 
-`certificateResponseType` 필드 사용은 선택 사항입니다. 이 값을 사용하지 않으면 값이 `ArrayBuffer`으로 간주됩니다.
+`certificateResponseType` 필드를 사용하는 것은 선택 사항입니다. 이 값을 사용하지 않으면 값이 `ArrayBuffer`으로 간주됩니다.
