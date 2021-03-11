@@ -1,9 +1,9 @@
 ---
-seo-title: 파일 변환
 title: 파일 변환
-uuid: e17ee003-5ac2-4bb8-83b7-81ee8fa9ee46
+description: 파일 변환
+copied-description: true
 translation-type: tm+mt
-source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 파일 변환{#convert-files}
 
-요청자가 OpenSSL과 같은 유틸리티와 개인 키를 사용하여 명령 창에서 다음 명령을 입력하여 PKCS#12(pfx) 및 PEM/DER 파일을 생성합니다.
+요청자가 OpenSSL 및 개인 키와 같은 유틸리티를 사용하여 명령 창에서 다음 명령을 입력하여 PKCS#12(pfx) 및 PEM/DER 파일을 생성합니다.
 
 1. PKCS#7 파일을 임시 PEM 파일로 변환합니다.
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >이 임시 PEM에는 사용자의 인증서와 중간 CA에 대한 인증서가 포함되어 있습니다. 이러한 인증서를 사용하여 PFX 파일을 생성합니다.
+   >이 임시 PEM에는 중간 CA에 대한 인증서와 인증서가 포함되어 있습니다. 이러한 인증서를 사용하여 PFX 파일을 생성합니다.
 
 1. 임시 PEM 파일을 PFX 파일로 변환합니다.
 
