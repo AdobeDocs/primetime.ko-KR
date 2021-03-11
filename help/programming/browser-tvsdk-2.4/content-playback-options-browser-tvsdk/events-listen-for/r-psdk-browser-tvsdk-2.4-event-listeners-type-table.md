@@ -1,13 +1,10 @@
 ---
-description: Browser TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형과 콜백 이름을 지정합니다. 이벤트가 발생하면 Browser TVSDK는 콜백을 호출하고 적절한 유형의 이벤트 객체에 전달합니다.
-seo-description: Browser TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형과 콜백 이름을 지정합니다. 이벤트가 발생하면 Browser TVSDK는 콜백을 호출하고 적절한 유형의 이벤트 객체에 전달합니다.
-seo-title: 콜백을 위한 이벤트 유형 및 클래스
+description: 브라우저 TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형과 콜백 이름을 지정합니다. 이벤트가 발생하면 브라우저 TVSDK는 콜백을 호출하고 적절한 유형의 이벤트 객체에 전달합니다.
 title: 콜백을 위한 이벤트 유형 및 클래스
-uuid: 13d7e939-ff45-4a52-bcbe-70abb56ac205
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 콜백{#event-types-and-classes-for-callbacks}에 대한 이벤트 유형 및 클래스
 
-Browser TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형과 콜백 이름을 지정합니다. 이벤트가 발생하면 Browser TVSDK는 콜백을 호출하고 적절한 유형의 이벤트 객체에 전달합니다.
+브라우저 TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형과 콜백 이름을 지정합니다. 이벤트가 발생하면 브라우저 TVSDK는 콜백을 호출하고 적절한 유형의 이벤트 객체에 전달합니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_FE58AD65AF3B4483816C00D7EAD2FB4F"> 
  <thead> 
@@ -39,7 +36,7 @@ Browser TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형
     <ul id="ul_jpq_pc4_2y"> 
      <li id="li_782365D715684DDC835E16D08CC0BBDB"><span class="codeph"> AD_BREAK_STARTED</span> </li> 
      <li id="li_78D7EAEE99D04A35AD7C6EC60DDDC1CC"><span class="codeph"> AD_BREAK_COMPLETED</span> </li> 
-     <li id="li_6155ADAF5E964C458E92AFFB4F7D6347"><span class="codeph"> AD_BREAK_SKULLED</span> </li> 
+     <li id="li_6155ADAF5E964C458E92AFFB4F7D6347"><span class="codeph"> AD_BREAK_OVERSEED</span> </li> 
     </ul> </td> 
    <td><span class="codeph"> AdBreakPlaybackEvent</span> </td> 
   </tr> 
@@ -50,8 +47,8 @@ Browser TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형
   <tr rowsep="1"> 
    <td colname="2"> 
     <ul id="ul_eny_tc4_2y"> 
-     <li id="li_13F95E4BF905425CA5A95ECC138CC078"><span class="codeph"> BUFFERING_BEGIN</span> </li> 
-     <li id="li_BA6F4E38E2F440FAAA4E70DF906A3350"><span class="codeph"> BUFFERING_END</span> </li> 
+     <li id="li_13F95E4BF905425CA5A95ECC138CC078"><span class="codeph"> 버퍼링_시작</span> </li> 
+     <li id="li_BA6F4E38E2F440FAAA4E70DF906A3350"><span class="codeph"> 버퍼링_끝</span> </li> 
     </ul> </td> 
    <td><span class="codeph"> 버퍼 이벤트</span> </td> 
   </tr> 
@@ -66,9 +63,9 @@ Browser TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형
   <tr rowsep="1"> 
    <td colname="2"> 
     <ul id="ul_kwy_cd4_2y"> 
-     <li id="li_D5455D287EA5472D95A45AD1A8835D61"><span class="codeph"> AUDIO_UPDATED</span> </li> 
-     <li id="li_AFF5B14338AB4AA8B4DF3963F2FDD4CF"><span class="codeph"> CAPTIONS_UPDATED</span> </li> 
-     <li id="li_F7C9B933C6A44E80B57EB5274640A17B"><span class="codeph"> 기본_UPDATED</span> </li> 
+     <li id="li_D5455D287EA5472D95A45AD1A8835D61"><span class="codeph"> 오디오_업데이트됨</span> </li> 
+     <li id="li_AFF5B14338AB4AA8B4DF3963F2FDD4CF"><span class="codeph"> 캡션_업데이트됨</span> </li> 
+     <li id="li_F7C9B933C6A44E80B57EB5274640A17B"><span class="codeph"> 업데이트 기본_날짜</span> </li> 
      <li id="li_C9FDF852BF4F4B638A8A1CAAFC27A23F"><span class="codeph"> ITEM_CREATED</span> </li> 
      <li id="li_85E13B35A6DB44A4BA0F93EA52B9D08A"><span class="codeph"> ITEM_UPDATED</span> </li> 
     </ul> </td> 
@@ -96,7 +93,7 @@ Browser TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"><span class="codeph"> PROFILE_CHANGED</span> </td> 
-   <td><span class="codeph"> 프로필 이벤트</span> </td> 
+   <td><span class="codeph"> ProfileEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"><span class="codeph"> PLAY_START</span> </td> 
