@@ -1,13 +1,10 @@
 ---
 description: Adobe의 machotools 도구를 사용하여 iOS 앱을 허용 목록할 수 있습니다.
-seo-description: Adobe의 machotools 도구를 사용하여 iOS 앱을 허용 목록할 수 있습니다.
-seo-title: iOS 애플리케이션 허용 목록
 title: iOS 애플리케이션 허용 목록
-uuid: bc558f5f-d4e6-4c1c-81eb-f8bd61c63016
 translation-type: tm+mt
-source-git-commit: eb9f0a2f6d2118b953c711dfdc0402d1d923b016
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -23,7 +20,7 @@ Adobe의 machotools 도구를 사용하여 iOS 앱을 허용 목록할 수 있�
 >
 >이러한 도구를 사용하여 DRM 정책을 만들고 내용을 암호화할 수도 있습니다.
 
-앱 나열을 허용하면 보호된 콘텐츠를 비디오 플레이어에서만 재생할 수 있습니다. 그러나 iOS 애플리케이션 목록 작성 시 Apple의 애플리케이션 제출 정책과 작동하는 특수 절차를 완료해야 합니다.
+앱 목록을 허용하면 보호된 콘텐츠를 비디오 플레이어에서만 재생할 수 있습니다. 그러나 iOS 애플리케이션 목록을 허용하려면 Apple의 애플리케이션 제출 정책과 작동하는 특수 절차를 완료해야 합니다.
 
 iOS 앱을 제출하기 전에 앱을 서명하여 Apple에 게시해야 합니다.
 
@@ -31,11 +28,11 @@ iOS 앱을 제출하기 전에 앱을 서명하여 Apple에 게시해야 합니�
 >
 >Apple은 개발자 서명을 제거하고 자체 인증서를 사용하여 응용 프로그램에 다시 서명합니다.
 
-재서명 때문에 Apple App Store에 제출하기 전에 생성된 목록 정보를 사용할 수 없습니다.
+재서명 때문에 Apple App Store에 제출하기 전에 생성된 목록 정보 허용 목록이 사용할 수 없습니다.
 
-이 제출 정책을 해결하기 위해 Adobe은 iOS 응용 프로그램을 지문 인식하여 다이제스트 값을 만들고, 이 값을 서명하고, iOS 응용 프로그램에서 이 값을 주입하는 `machotools` 도구를 만들었습니다. iOS 앱을 지문한 후 Apple App Store에 앱을 제출할 수 있습니다. 사용자가 App Store에서 앱을 실행하면 Primetime DRM은 애플리케이션 지문에 대한 런타임 계산을 수행하고 이전에 애플리케이션에 삽입된 다이제스트 값으로 이를 확인합니다. 지문이 일치하면 앱이 나열된 것으로 확인되고 보호된 콘텐츠는 재생이 허용됩니다.
+이 제출 정책을 사용하기 위해 Adobe은 iOS 응용 프로그램에서 다이제스트 값을 만들고 이 값에 서명하고 iOS 응용 프로그램에서 이 값을 주입하는 `machotools` 도구를 만들었습니다. iOS 앱을 지문한 후 Apple App Store에 앱을 제출할 수 있습니다. 사용자가 App Store에서 앱을 실행하면 Primetime DRM은 애플리케이션 지문을 런타임 계산하여 이전에 애플리케이션에 삽입된 다이제스트 값으로 확인합니다. 지문이 일치하면 앱이 나열된 것으로 확인되고 보호된 콘텐츠는 재생이 허용됩니다.
 
-Adobe `machotools` 도구는 [!DNL [의 iOS TVSDK SDK에 포함되어 있습니다..]/tools/DRM] 폴더
+Adobe `machotools` 도구는 [!DNL [의 iOS TVSDK SDK에 포함됩니다.]/tools/DRM] 폴더
 
 `machotools`을(를) 사용하려면:
 
@@ -64,7 +61,7 @@ Adobe `machotools` 도구는 [!DNL [의 iOS TVSDK SDK에 포함되어 있습니�
    openssl req -new -key selfsigncert-ios.key -out selfsigncert-ios.csr -batch
    ```
 
-1. 콘서트에 자체 서명하고 모든 기간을 입력합니다.
+1. 인증서를 직접 서명하고 모든 기간을 입력합니다.
 
    다음 예에서는 20년 만료를 제공합니다.
 
@@ -73,7 +70,7 @@ Adobe `machotools` 도구는 [!DNL [의 iOS TVSDK SDK에 포함되어 있습니�
      -signkey selfsigncert-ios.key -out selfsigncert-ios.crt
    ```
 
-1. 자체 서명된 인증서를 PKCS#12 파일로 변환:
+1. 자체 서명된 인증서를 PKCS#12 파일로 변환합니다.
 
    ```shell
    openssl pkcs12 -export -out selfsigncert-ios.pfx  
@@ -100,7 +97,7 @@ Adobe `machotools` 도구는 [!DNL [의 iOS TVSDK SDK에 포함되어 있습니�
    ```
 
 1. 새 DRM 정책을 만들거나 반환된 게시자 ID 해시 값을 포함하도록 기존 정책을 업데이트합니다.
-1. [!DNL AdobePolicyManager.jar]을(를) 사용하여 반환된 게시자 ID 해시 값, 선택적 앱 ID, 포함된 [!DNL flashaccess-tools.properties] 파일에 최소 및 최대 버전 속성을 포함하도록 새 DRM 정책(기존 정책 업데이트)을 만듭니다.
+1. [!DNL AdobePolicyManager.jar]을(를) 사용하여 포함된 [!DNL flashaccess-tools.properties] 파일에 반환된 게시자 ID 해시 값, 선택적 앱 ID, 최소 및 최대 버전 속성을 포함하도록 새 DRM 정책(기존 정책 업데이트)을 만듭니다.
 
    ```shell
    java -jar libs/AdobePolicyManager.jar new app_allowlist.pol
