@@ -1,13 +1,10 @@
 ---
 description: OpportunityGenerator 인터페이스를 확장하여 고유한 기회 생성기를 구현할 수 있습니다.
-seo-description: OpportunityGenerator 인터페이스를 확장하여 고유한 기회 생성기를 구현할 수 있습니다.
-seo-title: 사용자 정의 기회 생성기 구현
 title: 사용자 정의 기회 생성기 구현
-uuid: b80da2da-32d5-41f7-86ca-936d6f25b015
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
@@ -47,7 +44,7 @@ OpportunityGenerator 인터페이스를 확장하여 고유한 기회 생성기�
    }; 
    ```
 
-1. 사용자 정의 기회 생성기를 사용하는 사용자 정의 컨텐츠 팩터리를 만듭니다.
+1. 사용자 정의 기회 생성기를 사용하는 사용자 정의 컨텐츠 팩토리를 만듭니다.
 
    예:
 
@@ -69,9 +66,9 @@ OpportunityGenerator 인터페이스를 확장하여 고유한 기회 생성기�
    }; 
    ```
 
-1. 재생할 미디어 스트림에 대한 사용자 정의 컨텐츠 팩터리를 등록합니다.
+1. 재생할 미디어 스트림에 대한 사용자 정의 컨텐츠 팩토리를 등록합니다.
 
-   UI Framework 플레이어에서 다음과 같이 사용자 지정 콘텐츠 팩터리를 지정할 수 있습니다.
+   UI Framework 플레이어에서 다음과 같이 사용자 정의 콘텐츠 팩토리를 지정할 수 있습니다.
 
    ```js
    var advertisingFactory = new CustomContentFactory(); 
