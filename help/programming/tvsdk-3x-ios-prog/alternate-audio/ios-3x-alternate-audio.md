@@ -1,9 +1,9 @@
 ---
-seo-title: 대체 오디오
 title: 대체 오디오
-uuid: cc38ded2-45b7-4be4-8f46-a919fdaf79cf
+description: 대체 오디오
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 <!--<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>-->
 
-TVSDK가 현재 비디오에 대한 `MediaPlayerItem` 인스턴스를 만들면 사용 가능한 각 오디오 트랙에 대해 `AudioTrack` 항목을 만듭니다. 이 항목에는 일반적으로 해당 트랙의 언어에 대한 사용자 인식 설명이 포함된 문자열인 `name` 속성이 포함되어 있습니다. 항목에는 기본적으로 해당 트랙을 사용할지 여부에 대한 정보도 포함되어 있습니다.
+TVSDK가 현재 비디오에 대한 `MediaPlayerItem` 인스턴스를 만들면 사용 가능한 각 오디오 트랙에 대해 `AudioTrack` 항목이 만들어집니다. 항목에는 일반적으로 해당 트랙의 언어에 대한 사용자 인식 가능한 설명이 포함된 문자열인 `name` 속성이 포함되어 있습니다. 항목에는 기본적으로 해당 트랙을 사용할지 여부에 대한 정보도 포함되어 있습니다.
 
-비디오를 재생할 시간이 되면 사용 가능한 오디오 트랙 목록을 요청하고, 원하는 경우 사용자가 원하는 오디오 트랙을 선택하여 재생할 비디오를 설정할 수 있습니다.
+비디오를 재생할 시간이 되면 사용 가능한 오디오 트랙 목록을 요청하고 선택적으로 사용자가 원하는 오디오 트랙을 선택하여 비디오를 선택한 트랙으로 재생하도록 설정할 수 있습니다.
 
-드문 경우지만, 추가 오디오 트랙이 `MediaPlayerItem`을 만든 후 사용할 수 있게 되면 TVSDK가 `MediaPlayerItem.AUDIO_UPDATED` 이벤트를 실행합니다.
+드문 경우이지만, 추가 오디오 트랙이 `MediaPlayerItem`을 만든 후 사용할 수 있게 되면 TVSDK에서 `MediaPlayerItem.AUDIO_UPDATED` 이벤트를 실행합니다.
 
 ## API {#section_87C42C30BA8C4F58A2DAB7CE07FCD3DE} 추가
 
@@ -29,7 +29,7 @@ TVSDK가 현재 비디오에 대한 `MediaPlayerItem` 인스턴스를 만들면 
 
 **hasAlternateAudio**
 
-지정한 미디어에 기본 트랙이 아닌 대체 오디오 트랙이 있는 경우 이 부울 함수는 `true`을 반환합니다. 대체 오디오 트랙이 없으면 함수는 `false`을 반환합니다.
+지정한 미디어에 기본 트랙이 아닌 대체 오디오 트랙이 있는 경우 이 부울 함수는 `true`을 반환합니다. 대체 오디오 트랙이 없으면 이 함수는 `false`을 반환합니다.
 
 ```
 bool MediaPlayerItemImpl::hasAlternateAudio() const { 
