@@ -1,13 +1,10 @@
 ---
 description: TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제공합니다.
-seo-description: TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제공합니다.
-seo-title: 일시 중단 처리 구현
 title: 일시 중단 처리 구현
-uuid: a447ff24-8386-4cae-878e-0859fb191de2
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -17,9 +14,9 @@ ht-degree: 0%
 
 TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제공합니다.
 
-일시 중단 처리를 구현하고 일시 중단 중에 대체 컨텐츠를 제공하려면:
+일시 중단 중에 대체 컨텐츠를 제공하고 일시 중단 처리를 구현하려면 다음을 수행하십시오.
 
-1. 라이브 스트림 매니페스트의 일시 중단 태그에 가입하도록 앱을 설정합니다.
+1. 라이브 스트림 매니페스트의 일시 중단 태그에 구독하도록 앱을 설정합니다.
 
    ```
    - (void) createMediaPlayer:(PTMediaPlayerItem *)item 
@@ -40,7 +37,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제
    }
    ```
 
-1. 전경에 있는 `PTTimedMetadata` 개체에 대한 수신기 메서드를 구현합니다.
+1. 전경에 있는 `PTTimedMetadata` 개체에 대한 리스너 메서드를 구현합니다.
 
    예:
 
@@ -64,7 +61,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제
    }
    ```
 
-1. 재생하는 동안 지속적인 업데이트를 통해 `TimedMetadata` 개체를 처리합니다.
+1. 재생하는 동안 지속적인 업데이트가 있는 `TimedMetadata` 개체를 처리합니다.
 
    ```
    - (void)onMediaPlayerTimeChange:(NSNotification *)notification 
@@ -85,7 +82,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제
    }
    ```
 
-1. `PTTimedMetadata` 핸들러를 추가하여 대체 컨텐츠로 전환하고 `PTTimedMetadata` 개체 및 해당 재생 시간에 지정된 기본 컨텐츠로 돌아갑니다.
+1. `PTTimedMetadata` 핸들러를 추가하여 대체 컨텐츠로 전환하고 `PTTimedMetadata` 개체 및 재생 시간에 지정된 대로 기본 컨텐츠로 돌아갑니다.
 
    ```
    - (void)handleCollectionAtTime:(int)currentTime 
@@ -200,7 +197,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제
    }
    ```
 
-1. 백그라운드에서 `PTTimedMetadata` 개체에 대한 수신기 메서드를 구현합니다.
+1. 백그라운드에서 `PTTimedMetadata` 개체에 대한 리스너 메서드를 구현합니다.
 
    ```
    - (void)onSubscribedTagInBackground:(NSNotification *)notification 
@@ -221,7 +218,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API와 샘플 코드를 제
    }
    ```
 
-1. 배경 오류에 대한 리스너 메서드를 구현합니다.
+1. 백그라운드 오류에 대한 리스너 메서드를 구현합니다.
 
    ```
    - (void) onBackgroundManifestError:(NSNotification *)notification 
