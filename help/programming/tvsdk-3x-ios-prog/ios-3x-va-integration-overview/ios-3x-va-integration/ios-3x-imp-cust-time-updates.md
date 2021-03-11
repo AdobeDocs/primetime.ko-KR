@@ -1,13 +1,10 @@
 ---
-description: 일부 분석 구현에서 클라이언트 응용 프로그램은 TVSDK의 localTime 값에 의해 보고된 위치와 다른 재생 헤드 위치를 제공하려고 할 수 있습니다. 예를 들어 선형 스트림 재생 중에 각 프로그램의 재생 헤드를 시작 시간에 비례하여 제공할 수 있습니다.
-seo-description: 일부 분석 구현에서 클라이언트 응용 프로그램은 TVSDK의 localTime 값에 의해 보고된 위치와 다른 재생 헤드 위치를 제공하려고 할 수 있습니다. 예를 들어 선형 스트림 재생 중에 각 프로그램의 재생 헤드를 시작 시간에 비례하여 제공할 수 있습니다.
-seo-title: 사용자 지정 시간 업데이트 구현
+description: 일부 분석 구현에서 클라이언트 응용 프로그램은 TVSDK의 localTime 값으로 보고되는 위치와 다른 재생 헤드 위치를 제공하려고 할 수 있습니다. 예를 들어 선형 스트림 재생 중에 각 프로그램의 재생 헤드를 시작 시간과 관련하여 제공할 수 있습니다.
 title: 사용자 지정 시간 업데이트 구현
-uuid: 174937ca-3c26-4385-a298-8a01fc93ea20
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 사용자 지정 시간 업데이트 구현 {#implement-custom-time-updates}
 
-일부 분석 구현에서 클라이언트 응용 프로그램은 TVSDK의 localTime 값에 의해 보고된 위치와 다른 재생 헤드 위치를 제공하려고 할 수 있습니다. 예를 들어 선형 스트림 재생 중에 각 프로그램의 재생 헤드를 시작 시간에 비례하여 제공할 수 있습니다.
+일부 분석 구현에서 클라이언트 응용 프로그램은 TVSDK의 localTime 값으로 보고되는 위치와 다른 재생 헤드 위치를 제공하려고 할 수 있습니다. 예를 들어 선형 스트림 재생 중에 각 프로그램의 재생 헤드를 시작 시간과 관련하여 제공할 수 있습니다.
 
 >[!TIP]
 >
