@@ -1,13 +1,10 @@
 ---
 description: VOD 컨텐츠의 시간 간격을 광고 중단으로 지정할 수 있습니다.
-seo-description: VOD 컨텐츠의 시간 간격을 광고 중단으로 지정할 수 있습니다.
-seo-title: 표시 범위
 title: 표시 범위
-uuid: fa6047dc-9a12-42fa-9e58-8ee3a55fa866
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
@@ -21,9 +18,9 @@ VOD 컨텐츠의 시간 간격을 광고 중단으로 지정할 수 있습니다
 
 >[!TIP]
 >
->동적 광고 삽입 없이 컨텐츠의 특정 범위를 광고로만 표시하려면 `CustomRangeMetadata` 인스턴스를 만들고 정의된 사용자 지정 범위를 사용하여 유형을 `MARK` 작업으로 지정합니다.
+>동적 광고 삽입 없이 컨텐츠의 특정 범위를 광고로만 표시하려면 `CustomRangeMetadata` 인스턴스를 만들고 정의된 사용자 지정 범위를 사용하여 `MARK` 작업으로 유형을 지정합니다.
 
-1. 범위를 표시합니다.
+1. 범위를 선택합니다.
 
    ```
    {   
