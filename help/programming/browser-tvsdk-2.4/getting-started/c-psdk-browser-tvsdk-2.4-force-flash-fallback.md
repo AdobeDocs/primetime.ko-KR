@@ -1,13 +1,10 @@
 ---
 description: 소스 목록의 forceflash 플래그는 URL에 대한 Flash 폴백을 적용합니다. 이 URL의 경우 Adobe Flash Player을 사용하여 콘텐트를 재생할 수 있습니다.
-seo-description: 소스 목록의 forceflash 플래그는 URL에 대한 Flash 폴백을 적용합니다. 이 URL의 경우 Adobe Flash Player을 사용하여 콘텐트를 재생할 수 있습니다.
-seo-title: 미디어 소스 목록을 사용하여 Flash 폴백 강제 수행
 title: 미디어 소스 목록을 사용하여 Flash 폴백 강제 수행
-uuid: 04b09734-15f7-4e7e-8802-344f550f9b05
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
