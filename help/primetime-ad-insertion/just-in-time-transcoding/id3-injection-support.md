@@ -1,13 +1,10 @@
 ---
 description: 적시 트랜스코딩은 ID3 시간 메타데이터를 광고 크리에이티브에 삽입하여 클라이언트측 광고 추적을 용이하게 할 수 있습니다.
-seo-description: 적시 트랜스코딩은 ID3 시간 메타데이터를 HLS 포맷 및 크리에이티브를 삽입하여 클라이언트측 광고 추적을 용이하게 할 수 있습니다.
-seo-title: ID3 시간 지정 메타데이터 태그를 삽입하는 데 적시 트랜스코딩 사용
 title: ID3 시간 지정 메타데이터 태그를 삽입하는 데 적시 트랜스코딩 사용
-uuid: 491bbb9e-15de-4871-baa1-f7bb0ea0dde2
 translation-type: tm+mt
-source-git-commit: 0f98b9848f1764e7c66e3692d8a845513493597f
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '97'
 ht-degree: 0%
 
 ---
