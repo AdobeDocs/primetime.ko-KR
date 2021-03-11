@@ -1,13 +1,10 @@
 ---
 description: 클라이언트 비디오 플레이어 또는 매니페스트 서버가 CRS와 상호 작용하여 JIT 재패키징을 수행할 수 있습니다. 둘 다 동일한 광고 선택 논리를 사용합니다.
-seo-description: 클라이언트 비디오 플레이어 또는 매니페스트 서버가 CRS와 상호 작용하여 JIT 재패키징을 수행할 수 있습니다. 둘 다 동일한 광고 선택 논리를 사용합니다.
-seo-title: JIT 재패키징을 위한 자세한 워크플로우
 title: JIT 재패키징을 위한 자세한 워크플로우
-uuid: 11b6eb3c-f6aa-4018-9b20-ab6f5910508b
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
