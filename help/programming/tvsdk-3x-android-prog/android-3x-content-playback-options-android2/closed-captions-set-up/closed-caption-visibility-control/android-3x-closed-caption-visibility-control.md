@@ -1,25 +1,22 @@
 ---
-description: 자막의 가시성을 제어할 수 있습니다. 가시성이 활성화되면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
-seo-description: 자막의 가시성을 제어할 수 있습니다. 가시성이 활성화되면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
-seo-title: 자막 가시성 제어
+description: 닫힌 캡션의 가시성을 제어할 수 있습니다. 가시성이 활성화되면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
 title: 자막 가시성 제어
-uuid: f142e60d-5581-4d1c-9d4d-a4a58ac1b67b
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
 
 
-# 자막 표시 제어 {#control-closed-caption-visibility}
+# 닫힌 캡션 표시 제어 {#control-closed-caption-visibility}
 
-자막의 가시성을 제어할 수 있습니다. 가시성이 활성화되면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
+닫힌 캡션의 가시성을 제어할 수 있습니다. 가시성이 활성화되면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
 
 >[!TIP]
 >
->플레이어가 검색 모드에 들어갈 때 닫힌 캡션 텍스트가 표시되는 경우 검색이 완료된 후 텍스트가 더 이상 표시되지 않습니다. 대신, 몇 초 후 TVSDK는 마지막 검색 위치 이후 비디오에 다음 닫힌 캡션 텍스트를 표시합니다.
+>플레이어가 검색 모드를 시작할 때 닫힌 캡션 텍스트가 표시되는 경우 검색이 완료된 후 텍스트가 더 이상 표시되지 않습니다. 대신, 몇 초 후 TVSDK는 끝 검색 위치 뒤에 비디오에 다음 닫힌 캡션 텍스트를 표시합니다.
 >
 >닫힌 캡션의 가시성 값은 `MediaPlayer.Visibility`에 정의됩니다.
 >
@@ -31,7 +28,7 @@ ht-degree: 0%
 >}
 >```
 
-1. `MediaPlayer`이(가) PREMITED 상태 이상이어야 합니다. 자세한 내용은 [유효한 상태](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md)를 기다리기를 참조하십시오.
+1. `MediaPlayer`이(가) PREMITED 상태 이상이어야 합니다. 자세한 내용은 [유효한 상태 대기](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md)를 참조하십시오.
 
 1. 닫힌 캡션의 현재 가시성 설정을 가져오려면 가시성 값을 반환하는 `MediaPlayer`의 getter 메서드를 사용합니다.
 
