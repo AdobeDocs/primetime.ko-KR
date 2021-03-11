@@ -1,13 +1,10 @@
 ---
-description: MediaPlayer는 클릭 가능한 광고가 재생될 때 광고 관련 이벤트를 전달하는 notifyClick() 함수를 제공합니다. 이러한 이벤트는 앱에서 클릭스루 기능을 제공하는 데 사용할 수 있는 광고 및 광고 중단 정보를 제공합니다.
-seo-description: MediaPlayer는 클릭 가능한 광고가 재생될 때 광고 관련 이벤트를 전달하는 notifyClick() 함수를 제공합니다. 이러한 이벤트는 앱에서 클릭스루 기능을 제공하는 데 사용할 수 있는 광고 및 광고 중단 정보를 제공합니다.
-seo-title: 클릭 가능한 광고 처리
+description: MediaPlayer는 클릭 가능한 광고가 재생되는 동안 광고 관련 이벤트를 전달하는 notifyClick() 함수를 제공합니다. 이러한 이벤트는 앱이 클릭스루 기능을 제공하는 데 사용할 수 있는 광고 및 광고 브레이크 정보를 제공합니다.
 title: 클릭 가능한 광고 처리
-uuid: 5d3c9d36-60d7-4272-a523-7d1fe0e1615f
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -15,9 +12,9 @@ ht-degree: 0%
 
 # 클릭 가능한 광고 {#handle-clickable-ads} 처리
 
-MediaPlayer는 클릭 가능한 광고가 재생될 때 광고 관련 이벤트를 전달하는 notifyClick() 함수를 제공합니다. 이러한 이벤트는 앱에서 클릭스루 기능을 제공하는 데 사용할 수 있는 광고 및 광고 중단 정보를 제공합니다.
+MediaPlayer는 클릭 가능한 광고가 재생되는 동안 광고 관련 이벤트를 전달하는 notifyClick() 함수를 제공합니다. 이러한 이벤트는 앱이 클릭스루 기능을 제공하는 데 사용할 수 있는 광고 및 광고 브레이크 정보를 제공합니다.
 
-클릭 가능한 광고가 재생될 때 MediaPlayer는 다음 이벤트를 실행합니다.
+클릭 가능한 광고가 재생될 때 MediaPlayer에서 다음 이벤트를 실행합니다.
 
 * `AdobePSDK.PSDKEventType.AD_STARTED`
 * `AdobePSDK.PSDKEventType.AD_CLICKED`
@@ -27,7 +24,7 @@ MediaPlayer는 클릭 가능한 광고가 재생될 때 광고 관련 이벤트�
 
 1. 사용자가 클릭 가능한 광고를 클릭할 수 있도록 플레이어에서 컨트롤을 제공합니다.
 
-   사용자의 클릭을 캡처하는 단추 또는 기타 요소일 수 있습니다.
+   사용자의 클릭을 캡처하기 위한 단추 또는 기타 요소일 수 있습니다.
 1. 사용자의 광고 클릭 이벤트에 대한 이벤트 리스너를 추가합니다.
 
    예:
@@ -39,7 +36,7 @@ MediaPlayer는 클릭 가능한 광고가 재생될 때 광고 관련 이벤트�
 
 1. 사용자의 클릭 이벤트에 대한 핸들러를 추가합니다.
 
-   이 핸들러는 MediaPlayer에서 `AdClicked` 이벤트를 실행할지 여부를 묻는 메시지를 표시해야 합니다.
+   이 핸들러는 MediaPlayer에서 `AdClicked` 이벤트를 실행하라는 메시지를 표시해야 합니다.
 
    ```
    onAdClick = function (event) { 
@@ -53,7 +50,7 @@ MediaPlayer는 클릭 가능한 광고가 재생될 때 광고 관련 이벤트�
    } 
    ```
 
-1. MediaPlayer 광고 시작, 클릭 및 완성된 알림에 대한 이벤트 리스너를 추가합니다.
+1. MediaPlayer 광고 시작, 클릭한 광고 및 완성된 알림에 대한 이벤트 리스너를 추가합니다.
 
    ```
     <i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_STARTED, onAdStarted); 
