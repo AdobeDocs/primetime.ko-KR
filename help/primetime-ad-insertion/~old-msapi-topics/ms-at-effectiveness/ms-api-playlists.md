@@ -1,13 +1,10 @@
 ---
 description: 매니페스트 서버는 제안된 HTTP 라이브 스트리밍 표준을 준수하며 M3U8 형식의 마스터 재생 목록을 반환합니다. 이것은 서로 다른 비트 전송률 및 형식에 대해 동일한 컨텐츠의 변환을 포함하는 다양한 TS(Variant Transport Streams) 세트로 구성됩니다. Adobe Primetime 광고 삽입은 클라이언트 비디오 플레이어에서 해석할 수 있도록 EXT-X-MARKER 지시문 태그를 추가합니다.
-seo-description: 매니페스트 서버는 제안된 HTTP 라이브 스트리밍 표준을 준수하며 M3U8 형식의 마스터 재생 목록을 반환합니다. 이것은 서로 다른 비트 전송률 및 형식에 대해 동일한 컨텐츠의 변환을 포함하는 다양한 TS(Variant Transport Streams) 세트로 구성됩니다. Adobe Primetime 광고 삽입은 클라이언트 비디오 플레이어에서 해석할 수 있도록 EXT-X-MARKER 지시문 태그를 추가합니다.
-seo-title: EXT-X-MARKER 지시문
 title: EXT-X-MARKER 지시문
-uuid: e349bf89-b196-47b4-a362-9913fa28b2c6
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
