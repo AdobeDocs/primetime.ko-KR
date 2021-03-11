@@ -1,13 +1,10 @@
 ---
 description: 코드는 DRMManager를 통해 키를 요청할 수 있습니다.
-seo-description: 코드는 DRMManager를 통해 키를 요청할 수 있습니다.
-seo-title: HTML5 TVSDK의 주요 요청 워크플로우
 title: HTML5 TVSDK의 주요 요청 워크플로우
-uuid: a1f50eba-4301-49a1-b2e5-9add6687cff8
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -17,7 +14,7 @@ ht-degree: 0%
 
 코드는 DRMManager를 통해 키를 요청할 수 있습니다.
 
-또한 브라우저 TVSDK는 DRMManager 개체를 통해 setProtectionData API를 노출합니다.
+브라우저 TV SDK는 DRMManager 객체를 통해 setProtectionData API도 표시합니다.
 
 ```
 [  /** 
@@ -34,9 +31,9 @@ license acquisition. </p>
    setProtectionData: function(protectionData) 
 ```
 
-일반적인 방식으로 컨텐츠 재생을 시작하기 전에 코드가 이 API를 호출해야 합니다. MediaPlayer.vo.protection.ProtectionData는 여기에 설명되어 있습니다.[https://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html](https://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html)
+일반적인 방식으로 컨텐츠 재생을 시작하기 전에 코드가 이 API를 호출해야 합니다. MediaPlayer.vo.protection.ProtectionData는 여기에 문서화되어 있습니다.[https://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html](https://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html)
 
-다음은 PlayReady 및 Widevine 모두에 대한 라이센스 서버 URL이 포함된 샘플 보호 데이터 개체입니다.
+다음은 PlayReady 및 Widevine 모두에 대한 라이센스 서버 URL이 있는 샘플 보호 데이터 개체입니다.
 
 ```
 var protectionData = { 
