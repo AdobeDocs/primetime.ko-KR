@@ -1,13 +1,10 @@
 ---
 description: PABI(부분 광고 나누기 삽입) 기능은 사용자가 중간 롤에서 라이브 스트림에 참여하는 경우 프리롤 광고 또는 슬레이트가 아닌 미드롤 광고를 표시하는 TV와 같은 경험을 모방합니다.
-seo-description: PABI(부분 광고 나누기 삽입) 기능은 사용자가 중간 롤에서 라이브 스트림에 참여하는 경우 프리롤 광고 또는 슬레이트가 아닌 미드롤 광고를 표시하는 TV와 같은 경험을 모방합니다.
-seo-title: 부분 광고 나누기 삽입
 title: 부분 광고 나누기 삽입
-uuid: a0c1ae34-0f8d-4401-97fe-45a2ea40d08d
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
