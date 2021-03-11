@@ -1,13 +1,10 @@
 ---
-description: Primetime DRM 솔루션의 주요 클라이언트 측 요소는 DRM 관리자입니다. Android SDK에 포함된 샘플 애플리케이션에는 DRM 작업을 보다 쉽게 구현할 수 있도록 사용할 수 있는 DRMHelper 클래스도 포함되어 있습니다.
-seo-description: Primetime DRM 솔루션의 주요 클라이언트 측 요소는 DRM 관리자입니다. Android SDK에 포함된 샘플 애플리케이션에는 DRM 작업을 보다 쉽게 구현할 수 있도록 사용할 수 있는 DRMHelper 클래스도 포함되어 있습니다.
-seo-title: Primetime DRM 인터페이스 개요
+description: Primetime DRM 솔루션의 주요 클라이언트측 요소는 DRM 관리자입니다. Android SDK에 포함된 샘플 응용 프로그램에는 특정 DRM 작업을 구현하기 쉽게 하는 데 사용할 수 있는 DRMHelper 클래스도 포함되어 있습니다.
 title: Primetime DRM 인터페이스 개요
-uuid: 9e6f6ae6-7193-40fe-bc9d-d8de33705f5d
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # Primetime DRM 인터페이스 개요 {#primetime-drm-interface-overview}
 
-Primetime DRM 솔루션의 주요 클라이언트 측 요소는 DRM 관리자입니다. Android SDK에 포함된 샘플 응용 프로그램에는 특정 DRM 작업을 구현하기 쉽게 하는 데 사용할 수 있는 `DRMHelper` 클래스도 포함되어 있습니다.
+Primetime DRM 솔루션의 주요 클라이언트측 요소는 DRM 관리자입니다. Android SDK에 포함된 샘플 응용 프로그램에는 특정 DRM 작업을 구현하기 쉽게 하는 데 사용할 수 있는 `DRMHelper` 클래스도 포함되어 있습니다.
 
 <!--<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>-->
 
@@ -33,10 +30,10 @@ Primetime DRM은 TVSDK 애플리케이션에서 컨텐츠 보호를 구현하는
 
    >[!TIP]
    >
-   >이 API는 `MediaPlayerEvent.DRM_METADATA`이(가) 실행된 후에만 유효한 `DRMManager` 개체를 반환합니다. 이 이벤트가 실행되기 전에 `getDRMManager()`을 호출하면 NULL이 반환될 수 있습니다.
+   >이 API는 `MediaPlayerEvent.DRM_METADATA`이(가) 실행된 후에만 유효한 `DRMManager` 개체를 반환합니다. 이 이벤트가 발생하기 전에 `getDRMManager()`을(를) 호출하면 NULL이 반환될 수 있습니다.
 
 * DRM 작업 과정을 구현할 때 유용한 `DRMHelper` 도우미 클래스입니다.
-* 미디어와 별도의 URL에 있는 경우 DRM 메타데이터를 로드하는 `DRMHelper` 메타데이터 로더 메서드입니다.
+* 미디어와 별도의 URL에 있을 때 DRM 메타데이터를 로드하는 `DRMHelper` 메타데이터 로더 메서드입니다.
 
    ```java
    public static void loadDRMMetadata(final DRMManager drmManager,  
@@ -83,6 +80,6 @@ Primetime DRM은 TVSDK 애플리케이션에서 컨텐츠 보호를 구현하는
    final DRMAuthenticationListener authenticationListener);
    ```
 
-* 응용 프로그램에 다양한 DRM 활동 및 상태를 알려주는 이벤트입니다.
+* 응용 프로그램에 다양한 DRM 활동 및 상태를 알리는 이벤트입니다.
 
 DRM에 대한 자세한 내용은 [DRM 설명서](https://helpx.adobe.com/primetime/user-guide.html)를 참조하십시오.
