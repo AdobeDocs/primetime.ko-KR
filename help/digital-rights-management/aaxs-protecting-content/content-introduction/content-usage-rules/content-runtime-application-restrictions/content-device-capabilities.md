@@ -1,9 +1,9 @@
 ---
-seo-title: 보호된 내용을 재생하는 데 필요한 장치 기능
 title: 보호된 내용을 재생하는 데 필요한 장치 기능
-uuid: 16ed73d9-e02f-4c86-bf15-2d3e7122bf5a
+description: 보호된 내용을 재생하는 데 필요한 장치 기능
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -34,8 +34,8 @@ ht-degree: 0%
   <tr> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">신뢰의 하드웨어 루트 </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">"true" 또는 "false" </p> </td> 
-   <td colname="3" class="- topic/entry "> <p class="- topic/p ">정확 </p> </td> 
-   <td colname="4" class="- topic/entry "> <p class="- topic/p ">true인 경우 장치에 신뢰 하드웨어 루트가 있어야 합니다. </p> </td> 
+   <td colname="3" class="- topic/entry "> <p class="- topic/p ">Exact Macth </p> </td> 
+   <td colname="4" class="- topic/entry "> <p class="- topic/p ">true이면 장치에 하드웨어 신뢰 루트가 있어야 합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
