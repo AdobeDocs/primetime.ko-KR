@@ -1,9 +1,9 @@
 ---
-seo-title: 인증서 요청(요청자)
 title: 인증서 요청(요청자)
-uuid: f0d7f65d-681d-430f-b67b-3bdceb4b6d37
+description: 인증서 요청(요청자)
+copied-description: true
 translation-type: tm+mt
-source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >이 옵션은 평가판 및 시험버전 SDK 버전에 표시되지 않습니다. 이러한 SDK 버전은 하나의 인증서를 사용합니다.
+   >이 옵션은 평가 및 시험버전 SDK 버전에 표시되지 않습니다. 이러한 SDK 버전은 하나의 인증서를 사용합니다.
 
 1. 다음 중 하나를 수행합니다.
 
@@ -34,5 +34,5 @@ ht-degree: 0%
 
 1. **[!UICONTROL Submit Request]** 단추를 클릭합니다.
 
-   검토를 위해 계정 및 보조 관리자에게 이메일이 전송됩니다. 요청자는 Cc&#39;d입니다.
+   검토를 위해 계정 및 보조 관리자에게 이메일을 보냅니다. 요청자는 Cc&#39;d입니다.
 
