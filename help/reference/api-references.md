@@ -1,13 +1,11 @@
 ---
 title: Adobe Primetime API 참조
-seo-title: Adobe Primetime API 참조
-description: API를 사용하면 기능 애플리케이션 또는 통합을 빠르고 손쉽게 만들 수 있습니다.
-seo-description: API를 사용하면 기능 애플리케이션 또는 통합을 빠르고 손쉽게 만들 수 있습니다.
+description: API를 사용하면 기능적인 애플리케이션 또는 통합을 빠르고 손쉽게 만들 수 있습니다.
 topic-tags: API-references
 translation-type: tm+mt
-source-git-commit: 1841f64e6f7a839f997b0710661898fda0d69bd6
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
