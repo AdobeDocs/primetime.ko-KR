@@ -1,9 +1,9 @@
 ---
-seo-title: 관련 API 설명서
 title: 관련 API 설명서
-uuid: ade0f8fb-e529-4a21-8b54-66baa3a93cb8
+description: 관련 API 설명서
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -14,5 +14,5 @@ ht-degree: 0%
 # 관련 API 설명서 {#related-api-documentation}
 
 * [클래스 AAManager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.html)
-* [클래스 AAManagerOn](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManagerOn.html)
+* [AAManagerOn 클래스](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManagerOn.html)
 * [mediacore.info.AudioTrack](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/info/AudioTrack.html)
