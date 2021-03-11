@@ -1,13 +1,10 @@
 ---
 description: CRS 리패키징 API를 사용하여 비HLS 광고 크리에이티브를 사전에 트랜스코딩할 수 있으므로 HLS 버전을 실행해야 할 때 사용할 수 있으므로 JIT(Just-In-Time) 재패키징과 관련된 2-4분 지연이 발생하지 않습니다.
-seo-description: CRS 리패키징 API를 사용하여 비HLS 광고 크리에이티브를 사전에 트랜스코딩할 수 있으므로 HLS 버전을 실행해야 할 때 사용할 수 있으므로 JIT(Just-In-Time) 재패키징과 관련된 2-4분 지연이 발생하지 않습니다.
-seo-title: API 재패키징
 title: API 재패키징
-uuid: 03cd2428-510a-4b99-8496-059a48d5abba
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
