@@ -1,13 +1,10 @@
 ---
 description: Android 2.5용 TVSDK에는 플레이어에서 구현할 수 있는 다양한 기능이 포함되어 있습니다.
-seo-description: Android 2.5용 TVSDK에는 플레이어에서 구현할 수 있는 다양한 기능이 포함되어 있습니다.
-seo-title: Primetime TVSDK 기능
 title: Primetime TVSDK 기능
-uuid: 20ef9abf-1a33-4afc-bb2e-4910e3398a7a
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -21,13 +18,13 @@ TVSDK 기능:
 
 * **VOD 및 실시간/선형 재생**
 
-   * 재생, 중지, 일시 중지, 검색 및 재생 헤드 위치를 가져오는 방법을 비롯하여 재생 창 관리
+   * 재생 헤드 위치를 재생, 중지, 일시 정지, 검색 및 가져오는 방법을 포함하여 재생 창 관리
    * 전체 이벤트 재생 지원
    * 액세스 가능성 향상을 위한 자막(608, 708, WebVTT) 및 오디오 대체 형식
    * 캡션의 텍스트 스타일 제어
-   * DVR 기능, 빨리 감기 및 빨리 되감기(후자를 *트릭-플레이 모드*&#x200B;라고 함)
-   * ABR(응용 비트 전송률) 로직 및 ABR 컨트롤의 초기 설정
-   * 실시간 매니페스트 장애 조치 지원
+   * DVR 기능, 빨리 감기 및 빨리 되감기(후자를 *trick-play 모드*&#x200B;로 함)
+   * 응용 비트 전송률(ABR) 논리 및 ABR 컨트롤의 초기 설정
+   * 라이브 매니페스트 페일오버 지원
    * 조정 가능한 재생 버퍼
    * 조각 기간, 크기 및 다운로드 시간 추적 지원
 
@@ -50,7 +47,7 @@ TVSDK 기능:
 * **비디오 및 광고 추적**
 
    * QoS 이벤트 추적
-   * TV SDK 및 응용 프로그램이 비디오, 광고 및 기타 요소의 상태를 비동기식으로 알리는 데 도움이 되는 알림입니다. 알림도 활동을 기록합니다.
+   * TV SDK 및 응용 프로그램이 비디오, 광고 및 기타 요소의 상태를 비동기적으로 알리는 데 도움이 되는 알림입니다. 알림도 활동을 기록합니다.
 
 * **로깅**
 
