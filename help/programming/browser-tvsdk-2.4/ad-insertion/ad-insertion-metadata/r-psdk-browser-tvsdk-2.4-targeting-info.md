@@ -1,13 +1,10 @@
 ---
-description: Adobe Primetime 광고 결정에서는 키-값 쌍으로 광고를 타깃팅할 수 있습니다.
-seo-description: Adobe Primetime 광고 결정에서는 키-값 쌍으로 광고를 타깃팅할 수 있습니다.
-seo-title: 타깃팅 정보
+description: Adobe Primetime 광고 결정에서 키-값 쌍으로 광고를 타깃팅할 수 있습니다.
 title: 타깃팅 정보
-uuid: 72114bef-36a1-4f2d-92e8-59f4885d70d2
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '37'
 ht-degree: 0%
 
 ---
@@ -15,9 +12,9 @@ ht-degree: 0%
 
 # 타깃팅 정보{#targeting-information}
 
-Adobe Primetime 광고 결정에서는 키-값 쌍으로 광고를 타깃팅할 수 있습니다.
+Adobe Primetime 광고 결정에서 키-값 쌍으로 광고를 타깃팅할 수 있습니다.
 
-이러한 키 값 쌍을 Browser TVSDK로 전달하려면:
+이러한 키 값 쌍을 브라우저 TVSDK로 전달하려면:
 
 ```js
 var auditudeSettings = new AdobePSDK.AuditudeSettings(); 
