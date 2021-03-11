@@ -1,13 +1,10 @@
 ---
 description: '방화벽 규칙을 결정할 때는 다음 유형의 URL을 고려하십시오 '
-seo-description: '방화벽 규칙을 결정할 때는 다음 유형의 URL을 고려하십시오 '
-seo-title: 방화벽 규칙
 title: 방화벽 규칙
-uuid: 309b35b5-8c0a-4cd7-9289-b6b035955697
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -17,7 +14,7 @@ ht-degree: 0%
 
 방화벽 규칙을 결정할 때는 다음 유형의 URL을 고려하십시오.
 
-## 수신 URL {#section_F111526A9DB844CBBF21A3CAE5F50880}
+## 들어오는 URL {#section_F111526A9DB844CBBF21A3CAE5F50880}
 
 외부 방화벽을 구성하여 최종 사용자에게 제공하려는 응용 프로그램 기능에 대한 URL만 표시할 수 있습니다.
 
@@ -44,7 +41,7 @@ ht-degree: 0%
      <li id="li_01B2E17BF4DB456383FD6E18E9DE28F5"><span class="filepath"> /flashaccess/authn/v5/*</span> </li> 
      <li id="li_096D349CCD7945B387CB80C3E99063C7"><span class="filepath"> /flashaccess/authn/v6/*</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">사용자를 인증하는 방법 </p> <p>사용자 인증을 위해 Adobe Primetime DRM 클라이언트 API를 사용하는 경우 이 URL에 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">사용자를 인증합니다. </p> <p>사용자 인증을 위해 Adobe Primetime DRM 클라이언트 API를 사용하는 경우 이 URL에 액세스할 수 있어야 합니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -55,7 +52,7 @@ ht-degree: 0%
      <li id="li_5112283BDCF1457099056733B633FAF1"><span class="filepath"> /flashaccess/license/v5/*</span> </li> 
      <li id="li_F73A570E2C1A45E1BBF21C1468B90D3A"><span class="filepath"> /flashaccess/license/v6/*</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">최종 사용자에게 라이선스를 발행하려면 </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">최종 사용자에게 라이선스를 발급하려면 </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -65,7 +62,7 @@ ht-degree: 0%
      <li id="li_2222D27F73D0421396A4F0E18140B3F9"><span class="filepath"> /flashaccess/sync/v5</span> </li> 
      <li id="li_18020B7CE36B4C209F65FF01A00B6737"><span class="filepath"> /flashaccess/sync/v6/*</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">요청을 동기화하려면 </p> <p>라이센스의 동기화 요구 사항을 지정하는 경우 이 URL에 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">요청을 동기화하려면 </p> <p>라이센스에 동기화 요구 사항을 지정하는 경우 이 URL에 액세스할 수 있어야 합니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -85,30 +82,30 @@ ht-degree: 0%
      <li id="li_C761F14F3C97479CBA5C255739E01A28"><span class="filepath"> /flashaccess/dereg/v5</span> </li> 
      <li id="li_23A8AABE7499488EB61B7ED27CC65098"><span class="filepath"> /flashaccess/dereg/v6/*</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">도메인 등록을 취소하려면 </p> <p>도메인 지원을 구현하는 경우 이 URL에 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">도메인을 등록 취소하려면 </p> <p>도메인 지원을 구현하는 경우 이 URL에 액세스할 수 있어야 합니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/headerconversion/v1/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 FMRMS 1.x DRM 메타데이터를 Primetime DRM 메타데이터로 변환할 수 있도록 허용하려면 </p> <p>참고: 이 URL은 SSL(HTTPS)을 사용해야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 FMRMS 1.x DRM 메타데이터를 Primetime DRM 메타데이터로 변환할 수 있도록 허용하려면. </p> <p>참고: 이 URL은 SSL(HTTPS)을 사용해야 합니다. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /edcws/services/urn:EDCLicenseService/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">LiveCycle Rights Management ES 웹 서비스 URL. 이전 버전의 FMRMS를 사용하여 컨텐츠가 게시된 경우 이 URL을 통해 이전 클라이언트가 서버에 연결할 수 있습니다. 이러한 클라이언트에게 Adobe Primetime DRM으로 업그레이드하라는 메시지가 표시됩니다. </p> <p class="- topic/p ">참고:이 URL은 SSL(HTTPS)을 사용해야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">LiveCycle Rights Management ES 웹 서비스 URL. 이전 버전의 FMRMS를 사용하여 컨텐츠를 게시한 경우 이 URL을 사용하면 이전 클라이언트가 서버에 연결할 수 있습니다. 이러한 클라이언트에는 Adobe Primetime DRM으로 업그레이드하라는 메시지가 표시됩니다. </p> <p class="- topic/p ">참고:이 URL은 SSL(HTTPS)을 사용해야 합니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "> 
     <ul id="ul_382B69AB07204DD596BB375132224D96"> 
-     <li id="li_24B4D42BECF8405281C73B782F8E7310"><span class="filepath"> /flashaccess/return/v5</span> </li> 
-     <li id="li_6B79563205D1421F89131E650D71E83B"><span class="filepath"> /flashaccess/return/v6</span> </li> 
+     <li id="li_24B4D42BECF8405281C73B782F8E7310"><span class="filepath"> /flashaccess/lreturn/v5</span> </li> 
+     <li id="li_6B79563205D1421F89131E650D71E83B"><span class="filepath"> /flashaccess/lreturn/v6</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p>라이선스를 반환하려면 </p> <p> 라이센스 반환 지원을 구현한 경우 URL에 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>라이선스를 반품하려면 </p> <p> 라이센스 반환 지원을 구현하는 경우 URL에 액세스할 수 있어야 합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->내부 방화벽은 역방향 프록시를 통해 Primetime DRM 라이선스 서버에 연결만 허용하며 표의 URL에만 연결되도록 해야 합니다. 확장성을 향상시키려면 역방향 프록시와 Primetime DRM 간의 연결에 HTTP를 사용하십시오.
+>내부 방화벽은 역방향 프록시를 통해 Primetime DRM 라이선스 서버에 연결되고 표의 URL에만 연결되도록 허용해야 합니다. 확장성을 향상시키려면 역방향 프록시와 Primetime DRM 간 연결에 HTTP를 사용하십시오.
 
 ## 나가는 URL {#section_FFF9F7BB353149F4A27F8788E9934A48}
 
