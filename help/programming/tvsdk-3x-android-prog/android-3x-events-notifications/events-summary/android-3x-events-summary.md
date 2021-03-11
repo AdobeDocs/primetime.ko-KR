@@ -1,13 +1,10 @@
 ---
-description: 애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
-seo-description: 애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
-seo-title: Primetime 플레이어 이벤트 요약
+description: 응용 프로그램은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
 title: Primetime 플레이어 이벤트 요약
-uuid: b2ff74f2-c373-42da-a717-2f0550cbcb7f
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -15,11 +12,11 @@ ht-degree: 0%
 
 # Primetime 플레이어 이벤트 요약 {#primetime-player-events-summary}
 
-애플리케이션은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
+응용 프로그램은 TVSDK에서 전달하는 이벤트를 수신하여 플레이어의 활동과 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
 
 ## 이벤트 {#events}
 
-TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 시기를 알려줍니다. 각 이벤트는 구현해야 하는 콜백 메서드와 함께 리스너 클래스에 해당합니다.
+응용 프로그램이 응답해야 하는 이벤트가 발생하면 TVSDK에서 사용자에게 알립니다. 각 이벤트는 구현해야 하는 콜백 메서드와 함께 리스너 클래스에 해당합니다.
 
 >[!TIP]
 >
@@ -27,7 +24,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `AdBreakCompletedEventListener`
 
-* **** 의미광고 중단의 재생이 완료되었습니다.
+* **의미** 광고 브레이크의 재생이 완료되었습니다.
 
 * **구현할 콜백** `onAdBreakCompleted(AdBreakPlaybackEvent event)`
 
@@ -35,7 +32,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `AdBreakSkippedEventListener`
 
-* **의미** 재생 중에 광고 나누기를 건너뛰었습니다.
+* **** 의미 재생 중에 광고 나누기를 건너뛰었습니다.
 
 * **구현할 콜백** `onAdBreakSkipped(AdBreakPlaybackEvent event)`
 
@@ -43,7 +40,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `AdBreakStartedEventListener`
 
-* **** 의미광고 중단의 재생이 시작되었습니다.
+* **의미** 광고 중단의 재생이 시작되었습니다.
 
 * **구현할 콜백** `onAdBreakStarted(AdBreakPlaybackEvent event)`
 
@@ -51,14 +48,14 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `AdClickedEventListener`
 
-* **** 의미재생 중에 광고를 클릭했습니다.
+* **** 의미 재생 중에 광고를 클릭했습니다.
 
 * **구현할 콜백** `onAdClicked(AdClickEvent event)`
 * **이벤트 코드** `AD_CLICK`
 
 `AdCompletedEventListener`
 
-* **** 의미광고 재생이 완료되었습니다.
+* **** 의미 광고 재생이 완료되었음을 나타냅니다.
 
 * **구현할 콜백** `onAdCompleted(AdPlaybackEvent event)`
 
@@ -66,7 +63,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `AdProgressEventListener`
 
-* **의미** 재생 중 진행 상황 보고
+* **의미** 재생 중 진행 상황을 보고합니다.
 
 * **구현할 콜백** `onAdProgress(AdPlaybackEvent event)`
 
@@ -74,7 +71,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `AdResolutionCompleteEventListener`
 
-* **Primetime 광고 결정** 광고 해상도가 완료되었습니다. 이 이벤트는 VOD 컨텐츠에만 해당됩니다.
+* **** 의미: Primetime 광고 결정 광고 해상도가 완료되었습니다. 이 이벤트는 VOD 컨텐츠에만 해당됩니다.
 
 * **구현할 콜백** `onAdResolutionComplete()`
 
@@ -82,7 +79,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `AdStartedEventListener`{#section_A4339C48F82640A8AF4AF09CB3B33188}
 
-* **** 의미광고 재생이 시작되었습니다.
+* **** 의미 광고 재생이 시작되었습니다.
 
 * **구현할 콜백** `onAdStarted(AdPlaybackEvent event)`
 
@@ -98,7 +95,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `BufferingBeginEventListener`
 
-* **** 의미플레이어가 버퍼링을 시작했습니다.
+* **** 의미 플레이어가 버퍼링을 시작했습니다.
 
 * **구현할 콜백** `onBufferingBegin(BufferEvent event)`
 
@@ -106,7 +103,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `BufferingEndEventListener`
 
-* **** 의미플레이어가 버퍼링을 중지했습니다.
+* **** 의미 플레이어가 버퍼링을 중지했습니다.
 
 * **구현할 콜백** `onBufferingEnd(BufferEvent event)`
 
@@ -138,7 +135,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `ItemCreatedEventListener`
 
-* **의미** 새 미디어 플레이어 항목이 만들어졌습니다.
+* **** 의미 새 미디어 플레이어 항목이 만들어졌습니다.
 
 * **구현할 콜백** `onItemCreated(MediaPlayerItemEvent event)`
 
@@ -170,7 +167,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `NotificationEventListener`
 
-* **** 의미작업이 실패했습니다.
+* **** 의미 작업이 실패했습니다.
 
 * **구현할 콜백** `onNotification(NotificationEvent event)`
 
@@ -178,7 +175,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `PlaybackRangeUpdatedEventListener`
 
-* **** 의미재생 범위가 업데이트되었습니다.
+* **** 의미 재생 범위가 업데이트되었습니다.
 
 * **구현할 콜백** `onPlaybackRangeUpdated(MediaPlayerItemEvent event)`
 
@@ -186,7 +183,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `PlaybackRatePlayingEventListener`
 
-* **의미** 새로운 재생 속도가 화면에 표시됩니다.
+* **** 의미 새로운 재생 속도가 화면에 표시됩니다.
 
 * **구현할 콜백** `onRatePlaying(PlaybackRateEvent event)`
 
@@ -194,7 +191,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `PlaybackRateSelectedEventListener`
 
-* **** 의미MediaPlayer의 rate 특성이 설정되었습니다.
+* **** 의미 MediaPlayer의 rate 속성이 설정되었습니다.
 
 * **구현할 콜백** `onRateSelected(PlaybackRateEvent event)`
 
@@ -210,7 +207,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `ProfileChangeEventListener`
 
-* **** 의미MediaPlayer의 현재 프로필이 변경되었습니다.
+* **** 의미 MediaPlayer의 현재 프로필이 변경되었습니다.
 
 * **구현할 콜백** `onProfileChanged(ProfileEvent event)`
 
@@ -250,7 +247,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `SizeAvailableEventListener`
 
-* **** 의미미디어의 크기를 사용할 수 있습니다.
+* **** 의미 미디어 크기를 사용할 수 있습니다.
 
 * **구현할 콜백** `onSizeAvailable(SizeAvailableEvent event)`
 
@@ -258,7 +255,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `StatusChangeEventListener`
 
-* **MediaPlayer 상태가** 변경되었습니다.
+* **** 의미 MediaPlayer 상태가 변경되었습니다.
 
 * **구현할 콜백** `onStatusChanged(MediaPlayerStatusChangeEvent event)`
 
@@ -266,7 +263,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `TimeChangeEventListener`
 
-* **** 의미플레이헤드가 변경되었습니다.
+* **** 의미재생 헤드가 변경되었습니다.
 
 * **구현할 콜백** `onTimeChanged(TimeChangeEvent event)`
 
@@ -274,7 +271,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `TimedEventEventListener`
 
-* **** 의미작업에 걸린 시간과 함께 작업이 완료되었습니다.
+* **** 의미 작업에 소요되는 시간과 함께 작업이 완료됩니다.
 
 * **구현할 콜백** `onTimedEvent(TimedEventEvent event)`
 
@@ -290,7 +287,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `TimedMetadataEventListener`
 
-* **의미** 미디어 스트림에서 새로운 시간 메타데이터가 검색되었습니다.
+* **** 의미 미디어 스트림에서 새 시간 메타데이터가 검색되었습니다.
 
 * **구현할 콜백** `onTimedMetadata(TimedMetadataEvent event)`
 
@@ -298,7 +295,7 @@ TVSDK는 응용 프로그램이 응답해야 하는 이벤트가 발생하는 �
 
 `TimelineUpdatedEventListener`
 
-* **** 의미 타임라인이 수정되었습니다. 타임라인에 광고가 추가되었거나 제거되었을 수 있습니다.
+* **** 의미 타임라인이 수정되었습니다. 광고가 타임라인에 추가되었거나 타임라인에서 제거되었을 수 있습니다.
 
 * **구현할 콜백** `onTimelineUpdated(TimelineEvent event)`
 
