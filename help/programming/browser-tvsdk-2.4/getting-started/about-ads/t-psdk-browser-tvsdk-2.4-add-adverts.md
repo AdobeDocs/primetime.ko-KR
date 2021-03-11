@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 광고 추가
 title: 광고 추가
-uuid: 7762506f-b55e-445d-b8a2-c1208358a370
+description: 광고 추가
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '49'
 ht-degree: 0%
 
 ---
@@ -31,7 +29,7 @@ ht-degree: 0%
      new AdobePSDK.MediaResource(resourceUrl, resourceType, auditudeSettings, false);
    ```
 
-1. 구성에 설정을 추가하고 `SpliceOut` 파서 팩터리를 추가합니다.
+1. 설정을 구성에 추가하고 `SpliceOut` 파서 팩터리를 추가합니다.
 
    ```js
    var config = new AdobePSDK.MediaPlayerItemConfig(); 
@@ -40,7 +38,7 @@ ht-degree: 0%
    ```
 
 1. 라이브러리 섹션에 `ExtCueOutContentFactory`을(를) 추가합니다.
-1. 라이브러리 섹션에서 `ExtCueOutContentFactory.js`을 다운로드하고 작업 폴더에 배치합니다.
+1. 라이브러리 섹션에서 `ExtCueOutContentFactory.js`을 다운로드하여 작업 폴더에 배치합니다.
 
    ```js
    <script src= "frameworks/player/dash.min.js"></script> 
