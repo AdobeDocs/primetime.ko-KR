@@ -1,9 +1,9 @@
 ---
-seo-title: 보호된 스트리밍을 위한 서버 설정 및 배포
-title: 보호된 스트리밍을 위한 서버 설정 및 배포
-uuid: 300a1b63-0bf0-48a8-977d-212563025c19
+title: 스트리밍 보호를 위한 서버 설정 및 배포
+description: 스트리밍 보호를 위한 서버 설정 및 배포
+copied-description: true
 translation-type: tm+mt
-source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -11,15 +11,15 @@ ht-degree: 0%
 ---
 
 
-# 보호된 스트리밍을 위한 서버 설정 및 배포 {#set-up-and-deploy-the-server-for-protected-streaming}
+# 보호된 스트리밍 {#set-up-and-deploy-the-server-for-protected-streaming}에 대한 서버 설정 및 배포
 
-1. Primetime DRM DVD에서 구성 폴더를 설정합니다.
+1. Primetime DRM DVD에 구성 폴더를 설정합니다.
 
    `\Adobe Access Server for Protected Streaming\configs\`
 1. 샘플 `configs` 폴더를 `<Tomcat_installation_dir>`에 복사하고 복사한 폴더의 이름을 `licenseserver`로 변경합니다.
 
    구성 폴더의 경로는 이제 `<Tomcat_install_dir>\licenseserver\`이어야 합니다.
-1. Primetime DRM `<DVD>` `\Adobe Access Server for Protected Streaming\` 디렉터리에서 전송 및 라이선스 서버 PFX 파일에 대한 암호화된 암호를 받으려면 `Scrambler.bat`을(를) 실행하십시오.
+1. Primetime DRM `<DVD>` `\Adobe Access Server for Protected Streaming\` 디렉토리에서 전송 및 라이선스 서버 PFX 파일에 대한 암호화된 암호를 받으려면 `Scrambler.bat`을(를) 실행하십시오.
 
    * `Scrambler.bat <Adobe-provided transport credential password>`
    * `Scrambler.bat <Adobe-provided license server credential password>`
