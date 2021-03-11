@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: HTTPS를 통한 안전한 광고 로딩
 title: HTTPS를 통한 안전한 광고 로딩
-uuid: 10657f59-cfbf-4c75-9249-fc154952bc51
+description: HTTPS를 통한 안전한 광고 로딩
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
 
 
-# HTTPS{#secure-ad-loading-over-https}를 통해 안전한 광고 로딩
+# HTTPS{#secure-ad-loading-over-https}를 통해 안전한 광고 로드
 
-Adobe Primetime은 플레이어가 http에서 호스팅되더라도 https를 통해 타사 광고 서버를 요청할 수 있습니다. Auditude Ad 확인자 단계 동안 클라이언트가 찾는 https로 해당 광고 서버 호출만 업그레이드됩니다.
+Adobe Primetime은 플레이어가 http에서 호스팅된 경우에도 https를 통해 타사 광고 서버를 요청할 수 있습니다. Auditude Ad 해결 프로그램 단계 동안 클라이언트가 검색하는 https로 해당 광고 서버 호출만 업그레이드됩니다.
 
 >[!NOTE]
 >
