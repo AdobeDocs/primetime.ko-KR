@@ -1,21 +1,18 @@
 ---
-description: TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체 형태로 노출합니다.
-seo-description: TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체 형태로 노출합니다.
-seo-title: Timed metadata 클래스
+description: TVSDK가 재생 목록/매니페스트에서 구독 태그를 감지하면 플레이어는 자동으로 TimedMetadata 객체 형태로 태그를 처리하고 노출하려고 합니다.
 title: Timed metadata 클래스
-uuid: c7b1c1d7-48b3-43c7-aa21-f800d894976d
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 
-# Timed metadata class {#timed-metadata-class}
+# Timed metadata 클래스 {#timed-metadata-class}
 
-TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하면 플레이어는 자동으로 태그를 처리하고 TimedMetadata 개체 형태로 노출합니다.
+TVSDK가 재생 목록/매니페스트에서 구독 태그를 감지하면 플레이어는 자동으로 TimedMetadata 객체 형태로 태그를 처리하고 노출하려고 합니다.
 
 이 클래스는 다음과 같은 요소를 제공합니다.
 
@@ -31,7 +28,7 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
   <tr> 
    <td colname="col1"> <span class="codeph"> id  </span> </td> 
    <td colname="col02"> long </td> 
-   <td colname="col2"> <p>시간 지정 메타데이터의 고유 식별자입니다. </p> <p>이 값은 일반적으로 큐/태그 ID 속성에서 추출됩니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. <span class="codeph"> getId </span>를 사용하십시오. </p> </td> 
+   <td colname="col2"> <p>시간 지정 메타데이터의 고유 식별자입니다. </p> <p>이 값은 일반적으로 큐/태그 ID 속성에서 추출됩니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. <span class="codeph"> getId </span>를 사용합니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> 메타데이터  </span> </td> 
@@ -41,20 +38,20 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
   <tr> 
    <td colname="col1"> <span class="codeph"> name  </span> </td> 
    <td colname="col02"> 문자열 </td> 
-   <td colname="col2"> <p>시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG </span>이면 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3 </span>이면 null입니다. <span class="codeph"> getName </span>을 사용하십시오. </p> </td> 
+   <td colname="col2"> <p>시간 지정 메타데이터의 이름입니다. 유형이 <span class="codeph"> TAG </span>인 경우 값은 cue/tag 이름을 나타냅니다. 유형이 <span class="codeph"> ID3 </span>이면 null입니다. <span class="codeph"> getName </span>을(를) 사용합니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> time  </span> </td> 
    <td colname="col02"> long </td> 
-   <td colname="col2"> <p>이 시간 메타데이터가 스트림에 있는 기본 컨텐츠의 시작을 기준으로 시간 위치(밀리초)입니다. <span class="codeph"> getTime </span>을 사용하십시오. </p> </td> 
+   <td colname="col2"> <p>이 시간 메타데이터가 스트림에 있는 기본 컨텐츠의 시작을 기준으로 하는 시간 위치(밀리초)입니다. <span class="codeph"> getTime </span>을 사용합니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> type  </span> </td> 
    <td colname="col02"> 유형 </td> 
-   <td colname="col2"> <p>시간 지정 메타데이터의 유형입니다. <span class="codeph"> getType </span>을 사용하십시오. 
+   <td colname="col2"> <p>시간 지정 메타데이터의 유형입니다. <span class="codeph"> getType </span>을 사용합니다. 
      <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
       <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - 재생 목록/매니페스트의 태그에서 시간 메타데이터를 만들었음을 나타냅니다. </li> 
-      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - 미디어 스트림의 ID3 태그에서 시간 메타데이터를 만들었음을 나타냅니다. </li> 
+      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - 미디어 스트림의 ID3 태그에서 시간 지정 메타데이터를 만들었음을 나타냅니다. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -68,7 +65,7 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
 
    >[!TIP]
    >
-   >매니페스트의 사용자 지정 태그의 복잡한 데이터(예: 특수 문자가 있는 문자열)는 따옴표로 묶어야 합니다. 예:
+   >특수 문자가 있는 문자열 등 매니페스트의 사용자 지정 태그의 복잡한 데이터는 따옴표로 묶어야 합니다. 예:
    >
    >
    ```
@@ -76,7 +73,7 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
    >"www.example.com:8090?parameter1=xyz&parameter2=abc"
    >```
 
-* 사용자 지정 태그 형식으로 인해 추출이 실패하는 경우 메타데이터 속성이 비어 있고 응용 프로그램에서 실제 정보를 추출해야 합니다. 이 경우 오류가 발생하지 않습니다.
+* 사용자 지정 태그 형식으로 인해 추출에 실패하는 경우 메타데이터 속성은 비어 있고 응용 프로그램은 실제 정보를 추출해야 합니다. 이 경우 오류가 발생하지 않습니다.
 
 <table id="table_1BAE98BF23F641A3A5709EBE37B327F6"> 
  <thead> 
@@ -88,15 +85,15 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
  <tbody> 
   <tr> 
    <td colname="col1"> <span class="codeph"> 공개 열거형 유형 {TAG, ID3}  </span> </td> 
-   <td colname="col2"> <p>시간 메타데이터에 사용할 수 있는 유형입니다. </p> </td> 
+   <td colname="col2"> <p>시간 지정 메타데이터에 대해 가능한 유형입니다. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public TimedMetadata(유형, 긴 시간, 긴 id, 문자열 이름, 메타데이터);  </span> </td> 
-   <td colname="col2"> <p>기본 생성자(시간은 로컬 스트림 시간). </p> </td> 
+   <td colname="col1"> <span class="codeph"> public TimedMetadata(유형 유형, 긴 시간, 긴 id, 문자열 이름, 메타데이터);  </span> </td> 
+   <td colname="col2"> <p>기본 생성자(시간은 로컬 스트림 시간입니다). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> public long getTime();  </span> </td> 
-   <td colname="col2"> <p>기본 컨텐츠의 시작을 기준으로 스트림에 이 메타데이터가 삽입된 시간 위치입니다. </p> </td> 
+   <td colname="col2"> <p>이 메타데이터가 스트림에 삽입된 기본 컨텐츠의 시작을 기준으로 하는 시간 위치입니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> 공개 메타데이터 getMetadata();  </span> </td> 
@@ -108,7 +105,7 @@ TVSDK가 재생 목록/매니페스트에서 구독 중인 태그를 감지하�
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> public long getId();  </span> </td> 
-   <td colname="col2"> <p>큐/태그 속성에서 추출한 ID를 반환합니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. </p> </td> 
+   <td colname="col2"> <p>큐/태그 속성에서 추출된 ID를 반환합니다. 그렇지 않으면 고유한 임의 값이 제공됩니다. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> public String getName();  </span> </td> 
