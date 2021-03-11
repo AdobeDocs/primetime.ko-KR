@@ -1,13 +1,10 @@
 ---
 description: TVSDK는 클릭스루 광고에 대한 작업을 수행할 수 있도록 정보를 제공합니다. 플레이어 UI를 만들 때 사용자가 클릭 가능한 광고를 클릭할 때 응답하는 방법을 결정해야 합니다.
-seo-description: TVSDK는 클릭스루 광고에 대한 작업을 수행할 수 있도록 정보를 제공합니다. 플레이어 UI를 만들 때 사용자가 클릭 가능한 광고를 클릭할 때 응답하는 방법을 결정해야 합니다.
-seo-title: 클릭 가능한 광고
 title: 클릭 가능한 광고
-uuid: a8fbd553-aff5-4854-a78c-f5d57675a504
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
