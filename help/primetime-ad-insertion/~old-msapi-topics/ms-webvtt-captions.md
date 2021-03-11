@@ -1,13 +1,10 @@
 ---
 description: 매니페스트 서버는 모든 HLS 비디오 형식에 대해 게시자가 활성화된 WebVTT 캡션을 지원합니다. WebVTT 캡션 컨텐츠에 광고를 삽입하라는 요청을 받으면 올바르게 됩니다.
-seo-description: 매니페스트 서버는 모든 HLS/DASH 비디오 형식에 대해 게시자가 활성화된 WebVTT 캡션을 지원합니다. WebVTT 캡션 컨텐츠에 광고를 삽입하라는 요청을 받으면 올바르게 됩니다.
-seo-title: WebVTT 캡션 지원
 title: WebVTT 캡션 지원
-uuid: 1dc728b0-5aeb-4c48-8f3b-54ff4b135742
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
