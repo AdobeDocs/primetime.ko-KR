@@ -1,13 +1,10 @@
 ---
 description: TVSDK 비헤이비어를 추가하여 단추를 일시 정지하고 재생할 수 있습니다.
-seo-description: TVSDK 비헤이비어를 추가하여 단추를 일시 정지하고 재생할 수 있습니다.
-seo-title: 비디오 재생 및 일시 중지
 title: 비디오 재생 및 일시 중지
-uuid: 04b3b23f-5ef1-4cc4-a22f-f6ffa9cefce5
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -19,7 +16,7 @@ TVSDK 비헤이비어를 추가하여 단추를 일시 정지하고 재생할 �
 
 1. 다음을 수행하는 일시 중지/재생 단추를 만듭니다.
    1. 플레이어가 준비 상태 이상 될 때까지 기다립니다.
-   1. 재생을 시작하려면 TVSDK 재생 방법을 호출합니다.
+   1. 재생을 시작하려면 TVSDK 재생 메서드를 호출합니다.
 
       ```
       function play():void;
