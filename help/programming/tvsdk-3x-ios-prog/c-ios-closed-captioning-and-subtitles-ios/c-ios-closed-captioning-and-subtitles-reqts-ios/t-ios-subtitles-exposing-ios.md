@@ -1,27 +1,24 @@
 ---
-description: TVSDK는 PTMediaPlayerMediaSelectionOptionsAvailableNotification 알림을 사용하여 내부 AVAset의 availableMediaFeaturesWithMediaSelectionOptions의 가용성을 플레이어 클라이언트에 알립니다.
-seo-description: TVSDK는 PTMediaPlayerMediaSelectionOptionsAvailableNotification 알림을 사용하여 내부 AVAset의 availableMediaFeaturesWithMediaSelectionOptions의 가용성을 플레이어 클라이언트에 알립니다.
-seo-title: 자막 노출
+description: TVSDK는 PTMediaPlayerMediaSelectionOptionsAvailableNotification 알림을 사용하여 내부 AVAsset의 availableMediaCharactersWithMediaSelectionOptionsAvailableNotification을 사용하여 플레이어 클라이언트에 알립니다.
 title: 자막 노출
-uuid: 1cd8761f-6e6f-4017-9852-fa61f36197c5
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---
 
 
-# 자막 {#expose-subtitles} 노출
+# 자막 표시 {#expose-subtitles}
 
-TVSDK는 PTMediaPlayerMediaSelectionOptionsAvailableNotification 알림을 사용하여 내부 AVAset의 availableMediaFeaturesWithMediaSelectionOptions의 가용성을 플레이어 클라이언트에 알립니다.
+TVSDK는 PTMediaPlayerMediaSelectionOptionsAvailableNotification 알림을 사용하여 내부 AVAsset의 availableMediaCharactersWithMediaSelectionOptionsAvailableNotification을 사용하여 플레이어 클라이언트에 알립니다.
 
 `PTMediaPlayerItem` 속성의 `subtitlesOptions`을 통해 사용 가능한 자막에 액세스할 수 있습니다.
 
 자막을 노출하려면
 
-1. `PTMediaPlayerMediaSelectionOptionsAvailableNotification` 알림의 리스너로 클라이언트를 등록합니다.
+1. 클라이언트를 `PTMediaPlayerMediaSelectionOptionsAvailableNotification` 알림의 리스너로 등록합니다.
 
    ```
    [[NSNotificationCenter defaultCenter]  
@@ -29,7 +26,7 @@ TVSDK는 PTMediaPlayerMediaSelectionOptionsAvailableNotification 알림을 사�
      name:PTMediaPlayerMediaSelectionOptionsAvailableNotification object:self.player];
    ```
 
-   클라이언트가 이 알림을 받으면 자막은 `PTMediaPlayerItem`에서 준비됩니다.
+   클라이언트가 이 알림을 받으면 자막이 `PTMediaPlayerItem`에서 준비됩니다.
 1. 다음 예제와 유사한 `onMediaPlayerItemMediaSelectionOptionsAvailable` 메서드를 구현합니다.
 
    ```
