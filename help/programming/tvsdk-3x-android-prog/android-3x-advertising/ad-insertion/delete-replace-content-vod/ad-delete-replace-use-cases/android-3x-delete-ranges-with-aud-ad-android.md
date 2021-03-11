@@ -1,13 +1,10 @@
 ---
 description: 타임라인에서 localTime의 시작과 끝 사이의 TimeRange를 제거할 수 있습니다.
-seo-description: 타임라인에서 localTime의 시작과 끝 사이의 TimeRange를 제거할 수 있습니다.
-seo-title: 범위 삭제
 title: 범위 삭제
-uuid: 2aaea7a0-5d52-49a1-901c-f71e4b081d91
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
@@ -15,15 +12,15 @@ ht-degree: 0%
 
 # 범위 삭제 {#delete-ranges}
 
-타임라인에서 `localTime`의 `begin`과 `end` 사이의 `TimeRanges`을(를) 제거할 수 있습니다.
+타임라인에서 `localTime`의 `begin`과 `end` 사이에 `TimeRanges`을(를) 제거할 수 있습니다.
 
 >[!TIP]
 >
->내용에서 특정 범위만 제거하려면 `CustomRangeMetadata` 인스턴스를 만들고 정의된 사용자 지정 범위를 가진 `DELETE` 작업으로 유형을 지정합니다.
+>내용에서 특정 범위만 제거하려면 `CustomRangeMetadata` 인스턴스를 만들고 정의된 사용자 지정 범위를 사용하여 `DELETE` 작업으로 유형을 지정합니다.
 
 광고 맵은 광고 서버에서 정의한 대로 사용해야 합니다.
 
-1. Adobe Primetime 광고 결정 광고가 있는 범위를 삭제하려면
+1. Adobe Primetime 광고 결정 광고가 있는 범위를 삭제하려면 다음을 수행하십시오.
 
    ```
    {   
