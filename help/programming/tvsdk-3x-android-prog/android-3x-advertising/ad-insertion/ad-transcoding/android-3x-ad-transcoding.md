@@ -1,13 +1,10 @@
 ---
 description: 비디오 형식이 HLS와 호환되지 않으므로 일부 타사 광고(또는 크리에이티브)를 HLS(HTTP Live Streaming) 컨텐츠 스트림에 연결할 수 없습니다. Primetime 광고 삽입 및 TV SDK는 호환되지 않는 광고를 호환되는 M3U8 비디오에 선택적으로 재패키징할 수 있습니다.
-seo-description: 비디오 형식이 HLS와 호환되지 않으므로 일부 타사 광고(또는 크리에이티브)를 HLS(HTTP Live Streaming) 컨텐츠 스트림에 연결할 수 없습니다. Primetime 광고 삽입 및 TV SDK는 호환되지 않는 광고를 호환되는 M3U8 비디오에 선택적으로 재패키징할 수 있습니다.
-seo-title: Adobe CRS(Creative Repackaging Service)를 사용하여 호환되지 않는 광고를 재패키징합니다.
 title: Adobe CRS(Creative Repackaging Service)를 사용하여 호환되지 않는 광고를 재패키징합니다.
-uuid: ef542d13-6d52-4429-8a1e-0af2df236f12
 translation-type: tm+mt
-source-git-commit: cecc559480b9b52c412fefff4361603d6f14caf7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
