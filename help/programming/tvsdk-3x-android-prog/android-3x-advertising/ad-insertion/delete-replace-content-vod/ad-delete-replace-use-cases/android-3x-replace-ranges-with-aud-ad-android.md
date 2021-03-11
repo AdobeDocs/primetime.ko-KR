@@ -1,19 +1,16 @@
 ---
 description: VOD 컨텐츠에 광고를 삽입할 수 있습니다.
-seo-description: VOD 컨텐츠에 광고를 삽입할 수 있습니다.
-seo-title: 시간 범위를 광고로 바꾸기
 title: 시간 범위를 광고로 바꾸기
-uuid: c1d93389-cba4-4db0-877d-dbdc5183683c
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
 
 
-# 시간 범위를 광고 {#replace-time-ranges-with-an-ad}로 바꾸기
+# 시간 범위를 광고 {#replace-time-ranges-with-an-ad}으로 바꾸기
 
 VOD 컨텐츠에 광고를 삽입할 수 있습니다.
 
@@ -21,7 +18,7 @@ VOD 컨텐츠에 광고를 삽입할 수 있습니다.
 
 >[!TIP]
 >
->사용자 지정 범위에 대해 항상 `replacement-duration`을 제공해야 합니다. 이 사용자 지정 범위를 대체할 광고가 없는 경우 0의 `replacement-duration`을 입력하십시오.
+>사용자 지정 범위에 대해 항상 `replacement-duration`을 제공해야 합니다. 이 사용자 지정 범위를 대체할 광고가 없을 경우에는 0의 `replacement-duration`을 입력합니다.
 
 1. 범위를 Primetime 광고 결정 광고로 바꾸려면 다음을 수행하십시오.
 
