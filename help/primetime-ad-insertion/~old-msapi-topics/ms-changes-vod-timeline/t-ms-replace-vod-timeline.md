@@ -1,13 +1,10 @@
 ---
 description: 매니페스트 서버에 새 광고 삽입 요청을 적절하게 설정된 pttimeline 쿼리 매개 변수로 보내 VOD 타임라인을 대체합니다.
-seo-description: 매니페스트 서버에 새 광고 삽입 요청을 적절하게 설정된 pttimeline 쿼리 매개 변수로 보내 VOD 타임라인을 대체합니다.
-seo-title: VOD 타임라인 바꾸기
 title: VOD 타임라인 바꾸기
-uuid: 17a6daa3-5ee5-48fb-8981-0d183aed0fe4
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -28,7 +25,7 @@ ht-degree: 0%
 
 이 예에서는 VOD 컨텐츠가 `C,120,1;B,60,2,m;C,120,1;B,60,2,m;C,120,1;`의 타임라인과 함께 `Original.m3u8`에 있다고 가정합니다.
 
-다음 매니페스트 서버 요청은 `Original.m3u8`의 줄바꿈을 30초 프리롤로 바꾼 후 2분 간격으로 지속 시간을 2회 단축합니다.
+다음 매니페스트 서버 요청은 `Original.m3u8`의 줄바꿈을 30초 프리롤로, 그 뒤에 2분 간격으로 지속 시간이 2회 단축됩니다.
 
 ```
 https://manifest.auditude.com/auditude/variant/pubAsset/Original.m3u8?. . .&enableC3=false 
