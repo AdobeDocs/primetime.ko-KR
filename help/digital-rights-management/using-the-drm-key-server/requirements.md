@@ -1,9 +1,9 @@
 ---
-seo-title: Primetime DRM 키 서버 사용 요구 사항
 title: Primetime DRM 키 서버 사용 요구 사항
-uuid: 769f9e10-7a3e-4a38-b30d-18181b666bb4
+description: Primetime DRM 키 서버 사용 요구 사항
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 635e2893439c5459907c54d2c3bd86f58da0eec5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Primetime DRM 키 서버는 원격 iOS 및/또는 Xbox 360 키 전달을 위한 
 
 ## Primetime DRM 키 서버 사용 요구 사항 {#requirements-for-using-primetime-drm-key-server}
 
-Primetime DRM 키 서버 사용을 위한 최소 요구 사항은 다음과 같습니다.
+Primetime DRM 키 서버 사용에 대한 최소 요구 사항은 다음과 같습니다.
 
 * [Java JRE 1.6](https://www.oracle.com/technetwork/java/javase/downloads/index.html)  이상 (Windows 64비트에서 HSM을 사용하려면 JRE 8이 필요합니다.)
 
