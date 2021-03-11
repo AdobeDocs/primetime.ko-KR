@@ -1,13 +1,10 @@
 ---
-description: 여러 컨텐츠 해상도를 사용하여 서로 다른 타임라인 작업을 처리할 수 있습니다.
-seo-description: 여러 컨텐츠 해상도를 사용하여 서로 다른 타임라인 작업을 처리할 수 있습니다.
-seo-title: 광고 삭제/교체를 위한 컨텐츠 해상도
+description: 여러 컨텐츠 해상도를 사용하여 다른 타임라인 작업을 처리할 수 있습니다.
 title: 광고 삭제/교체를 위한 컨텐츠 해상도
-uuid: d43d54be-e04a-49dd-a695-e4e8f981ccb4
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '34'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 
 # 광고 삭제/교체 {#content-resolvers-for-ad-deletion-replacement} 컨텐츠 해상도
 
-여러 컨텐츠 해상도를 사용하여 서로 다른 타임라인 작업을 처리할 수 있습니다.
+여러 컨텐츠 해상도를 사용하여 다른 타임라인 작업을 처리할 수 있습니다.
 
 ```java
 public List<ContentResolver> retrieveResolvers(MediaPlayerItem item) { 
