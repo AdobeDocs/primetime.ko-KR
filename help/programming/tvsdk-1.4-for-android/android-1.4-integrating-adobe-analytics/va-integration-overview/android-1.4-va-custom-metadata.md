@@ -1,13 +1,10 @@
 ---
-description: 콜백 함수를 사용하여 콘텐츠, 광고 및 장 추적 호출에 사용자 지정 메타데이터를 제공할 수 있습니다.
-seo-description: 콜백 함수를 사용하여 콘텐츠, 광고 및 장 추적 호출에 사용자 지정 메타데이터를 제공할 수 있습니다.
-seo-title: 사용자 정의 메타데이터 지원 구현
+description: 콜백 함수를 사용하여 콘텐츠, 광고 및 장 추적 호출에 대한 사용자 지정 메타데이터를 제공할 수 있습니다.
 title: 사용자 정의 메타데이터 지원 구현
-uuid: 068ef0b9-79a2-4e44-8a0a-01e9deb8e4a6
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -15,11 +12,11 @@ ht-degree: 0%
 
 # 사용자 지정 메타데이터 지원 구현 {#implement-custom-metadata-support}
 
-콜백 함수를 사용하여 콘텐츠, 광고 및 장 추적 호출에 사용자 지정 메타데이터를 제공할 수 있습니다.
+콜백 함수를 사용하여 콘텐츠, 광고 및 장 추적 호출에 대한 사용자 지정 메타데이터를 제공할 수 있습니다.
 
 콜백 함수는 추적 호출이 수행되기 직전에 호출되므로 응용 프로그램에서 광고 또는 장에 해당하는 메타데이터를 첨부할 수 있습니다.
 
-콘텐츠, 광고 및 장에 대한 콜백 함수를 호출합니다.
+컨텐츠, 광고 및 장에 대한 콜백 함수를 호출합니다.
 
 ```java
 // Video Metadata Block 
