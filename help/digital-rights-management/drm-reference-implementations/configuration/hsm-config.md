@@ -1,13 +1,10 @@
 ---
 description: HSM을 지원하는 Sun PKCS#11 공급자를 사용하여 참조 구현을 구성할 수 있습니다. HSM을 사용할 필요는 없지만 권장됩니다.
-seo-description: HSM을 지원하는 Sun PKCS#11 공급자를 사용하여 참조 구현을 구성할 수 있습니다. HSM을 사용할 필요는 없지만 권장됩니다.
-seo-title: HSM 구성
 title: HSM 구성
-uuid: 2741ac40-aa42-4aa7-9864-037f3ed3dee2
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -30,5 +27,5 @@ keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunP
 
 >[!NOTE]
 >
->Java 1.7부터 Windows용 64비트 Sun Java는 Adobe Primetime DRM이 HSM 디바이스와 통신하기 위해 필요한 PKCS#11 인터페이스를 더 이상 지원하지 않습니다. HSM을 사용할 계획인 경우 32비트 버전의 Java를 사용하거나 전체 PKCS#11 인터페이스를 지원하는 JDK를 사용해야 합니다.
+>Java 1.7부터 Windows용 64비트 Sun Java는 Adobe Primetime DRM이 HSM 장치와 통신하기 위해 필요한 PKCS#11 인터페이스를 더 이상 지원하지 않습니다. HSM을 사용하려는 경우 32비트 버전의 Java를 사용하거나 전체 PKCS#11 인터페이스를 지원하는 JDK를 사용해야 합니다.
 
