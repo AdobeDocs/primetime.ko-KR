@@ -1,13 +1,10 @@
 ---
 description: 이 기능을 켜고 관련 이벤트를 확인할 수 있습니다.
-seo-description: 이 기능을 켜고 관련 이벤트를 확인할 수 있습니다.
-seo-title: 라이브 마스터 매니페스트 업데이트 사용
 title: 라이브 마스터 매니페스트 업데이트 사용
-uuid: 4ec665ab-b7ce-4a45-a251-13a07eb4d789
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '56'
 ht-degree: 0%
 
 ---
