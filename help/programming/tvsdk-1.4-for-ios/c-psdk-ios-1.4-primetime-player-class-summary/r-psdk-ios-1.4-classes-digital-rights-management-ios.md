@@ -1,13 +1,10 @@
 ---
 description: Digital Rights Management(DRM) 활동에 대한 정보를 제공합니다.
-seo-description: Digital Rights Management(DRM) 활동에 대한 정보를 제공합니다.
-seo-title: Digital Rights Management 클래스
 title: Digital Rights Management 클래스
-uuid: ec06d4bc-a3ee-491a-b895-b903f02398e8
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '45'
 ht-degree: 0%
 
 ---
