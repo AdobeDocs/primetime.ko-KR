@@ -1,13 +1,10 @@
 ---
-description: TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
-seo-description: TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
-seo-title: 일시 중단 처리 구현
+description: TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제공합니다.
 title: 일시 중단 처리 구현
-uuid: 3b4e3f53-0e27-4369-85f2-940380ed16ac
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -15,9 +12,9 @@ ht-degree: 0%
 
 # 일시 중단 처리 구현{#implement-blackout-handling}
 
-TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 제공합니다.
+TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제공합니다.
 
-일시 중단 동안 대체 컨텐츠 제공을 포함하여 일시 중단 처리를 구현하려면
+일시 중단 중 대체 컨텐츠 제공을 포함하여 일시 중단 처리를 구현하려면
 
 1. 라이브 스트림 매니페스트에서 블랙아웃 태그를 검색하도록 앱을 설정합니다.
 
@@ -33,7 +30,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 전경 및 배경 스트림에서 시간 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
+1. 전경 및 백그라운드 스트림에서 시간 지정 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
 
    ```
    private function createMediaPlayer(context:MediaPlayerContext):void { 
@@ -45,7 +42,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 전경 스트림과 배경 스트림 모두에 대해 시간 지정 메타데이터 이벤트 핸들러를 구현합니다.
+1. 전경 스트림과 백그라운드 스트림 모두에 대한 시간 지정 메타데이터 이벤트 핸들러를 구현합니다.
 
    전경:
 
@@ -127,7 +124,7 @@ TVSDK는 일시 중단 기간을 처리하기 위한 API 및 샘플 코드를 �
    }
    ```
 
-1. 재생 헤드 위치에 대한 업데이트가 발생할 때마다 TimedMetadataObjects 목록의 확인을 설정합니다.
+1. 재생 헤드 위치에 대한 업데이트가 발생할 때마다 TimedMetadataObjects 목록의 검사를 설정합니다.
 
    ```
    private function onTimeChange(event:TimeChangeEvent):void { 
