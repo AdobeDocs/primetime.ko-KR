@@ -1,23 +1,20 @@
 ---
-description: 브라우저 TVSDK가 기본 광고 서버에 없는 광고를 요청하는 경우, 플레이어는 보조 서버에서 광고를 요청해야 합니다. VAST(Video Ad Serving Template)는 광고 서버와 비디오 플레이어 간의 통신 표준을 설정하며 광고가 요청될 때 보조 광고 서버가 보내는 응답입니다.
-seo-description: 브라우저 TVSDK가 기본 광고 서버에 없는 광고를 요청하는 경우, 플레이어는 보조 서버에서 광고를 요청해야 합니다. VAST(Video Ad Serving Template)는 광고 서버와 비디오 플레이어 간의 통신 표준을 설정하며 광고가 요청될 때 보조 광고 서버가 보내는 응답입니다.
-seo-title: 광활한 광고
-title: 광활한 광고
-uuid: 052dae0c-2425-456c-aebe-531f68bb5aa8
+description: 브라우저 TV SDK가 기본 광고 서버에 없는 광고를 요청하면 플레이어는 보조 서버에서 광고를 요청해야 합니다. VAST(Video Ad Serving Template)는 광고 서버와 비디오 플레이어 간의 통신 표준을 설정하며 광고가 요청될 때 보조 광고 서버가 보내는 응답입니다.
+title: 광대한 광고
 translation-type: tm+mt
-source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
 
-# VAST 광고 {#vast-ads}
+# 광대한 광고 {#vast-ads}
 
-브라우저 TVSDK가 기본 광고 서버에 없는 광고를 요청하는 경우, 플레이어는 보조 서버에서 광고를 요청해야 합니다. VAST(Video Ad Serving Template)는 광고 서버와 비디오 플레이어 간의 통신 표준을 설정하며 광고가 요청될 때 보조 광고 서버가 보내는 응답입니다.
+브라우저 TV SDK가 기본 광고 서버에 없는 광고를 요청하면 플레이어는 보조 서버에서 광고를 요청해야 합니다. VAST(Video Ad Serving Template)는 광고 서버와 비디오 플레이어 간의 통신 표준을 설정하며 광고가 요청될 때 보조 광고 서버가 보내는 응답입니다.
 
-VAST에 대한 자세한 내용은 [VAST(Digital Video Ad Serving Template) 3.0](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf)을 참조하십시오.
+VAST에 대한 자세한 내용은 [VAST(디지털 비디오 광고 제공 템플릿) 3.0](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf)을 참조하십시오.
 
 브라우저 TVSDK는 다음과 같은 VAST 광고 요소를 지원합니다.
 
@@ -25,7 +22,7 @@ VAST에 대한 자세한 내용은 [VAST(Digital Video Ad Serving Template) 3.0]
 
 다음 요소가 지원됩니다.
 
-* **`wrapper`** 플레이어에서 광고를 요청하기 위해 보조 광고 서버에 문의해야 하는 경우 래퍼 요소는 리디렉션 정보를 제공합니다. 하나의 래퍼 요소는 VAST 광고를 가리키는 여러 래퍼를 가리킬 수 있습니다.
+* **`wrapper`** 플레이어가 광고를 요청하기 위해 보조 광고 서버에 문의해야 하는 경우 래퍼 요소는 리디렉션 정보를 제공합니다. 하나의 래퍼 요소는 VAST 광고를 가리키는 여러 래퍼를 가리킬 수 있습니다.
 
 * **`inline`** 다음과 같은 필수 요소가 지원됩니다.
 
@@ -47,10 +44,10 @@ VAST에 대한 자세한 내용은 [VAST(Digital Video Ad Serving Template) 3.0]
 
 * **선형** 광고다음 요소가 지원됩니다.
 
-   * `TrackingEvent`를  `Tracking` 찾습니다.
+   * `TrackingEvent`에 포함되어 있습니다.  `Tracking` 
       * `Duration`
       * `AdParameters`
-      * `VideoClicks`, including following:
+      * `VideoClicks`를 포함합니다.
 
       * `ClickThrough`
       * `ClickTracking`
@@ -78,7 +75,7 @@ VAST에 대한 자세한 내용은 [VAST(Digital Video Ad Serving Template) 3.0]
       * `NonLinearClickThrough`
       * `AdParameters`
 
-* **부록** 광고다음 요소가 지원됩니다.
+* **컴패니언** 광고다음 요소가 지원됩니다.
 
    * `Companion`
 
@@ -95,6 +92,6 @@ VAST에 대한 자세한 내용은 [VAST(Digital Video Ad Serving Template) 3.0]
 
 >[!TIP]
 >
->Auditude 특정 익스텐션만 지원됩니다.
+>Auditude 관련 익스텐션만 지원됩니다.
 
 * `Extension`
