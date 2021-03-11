@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 보호된 내용을 재생하는 데 필요한 장치 기능
 title: 보호된 내용을 재생하는 데 필요한 장치 기능
-uuid: 1490711b-65d9-4716-8779-ae1da7d2c82c
+description: 보호된 내용을 재생하는 데 필요한 장치 기능
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -15,7 +13,7 @@ ht-degree: 0%
 
 # 보호된 내용을 재생하는 데 필요한 장치 기능 {#device-capabilities-required-to-play-protected-content}
 
-필요한 장치 기능은 컨텐츠에 액세스하는 데 필요한 하드웨어 기능을 지정합니다. 하드웨어 기능에 대한 정보는 포팅 키트를 사용하는 장치에 사용할 수 있습니다.
+필요한 장치 기능은 콘텐츠에 액세스하는 데 필요한 하드웨어 기능을 지정합니다. 하드웨어 기능에 대한 정보는 포팅 키트를 사용하는 장치에 사용할 수 있습니다.
 
 다음 속성은 장치 기능을 식별할 수 있습니다.
 
@@ -37,7 +35,7 @@ ht-degree: 0%
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">신뢰의 하드웨어 루트 </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">"true" 또는 "false" </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">정확히 일치 </p> </td> 
-   <td colname="4" class="- topic/entry "> <p class="- topic/p ">true인 경우 장치에 신뢰 하드웨어 루트가 있어야 합니다. </p> </td> 
+   <td colname="4" class="- topic/entry "> <p class="- topic/p ">true이면 장치에 하드웨어 신뢰 루트가 있어야 합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
