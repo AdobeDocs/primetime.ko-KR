@@ -1,13 +1,10 @@
 ---
 description: DASH 스트림과 함께 Android 기본 무선 DRM을 사용할 수 있습니다.
-seo-description: DASH 스트림과 함께 Android 기본 무선 DRM을 사용할 수 있습니다.
-seo-title: 무선 DRM
 title: 무선 DRM
-uuid: ceb2f18f-9e53-47d6-9d4b-7004ac1d22c9
 translation-type: tm+mt
-source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -28,12 +25,12 @@ public static void setProtectionData(
 
 인수:
 
-* `drm` -  `"com.widevine.alpha"` Widevin.
+* `drm` -  `"com.widevine.alpha"` Widevin용
 
-* `licenseServerURL` - 라이센스 요청을 받은 무선 라이센스 서버의 URL
+* `licenseServerURL` - 라이센스 요청을 받은 무선 라이센스 서버의 URL.
 * `requestProperties` - 나가는 라이선스 요청에 포함할 추가 헤더를 포함합니다.
 
-예를 들어 Expressplay DRM용으로 패키지된 컨텐츠를 사용하는 경우 재생 전에 다음 코드를 사용하십시오.
+예를 들어 Expressplay DRM용으로 패키지된 내용을 사용할 때 재생 전에 다음 코드를 사용하십시오.
 
 ```java
 DRMManager.setProtectionData( 
