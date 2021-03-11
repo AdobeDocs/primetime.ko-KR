@@ -1,27 +1,24 @@
 ---
-description: 권한 부여 요청 및 응답은 라이센스 서버와 고객의 권한 부여 서비스 사이에 상호 인증된 SSL 연결을 통해 전달됩니다.
-seo-description: 권한 부여 요청 및 응답은 라이센스 서버와 고객의 권한 부여 서비스 사이에 상호 인증된 SSL 연결을 통해 전달됩니다.
-seo-title: 공개 API 보기
+description: 권한 부여 요청 및 응답은 라이선스 서버와 고객의 권한 부여 서비스 간에 상호 인증된 SSL 연결을 통해 전달됩니다.
 title: 공개 API 보기
-uuid: f3a17d61-04ee-4bdb-9d64-a98066c6d1c8
 translation-type: tm+mt
-source-git-commit: 15403abbd53486e1faa2146cda83f41bd8116632
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
 
 
-# SEES 공용 API {#sees-public-api}
+# 공개 API {#sees-public-api} 표시
 
-권한 부여 요청 및 응답은 라이센스 서버와 고객의 권한 부여 서비스 사이에 상호 인증된 SSL 연결을 통해 전달됩니다.
+권한 부여 요청 및 응답은 라이선스 서버와 고객의 권한 부여 서비스 간에 상호 인증된 SSL 연결을 통해 전달됩니다.
 
-HTTPS URI 스키마( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https://tools.ietf.org/html/rfc7230#section-2.7.2))는 권한 부여 끝점을 정의하는 데 사용되고 HTTP POST 요청 메서드( [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3))는 요청에 사용됩니다. 백 엔드 자격 부여를 나타내는 플래그와 권한 부여 끝점은 필요하며 패키징 시 정책에 포함되어야 합니다.
+HTTPS URI 스키마( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https://tools.ietf.org/html/rfc7230#section-2.7.2))는 권한 부여 끝점을 정의하는 데 사용되며 HTTP POST 요청 메서드( [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3))는 요청에 사용됩니다. 백엔드 자격 부여를 나타내는 플래그와 권한 부여 끝점은 필수 사항이며 패키징 시 정책에 포함되어야 합니다.
 
 ## 권한 부여 요청 {#section_BFBFEF0795CA46D6842C479256B95F95}
 
-권한 부여 요청의 본문은 아래와 같이 정의된 JSON 개체가 됩니다.
+권한 부여 요청의 본문은 아래와 같이 정의된 JSON 개체입니다.
 
 **JSON 권한 부여 요청 개체 정의**
 
@@ -59,7 +56,7 @@ HTTPS URI 스키마( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https:/
 
 권한 부여 응답의 본문은 JSON 개체입니다.
 
-**JSON 권한 부여 응답 개체 정의**
+**JSON 권한 응답 개체 정의**
 
 ```
 { 
