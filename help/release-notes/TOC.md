@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Primetime 릴리스 노트
 user-guide-description: 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 translation-type: tm+mt
-source-git-commit: a42c5b4478967822c920d96b05d5f04a6dec8c25
+source-git-commit: d1cf8a05172c04655c8a7c76ce116c8f7be61ec9
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 14%
@@ -21,7 +21,7 @@ ht-degree: 14%
    + [PTAI 20.12.1 릴리스 노트](ptai-20x-release-notes.md)
    + [PTAI 19.11.1 릴리스 노트](ptai-19x-release-notes.md)
 + iOS용 TVSDK {#tvsdk-ios}
-   + [iOS용 TVSDK 3.12 릴리스 노트](tvsdk-3x-ios.md)
+   + [iOS용 TVSDK 3.13 릴리스 노트](tvsdk-3x-ios.md)
    + [iOS용 TVSDK 1.4 릴리스 노트](tvsdk-1-4-ios.md)
 + Android용 TVSDK {#tvsdk-android}
    + [Android용 TVSDK 3.13 릴리스 정보](tvsdk-3x-android.md)
