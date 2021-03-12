@@ -3,10 +3,10 @@ title: Primetime 릴리스 노트
 description: Primetime 릴리스 노트
 copied-description: true
 translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+source-git-commit: 944bfb0f3bd0050a9d2974a37f4fabddaaac8a93
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 28%
+source-wordcount: '378'
+ht-degree: 26%
 
 ---
 
@@ -14,6 +14,12 @@ ht-degree: 28%
 # Primetime 릴리스 노트
 
 Adobe Primetime 릴리스 노트입니다. 왼쪽 탐색에 나열된 문서는 릴리스별 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
+
+## TVSDK 3.13 iOS의 향상된 기능 및 수정 사항
+
+이번 릴리스에서는 LIVE, VOD 및 FER 스트림에 대한 DEMUXED &#39;HLS/CMAF&#39;(프리롤, 미드롤 및 포스트롤) 광고 지원이 도입되었습니다.
+
+기타 수정 사항과 자세한 내용은 [iOS용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-ios.md)를 참조하십시오.
 
 ## PTAI 21.2.2 개선 사항 및 수정 사항
 
