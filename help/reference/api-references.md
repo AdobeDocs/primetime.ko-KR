@@ -3,15 +3,18 @@ title: Adobe Primetime API 참조
 description: API를 사용하면 기능적인 애플리케이션 또는 통합을 빠르고 손쉽게 만들 수 있습니다.
 topic-tags: API-references
 translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+source-git-commit: d8fde0d03bea85b3fefcfa5dcbfddee76b17de03
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
 
 # Adobe Primetime API가 {#api-references} 참조
+
++ Primetime 동적 Ad Insertion {#server-side}
+   + [Bootstrap API 참조](../primetime-ad-insertion/technical-reference/bootstrap-api.md)
 
 + TVSDK 3.12 {#tvsdk-312}
    + [Android용 TVSDK 3.12](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.12/index.html)
