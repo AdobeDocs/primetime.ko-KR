@@ -2,7 +2,7 @@
 title: Adobe Primetime Ad Insertion 공지 사항
 description: Primetime Ad Insertion에 대한 최신 기능 릴리스 및 기타 관련 뉴스 발표
 translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+source-git-commit: d8fde0d03bea85b3fefcfa5dcbfddee76b17de03
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 광고 해결 시간 제한을 통한 프로그래머틱 광고 오류 감소
 
-2000년 12월 1일 게시됨
+2020년 12월 1일 게시됨
 
 Adobe은 Adobe Primetime Ad Insertion 고객이 광고 인벤토리의 가치를 극대화할 수 있도록 지원하기 위해 주력하고 있습니다. eMarketer에 따르면 미국 디지털 비디오 광고 지출의 4분의 3 이상을 차지하는 프로그래머틱 수요 충족의 복잡성을 줄이는 데 특히 주력하고 있습니다. 프로그래머틱 판매로 광고 인벤토리에 대한 수요를 극대화할 수 있으므로, 컨텐츠 제공률은 높이고 수익률은 향상시킬 수 있습니다. 그러나 잘못된 형식의 VAST 응답, HTTP 오류 및 매출 손실 및/또는 뷰어 환경이 좋지 않은 기타 오류와 같은 광고 오류에 대한 노출을 향상시킵니다.
 
