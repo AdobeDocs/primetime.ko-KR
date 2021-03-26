@@ -5,15 +5,15 @@ description: Adobe Primetime 사양
 seo-description: Adobe Primetime 사양
 topic-tags: Adobe Primetime Specifications
 translation-type: tm+mt
-source-git-commit: 53014028cf1a9cb48f93781cbbb4aec3e2bcc523
+source-git-commit: 0bd926b510cd23268b6374ef81a09efcc5d1371a
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Primetime API 사양
+# Adobe Primetime 사양
 
 Adobe Primetime은 IP에 연결된 모든 화면에 TV를 제공합니다. 프로그래머 및 이동통신사는 모듈형 기능을 통해 데스크탑과 디바이스에서 비디오를 스트리밍, 보호, 분석 및 상용화할 수 있습니다. 이러한 경험을 향상시키는 것은 Primetime 비디오 플레이어에 콘텐츠와 광고를 제공하는 데 사용되는 다양한 스트리밍 기술입니다.
 
