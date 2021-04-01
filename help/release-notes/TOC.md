@@ -1,11 +1,10 @@
 ---
-cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime 릴리스 노트
+user-guide-title: Primetime 릴리스 정보
 user-guide-description: 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 translation-type: tm+mt
-source-git-commit: d1cf8a05172c04655c8a7c76ce116c8f7be61ec9
+source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 14%
@@ -13,7 +12,7 @@ ht-degree: 14%
 ---
 
 
-# Primetime 릴리스 노트  {#release-notes}
+# Primetime 릴리스 정보  {#release-notes}
 
 + [릴리스 노트 개요](home.md)
 + Primetime Ad Insertion {#ptai}
