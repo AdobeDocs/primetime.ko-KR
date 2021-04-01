@@ -1,11 +1,9 @@
 ---
-cloud: experience-cloud
-product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 프로그래밍 도움말
-user-guide-description: Android 장치에서 Java를 사용하는 응용 프로그램 및 비디오 플레이어를 개발하는 방법과 iOS 장치에서 Objective-C를 사용하는 방법을 배울 수 있습니다.
+user-guide-description: Android 디바이스에서 Java를 사용하는 애플리케이션 및 비디오 플레이어를 개발하는 방법과 iOS 디바이스에서 Objective-C를 사용하는 방법을 배울 수 있습니다.
 translation-type: tm+mt
-source-git-commit: aab96dcf5107be90534350156ee66a88de80613e
+source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
 source-wordcount: '4342'
 ht-degree: 0%
