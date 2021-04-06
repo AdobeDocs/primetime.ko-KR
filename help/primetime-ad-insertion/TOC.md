@@ -3,9 +3,9 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime Ad Insertion 도움말
 translation-type: tm+mt
-source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
+source-git-commit: 9cf1312024ee755e0c99213899c89c015731b66f
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '176'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 + [Adobe Primetime Ad Insertion](home.md)
 + Primetime Ad Insertion 공지 사항{#announcements}
    + [공지 사항](announcements/overview.md)
-   + [릴리스 노트](/help/release-notes/ptai-21x-release-notes.md)
+   + [릴리스 노트](https://experienceleague.adobe.com/docs/primetime/release-notes/ptai/ptai-21x-release-notes.html)
 + Primetime Ad Insertion 시작{#get-started}
    + [개요](getting-started/get-started-overview.md)
    + [Primetime Ad Insertion 사용 준비](getting-started/setup-ptai.md)
@@ -28,7 +28,7 @@ ht-degree: 4%
 + 적시 트랜스코딩{#just-in-time-transcoding}
    + [개요](just-in-time-transcoding/jit-transcoding-overview.md)
    + [트랜스코딩 및 표준화](just-in-time-transcoding/transcoding-and-normalization.md)
-   + [전달 및 저장](just-in-time-transcoding/delivery-and-storage.md)
+   + [전달 및 저장](https://experienceleague.adobe.com/docs/primetime/ad-insertion/technical-reference/delivery-and-storage.html)
    + [코드 변환 API](just-in-time-transcoding/pre-transcoding-api.md)
    + [ID3 삽입 지원](just-in-time-transcoding/id3-injection-support.md)
 + 고급 기능{#advanced-features}
