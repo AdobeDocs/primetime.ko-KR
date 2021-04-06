@@ -1,14 +1,15 @@
 ---
 title: 트랜스코딩 및 표준화
-description: null
+description: 트랜스코딩 및 표준화
+copied-description: true
+exl-id: 48d9d971-4b15-4f1b-8740-c21983a3e835
 translation-type: tm+mt
-source-git-commit: 0f98b9848f1764e7c66e3692d8a845513493597f
+source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
-
 
 # 트랜스코딩 및 표준화 {#transcoding-and-normalization}
 
