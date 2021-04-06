@@ -1,14 +1,15 @@
 ---
 title: 디버깅 헤더
-description: null
+description: 디버깅 헤더
+copied-description: true
+exl-id: 42c19089-2c61-4622-b53a-c28b8d495ef8
 translation-type: tm+mt
-source-git-commit: 45e5c8e6144adf4a405bde7d8d19505b7ad549e0
+source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '257'
 ht-degree: 7%
 
 ---
-
 
 # 디버깅 헤더(X-ADBE-AI-X1) {#debugging-headers}
 
@@ -27,10 +28,10 @@ SSAI는 X-ADBE-AI-X1 헤더에 있는 프로덕션 세션의 성능을 확인하
 | 세션 ID | 요청의 세션 ID | 15126333-5ba9-49b8-a219-4f37e60d259c |
 | 스트림 유형 | u=variant, l=live, v=vod | v |
 | isBootstrap | 이 요청이 부트스트랩 호출인지 여부 | 0 |
-| 광고 나누기 수 | 이 매니페스트의 총 광고 중단 수 | 3 |
+| 광고 나누기 수 | 이 매니페스트의 총 광고 중단 수 | 1 |
 | 총 광고 분할 기간 | 광고 중단의 총 기간(초) | 30 |
 | 광고 호출 수 | 이 요청에서 전송된 광고 호출 수 | 2 |
-| 리디렉션 광고 호출 수 | 이 요청에서 전송된 리디렉션 광고 호출 수 | 3 |
+| 리디렉션 광고 호출 수 | 이 요청에서 전송된 리디렉션 광고 호출 수 | 1 |
 | 총 광고 호출 기간 | 총 광고 호출 처리 시간 | 199년 |
 | 삽입된 광고 수 | 매니페스트에 삽입된 광고 수 | 2 |
 | 소스 매니페스트 요청 시간 | 컨텐츠를 가져오는 데 소요되는 시간 | 185년 |
