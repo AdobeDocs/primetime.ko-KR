@@ -1,14 +1,15 @@
 ---
 title: 보고 및 청구
-description: null
+description: 보고 및 청구
+copied-description: true
+exl-id: efe91d97-a429-448a-9b7f-cac50b850f35
 translation-type: tm+mt
-source-git-commit: b60ed8d497700d51393afe4769239c996263fc40
+source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
-
 
 # 보고 및 청구 {#reporting-and-billing}
 
