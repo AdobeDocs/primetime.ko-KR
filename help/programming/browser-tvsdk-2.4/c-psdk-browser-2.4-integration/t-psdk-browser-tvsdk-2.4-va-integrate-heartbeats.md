@@ -1,14 +1,14 @@
 ---
 description: 비디오 사용을 추적 및 분석하도록 플레이어를 구성할 수 있습니다.
 title: 비디오 분석 초기화 및 구성
+exl-id: e0bf461b-a431-4fba-bd3d-c38be307a92f
 translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+source-git-commit: d884836a2a585bd3540b085de1098cf6ae3de46b
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
 
 ---
-
 
 # 비디오 분석 초기화 및 구성 {#initialize-and-configure-video-analytics}
 
@@ -133,6 +133,7 @@ ht-degree: 0%
           videoAnalyticsProvider.detachMediaPlayer();
           videoAnalyticsProvider = null;
       ```
+
    4. 라이브/선형 스트림을 완료로 수동으로 표시합니다.
 하나의 라이브 스트림에 다양한 에피소드가 있는 경우 전체 API를 사용하여 에피소드를 완료로 수동으로 표시할 수 있습니다. 이렇게 하면 현재 비디오 에피소드에 대한 비디오 추적 세션이 종료되며 다음 에피소드에 대해 새 추적 세션을 시작할 수 있습니다.
       >[!TIP]
@@ -146,5 +147,5 @@ ht-degree: 0%
       videoAnalyticsProvider.detachMediaPlayer();
       videoAnalyticsProvider = null;
       // Create a new instance of VideoAnalyticsProvider to continue tracking.
-      } 
+      }
       ```
