@@ -28,8 +28,7 @@ java -jar AdobePublisherIDUtility.jar
 </i class="+ topic>
 ```
 
-* 
-   * `signaturefile`* 응용 프로그램 디렉토리에 있는 AIR 응용 프로그램의 signatures.xml 파일의 경로를  [!DNL META-INF] 지정합니다.
+* `signaturefile` 응용 프로그램 디렉토리에 있는 AIR 응용 프로그램의 signatures.xml 파일의 경로를  [!DNL META-INF] 지정합니다.
 
 * `signingcert` AIR 응용 프로그램을 서명하는 데 사용되는 인증서를 지정합니다.
 
