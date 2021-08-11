@@ -1,17 +1,17 @@
 ---
-description: .m3u8 파일의 '#'EXT-X-VERSION 버전은 응용 프로그램에서 사용할 수 있는 기능과 재생 목록/매니페스트에서 유효한 EXT 태그에 영향을 줍니다.
-title: '''#''EXT-X-VERSION 요구 사항'
+description: .m3u8 파일의 EXT-X-VERSION 버전은 응용 프로그램에서 사용할 수 있는 기능과 재생 목록/매니페스트에서 유효한 EXT 태그에 영향을 줍니다.
+title: EXT-X 버전 요구 사항
 exl-id: 1b7c205b-c6b1-416f-885a-d1cd23d8e803
-source-git-commit: 8610792a7410dab59d42ab7771b534c2c1670ad2
+source-git-commit: e2a796dc5eb017929297d127cc79b65ba51a0c75
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-# `#`EXT-X 버전 요구 사항{#ext-x-version-requirements}
+# EXT-X 버전 요구 사항{#ext-x-version-requirements}
 
-.m3u8 파일의 #EXT-X-VERSION 버전은 응용 프로그램에서 사용할 수 있는 기능과 재생 목록/매니페스트에서 유효한 EXT 태그에 영향을 줍니다.
+.m3u8 파일의 `#EXT-X-VERSION` 버전은 응용 프로그램에서 사용할 수 있는 기능과 재생 목록/매니페스트에서 유효한 EXT 태그에 영향을 줍니다.
 
 <!--<a id="section_8850183988124049A001758F117AD3A6"></a>-->
 
