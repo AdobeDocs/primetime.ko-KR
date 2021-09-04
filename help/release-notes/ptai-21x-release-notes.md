@@ -1,27 +1,56 @@
 ---
-title: PTAI 21.5.1 릴리스 노트
+title: PTAI 21.8.1 릴리스 노트
 description: PTAI 릴리스 노트에서는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경된 사항과 해결되고 알려진 문제를 설명합니다.
 exl-id: 39a05f6d-431a-4416-81b1-21d82c0dbd69
-source-git-commit: fe0f5f3399d2e2ab3e07713fbcd29ede47888d98
+source-git-commit: 97a192ed1d0ddc034f72a836a70293acfcca9881
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
-# Primetime Ad Insertion 21.5.1 릴리스 노트
+# Primetime Ad Insertion 21.8.1 릴리스 노트
 
-Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다.
+Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다
 
-## PTAI 21.5.1의 새로운 기능
+<!---
+Primetime Ad Insertion 21.9.1
+When: Tuesday, September 7, 2021 from 02:30 AM to 05:30 AM EASTERN
 
-설정: 2021년 5월 26일 수요일, 오전 3:30부터 오전 06:30(동부 시간)
+
+
+
+
+
+
+
+
+What:  Primetime Ad Insertion 21.9.1
+
+When:  Tuesday, September 7, 2021 from 02:30 AM to 05:30 AM Eastern Time
+
+Changes:
+
+* Updates to infrastructure components behind PTAI’s mediation and reporting components (Primetime Ads GUI)
+-->
+
+## PTAI 21.8.1의 새로운 기능
+
+설정: 2021년 8월 24일 화요일 오전 2시부터 오전 05:00(동부 표준시)
+
+* DASH Live/Linear 스트림에 대한 지원이 추가되었습니다(VOD가 이미 지원됨).
+
+## 이전 릴리스 버전의 개선 사항 및 수정 사항
+
+### 버전 21.5.1
+
+설정:  2021년 5월 26일 수요일, 오전 3:30부터 오전 06:30(동부 시간)
+
+**변경 사항**
 
 * SCTE 기반 큐 형식에 대해 더 이상 사용되지 않는 세그멘테이션 유형 0x01(UPID)에 대한 지원이 추가되었습니다.
 
 * 예정된 대시보드 변경에 대한 새 원격 분석을 추가했습니다.
-
-## 이전 릴리스 버전의 개선 사항 및 수정 사항
 
 ### 버전 21.4.1
 
@@ -47,7 +76,7 @@ Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion
 
 **변경 사항**
 
-* DASH 출력 최적화에 대한 지원이 추가되었습니다.시간 기반 노드 통합
+* DASH 출력 최적화에 대한 지원이 추가되었습니다. 시간 기반 노드 통합
 
 ### 버전 21.1.2
 
@@ -55,7 +84,7 @@ Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion
 
 **변경 사항**
 
-* 유지 관리 업데이트:Primetime Ad Insertion 백엔드 메모리 클러스터 업그레이드
+* 유지 관리 업데이트: Primetime Ad Insertion 백엔드 메모리 클러스터 업그레이드
 
 ### 버전 21.1.1
 

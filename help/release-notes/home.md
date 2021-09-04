@@ -3,10 +3,10 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: fe0f5f3399d2e2ab3e07713fbcd29ede47888d98
+source-git-commit: 97a192ed1d0ddc034f72a836a70293acfcca9881
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 28%
+source-wordcount: '340'
+ht-degree: 29%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 28%
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 21.5.1의 개선 사항 및 수정 사항
+## PTAI 21.8.1의 개선 사항 및 수정 사항
 
-이 릴리스에는 예정된 대시보드 변경에 대한 새로운 원격 분석과 SCTE 기반 큐 형식에 대한 더 이상 사용되지 않는 세그먼테이션 유형 0x01(UPID)을 지원합니다.
+릴리스에는 DASH Live/Linear 스트림에 대한 지원이 포함되어 있습니다.
 
 기타 수정 사항 및 세부 사항은 [Ad Insertion 릴리스 노트](/help/release-notes/ptai-21x-release-notes.md)를 참조하십시오
 
