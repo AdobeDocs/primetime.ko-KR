@@ -3,10 +3,10 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 97a192ed1d0ddc034f72a836a70293acfcca9881
+source-git-commit: 9b91bbc92a613a60233a73cded542a04efd61148
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 29%
+source-wordcount: '301'
+ht-degree: 32%
 
 ---
 
@@ -24,13 +24,11 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 
 이 릴리스에서는 LIVE, VOD 및 FER 스트림에 대한 DEMUXED &#39;HLS/CMAF&#39;(프리롤, 미드롤 및 포스트롤) 광고를 지원합니다.
 
-기타 수정 사항 및 세부 정보는 [iOS용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-ios.md) 를 참조하십시오
+기타 수정 사항 및 세부 사항은 [iOS 릴리스 노트](../release-notes/tvsdk-3x-ios.md)용 TVSDK를 참조하십시오
 
-## TVSDK 3.13 Android의 수정 사항
+## TVSDK 3.14 Android의 수정 사항
 
-이번 릴리스는 FireTV 3세대 Pendant와 Fire TV Cube 1세대 및 2세대 장치를 포함하는 FireTV 장치의 ABR 스위치에서 Widevine DRM 스트림을 동결하거나 블랙 프레임을 표시하는 문제에 대한 해결 방법을 제공합니다.
-
-이 문제를 해결하려면 재생을 시작하기 전에 지정된 Fire TV 장치에 대해 API `MediaPlayer.flushVideoDecoderOnHeaderChange(true)` 를 설정합니다. 기본값은 false입니다.
+이 릴리스에서는 [!UICONTROL VAST] 응답의 [!UICONTROL ClickTracking], [!UICONTROL CustomClick] 또는 [!UICONTROL CompanionClickTracking] 요소에 대해 [!UICONTROL CDATA] 노드가 비어 있으면 응용 프로그램이 충돌하는 문제가 해결되었습니다.
 
 자세한 내용은 [Android용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-android.md)를 참조하십시오.
 
@@ -44,7 +42,7 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 | [Primetime API 참조](/help/reference/api-references.md) | TVSDK 함수, 데이터 구조 및 기타 프로그래밍 구문에 대한 자세한 정보를 제공합니다. |
 | [Digital Rights Management](/help/digital-rights-management/home.md) | Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대해 자세히 알아보십시오 |
 | [Primetime Ad Insertion 도움말](/help/primetime-ad-insertion/home.md) | 서버에 사용자 타겟팅된 동적 광고를 삽입하여 컨텐츠를 상용화하고 개인화된 광고를 통해 고객의 참여를 유도하는 방법을 설명합니다. |
-| [아카이브](https://helpx.adobe.com/primetime/archives.html) | 보관된 설명서의 PDF를 다운로드합니다. |
+| [아카이브](https://helpx.adobe.com/primetime/archives.html) | 보관된 설명서의 PDF을 다운로드합니다. |
 
 ## 유용한 리소스
 
