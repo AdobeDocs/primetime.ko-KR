@@ -3,7 +3,7 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 9b91bbc92a613a60233a73cded542a04efd61148
+source-git-commit: 6621a42d859cb872569123c175764e577bb46b9a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 32%
@@ -13,6 +13,12 @@ ht-degree: 32%
 # Primetime 릴리스 정보
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
+
+## TVSDK 3.14 Android의 수정 사항
+
+이 릴리스에서는 [!UICONTROL VAST] 응답의 [!UICONTROL ClickTracking], [!UICONTROL CustomClick] 또는 [!UICONTROL CompanionClickTracking] 요소에 대해 [!UICONTROL CDATA] 노드가 비어 있으면 응용 프로그램이 충돌하는 문제가 해결되었습니다.
+
+자세한 내용은 [Android용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-android.md)를 참조하십시오.
 
 ## PTAI 21.8.1의 개선 사항 및 수정 사항
 
@@ -25,12 +31,6 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 이 릴리스에서는 LIVE, VOD 및 FER 스트림에 대한 DEMUXED &#39;HLS/CMAF&#39;(프리롤, 미드롤 및 포스트롤) 광고를 지원합니다.
 
 기타 수정 사항 및 세부 사항은 [iOS 릴리스 노트](../release-notes/tvsdk-3x-ios.md)용 TVSDK를 참조하십시오
-
-## TVSDK 3.14 Android의 수정 사항
-
-이 릴리스에서는 [!UICONTROL VAST] 응답의 [!UICONTROL ClickTracking], [!UICONTROL CustomClick] 또는 [!UICONTROL CompanionClickTracking] 요소에 대해 [!UICONTROL CDATA] 노드가 비어 있으면 응용 프로그램이 충돌하는 문제가 해결되었습니다.
-
-자세한 내용은 [Android용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-android.md)를 참조하십시오.
 
 ## 참조 -
 
