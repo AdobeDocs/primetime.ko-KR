@@ -1,46 +1,43 @@
 ---
-title: PTAI 21.8.1 릴리스 노트
+title: PTAI 21.10.1 릴리스 노트
 description: PTAI 릴리스 노트에서는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경된 사항과 해결되고 알려진 문제를 설명합니다.
 exl-id: 39a05f6d-431a-4416-81b1-21d82c0dbd69
-source-git-commit: 97a192ed1d0ddc034f72a836a70293acfcca9881
+source-git-commit: 7d754e95d8a6c5d92382e3d20fe2c9096f2162ea
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# Primetime Ad Insertion 21.8.1 릴리스 노트
+# Primetime Ad Insertion 21.10.1 릴리스 노트
 
-Primetime Ad Insertion 21.x.x 릴리스 노트는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다
+Primetime Ad Insertion 21.x.x 릴리스 노트에서는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다.
 
-<!---
-Primetime Ad Insertion 21.9.1
-When: Tuesday, September 7, 2021 from 02:30 AM to 05:30 AM EASTERN
+## PTAI 21.10.1의 새로운 기능
 
+설정:  2021년 10월 12일 화요일 오전 7:45 ~ 오후 1:45 동부 표준시
 
+* 이 릴리스는 서버 통합을 중점적으로 다루며 비프로덕션 및 비유용한 서버를 제거합니다.
 
+## 이전 릴리스 버전의 개선 사항 및 수정 사항
 
+### Primetime Ad Insertion 유지 관리 릴리스
 
+설정: 2021년 9월 28일 화요일 오전 5시부터 오전 6시까지 동부 표준시
 
+* 향상된 기능 및 확장성을 위해 AWS의 Elastic Load Balancer에서 AWS의 애플리케이션 로드 밸런서로의 로드 밸런서 스택을 업데이트합니다. 이러한 로드 밸런서는 Ad Insertion 계층(SSAI/CSAI)에서 Auditude 백엔드로 트래픽을 라우팅하고 요청하는 데 사용됩니다.
 
+### 버전 21.9.1
 
+설정: 2021년 9월 7일 화요일 오전 2:30부터 오전 05:30(동부 표준시)
 
-What:  Primetime Ad Insertion 21.9.1
+* Primetime Ad Insertion의 중재 및 보고 구성 요소(Primetime Ads GUI)의 인프라 구성 요소를 업데이트했습니다.
 
-When:  Tuesday, September 7, 2021 from 02:30 AM to 05:30 AM Eastern Time
-
-Changes:
-
-* Updates to infrastructure components behind PTAI’s mediation and reporting components (Primetime Ads GUI)
--->
-
-## PTAI 21.8.1의 새로운 기능
+### 버전 21.8.1
 
 설정: 2021년 8월 24일 화요일 오전 2시부터 오전 05:00(동부 표준시)
 
 * DASH Live/Linear 스트림에 대한 지원이 추가되었습니다(VOD가 이미 지원됨).
-
-## 이전 릴리스 버전의 개선 사항 및 수정 사항
 
 ### 버전 21.5.1
 

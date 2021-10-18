@@ -3,9 +3,9 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 6621a42d859cb872569123c175764e577bb46b9a
+source-git-commit: 21695ad15f1dcbbfa33211efd0fb3ab282fefbeb
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '306'
 ht-degree: 32%
 
 ---
@@ -20,17 +20,17 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 
 자세한 내용은 [Android용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-android.md)를 참조하십시오.
 
-## PTAI 21.8.1의 개선 사항 및 수정 사항
+## PTAI 21.10.1의 개선 사항 및 수정 사항
 
-릴리스에는 DASH Live/Linear 스트림에 대한 지원이 포함되어 있습니다.
+이 릴리스는 서버 통합을 중점적으로 다루며 비프로덕션 및 비유용한 서버를 제거합니다.
 
-기타 수정 사항 및 세부 사항은 [Ad Insertion 릴리스 노트](/help/release-notes/ptai-21x-release-notes.md)를 참조하십시오
+기타 수정 사항 및 세부 사항은 [Ad Insertion 릴리스 노트](/help/release-notes/ptai-21x-release-notes.md)를 참조하십시오.
 
 ## TVSDK 3.13 iOS의 개선 사항 및 수정 사항
 
 이 릴리스에서는 LIVE, VOD 및 FER 스트림에 대한 DEMUXED &#39;HLS/CMAF&#39;(프리롤, 미드롤 및 포스트롤) 광고를 지원합니다.
 
-기타 수정 사항 및 세부 사항은 [iOS 릴리스 노트](../release-notes/tvsdk-3x-ios.md)용 TVSDK를 참조하십시오
+기타 수정 사항 및 세부 사항은 [iOS 릴리스 노트](../release-notes/tvsdk-3x-ios.md)용 TVSDK를 참조하십시오.
 
 ## 참조 -
 
