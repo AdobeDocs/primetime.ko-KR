@@ -1,20 +1,20 @@
 ---
 title: Adobe Primetime API 참조
-description: API를 사용하면 기능적인 애플리케이션 또는 통합을 빠르고 손쉽게 만들 수 있습니다.
+description: API를 사용하면 기능 애플리케이션이나 통합을 빠르고 쉽게 만들 수 있습니다.
 topic-tags: API-references
-translation-type: tm+mt
-source-git-commit: d8fde0d03bea85b3fefcfa5dcbfddee76b17de03
+exl-id: 6862764e-c1d8-413a-a0c0-66b31eac8e53
+source-git-commit: bf9adba0bace7e1327446d936c4bfe27f66fb2ac
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
+# Adobe Primetime API 참조 {#api-references}
 
-# Adobe Primetime API가 {#api-references} 참조
-
-+ Primetime 동적 Ad Insertion {#server-side}
++ Primetime Dynamic Ad Insertion {#server-side}
    + [Bootstrap API 참조](../primetime-ad-insertion/technical-reference/bootstrap-api.md)
+   + [보고서 API 참조](../primetime-ad-insertion/assets/auditude-report-api.pdf)
 
 + TVSDK 3.12 {#tvsdk-312}
    + [Android용 TVSDK 3.12](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.12/index.html)
@@ -51,10 +51,10 @@ ht-degree: 0%
 + DRM API {#drm-apis}
    + [Android용 DRM 클라이언트 API](https://help.adobe.com/en_US/primetime/api/drm-apis/client/android/index.html)
    + [iOS용 DRM 클라이언트 API](https://help.adobe.com/en_US/primetime/api/drm-apis/client/ios/index.html)
-   + [DRM SDK Server API](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/)
+   + [DRM SDK 서버 API](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/)
 
 + 기타 {#miscellaneous}
    + [비디오 하트비트 라이브러리](https://help.adobe.com/en_US/primetime/api/psdk/vhl_tvsdk_ios/index.html)
    + [DHPK 2.0 C++](https://help.adobe.com/en_US/primetime/api/psdk/psdk_doxygen/index.html)
    + [2.4 브라우저 TVSDK용 UI 프레임워크](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html)
-   + [PSDK FlashRuntime 공개 API](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls/)
+   + [PSDK FlashRuntime 공용 API](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls/)
