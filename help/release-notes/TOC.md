@@ -3,7 +3,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 릴리스 정보
 user-guide-description: 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
-source-git-commit: 7d754e95d8a6c5d92382e3d20fe2c9096f2162ea
+source-git-commit: f266b93281a290a8c2f19ac6869287d6480f49e5
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 16%
@@ -22,7 +22,7 @@ ht-degree: 16%
    + [iOS용 TVSDK 3.13 릴리스 노트](tvsdk-3x-ios.md)
    + [iOS용 TVSDK 1.4 릴리스 노트](tvsdk-1-4-ios.md)
 + Android용 TVSDK {#tvsdk-android}
-   + [Android용 TVSDK 3.14 릴리스 노트](tvsdk-3x-android.md)
+   + [Android용 TVSDK 3.15 릴리스 노트](tvsdk-3x-android.md)
    + [Android용 TVSDK 2.7 릴리스 노트](tvsdk-27-android.md)
    + [Android용 TVSDK 2.4.1 릴리스 노트](tvsdk-24-android.md)
    + [Android용 TVSDK 1.4 릴리스 노트](tvsdk-1-4-android.md)
