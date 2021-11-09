@@ -3,10 +3,10 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 3b2495960cb4f5c625069415977596b5f6632bc4
+source-git-commit: c0e5d435ded98fa9b359c3887ed0aafd1b39b33d
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 32%
+source-wordcount: '286'
+ht-degree: 34%
 
 ---
 
@@ -14,15 +14,13 @@ ht-degree: 32%
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
+## PTAI 21.11.1의 개선 사항 및 수정 사항
+
+다음 [!UICONTROL EXT-X-IMAGE-STREAM-INF] 는 이제 영역별로 구성할 수 있습니다.
+
 ## TVSDK 3.15 Android의 수정 사항
 
 이 릴리스는 크리에이티브 태그가 없거나 [!UICONTROL url CDATA] 에 비어 있음 [!UICONTROL VAST] 응답합니다.
-
-다음을 확인하십시오 [Android용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-android.md) 추가 정보.
-
-## PTAI 21.10.1의 개선 사항 및 수정 사항
-
-이 릴리스는 서버 통합을 중점적으로 다루며 비프로덕션 및 비유용한 서버를 제거합니다.
 
 기타 수정 사항 및 세부 사항은 [Ad Insertion 릴리스 노트](/help/release-notes/ptai-21x-release-notes.md).
 
