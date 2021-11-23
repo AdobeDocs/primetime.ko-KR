@@ -2,9 +2,9 @@
 title: PTAI 21.11.1 릴리스 노트
 description: PTAI 릴리스 노트에서는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경된 사항과 해결되고 알려진 문제를 설명합니다.
 exl-id: 39a05f6d-431a-4416-81b1-21d82c0dbd69
-source-git-commit: b58fea35be528c4c030eab39fde9dd642d90cb58
+source-git-commit: f4c6ef44c7f13bf8170a1f23a7ae8eba0171316a
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Primetime Ad Insertion 21.x.x 릴리스 노트에서는 2021년 Primetime Ad Ins
 설정: 2021년 11월 9일 화요일 오전 1:30부터 오전 4:30(동부 시간)
 
 * [!UICONTROL EXT-X-IMAGE-STREAM-INF] 는 이제 영역별로 구성할 수 있습니다.
+
+* Roku Trick Play가 완전히 지원됩니다.
 
 ## 이전 릴리스 버전의 개선 사항 및 수정 사항
 
