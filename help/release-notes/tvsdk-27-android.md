@@ -4,9 +4,9 @@ description: Android™용 TVSDK 2.7 릴리스 노트에서는 TVSDK Android™ 
 products: SG_PRIMETIME
 topic-tags: release-notes
 exl-id: d64f0ef2-60a9-43a1-b2f9-44764a570538
-source-git-commit: d2c8133f126db44b9c505dc0a21ba208fd6c01c8
+source-git-commit: 3891ea44775899c1e0d43c4ac74bbc4b07d7962e
 workflow-type: tm+mt
-source-wordcount: '4072'
+source-wordcount: '4070'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ TVSDK 2.7은 순차적 해결 대신 광고 브레이크에서 모든 광고 요
 * **부분 광고 브레이크 삽입**
 
    부분적으로 시청된 광고에 대한 추적을 실행하지 않고 광고 중간에 참여하는 TV와 같은 경험입니다.\
-   예**: **사용자는 3개의 30초 광고로 구성된 90초 광고 브레이크의 중간(40초)에 참여합니다. 브레이크에서 두 번째 광고 10초입니다.
+   예: 사용자는 3개의 30초 광고로 구성된 90초 광고 브레이크의 중간(40초)에 참여합니다. 브레이크에서 두 번째 광고 10초입니다.
    * 두 번째 광고는 나머지 기간(20초) 동안 재생되고 그 뒤에 세 번째 광고가 재생됩니다.
    * 부분 광고 재생(두 번째 광고)에 대한 광고 추적기는 실행되지 않습니다. 세 번째 광고에 대한 추적기만 실행됩니다.
 
@@ -71,7 +71,7 @@ TVSDK 2.7은 순차적 해결 대신 광고 브레이크에서 모든 광고 요
 
 * **AdSystem 및 Creative Id가 CRS 요청에 추가되었습니다**
 
-   * 이제 1401 및 1403 요청에 &#39;AdSystem&#39; 및 &#39;CreativeId&#39;를 새 매개 변수로 포함합니다.
+   * 이제 다음을 포함합니다 `AdSystem` 및 `CreativeId` 를 1401 및 1403 요청에 새 매개 변수로 추가합니다.
 
 * **NetworkConfiguration 클래스의 API setEncodeUrlForTracking이 제거되었습니다.** URL의 안전하지 않은 문자는 인코딩해야 합니다.
 
@@ -81,7 +81,8 @@ Android™ TVSDK v2.5.4는 다음 업데이트 및 API 변경 사항을 제공�
 
 * 에 대한 기본값 변경 `WebViewDebbuging`
 
-   `WebViewDebbuging` 기본적으로 값이 False로 설정됩니다. 이를 활성화하려면 응용 프로그램에서 setWebCon의 tentsDebuggingEnabled(true)를 호출합니다.
+   다음 `WebViewDebbuging` 값이 _False_ 기본적으로 제공됩니다. 활성화하려면 를 호출합니다. `setWebContentsDebuggingEnabled` to _True_ 참조하십시오.
+
 * OpenSSL 및 Curl 버전 업그레이드 업데이트됨 `libcurl` v7.57.0 및 OpenSSL을 v1.0.2k로 설정합니다.
 * VAST 응답 개체에 대한 앱 수준 액세스 응용 프로그램에 대한 VAST 응답 개체에 액세스할 수 있는 새 API NetworkAdInfo::getVastXml() 기능을 도입했습니다.
 
