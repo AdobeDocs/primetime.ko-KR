@@ -3,10 +3,10 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: f4c6ef44c7f13bf8170a1f23a7ae8eba0171316a
+source-git-commit: d549c83b50683ed3f803226eaa414179896a29b0
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 34%
+source-wordcount: '320'
+ht-degree: 30%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 34%
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 21.11.1의 개선 사항 및 수정 사항
+## PTAI 2.2.2의 개선 사항 및 수정 사항
 
-다음 [!UICONTROL EXT-X-IMAGE-STREAM-INF] 는 이제 영역별로 구성할 수 있으며 [!UICONTROL Roku Trick] 재생이 완전히 지원됩니다.
+이 릴리스는 광고 크리에이티브 호출, 광고 서버 호출 및 사용 가능한 해결 이벤트와 같은 새로운 광고 성능 이벤트를 캡처하는 데 중점을 둡니다. 이러한 이벤트는 향후 릴리스에서 Primetime Ad Insertion의 새로운 그래픽 사용자 인터페이스를 통해 노출됩니다.
 
 ## TVSDK 3.15 Android의 수정 사항
 
