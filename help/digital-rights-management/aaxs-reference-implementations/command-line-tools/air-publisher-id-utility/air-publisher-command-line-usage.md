@@ -2,14 +2,13 @@
 title: 명령줄 사용
 description: 명령줄 사용
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 67056085-beb5-4f54-8962-369bc32d7907
+source-git-commit: 79cab347d0daa01549fbf8a9b37bf0a91c14648e
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
-
 
 # 명령줄 사용 {#command-line-usage}
 
@@ -28,11 +27,10 @@ java -jar AdobePublisherIDUtility.jar
 </i class="+ topic>
 ```
 
-* `signaturefile` 응용 프로그램 디렉토리에 있는 AIR 응용 프로그램의 signatures.xml 파일의 경로를  [!DNL META-INF] 지정합니다.
+* `signaturefile` 응용 프로그램에 있는 AIR 응용 프로그램의 signatures.xml 파일의 경로를 지정합니다 [!DNL META-INF] directory
 
-* `signingcert` AIR 응용 프로그램을 서명하는 데 사용되는 인증서를 지정합니다.
+* `signingcert` AIR 응용 프로그램에 서명하는 데 사용되는 인증서를 지정합니다
 
 >[!NOTE]
 >
->iOS 응용 프로그램의 게시자 ID를 결정하려면 `-s` 옵션을 사용하여 iOS 응용 프로그램을 서명하는 데 사용되는 인증서를 지정합니다. ***Adobe Primetime은 액세스 보호된 내용을 재생할 수 있는 iOS 애플리케이션을 구축하려면 필요합니다***.
-
+>iOS 응용 프로그램의 게시자 ID를 확인하려면 `-s` 옵션을 선택하고 iOS 애플리케이션에 서명하는 데 사용되는 인증서를 지정합니다. ***액세스 보호된 콘텐츠를 재생할 수 있는 iOS 애플리케이션을 빌드하려면 Adobe Primetime이 필요합니다***.
