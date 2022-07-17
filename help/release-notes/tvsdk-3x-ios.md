@@ -2,9 +2,9 @@
 title: iOS용 TVSDK 3.13 릴리스 노트
 description: iOS용 TVSDK 3.13 릴리스 노트에서는 새로운 기능 또는 변경된 사항, 해결되고 알려진 문제 및 TVSDK iOS 3.13의 장치 문제를 설명합니다.
 exl-id: adf8ab23-86d6-4113-b243-2709d5f7f829
-source-git-commit: 92defeee19a430c8b0b66696c527a6abe377f4b9
+source-git-commit: 59ea8008c828f3bdf275fea5cc2a59c37b0c4845
 workflow-type: tm+mt
-source-wordcount: '7587'
+source-wordcount: '7575'
 ht-degree: 0%
 
 ---
@@ -1205,6 +1205,6 @@ ZD 수정 사항으로 #4279
 
 ## 유용한 리소스 {#helpful-resources}
 
-* [iOS Programmer&#39;s Guide용 TVSDK 3.4](https://experienceleague.adobe.com/docs/primetime/programming/tvsdk-3x-ios-prog/introduction/ios-3x-overview.html?lang=en)
+* [iOS Programmer&#39;s Guide용 TVSDK 3.4](/help/programming/tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md)
 * [TVSDK iOS 3.4 API 참조](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v34/index.html)
 * 에서 전체 도움말 설명서 를 참조하십시오. [Adobe Primetime 학습 및 지원](https://experienceleague.adobe.com/docs/primetime.html) 페이지.

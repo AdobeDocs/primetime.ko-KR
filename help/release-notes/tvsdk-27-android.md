@@ -4,9 +4,9 @@ description: Android™용 TVSDK 2.7 릴리스 노트에서는 TVSDK Android™ 
 products: SG_PRIMETIME
 topic-tags: release-notes
 exl-id: d64f0ef2-60a9-43a1-b2f9-44764a570538
-source-git-commit: 3891ea44775899c1e0d43c4ac74bbc4b07d7962e
+source-git-commit: 59ea8008c828f3bdf275fea5cc2a59c37b0c4845
 workflow-type: tm+mt
-source-wordcount: '4070'
+source-wordcount: '4037'
 ht-degree: 0%
 
 ---
@@ -425,10 +425,10 @@ Adobe Primetime 버전 문자열이 시스템 사용자 에이전트에 추가�
 
 ## 유용한 리소스 {#helpful-resources}
 
-* [시스템 요구 사항](https://experienceleague.adobe.com/docs/primetime/programming/tvsdk-2-7-for-android/overview/c-psdk-android-2.7-requirements.html?lang=en)
-* [Android™ Programmer&#39;s Guide용 TVSDK 2.7](https://experienceleague.adobe.com/docs/primetime/programming/tvsdk-2-7-for-android/overview/c-psdk-android-2.7-overview-prod-audience-guide.html?lang=en)
+* [시스템 요구 사항](/help/programming/tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md)
+* [Android™ Programmer&#39;s Guide용 TVSDK 2.7](/help/programming/tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-prod-audience-guide.md)
 * [TVSDK Android™ API용 Javadoc 참조](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/index.html)
 * [TVSDK Android™ C++ API 문서](https://help.adobe.com/en_US/primetime/api/psdk/cpp/namespaces.html) - 각 Java™ 클래스에는 해당 C++ 클래스가 있으며, C++ 설명서에는 Java™ 문서보다 더 많은 설명서가 포함되어 있으므로 Java™ API에 대한 자세한 내용은 C++ 설명서를 참조하십시오.
-* [Android™(Java™) 마이그레이션 안내서용 TVSDK 1.4에서 2.5로](https://experienceleague.adobe.com/docs/primetime/migration/tvsdk-14-25-android.html?lang=en)
+* [Android™(Java™) 마이그레이션 안내서용 TVSDK 1.4에서 2.5로](/help/migration-guides/tvsdk-14-25-android.md)
 * 화면 켜짐/꺼짐 시나리오를 처리하려면 다음을 참조하십시오. `Application_Changes_for_Screen_On_Off.pdf` 빌드에 포함된 파일입니다.
 * 에서 전체 도움말 설명서 를 참조하십시오. [Adobe Primetime 학습 및 지원](https://experienceleague.adobe.com/docs/primetime.html) 페이지.
