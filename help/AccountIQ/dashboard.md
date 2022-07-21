@@ -1,13 +1,13 @@
 ---
 title: 계정 IQ 대시보드
-description: '대시보드는 광범위한 가입자 데이터를 분석하여 암호 공유 인스턴스를 정확하게 파악하는 데 도움이 됩니다.  '
-source-git-commit: f6f1769d86a98d3a545bf986e41e9ba2252a36ff
+description: 대시보드는 광범위한 가입자 데이터를 분석하여 암호 공유 인스턴스를 정확하게 파악하는 데 도움이 됩니다.
+exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
+source-git-commit: 8e041e6bb3b0f607eb421be002904e3a8a447f52
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 대시보드 {#dashboard}
 
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 ![계정 IQ 대시보드](assets/dashboard-capture.png)
 
-## 집계된 공유 점수 {#aggregated-sharing}
+## 평균 공유 점수 - 현재 세그먼트에 대해 집계됨 {#aggregated-sharing}
 
 [집계된 공유 점수] 패널에서는 계정 및 스트리밍 볼륨 측면에서 공유의 양과 영향을 요약하는 상위 라인 판독이 제공됩니다.
 
 이 값은 구독자에 의한 자격 증명 공유의 크기를 이해하는 데 도움이 되므로 그에 따라 조치를 취해야 할 필요성을 측정합니다.
 
 ![](assets/aggregate-sharing-score.png)
+
+![](assets/aggregate-sharing-score.svg)
 
 다음 세 가지 지표는 총 공유 점수의 구성 요소입니다.
 
