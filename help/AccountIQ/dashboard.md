@@ -2,7 +2,7 @@
 title: 계정 IQ 대시보드
 description: 대시보드는 광범위한 가입자 데이터를 분석하여 암호 공유 인스턴스를 정확하게 파악하는 데 도움이 됩니다.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: 2ae03c61344b878c9cac268ad6e7e91b08810488
+source-git-commit: cc8b34705d9ede95c5e5f25cab1b86a772abec02
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -28,8 +28,6 @@ ht-degree: 0%
 
 
 *그림: 평균 공유 점수 패널 - 현재 세그먼트에 대해 집계됨*
-
-![](assets/aggregate-sharing-score.svg)
 
 다음 세 지표는 평균 공유 점수의 구성 요소입니다.
 

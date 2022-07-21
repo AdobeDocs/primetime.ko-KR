@@ -1,9 +1,10 @@
 ---
 title: 세그먼트 및 시간대 정의
 description: 세그먼트 및 시간대 정의
-source-git-commit: a23de698b073d271df9b04494ff59f5d5a194c9d
+exl-id: 86fe010d-3202-4ce2-b803-ff44f5538d7e
+source-git-commit: cc8b34705d9ede95c5e5f25cab1b86a772abec02
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,9 +55,8 @@ MVPD를 선택하려면 **세그먼트의 MVPD** 옵션:
 
    의 최상위 목록 항목 **세그먼트의 채널** is [프로그래머](/help/AccountIQ/product-concepts.md#programmer-def) 프로그래머 이름 아래 있는 회사 및 목록 항목이 [채널](/help/AccountIQ/product-concepts.md#channel-def). 프로그래머에서 개별 채널을 선택하거나 프로그래머와 해당 프로그래머 아래의 채널의 모든 활동을 보고서 및 그래프 결과에 포함할 수 있습니다.
 
-   ![](assets/programmer-channels.png)
-
-   *그림: 채널 선택기에 나열된 프로그래머 및 채널*
+   <!--![](assets/programmer-channels.png)
+   *Figure: Programmers and channels listed in channels selector*-->
 
    >[!IMPORTANT]
    >
@@ -95,9 +95,7 @@ MVPD를 선택하려면 **세그먼트의 MVPD** 옵션:
 
 1. 다음 중 하나를 선택합니다 **주** 또는 **월** 변환 전: **합계 기준** 평가 세부기간을 설정하는 옵션입니다.
 
-   ![](assets/granularity-timeframe-weekwise.png)
-
-   *그림: 세부기간 및 기간을 선택하는 날짜 선택기*
+   <!--![](assets/granularity-timeframe-weekwise.png)   *Figure: Date picker to select Granularity and time frame*-->
 
 1. 세부기간을 선택하면 앞으로 또는 뒤로 화살표를 사용하여 시간을 앞으로 또는 뒤로 이동할 수 있습니다.
 
