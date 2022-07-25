@@ -3,10 +3,10 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 9f218bddddeab52480bbdcd41e8f0e6fd0fab0f8
+source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 32%
+source-wordcount: '298'
+ht-degree: 33%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 32%
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 22.6.2의 개선 사항 및 수정 사항
+## PTAI 22.7.1의 개선 사항 및 수정 사항
 
-이 릴리스는 CRS의 사용 가능한 손실과 추가 네트 스토리지 원점에 대한 자세한 정보를 제공하는 광고 성능 로깅 향상에 중점을 둡니다.
+이 릴리스에서는 DASH 워크플로우에 대한 사용 가능한 관련 지표를 도입하여 광고 성능 로깅 개선 사항에 중점을 둡니다.
 
 ## TVSDK 3.15 Android의 수정 사항
 

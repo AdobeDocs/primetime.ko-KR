@@ -1,27 +1,37 @@
 ---
-title: PTAI 22.6.2 릴리스 노트
+title: PTAI 22.7.1 릴리스 노트
 description: PTAI 릴리스 노트에서는 2022년 Primetime Ad Insertion의 새로운 기능 또는 변경된 사항과 해결되고 알려진 문제를 설명합니다.
 exl-id: 58b254b8-18b9-48ba-bd4e-378785e56af5
-source-git-commit: 9f218bddddeab52480bbdcd41e8f0e6fd0fab0f8
+source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
-# Primetime Ad Insertion 22.6.2 릴리스 노트
+# Primetime Ad Insertion 22.7.1 릴리스 노트
 
 Primetime Ad Insertion 22.x.x 릴리스 노트에서는 2022년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다.
 
-## PTAI 22.6.2의 새로운 기능
+## PTAI 22.7.1의 새로운 기능
 
-설정: 2022년 6월 29일 수요일, 오전 3:00~오전 6:00 동부 표준시
+설정: 2022년 7월 20일 수요일, 오전 3:00~오전 6:00 동부 시간
+
+* DASH 워크플로우에 대한 사용 가능한 관련 지표를 도입하여 광고 성능 로깅에 대한 개선 사항.
+
+* 데이터베이스 마이그레이션.
+
+## 이전 릴리스 버전의 개선 사항 및 수정 사항
+
+### 버전 2.6.2
+
+**설정:** 2022년 6월 29일 수요일, 오전 3:00~오전 6:00 동부 표준시
+
+**변경 사항**
 
 * 사용 가능한 손실에 대한 자세한 내용을 포함하여 광고 성능 로깅 개선.
 
 * CRS에 대한 추가 네트 스토리지 원본
-
-## 이전 릴리스 버전의 개선 사항 및 수정 사항
 
 ### 버전 2.6.1
 
