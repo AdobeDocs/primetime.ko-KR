@@ -2,7 +2,7 @@
 title: 계정 IQ 대시보드
 description: 대시보드는 광범위한 가입자 데이터를 분석하여 암호 공유 인스턴스를 정확하게 파악하는 데 도움이 됩니다.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: cc8b34705d9ede95c5e5f25cab1b86a772abec02
+source-git-commit: 32ba300ce729eab7a6906d8fb0875e8f2bbe2d1d
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -110,7 +110,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 ### 확률 수준을 공유하는 계정 및 사용 수 {#number-of-accounts-usage-sharing-probability}
 
-이 패널에서는 각 퀴놀이의 공유 계정 관련 사용을 사용하여 확률 퀴나일을 매우 낮은(0-20%)부터 매우 높은(80=100%)까지 공유하는 범위로 분할된 계정의 테이블 형식 보기를 제공합니다.
+이 패널에서는 각 퀴놀이의 공유 계정 관련 사용을 사용하여 확률 퀴나일을 매우 낮은(0-20%)부터 매우 높은(80-100%)까지 공유하는 범위로 분할된 계정의 테이블 형식 보기를 제공합니다.
 
 ![](assets/no-acc-usage-prob-level.png)
 
