@@ -1,19 +1,21 @@
 ---
 title: 보고서 API
 description: Auditude 보고서 API
-source-git-commit: 7f958c83a4dd481221feb4a266440b920ac7d195
+exl-id: 50eb4869-3765-4591-8c41-794b29d50044
+source-git-commit: 628544e38616715e83e0274ba26cf93302ce0e61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1042'
+ht-degree: 1%
 
 ---
-
 
 # 보고서 API {#report-api}
 
 사용자 인터페이스에는 고객 및 지원(Adobe) 팀을 위한 관리 역할이 있습니다. 고객은 포털에 액세스한 다음 해당 구성을 만들고 편집할 수 있습니다. 사용자 인터페이스에서 광고 노출 횟수에 대한 보고서를 볼 수도 있습니다.
 
 API는 백엔드 인프라와 원활하게 의사 소통할 수 있도록 백그라운드에서 작동합니다.
+
+탐색 [!DNL Primetime Ad Insertion] API는 다음을 참조하십시오 [swaged 사용자 인터페이스의 Ad Insertion API 엔드포인트](https://adconfigservice-va6.cloud.adobe.io/swagger-ui/index.html#/).
 
 ## API 엔드포인트 {#report-api-endpoint}
 
