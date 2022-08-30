@@ -1,13 +1,13 @@
 ---
 title: 계정 IQ의 작업
 description: 계정 IQ의 작업에는 가입자 계정에 자동 및 대량 작업을 수행하고 그 효과를 추적하는 작업이 포함됩니다.
-source-git-commit: e61cca77bad4f01de871e300dc99d7368c283f2a
+exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
+source-git-commit: 40239b6715d8eab95bc2564fb19eb6832387ad3e
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
-
 
 # 작업 {#operations-tab-next-steps}
 
@@ -61,13 +61,24 @@ ht-degree: 0%
 
    *그림: 작업 보고서를 통해 작업의 영향을 확인할 수 있습니다*
 
-   x축은 평가 기간을 그래프하고 y축은 작업의 영향을 측정하기 위한 변수를 그래프로 표시합니다.
+   X축은 평가 기간을 나타내고 y축은 작업의 영향을 나타냅니다(평가 기간 동안 세그먼트의 계정 수 조건). 각 막대는 세 부분으로 나뉘어져 있습니다.
 
-   예를 들어 위의 이미지에서 y축의 변수는 계정 수입니다. 그래프를 보면 공정 세그먼트에 있는 계정 수와 특정 시간에 공정 세그먼트 외부에 있는 계정 수(예: 공정 평가 기간의 2주)를 비교할 수 있습니다. 따라서 평가 기간 동안 운영 세그먼트 내 및 세그먼트 외부에서 계정 수가 어떻게 다른지 분석할 수 있습니다.
+   * 한 부분은 여전히 작업 세그먼트의 기준을 충족하는 계정 수를 나타냅니다.
 
-   따라서, 작업이 의심스러운 계정에 경고 이메일을 보내는 것이었고, 작업 세그먼트의 계정이 90개 이상의 확률을 공유하고 5개 이상의 장치를 사용하여 컨텐츠를 스트리밍하는 사람들이라면, 세그먼트의 평가 기간 시작 부분에서 700만 개 이상의 계정이 발생합니다. 이 숫자는 그래프에 표시된 것처럼 평가 기간 동안 변경되므로 작업의 영향을 나타냅니다. 평가를 기반으로, 의심스러운 계정에 대해 해결하기 위한 조치를 취하거나 작업을 계속 수행하거나, 더 나은 결과를 얻기 위해 전략을 조정하여 자격 증명 공유를 억제할 수 있습니다.
+   * 다른 부분은 원래 세그먼트에 있었지만 더 이상 작업 세그먼트의 기준을 충족하지 않는 해당 기간에 대한 활성 계정 수를 나타냅니다.
 
-2. 보고서를 닫고 기본 작업 페이지로 돌아가려면 를 선택합니다 **작업** 옵션 아래의 **작업** 왼쪽 탐색.
+   * 세 번째 부분은 해당 기간에 활성화되지 않은 계정을 나타냅니다.
+   >[!NOTE]
+   >
+   >첫 번째 막대는 평가 기간 시작 시 작업 세그먼트의 조건을 충족하는 계정 수를 나타냅니다.
+
+   시간이 지나면서 그래프에는 원래 기준과 관련하여 자신의 동작을 변경한 계정 수(예: 90개 이상 및 5개 이상의 장치를 사용하는 경우)를 표시하여 작업(작업을 통해)의 효과가 표시됩니다.
+
+<!--For example, in the above image the variable on the y-axis is number of accounts. Looking at the graph you can compare the number of accounts that are in the operations' segment versus the number of accounts that are outside the operations segment at a particular time (such as week 2nd of the operations evaluation period). Therefore, you can analyze how over the evaluation period do number of accounts vary within the operation segment and outside the segment.
+
+So, if your operation was to send out warning emails to suspecting accounts, and accounts in operations segment were those with sharing probability more than 90 and using more than 5 devices to stream content, then in the beginning of the evaluation period accounts in segment are more than 17 thousand. This number changes over the evaluation period as shown in the graph, thereby indicating the impact of operation. Based on the evaluation, you can take remedial measures on suspecting accounts, or continue with the operation, or adjust your strategy for better outcomes to curb credential sharing.-->
+
+1. 보고서를 닫고 기본 작업 페이지로 돌아가려면 를 선택합니다 **작업** 옵션 아래의 **작업** 왼쪽 탐색.
 
 <!--
 
