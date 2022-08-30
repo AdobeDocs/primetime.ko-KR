@@ -2,9 +2,9 @@
 title: 계정 IQ의 작업
 description: 계정 IQ의 작업에는 가입자 계정에 자동 및 대량 작업을 수행하고 그 효과를 추적하는 작업이 포함됩니다.
 exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
-source-git-commit: 40239b6715d8eab95bc2564fb19eb6832387ad3e
+source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 1. 기본 작업 페이지에서 작업 이름을 선택합니다.
 
-   보고서는 누적 막대 그래프 형태로 표시됩니다.
+   보고서는 누적 열 그래프 형태로 표시됩니다.
 
    ![](assets/operation-impact-report.png)
 

@@ -2,9 +2,9 @@
 title: 계정 IQ 대시보드
 description: 대시보드는 광범위한 가입자 데이터를 분석하여 암호 공유 인스턴스를 정확하게 파악하는 데 도움이 됩니다.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: 7706d5fcafdcfb9c0d4cc69936681c6223b0739d
+source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 대시보드 {#dashboard}
 
 대시보드는 계정 공유의 범위 및 영향에 대한 높은 수준의 개요를 제공하도록 설계된 그래프 및 보고서 컬렉션에 데이터를 요약하고 집계합니다. 계정 IQ의 주요 보고서와 지표가 포함된 단일 페이지를 제공합니다.
-
-<table><tr><th>
-
-+++프로그래머용 대시보드
 
 ![계정 IQ 대시보드](assets/dashboard-capture.png)
 
@@ -121,29 +117,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 *그림: 다양한 확률 범위에 속하는 계정, 추세 및 사용 수*
 
-+++
 
-</th><th>
-
-+++MVPD용 대시보드 MVPD 사용자를 위한 대시보드는 프로그래머 사용자의 대시보드와 약간 다릅니다.
-
-![](assets/dashboard-mvpd.png)
-
-
-*그림: MVPD의 대시보드*
-
-## 전체 공유 점수로 세그먼트에서 상위 프로그래머 {#}
-
-![](assets/top-programmers-panel.png)
-
-
-*그림: 세그먼트에서 상위 프로그래머를 보여주는 패널*
-+++
-
-</th>
-</tr>
-
-</table>
 
 <!--
 +++Dashboard for programmers
