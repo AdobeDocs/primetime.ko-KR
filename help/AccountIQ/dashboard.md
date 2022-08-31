@@ -2,7 +2,7 @@
 title: 계정 IQ 대시보드
 description: 대시보드는 광범위한 가입자 데이터를 분석하여 암호 공유 인스턴스를 정확하게 파악하는 데 도움이 됩니다.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
+source-git-commit: a015cf059c599c043f03b981eed640fbdbffc27b
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -72,7 +72,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 ![](assets/mvpds-in-segment.png)-->
 
-### MVPD에 대한 업계 전체 공유 점수 {#top-mvpds}
+## MVPD에 대한 업계 전체 공유 점수 {#top-mvpds}
 
 이 표는 세그먼트에서 MVPD에 대한 서로 다른 집계된 공유 점수 비교 보기를 제공합니다.
 
@@ -85,7 +85,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 *그림: 전체 점수로 세그먼트화된 상위 MVPD*
 
-### 채널 및 MVPD별 점수 공유 {#sharin-score-by-channels-and-mvpds}
+## 채널 및 MVPD별 점수 공유 {#sharin-score-by-channels-and-mvpds}
 
 이 표에서는 현재 세그먼트에서 MVPD에 대해 선택한 채널의 점수를 공유하는 비교 보기를 제공합니다.
 
@@ -94,7 +94,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 *그림: 채널 및 MVPD별 점수 공유*
 
-### 확률을 공유하는 계정 {#accounts-sharing-probability}
+## 확률을 공유하는 계정 {#accounts-sharing-probability}
 
 이 차트는 확률 퀴나일을 매우 낮은(0-20%)부터 매우 높은(80=100%)까지 공유하는 범위로 분할합니다.
 
@@ -108,7 +108,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 *그림: 서로 다른 공유 확률 범위에 있는 가입자 계정 수 및 백분율*
 
-### 확률 수준을 공유하는 계정 및 사용 수 {#number-of-accounts-usage-sharing-probability}
+## 확률 수준을 공유하는 계정 및 사용 수 {#number-of-accounts-usage-sharing-probability}
 
 이 패널에서는 각 퀴놀이의 공유 계정 관련 사용을 사용하여 확률 퀴나일을 매우 낮은(0-20%)부터 매우 높은(80-100%)까지 공유하는 범위로 분할된 계정의 테이블 형식 보기를 제공합니다.
 
