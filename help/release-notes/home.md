@@ -3,10 +3,10 @@ title: Primetime 릴리스 정보
 description: Primetime 릴리스 정보
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
+source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 33%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,15 +14,17 @@ ht-degree: 33%
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
-## PTAI 22.7.1의 개선 사항 및 수정 사항
+## PTAI 22.9.2의 개선 사항 및 수정 사항
 
-이 릴리스에서는 DASH 워크플로우에 대한 사용 가능한 관련 지표를 도입하여 광고 성능 로깅 개선 사항에 중점을 둡니다.
+이 릴리스는 광고 호출 및 사용 가능한 로깅 데이터를 포함하도록 광고 성능 원격 분석 데이터 개선 사항에 중점을 둡니다.
+
+기타 수정 사항 및 세부 사항은 [Ad Insertion 릴리스 노트](/help/release-notes/ptai-22x-release-notes.md).
 
 ## TVSDK 3.15 Android의 수정 사항
 
 이 릴리스는 크리에이티브 태그가 없거나 [!UICONTROL url CDATA] 에 비어 있음 [!UICONTROL VAST] 응답합니다.
 
-기타 수정 사항 및 세부 사항은 [Ad Insertion 릴리스 노트](/help/release-notes/ptai-21x-release-notes.md).
+기타 수정 사항 및 세부 사항은 [Android용 TVSDK 릴리스 노트](/help/release-notes/tvsdk-3x-android.md)
 
 ## TVSDK 3.13 iOS의 개선 사항 및 수정 사항
 

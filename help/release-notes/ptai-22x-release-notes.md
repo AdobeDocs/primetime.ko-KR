@@ -1,27 +1,45 @@
 ---
-title: PTAI 22.7.1 릴리스 노트
+title: PTAI 22.9.2 릴리스 노트
 description: PTAI 릴리스 노트에서는 2022년 Primetime Ad Insertion의 새로운 기능 또는 변경된 사항과 해결되고 알려진 문제를 설명합니다.
 exl-id: 58b254b8-18b9-48ba-bd4e-378785e56af5
-source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
+source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Primetime Ad Insertion 22.7.1 릴리스 노트
+# Primetime Ad Insertion 22.9.2 릴리스 노트
 
 Primetime Ad Insertion 22.x.x 릴리스 노트에서는 2022년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다.
 
-## PTAI 22.7.1의 새로운 기능
+## PTAI 22.9.2의 새로운 기능
 
-설정: 2022년 7월 20일 수요일, 오전 3:00~오전 6:00 동부 시간
+**설정:** 2022년 9월 7일 수요일, 오전 3:00~오전 6:00 동부 표준시
+
+* 추가 광고 호출 및 사용 가능한 로깅 데이터를 포함하도록 Primetime Ad Insertion의 광고 성능 원격 분석 데이터가 개선되었습니다.
+
+## 이전 릴리스 버전의 개선 사항 및 수정 사항
+
+### 버전 PTAI 22.9.1
+
+**설정:** 2022년 9월 6일 화요일, 오전 3:00~오전 6:00 동부 표준시
+
+**변경 사항:**
+
+* CRS(Content Repackaging Service) 백엔드 인증에 대한 개선 사항입니다.
+
+* Primetime Ad Insertion 사용자 인터페이스의 CRS(Content Repackaging Service) 원격 분석 그래프에 대한 업데이트입니다.
+
+### 버전 2.7.1
+
+**설정:** 2022년 7월 20일 수요일, 오전 3:00~오전 6:00 동부 시간
+
+**변경 사항:**
 
 * DASH 워크플로우에 대한 사용 가능한 관련 지표를 도입하여 광고 성능 로깅에 대한 개선 사항.
 
 * 데이터베이스 마이그레이션.
-
-## 이전 릴리스 버전의 개선 사항 및 수정 사항
 
 ### 버전 2.6.2
 
