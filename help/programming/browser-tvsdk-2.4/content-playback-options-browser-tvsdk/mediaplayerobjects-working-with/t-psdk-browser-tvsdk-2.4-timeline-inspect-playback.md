@@ -1,21 +1,19 @@
 ---
-description: 브라우저 TVSDK에서 재생되는 현재 선택된 항목과 연관된 타임라인에 대한 설명을 볼 수 있습니다. 이 설명은 광고 컨텐츠에 해당하는 컨텐츠 섹션이 식별되는 사용자 정의 스크러빙 막대 컨트롤을 응용 프로그램에 표시할 때 유용합니다.
+description: 브라우저 TVSDK에서 재생 중인 현재 선택한 항목과 연결된 타임라인에 대한 설명을 볼 수 있습니다. 이 설명은 광고 컨텐츠에 해당하는 컨텐츠 섹션이 식별되는 사용자 지정 스크러빙 막대 컨트롤을 응용 프로그램에 표시할 때 유용합니다.
 title: Inspect 재생 타임라인
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 729ae345-378e-4771-a31b-375872e94262
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
-
 # Inspect 재생 타임라인{#inspect-the-playback-timeline}
 
-브라우저 TVSDK에서 재생되는 현재 선택된 항목과 연관된 타임라인에 대한 설명을 볼 수 있습니다. 이 설명은 광고 컨텐츠에 해당하는 컨텐츠 섹션이 식별되는 사용자 정의 스크러빙 막대 컨트롤을 응용 프로그램에 표시할 때 유용합니다.
+브라우저 TVSDK에서 재생 중인 현재 선택한 항목과 연결된 타임라인에 대한 설명을 볼 수 있습니다. 이 설명은 광고 컨텐츠에 해당하는 컨텐츠 섹션이 식별되는 사용자 지정 스크러빙 막대 컨트롤을 응용 프로그램에 표시할 때 유용합니다.
 
 다음은 샘플 구현입니다.
 <!--<a id="fig_9CB8AF44F122405C9B78006ADC10F5B1"></a>-->
 
-![](assets/timeline.png){width=&quot;676pt&quot;}
-
+![](assets/timeline.png){width="676pt"}
