@@ -2,9 +2,9 @@
 title: 세그먼트 및 시간대 정의
 description: 세그먼트 및 시간대 정의
 exl-id: 86fe010d-3202-4ce2-b803-ff44f5538d7e
-source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
+source-git-commit: c17fb003d8c8103aac36696f696c9e3c7bb83c4f
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -80,10 +80,6 @@ MVPD를 선택하려면 **세그먼트의 MVPD** 옵션:
 * 선택 **제거** 아이콘 (![아이콘 제거](assets/remove-icon.png))을 클릭하여 선택된 이러한 MVPD와 채널의 이름으로 세그먼트 선택기 아래에 표시됩니다.
 
 * 를 사용할 수도 있습니다 **선택 항목 지우기** 이전에 선택한 모든 MVPD 또는 채널을 제거하려면 다음을 수행하십시오.
-
-![](assets/segment-panel-selection1.png)
-
-*그림: 세그먼트 및 시간대 패널에서 선택한 MVPD 및 채널*
 
 ![](assets/segment-panel-selection.png)
 

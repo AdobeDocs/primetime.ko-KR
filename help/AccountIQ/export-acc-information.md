@@ -1,17 +1,17 @@
 ---
 title: 공유 점수가 높은 계정에 대한 정보 내보내기
 description: 공유 점수가 높은 계정에 대한 정보를 내보냅니다.
-source-git-commit: 17a44bde5cf320f519cc537d37df0fe823cf51a6
+exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
+source-git-commit: dcd89849937f4893705423465be4003948739eeb
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-
 # 공유 점수가 높은 계정에 대한 정보 내보내기 {#export-account-info-high-score}
 
-계정 IQ는 해당 계정에 따라 상위 1000개 가입자 계정에 대한 계정 공유 세부 정보를 내보내는 옵션을 제공합니다 [가능성 공유](/help/AccountIQ/product-concepts.md#account-sharing-probability-def). 내보낸 CSV 파일의 데이터는 선택한 MVPD의 구독자 계정 공유 가능성 감소 순서로 정렬됩니다 [세그먼트](/help/AccountIQ/product-concepts.md#segment-def), [지정된 시간 프레임](/help/AccountIQ/product-concepts.md#time-frame-def).
+계정 IQ는 해당 계정에 따라 상위 1000개 가입자 계정에 대한 계정 공유 세부 정보를 내보내는 옵션을 제공합니다 [가능성 공유](/help/AccountIQ/product-concepts.md#account-sharing-probability-def). 내보낸 CSV 파일의 데이터는 [세그먼트](/help/AccountIQ/product-concepts.md#segment-def), [지정된 시간 프레임](/help/AccountIQ/product-concepts.md#time-frame-def).
 
 계정 공유 정보를 내보내는 옵션은 [일반 사용량 보고서](/help/AccountIQ/general-usage-reports.md) 및 [공유 계정 보고서](/help/AccountIQ/shared-acc-reports.md) 페이지.
 
@@ -23,13 +23,7 @@ ht-degree: 1%
 
 구독자의 계정 공유 정보를 내보내려면
 
-1. 세그먼트 선택기에서 세그먼트를 지정합니다. 세그먼트를 선택하려면 다음을 수행하십시오.
-
-   1. 원하는 MVPD를 선택합니다 **세그먼트의 MVPD** 선택 사항입니다.
-
-   1. 원하는 채널 중에서 선택합니다 **세그먼트의 채널** 선택 사항입니다.
-
-   1. 일정 선택 **세부기간 및 시간대** 해당 보고서 세트에 대한 보고서를 보는 옵션.
+1. 의 단계에 따라 원하는 세그먼트를 정의합니다 [세그먼트를 정의하고 기간을 선택하는 방법](/help/AccountIQ/howto-select-segment-timeframe.md) 평가 대상 [세그먼트 및 시간대](/help/AccountIQ/segments-timeframe.md) 패널.
 
 1. 을(를) 선택합니다 **상위 1000개 계정 내보내기** 공유 가능성이 가장 높은 1000명의 구독자에 대한 계정 정보를 내보내는 옵션입니다.
 
@@ -105,13 +99,13 @@ ht-degree: 1%
 
 MVPD가 해당 계정에 대해 스트림을 인증하거나 액세스(컨텐츠에 대한)를 부여한 횟수입니다.
 
->[!NOTE]
->
->다음 **# AuthZ OK** 은 **재생 요청 수**; 그것은 보다 작다 **재생 요청 수** Adobe이 일반적으로 24시간 동안 MVPD에 대해 발생하는 권한을 캐시하므로
-
 **재생 요청 수**
 
 기간 동안의 실제 스트림 수입니다.
+
+>[!NOTE]
+>
+>**# AuthZ OK** 일반적으로 보다 작음 **재생 요청 수** Adobe이 최대 24시간 동안 MVPD에서 발생하는 권한을 캐시하므로 이 열은 MVPD에서 사용할 수 없습니다.
 
 **채널 수**
 
@@ -129,7 +123,7 @@ MVPD가 해당 계정에 대해 스트림을 인증하거나 액세스(컨텐츠
 
 *표: 사용 패턴을 사용하여 내보낸 CSV 매핑에서 사용 패턴 식별자*
 
-| ID | 1 | 2개 | 3 | 4 | 5 및 8 | 6 | 7 | 9 | 10 및 11 | 12 | 13 | 14 |
+| ID | 1 | 2 | 3 | 4 | 5 및 8 | 6 | 7 | 9 | 10 및 11 | 12 | 13 | 14 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 사용 패턴 | 일반 사용자 | 여행자 또는 통근 | 대가족 | 가까운 가족 및 친구 | 소셜 그룹 공유 | 많은 친구 | 동시 스트리밍 | 커뮤니티 공유 | 불확실한 행동 | 소규모 가족 | 두 번째 홈 | 비정상적인 사용 |
 

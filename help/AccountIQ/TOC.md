@@ -2,10 +2,10 @@
 product: adobe primetime
 audience: end-user
 user-guide-description: Primetime 계정 IQ 도움말은 계정 IQ 구성 요소에 대한 정보를 제공하고 다양한 구성 요소를 사용하기 위한 사용자 여정을 안내합니다.
-source-git-commit: 6ae9c8651a47e2f458d69c078ba1f314a0227c00
+source-git-commit: 24838ba51683b04894149ae55bcabfb7bf2e8095
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 20%
+source-wordcount: '141'
+ht-degree: 16%
 
 ---
 
@@ -25,14 +25,21 @@ ht-degree: 20%
       + [작업](/help/AccountIQ/operations.md)
 + 방법 {#use-aiq}
    + [세그먼트 및 시간대 정의](/help/AccountIQ/howto-select-segment-timeframe.md)
-   + 계정 공유 보고서 보기 {#view-account-sharing-reports}
-      + [특정 MVPD에 대한 보고서](/help/AccountIQ/reports-for-specific-mvpds.md)
-      + [상위 10개 MVPD에 대한 보고서](/help/AccountIQ/top-10-mvpd-reports.md)
-      + [여러 MVPD에 대한 보고서](viewrep-multiple-mvpd-channel.md)
-      + [격리 모드 및 공유 동작](/help/AccountIQ/isolation-mode.md)
-   + [MVPD 및 채널 보고서 내보내기](/help/AccountIQ/export-segment-metrics.md)
+   + 보고서 내보내기 {#export-reports}
+      + [프로그래머 - 보고서 내보내기](/help/AccountIQ/export-segment-metrics-progr.md)
+      + [MVPD - 보고서 내보내기](/help/AccountIQ/export-segment-metrics-mvpd.md)
    + [높은 공유 계정 내보내기](/help/AccountIQ/export-acc-information.md)
    + [사용자 세그먼트에 대한 작업 만들기](/help/AccountIQ/operation-affecting-user-segment.md)
+   + 계정 공유 보고서 보기 {#view-account-sharing-reports}
+      + 프로그래머 - 계정 공유 보고서 보기 {#view-programmer-reports}
+         + [특정 MVPD에 대한 보고서](/help/AccountIQ/reports-for-specific-mvpds.md)
+         + [상위 10개 MVPD에 대한 보고서](/help/AccountIQ/top-10-mvpd-reports.md)
+         + [여러 MVPD에 대한 보고서](viewrep-multiple-mvpd.md)
+         + [격리 모드 및 공유 동작](/help/AccountIQ/isolation-mode.md)
+      + MVPD - 계정 공유 보고서 보기 {#view-mvpd-reports}
+         + [특정 프로그래머 또는 채널에 대한 보고서](/help/AccountIQ/reports-for-specific-programmers.md)
+         + [상위 10개 프로그래머용 보고서](/help/AccountIQ/top-10-programmer-reports.md)
+         + [여러 프로그래머 및 채널을 위한 보고서](viewrep-multiple-programmer.md)
 + [우수 사례](/help/AccountIQ/best-practices.md)
 + [제한 사항](/help/AccountIQ/limitations.md)
 + [문제 해결](/help/AccountIQ/troubleshoot.md)

@@ -1,13 +1,13 @@
 ---
-title: '공유 계정 보고서 '
+title: 공유 계정 보고서
 description: 공유 계정 보고서
-source-git-commit: ead505dfa3e6569b7e349fa63170e5f8d90d759b
+exl-id: 16c5ded1-2a95-4373-8b90-b445131f333a
+source-git-commit: dd1001d94e32a1a8b5346ff97b0f6cb7d244dcf2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 공유 계정 보고서 {#shared-accounts-reports}
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ![](assets/threshold-selector-shared-accounts.png)
 
-임계값을 선택하면 세그먼트에서 선택한 MVPD에 대한 모든 가입자 계정 중 계정의 비율(및 수)이 패널에 표시됩니다.
+임계값을 선택하면 선택한 세그먼트의 모든 가입자 계정 중 계정의 백분율(및 숫자)이 표시됩니다.
 
 ## 세그먼트 - 총 재생 요청 수 {#play-request-out-total}
 

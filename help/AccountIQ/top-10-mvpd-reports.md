@@ -1,15 +1,15 @@
 ---
 title: 프로그래머 페르소나에 의한 상위 10개 MVPD에 대한 보고서를 보는 방법
 description: 상위 10개의 MVPD에 대한 보고서 보기
-source-git-commit: e61cca77bad4f01de871e300dc99d7368c283f2a
+exl-id: 76fd1af8-dd96-426b-b9c8-a356b53b491d
+source-git-commit: 5963c55d87385fbd92646bfc45a3650fb568bca5
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
-# 상위 10개의 MVPD에 대한 보고서를 보는 방법 <!--and Programmers--> {#view-top-10-mvpd-reports}
+# 상위 10개 MVPD에 대한 계정 공유 보고서 보기 <!--and Programmers--> {#view-top-10-mvpd-reports}
 
 계정 IQ에는 정의된 MVPD 중 상위 10개에 대한 계정 공유 통계를 보고 분석하는 데 도움이 되는 기능이 있습니다 [세그먼트](/help/AccountIQ/product-concepts.md#segmet-def)).
 

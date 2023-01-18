@@ -1,13 +1,13 @@
 ---
 title: 일반 사용량 보고서
 description: 일반 사용량 보고서
-source-git-commit: 683b5a5c1dc8dde3f546bbf4b7a09406bc018d78
+exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
+source-git-commit: a2181a8fd7334f19b8387a31c71527d4f689ab9d
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
-
 
 # 일반 사용량 보고서 {#general-usage-reports}
 
@@ -41,7 +41,26 @@ content consumption.....-->
 
 여기에 있는 선 그래프는 정의된 세그먼트에 대해 선택한 기간 내에 AuthN OK, AuthZ OK, Play 요청 및 고유 구독자 값의 시간에 따른 변경 사항을 볼 수 있도록 합니다.
 
-![](assets/line-graph-gu.png)
++++Programmer- **AuthN OK / AuthZ OK / Play 요청 / 고유 구독자**
+
+![](assets/progr-line-graph-gu.png)
+
+
+*그림: AuthN OK / AuthZ OK / Play 요청 / 프로그래머 사용자의 고유 가입자*
+
+
++++
+
+
++++MVPD- **AuthN OK / AuthZ OK / 고유 구독자**
+
+![](assets/mvpd-line-graph-gu.png)
+
+
+*그림: AuthN OK / AuthZ OK / MVPD 사용자의 고유 가입자*
+
+
++++
 
 x축은 현재 시간 프레임 내의 단위를 나타내며 y축은 해당 기간 동안의 기본 가입자 활동 지표를 나타냅니다. 선 그래프를 사용하면 세그먼트 선택 패널에서 선택한 MVPD 구독자와 채널에 대해 다음 값을 비교할 수 있습니다.
 
@@ -57,13 +76,18 @@ x축은 현재 시간 프레임 내의 단위를 나타내며 y축은 해당 기
 
    재생 요청은 재생 요청 수입니다. 자세한 내용 및 정의는 다음을 참조하십시오 [제품 개념: 요청 재생](/help/AccountIQ/product-concepts.md#play-requests-def)
 
+   >[!NOTE]
+   >
+   >MVPD 사용자는 재생 요청 선 그래프를 사용할 수 없습니다.
+
+
 * **고유 구독자**
 
    고유 구독자는 성공한 고유 구독자의 수입니다. 자세한 내용 및 정의는 다음을 참조하십시오 [제품 개념: 고유 구독자](/help/AccountIQ/product-concepts.md#unique-subscriber-def)
 
    >[!NOTE]
    >
-   >또한 총 고유 구독자 수에는 프로그래머가 Adobe TempPass(즉, 무료 미리 보기)를 사용하는 것이 세그먼트의 일부인 경우 고유 장치 수도 포함됩니다.
+   >또한 총 고유 구독자 수에는 프로그래머가 Adobe TempPass(무료 미리 보기)를 사용하는 것이 세그먼트의 일부인 경우 고유 장치 수도 포함됩니다.
 
 ## 스냅샷 개요 - 임계값을 초과하는 계정 {#snapshot-overview}
 
@@ -105,7 +129,7 @@ x축은 현재 시간 프레임 내의 단위를 나타내며 y축은 해당 기
 
 ## 계정당 주(또는 월) 장치 {#devices-week-account}
 
-다음 **막대 그래프** MVPD 구독자가 장치를 사용하여 채널에서 콘텐츠에 액세스하는 방법과 관련된 사용 동작에 대한 인사이트를 제공합니다.
+다음 **막대 그래프** 구독자가 장치를 사용하여 콘텐츠에 액세스하는 방법과 관련된 사용 동작에 대한 통찰력을 제공합니다.
 
 x축은 계정 수를 그래프하며 y축은 장치 수를 그래프로 표시합니다. 계정당 장치 수에 대해 설정한 임계값을 기준으로 한 주 동안 특정 장치 수의 컨텐츠를 사용하는 구독자 계정의 절대 수를 표시합니다.
 
@@ -135,7 +159,7 @@ x축은 계정 수를 그래프하며 y축은 장치 수를 그래프로 표시�
 
 ![](assets/graph-loc-week-acc.png)
 
-세그먼트를 정의하고(MVPD 및 채널을 선택하여) 위치 수에 대한 임계값을 설정하면 그래프에서 다음을 식별할 수 있습니다.
+세그먼트를 정의하고 위치 수에 대한 임계값을 설정한 후 그래프에서 를 식별할 수 있습니다.
 
 * 1주일 동안 (특정) x 위치의 콘텐츠를 소비하는 구독자의 수(및 백분율).
 
@@ -179,5 +203,5 @@ x축은 계정 수를 그래프하며 y축은 IP 수를 그래프합니다.
 
 >[!MORELIKETHIS]
 >
->* 을 사용하여 일반 사용량 보고서에서 필터를 사용하여 선택한 MVPD의 상위 1000명의 구독자에 대한 보고서를 내보내는 방법을 알아봅니다. [상위 1000개 계정 내보내기](/help/AccountIQ/export-acc-information.md) 선택 사항입니다.
+>* 을 사용하여 일반 사용량 보고서의 필터를 사용하여 선택한 세그먼트에서 상위 1000명의 구독자에 대한 보고서를 내보내는 방법을 알아봅니다. [상위 1000개 계정 내보내기](/help/AccountIQ/export-acc-information.md) 선택 사항입니다.
 

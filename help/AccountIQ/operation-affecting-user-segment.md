@@ -1,13 +1,13 @@
 ---
-title: '사용자 세그먼트에 대한 작업 만들기 및 효과 추적 '
+title: 사용자 세그먼트에 대한 작업 만들기 및 효과 추적
 description: 정의된 사용자 세그먼트에 영향을 주고 효과를 추적하는 작업을 만드는 방법입니다.
-source-git-commit: 1d6beb69470fcf6a3193b4d2f508c503d4f957f1
+exl-id: ab74f857-e178-4120-8f9c-655ec921d096
+source-git-commit: dd1001d94e32a1a8b5346ff97b0f6cb7d244dcf2
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 세그먼트에 대한 작업 만들기 {#operation-to-track-segment}
 
@@ -34,10 +34,21 @@ ht-degree: 0%
 
 ## 작업 세부 사항 {#operation-details}
 
++++프로그래머 - 작업 세부 사항
+
 에서 새 작업 이름을 지정합니다. **작업 이름** 작업 세부 정보 아래의 필드. 예: &quot;*MVPD X 구독자에 대한 다중 요소 인증 효과 테스트 또는 동시 시청 중 스트림 수 제한 또는 20개 이상의 장치에서 채널 &#39;N&#39;을 보는 MVPD D 구독자 제한*&quot;.
 
++++
+
++++MVPD - 작업 세부 정보
+
+에서 새 작업 이름을 지정합니다. **작업 이름** 작업 세부 정보 아래의 필드. 예: &quot;*채널 N&#39;s viewer에 대한 다단계 인증의 효과를 테스트하거나, &quot;동시 시청 시 스트림 수 제한&quot; 또는 &quot;20개 이상의 장치에서 채널 &#39;N&#39;을 보는 구독자 제한*&quot;.
+
++++
 
 ## Target 세그먼트 {#segment}
+
++++프로그래머-Target 세그먼트
 
 다음 **세그먼트** 여기서는 이 작업에서 작업할 사용자를 정의합니다. 또는 작업에 대한 샘플 그룹 입니다. 기본 세그먼트는 **세그먼트** 다음을 사용하여 선택함 [세그먼트 및 시간대 패널](/help/AccountIQ/howto-select-segment-timeframe.md) 위의 1단계의 기본 보고서 또는 대시보드 페이지에서 을 참조하십시오.
 
@@ -47,7 +58,22 @@ ht-degree: 0%
 ![](assets/operations-segment-selection.png)
 *Figure: Segment and timeframe selection on the main page*-->
 
-이 세그먼트는 만들어지는 작업의 영향을 받을 MVPD 및 채널의 구독자를 정의합니다. 예를 들어 (기본) 세그먼트는 *MVPD의 가입자 계정 중 N스포츠 채널을 보는 C라는 모든 계정*.
+이 세그먼트는 만들어지는 작업의 영향을 받을 구독자를 정의합니다. 예를 들어 선택한 세그먼트가 *MVPD의 가입자 계정 중 N스포츠 채널을 보는 C라는 모든 계정*.
+
++++
+
++++MVPD-Target 세그먼트
+
+다음 **세그먼트** 여기서는 이 작업에서 작업할 사용자를 정의합니다. 또는 작업에 대한 샘플 그룹 입니다. 기본 세그먼트는 **세그먼트** 다음을 사용하여 선택함 [세그먼트 및 시간대 패널](/help/AccountIQ/howto-select-segment-timeframe.md) 위의 1단계의 기본 보고서 또는 대시보드 페이지에서 을 참조하십시오.
+
+<!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
+
+* The **segment evaluation period** is the time period of analysis you selected in step 1 from **Granularity and Timeframe** option.
+![](assets/operations-segment-selection.png)
+*Figure: Segment and timeframe selection on the main page*-->
+
+이 세그먼트는 만들어지는 작업의 영향을 받을 구독자(특정 채널을 보는 사람)를 정의합니다. 예를 들어 (기본) 세그먼트는 *&#39;N Sports&#39; 채널을 보는 모든 가입자 계정*.
++++
 
 ### 추가 세그멘테이션 {#additional-segmentation}
 

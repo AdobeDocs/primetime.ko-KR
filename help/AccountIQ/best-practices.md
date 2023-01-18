@@ -1,13 +1,13 @@
 ---
 title: 우수 사례
 description: 계정 IQ 도구를 더 잘 사용하는 방법을 이해하려면 를 참조하십시오.
-source-git-commit: 3ee1620dad552c76545f5441ea8530a45143fc4b
+exl-id: 55901f5d-d9c1-4ee5-9349-afa28445b324
+source-git-commit: dcd89849937f4893705423465be4003948739eeb
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 우수 사례 {#aiq-best-practices}
 
@@ -28,6 +28,7 @@ ht-degree: 0%
 ## 타겟팅된 증분 작업 수행 {#incremental-targeted-action}
 
 정의된 대상 세그먼트를 사용하여 작업을 수행합니다. 잘 정의된 세그먼트로 작게 시작함으로써 의도하지 않은 결과의 위험을 줄이고 결과를 더 잘 이해할 수 있습니다. 경로를 따라 있는 위치에 관계없이 항상 작업 대상을 세분하거나 확장할 수 있습니다.
+
 작은 것부터 시작하여 위로 올라가는 것은 신중한 접근이다. 이전에 식별된 세그먼트를 사용하고 특정 목표를 사용하여 작업(실험으로)을 수행합니다.
 
 작업 도구를 사용하여 대상 세그먼트와 작업 기간을 정의합니다. 이렇게 하면 다음 단계에서 효과를 추적할 수 있습니다.
@@ -98,7 +99,7 @@ How many additional ads were viewed?
 
 Did the number of borrowers decrease?
 
-Account IQ’s sophisticated machine learning based models help you analyze and measure the impacts of your experiments (or actions).
+Account IQ's sophisticated machine learning based models help you analyze and measure the impacts of your experiments (or actions).
 
 Improve and repeat
 Based on the outcomes of your experiments and targeted actions on small groups of users, you can expand the reach of your strategies to rest of the user segment or reset the strategy and audience to act on.
