@@ -1,17 +1,17 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime 릴리스 정보
-user-guide-description: 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
+user-guide-title: Primetime 릴리스 노트
+user-guide-description: 릴리스별 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 source-git-commit: a29715b0ef833f795760094fd0eb9161462dabb7
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 16%
+ht-degree: 0%
 
 ---
 
 
-# Primetime 릴리스 정보 {#release-notes}
+# Primetime 릴리스 노트 {#release-notes}
 
 + [릴리스 정보 개요](home.md)
 + Primetime Ad Insertion {#ptai}
@@ -31,7 +31,7 @@ ht-degree: 16%
    + [브라우저 TVSDK 2.4 릴리스 노트](tvsdk-24-browser.md)
 + 데스크탑 HLS용 TVSDK {#tvsdk-desktop-hls}
    + [데스크탑 HLS용 TVSDK 1.4 릴리스 노트](tvsdk-1-4-desktop-hls.md)
-+ Primetime Offline Packager {#offline-packager}
++ Primetime 오프라인 패키지 {#offline-packager}
    + [Primetime Offline Packager 버전 2 릴리스](offline-packager-2x-release-note.md)
 + Primetime 스트리밍 서버 {#streaming-server}
    + [Primetime 스트리밍 서버 버전 1 릴리스](primetime-streaming-server-1x.md)
