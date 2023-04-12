@@ -2,10 +2,10 @@
 product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 인증
-user-guide-description: null
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+user-guide-description: Primetime Authentication은 TV Everywhere의 자격 해결 방법이며, 리소스에 대한 액세스를 요청하는 사람이 리소스에 액세스할 수 있는지 여부를 결정하는 모듈식 프레임워크를 제공합니다.
+source-git-commit: 9ce554b32564727488f85cef62abd5ce9c1c21f1
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
