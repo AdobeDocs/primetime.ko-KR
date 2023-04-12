@@ -1,9 +1,9 @@
 ---
 title: MVPD 및 선택한 프로그래머에 대한 지표 내보내기
 description: MVPD 및 선택한 프로그래머에 대한 지표 내보내기
-source-git-commit: 1cf035c2c40c66cf4ba5052c9229bc76a903865d
+source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---

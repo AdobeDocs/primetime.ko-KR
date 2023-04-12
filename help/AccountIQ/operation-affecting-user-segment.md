@@ -2,9 +2,9 @@
 title: 사용자 세그먼트에 대한 작업 만들기 및 효과 추적
 description: 정의된 사용자 세그먼트에 영향을 주고 효과를 추적하는 작업을 만드는 방법입니다.
 exl-id: ab74f857-e178-4120-8f9c-655ec921d096
-source-git-commit: dd1001d94e32a1a8b5346ff97b0f6cb7d244dcf2
+source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ if not fixed segment, then I won't initially evaluate or have initial set of 500
 
 다음 두 가지 유형의 작업을 수행할 수 있습니다.
 
-* 계정 IQ와 통합된 시스템을 사용하는 작업; 예 [동시성 모니터링](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)<!--, or Adobe Target-->.
+* 계정 IQ와 통합된 시스템을 사용하는 작업; 예 **동시성 모니터링** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
 
 * 계정 IQ 시스템과 통합되지 않고 계정 IQ 외부에 있는 워크플로우를 만들고 처리하는 작업입니다. 예를 들어 채널 프로그래머 &#39;N&#39;이 MVPD &#39;C&#39;의 모든 구독자에게 벌크 이메일을 보내는 작업입니다.
 
