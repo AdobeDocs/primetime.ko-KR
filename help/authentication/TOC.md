@@ -3,9 +3,9 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 인증
 user-guide-description: Primetime Authentication은 TV Everywhere의 자격 해결 방법이며, 리소스에 대한 액세스를 요청하는 사람이 리소스에 액세스할 수 있는지 여부를 결정하는 모듈식 프레임워크를 제공합니다.
-source-git-commit: 0afc48ae0e423c2a851b3bf22803fbd730999c04
+source-git-commit: aa8169da1308e5372128a93b6a2e5a3a6db5cfef
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,7 @@ ht-degree: 0%
    + [Primetime Adobe PayTV Pass 모니터링](monitoring-adobe-pay-tv-pass.md)
    + [최소 시스템 요구 사항](minimum-system-requirements.md)
 + 릴리스 노트 {#release-notes}
+   + [Primetime 인증 2.65 릴리스 노트](auth-rn-265.md)
    + [Primetime 인증 2.64.1 릴리스 노트](auth-rn-2641.md)
    + [Primetime 인증 2.64 릴리스 노트](auth-rn-264.md)
    + [Primetime 인증 2.63 릴리스 노트](auth-rn-263.md)
