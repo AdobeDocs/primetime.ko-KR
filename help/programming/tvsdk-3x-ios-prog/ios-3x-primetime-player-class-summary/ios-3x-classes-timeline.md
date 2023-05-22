@@ -1,14 +1,13 @@
 ---
 description: 이러한 클래스는 광고 배치를 포함하여 특정 미디어의 타임라인에 대한 정보를 제공합니다.
 title: 타임라인 클래스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3241d99d-1716-4778-9203-6f6e66440360
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%
 
 ---
-
 
 # 타임라인 클래스 {#timeline-classes}
 
@@ -24,11 +23,11 @@ ht-degree: 0%
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTPlacementOpportunity.html" format="html" scope="external"> PTPlacementOpportunity</a> </td> 
-   <td colname="2"> 기회 클래스는 타임라인에서 관심 영역을 나타냅니다. </td> 
+   <td colname="2"> 영업 기회 클래스는 타임라인에서 관심 영역을 나타냅니다. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimeline.html" format="html" scope="external"> 타임라인</a> </td> 
-   <td colname="2"> 광고 분리를 포함하여 컨텐츠의 타임라인을 나타내는 클래스입니다. </td> 
+   <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimeline.html" format="html" scope="external"> PTTimeline</a> </td> 
+   <td colname="2"> 광고 브레이크를 포함하여 컨텐츠의 타임라인을 나타내는 클래스입니다. </td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,22 +1,21 @@
 ---
-description: 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
-title: 사용자 지정 컨텐츠 해결 프로그램 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 기본 확인자를 기반으로 자체 콘텐츠 확인자를 구현할 수 있습니다.
+title: 사용자 지정 콘텐츠 확인자 구현
+exl-id: 96468f6d-80ad-4721-8ed3-4dbfa2a64b9e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
+# 사용자 지정 콘텐츠 확인자 구현 {#implement-a-custom-content-resolver}
 
-# 사용자 지정 내용 확인자 {#implement-a-custom-content-resolver} 구현
+기본 확인자를 기반으로 자체 콘텐츠 확인자를 구현할 수 있습니다.
 
-기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
+TVSDK는 새 기회를 감지하면 등록된 콘텐츠 해결자를 반복하여 해당 기회를 해결할 수 있는 기회를 찾습니다. True를 반환하는 첫 번째 항목이 기회 해결을 위해 선택됩니다. 콘텐츠 해결자를 사용할 수 없는 경우 해당 기회를 건너뜁니다. 콘텐츠 해결 프로세스는 일반적으로 비동기적이므로 프로세스가 완료되면 콘텐츠 해결자가 알림을 담당합니다.
 
-TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 해당 기회를 해결할 수 있는 기회를 찾습니다. true를 반환한 첫 번째 값이 기회를 해결하기 위해 선택됩니다. 컨텐츠 해결 프로그램을 사용할 수 없는 경우 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기적이므로, 컨텐츠 확인자는 프로세스가 완료되면 이를 알릴 책임이 있습니다.
-
-1. 사용자 지정 `AdvertisingFactory` 인스턴스를 만들고 `createContentResolver`을(를) 재정의합니다.
+1. 사용자 지정 만들기 `AdvertisingFactory` 인스턴스 및 재정의 `createContentResolver`.
 
    예:
 
@@ -43,7 +42,7 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
    }
    ```
 
-1. 광고 클라이언트 팩토리를 `MediaPlayer`에 등록합니다.
+1. 광고 클라이언트 팩터리를 `MediaPlayer`.
 
    예:
 
@@ -53,9 +52,9 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
    mediaPlayer.registerAdClientFactory(advertisingFactory);
    ```
 
-1. 다음과 같이 `AdvertisingMetadata` 개체를 TVSDK에 전달합니다.
-   1. `AdvertisingMetadata` 개체 및 `MetadataNode` 개체를 만듭니다.
-   1. `AdvertisingMetadata` 개체를 `MetadataNode`에 저장합니다.
+1. 전달 `AdvertisingMetadata` 다음과 같이 TVSDK에 개체를 추가합니다.
+   1. 만들기 `AdvertisingMetadata` 오브젝트 및 `MetadataNode` 개체.
+   1. 저장 `AdvertisingMetadata` 대상 오브젝트 `MetadataNode`.
 
    ```java
    MetadataNode result = new MetadataNode(); 
@@ -63,7 +62,7 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
                   advertisingMetadata);
    ```
 
-1. `ContentResolver` 클래스를 확장하는 사용자 지정 광고 확인자 클래스를 만듭니다.
+1. 다음을 확장하는 사용자 지정 광고 해결 프로그램 클래스 만들기 `ContentResolver` 클래스.
    1. 사용자 지정 광고 확인자에서 이 보호된 함수를 재정의합니다.
 
       ```java
@@ -71,13 +70,13 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
                         PlacementOpportunity placementOpportunity)
       ```
 
-      메타데이터에 `AdvertisingMetada`이(가) 포함되어 있습니다. 다음 `TimelineOperation` 벡터 생성에 사용합니다.
+      메타데이터에 `AdvertisingMetada`. 다음을 위해 사용 `TimelineOperation` 벡터 생성.
 
-   1. 각 배치 기회에 대해 `Vector<TimelineOperation>`을(를) 만듭니다.
+   1. 각 배치 영업 기회에 대해 `Vector<TimelineOperation>`.
 
-      벡터는 비어 있을 수 있지만 null은 아닙니다.
+      벡터는 비워둘 수 있지만 null은 아닙니다.
 
-      이 샘플 `TimelineOperation`은 `AdBreakPlacement`에 대한 구조를 제공합니다.
+      이 샘플 `TimelineOperation` 다음에 대한 구조를 제공합니다. `AdBreakPlacement`:
 
       ```java
       AdBreakPlacement(AdBreak.createAdBreak( 
@@ -92,10 +91,10 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
 
    1. 광고가 해결되면 다음 함수 중 하나를 호출합니다.
 
-      * 광고 해결에 성공한 경우:`notifyResolveComplete(Vector<TimelineOperation> proposals)`
-      * 광고 해결에 실패하는 경우:`notifyResolveError(Error error)`
+      * 광고 해결이 성공하는 경우: `notifyResolveComplete(Vector<TimelineOperation> proposals)`
+      * 광고 해결이 실패할 경우: `notifyResolveError(Error error)`
 
-      예를 들어, 실패할 경우:
+      예를 들어 실패하는 경우:
 
       ```java
       Metadata metadata = new MetadataNode(); 
@@ -106,7 +105,7 @@ TVSDK에서 새로운 기회를 감지하면 등록된 컨텐츠 해결에서 �
 
 <!--<a id="example_4F0D7692A92E480A835D6FDBEDBE75E7"></a>-->
 
-이 샘플 사용자 지정 광고 확인자는 광고 서버에 HTTP 요청을 만들고 JSON 응답을 수신합니다.
+이 샘플 사용자 지정 광고 해결자는 광고 서버에 HTTP 요청을 하고 JSON 응답을 받습니다.
 
 ```java
 public class CustomAdResolver extends ContentResolver { 
@@ -162,7 +161,7 @@ public class CustomAdResolver extends ContentResolver {
 } 
 ```
 
-VOD용 JSON 광고 서버 응답 샘플:
+VOD에 대한 샘플 JSON 광고 서버 응답:
 
 ```
 {     
@@ -223,4 +222,3 @@ VOD용 JSON 광고 서버 응답 샘플:
     } 
 } 
 ```
-

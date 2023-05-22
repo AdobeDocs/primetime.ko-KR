@@ -1,7 +1,7 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-description: Primetime 계정 IQ 도움말은 계정 IQ 구성 요소에 대한 정보를 제공하고 다양한 구성 요소를 사용하기 위해 사용자 여정을 안내합니다.
+user-guide-description: Primetime 계정 IQ 도움말은 계정 IQ 구성 요소에 대한 정보를 제공하며, 다양한 구성 요소를 사용할 수 있는 사용자 여정에 대해 안내합니다.
 source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
 workflow-type: tm+mt
 source-wordcount: '141'
@@ -17,13 +17,13 @@ ht-degree: 0%
    + [세그먼트 및 시간대](/help/AccountIQ/segments-timeframe.md)
    + [대시보드](/help/AccountIQ/dashboard.md)
    + 보고서 {#reports-account-iq}
-   + [일반 사용량 보고서](/help/AccountIQ/general-usage-reports.md)
+   + [일반 사용 보고서](/help/AccountIQ/general-usage-reports.md)
    + [공유 계정 보고서](/help/AccountIQ/shared-acc-reports.md)
    + 구성 요소 공유 {#sharing-components}
       + [사용 패턴](/help/AccountIQ/usage-patterns.md)
    + 작업 {#further-next-steps-actions}
       + [작업](/help/AccountIQ/operations.md)
-+ 방법 {#use-aiq}
++ 사용 방법 {#use-aiq}
    + [세그먼트 작성](/help/AccountIQ/build-segment.md)
    + [세그먼트 및 일정 선택](/help/AccountIQ/howto-select-segment-timeframe.md)
    + 보고서 내보내기 {#export-reports}
@@ -40,9 +40,9 @@ ht-degree: 0%
       + MVPD - 계정 공유 보고서 보기 {#view-mvpd-reports}
          + [특정 프로그래머 또는 채널에 대한 보고서](/help/AccountIQ/reports-for-specific-programmers.md)
          + [상위 10개 프로그래머용 보고서](/help/AccountIQ/top-10-programmer-reports.md)
-         + [여러 프로그래머 및 채널을 위한 보고서](viewrep-multiple-programmer.md)
+         + [여러 프로그래머 및 채널에 대한 보고서](viewrep-multiple-programmer.md)
 + [우수 사례](/help/AccountIQ/best-practices.md)
 + [제한 사항](/help/AccountIQ/limitations.md)
 + [문제 해결](/help/AccountIQ/troubleshoot.md)
-+ [FAQ](/help/AccountIQ/faq.md)
++ [FAQ(자주 묻는 질문)](/help/AccountIQ/faq.md)
 + [제품 개념 용어집](/help/AccountIQ/product-concepts.md)

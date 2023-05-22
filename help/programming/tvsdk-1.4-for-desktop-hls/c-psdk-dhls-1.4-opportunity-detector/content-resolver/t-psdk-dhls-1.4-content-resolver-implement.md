@@ -1,25 +1,24 @@
 ---
-description: 기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
-title: 사용자 지정 컨텐츠 해결 프로그램 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 기본 확인자를 기반으로 자체 콘텐츠 확인자를 구현할 수 있습니다.
+title: 사용자 지정 콘텐츠 확인자 구현
+exl-id: abe967a5-ced3-4e23-8671-065e256974d3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
 
 ---
 
+# 사용자 지정 콘텐츠 확인자 구현{#implement-a-custom-content-resolver}
 
-# 사용자 지정 내용 확인자 구현{#implement-a-custom-content-resolver}
+기본 확인자를 기반으로 자체 콘텐츠 확인자를 구현할 수 있습니다.
 
-기본 해상도에 따라 고유한 컨텐츠 해상도를 구현할 수 있습니다.
+TVSDK는 새 기회를 감지하면 등록된 콘텐츠 해결사를 통해 를 사용하여 해당 기회를 해결할 수 있는 기회를 찾습니다. `canResolve` 메서드 . True를 반환하는 첫 번째 항목이 기회 해결을 위해 선택됩니다. 콘텐츠 해결자를 사용할 수 없는 경우 해당 기회를 건너뜁니다. 콘텐츠 해결 프로세스는 일반적으로 비동기적이므로 프로세스가 완료되면 콘텐츠 해결자가 TVSDK에 알릴 책임이 있습니다.
 
-TVSDK가 새로운 기회를 감지하면 등록된 컨텐츠 확인기를 통해 `canResolve` 방법을 사용하여 해당 기회를 해결할 수 있는 기회를 찾습니다. true를 반환한 첫 번째 값이 기회를 해결하기 위해 선택됩니다. 컨텐츠 해결 프로그램을 사용할 수 없는 경우 해당 기회를 건너뜁니다. 컨텐츠 확인 프로세스는 일반적으로 비동기적이므로, 컨텐츠 확인자는 프로세스가 완료되면 TVSDK에 알릴 책임이 있습니다.
+* 콘텐츠 해결자 호출 `client.place` tvsdk가 실행해야 하는 타임라인 작업을 지정하려면 (일반적으로 광고 브레이크 배치).
+* 콘텐츠 해결자 호출 `client.notifyCompleted` 해결 프로세스가 성공한 경우 또는 `client.notifyFailed` 프로세스가 실패하는 경우
 
-* 컨텐츠 확인자는 `client.place`을(를) 호출하여 TVSDK가 실행해야 할 타임라인 작업(일반적으로 광고 중단 배치)을 지정합니다.
-* 내용 확인자는 확인 프로세스가 성공한 경우 `client.notifyCompleted`, 프로세스가 실패한 경우 `client.notifyFailed` 을 호출합니다.
-
-1. 사용자 지정 기회 해결 프로그램을 만듭니다.
+1. 사용자 지정 영업 기회 확인자를 만듭니다.
 
    ```
    public class CustomResolver extends ContentResolver { 
@@ -90,7 +89,7 @@ TVSDK가 새로운 기회를 감지하면 등록된 컨텐츠 확인기를 통�
    }
    ```
 
-1. 사용자 지정 컨텐츠 해결 프로그램을 사용하는 사용자 지정 컨텐츠 팩토리를 만듭니다.
+1. 사용자 지정 콘텐츠 확인자를 사용하는 사용자 지정 콘텐츠 팩토리를 만듭니다.
 
    예:
 
@@ -119,7 +118,7 @@ TVSDK가 새로운 기회를 감지하면 등록된 컨텐츠 확인기를 통�
    }
    ```
 
-1. 재생할 미디어 스트림에 대한 사용자 정의 컨텐츠 팩토리를 등록합니다.
+1. 재생할 미디어 스트림에 대한 사용자 지정 콘텐츠 팩토리를 등록합니다.
 
    예:
 
@@ -138,4 +137,3 @@ TVSDK가 새로운 기회를 감지하면 등록된 컨텐츠 확인기를 통�
    
    player.replaceCurrentResource(mediaResource, mediaPlayerItemConfig);
    ```
-

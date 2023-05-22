@@ -2,71 +2,70 @@
 title: Adobe Primetime DRM 배포
 description: Adobe Primetime DRM 배포
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 64a96d70-502c-48b8-9f43-59f4001a7ab6
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
+# Adobe Primetime DRM 배포 {#configure-adobe-primetime-drm}
 
-# Adobe Primetime DRM {#configure-adobe-primetime-drm} 배포
+Adobe Primetime DRM SDK의 주요 장점은 Tomcat과 같은 Java™ 애플리케이션 서버나 서블릿 컨테이너에 설치할 수 있다는 것입니다. JDK™ 1.5 이상도 필요합니다. 소프트웨어 요구 사항에 대한 자세한 내용은 Primetime DRM SDK 플랫폼 요구 사항 을 참조하십시오. [https://www.adobe.com/products/flashaccess/systemreqs/](https://www.adobe.com/products/flashaccess/systemreqs/).
 
-Adobe Primetime DRM SDK의 주요 이점은 Tomcat과 같은 Java™ 애플리케이션 서버 또는 서블릿 컨테이너에 설치할 수 있다는 것입니다. 또한 JDK™ 1.5 이상이 필요합니다. 소프트웨어 요구 사항에 대한 자세한 내용은 Primetime DRM SDK 플랫폼 요구 사항을 참조하십시오.[https://www.adobe.com/products/flashaccess/systemreqs/](https://www.adobe.com/products/flashaccess/systemreqs/).
+Primetime DRM을 배포하는 고급 단계는 다음과 같습니다.
 
-Primetime DRM을 배포하는 고급 단계
+1. Primetime DRM SDK를 설치하고 구성합니다.
+1. Adobe에서 디지털 인증서를 받습니다.
+1. SDK를 사용하여 라이센스 서버를 생성하거나 보호된 스트리밍을 위해 Primetime DRM 서버를 배포합니다.
+1. 컨텐츠 패키징 및 정책 관리 도구를 만들어 컨텐츠를 패키징하거나, 제공된 컨텐츠 준비 도구를 사용하거나, Adobe HTTP Dynamic Streaming 패키징 중 하나에 라이선스를 부여합니다.
+1. 콘텐츠에 대한 사용 규칙을 정의하고 이러한 규칙을 지원하는 정책을 만듭니다.
+1. 패키징 및 정책 관리 도구를 사용하여 콘텐츠를 패키징합니다.
+1. 소비자가 Flash Player 또는 Adobe AIR을 사용하여 보호된 콘텐츠를 볼 수 있는 비디오 애플리케이션을 개발하거나 Primetime DRM을 지원하는 확립된 OVP(온라인 비디오 플랫폼)를 사용합니다.
+1. 웹 사이트에 Flash Player과 함께 사용할 SWF 파일을 배포하거나 Adobe AIR 설치 관리자를 게시하여 다운로드합니다.
 
-1. Primetime DRM SDK 설치 및 구성
-1. Adobe에서 디지털 인증서를 획득합니다.
-1. SDK를 사용하여 라이선스 서버를 만들거나 보호된 스트리밍을 위해 Primetime DRM Server를 배포합니다.
-1. 컨텐츠 패키징 및 정책 관리 툴을 제작하여 컨텐츠를 패키지화하고 제공된 컨텐츠 준비 툴을 사용하거나 Adobe HTTP Dynamic Streaming 패키지 중 하나에 라이선스를 부여할 수 있습니다.
-1. 콘텐츠에 대한 사용 규칙을 정의하고 해당 규칙을 지원하는 정책을 만듭니다.
-1. 패키징 및 정책 관리 툴을 사용하여 컨텐츠를 패키지화할 수 있습니다.
-1. Primetime DRM을 지원하는 기존 OVP(온라인 비디오 플랫폼)를 사용하거나 Flash Player 또는 Adobe AIR을 사용하여 보호된 콘텐츠를 볼 수 있는 비디오 애플리케이션을 개발할 수 있습니다.
-1. Flash Player에 사용할 SWF 파일을 웹 사이트에 배포하거나 Adobe AIR 설치 프로그램을 게시하여 다운로드할 수 있습니다.
-
-이러한 단계는 다음 섹션에서 확장되며 추가 정보가 포함된 다른 문서에 대한 참조가 포함됩니다.
+이러한 단계는 다음 섹션에서 추가 정보가 포함된 다른 문서를 참조하여 확장되었습니다.
 
 ## 64비트 운영 체제에 배포{#deploying-on-a-bit-operating-system}
 
-64비트 버전의 RedHat 또는 Windows와 같은 64비트 운영 체제는 32비트 운영 체제보다 훨씬 향상된 성능을 제공합니다.
+64비트 버전의 RedHat이나 Windows와 같은 64비트 운영 체제는 32비트 운영 체제보다 훨씬 뛰어난 성능을 제공합니다.
 
-## Adobe Primetime DRM SDK {#install-adobe-primetime-drm-sdk} 설치
+## Adobe Primetime DRM SDK 설치 {#install-adobe-primetime-drm-sdk}
 
-Primetime DRM SDK는 JAR(Java 아카이브) 파일로 제공됩니다. Primetime DRM 설치에 대한 자세한 내용은 콘텐츠 보호를 위한 Adobe Primetime DRM SDK 사용 및 보안 배포 지침을 참조하십시오.
+Primetime DRM SDK는 JAR(Java Archive) 파일로 제공됩니다. Primetime DRM 설치에 대한 자세한 내용은 콘텐츠 보호를 위한 Adobe Primetime DRM SDK 사용 및 보안 배포 지침을 참조하십시오.
 
 ## 라이센스 서버 구현 {#implement-a-license-server}
 
-Adobe Primetime DRM SDK를 사용하면 라이센스 서버를 만들어야 합니다. Primetime DRM을 사용하여 콘텐트를 보호하는 경우 라이선스 서버에서 고객에게 라이선스를 발급하기 전까지 콘텐트를 볼 수 없습니다. ID 기반 라이센스를 사용하는 경우 암호 기반 인증을 통해 인증된 소비자의 만이 컨텐츠를 열고 볼 수 있습니다.
+Adobe Primetime DRM SDK를 사용하여 라이센스 서버를 만들어야 합니다. Primetime DRM을 사용하여 콘텐츠를 보호하는 경우 라이선스 서버에서 소비자에게 라이선스를 발급할 때까지 해당 콘텐츠를 볼 수 없습니다. ID 기반 라이센스를 사용하는 경우 암호 기반 인증을 통해 권한이 부여된 소비자만 컨텐츠를 열고 볼 수 있습니다.
 
-라이센스 서버를 구현할 때는 Adobe에서 필요한 디지털 인증서를 받아야 합니다. 인증서 요청에 대한 자세한 내용은 Primetime DRM 인증서 등록 문서를 참조하십시오.
+라이선스 서버를 구현할 때는 Adobe에서 필요한 디지털 인증서를 받아야 합니다. 인증서 요청에 대한 자세한 지침은 Primetime DRM 인증서 등록 문서를 참조하십시오.
 
-라이센스 서버 구현 및 디지털 인증서 획득에 대한 자세한 내용은 **컨텐트 보호를 위한 Adobe Primetime DRM SDK 사용을 참조하십시오.**
+라이선스 서버 구현 및 디지털 인증서 가져오기에 대한 자세한 내용은 **컨텐츠 보호에 Adobe Primetime DRM SDK 사용.**
 
-## 콘텐츠 패키징 및 정책 관리 도구 만들기{#create-content-packaging-and-policy-management-tools}
+## 컨텐츠 패키징 및 정책 관리 도구 만들기{#create-content-packaging-and-policy-management-tools}
 
-Adobe Primetime DRM SDK를 사용하여 컨텐츠 패키징 및 정책 관리 도구를 만들 수 있습니다. 정책 관리 API를 사용하여 관리자는 정책을 만들고, 세부 사항을 보고, 업데이트할 수 있습니다. 패키징 API는 정책을 비디오 파일에 포함하고 컨텐츠 암호화 키를 사용하여 파일을 암호화합니다.
+Adobe Primetime DRM SDK를 사용하여 컨텐츠 패키징 및 정책 관리 도구를 만들 수 있습니다. 관리자는 정책 관리 API를 사용하여 정책을 만들고, 세부 정보를 보고, 업데이트할 수 있습니다. 패키징 API는 정책을 비디오 파일에 임베드하고 컨텐츠 암호화 키를 사용하여 파일을 암호화합니다.
 
-Primetime DRM SDK에는 콘텐츠 패키징 및 정책 관리 도구의 예( [!DNL AdobePolicyManager.jar])를 제공하는 참조 구현( [!DNL AdobePackager.jar])이 포함되어 있습니다.
+Primetime DRM SDK에는 참조 구현( [!DNL AdobePackager.jar])를 참조하십시오. [!DNL AdobePolicyManager.jar]).
 
-콘텐츠 패키징 및 정책 관리 도구 만들기에 대한 자세한 내용은 **콘텐츠 보호를 위한 Adobe Primetime DRM SDK 사용을 참조하십시오.**
+콘텐츠 패키징 및 정책 관리 도구 만들기에 대한 자세한 내용은 다음을 참조하십시오. **Adobe Primetime DRM SDK를 사용하여 콘텐츠를 보호합니다.**
 
-## 정책 만들기 및 콘텐트 {#create-policies-and-package-content} 패키지
+## 정책 만들기 및 콘텐츠 패키지 {#create-policies-and-package-content}
 
-SDK에서 지원하는 사용 규칙을 사용하여 조직의 비즈니스 모델을 지원하는 정책을 정의하고 만든 다음 해당 정책을 사용하여 컨텐츠를 패키지화해야 합니다. 패키징 중에 컨텐트에 정책을 적용하면 컨텐츠가 얼마나 널리 배포되었는지에 관계없이 컨텐츠를 제어할 수 있습니다.
+SDK에서 지원하는 사용 규칙을 사용하여 조직의 비즈니스 모델을 지원하는 정책을 정의하고 만든 다음 해당 정책을 사용하여 콘텐츠를 패키징해야 합니다. 패키지화하는 동안 콘텐츠에 정책이 적용되면 콘텐츠가 아무리 널리 배포되어도 콘텐츠에 대한 제어를 유지할 수 있습니다.
 
-Adobe Primetime DRM의 정책은 다음을 비롯한 다양한 사용 규칙을 지원합니다.
+Adobe Primetime DRM의 정책은 다음을 포함하여 광범위한 다양한 사용 규칙을 지원합니다.
 
-* 소비자가 컨텐츠를 시청하기 시작하면 라이센스가 유효한 일 수를 지정합니다.
+* 소비자가 콘텐츠를 시청하기 시작한 후 라이선스가 유효한 일 수를 지정합니다.
 * 라이선스 캐싱 허용.
-* 콘텐트에 액세스할 수 있는 클라이언트 런타임 및 버전 지정(예: 사용자에게 특정 Adobe AIR 응용 프로그램이나 특정 Flash Player 버전이 있어야 함).
-* 보호된 컨텐츠를 보거나 익명 액세스를 허용하기 전에 사용자가 사용자 이름과 암호를 사용하여 자신을 인증하도록 요구
+* 콘텐츠에 액세스할 수 있는 클라이언트 런타임 및 버전 지정(예: 사용자에게 특정 Adobe AIR 애플리케이션이나 특정 버전의 Flash Player이 있어야 함).
+* 소비자가 보호된 콘텐츠를 보기 전에 사용자 이름과 암호를 사용하여 자신을 인증하도록 하거나 익명 액세스를 허용합니다.
 
-콘텐츠 패키징에 대한 자세한 내용은 *콘텐츠 보호*&#x200B;를 참조하십시오. 사용 규칙 및 지원되는 비즈니스 모델에 대한 자세한 내용은 *사용 규칙*&#x200B;을 참조하십시오.
+콘텐츠 패키징에 대한 자세한 내용은 *콘텐츠 보호*. 사용 규칙 및 사용 규칙이 지원하는 비즈니스 모델에 대한 자세한 내용은 다음을 참조하십시오. *사용 규칙*.
 
 ## 비디오 재생을 위한 애플리케이션 개발 {#develop-applications-for-video-playback}
 
-사용자가 컨텐츠에 액세스하고 볼 수 있도록 하려면 Flash Player 또는 Adobe AIR을 사용하여 비디오 재생 응용 프로그램을 개발합니다. 비디오 재생 응용 프로그램을 개발한 후에는 소비자에게 배포해야 합니다. Flash Player을 사용하여 애플리케이션을 개발하는 경우 조직의 웹 사이트에서 호스팅하십시오. Adobe® AIR®를 사용하여 응용 프로그램을 개발하는 경우 사용자가 응용 프로그램을 다운로드하여 컴퓨터에 설치할 수 있도록 AIR 응용 프로그램 설치 프로그램을 게시합니다.
+소비자가 콘텐츠에 액세스하고 콘텐츠를 볼 수 있도록 하려면 Flash Player 또는 Adobe AIR을 사용하여 비디오 재생 애플리케이션을 개발하십시오. 비디오 재생 애플리케이션을 개발한 후에는 소비자에게 배포해야 합니다. Flash Player을 사용하여 애플리케이션을 개발하는 경우 조직의 웹 사이트에서 호스팅합니다. Adobe® AIR®을 사용하여 애플리케이션을 개발하는 경우 소비자가 컴퓨터에 애플리케이션을 다운로드하여 설치할 수 있도록 AIR 애플리케이션 설치 관리자를 게시하십시오.
 
-Adobe Primetime DRM에서 사용할 사용자 정의 비디오 재생 응용 프로그램을 개발하는 방법에 대한 자세한 내용은 [ActionScript 3.0 개발자 안내서](https://help.adobe.com/en_US/as3/dev/WS9936fa0d5984e93b3f4f38ec1272a447844-8000.html), [Adobe 비디오 기술 센터](https://www.adobe.com/devnet/video/) 및 Open Source Media Framework의 &quot;비디오 작업&quot; 장을 참조하십시오.
+Adobe Primetime DRM과 함께 사용하기 위한 사용자 지정 비디오 재생 애플리케이션 개발에 대한 자세한 내용은 의 &quot;비디오로 작업&quot; 장을 참조하십시오. [ActionScript 3.0 개발자 안내서](https://help.adobe.com/en_US/as3/dev/WS9936fa0d5984e93b3f4f38ec1272a447844-8000.html), [Adobe 비디오 기술 센터](https://www.adobe.com/devnet/video/)및 Open Source Media Framework

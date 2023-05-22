@@ -1,21 +1,20 @@
 ---
-title: 시간 범위를 Adobe Primetime 광고 결정 광고로 바꾸기
-description: 시간 범위를 Adobe Primetime 광고 결정 광고로 바꾸기
+title: 시간 범위를 Adobe Primetime 광고 의사 결정 광고로 바꾸기
+description: 시간 범위를 Adobe Primetime 광고 의사 결정 광고로 바꾸기
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 263274b7-4602-4be0-b0ad-040f6f0f2fae
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
+# 시간 범위를 Adobe Primetime 광고 의사 결정 광고로 바꾸기{#replace-time-ranges-with-an-adobe-primetime-ad-decisioning-ad}
 
-# 시간 범위를 Adobe Primetime 광고 결정 광고{#replace-time-ranges-with-an-adobe-primetime-ad-decisioning-ad}으로 바꾸기
+제거 `TimeRanges` 다음 사이 `begin` 및 `end` 위치: `localTime` 타임라인에서. 의 AdBreak로 바꾸기 `begin` 끝 `begin+replaceDuration`.
 
-타임라인에서 `localTime`의 `begin`과 `end` 사이에 `TimeRanges`을(를) 제거합니다. `begin`의 AdBreak를 `begin+replaceDuration`로 바꿉니다.
-
-범위를 Primetime 광고 결정 광고로 바꿉니다.
+범위를 Primetime 광고 의사 결정 광고로 대체합니다.
 
 ```
 {   
@@ -70,4 +69,3 @@ ht-degree: 0%
     "id": "vod_003"
 }
 ```
-

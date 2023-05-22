@@ -1,34 +1,33 @@
 ---
-description: MediaPlayer를 인스턴스화하고 해당 뷰를 프레임 레이아웃에 배치할 수 있습니다.
+description: MediaPlayer를 인스턴스화하고 해당 보기를 프레임 레이아웃에 배치합니다.
 title: MediaPlayer 설정
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e8fb6527-154b-4f7e-a128-525b5a3b3474
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
+# MediaPlayer 설정 {#set-up-the-mediaplayer}
 
-# MediaPlayer {#set-up-the-mediaplayer} 설정
+TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 만드는 도구를 제공합니다. 또한 비디오 재생 품질을 극대화하도록 설계된 다양한 기능을 제공합니다.
 
-TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 제작하기 위한 툴을 제공합니다. 또한 비디오 재생 품질을 극대화하기 위해 고안된 다양한 기능을 제공합니다.
+MediaPlayer를 인스턴스화하고 해당 보기를 프레임 레이아웃에 배치합니다.
 
-MediaPlayer를 인스턴스화하고 해당 뷰를 프레임 레이아웃에 배치할 수 있습니다.
-
-1. `MediaPlayer`을 인스턴스화하고 `android.content.Context` 객체를 생성자에게 전달합니다.
+1. 인스턴스화 `MediaPlayer`, 전달 `android.content.Context` 개체를 생성자에 추가합니다.
 
    ```java
    MediaPlayer mediaPlayer = new MediaPlayer(context);
    ```
 
-1. `mediaPlayer`의 `ViewGroup`을(를) 저장할 프레임 레이아웃( `android.widget.FrameLayout`)을 제공합니다.
+1. 프레임 레이아웃 제공( `android.widget.FrameLayout`)을 클릭하여 `ViewGroup` / `mediaPlayer`:
 
    ```java
    FrameLayout playerFrame = (FrameLayout) _viewGroup.findViewById(R.id.playerFrame);
    ```
 
-   다음은 `_viewGroup`을(를) 만드는 코드 조각입니다.
+   다음은 생성할 코드 조각입니다. `_viewGroup`.
 
    ```
    @Override 
@@ -40,10 +39,10 @@ MediaPlayer를 인스턴스화하고 해당 뷰를 프레임 레이아웃에 배
     }
    ```
 
-1. 프레임 레이아웃 내에 `mediaPlayer` 보기를 배치합니다.
+1. 보기 배치 `mediaPlayer` 프레임 레이아웃 내에서:
 
    ```java
    playerFrame.addView(mediaPlayer.getView());
    ```
 
->이제 `MediaPlayer` 인스턴스( `mediaPlayer`)를 사용할 수 있으며 장치 화면에 비디오 내용을 표시하도록 올바르게 구성됩니다.
+>다음 `MediaPlayer` 인스턴스( `mediaPlayer`이제 를 사용할 수 있으며, 장치 화면에 비디오 컨텐츠를 표시하도록 적절히 구성되었습니다.

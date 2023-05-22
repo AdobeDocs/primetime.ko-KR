@@ -1,30 +1,30 @@
 ---
 title: 선택 대화 상자에 MVPD가 표시되지 않도록 합니다.
 description: 선택 대화 상자에 MVPD가 표시되지 않도록 합니다.
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 20faf501-c006-45e2-a725-fb1273ecaffe
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
-
 # 선택 대화 상자에 MVPD가 표시되지 않도록 합니다.
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
 ## 문제 {#issue-prevent-mvpd-sel-dialog}
 
-MVPD 선택기에 (&quot;블록 목록&quot;) 특정 MVPD가 표시되지 않도록 해야 합니다.
+(&quot;차단 목록&quot;) 특정 MVPD가 MVPD 선택기에 표시되지 않도록 해야 합니다.
 
 
 ## 솔루션 {#solution-prevent-mvpd-sel-dialog}
 
-솔루션이란 `displayProviderDialog()` 가 호출됩니다.
+해결 방법은 다음과 같은 경우 블록 목록을 수행하는 것입니다. `displayProviderDialog()` 이(가) 호출되었습니다.
 
-예를 들어 CableCompany_1 및 CableCompany_2가 MVPD 선택기 내에 표시되지 않도록 하려면 다음 예에 표시된 것과 같은 작업을 수행합니다.
+예를 들어 CableCompany_1 및 CableCompany_2가 MVPD 선택기 내부에 표시되지 않도록 하려면 다음 예제와 같은 작업을 수행합니다.
 
 ```C
 function displayProviderDialog(mvpdList) {

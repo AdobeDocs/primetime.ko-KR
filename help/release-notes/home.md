@@ -1,52 +1,52 @@
 ---
-title: Primetime 릴리스 정보
-description: Primetime 릴리스 정보
+title: Primetime 릴리스 노트
+description: Primetime 릴리스 노트
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
 source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
-# Primetime 릴리스 정보
+# Primetime 릴리스 노트
 
 Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 문서는 릴리스 관련 정보, 시스템 요구 사항, 제한 사항, 해결된 문제 및 알려진 문제를 제공합니다.
 
 ## PTAI 22.9.2의 개선 사항 및 수정 사항
 
-이 릴리스는 광고 호출 및 사용 가능한 로깅 데이터를 포함하도록 광고 성능 원격 분석 데이터 개선 사항에 중점을 둡니다.
+이 릴리스는 광고 호출 및 사용 가능한 로깅 데이터를 포함하도록 광고 성능 원격 분석 데이터를 향상하는 데 중점을 둡니다.
 
-기타 수정 사항 및 세부 사항은 [Ad Insertion 릴리스 노트](/help/release-notes/ptai-22x-release-notes.md).
+기타 수정 사항 및 세부 정보는 다음을 참조하십시오. [Ad Insertion 릴리스 노트](/help/release-notes/ptai-22x-release-notes.md).
 
 ## TVSDK 3.15 Android의 수정 사항
 
-이 릴리스는 크리에이티브 태그가 없거나 [!UICONTROL url CDATA] 에 비어 있음 [!UICONTROL VAST] 응답합니다.
+이 릴리스에서는 creative 태그가 없거나 다음과 같은 경우 애플리케이션이 충돌하는 문제를 수정합니다 [!UICONTROL url CDATA] 다음에서 비어 있음: [!UICONTROL VAST] 응답.
 
-기타 수정 사항 및 세부 사항은 [Android용 TVSDK 릴리스 노트](/help/release-notes/tvsdk-3x-android.md)
+기타 수정 사항 및 세부 정보는 다음을 참조하십시오. [Android용 TVSDK 릴리스 노트](/help/release-notes/tvsdk-3x-android.md)
 
 ## TVSDK 3.13 iOS의 개선 사항 및 수정 사항
 
-이 릴리스에서는 LIVE, VOD 및 FER 스트림에 대한 DEMUXED &#39;HLS/CMAF&#39;(프리롤, 미드롤 및 포스트롤) 광고를 지원합니다.
+이 릴리스에서는 라이브, VOD 및 FER 스트림에 대한 중복 제거된 &#39;HLS/CMAF&#39;(프리롤, 미드롤 및 포스트롤) 광고에 대한 지원이 도입되었습니다.
 
-기타 수정 사항 및 세부 사항은 [iOS용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-ios.md).
+기타 수정 사항 및 세부 정보는 다음을 참조하십시오. [iOS용 TVSDK 릴리스 노트](../release-notes/tvsdk-3x-ios.md).
 
-## 참조 -
+## 참조:
 
 | 사용 안내서 | 설명 |
 |--- |--- |
-| [Primetime 프로그래밍 도움말](/help/programming/home.md) | Android 디바이스에서 Java를 사용하는 애플리케이션 및 비디오 플레이어를 개발하는 방법과 iOS 디바이스에서 Objective-C를 사용하는 방법을 배울 수 있습니다. |
+| [Primetime 프로그래밍 도움말](/help/programming/home.md) | Android 장치에서 Java를 사용하는 응용 프로그램 및 비디오 플레이어를 개발하는 방법과 iOS 장치에서 Objective-C를 사용하는 방법을 배울 수 있습니다. |
 | [Primetime 마이그레이션 및 전환 도움말](/help/migration-guides/home.md) | 기존 Primetime TVSDK Suite에서 차세대 제품으로 전환하는 전환 및 마이그레이션 프로세스에 대해 설명합니다. |
 | [참조 구현](/help/android-reference-implementation/home.md) | TVSDK를 이해하고 기능 관리자를 수정하여 개인 플레이어를 사용자 정의할 수 있습니다. |
 | [Primetime API 참조](/help/reference/api-references.md) | TVSDK 함수, 데이터 구조 및 기타 프로그래밍 구문에 대한 자세한 정보를 제공합니다. |
-| [Digital Rights Management](/help/digital-rights-management/home.md) | Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대해 자세히 알아보십시오 |
-| [Primetime Ad Insertion 도움말](/help/primetime-ad-insertion/home.md) | 서버에 사용자 타겟팅된 동적 광고를 삽입하여 컨텐츠를 상용화하고 개인화된 광고를 통해 고객의 참여를 유도하는 방법을 설명합니다. |
+| [Digital Rights Management](/help/digital-rights-management/home.md) | Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대해 자세히 알아볼 수 있습니다 |
+| [Primetime Ad Insertion 도움말](/help/primetime-ad-insertion/home.md) | 서버에 사용자 타겟팅된 동적 광고를 삽입하여 콘텐츠를 수익화하고 개인화된 광고를 통해 대상자를 참여시키는 방법을 설명합니다. |
 | [아카이브](https://helpx.adobe.com/primetime/archives.html) | 보관된 설명서의 PDF을 다운로드합니다. |
 
 ## 유용한 리소스
 
-* [Adobe Primetime 알기](https://www.adobe.com/in/marketing/primetime.html)
+* [Adobe Primetime 알아보기](https://www.adobe.com/in/marketing/primetime.html)
 
 * [동시성 모니터링](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
 

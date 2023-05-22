@@ -1,27 +1,26 @@
 ---
-description: 이 릴리스에는 플레이어가 포함되며 다양한 브라우저를 지원합니다.
+description: 이 릴리스에는 플레이어가 포함되어 있으며 다양한 브라우저를 지원합니다.
 title: 요구 사항
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3157a86b-bf93-41d9-be82-0b702d69c69e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-
 # 개요 {#requirements-overview}
 
-브라우저 TVSDK에는 미디어 컨텐츠, 매니페스트 컨텐츠 및 소프트웨어 버전에 대한 특정 속성이 필요합니다.
+브라우저 TVSDK에는 미디어 콘텐츠, 매니페스트 콘텐츠 및 소프트웨어 버전에 대한 특정 속성이 필요합니다.
 
-Browser TVSDK 릴리스에는 다음 플레이어가 포함됩니다.
+브라우저 TVSDK 릴리스에는 다음 플레이어가 포함됩니다.
 
-* `Primetime.js` (데스크탑 및 모바일에서 HLS용)
+* `Primetime.js` 데스크탑 및 모바일의 HLS용
 
-플레이어에는 다음과 같은 참조 API가 포함됩니다.
+플레이어에는 다음 참조 API가 포함됩니다.
 
 * `Primetime.js` 브라우저 TVSDK
-* 코어 재생을 위한 JavaScript API
+* 코어 재생용 JavaScript API
 * 참조 데모 플레이어
 
 **인증된 플랫폼:**
@@ -38,10 +37,10 @@ Browser TVSDK 릴리스에는 다음 플레이어가 포함됩니다.
       * Internet Explorer 11+
       * Chrome 33+
       * Firefox 38+
-   * Microsoft Windows 10
+   * Microsoft 윈도우
 
       * Edge+
-   * Apple OS X
+   * Apple
 
       * Safari 8+
       * Chrome 33+
@@ -63,11 +62,11 @@ Browser TVSDK 릴리스에는 다음 플레이어가 포함됩니다.
    * Android 6.0
 
       * Chrome 33+
-   * Apple iOS 8
+   * APPLE IOS 8
 
       * Safari 8+
       * Chrome 33+
-   * Apple iOS 9
+   * APPLE IOS 9
 
       * Safari 8+
       * Chrome 33+

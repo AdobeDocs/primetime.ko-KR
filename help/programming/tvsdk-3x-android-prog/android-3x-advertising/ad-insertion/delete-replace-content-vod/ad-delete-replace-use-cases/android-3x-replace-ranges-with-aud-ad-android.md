@@ -1,26 +1,25 @@
 ---
-description: VOD 컨텐츠에 광고를 삽입할 수 있습니다.
+description: VOD 콘텐츠에 광고를 삽입할 수 있습니다.
 title: 시간 범위를 광고로 바꾸기
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bee5308a-f867-4824-84a8-751746785971
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
 
 ---
 
+# 시간 범위를 광고로 바꾸기 {#replace-time-ranges-with-an-ad}
 
-# 시간 범위를 광고 {#replace-time-ranges-with-an-ad}으로 바꾸기
+VOD 콘텐츠에 광고를 삽입할 수 있습니다.
 
-VOD 컨텐츠에 광고를 삽입할 수 있습니다.
-
-`localTime`의 `begin`과 `end` 사이의 `TimeRanges`이 타임라인에서 제거됩니다. 이러한 범위는 `begin`의 `AdBreak`에서 `begin+replaceDuration`로 대체됩니다. `replacement-duration`이(가) 매개 변수로 존재하지 않으면 서버는 반환된 `Adbreak`에 대해 결정합니다.
+다음 `TimeRanges` 다음 사이 `begin` 및 `end` 위치: `localTime` 타임라인에서 제거됩니다. 이 범위는 다음으로 대체됩니다. `AdBreak` / `begin` 끝 `begin+replaceDuration`. 다음과 같은 경우 `replacement-duration` 가 매개 변수로 존재하지 않으면 서버는 반환된 항목에 대해 `Adbreak`.
 
 >[!TIP]
 >
->사용자 지정 범위에 대해 항상 `replacement-duration`을 제공해야 합니다. 이 사용자 지정 범위를 대체할 광고가 없을 경우에는 0의 `replacement-duration`을 입력합니다.
+>항상 을(를) 제공해야 합니다. `replacement-duration` 사용자 지정 범위용입니다. 이 사용자 지정 범위를 대체할 광고가 없는 경우 `replacement-duration` / 0.
 
-1. 범위를 Primetime 광고 결정 광고로 바꾸려면 다음을 수행하십시오.
+1. 범위를 Primetime ad decisioningAds로 바꾸려면 다음을 수행하십시오.
 
    ```
    {   

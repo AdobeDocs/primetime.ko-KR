@@ -2,18 +2,17 @@
 title: 파일 변환
 description: 파일 변환
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7344ca2f-5307-403b-a6fc-cbbea7c2829f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
 
-
 # 파일 변환{#convert-files}
 
-요청자가 OpenSSL 및 개인 키와 같은 유틸리티를 사용하여 명령 창에서 다음 명령을 입력하여 PKCS#12(pfx) 및 PEM/DER 파일을 생성합니다.
+OpenSSL과 같은 유틸리티와 개인 키를 사용하여 요청자는 명령 창에서 다음 명령을 입력하여 PKCS#12(pfx) 및 PEM/DER 파일을 생성합니다.
 
 1. PKCS#7 파일을 임시 PEM 파일로 변환합니다.
 
@@ -26,7 +25,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >이 임시 PEM에는 중간 CA에 대한 인증서와 인증서가 포함되어 있습니다. 이러한 인증서를 사용하여 PFX 파일을 생성합니다.
+   >이 임시 PEM에는 인증서와 중간 CA에 대한 인증서가 포함되어 있습니다. 이러한 인증서를 사용하여 PFX 파일을 생성합니다.
 
 1. 임시 PEM 파일을 PFX 파일로 변환합니다.
 
@@ -47,7 +46,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >필수 사항은 아니지만 개인 키(private_key_password) 및 PFX(pfx_password)에 다른 암호를 사용하는 것이 좋습니다.
+   >Adobe 필수는 아니지만 개인 키(private_key_password)와 PFX(pfx_password)에는 서로 다른 암호를 사용하는 것이 좋습니다.
 
    이 최종 PEM 파일에는 인증서만 포함되어 있습니다.
 
@@ -61,5 +60,4 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >DER 파일은 HTTP Dynamic Streaming 패키저에만 필요합니다.
-
+   >DER 파일은 HTTP Dynamic Streaming 포장기에만 필요합니다.

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Primetime API 참조 {#api-references}
 
-+ Primetime Dynamic Ad Insertion {#server-side}
++ Primetime 동적 Ad Insertion {#server-side}
    + [Bootstrap API 참조](../primetime-ad-insertion/technical-reference/bootstrap-api.md)
    + [보고서 API 참조](../primetime-ad-insertion/technical-reference/report-api.md)
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 + 기타 {#miscellaneous}
    + [비디오 하트비트 라이브러리](https://help.adobe.com/en_US/primetime/api/psdk/vhl_tvsdk_ios/index.html)
-   + [DHPK 2.0 C++](https://help.adobe.com/en_US/primetime/api/psdk/psdk_doxygen/index.html)
+   + [DHPK 2.0 ++](https://help.adobe.com/en_US/primetime/api/psdk/psdk_doxygen/index.html)
    + [2.4 브라우저 TVSDK용 UI 프레임워크](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html)
-   + [PSDK FlashRuntime 공용 API](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls/)
+   + [PSDK FlashRuntime Public API](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls/)

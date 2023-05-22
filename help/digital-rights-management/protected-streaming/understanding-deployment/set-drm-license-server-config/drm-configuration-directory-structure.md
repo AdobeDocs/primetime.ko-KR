@@ -1,19 +1,18 @@
 ---
-title: 구성 디렉토리 구조
-description: 구성 디렉토리 구조
+title: 디렉터리 구조 구성
+description: 디렉터리 구조 구성
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e24d3df0-f723-4dad-84d5-984f3350353a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '16'
 ht-degree: 0%
 
 ---
 
+# 디렉터리 구조 구성{#configuration-directory-structure}
 
-# 구성 디렉터리 구조{#configuration-directory-structure}
-
-구성 디렉토리에는 다음과 같은 구조가 있습니다.
+구성 디렉토리의 구조는 다음과 같습니다.
 
 ```
 <i class="+ topic ph hi-d="" i "="">
@@ -38,4 +37,3 @@ ht-degree: 0%
  </i class="+ topic> 
 </i class="+ topic>
 ```
-

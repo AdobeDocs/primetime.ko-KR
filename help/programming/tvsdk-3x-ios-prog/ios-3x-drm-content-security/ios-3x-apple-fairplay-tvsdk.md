@@ -1,44 +1,43 @@
 ---
-description: TVSDK 앱에서 FairPlay 스트리밍을 구현하려면 Resource Loader를 작성하여 FairPlay 스트리밍 서버에 라이선스 획득 요청을 보내야 합니다.
-title: TVSDK 애플리케이션에서 Apple FairPlay
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: TVSDK 앱에서 FairPlay 스트리밍을 구현하려면 리소스 로더를 작성해야 하며, 이 로더는 FairPlay 스트리밍 서버에 라이선스 획득 요청을 보냅니다.
+title: TVSDK 애플리케이션의 Apple FairPlay
+exl-id: 44bc076d-77bd-4fbc-9813-4146546ec264
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
+# TVSDK 애플리케이션의 Apple FairPlay {#apple-fairplay-in-tvsdk-applications}
 
-# TVSDK 응용 프로그램에서 Apple FairPlay {#apple-fairplay-in-tvsdk-applications}
+TVSDK 앱에서 FairPlay 스트리밍을 구현하려면 리소스 로더를 작성해야 하며, 이 로더는 FairPlay 스트리밍 서버에 라이선스 획득 요청을 보냅니다.
 
-TVSDK 앱에서 FairPlay 스트리밍을 구현하려면 Resource Loader를 작성하여 FairPlay 스트리밍 서버에 라이선스 획득 요청을 보내야 합니다.
+리소스 로더 코드는 다음 작업을 담당합니다.
 
-리소스 로더 코드는 다음 작업을 수행합니다.
+1. 라이선스 획득 요청을 보낼 위치를 결정합니다.
+1. 요청 형식을 지정합니다.
+1. 서버에서 요청을 허용할지 여부를 결정할 수 있도록 서버에 필요한 정보를 제공합니다.
 
-1. 라이센스 획득 요청을 보낼 위치를 결정합니다.
-1. 요청의 형식을 지정합니다.
-1. 서버가 요청을 허용할지 여부를 결정할 수 있도록 필요한 정보를 서버에 제공하십시오.
-
-예를 들어 ExpressPlay에서 제공하는 Adobe의 Primetime Cloud DRM을 사용하는 경우 Resource Loader는 다음 주소로 요청을 보냅니다.
+예를 들어 ExpressPlay에서 제공하는 Adobe의 Primetime Cloud DRM을 사용하는 경우 리소스 로더가 요청을 다음으로 보냅니다.
 
 ```
 https://fp-gen.service.expressplay.com
 ```
 
-리소스 로더는 요청을 포맷하고 재생을 URL에 허용하는 ExpressPlay 토큰을 첨부합니다. ExpressPlay 토큰을 가져올 때 고려해야 할 몇 가지 옵션이 있습니다. 이러한 옵션은 컨텐츠를 패키지화한 방법에 따라 결정됩니다.
+리소스 로더는 요청 형식을 지정하고 재생을 승인하는 ExpressPlay 토큰을 URL에 첨부합니다. ExpressPlay 토큰을 가져올 때 고려해야 할 몇 가지 옵션이 있습니다. 이러한 옵션은 콘텐츠를 패키지한 방법에 따라 결정됩니다.
 
-콘텐츠를 패키징할 때 Packager는 M3U8 매니페스트에 `skd:` URL을 삽입합니다. `skd:` 항목 후에 매니페스트에 데이터를 넣을 수 있습니다. 응용 프로그램 코드에서 이 데이터를 사용하여 위에 나열된 작업을 완료할 수 있습니다. 예를 들어 `skd:{content_id}`을 사용하여 앱에서 재생되는 콘텐츠의 ID를 확인하고 해당 특정 콘텐츠에 대한 토큰을 요청할 수 있습니다. 예를 들어 `skd:{entitlement_server_url}?cid={content_id}`을(를) 사용하여 앱에 권한 부여 서버 URL을 하드 코딩하지 않아도 됩니다.
+콘텐츠를 패키지할 때 패키지 작성자는 를 삽입합니다 `skd:` M3U8 매니페스트의 URL. 다음 이후 `skd:` 항목을 입력하면 매니페스트에 모든 데이터를 넣을 수 있습니다. 애플리케이션 코드에서 이 데이터를 사용하여 위에 나열된 작업을 완료할 수 있습니다. 예를 들어 다음을 사용할 수 있습니다. `skd:{content_id}` 따라서 앱이 재생 중인 콘텐츠의 ID를 결정하고 해당 특정 콘텐츠에 대한 토큰을 요청할 수 있습니다. 예를 들어 다음을 사용할 수도 있습니다 `skd:{entitlement_server_url}?cid={content_id}`따라서 앱에 권한 부여 서버 URL이 하드코딩될 필요가 없습니다.
 
-재생이 시작되면 이미 다른 채널을 통해 콘텐트 ID를 알고 있는 경우 `skd:` URL에 정보가 필요하지 않을 수 있습니다. 두 번째 예는 설정을 테스트하는 데 이상적인 솔루션이지만 프로덕션 환경에서도 사용할 수 있습니다.
+에 정보가 필요하지 않을 수 있습니다. `skd:` 재생이 시작될 때 다른 채널을 통해 콘텐츠 ID를 이미 알고 있는 경우 URL입니다. 두 번째 예는 설정을 테스트하는 데 이상적인 솔루션이지만 프로덕션 환경에서도 사용할 수 있습니다.
 
 >[!TIP]
 >
->`skd:`의 형식을 결정합니다.
+>형식을 결정합니다. `skd:`.
 
-내용은 `skd:` 프로토콜을 사용하여 얻지만 라이센스 요청에서는 `https:`을 사용합니다. 이러한 프로토콜을 처리하기 위한 가장 일반적인 옵션은 다음과 같습니다.
+콘텐츠는 다음을 사용하여 가져옵니다. `skd:` 프로토콜을 사용하지만 라이선스 요청에서는 `https:`. 이러한 프로토콜을 처리하는 가장 일반적인 옵션은 다음과 같습니다.
 
-* **엔드 투 엔드** 재생 초기 테스트컨텐츠를 패키지화할 때  `skd:` URL을 선택합니다. 앱을 테스트할 때 ExpressPlay에서 라이선스를 수동으로 획득하고 로더의 라이선스(`https:` URL) 및 콘텐츠 URL을 하드 코딩합니다.
+* **엔드 투 엔드 재생 초기 테스트** 콘텐츠를 패키징할 때 `skd:` URL. 앱을 테스트할 때 ExpressPlay에서 라이선스를 수동으로 획득하고 라이선스를 하드코드(및 `https:` URL)과 콘텐츠 URL이 들어 있습니다.
 
    예:
 
@@ -50,7 +49,7 @@ https://fp-gen.service.expressplay.com
        ExpressPlayToken={copy_your_token_to_here}";
    ```
 
-* **대부분의 다른** 경우 컨텐츠를 패키징할 때 컨텐츠의 ID를 고유하게 나타내는  `skd:` URL을 선택합니다. 로더에서 `skd:` URL을 분석한 다음 서버로 전송하여 토큰을 입수하고 결과 토큰을 URL로 사용합니다.
+* **대부분의 기타 사례** 콘텐츠를 패키징할 때 `skd:` 콘텐츠의 ID를 고유하게 나타내는 URL입니다. 로더에서 `skd:` URL을 만든 후 서버에 보내어 토큰을 얻은 다음 결과 토큰을 URL로 사용합니다.
 
    예:
 
@@ -148,23 +147,23 @@ https://fp-gen.service.expressplay.com
    }
    ```
 
-## TVSDK 응용 프로그램에서 Apple FairPlay 활성화 {#section_61CFA3C22FE64F52B2C8CE860B72E88B}
+## TVSDK 애플리케이션에서 Apple FairPlay 활성화 {#section_61CFA3C22FE64F52B2C8CE860B72E88B}
 
-TVSDK 애플리케이션에서 Apple의 DRM 솔루션인 Apple FairPlay Streaming을 구현할 수 있습니다.
+Apple의 DRM 솔루션인 Apple FairPlay 스트리밍을 TVSDK 애플리케이션에서 구현할 수 있습니다.
 
-1. `PTAVAssetResourceLoaderDelegate`을(를) 구현하여 FairPlay 고객 리소스 로더를 만듭니다. 자세한 내용은 TVSDK 애플리케이션에서 Apple FairPlay를 참조하십시오.
-
-   >[!NOTE]
-   >
-   >FPS 인식 앱 개발을 위한 [FairPlay 서버 SDK](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)에 포함되어 있는 *FairPlay 스트리밍 프로그램 안내서*(*FairPlayStreaming_PG*)의 지침을 따라야 합니다.
-
-   `resourceLoader:shouldWaitForLoadingOfRequestedResource` 메서드는 `AVAssetResourceLoaderDelegate`에 있는 메서드와 같습니다.
+1. 다음을 구현하여 FairPlay 고객 리소스 로더 만들기 `PTAVAssetResourceLoaderDelegate`. 자세한 내용은 TVSDK 애플리케이션의 Apple FairPlay 를 참조하십시오.
 
    >[!NOTE]
    >
-   >ExpressPlay 라이선스 서버 시나리오에서 콘텐트를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL의 URL 체계를 `skd://`에서 `https://`(또는 `https://`)로 변경합니다.
+   >의 지침을 따르는지 확인합니다. *FairPlay 스트리밍 프로그램 안내서* ( *FairPlayStreaming_PG.pdf*), 포함 [FPS 인식 앱 개발을 위한 FairPlay Server SDK](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)).
 
-1. *FairPlay* 고객 리소스 로더를 `registerPTAVAssetResourceLoader`에 등록합니다.
+   메서드 `resourceLoader:shouldWaitForLoadingOfRequestedResource` 은(는) 의 항목과 동일합니다. `AVAssetResourceLoaderDelegate`.
+
+   >[!NOTE]
+   >
+   >ExpressPlay 라이선스 서버 시나리오에서 콘텐츠를 재생하려면 ExpressPlay FairPlay 서버 라이선스 요청 URL에서 URL 체계를 변경합니다. `skd://` 끝 `https://` (또는 `https://`).
+
+1. 등록 *페어플레이* 다음을 포함한 고객 리소스 로더 `registerPTAVAssetResourceLoader`.
 
    ```
    PTFairPlayResourceLoader *resourceLoader =  
@@ -175,4 +174,4 @@ TVSDK 애플리케이션에서 Apple의 DRM 솔루션인 Apple FairPlay Streamin
 
    >[!NOTE]
    >
-   >FairPlay 라이선스 서버를 직접 작성하거나 타사 FairPlay 라이선스 서버를 사용하는 경우 라이선스 서버 공급업체에 문의하여 라이센스 서버 URL, 서식 및 기타 요구 사항을 확인하십시오.
+   >FairPlay 라이선스 서버를 직접 작성했거나 타사 FairPlay 라이선스 서버를 사용하는 경우 라이선스 서버 공급업체에 문의하여 라이선스 서버 URL, 서식 및 기타 요구 사항을 확인하십시오.

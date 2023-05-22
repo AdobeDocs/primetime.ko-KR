@@ -1,46 +1,44 @@
 ---
-description: MediaResource를 직접 인스턴스화하고 재생할 비디오 컨텐츠를 로드하여 리소스를 로드합니다. 미디어 리소스를 로드하는 한 가지 방법입니다.
+description: MediaResource를 직접 인스턴스화하고 재생할 비디오 콘텐츠를 로드하여 리소스를 로드합니다. 이는 미디어 리소스를 로드하는 한 가지 방법입니다.
 title: MediaPlayer에서 미디어 리소스 로드
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2d5e95bc-3962-4356-b90f-e550066f7a70
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
 
 ---
 
+# MediaPlayer에서 미디어 리소스 로드 {#load-a-media-resource-in-the-mediaplayer}
 
-# MediaPlayer {#load-a-media-resource-in-the-mediaplayer}에서 미디어 리소스 로드
+MediaResource를 직접 인스턴스화하고 재생할 비디오 콘텐츠를 로드하여 리소스를 로드합니다. 이는 미디어 리소스를 로드하는 한 가지 방법입니다.
 
-MediaResource를 직접 인스턴스화하고 재생할 비디오 컨텐츠를 로드하여 리소스를 로드합니다. 미디어 리소스를 로드하는 한 가지 방법입니다.
+1. MediaPlayer의 재생 가능한 항목을 재생할 새 리소스로 설정합니다.
 
-1. 재생할 새 리소스로 MediaPlayer 재생 가능 항목을 설정합니다.
+   를 호출하여 기존 MediaPlayer의 현재 재생 가능한 항목을 바꿉니다. `MediaPlayer.replaceCurrentItem` 기존 항목 전달 `MediaResource` 인스턴스.
 
-   `MediaPlayer.replaceCurrentItem`을(를) 호출하고 기존 `MediaResource` 인스턴스를 전달하여 기존 MediaPlayer의 현재 재생 가능한 항목을 바꿉니다.
-
-1. `MediaPlayer.PlaybackEventListener` 인터페이스의 구현을 `MediaPlayer` 인스턴스와 등록합니다.
+1. 구현 등록 `MediaPlayer.PlaybackEventListener` 을 사용한 인터페이스 `MediaPlayer` 인스턴스.
 
    * `onPrepared`
-   * `onStateChanged`을 클릭하고 초기화된 오류 및 오류를 확인합니다.
+   * `onStateChanged`, 그리고 초기화됨 및 오류 여부를 확인합니다.
 
-1. 미디어 플레이어의 상태가 INITIALIZED로 변경되면 `MediaPlayer.prepareToPlay`을 호출할 수 있습니다.
+1. 미디어 플레이어의 상태가 INITIALIZED로 변경되면 `MediaPlayer.prepareToPlay`
 
-   INITIALIZED 상태는 미디어가 성공적으로 로드되었음을 나타냅니다. `prepareToPlay`을(를) 호출하면 광고 해상도 및 배치 프로세스가 시작됩니다.
+   INITIALIZED 상태는 미디어가 성공적으로 로드되었음을 나타냅니다. 호출 중 `prepareToPlay` 광고 해상도 및 배치 프로세스(있는 경우)를 시작합니다.
 
-1. TVSDK가 `onPrepared` 콜백을 호출하면 미디어 스트림이 성공적으로 로드되고 재생될 준비가 됩니다.
+1. TVSDK가 `onPrepared` 콜백, 미디어 스트림이 성공적으로 로드되었으며 재생할 준비가 되었습니다.
 
-   미디어 스트림이 로드되면 `MediaPlayerItem`이(가) 만들어집니다.
+   미디어 스트림이 로드될 때 `MediaPlayerItem` 이(가) 만들어졌습니다.
 
->오류가 발생하면 `MediaPlayer`은 ERROR 상태로 전환됩니다. 또한 `PlaybackEventListener.onStateChanged`콜백을 호출하여 응용 프로그램에 알립니다.
+>오류가 발생하면 `MediaPlayer` 오류 상태로 전환합니다. 또한 를 호출하여 애플리케이션에 알립니다. `PlaybackEventListener.onStateChanged`callback.
 >
->다음과 같은 여러 매개 변수를 전달합니다.
->* `MediaPlayer.PlayerState.ERROR` 값이 있는 `MediaPlayer.PlayerState` 유형의 `state` 매개 변수입니다.
-   >
-   >
-* 오류 이벤트에 대한 진단 정보가 포함된 `MediaPlayerNotification` 유형의 `notification` 매개 변수입니다.
+>이렇게 하면 다음과 같은 여러 매개 변수가 전달됩니다.
+>* A `state` 유형의 매개변수 `MediaPlayer.PlayerState` (값: `MediaPlayer.PlayerState.ERROR`.
+>
+>* A `notification` 유형의 매개변수 `MediaPlayerNotification` 오류 이벤트에 대한 진단 정보를 포함합니다.
 
 
-다음 간단한 샘플 코드는 미디어 리소스를 로드하는 프로세스를 보여 줍니다.
+다음은 미디어 리소스 로드 프로세스를 설명하는 간소화된 샘플 코드입니다.
 
 ```java
 // mediaResource is a properly configured MediaResource instance 

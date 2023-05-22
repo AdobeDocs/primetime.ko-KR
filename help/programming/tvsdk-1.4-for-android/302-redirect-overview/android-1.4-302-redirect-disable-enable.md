@@ -1,26 +1,25 @@
 ---
-description: 302 리디렉션 최적화는 302 리디렉션 응답 수를 최소화하므로 응용 프로그램에서 더 효과적으로 부하 균형을 맞출 수 있습니다.
+description: 302 리디렉션 최적화는 302 리디렉션 응답 수를 최소화하므로 애플리케이션이 로드 밸런스를 보다 효과적으로 조정할 수 있습니다.
 title: 302 리디렉션 최적화 비활성화 또는 활성화
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b1bdb6d6-b34d-4e0a-8c96-7fd4ce77b5c9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
-
 # HTTP 302 리디렉션 최적화 {#http-302-redirect-optimization}
 
-302 리디렉션 최적화는 302 리디렉션 응답 수를 최소화하므로 응용 프로그램에서 더 효과적으로 부하 균형을 맞출 수 있습니다.
+302 리디렉션 최적화는 302 리디렉션 응답 수를 최소화하므로 애플리케이션이 로드 밸런스를 보다 효과적으로 조정할 수 있습니다.
 
-기본 매니페스트 요청이 리디렉션되고 302 최적화가 플레이어에서 활성화된 경우 해당 매니페스트의 자산에 대해 수행된 후속 요청은 최종 도메인 위치를 사용하므로 추가적인 302개의 응답을 피합니다.
+기본 매니페스트 요청이 리디렉션되고 플레이어에서 302 최적화가 활성화되어 있으면 해당 매니페스트의 자산에 대해 수행된 후속 요청에서는 최종 도메인 위치를 사용하므로 302 응답이 더 이상 발생하지 않습니다.
 
 이 기능은 기본적으로 활성화되어 있으며 이 설정을 변경할 수 있습니다.
 
 ## 302 리디렉션 최적화 비활성화 또는 활성화{#disable-or-enable-redirect-optimization}
 
-`useRedirectedUrl` 속성을 사용하여 302 리디렉션을 설정(true) 또는 해제(false)합니다.
+사용 `useRedirectedUrl` 302 리디렉션을 켜거나(true) 끄는(false) 속성입니다.
 예:
 
 ```java
@@ -39,4 +38,3 @@ MediaResource resource = MediaResource.createFromURL(url, resourceMetadata);
 //Load the resource 
 mediaPlayer.replaceCurrentItem(resource);
 ```
-

@@ -1,53 +1,53 @@
 ---
 title: 프록시 MVPD SAML 통합
 description: 프록시 MVPD SAML 통합
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 6c83e703-d8cd-476b-8514-05b8230902be
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 1%
 
 ---
 
-
 # 프록시 MVPD SAML 통합
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
 ## 개요 {#overview-proxy-mvpd-saml-int}
 
-이 문서에서는 프록시 통합을 위한 SAML 인증 흐름에 대해 설명합니다.  이러한 흐름은 Adobe Primetime 인증 서버 구성에 있는 프록시 구성 데이터에 따라 다릅니다. 프록시 MVPD는 Adobe Primetime 인증 프록시 웹 서비스를 통해 프록시 구성 데이터를 Adobe Primetime 인증 서버로 푸시합니다.
+이 문서에서는 프록시 통합을 위한 SAML 인증 흐름에 대해 설명합니다.  이러한 흐름은 Adobe Primetime 인증 서버 구성에 있는 프록시 구성 데이터에 따라 다릅니다. 프록시 MVPD는 Adobe Primetime 인증 프록시 웹 서비스를 통해 프록시 구성 데이터를 Adobe Primetime 인증 서버에 푸시합니다.
 
 ## 프록시 구성 데이터 {#proxy-config-data}
 
-각 MVPD 프록시는 프록시 처리된 MVPD에 대한 프록시 구성 데이터를 Adobe Primetime 인증 프록시 웹 서비스로 제공합니다.  자세한 내용은 프록시 웹 서비스 설명서에서 다룹니다.   SAML AuthN 플로우가 작동하려면 프록시 구성 데이터에 다음 속성을 포함해야 합니다.
+각 MVPD 프록시는 프록시화된 MVPD에 대한 프록시 구성 데이터를 Adobe Primetime 인증 프록시 웹 서비스에 제공합니다.  자세한 내용은 프록시 웹 서비스 설명서에 나와 있습니다.   SAML AuthN 흐름이 작동하려면 프록시 구성 데이터에 다음 속성이 포함되어야 합니다.
 
 | 속성 | 설명 |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MVPD ID | Proxied MVPD를 Adobe Primetime 인증으로 내부적으로 나타내는 문자열입니다.  Adobe Primetime 인증 컨텍스트에서 고유하다고 Adobe이 확인합니다. |
-| MVPD 기본 로고 URL | 사용자의 MVPD 선택기 경험에 표시할 수 있는 로고의 URL입니다.  투명한 배경을 사용해야 합니다. |
-| MVPD 표시 이름 | 로고와 함께 표시할 수 있는 표시 이름 텍스트로 사용할 문자열입니다. 이 문자열은 대체 텍스트로 표시될 수 있습니다. |
+| MVPD ID | Adobe Primetime 인증에 내부적으로 프록시화된 MVPD를 나타내는 문자열입니다.  Adobe Primetime 인증 컨텍스트에서 고유한 것으로 Adobe에서 확인해야 합니다. |
+| MVPD 기본 로고 URL | 사용자의 MVPD 선택기 환경에 표시할 수 있는 로고 URL.  투명 배경을 사용해야 합니다. |
+| MVPD 표시 이름 | 로고와 함께 표시될 수 있는 표시 이름 텍스트로 사용할 문자열(대체 텍스트일 수 있음) |
 
 
 
-## SAML 통합 흐름 {#saml-int-flows}
+## SAML 통합 플로우 {#saml-int-flows}
 
-MVPD 구독자가 프로그래머 사이트 또는 응용 프로그램을 방문할 때 Adobe Primetime 인증은 해당 프로그래머에 대해 활성화된 MVPD 목록을 사용하여 사이트나 응용 프로그램의 API 호출에 응답합니다.  통합은 직접 또는 프록시될 수 있습니다. 그들을 프로그래머와 구별할 수 없다. 이를 통해 프로그래머는 상황에 맞는 방식으로 활성 MVPD 목록을 표시할 수 있습니다. 가입자는 MVPD를 선택하고 Adobe Primetime 인증은 가입자를 MVPD의 특정 ID 공급자로 리디렉션합니다.
+MVPD 구독자가 프로그래머의 사이트 또는 애플리케이션을 방문할 때 Adobe Primetime 인증은 해당 프로그래머에 대해 활성화된 MVPD 목록으로 사이트 또는 애플리케이션으로부터의 API 호출에 응답합니다.  통합은 직접적이거나 프록싱될 수 있으며, 프로그래머에게는 이들 간에 구별이 없다. 이를 통해 프로그래머는 자신이 적합하다고 보는 모든 방식으로 활성 MVPD 목록을 표시할 수 있습니다. 구독자는 MVPD를 선택하고 Adobe Primetime 인증은 구독자를 MVPD의 특정 ID 공급자로 리디렉션합니다.
 
-통합 MVPD 프록시의 경우 Adobe Primetime 인증과 MVPD 프록시 간의 통합이 수행됩니다. Adobe Primetime 인증은 사용자 인증 요청을 MVPD 프록시로 보내고 MVPD 프록시가 리디렉션을 처리합니다. MVPD 프록시가 사용자 인증 요청을 리디렉션할 위치를 알려면 Adobe Primetime 인증이 SAML 인증 요청에서 MVPD 식별자를 전송합니다.  이 식별자는 위에 지정된 프록시 웹 서비스를 통해 프록시 공급자가 지정한 MVPD ID입니다.
+통합 MVPD 프록시의 경우 Adobe Primetime 인증과 MVPD 프록시 간에 통합이 수행됩니다. Adobe Primetime 인증은 사용자 인증 요청을 MVPD 프록시로 보내고 MVPD 프록시가 리디렉션을 처리합니다. MVPD 프록시가 사용자 인증 요청을 리디렉션할 위치를 알 수 있도록 Adobe Primetime 인증은 SAML 인증 요청에서 MVPD 식별자를 보냅니다.  이 식별자는 위에 지정된 프록시 웹 서비스를 통해 프록시 공급자가 지정한 MVPD ID입니다.
 
 ### 인증 {#authn-saml-int}
 
 Adobe Primetime 인증을 프록시 MVPD와 통합하려면 다음 조건을 충족해야 합니다.
 
-* 프록시 MVPD가 제공한 프록시 MVPD 목록이 Adobe 프록시 웹 서비스로 푸시되었습니다
+* 프록시 MVPD가 프록시 MVPD 목록을 제공하고 Adobe 프록시 웹 서비스에 푸시함
 
 * 상위 MVPD 프록시에 대한 SAML 메타데이터
 
-* (권장) - 프록시 MVPD는 프록시 MVPD의 로그인 페이지 URL에 대한 추가 리디렉션을 처리합니다
+* (권장) - 프록시 MVPD는 프록시 MVPD의 로그인 페이지 URL로 추가 리디렉션을 처리합니다
 
-* MVPD 프록시는 다음 IP의 포트 443 및 80을 열어야 합니다.
+* MVPD 프록시는 다음 IP에 대해 포트 443 및 80을 열어야 합니다.
    * 192.150.4.5
    * 192.150.10.200
    * 192.150.11.4
@@ -63,13 +63,13 @@ Adobe Primetime 인증을 프록시 MVPD와 통합하려면 다음 조건을 충
 
 #### 인증 SAML 요청 및 응답 {#authn-saml-req-resp}
 
-SAML AuthN 요청에서 프록시 통합에는 MVPD 프록시에서 처리해야 하는 다음 추가 속성이 포함됩니다.  이 속성은 Proxied MVPD를 대신하여 요청자를 올바르게 처리하고 올바른 로그인 환경을 렌더링하기 위해 필요합니다. 이 속성은 아래 샘플 요청에서 강조 표시됩니다.
+SAML AuthN 요청에서 프록시 통합에는 MVPD 프록시에서 처리해야 하는 다음과 같은 추가 속성이 포함됩니다.  이 속성은 프록시화된 MVPD를 대신하여 요청자를 올바르게 처리하고 올바른 로그인 경험을 렌더링하기 위해 필요합니다. (이 속성은 아래 샘플 요청에서 강조 표시됩니다.)
 
-**범위 지정 속성** - 특정 MVPD_ID 및 MVPD 이름이 포함된 IDPEntry 항목을 포함합니다.  이 MVPD는 사용자가 Programmer 선택기에서 실제로 선택한 MVPD를 나타내며 Proxy Web Service에 지정된 MVPD_ID와 일치합니다.
+**범위 속성** - 특정 MVPD_ID 및 MVPD 이름을 포함하는 IDPEntry 항목이 포함됩니다.  사용자가 프로그래머 선택기에서 실제로 선택한 MVPD를 나타내며 프록시 웹 서비스에 지정된 MVPD_ID와 일치합니다.
 
-필요한 경우 RequestorID에 대한 로그인을 사용자 지정하는 데 사용할 수 있는 RequestorID용 추가 범위 속성이 있습니다. 또는 요청이 시작되는 분석 기능에만 사용할 수 있습니다.
+필요한 경우 프로그래머의 특정 브랜드에 대한 로그인을 사용자 지정하는 데 사용할 수 있는 RequestorID에 대한 추가 범위 속성이 있습니다. 또는 요청이 시작되는 위치의 분석에 간단히 사용할 수 있습니다.
 
-SAML AuthN 응답에서 프록시 MVPD는 다음 속성에서 프록시 처리된 MVPD를 IdP 엔티티로 지정해야 합니다.
+SAML AuthN 응답에서 프록시 MVPD는 다음 속성에서 프록시화된 MVPD를 IdP 엔티티로 지정해야 합니다.
 
 * SAML 발급자
 * 이름 한정자
@@ -164,11 +164,11 @@ SAML AuthN 응답에서 프록시 MVPD는 다음 속성에서 프록시 처리�
 
 ### 인증 {#authz-proxy-mvpd-saml-int}
 
-인증 부분의 경우 MVPD는 프로그래머가 지정한 리소스의 승인을 수락해야 합니다.  대부분의 경우 TBS 또는 TNT와 같은 채널 네트워크의 문자열 식별자입니다.
+인증 부분의 경우, MVPD는 프로그래머가 지정한 리소스에 대한 인증을 수락해야 합니다.  대부분의 경우, 이는 TBS 또는 TNT와 같은 채널 네트워크에 대한 문자열 식별자이다.
 
 #### 인증 SAML 요청 및 응답 {#authz-saml-req-resp}
 
-AuthZ 응답에서 ISSUER는 프록시된 MVPD 식별자여야 하는 SAML 응답의 ISSUER와 일치해야 합니다.
+AuthZ 응답에서 발급자는 프록시화된 MVPD 식별자여야 하는 SAML 응답의 발급자와 일치해야 합니다.
 
 **샘플 AuthZ XACML 요청**
 
@@ -247,7 +247,7 @@ AuthZ 응답에서 ISSUER는 프록시된 MVPD 식별자여야 하는 SAML 응�
 </soap11:Envelope>
 ```
 
-**샘플 AuthZ XACML 응답(인증 부여됨)**
+**샘플 AuthZ XACML 응답(권한 부여)**
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -303,7 +303,7 @@ AuthZ 응답에서 ISSUER는 프록시된 MVPD 식별자여야 하는 SAML 응�
 </soap-env:Envelope>
 ```
 
-**샘플 AuthZ XACML 응답(인증 거부됨)**
+**샘플 AuthZ XACML 응답(권한 부여가 거부됨)**
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>

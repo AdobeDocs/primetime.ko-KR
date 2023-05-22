@@ -1,22 +1,21 @@
 ---
-description: 광고에 여러 크리에이티브한 요소가 있을 수 있으며 이 중 하나를 재생하도록 선택할 수 있습니다.
+description: 광고에는 여러 개의 크리에이티브가 있을 수 있으며 그중 하나는 재생되도록 선택됩니다.
 title: 유효한 MIME 유형
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 878cae20-2a94-4795-8908-be7daffefb41
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
-
 # 유효한 MIME 유형{#valid-mime-types}
 
-광고에 여러 크리에이티브한 요소가 있을 수 있으며 이 중 하나를 재생하도록 선택할 수 있습니다.
+광고에는 여러 개의 크리에이티브가 있을 수 있으며 그중 하나는 재생되도록 선택됩니다.
 
-MIME 유형을 사용하여 사용자가 우선 순위를 정할 수 있는 크리에이티브 유형을 지정할 수 있습니다. 사용자가 지정하는 MIME 유형과 Browser TVSDK에서 지원하는 MIME 형식을 사용하여 우선 순위를 지정할 크리에이티브 유형을 결정합니다.
+MIME 유형을 사용하면 우선 순위를 지정할 수 있는 크리에이티브 유형 사용자를 지정할 수 있습니다. 사용자가 지정한 MIME 유형과 브라우저 TVSDK에서 지원하는 MIME 유형을 사용하여 우선 순위가 지정될 크리에이티브를 결정합니다.
 
-브라우저 TVSDK에서 유효한 MIME 유형을 설정하려면:
+브라우저 TVSDK에서 올바른 MIME 유형을 설정하려면 다음을 수행하십시오.
 
 ```js
 var auditudeSettings = new AdobePSDK.AuditudeSettings(); 
@@ -24,6 +23,6 @@ var mimeTypes = [“video/mp4”, “application/x-mpegURL”];
 auditudeSettings.validMimeTypes = mimeTypes; 
 ```
 
-여기서 `mimeTypes`은 문자열 배열이고 각 문자열은 mime 유형을 나타냅니다.
+위치 `mimeTypes` 는 문자열의 배열이며 각 문자열은 mime 유형을 나타냅니다.
 
-광고에 대해 여러 미디어 파일이 반환되는 경우 선택 사항은 미디어 파일이 `validMimeTypes` 배열에 나타나는 순서에 따라 달라집니다. 색인이 낮은 MIME 형식은 인덱스가 높은 MIME 유형보다 선호도가 높습니다.
+광고에 대해 여러 미디어 파일이 반환되는 경우, 선택 사항은 미디어 파일이 표시되는 순서에 따라 다릅니다 `validMimeTypes` 배열입니다. 색인이 낮은 MIME 유형은 색인이 높은 MIME보다 우선 순위가 높습니다.

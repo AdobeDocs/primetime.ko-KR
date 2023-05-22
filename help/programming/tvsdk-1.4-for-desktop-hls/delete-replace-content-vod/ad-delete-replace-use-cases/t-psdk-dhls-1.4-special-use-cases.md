@@ -2,22 +2,21 @@
 title: 특별 사용 사례
 description: 특별 사용 사례
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 33aad8cc-5939-4890-bc89-32d6bbf1fa4c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
+# 특별 사용 사례{#special-use-cases}
 
-# 특수 사용 사례{#special-use-cases}
+TVSDK는 표준 광고 설정보다 사용자 지정 범위 설정을 선호합니다. 예를 들어 MARK 범위가 정의된 경우 광고의 삽입 설정은 무시됩니다. REPLACE 범위가 정의된 경우 TVSDK는 자동으로 `CustomRanges` 신호 모드.
 
-TVSDK는 표준 광고 설정에 비해 사용자 지정 범위 설정을 선호합니다. 예를 들어 MARK 범위가 정의된 경우 광고의 삽입 설정이 무시됩니다. REPLACE 범위가 정의된 경우 TVSDK는 자동으로 `CustomRanges` 신호 모드를 사용합니다.
+1. `ReplaceRange` 대체 기간 제외
 
-1. `ReplaceRange` 교체 기간 없음
-
-   교체 기간이 없는 경우 서버에 의해 실제 교체 기간이 결정됩니다. 이 `AdBreak`에 배치된 광고 수도 서버에 의해 결정됩니다.
+   교체 기간이 누락된 경우 실제 교체 기간은 서버에 의해 결정됩니다. 여기에 게재된 광고 수 `AdBreak` 또한 서버에 의해 결정됩니다.
 
    ```
    {
@@ -61,6 +60,6 @@ TVSDK는 표준 광고 설정에 비해 사용자 지정 범위 설정을 선호
    }
    ```
 
-1. 교체 기간이 있는 표시 및 DELETE 범위
+1. 대체 기간을 사용하여 범위 표시 및 DELETE
 
-   대체 기간이 더 이상 무시됩니다.
+   추가 교체 기간은 무시됩니다.

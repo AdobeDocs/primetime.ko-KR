@@ -1,27 +1,26 @@
 ---
-title: 장 지원 구현
-description: 장 지원 구현
+title: 챕터 지원 구현
+description: 챕터 지원 구현
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2db335b3-1d9b-4339-b1b6-e12ee0f06566
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%
 
 ---
 
+# 챕터 지원 구현 {#implement-chapter-support}
 
-# 장 지원 구현 {#implement-chapter-support}
+을 정의하고 추적할 수 있습니다 *사용자 정의* tvsdk 기반 애플리케이션에서 비디오 추적을 위한 챕터입니다.
 
-TVSDK 기반 응용 프로그램에서 비디오 추적을 위해 *custom* 장을 정의하고 추적할 수 있습니다.
-
-사용자 정의 장은 애플리케이션에서 관리되며, CMS 데이터 또는 애플리케이션에서 장 정의에 사용하는 다른 방법을 기반으로 합니다.
+사용자 정의 챕터는 애플리케이션에서 관리되며 CMS 데이터 또는 애플리케이션에서 챕터를 정의하는 데 사용하는 다른 방법에 따라 결정됩니다.
 
 >[!CAUTION]
 >
->기본 장은 3.0 Android TVSDK에서 지원되지 않습니다.
+>3.0 Android TVSDK에서는 기본 챕터가 지원되지 않습니다.
 
-사용자 정의 장을 정의하고 추적할 수 있습니다.
+사용자 지정 챕터를 정의하고 추적합니다.
 
 ```java
 // First, enable chapter tracking by setting   

@@ -1,25 +1,24 @@
 ---
-description: 라이브 스트림 광고 삽입의 경우, 중단에 있는 모든 광고가 완료되기 전에 광고 나누기를 종료해야 할 수 있습니다.
-title: 조기 광고 중단 반환 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 라이브 스트림 광고 삽입의 경우, 광고 브레이크의 모든 광고가 완료될 때까지 재생되기 전에 광고 브레이크를 종료해야 할 수 있습니다.
+title: 조기 광고 브레이크 반환 구현
+exl-id: 07246e31-c2a2-4646-9e59-6294f0ce8838
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
 
 ---
 
+# 조기 광고 브레이크 반환 구현 {#implement-an-early-ad-break-return}
 
-# 조기 광고 중단 반환 구현 {#implement-an-early-ad-break-return}
+라이브 스트림 광고 삽입의 경우, 광고 브레이크의 모든 광고가 완료될 때까지 재생되기 전에 광고 브레이크를 종료해야 할 수 있습니다.
 
-라이브 스트림 광고 삽입의 경우, 중단에 있는 모든 광고가 완료되기 전에 광고 나누기를 종료해야 할 수 있습니다.
+예를 들어 특정 스포츠 이벤트에서 광고 브레이크 기간을 알 수 없는 경우에는 광고 브레이크가 시작됩니다. TVSDK는 기본 기간을 제공하지만, 휴식기가 완료되기 전에 게임이 다시 시작되는 경우 광고 브레이크를 종료해야 합니다. 또 다른 예는 라이브 스트림에서 광고 브레이크 중 긴급 신호입니다.
 
-예를 들어, 일부 스포츠 이벤트에서 광고 중단의 지속 시간을 알 수 없는 경우 중단이 시작되기 전에는 알 수 없습니다. TVSDK는 기본 지속 시간을 제공하지만 중단이 끝나기 전에 게임이 재개되는 경우 광고 중단이 종료되어야 합니다. 또 다른 예로 라이브 스트림에서 광고 중단 도중 비상 신호가 발생합니다.
-
-1. 마커에서 스플릿 아웃/스플리스인 `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN` 및 `#EXT-X-CUE`를 구독합니다.
-광고 마커를 분할하는 방법에 대한 자세한 내용은 [기회 생성기 및 컨텐츠 해상도](../../ad-insertion/content-resolver/android-3x-content-resolver.md)를 참조하십시오.
-1. 사용자 지정 `ContentFactory`을(를) 사용합니다.
-1. `retrieveGenerators`에서 `SpliceInPlacementOpportunityGenerator`을 사용합니다.
+1. 구독 대상 `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, 및 `#EXT-X-CUE`- 마커의 스플라이스 아웃/스플라이스입니다.
+광고 마커를 밖으로/안으로 연결하는 방법에 대한 자세한 내용은 을 참조하십시오. [기회 생성기 및 콘텐츠 해결자](../../ad-insertion/content-resolver/android-3x-content-resolver.md).
+1. 사용자 지정 사용 `ContentFactory`.
+1. 위치 `retrieveGenerators`, 사용 `SpliceInPlacementOpportunityGenerator`.
 
    예:
 
@@ -31,9 +30,9 @@ ht-degree: 0%
    }
    ```
 
-   사용자 지정 `ContentFactory` 사용에 대한 자세한 내용은 [사용자 지정 기회 생성자 구현](../../ad-insertion/content-resolver/android-3x-opp-detector-impl-android.md)의 1단계를 참조하십시오.
+   사용자 지정 사용에 대한 자세한 내용 `ContentFactory`의 1단계 를 참조하십시오. [사용자 지정 영업 기회 수집기 구현](../../ad-insertion/content-resolver/android-3x-opp-detector-impl-android.md).
 
-1. 동일한 사용자 지정 `ContentFactory`에서 `retrieveResolvers`을(를) 구현하고 `AuditudeResolver` 및 `SpliceInCustomResolver`을(를) 포함합니다.
+1. 동일한 사용자 지정 `ContentFactory`, 구현 `retrieveResolvers` 및 포함 `AuditudeResolver` 및 `SpliceInCustomResolver`.
 
    예:
 

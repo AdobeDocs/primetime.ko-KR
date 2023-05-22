@@ -1,22 +1,21 @@
 ---
-description: 광고 신호 모드는 비디오 스트림이 광고 정보를 가져올 위치를 지정합니다.
+description: 광고 시그널링 모드는 비디오 스트림이 광고 정보를 받아야 하는 위치를 지정합니다.
 title: 광고 신호 모드
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 87c56f8a-7a07-4232-9f90-53ab74a609b4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
 
 ---
 
-
 # 광고 신호 모드 {#ad-signaling-mode-overview}
 
-광고 신호 모드는 비디오 스트림이 광고 정보를 가져올 위치를 지정합니다.
+광고 시그널링 모드는 비디오 스트림이 광고 정보를 받아야 하는 위치를 지정합니다.
 
-유효한 값은 `DEFAULT`, `SERVER_MAP` 및 `MANIFEST_CUES`입니다.
+유효한 값은 다음과 같습니다. `DEFAULT`, `SERVER_MAP`, 및 `MANIFEST_CUES`.
 
-다음 표에서는 다양한 유형의 HLS 스트림에 대한 `AdSignalingMode` 값의 효과를 설명합니다.
+다음 표에서는 의 효과를 설명합니다. `AdSignalingMode` 다양한 유형의 HLS 스트림에 대한 값:
 
 <table frame="all" colsep="1" rowsep="1" id="table_AdSignalingMode"> 
  <thead> 
@@ -32,35 +31,34 @@ ht-degree: 0%
    <td colname="1"> 주문형 비디오(VOD) </td> 
    <td colname="2"> 
     <ul id="ul_E79DA79107364D0D8B46A1859CA75B5C"> 
-     <li id="li_B259ED87743F463095071F58DC840E39"> 배치 탐지를 위해 서버 맵을 사용합니다. </li> 
-     <li id="li_8957E4151466467BA6C954E5010E34EA"> 광고가 삽입됩니다. </li> 
+     <li id="li_B259ED87743F463095071F58DC840E39"> 배치 탐지에 서버 맵 사용 </li> 
+     <li id="li_8957E4151466467BA6C954E5010E34EA"> 광고가 삽입됨 </li> 
     </ul> </td> 
    <td colname="3"> 
     <ul id="ul_D462C76717D94DE09915BDF6E9B3FB68"> 
-     <li id="li_FB46108F4AD9457D99D2618ABEF7DBD1"> 배치 탐지를 위한 인스트림 큐 사용 </li> 
-     <li id="li_C3F7FBB98F524CEF97D17318C292E9EA"> 프리롤 광고는 기본 스트림에 삽입됩니다 </li> 
-     <li id="li_A56E1545F84840DFA6D065DA60E98C31"> 메인 스트림 대신 mid-rols 광고 </li> 
+     <li id="li_FB46108F4AD9457D99D2618ABEF7DBD1"> 배치 탐지에 스트림 내 큐 사용 </li> 
+     <li id="li_C3F7FBB98F524CEF97D17318C292E9EA"> 프리롤 광고가 메인 스트림에 삽입됩니다. </li> 
+     <li id="li_A56E1545F84840DFA6D065DA60E98C31"> 주 스트림을 중간 롤 광고로 바꿉니다. </li> 
     </ul> </td> 
    <td colname="4"> 
     <ul id="ul_F10192B1B6F745CBB0D4C1A6D52A57B4"> 
-     <li id="li_2ADACF71FA5F4A08A00A3399F5593420"> 배치 탐지를 위해 서버 맵을 사용합니다. </li> 
-     <li id="li_1201085B9C554A4BBD471E7EB2E363AC"> 광고가 삽입됩니다. </li> 
+     <li id="li_2ADACF71FA5F4A08A00A3399F5593420"> 배치 탐지에 서버 맵 사용 </li> 
+     <li id="li_1201085B9C554A4BBD471E7EB2E363AC"> 광고가 삽입됨 </li> 
     </ul> </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"> 라이브/선형 </td> 
    <td colname="2"> 
     <ul id="ul_82AAC9EE056F49E999F809536A96C2F8"> 
-     <li id="li_73BAD2BAA95F4592808B77F8DA436237"> 배치 탐지를 위한 매니페스트 큐 사용 </li> 
-     <li id="li_A97B6F61078D4149A984B2412021E103"> 기본 스트림 대신 광고 </li> 
+     <li id="li_73BAD2BAA95F4592808B77F8DA436237"> 배치 탐지에 매니페스트 큐를 사용합니다. </li> 
+     <li id="li_A97B6F61078D4149A984B2412021E103"> 광고가 기본 스트림을 대체합니다. </li> 
     </ul> </td> 
    <td colname="3"> 
     <ul id="ul_CAED2D4F46334D76AE025482881BF843"> 
-     <li id="li_A8023845A037482DBFDEF7EF247FECFD"> 배치 탐지를 위한 인스트림 큐 사용 </li> 
-     <li id="li_62A3CDAD249344EB89043B2AE0F4D7FF"> 기본 스트림 대신 광고 </li> 
+     <li id="li_A8023845A037482DBFDEF7EF247FECFD"> 배치 탐지에 스트림 내 큐 사용 </li> 
+     <li id="li_62A3CDAD249344EB89043B2AE0F4D7FF"> 광고가 기본 스트림을 대체합니다. </li> 
     </ul> </td> 
    <td colname="4"> 지원되지 않음 </td> 
   </tr> 
  </tbody> 
 </table>
-

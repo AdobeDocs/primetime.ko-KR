@@ -1,23 +1,22 @@
 ---
-description: Primetime 광고 삽입은 내부 용도로 쿠키를 사용하고 스트림 및 광고 서버를 사용한 작업을 용이하게 합니다.
+description: Primetime 광고 삽입은 내부 목적을 위해 쿠키를 사용하며 스트림 및 광고 서버와의 작업을 용이하게 합니다.
 title: 쿠키
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 13184a7a-4302-46af-a7f6-37678db05ce8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
-
 # 쿠키 {#cookies}
 
-Primetime 광고 삽입은 내부 용도로 쿠키를 사용하고 스트림 및 광고 서버를 사용한 작업을 용이하게 합니다.  쿠키는 사용하도록 권장되며 내 클라이언트 플레이어를 활성화하는 것이 좋습니다.
+Primetime Ad Insertion은 내부 목적을 위해 쿠키를 사용하며 스트림 및 광고 서버와의 작업을 용이하게 합니다.  쿠키는 사용을 권장하며 클라이언트 플레이어에서 사용할 수 있도록 설정하는 것이 좋습니다.
 
 ## 쿠키 목록
 
-Primetime 광고 삽입은 다음 쿠키를 유지합니다.
+Primetime Ad Insertion은 다음 쿠키를 유지합니다.
 
-* `ssaiPub` 파일을 얻기 위해 쿠키 인증이 필요한 스트림에서 컨텐츠 URL을 검색할 수  `m3u8` 있습니다.
-* `ssai3` 광고 서버에 대해 세션 쿠키를 보관합니다.
-* `AWSELB` 세션 관련 정보를  `ssaiSession` 보유합니다.
+* `ssaiPub` 는 를 얻기 위해 쿠키 인증이 필요한 스트림에서 콘텐츠 URL을 검색하는 데 도움이 됩니다. `m3u8` 파일.
+* `ssai3` 필요한 광고 서버에 대한 세션 쿠키를 보유합니다.
+* `AWSELB` 및 `ssaiSession` 세션 관련 정보를 보관합니다.

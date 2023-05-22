@@ -1,22 +1,21 @@
 ---
-description: TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제공합니다.
+description: TVSDK는 일시 중단 기간 처리를 위한 API 및 샘플 코드를 제공합니다.
 title: 일시 중단 처리 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c7252467-a075-4227-b7bc-db1112a96a2b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
-
 # 일시 중단 처리 구현{#implement-blackout-handling}
 
-TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제공합니다.
+TVSDK는 일시 중단 기간 처리를 위한 API 및 샘플 코드를 제공합니다.
 
-일시 중단 중 대체 컨텐츠 제공을 포함하여 일시 중단 처리를 구현하려면
+일시 중단 중에 대체 컨텐츠를 제공하는 등 일시 중단 처리를 구현하려면 다음 작업을 수행하십시오.
 
-1. 라이브 스트림 매니페스트에서 블랙아웃 태그를 검색하도록 앱을 설정합니다.
+1. 라이브 스트림 매니페스트에서 일시 중단 태그를 검색하도록 앱을 설정합니다.
 
    ```
    private function startPlayback(resource:MediaResource):void { 
@@ -30,7 +29,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 전경 및 백그라운드 스트림에서 시간 지정 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
+1. 전경 및 배경 스트림에서 시간이 지정된 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
 
    ```
    private function createMediaPlayer(context:MediaPlayerContext):void { 
@@ -42,7 +41,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 전경 스트림과 백그라운드 스트림 모두에 대한 시간 지정 메타데이터 이벤트 핸들러를 구현합니다.
+1. 전경 및 백그라운드 스트림 모두에 대해 시간 설정된 메타데이터 이벤트 핸들러를 구현합니다.
 
    전경:
 
@@ -86,7 +85,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 일시 중단을 위해 MediaPlayer를 준비합니다.
+1. MediaPlayer에 일시 중단을 준비합니다.
 
    ```
    public function prepareBlackoutRanges(timedMetadata:Vector.<TimedMetadata>):void { 
@@ -124,7 +123,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 재생 헤드 위치에 대한 업데이트가 발생할 때마다 TimedMetadataObjects 목록의 검사를 설정합니다.
+1. 플레이헤드 위치에 대한 업데이트가 발생할 때마다 TimedMetadataObjects 목록을 검사하도록 설정합니다.
 
    ```
    private function onTimeChange(event:TimeChangeEvent):void { 
@@ -157,7 +156,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 일시 중단 기간의 시작과 끝에 컨텐츠를 전환하는 방법을 만듭니다.
+1. 일시 중단 기간 시작 및 종료 시 컨텐츠를 전환하는 방법을 생성합니다.
 
    ```
    public function initiate(event:TimerEvent=null):void { 
@@ -195,4 +194,3 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
        } 
    }
    ```
-

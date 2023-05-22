@@ -1,20 +1,19 @@
 ---
-description: Password Scrambler 유틸리티는 보호된 스트리밍 구성 파일을 위한 Adobe Primetime DRM Server의 암호를 암호화합니다.
+description: 암호 스크램블러 유틸리티는 보호된 스트리밍 구성 파일에 대한 Adobe Primetime DRM 서버 암호를 암호화합니다.
 title: 암호 스크램블러
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9cedd3e5-01db-4ea9-bf23-8767987fc26c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
-
 # 암호 스크램블러 {#password-scrambler}
 
-Password Scrambler 유틸리티는 보호된 스트리밍 구성 파일을 위한 Adobe Primetime DRM Server의 암호를 암호화합니다.
+암호 스크램블러 유틸리티는 보호된 스트리밍 구성 파일에 대한 Adobe Primetime DRM 서버 암호를 암호화합니다.
 
-scrambler를 실행하려면 다음을 입력합니다.
+스크램블러를 실행하려면 다음을 입력합니다.
 
 ```
 Scrambler.bat  
@@ -23,7 +22,7 @@ Scrambler.bat
 </i class="+ topic>
 ```
 
-or
+또는
 
 ```
 java -jar libs/flashaccess-scrambler.jar  
@@ -32,7 +31,7 @@ java -jar libs/flashaccess-scrambler.jar
 </i class="+ topic>
 ```
 
-이 유틸리티는 다음 메시지를 표시합니다.
+유틸리티는 다음 메시지를 표시합니다.
 
 ```
 Encrypted password:  
@@ -41,8 +40,8 @@ Encrypted password:
 </i class="+ topic>
 ```
 
-[!DNL flashaccess-global.xml] 및 [!DNL flashaccess-tenant.xml] 파일에 지정한 모든 암호는 암호화되어야 합니다.
+에 지정한 모든 암호 [!DNL flashaccess-global.xml] 및 [!DNL flashaccess-tenant.xml] 파일을 암호화해야 합니다.
 
 >[!NOTE]
 >
->보호된 스트리밍을 위한 Primetime DRM Server의 암호 스크램블러 유틸리티는 참조 구현 라이선스 서버와 함께 제공되는 스크램블러(scrambler)와 호환되지 않습니다.
+>보호 스트리밍을 위한 Primetime DRM 서버의 암호 스크램블러 유틸리티는 참조 구현 라이센스 서버와 함께 제공되는 스크램블러와 상호 교환될 수 없습니다.

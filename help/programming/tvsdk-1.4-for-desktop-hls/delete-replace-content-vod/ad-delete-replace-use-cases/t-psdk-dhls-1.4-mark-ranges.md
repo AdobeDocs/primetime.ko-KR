@@ -1,19 +1,18 @@
 ---
-title: 표시 범위
-description: 표시 범위
+title: 범위 표시
+description: 범위 표시
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 173769cd-6580-4461-9dbc-5bb2fed346d2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 0%
 
 ---
 
+# 범위 표시{#mark-ranges}
 
-# 표시 범위{#mark-ranges}
-
-`localTime`의 `begin`과 `end` 사이의 `TimeRanges`을 타임라인의 `AdBreak`로 표시합니다. 다른 광고 설정은 무시됩니다.
+표시 `TimeRanges` 다음 사이 `begin` 및 `end` 위치: `localTime` as a `AdBreak` 타임라인에서. 다른 광고 설정은 무시됩니다.
 
 1. 시간 범위를 표시합니다.
 
@@ -58,4 +57,3 @@ ht-degree: 0%
        "id": "vod_004"
    }
    ```
-

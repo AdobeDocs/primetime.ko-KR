@@ -1,18 +1,17 @@
 ---
-description: Adobe Flash Player을 사용하는 데 도움이 되는 일부 API가 있습니다.
-title: Adobe Flash Player에 대한 유용한 API
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: Adobe Flash Player 사용에 도움이 될 수 있는 몇 가지 API가 있습니다.
+title: Adobe Flash Player에 유용한 API
+exl-id: 3a80088b-382e-4624-bbaa-6d7e9f0126e2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
 
 ---
 
+# Adobe Flash Player에 유용한 API{#helpful-apis-for-the-adobe-flash-player}
 
-# Adobe Flash Player{#helpful-apis-for-the-adobe-flash-player}에 대한 유용한 API
-
-Adobe Flash Player을 사용하는 데 도움이 되는 일부 API가 있습니다.
+Adobe Flash Player 사용에 도움이 될 수 있는 몇 가지 API가 있습니다.
 
 ## AdobePSDK.MediaResource {#section_8C339FA1386D4B1A926A1459B2619E5E}
 
@@ -20,7 +19,7 @@ Adobe Flash Player을 사용하는 데 도움이 되는 일부 API가 있습니�
 new MediaResource(url, type, metadata, forceFlash)
 ```
 
-지원되는 경우 `forceFlash` 매개 변수를 사용하여 재생 기술 결정 시퀀스를 재정의하고 구현에서 Flash Player을 사용하도록 할 수 있습니다.
+지원되는 경우 `forceFlash` 재생 기술 결정 시퀀스를 재정의하고 구현이 Flash Player을 사용하도록 하는 매개 변수입니다.
 
 <!--<a id="section_FEE3205B532446498771F7DD55B5E79F"></a>-->
 
@@ -69,4 +68,3 @@ AdobePSDK.setAuthorizationTokenFilename(authorizationTokenFilename);
 */ 
 AdobePSDK.setAuthorizationTokenType(authorizationTokenType);
 ```
-

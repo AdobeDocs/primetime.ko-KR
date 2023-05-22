@@ -2,17 +2,16 @@
 title: 라이선스 요청 오류 처리
 description: 라이선스 요청 오류 처리
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7cfdebc5-db2b-4629-98e6-31ad71cb424c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
-
 # 라이선스 요청 오류 처리 {#license-request-error-handling}
 
-요청 구문 분석 중에 오류가 발생하면 `HandlerParsingException`이(가) 발생합니다. 이 예외는 클라이언트에 반환되는 오류 정보를 포함합니다. 오류 정보를 검색해야 하는 경우 `HandlerParsingException.getErrorData()`을(를) 호출해야 합니다. DRM 정책 요구 사항이 충족되지 않아 라이선스를 생성하는 동안 오류가 발생하면 `PolicyEvaluationException`이(가) 발생합니다. 이 예외는 클라이언트로 반환되는 `ErrorData`도 포함합니다.
+요청 구문 분석 중에 오류가 발생하는 경우 `HandlerParsingException` 발생합니다. 이 예외에는 클라이언트에 반환되는 오류 정보가 포함됩니다. 오류 정보를 검색해야 하는 경우 `HandlerParsingException.getErrorData()`. DRM 정책 요구 사항이 충족되지 않아 라이센스를 생성하는 도중 오류가 발생하는 경우 `PolicyEvaluationException` 발생합니다. 이 예외에는 다음도 포함됩니다 `ErrorData` 클라이언트로 반환됩니다.
 
-라이선스 생성 중 DRM 정책이 평가되는 방법에 대한 자세한 내용은 `LicenseRequestMessage.generateLicense()`에 대한 API 설명서를 참조하십시오.
+다음에 대한 API 설명서 참조: `LicenseRequestMessage.generateLicense()` 라이센스 생성 중에 DRM 정책을 평가하는 방법에 대한 자세한 내용.

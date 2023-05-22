@@ -1,20 +1,19 @@
 ---
-description: 소스 목록의 forceflash 플래그는 URL에 대한 Flash 폴백을 적용합니다. 이 URL의 경우 Adobe Flash Player을 사용하여 콘텐트를 재생할 수 있습니다.
-title: 미디어 소스 목록을 사용하여 Flash 폴백 강제 수행
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 소스 목록의 forceflash 플래그는 URL에 대한 Flash 폴백을 강제 적용합니다. 이 URL의 경우 Adobe Flash Player을 사용하여 콘텐츠를 재생할 수 있습니다.
+title: 미디어 소스 목록을 사용하여 Flash 폴백 강제 실행
+exl-id: 657bf9b1-d911-489d-80ca-2956b008431b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
+# 미디어 소스 목록을 사용하여 Flash 폴백 강제 실행{#forcing-the-flash-fallback-using-the-media-source-list}
 
-# 미디어 소스 목록{#forcing-the-flash-fallback-using-the-media-source-list}을(를) 사용하여 Flash 폴백 강제 수행
+소스 목록의 forceflash 플래그는 URL에 대한 Flash 폴백을 강제 적용합니다. 이 URL의 경우 Adobe Flash Player을 사용하여 콘텐츠를 재생할 수 있습니다.
 
-소스 목록의 forceflash 플래그는 URL에 대한 Flash 폴백을 적용합니다. 이 URL의 경우 Adobe Flash Player을 사용하여 콘텐트를 재생할 수 있습니다.
-
-미디어 소스 목록(예: `sources.js` 파일)에서 `forceflash`을 `true`로 설정할 수 있습니다. 예:
+미디어 소스 목록(예: `sources.js` file), 다음을 설정할 수 있습니다. `forceflash` 끝 `true`. 예:
 
 ```js
 { 
@@ -31,4 +30,3 @@ ht-degree: 0%
         "forceflash" : true
 },
 ```
-

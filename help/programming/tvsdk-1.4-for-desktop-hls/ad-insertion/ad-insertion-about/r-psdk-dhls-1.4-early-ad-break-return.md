@@ -1,44 +1,43 @@
 ---
-description: 라이브 스트림 광고 삽입의 경우, 중단에 있는 모든 광고가 완료되기 전에 광고 나누기를 종료해야 할 수 있습니다.
-title: 조기 광고 중단 반환 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 라이브 스트림 광고 삽입의 경우, 광고 브레이크의 모든 광고가 완료될 때까지 재생되기 전에 광고 브레이크를 종료해야 할 수 있습니다.
+title: 조기 광고 브레이크 반환 구현
+exl-id: 584e870e-1408-41a9-bb6f-e82b921fe99e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-
 # 조기 광고 브레이크 반환 구현{#implementing-an-early-ad-break-return}
 
-라이브 스트림 광고 삽입의 경우, 중단에 있는 모든 광고가 완료되기 전에 광고 나누기를 종료해야 할 수 있습니다.
+라이브 스트림 광고 삽입의 경우, 광고 브레이크의 모든 광고가 완료될 때까지 재생되기 전에 광고 브레이크를 종료해야 할 수 있습니다.
 
 >[!NOTE]
 >
->스플라이스 아웃/인 광고 마커( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN` 및 `#EXT-X-CUE`)에 가입해야 합니다.
+>스플라이스 아웃/인 광고 마커에 가입해야 합니다( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, 및 `#EXT-X-CUE`).
 
-고려해야 할 몇 가지 요구 사항은 다음과 같습니다.
+다음은 고려해야 할 몇 가지 요구 사항입니다.
 
-* 선형 또는 FER 스트림에 나타나는 `EXT-X-CUE-IN`(또는 상응하는 마커 태그)와 같은 마커를 구문 분석합니다.
+* 다음과 같은 마커 구문 분석 `EXT-X-CUE-IN` 선형 또는 FER 스트림에 나타나는 (또는 상응하는 마커 태그).
 
-   마커를 광고 초기 반환점의 마커로 등록합니다. 재생하는 동안 이 마커 위치가 있을 때까지 `adBreaks`만 재생하면 맨 앞의 `EXE-X-CUE-OUT` 마커로 표시된 `adBreak` 지속 시간을 재정의합니다.
+   마커를 광고 초기 반환점에 대한 마커로 등록합니다. 재생 전용 `adBreaks` 재생 중에 이 마커 위치까지. `adBreak` 행간으로 표시 `EXE-X-CUE-OUT` 마커.
 
-* 동일한 `EXT-X-CUE-OUT` 마커에 대해 두 개의 `EXT-X-CUE-IN` 마커가 존재하는 경우 나타나는 첫 번째 `EXT-X-CUE-IN` 마커는 카운트되는 마커입니다.
+* 2인 경우 `EXT-X-CUE-IN` 마커가 동일한 항목에 존재합니다. `EXT-X-CUE-OUT` 마커, 첫 번째 `EXT-X-CUE-IN` 표시되는 마커가 카운트됩니다.
 
-* `EXE-X-CUE-IN` 마커가 선행 `EXT-X-CUE-OUT` 마커 없이 타임라인에 나타나면 `EXE-X-CUE-IN` 마커가 무시됩니다.
+* 다음과 같은 경우 `EXE-X-CUE-IN` 마커가 타임라인에 행간 없이 표시됨 `EXT-X-CUE-OUT` 마커, `EXE-X-CUE-IN` 마커가 삭제됩니다.
 
-   라이브 스트림에서 행간 `EXT-X-CUE-OUT` 표시자가 창 밖으로 이동된 경우 TVSDK가 응답하지 않습니다.
+   라이브 스트림에서 앞에 오는 경우 `EXT-X-CUE-OUT` 마커가 창 밖으로 방금 이동했습니다. TVSDK가 이에 응답하지 않습니다.
 
-* 광고 중단에서 일찍 돌아오는 경우 광고 중단이 종료되어야 할 때 재생 헤드가 원래 위치로 돌아가서 해당 위치의 기본 컨텐츠 재생을 다시 시작할 때까지 `adBreak`이 재생됩니다.
+* 광고 브레이크에서 조기에 돌아오는 경우 `adBreak` 광고 브레이크가 종료되어야 하는 원래 위치로 플레이헤드가 돌아올 때까지 재생하고 해당 위치에서 기본 컨텐츠 재생을 재개합니다.
 
 ## SpliceOut 및 SpliceIn {#section_36DD55BA58084E21BD3DC039BB245C82}
 
-`SpliceOut` 및  `SpliceIn` 마커는 광고 분리의 시작과 끝을 표시합니다. `EXE-X-CUE` 마커의 `SpliceOut` 유형의 지속 시간은 0일 수 있고 `EXE-X-CUE` 마커의 `SpliceIn` 유형은 광고 중단의 끝을 표시합니다. 태그는 하나의 태그에 나타나며 유형별로 다릅니다.
+`SpliceOut` 및 `SpliceIn` 마커는 광고 브레이크의 시작과 끝을 표시합니다. 기간 `SpliceOut` 유형 `EXE-X-CUE` 마커는 0이고 `SpliceIn` 유형 `EXE-X-CUE` 마커는 광고 브레이크의 끝을 표시합니다. 이 태그는 하나의 태그에 표시되며 유형에 따라 다릅니다.
 
 **유형이 다른 하나의 마커**
 
-예를 들어 다음과 같이 서로 다른 유형의 마커가 있습니다.
+예를 들어 유형이 다른 하나의 마커는 다음과 같습니다.
 
 ```
 #EXTM3U#EXT-X-TARGETDURATION:10
@@ -65,13 +64,13 @@ https://server-host/path/file57.ts
 https://server-host/path/file58.ts
 ```
 
-유형이 다른 하나의 마커에서 `SpliceOut` 유형의 지속 시간이 0이면 모든 광고 중단에 대해 `SpliceOut` 및 `SpliceIn`가 함께 작업해야 합니다. 현재 지속 시간이 0이 아닌 `SpliceOut` 마커로 `SpliceIn` 마커를 더 일반적으로 연결할 필요가 없습니다.
+다른 유형의 한 마커에서 의 지속 시간이 `SpliceOut` 유형은 0이고, `SpliceOut` 및 `SpliceIn` 광고 브레이크마다 함께 작업해야 합니다. 현재, `SpliceOut` 기간이 0이 아닌 마커이며 연결할 필요가 없습니다. `SpliceIn` 마커가 더 일반적입니다.
 
-**2개의 개별 마커**
+**두 개의 개별 마커**
 
-더 일반적인 시나리오는 지속 시간이 0이 아닌 `SpliceOut` 마커이며 `SpliceIn` 마커를 연결할 필요가 없습니다. 여기서 `SpliceIn` 마커는 광고 중단 재생 중에 광고 나누기의 끝을 표시하지만 광고 나누기는 `SpliceIn` 마커 위치에서 짧게 잘라지고 기본 컨텐츠가 이 위치에서 재생되기 시작합니다.
+보다 일반적인 시나리오는 다음과 같습니다. `SpliceOut` 기간이 0이 아니고 연결할 필요가 없는 마커 `SpliceIn` 마커. 여기, 연결 `SpliceIn` 마커는 광고 브레이크 재생 중에 광고 브레이크의 끝을 표시하지만 광고 브레이크는 `SpliceIn` 마커 위치이며, 기본 콘텐츠는 이 위치에서 재생을 시작합니다.
 
-예를 들어 다음과 같이 2개의 개별 마커가 있습니다.
+예를 들어 두 개의 마커가 서로 구분되어 있습니다.
 
 ```
 #EXT-X-CUE-OUT:ID=105,DURATION=30.0,TIME=1081.08
@@ -87,4 +86,3 @@ https://server-host/path/file58.ts
 #EXTINF:6.006000,no-desc
 /live/hls/nbc-fer/QualityLevels(2200000)/Fragments(video=14332589330665811,format=m3u8-aapl-v4)
 ```
-

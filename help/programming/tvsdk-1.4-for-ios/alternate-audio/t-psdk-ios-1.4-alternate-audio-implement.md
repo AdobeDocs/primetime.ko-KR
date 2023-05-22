@@ -1,23 +1,22 @@
 ---
-description: 늦게 바인딩 오디오에서는 PTMediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되고 몇 개의 대체 오디오 스트림이 포함될 수 있는 비디오를 재생합니다.
+description: 지연 바인딩 오디오는 PTMediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되어 있으며 여러 대체 오디오 스트림을 포함할 수 있는 비디오를 재생합니다.
 title: 대체 오디오 트랙 액세스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f3ab9573-c189-4132-820d-0ce98ee170d1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
 
 ---
 
-
 # 대체 오디오 트랙 액세스{#access-alternate-audio-tracks}
 
-늦게 바인딩 오디오에서는 PTMediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되고 몇 개의 대체 오디오 스트림이 포함될 수 있는 비디오를 재생합니다.
+지연 바인딩 오디오는 PTMediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되어 있으며 여러 대체 오디오 스트림을 포함할 수 있는 비디오를 재생합니다.
 
-1. MediaPlayer가 `PTMediaPlayerStatusReady` 상태 이상이 될 때까지 기다립니다.
-1. 이 이벤트에 대한 의견 수렴:
+1. MediaPlayer가 적어도 다음 위치에 있을 때까지 대기 `PTMediaPlayerStatusReady` 상태.
+1. 다음 이벤트를 수신합니다.
 
-   알림 `PTMediaPlayerItemMediaSelectionOptionsAvailable`:오디오 트랙의 초기 목록을 사용할 수 있습니다.
+   알림 `PTMediaPlayerItemMediaSelectionOptionsAvailable`: 오디오 트랙의 초기 목록을 사용할 수 있습니다.
 
    ```
    [[NSNotificationCenter defaultCenter] addObserver:self 
@@ -26,7 +25,7 @@ ht-degree: 0%
         object:self.player];
    ```
 
-1. `PTMediaPlayerItem` 인스턴스에서 사용 가능한 오디오 트랙을 가져옵니다.
+1. 에서 사용 가능한 오디오 트랙 가져오기 `PTMediaPlayerItem` 인스턴스.
 
    ```
    - (void) onMediaPlayerItemMediaSelectionOptionsAvailable:(NSNotification *) notification { 
@@ -35,5 +34,5 @@ ht-degree: 0%
    }
    ```
 
-1. (선택 사항) 사용 가능한 트랙을 사용자에게 표시합니다.
-1. `PTMediaPlayerItem` 인스턴스에서 선택한 오디오 트랙을 설정합니다.
+1. (선택 사항) 사용 가능한 트랙을 사용자에게 제공합니다.
+1. 에서 선택한 오디오 트랙을 설정합니다. `PTMediaPlayerItem` 인스턴스.

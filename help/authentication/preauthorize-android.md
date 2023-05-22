@@ -1,29 +1,28 @@
 ---
 title: Android 사전 인증
 description: Android 사전 인증
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: b5337595-135f-4981-a578-2da432f125d6
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-
-
-# 사전 인증 {#preuthorize-android}
+# 사전 승인 {#preuthorize-android}
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
 </br>
 
 
-하나 이상의 리소스에 대한 사전 인증 결정을 얻으려면 애플리케이션에서 Preauthorization API 방법을 사용해야 합니다. API 사전 인증 요청은 UI 힌트 및/또는 콘텐츠 필터링에 사용해야 합니다. 사용자에게 지정된 리소스에 대한 액세스 권한을 부여하기 전에 실제 인증 API 요청을 수행해야 합니다.
+하나 이상의 리소스에 대한 사전 권한 부여 결정을 받으려면 애플리케이션에서 사전 권한 부여 API 메서드를 사용해야 합니다. API 사전 인증 요청은 UI 힌트 및/또는 콘텐츠 필터링에 사용해야 합니다. 사용자에게 지정된 리소스에 대한 액세스 권한을 부여하기 전에 실제 인증 API 요청을 수행해야 합니다.
 
 
 
-예기치 않은 오류(예: 네트워크 문제, MVPD 인증 끝점을 사용할 수 없음 등)가 발생한 경우 Adobe Primetime 인증 서비스에서 API 사전 인증 요청을 처리할 때 API 사전 승인 응답 결과의 일부로 영향을 받는 리소스에 대해 하나 또는 여러 개의 분리된 오류 정보가 포함됩니다.
+예기치 않은 오류가 발생하는 경우(예: 네트워크 문제, MVPD 인증 끝점을 사용할 수 없음 등) Adobe Primetime 인증 서비스에서 사전 승인 API 요청을 처리할 때 발생하는 하나 이상의 분리된 오류 정보는 사전 승인 API 응답 결과의 일부로 영향을 받는 리소스에 포함됩니다.
 
 
 ## `public void preauthorize(PreauthorizeRequest request, AccessEnablerCallback<PreauthorizeResponse> callback);`
@@ -31,18 +30,18 @@ ht-degree: 0%
 
 **설명:** 
 
-**사용 가능:** v3.6.0+
+**가용성:** v3.6.0+
 
 **매개 변수:**
 
-- *PreauthorizationRequest*: 요청을 정의하는 데 사용되는 빌더 개체
-- AccessEnablerCallback : API 응답을 반환하는 데 사용되는 콜백
-- PreauthorizationResponse : API 응답 콘텐츠를 반환하는 데 사용되는 개체
+- *PreauthorizeRequest*: 요청을 정의하는 데 사용되는 빌더 개체
+- AccessEnablerCallback : API 응답을 반환하는 데 사용되는 콜백입니다
+- PreauthorizeResponse : API 응답 콘텐츠를 반환하는 데 사용되는 개체
 
 
-### public 클래스 PreauthorizeRequest {#androidpreauthorizerequest}
+### 공용 클래스 PreauthorizeRequest {#androidpreauthorizerequest}
 
-**class PreauthorizationRequest.Builder**\
+**클래스 PreauthorizeRequest.Builder**\
  
 
 ```java
@@ -86,7 +85,7 @@ ht-degree: 0%
 ```
 
 
-**공용 빌더 disableFeatures(설정\&lt;preauthorizerequest.feature>
+**public Builder disableFeatures(Set\&lt;preauthorizerequest.feature>
 기능)**
 
 ```
@@ -107,9 +106,9 @@ ht-degree: 0%
     ///
 ```
 
-**public PreauthorizationRequest build()**
+**public PreauthorizeRequest build()**
 
-**enum PreauthorizationRequest.Feature**
+**enum PreauthorizeRequest.Feature**
 
 ```java
     ///
@@ -143,7 +142,7 @@ ht-degree: 0%
 
  
 
-### class PreauthorizationResponse {#preauthorizeresponse}
+### 클래스 PreauthorizeResponse {#preauthorizeresponse}
 
 ```java
     ///
@@ -289,4 +288,3 @@ ht-degree: 0%
         }
     });
 ```
-

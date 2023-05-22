@@ -1,8 +1,7 @@
 ---
-title: DRMContentData를 사용하여 라이선스 미리 로드
-description: DRMContentData를 사용하여 라이선스 미리 로드
+title: DRMContentData를 사용하여 라이센스 미리 로드
+description: DRMContentData를 사용하여 라이센스 미리 로드
 copied-description: true
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '130'
@@ -11,20 +10,20 @@ ht-degree: 0%
 ---
 
 
-# DRMContentData를 사용하여 라이선스 미리 로드{#using-drmcontentdata-to-pre-load-licenses}
+# DRMContentData를 사용하여 라이센스 미리 로드{#using-drmcontentdata-to-pre-load-licenses}
 
-다음 단계에서는 `DRMContentData` 개체를 사용하여 보호된 미디어 파일의 라이센스를 미리 로드하는 작업 과정에 대해 설명합니다.
+다음 절차에서는 를 사용하여 보호된 미디어 파일에 대한 라이센스를 미리 로드하는 워크플로를 설명합니다. `DRMContentData` 개체.
 
-1. 패키지된 내용에 대한 이진 DRM 메타데이터를 가져옵니다.
+1. 패키지된 콘텐츠에 대한 바이너리 DRM 메타데이터를 가져옵니다.
 
-   Primetime DRM Java 참조 구현 패키지를 사용하는 경우 이 메타데이터 파일은 [!DNL .metadata] 확장자로 자동으로 생성됩니다. 예를 들어 `URLLoader` 클래스를 사용하여 이 메타데이터를 다운로드할 수 있습니다. HLS 또는 HDS 컨텐츠를 사용하는 경우 메타데이터는 컨텐츠 매니페스트 파일( [!DNL .m3u8] 또는 [!DNL .f4m])에서 참조되거나 매니페스트 파일을 Base64 인코딩 문자열(소비 전에 Base64 디코딩되어야 함)로 포함시킵니다.**
-1. `DRMContentData` 객체를 만들어 메타데이터를 생성자 함수에 전달합니다.
+   Primetime DRM Java Reference Implementations Packager를 사용하는 경우 이 메타데이터 파일은 [!DNL .metadata] 확장명. 예를 들어 다음을 사용하여 이 메타데이터를 다운로드할 수 있습니다. `URLLoader` 클래스. HLS 또는 HDS 콘텐츠를 사용하는 경우 콘텐츠 매니페스트 파일( )에서 메타데이터가 참조됩니다. [!DNL .m3u8] 또는 [!DNL .f4m]) 또는 포함됨 *다음 범위 내* 매니페스트 파일을 Base64로 인코딩된 문자열(소비하기 전에 Base64로 디코딩해야 함)로 지정합니다.
+1. 만들기 `DRMContentData` 개체, 메타데이터를 생성자 함수에 전달:
 
    ```
    var drmData:DRMContentData = new DRMContentData( metadata );
    ```
 
-1. 나머지 단계는 *컨텐트 보호 프로세스 세부 사항*&#x200B;에 설명된 워크플로우와 동일합니다.
+1. 나머지 단계는에 설명된 워크플로와 동일합니다 *콘텐츠 보호 프로세스 세부 정보*.
 
 <!--<a id="example_EBEDA8E10F6344CABA4DE31DC342B8F8"></a>-->
 

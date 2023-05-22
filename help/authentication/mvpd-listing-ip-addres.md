@@ -1,21 +1,21 @@
 ---
-title: MVPD IP 주소 목록
-description: MVPD IP 주소 목록
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+title: IP 주소의 MVPD 목록
+description: IP 주소의 MVPD 목록
+exl-id: be18084c-22f5-47b5-b088-d9032681113d
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 24%
 
 ---
 
-
-# MVPD IP 주소 목록
+# IP 주소의 MVPD 목록
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
-MVPD/Adobe Primetime 인증 통합의 경우 MVPD 방화벽에서 특정 IP를 허용해야 합니다. 송신 IP는 다음과 같습니다.
+MVPD/Adobe Primetime 인증 통합의 경우 MVPD의 방화벽에서 특정 IP를 허용해야 합니다. 다음은 이그레스 IP입니다.
 
 * 34.233.60.171
 * 34.233.163.243

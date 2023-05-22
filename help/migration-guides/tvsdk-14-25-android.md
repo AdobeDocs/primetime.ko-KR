@@ -1,74 +1,73 @@
 ---
-title: Android용 TVSDK 1.4~2.5(Java)
-description: TVSDK 2.5는 성능, 보안, 통합 향상 등의 측면에서 버전 1.4보다 다양한 이점을 제공합니다.
+title: Android용 TVSDK 1.4 - 2.5(Java)
+description: TVSDK 2.5는 성능, 보안, 향상된 통합 등의 측면에서 버전 1.4에 비해 여러 이점을 제공합니다.
 contentOwner: vishgupt
 products: SG_PRIMETIME
 topic-tags: migration
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: 3b7f8355-ebea-4322-aef4-5393308391b5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
 
+# Android용 TVSDK 1.4 - 2.5(Java) {#tvsdk-to-for-android-java}
 
-# Android용 TVSDK 1.4~2.5(Java) {#tvsdk-to-for-android-java}
+TVSDK 2.5는 성능, 보안, 향상된 통합 등의 측면에서 버전 1.4에 비해 여러 이점을 제공합니다.
 
-TVSDK 2.5는 성능, 보안, 통합 향상 등의 측면에서 버전 1.4보다 다양한 이점을 제공합니다.
+TVSDK는 가장 중요한 디바이스에서 가장 큰 문제를 해결합니다. 안드로이드는 시장 점유율 86%를 넘기며 계속해서 글로벌 우위를 차지하고 있다. Android의 TVSDK로 마이그레이션하면 재생 성능을 최적화하여 사용자 참여를 향상시키고 새로운 콘텐츠 형식을 지원하여 출시 시기를 앞당길 수 있습니다.
 
-TVSDK는 가장 중요한 디바이스에서 가장 큰 과제를 해결해줍니다. Android는 시장 점유율의 86%를 넘어 전 세계적으로 계속 우세하다. Android 기반의 TVSDK로 마이그레이션하면 재생 성능을 최적화하여 사용자 참여도를 향상시키고 새로운 컨텐츠 포맷에 대한 지원을 통해 출시 시간을 단축할 수 있습니다.
+## TVSDK v2.5로 마이그레이션할 때의 이점 {#benefits-of-migrating-to-tvsdk-v}
 
-## TVSDK v2.5 {#benefits-of-migrating-to-tvsdk-v}으로 마이그레이션하여 얻을 수 있는 이점
+TVSDK 2.5는 성능, 보안, 향상된 통합 등의 측면에서 버전 1.4에 비해 여러 이점을 제공합니다. 이 새 버전으로 마이그레이션하는 것의 이점을 빠르게 알려면 계속 읽어 보십시오.
 
-TVSDK 2.5는 성능, 보안, 통합 향상 등의 측면에서 버전 1.4보다 다양한 이점을 제공합니다. 이 새로운 버전으로 마이그레이션하여 얻을 수 있는 이점에 대해 자세히 알아보려면 읽어 보십시오.
-
-제3자 벤치마크 연구에 따르면 v2.5는 시작 시간의 5배 감소 및 업계 평균 드롭된 프레임의 3.8배 감소 기능을 제공합니다.
+타사 벤치마킹 연구에 따르면 v2.5는 업계 평균보다 시작 시간을 5배 단축하고 프레임 축소를 3.8배 단축합니다.
 
 | 성능 기능 | 설명 |
 |--- |--- |
-| VOD 및 실시간 인스턴트 온 | TV와 같은 경험을 제공하기 위해 채널 전환 시 VOD 및 실시간 선형 스트리밍에 대한 즉각적인 재생이 가능하도록 초기 세그먼트를 미리 로드할 수 있습니다. |
-| 레이지 광고 로딩 | 병렬 스레드에서 미드롤 광고를 확인하는 동안 프리롤이나 컨텐츠를 사용할 수 있게 되면 재생을 시작합니다. |
-| 지속적인 네트워크 연결 | 네트워킹 코드의 대기 시간을 줄이고 효율성을 높여 재생 성능을 향상시킵니다. |
-| 향상된 ABR 논리 | 새로운 ABR 로직은 버퍼 길이, 버퍼 길이 변경 속도 및 측정된 대역폭을 기반으로 합니다. 따라서 ABR은 대역폭이 변경될 때 올바른 비트 전송률을 선택하고 버퍼 길이가 변경되는 속도를 모니터링하여 비트율 스위치가 실제로 발생하는 횟수를 최적화합니다. |
-| 부분 세그먼트 다운로드 | 클라이언트 쪽에서 비디오를 안전하게 렌더링하기 위해 세그먼트의 충분한 프레임을 사용할 수 있게 되면 바로 재생을 시작합니다. |
-| 병렬 다운로드 | TVSDK는 오디오 및 비디오 세그먼트를 동시에 다운로드하여 고정 컨텐츠로 재생성을 최적화합니다. |
+| VOD 및 라이브를 위한 인스턴트 온 | 채널 전환 시 VOD 및 라이브 선형 스트림에 즉시 재생하기 위해 초기 ts 세그먼트를 미리 로드하여 TV와 같은 환경을 제공합니다. |
+| 지연 광고 로드 | 병렬 스레드에서 미드롤 광고를 해결하는 동안 프리롤 또는 컨텐츠를 사용할 수 있는 즉시 재생을 시작합니다. |
+| 영구 네트워크 연결 | 효율성은 높이고 네트워킹 코드의 지연 시간은 줄임으로써 더 빠른 재생 성능을 제공합니다. |
+| 향상된 ABR 논리 | 새로운 ABR 논리는 버퍼 길이, 버퍼 길이 변경률 및 측정된 대역폭을 기반으로 합니다. 이렇게 하면 ABR에서 대역폭이 변동할 때 올바른 비트율을 선택하고 버퍼 길이가 변하는 속도를 모니터링하여 비트율 전환이 실제로 발생하는 횟수를 최적화합니다. |
+| 부분 세그먼트 다운로드 | 세그먼트에서 충분한 프레임을 클라이언트 측에서 비디오를 안정적으로 렌더링할 수 있는 즉시 재생을 시작합니다. |
+| 병렬 다운로드 | TVSDK는 중복 제거된 콘텐츠에 대해 오디오 및 비디오 세그먼트를 동시에 다운로드하여 재생 성능을 최적화합니다. |
 
-재생 기능은 디지털 기반의 선형 방송 경험을 제공하여 소비자의 참여를 높일 수 있습니다. 또한 HD 재생을 위한 Wideine과 같은 기본 DRM을 활용할 수 있습니다.
+재생 기능은 디지털 상에서의 선형 브로드캐스트 경험을 제공함으로써 소비자 참여를 개선합니다. 또한 HD 재생을 위해 Widevine과 같은 기본 DRM을 활용하는 데 도움이 됩니다.
 
 | 재생 기능 | 설명 |
 |--- |--- |
-| MP4 재생 | MP4 짧은 클립을 TVSDK 내에서 재생하기 위해 다시 코딩할 필요가 없습니다. |
+| MP4 재생 | MP4 짧은 클립은 TVSDK 내에서 재생되도록 다시 코딩할 필요가 없습니다. |
 | DASH VOD 컨텐츠 재생 | 기본 DASH VOD 재생 사용 사례가 지원됩니다. |
-| ABR을 사용한 부드러운 트리밍 | 낮은 속도의 키프레임과 빠른 속도의 I-Frame을 사용하여 HLS에서 빨리 감기 및 되감기를 지원합니다. 지원되는 모든 프레임에 대한 ABR 지원. |
+| ABR로 부드럽게 트리크플레이 | 낮은 속도에서 키프레임을 사용하고 더 빠른 속도에서 I-Frame을 사용하여 HLS에서 빨리 앞으로 감기 및 되감기를 지원합니다. 지원되는 모든 프레임에 대한 ABR 지원. |
 
-이 기능은 기본 DRM을 통한 HD 재생과 같은 스튜디오 제한 사항을 충족하는 데 중요합니다.
-
-| 기능 | 설명 |
-|--- |--- |
-| 해상도 기반 출력 보호 | 재생은 DRM 요구 사항에 따라 허용되는 특정 해상도로만 제한할 수 있습니다. Primetime DRM을 통해서만 제공됩니다. |
-| 무선 지원 | 기본 DRM 사용 사례를 활성화하는 DASH VOD 스트림에서 지원됩니다. |
-
-직접 청구 기능을 향상시켜주므로 매월 청구 관련 수동 보고서를 작성할 필요가 없습니다. VHL 2.0을 사용하면 사전 빌드 통합과 보다 정확한 추적 기능으로 출시 시간을 단축할 수 있습니다.
+이 기능은 기본 DRM을 통한 HD 재생과 같은 스튜디오 제한을 충족시키는 데 중요합니다.
 
 | 기능 | 설명 |
 |--- |--- |
-| 해자 통합 | 해자에서 광고 보기 측정 지원. |
-| VHL 2.0 | Adobe Analytics에 대한 사용 데이터 자동 수집을 위해 최적화된 최신 비디오 하트비트 라이브러리 통합 |
-| 장애 조치 지원 | 호스트 서버, 재생 목록 파일 및 세그먼트에 장애가 발생하더라도 중단 없이 계속 재생할 수 있는 추가 전략이 구현되었습니다. |
-| 직접 청구 통합 | 고객이 사용하는 스트림에 대해 Adobe Primetime에서 인증한 Adobe Analytics 백엔드로 청구 지표를 전송합니다. |
+| 해상도 기반 출력 보호 | 재생은 DRM 요구 사항에 의해 허용되는 특정 해상도로만 제한할 수 있습니다. Primetime DRM을 통해서만 사용할 수 있습니다. |
+| Widevine 지원 | 기본 DRM 사용 사례를 활성화할 수 있도록 DASH VOD 스트림과 함께 지원됩니다. |
+
+직접 청구 기능 향상으로 매월 청구에 대한 수동 보고서를 작성할 필요가 없어졌습니다. VHL 2.0을 사용하면 빌드 전 통합과 추적 정확도를 높여 출시 시기를 앞당길 수 있습니다.
+
+| 기능 | 설명 |
+|--- |--- |
+| Moat 통합 | Moat에서 광고 가시성 측정을 지원합니다. |
+| VHL 2.0 | Adobe Analytics에 대한 사용 데이터의 자동 수집을 위해 최적화된 최신 비디오 하트비트 라이브러리 통합입니다. |
+| 페일오버 지원 | 호스트 서버, 재생 목록 파일 및 세그먼트의 실패에도 불구하고 중단 없는 재생을 계속하기 위해 구현된 추가 전략입니다. |
+| 직접 청구 통합 | 고객이 사용한 스트림에 대해 Adobe Primetime에서 인증한 Adobe Analytics 백엔드에 청구 지표를 보냅니다. |
 
 >[!NOTE]
 >
->TVSDK v1.4의 모든 기능은 다중 CDN 지원을 제외한 v2.5에서 지원됩니다.
+>Multi-CDN 지원을 제외한 v2.5에서는 TVSDK v1.4의 모든 기능이 지원됩니다.
 
 ## 마이그레이션 프로세스 개요 {#overview-of-the-migration-process}
 
-TVSDK 1.4에서 2.5로 원활하게 마이그레이션하려면 버전 2.5 라이브러리로 변경하고 다시 컴파일한 다음 이 문서를 사용하여 발생하는 문제를 디버깅해야 합니다.
+TVSDK 1.4에서 2.5로 원활하게 마이그레이션하려면 버전 2.5 라이브러리로 변경하고 다시 컴파일한 다음 이 문서를 사용하여 발생하는 모든 문제를 디버깅해야 합니다.
 
-TVSDK v1.4 라이브러리는 v2.5 라이브러리와 함께 작동하지 않으며 함께 사용할 수 없습니다. TV SDK 2.5와 함께 v2.5 라이브러리를 사용하고 응용 프로그램 및 통합을 마이그레이션하여 TVSDK 2.5로 업그레이드해야 합니다. 이 문서에서는 애플리케이션 코드의 변경 방법, 변경 방법 및 재컴파일 중 오류를 처리하는 방법에 대해 설명합니다.
+TVSDK v1.4 라이브러리는 v2.5 라이브러리와 함께 사용할 수 없으며 함께 사용할 수 없습니다. TVSDK 2.5로 업그레이드하려면 v2.5 라이브러리를 TVSDK 2.5와 함께 사용하고 애플리케이션 및 통합을 마이그레이션해야 합니다. 이 문서에서는 응용 프로그램 코드의 변경 방법 및 내용과 다시 컴파일하는 동안 오류를 해결하는 방법에 대해 설명합니다.
 
-psdk.jar 파일은 다른 기능을 지원하기 위해 타사 라이브러리를 사용합니다. 라이브러리 제거를 방지하려면 `proguard.cfg` 파일에 다음 내용을 포함하십시오.
+psdk.jar 파일은 다른 기능을 지원하기 위해 타사 라이브러리를 사용합니다. 라이브러리가 제거되지 않도록 하려면 다음을 포함하십시오. `proguard.cfg` 파일:
 
 ```java
 # Adobe TVSDK keep classes
@@ -77,41 +76,41 @@ psdk.jar 파일은 다른 기능을 지원하기 위해 타사 라이브러리�
 { *; }
 ```
 
-`build.gradle` 파일에서 TVSDK 기반 JAR 파일을 포함하려면 컴파일 지시문을 포함해야 합니다. 앱에 Adobe 비디오 분석이 포함된 경우 앱의 Adobe 비디오 분석 통합에 필요한 추가 병에 대한 컴파일 지시문을 포함해야 합니다
+다음에서 `build.gradle` file에서 TVSDK 기반 JAR 파일을 포함하려면 compile 지시문을 포함해야 합니다. 앱에 Adobe Video Analytics가 포함되어 있는 경우 앱에 Adobe Video Analytics 통합에 필요한 추가 jar에 대한 컴파일 지시문을 포함해야 합니다
 
 ```java
 # Compile Adobe TVSDK jars compile files('libs/psdk-va.jar')
 compile files('libs/VideoHeartbeat.jar')
 ```
 
-이 문서에는 여러 가지 사소한 변경 사항이 포함되지 않습니다. API의 사소한 변경 사항은 Android Java API](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html)용 [TVSDK 2.5를 참조하십시오. 해당 C++ API 참조에는 자세한 설명이 있습니다. Android C++ API용 [TVSDK 2.5 API](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/index.html)를 참조하십시오.
+이 문서에서는 여러 가지 사소한 변경 사항에 대해서는 다루지 않습니다. 사소한 API 변경 사항에 대해서는 다음을 참조하십시오. [Android Java API용 TVSDK 2.5](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html). 해당 C++ API 참조에 자세한 설명이 있습니다. 유사한 C++ API 설명서의 경우 다음을 참조하십시오. [Android C++ API용 TVSDK 2.5](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/index.html).
 
-API 사용의 여러 예는 TVSDK로 배포되는 참조 구현에서 다룹니다.
+API 사용의 여러 예는 TVSDK와 함께 배포된 참조 구현에서 다룹니다.
 
 ## TVSDK v2.5의 API 변경 사항 {#api-changes-in-tvsdk-v}
 
-새로운 API, 오래된 API 및 수정된 API는 아래에 설명되어 있습니다.
+새 API, 더 이상 사용되지 않는 API 및 수정된 API는 아래에 설명되어 있습니다.
 
 | TVSDK v1.4 | TVSDK v2.5 | 설명 |
 |--- |--- |--- |
-| import com.adobe.ave.drm.DRMAcquireLicenseSettings | import com.adobe.mediacore.drm.DRMAcquireLicenseSettings; | TVSDK 2.5 API의 모든 클래스 이름은 com.adobe.mediacore 접두어로 시작합니다. 이것은 단지 한 예입니다. |
-| MediaPlayerException, IllegalStateException 또는 IllegalArgumentException | MediaPlayerException | 2.5에서는 API가 MediaPlayerException만 생성합니다. |
-| MediaPlayer.PlayerState(MediaPlayer.Event.PLAYBACK) | MediaPlayerStatus(MediaPlayerEvent.STATUS_CHANGED) | v2.5에서 MediaPlayer.PlayerState는 별도의 열거형 MediaPlayerStatus로 이름이 변경되었습니다. |
-| DefaultMediaPlayer.create (getActivity().getApplicationContext()) | MediaPlayer mediaPlayer = new MediaPlayer(getActivity(). getApplicationContext(); | 객체를 만드는 데 사용되는 정적 메서드는 공용 생성자로 대체됩니다. |
-| MediaPlayer.seekToLocalTime() | MediaPlayer.seekToLocal() | MediaPlayer.seekToLocalTime() 메서드를 이제 MediaPlayer.seekToLocal()이라고 합니다. |
+| com.adobe.ave.drm .DRMAcquireLicenseSettings 가져오기 | com.adobe.mediacore.drm .DRMAcquireLicenseSettings 가져오기; | TVSDK 2.5 API의 모든 클래스 이름은 com.adobe.mediacore 접두사로 시작합니다. 이것은 단지 예시일 뿐입니다. |
+| MediaPlayerException, IllegalStateException 또는 IllegalArgumentException | MediaPlayerException | 2.5에서 API는 MediaPlayerException만 생성합니다. |
+| MediaPlayer.PlayerState(MediaPlayer.Event.PLAYBACK) | MediaPlayerStatus(MediaPlayerEvent.STATUS_CHANGED) | v2.5에서 MediaPlayer.PlayerState의 이름이 별도의 열거형 MediaPlayerStatus로 변경되었습니다. |
+| DefaultMediaPlayer.create (getActivity().getApplicationContext()) | MediaPlayer mediaPlayer = 새로운 MediaPlayer(getActivity(). getApplicationContext()); | 개체를 만드는 데 사용되는 정적 메서드는 공용 생성자로 대체됩니다. |
+| MediaPlayer.seekToLocalTime() | MediaPlayer.seekToLocal() | 이제 MediaPlayer.seekToLocalTime() 메서드를 MediaPlayer.seekToLocal()이라고 합니다. |
 | closedCaptionsTrack.isActive() |  | 사용할 수 없음 |
 | MetadataNode | 메타데이터 | v2.5에서 Metadata 클래스는 v1.4 MetadataNode 클래스의 사용을 대체합니다. |
-| DefaultMetadataKeys | MetadataKeys | v1.4의 DefaultMetadataKeys는 v2.5 열거형 MetadataKeys에 있습니다. |
-| AdvertisingFactory | ContentFactory | v1.4의 AdvertisingFactory가 v2.5에서 ContentFactory로 이름이 변경됨 |
-| PlacementOpportunityDetector | OpportunityGenerator | 감지기는 생성기로 대체됩니다. |
+| 기본 메타데이터 키 | 메타데이터 키 | v1.4의 DefaultMetadataKeys는 v2.5 열거형 MetadataKeys에 있습니다. |
+| AdvertisingFactory | ContentFactory | v1.4의 AdvertisingFactory 이름이 v2.5에서 ContentFactory로 변경됩니다 |
+| PlacementOpportunityDetector | OpporityGenerator | 감지기는 Generator로 교체됩니다. |
 | mediaPlayer.getView().notifyClick(); | mediaPlayer.notifyClick(); | MediaPlayerView의 notifyClick() 메서드가 MediaPlayer 클래스로 이동되었습니다. |
-| public ABRControlParameters(ABRPolicy abrPolicy, int nInitialBitRate, int nMinBitRate, int nMaxBitRate) | public ABRControlParameters(int nInitialBitRate, int nMinBitRate, int nMaxBitRate, ABRPolicy abrPolicy, int nMinTrickPlayBitRate, int n MaxTrickPlayBandwidthUsage, 이중 dMaxPlayoutRate) |  |
+| 공개 ABRControlParameters(ABRPolicy abrPolicy, int nInitialBitRate, int nMinBitRate, int nMaxBitRate) | 공용 ABRControlParameters(int nInitialBitRate, int nMinBitRate, int nMaxBitRate, ABRPolicy abrPolicy, int nMinTrickPlayBitRate, int nMaxTrickPlayBitRate, int nMaxTrickPlayBandwidthUsage, double dMaxPlayoutRate) |  |
 | playbackInformation.getTimeToFirstFrame() |  | 사용할 수 없음 |
-|  | playbackInformation.get IsceptedBandwidth() | TVSDK v2.5 QOSProvider는 스트리밍 세션 동안 인식되는 대역폭을 결정하는 새로운 속성을 가지고 있습니다. |
+|  | playbackInformation.get PerceivedBandwidth() | TVSDK v2.5 QOSProvider에는 스트리밍 세션 중에 인식된 대역폭을 결정하는 새로운 속성이 있습니다. |
 
 ### 제거된 클래스 {#removed-classes}
 
-다음 클래스는 제거되며 이와 비슷한 클래스는 없습니다.
+다음 클래스는 제거되며 해당 클래스가 없습니다.
 
 * `TimeRangeCollection`
 * `PSDKConfig`
@@ -128,7 +127,7 @@ API 사용의 여러 예는 TVSDK로 배포되는 참조 구현에서 다룹니�
 
 TVSDK 2.5 API는 네임스페이스를 통합합니다.
 
-TVSDK 2.5 API의 모든 클래스 이름은 com.adobe.mediacore 접두어로 시작합니다. TVSDK 1.4 API의 일부 클래스 이름은 com.adobe.ave로 시작합니다. 해당 2.5 클래스는 com.adobe.ave를 com.adobe.mediacore로 변경합니다. 예를 들어 1.4 및 2.5에 대한 다음 코드 줄의 변경 사항을 확인하십시오.
+TVSDK 2.5 API의 모든 클래스 이름은 com.adobe.mediacore 접두사로 시작합니다. TVSDK 1.4 API의 일부 클래스 이름은 com.adobe.ave로 시작합니다. 해당 2.5 클래스는 com.adobe.ave를 com.adobe.mediacore로 변경합니다. 예를 들어 1.4 및 2.5에 대한 다음 코드 줄의 변경 사항을 확인합니다.
 
 ```java
 // TVSDK 1.4
@@ -144,8 +143,8 @@ import com.adobe.mediacore.drm.DRMManager; import com.adobe.mediacore.drm.DRMMet
 
 ## 이벤트 처리 변경 사항 {#changes-in-event-handling}
 
-이 버전에서 이벤트를 등록하려면 핸들러를 `addEventListener`에 전달합니다. 이벤트 목록이 버전 1.4에서 버전 2.5로 대폭 수정되었습니다.\
-예를 들어 다음은 `MediaPlayerEvent.STATUS_CHANGED:`에 대한 이벤트 핸들러를 등록하는 방법입니다.
+이 버전에서 이벤트를 등록하려면 핸들러를에 전달합니다. `addEventListener`. 이벤트 목록이 버전 1.4에서 버전 2.5로 크게 수정되었습니다.\
+예를 들어 다음은에 대한 이벤트 핸들러를 등록하는 방법입니다 `MediaPlayerEvent.STATUS_CHANGED:`
 
 ```java
 mPlayer.addEventListener(MediaPlayerEvent.STATUS_CHANGED,
@@ -157,7 +156,7 @@ public void onStatusChanged(MediaPlayerStatusChangeEvent event) {
 });
 ```
 
-다음은 이벤트가 1.4에서 등록된 방식입니다.
+다음은 1.4에서 이벤트가 등록된 방법입니다.
 
 ```java
 mPlayer.addEventListener(MediaPlayer.Event.PLAYBACK, new MediaPlayer.PlaybackEventListener() {
@@ -171,7 +170,7 @@ MediaPlayerNotification notification) {
 });
 ```
 
-MediaPlayerEvent 열거형은 모든 이벤트 코드를 포함합니다. 1.4의 다음 이벤트 코드는 2.5에 더 이상 존재하지 않습니다.
+MediaPlayerEvent 열거형에는 모든 이벤트 코드가 포함되어 있습니다. 1.4의 다음 이벤트 코드는 2.5에 더 이상 존재하지 않습니다.
 
 * `ADBREAK_PLACEMENT_COMPLETED`
 * `ADBREAK_PLACEMENT_FAILED`
@@ -204,7 +203,7 @@ MediaPlayerEvent 열거형은 모든 이벤트 코드를 포함합니다. 1.4의
 * `VIDEO_ERROR`
 * `VIDEO_STATE_CHANGED`
 
-다음 이벤트 코드는 2.5에서 새로 추가되었습니다.
+다음 이벤트 코드는 2.5의 새로운 이벤트 코드입니다.
 
 * `AD_RESOLUTION_COMPLETE`
 * `BUFFER_PREPARED`
@@ -216,30 +215,30 @@ MediaPlayerEvent 열거형은 모든 이벤트 코드를 포함합니다. 1.4의
 * `TIMED_EVENT`
 * `TIMED_METADATA_ADDED_IN_BACKGROUND`
 
-### 이벤트 이름 변경 {#renamed-events}
+### 이름이 변경된 이벤트 {#renamed-events}
 
 | 새 이름 | 이전 이름 |
 |--- |--- |
-| SEEK_BEGIN | SEEK_STARTED |
-| SEEK_END | SEEK_COMPLETED |
-| SEEK_POSITION_ADJUTED | SEEK_ADJUST_COMPLETED |
-| 버퍼링_시작 | BUFFERING_STARTED |
-| 버퍼링_끝 | 버퍼링_완료 |
-| AUDIO_TRACK_UPDATED | AUDIO_TRACK_CHANGED |
-| STATUS_CHANGED | STATE_CHANGED |
+| SEEK_START | SEEK_STARTED |
+| SEEK_END | 찾기 완료됨 |
+| SEEK_POSITION_ADJUSTED | SEEK_ADJUST_COMPLETED |
+| BUFFERING_BEGIN | 버퍼링 시작됨 |
+| 버퍼링 종료 | 버퍼링 완료됨 |
+| AUDIO_TRACK_UPDATE | AUDIO_TRACK_CHANGE |
+| 상태 변경됨 | 상태 변경됨 |
 | TIMED_METADATA_AVAILABLE | TIMED_METADATA_ADDED |
-| SIZE_AVAILABLE | SIZE_CHANGED |
+| SIZE_AVAILABLE | 크기 변경됨 |
 | LOAD_INFO | LOAD_INFORMATION_AVAILABLE |
 
-## MediaPlayer가 {#mediaplayer-changes} 변경
+## MediaPlayer 변경 사항 {#mediaplayer-changes}
 
-`MediaPlayer`을 구성하고 일부 메서드를 변경하는 새로운 방법입니다.
+건설의 새로운 방법 `MediaPlayer` 및 가 일부 메서드의 변경 내용을 참조하십시오.
 
 **MediaPlayer 클래스 변경 사항**
 
-다음은 `MediaPlayer` 클래스의 변경 사항입니다.
+변경 사항은 다음과 같습니다. `MediaPlayer` 클래스:
 
-* `MediaPlayerStatus` 열거형은 `MediaPlayer.PlayerState`을 대체합니다. 예:
+* 다음 `MediaPlayerStatus` 열거형은 를 대체합니다 `MediaPlayer.PlayerState`. 예:
 
 ```java
 //TVSDK v1.4
@@ -264,7 +263,7 @@ public void onStatusChanged(MediaPlayerStatusChangeEvent event) {
 });
 ```
 
-* 이제 `MediaPlayer.seekToLocalTime()` 메서드를 `MediaPlayer.seekToLocal`이라고 합니다. 예:
+* 다음 `MediaPlayer.seekToLocalTime()` 이제 메서드가 호출됩니다. `MediaPlayer.seekToLocal`. 예:
 
 ```java
 //TVSDK v1.4
@@ -276,7 +275,7 @@ public void seekToLocal(long localPosition) { mediaPlayer.seekToLocal(localPosit
 }
 ```
 
-* `MediaPlayerView.notifyClick()` 메서드는 이제 `MediaPlayer.notifyClick()`입니다. 예:
+* 다음 `MediaPlayerView.notifyClick()` 메서드는 이제 `MediaPlayer.notifyClick()`. 예:
 
 ```java
 //TVSDK v1.4
@@ -288,8 +287,8 @@ public void adClick() { mediaPlayer.notifyClick();
 }
 ```
 
-* 이전의 `MediaPlayer.MediaPlayer.getNotificationHistory()` 메서드는 이제 사라지고 바뀌지 않았습니다.
-* 이전의 `MediaPlayer.replaceCurrentItem()`은(는) 다음 두 가지 방법으로 분할됩니다.`replaceCurrentResource()`, `MediaResource` 인스턴스를 가져오는 `replaceCurrentItem()` 및 `MediaPlayerItem` 인스턴스를 가져오는 . 예:
+* 이전 `MediaPlayer.MediaPlayer.getNotificationHistory()` 이제 메서드가 사라지고 대체되지 않습니다.
+* 이전 `MediaPlayer.replaceCurrentItem()` 는 두 가지 방법으로 분할됩니다. `replaceCurrentResource()`, 이는 의 인스턴스를 사용합니다. `MediaResource`, 및 `replaceCurrentItem()`, 이는 의 인스턴스를 사용합니다. `MediaPlayerItem`. 예:
 
 ```java
 //TVSDK v1.4
@@ -333,19 +332,19 @@ itemLoader.load(playerResource); itemLoader.prepareBuffer();
 mediaPlayer.replaceCurrentItem(itemLoader.getItem());
 ```
 
-일시 중단 경우처럼 사전 초기화된 MediaPlayer 인스턴스 간을 전환할 수 있습니다.
+일시 중단의 경우와 같이 이 옵션을 사용하여 사전 초기화된 MediaPlayer 인스턴스 간에 전환할 수 있습니다.
 
-**생성자가 정적 create() 메서드를 대체합니다.**
+**생성자가 정적 create() 메서드를 바꿉니다.**
 
-TVSDK v1.4의 `create()` 메서드를 사용하는 대신 TVSDK v2.5에서 생성자를 사용할 수 있습니다. 이름이 Default로 시작하는 클래스(예: `DefaultMediaPlayer`, `DefaultNetworkConfig`, `DefaultContentFactory`)는 v2.5에서 사용할 수 없습니다.
+TVSDK v2.5에서는 를 사용하는 대신 생성자를 사용할 수 있습니다 `create()` tvsdk v1.4의 메서드. Default로 시작하는 이름이 있는 모든 클래스(예: `DefaultMediaPlayer`, `DefaultNetworkConfig`, `DefaultContentFactory`는 v2.5에서 사용할 수 없습니다.
 
-경우에 따라 TVSDK v1.4 API는 클래스를 만드는 데 다음 패턴을 사용합니다.
+경우에 따라 TVSDK v1.4 API는 클래스를 만들기 위해 다음 패턴을 사용합니다.
 
-1. 인터페이스(예: `MediaPlayer`)를 정의합니다.
-1. 기본 클래스(예: `DefaultMediaPlayer`)를 제공합니다.
-1. 인터페이스를 구현하는 클래스를 제공하려면 기본 클래스에 `create()` 메서드를 제공합니다.
+1. 인터페이스 정의(예: `MediaPlayer`).
+1. 기본 클래스를 제공합니다(예: `DefaultMediaPlayer`).
+1. 다음을 제공합니다. `create()` 인터페이스를 구현하는 클래스를 제공하는 기본 클래스의 메서드입니다.
 
-TVSDK v2.5에서는 이러한 인터페이스는 콘크리트 클래스이며 각 생성자를 사용하여 이러한 클래스의 인스턴스를 만듭니다. 다음 코드 조각은 이러한 차이점을 설명합니다.
+TVSDK v2.5에서 이러한 인터페이스는 구체적인 클래스이며 각 생성자를 사용하여 이러한 클래스의 인스턴스를 만듭니다. 다음 코드 조각은 이러한 차이점을 보여 줍니다.
 
 ```java
 //TVSDK v1.4
@@ -362,10 +361,10 @@ new MediaPlayer(getActivity().getApplicationContext()); return mediaPlayer;
 }
 ```
 
-이 패턴을 따르지 않지만 1.4에서 `create()` 메서드를 사용하는 다른 클래스에는 다음이 포함됩니다.
+이 패턴을 따르지 않지만 `create()` 1.4의 메서드는 다음과 같습니다.
 
 * MediaResource\
-   이전에 `MediaResource.createFromUrl()`을(를) 사용했습니다. 이제 URL, 리소스 유형 및 메타데이터를 가져오는 생성자를 사용합니다. 예:
+   이전에 사용된 항목 `MediaResource.createFromUrl()`. 이제 URL, 리소스 유형 및 메타데이터를 가져오는 생성자를 사용합니다. 예:
 
 ```java
 //TVSDK v1.4
@@ -386,14 +385,14 @@ try { mediaPlayer.replaceCurrentResource(playerResource,_mediaPlayerItemConfig);
 * AdAsset
 * AdBreak
 
-일부 클래스(예: `ContentFactory`)는 공개적으로 사용 가능한 기본 구현이 없는 추상 클래스입니다(예: `DefaultContentFactory`). 이러한 경우 편의성을 통해 기본 구현을 제공할 수 있습니다. 예:`mediaPlayerItemConfig.getDefaultContentFactory()`
+일부 클래스(예: `ContentFactory`)는 공개적으로 사용 가능한 기본 구현이 없는 추상 클래스입니다(예: `DefaultContentFactory`). 이러한 경우 다음과 같은 편의 기능을 통해 기본 구현을 제공할 수 있습니다. `mediaPlayerItemConfig.getDefaultContentFactory()`
 
 **자막 변경 사항**
 
-다음 변경 사항은 닫힌 캡션 관련 클래스에 영향을 줍니다.
+다음 변경 사항은 자막 관련 클래스에 영향을 줍니다.
 
-* 닫힌 캡션 트랙을 검색할 때 `MediaPlayerItem.getClosedCaptionTracks()`은 활성 트랙만 반환합니다.
-* `ClosedCaptionTrack` 에 더 이상 메서드가  `isActive()` 없습니다.
+* 자막트랙을 검색할 때, `MediaPlayerItem.getClosedCaptionTracks()` 활성 트랙만 반환합니다.
+* `ClosedCaptionTrack` 에 더 이상 이(가) 없습니다. `isActive()` 메서드를 사용합니다.
 
 ```java
 //TVSDK v1.4
@@ -439,30 +438,30 @@ View.VISIBLE/*Visible*/);
 };
 ```
 
-## 광고 변경 내용 {#advertising-changes}
+## 광고 변경 사항 {#advertising-changes}
 
 버전 2.5에는 몇 가지 광고 관련 변경 사항이 있습니다.
 
-**광고 행동에 대한 변경 사항**
+**광고 행동 변경**
 
-사용자가 광고 창을 넘어 검색을 수행하는 경우 광고 재생의 기본 동작은 v2.5에서 약간 변경됩니다. 광고 나누기가 보이지 않으면 광고가 앞으로 검색 후 재생됩니다. 앱이 기본 광고 정책을 사용하는 경우 재생이 완료된 후 광고 나누기가 제거됩니다. TVSDK v2.5를 사용하는 경우 사용자가 타임라인에서 광고 창을 뒤따르고 광고 브레이크가 감시되지 않으면 광고가 재생되지 않습니다.
+사용자가 광고 Pod를 넘어 찾기를 수행할 때 광고 재생의 기본 비헤이비어는 v2.5에서 약간 변경됩니다. 광고 브레이크가 시청되지 않으면 앞으로 이동 후 광고가 재생됩니다. 앱이 기본 광고 정책을 사용하는 경우 재생이 완료된 후 광고 브레이크가 제거됩니다. TVSDK v2.5를 사용하는 경우 사용자가 타임라인에서 광고 Pod를 뒤로하고 광고 브레이크를 시청하지 않으면 광고가 재생되지 않습니다.
 
-그러나 TVSDK v1.4에서는 기본적으로 뒤로 이동 시 광고가 재생됩니다. 예를 들어 세 번째 광고 중단과 네 번째 광고 중단 사이에서 뒤로 이동하는 경우 TVSDK v1.4의 기본 동작은 세 번째 광고 나누기를 재생하는 것입니다.
+그러나 TVSDK v1.4에서는 기본적으로 뒤로 검색의 경우 광고가 재생됩니다. 예를 들어 세 번째 및 네 번째 광고 브레이크 간을 뒤로 이동하는 경우 TVSDK v1.4의 기본 동작은 세 번째 광고 브레이크를 재생하는 것입니다.
 
 **광고 규칙 변경**
 
-광고 규칙은 JSON 파일을 사용하여 지정됩니다. JSON 파일의 형식은 두 버전의 TVSDK에서 동일하게 유지됩니다. 그러나 TVSDK v2.5에서는 HTTP URL을 통해 액세스할 수 있는 위치에서 광고 규칙 JSON 파일을 호스팅해야 합니다. 응용 프로그램은 AuditudeSettings 인스턴스를 사용할 수 있습니다.
+광고 규칙은 JSON 파일을 사용하여 지정됩니다. JSON 파일의 형식은 두 TVSDK 버전에서 동일하게 유지됩니다. 그러나 TVSDK v2.5에서 광고 규칙 JSON 파일은 HTTP URL을 통해 액세스할 수 있는 위치에서 호스팅되어야 합니다. 응용 프로그램은 AuditudeSettings의 인스턴스를 사용할 수 있습니다.
 
 ```java
 //TVSDK v2.5
 AuditudeSettings result = new AuditudeSettings(); result.setCRSRulesJsonURL(<http url of AdobeTVSDKConfig.json>);
 ```
 
-TVSDK 버전 1.4에서는 이 파일이 애플리케이션의 자산 폴더 아래에 배치되고 TVSDK는 파일을 로드합니다.
+TVSDK 버전 1.4에서 이 파일은 애플리케이션의 에셋 폴더 아래에 배치되며 TVSDK는 파일을 로드합니다.
 
-**광고 팩토리 이름 바꾸기**
+**공장 이름 변경 광고**
 
-`AdvertisingFactory` 의 이름이  `ContentFactory`변경되었습니다. `ContentFactory`을(를) 사용하면 해당 방법 중 일부를 재정의하여 사용자 지정된 광고 워크플로우를 만들 수 있습니다. 다음과 같이 기본 비헤이비어를 유지하려면 null 반환 값을 사용합니다.
+`AdvertisingFactory` 이제 이름이 지정됨 `ContentFactory`. 포함 `ContentFactory` 일부 메서드를 재정의하여 사용자 지정된 광고 워크플로우를 만들 수 있습니다. 다음과 같이 반환 null을 사용하여 기본 동작을 유지합니다.
 
 ```java
 //TVSDK v2.5
@@ -482,15 +481,15 @@ public List<CustomAdHandler> retrieveCustomAdPlaybackHandlers(MediaPlayerItem it
 };
 ```
 
-**제로 길이 광고 나누기**
+**길이가 0인 광고 브레이크**
 
-TVSDK 2.5는 광고 서버가 광고를 반환하지 않을 때 길이 0의 광고 나누기를 장소 소유자로 삽입합니다.
+TVSDK 2.5는 광고 서버에서 광고를 반환하지 않을 때 길이가 0인 광고 브레이크를 자리 표시자로 삽입합니다.
 
-onAdBreakStarted 이벤트를 사용하여 광고 나누기에 0이 되는 광고 수를 감지하여 제로 길이 광고 분리를 결정할 수 있으며 이에 따라 애플리케이션이 이러한 광고 분리를 처리해야 합니다.
+onAdBreakStarted 이벤트를 사용하여 광고 브레이크에서 0인 광고 수를 감지하여 광고 브레이크의 길이가 0인 광고 브레이크를 결정할 수 있으며, 응용 프로그램에서는 광고 브레이크를 그에 따라 처리해야 합니다.
 
 **메타데이터 변경 사항**
 
-Metadata 클래스는 이전 MetadataNode 클래스를 보다 쉽게 대체할 수 있도록 제공합니다.
+Metadata 클래스는 이전 MetadataNode 클래스를 보다 쉽게 대체할 수 있도록 합니다.
 
 * Metadata 클래스는 문자열, 바이트 배열 및 기타 Metadata 개체를 저장할 수 있습니다.
 
@@ -519,7 +518,7 @@ return adSettings;
 }
 ```
 
-* `MetadataKeys` 열거형은 `DefaultMetadataKeys`을 대체합니다. `DefaultMetadataKeys`의 모든 키가 새 버전에 있는 것은 아닙니다.
+* 다음 `MetadataKeys` 열거형은 를 대체합니다 `DefaultMetadataKeys`. 의 모든 키가 `DefaultMetadataKeys` 새 버전에 존재합니다.
 
 ```java
 //TVSDK v1.4
@@ -543,7 +542,7 @@ vaMetadata = parseVideoAnalyticsMetadata(vaMetadataObj);
 }
 ```
 
-* 광고 메타데이터는 이제 메타데이터의 하위 클래스인 `AdvertisingMetadata` 클래스로 표현되며 이제 `MediaResource` 대신 `MediaPlayerItemConfig`에 저장됩니다.
+* 이제 광고 메타데이터는으로 표시됩니다. `AdvertisingMetadata` 클래스(메타데이터의 하위 클래스)는에 저장됩니다 `MediaPlayerItemConfig` 보다 `MediaResource`.
 
 ```java
 //TVSDK v1.4
@@ -577,7 +576,7 @@ mediaPlayer.replaceCurrentResource(playerResource, mItemConfig);
 }
 ```
 
-이전에는 `MediaResource` 클래스의 멤버였던 네트워크 구성 메타데이터는 이제 `NetworkConfiguration` 클래스로 표현되며 이제 `MediaResource` 대신 `MediaPlayerItemConfig`에 저장됩니다.
+이전에 의 멤버였던 네트워크 구성 메타데이터 `MediaResource` 클래스, 는 이제 `NetworkConfiguration` 클래스로, 이제에서 저장됩니다. `MediaPlayerItemConfig` 보다 `MediaResource`.
 
 ```java
 //TVSDK v1.4
@@ -592,7 +591,7 @@ NetworkConfiguration mediaNetworkConfiguration = mediaItemConfig.getNetworkConfi
 
 **TimedMetadata 구문 분석 변경 사항**
 
-ID3 태그 구문 분석을 위한 데이터 유형과 관련하여 `TimedMetadata`의 구문 분석이 2.5에서 변경되었습니다.
+의 구문 분석 `TimedMetadata` 는 ID3 태그를 구문 분석하는 데이터 형식과 관련하여 2.5에서 변경되었습니다.
 
 ```java
 //TVSDK v1.4
@@ -663,31 +662,31 @@ if (timedMetadata.getName().equalsIgnoreCase("#EXT-OATCLS-SCTE35")) { PMPDemoApp
 
 버전 2.5에서는 다음과 같은 추가 변경 사항을 사용할 수 있습니다.
 
-* `notifyClick()` 메서드가 `MediaPlayerView`에서 `MediaPlayer`(으)로 이동되었습니다.
+* 다음 `notifyClick()` 메서드가 다음에서 이동했습니다. `MediaPlayerView` 끝 `MediaPlayer`.
 
 * `AdPolicySelector` 는 클래스가 아닌 인터페이스입니다. 모든 메서드를 구현합니다.
-* `AdPolicyInfo` 에는 목록이 들어 있지만  `AdBreakTimelineItem`그 목록은 없습니다 `AdBreakPlacement`.
+* `AdPolicyInfo` 이제 다음 목록을 포함합니다. `AdBreakTimelineItem`, 아님 `AdBreakPlacement`.
 
-* `ContentResolver` 추상 클래스의 API 이름이 변경되었습니다.
-* `PlacementOpportunityDetector` 을 더 이상 사용할 수 없습니다. 대신 `OpportunityGenerator` 추상 클래스를 확장합니다. 참조 구현은 이 예시를 제공합니다.
+* 의 API 이름 `ContentResolver` 추상 클래스가 변경되었습니다.
+* `PlacementOpportunityDetector` 을(를) 더 이상 사용할 수 없습니다. 대신 를 확장합니다. `OpportunityGenerator` 추상 클래스입니다. 참조 구현에서는 이에 대한 예를 제공합니다.
 
-* `AdBreakPlacement` 생성자의 매개 변수는 동일하지만 순서가 다릅니다. 샘플 구현은 제품과 함께 번들로 제공되는 참조 플레이어 구현을 참조하십시오.
+* 의 매개 변수 `AdBreakPlacement` 생성자는 동일하지만 순서가 다릅니다. 샘플 구현에 대해서는 제품과 함께 번들로 제공되는 참조 플레이어 구현 을 참조하십시오.
 
-## DRM {#changes-in-drm}의 변경 사항
+## DRM의 변경 {#changes-in-drm}
 
-이 버전에서 대부분의 변경 사항은 DRM 레이어에 있습니다. 다음 표는 버전 1.4와 2.5 간의 추가 변경 사항을 보여줍니다.
+이 버전의 대부분의 변경 사항은 DRM 레이어에 있습니다. 다음 표는 버전 1.4와 2.5 간의 추가 변경 사항을 보여 줍니다.
 
-| DRMManager 메서드 | 1.4의 성공 콜백 | 1.4의 오류 콜백 | 2.5의 리스너 |
+| DRMManager 메서드 | 1.4의 성공 콜백 | 1.4에서 오류 콜백 | 2.5의 리스너 |
 |--- |--- |--- |--- |
-| acquireLicense | DRMLicenseImportedCallback | DRMOperationErrorCallback | DRMAcquireLicenseListener |
-| acquirePreviewLicense | DRMLicenseImportedCallback | DRMOperationErrorCallback | DRMAcquireLicenseListener |
-| authenticate | DRMAuthenticationCompleteCallback | DRMOperationErrorCallback | DRMAuthenticateListener |
-| createMetadataFromBytes | NA | DRMOperationErrorCallback | DRMErrorListener |
+| acquireLicense | DRMLicenseAcquiredCallback | DRMOperationErrorCallback | DRMAcquireLicenseListener |
+| acquirePreviewLicense | DRMLicenseAcquiredCallback | DRMOperationErrorCallback | DRMAcquireLicenseListener |
+| 인증 | DRMAuthenticationCompleteCallback | DRMOperationErrorCallback | DRMAuthenticateListener |
+| createMetadataFromBytes | 해당 없음 | DRMOperationErrorCallback | DRMErrorListener |
 | 초기화 | DRMOperationCompleteCallback | DRMOperationErrorCallback | DRMOperationCompleteListener |
 | joinLicenseDomain | DRMOperationCompleteCallback | DRMOperationErrorCallback | DRMOperationCompleteListener |
 | leaveLicenseDomain | DRMOperationCompleteCallback | DRMOperationErrorCallback | DRMOperationCompleteListener |
 | resetDRM | DRMOperationCompleteCallback | DRMOperationErrorCallback | DRMOperationCompleteListener |
-| returnLicense | DRMLicenseReturnCompleteCallback | DRMOperationErrorCallback | DRMReturnLicenseListener |
+| return라이센스 | DRMLicenseReturnCompleteCallback | DRMOperationErrorCallback | DRMRreturnLicenseListener |
 | setAuthenticationToken | DRMOperationCompleteCallback | DRMOperationErrorCallback | DRMOperationCompleteListener |
 | storeLicenseBytes | DRMOperationCompleteCallback | DRMOperationErrorCallback | DRMOperationCompleteListener |
 
@@ -828,13 +827,13 @@ public void onAuthenticationComplete(byte[] authenticationToken) { PMPDemoApp.lo
 };
 ```
 
-이제 미디어 레이어가 만들어진 후 1.4에서 사용할 수 있었던 정적 `DRMManager` 인스턴스를 `onDRMMetadataInfo` 이벤트 리스너가 트리거된 후에 사용할 수 있습니다.
+정적 `DRMManager` mediaplayer가 만들어진 후 1.4에서 사용할 수 있었던 인스턴스는 이제 `onDRMMetadataInfo` 이벤트 리스너가 트리거됩니다.
 
-## 적응형 비트 전송률(ABR) 관련 변경 사항 {#adaptive-bitrate-abr-related-changes}
+## 적응형 비트율(ABR) 관련 변경 사항 {#adaptive-bitrate-abr-related-changes}
 
-**상수의 변경 사항**
+**상수 변경**
 
-많은 상수가 유형을 `String`에서 `int`으로 변경했습니다. 예:`MediaResourceType`, `ABRControlParameters` 및 `MediaPlayerStatusChangeEvent`.
+많은 상수가 다음에서 유형을 변경했습니다. `String` 끝 `int`. 예: `MediaResourceType`, `ABRControlParameters`, 및 `MediaPlayerStatusChangeEvent`.
 
 ```java
 //TVSDK v1.4
@@ -893,7 +892,7 @@ _mediaPlayer.setABRControlParameters(abrBuilder.toABRControlParameters());
 
 **ABRControlParameters 생성자에 대한 변경 사항**
 
-일부 매개 변수가 추가되고 일부 매개 변수는 이름이 변경되었으며 일부는 이동되었습니다. 다음은 v1.4의 생성자 서명 및 2.5의 새 서명입니다.
+일부 매개변수가 추가되었으며 일부는 이름이 변경되었으며 일부는 이동되었습니다. 다음은 v1.4의 생성자 서명과 2.5의 새 서명입니다.
 
 ```java
 //TVSDK v1.4
@@ -909,13 +908,13 @@ int nMinTrickPlayBitRate, int nMaxTrickPlayBitRate,
 int nMaxTrickPlayBandwidthUsage, double dMaxPlayoutRate)
 ```
 
-## 오류 이벤트 및 {#error-events-and-handling} 처리
+## 오류 이벤트 및 처리 {#error-events-and-handling}
 
 **오류 처리 변경 사항**
 
-`MediaError` 클래스가 `Notification` 클래스로 바뀌었습니다. 클래스 `MediaError`과 `Notification`의 유일한 차이는 후자에 description 특성이 포함되지 않는다는 것입니다. TVSDK 2.5에 값이 101xxx, 102xxx,104xxx,106xxx,107xxx,109xxx인 TVSDK 1.4 오류 코드가 없습니다. TVSDK 2.5의 재생 코드에 대해서는 [기본 오류- 비디오 재생 값](assets/psdk_android_2.5.pdf)을 참조하십시오.
+다음 `MediaError` 클래스가 다음으로 대체되었습니다. `Notification` 클래스. 클래스 간의 유일한 차이점 `MediaError` 및 `Notification` 후자는 설명 속성을 포함하지 않습니다. 값이 101xxx, 102xxx,104xxx,106xxx,107xxx,109xxx인 TVSDK 1.4 오류 코드가 TVSDK 2.5에 없습니다. TVSDK 2.5의 재생 코드는 다음을 참조하십시오. [기본 오류 - 비디오 재생 값](assets/psdk_android_2.5.pdf).
 
-다음은 TVSDK 1.4 및 2.5의 오류 처리의 예입니다.
+다음은 TVSDK 1.4 및 2.5의 오류 처리 예입니다.
 
 ```java
 //TVSDK v1.4
@@ -957,7 +956,7 @@ default:
 };
 ```
 
-복구 가능한 모든 오류는 경고로 처리되고 TVSDK 2.5의 `NotificationEventListener`을 사용하여 처리됩니다. 경고는 TVSDK 1.4의 QOS 핸들러에서 `onOperationFailed` 리스너를 통해 알림으로 나타납니다. 여기서 TVSDK 2.5에서와 같이 알림은 별개의 이벤트입니다. 1.4 및 2.5에서 처리되는 경고는 다음과 같습니다.
+복구 가능한 모든 오류는 경고로 처리되며 `NotificationEventListener` tvsdk 2.5에서. 경고는 다음과 함께 알림으로 표시됩니다. `onOperationFailed` TVSDK 2.5에서와 같이 알림이 별도의 이벤트인 TVSDK 1.4의 QOS 핸들러의 리스너. 1.4 및 2.5에서 처리되는 경고는 다음과 같습니다.
 
 ```java
 //TVSDK v1.4
@@ -1037,15 +1036,15 @@ showToast(sb.toString()); PMPDemoApp.logger.d(LOG_TAG, sb.toString());
 };
 ```
 
-**새로운 예외**
+**새 예외**
 
-TVSDK v1.4는 null, 오류 반환 및 다양한 예외( `MediaPlayerException`, `IllegalStateException` 및 `IllegalArgumentException`)의 조합을 사용했지만 모든 오류에 대해서는 TVSDK v2.5 `generatesMediaPlayerException` 입니다.
+TVSDK v1.4에서는 null, 오류 반환 및 다양한 예외( `MediaPlayerException`, `IllegalStateException`, 및 `IllegalArgumentException`), TVSDK v2.5 `generatesMediaPlayerException` 모든 오류에 대해 설명합니다.
 
 >[!NOTE]
 >
->MediaPlayerException에 대한 자세한 내용을 보려면 `getErrorCode()`을(를) 사용할 수 있습니다.
+>MediaPlayerException에 대한 자세한 내용을 보려면 `getErrorCode()`.
 
-변경 사항의 예는 다음과 같습니다.
+변경의 예는 다음과 같습니다.
 
 ```java
 //TVSDK v1.4
@@ -1065,12 +1064,12 @@ mediaPlayer.setBufferControlParameters(getBufferParamsFromSettings());
 }
 ```
 
-## QOS 매개 변수 {#changes-to-qos-parameters}에 대한 변경 사항
+## QOS 매개 변수 변경 {#changes-to-qos-parameters}
 
-QOSProvider 개체 속성에 대한 사소한 변경 사항이 있습니다.
+QOSProvider 개체 속성에 약간의 변경 사항이 있습니다.
 
-* `TimeToFirstFrame`은(는) TVSDK 2.5에서 사용할 수 없습니다.
-* TVSDK 2.5 QOSProvider는 스트리밍 세션 동안 인식되는 대역폭을 결정하는 새로운 속성을 가지고 있습니다.
+* 다음 `TimeToFirstFrame` 는 TVSDK 2.5에서 사용할 수 없습니다.
+* TVSDK 2.5 QOSProvider에는 스트리밍 세션 중에 인식된 대역폭을 결정하는 새로운 속성이 있습니다.
 
 ```java
 //TVSDK v1.4
@@ -1091,9 +1090,9 @@ setQosItem("Time to prepare", (int) playbackInformation.getTimeToPrepare());
 setQosItem("Perceived Bandwidth", (int) playbackInformation.getPerceivedBandwidth());
 ```
 
-* `QOSEventListener::onOperationFailed()`이(가) TVSDK 2.5에 더 이상 없습니다. 이 이벤트 리스너에 나타나는 경고가 이제 `NotificationEventListener::onNotification()` 이벤트 리스너에 표시됩니다.
+* 다음 `QOSEventListener::onOperationFailed()` tvsdk 2.5에 더 이상 존재하지 않습니다. 이 이벤트 리스너에 표시되던 경고가 이제 `NotificationEventListener::onNotification()` 이벤트 리스너.
 
-* `QOSProvider event listeners onBufferStart()`, `onBufferComplete()`, `onSeekStart()`, `onSeekComplete()` 및 `onLoadInfo()`는 mediaPlayer 인스턴스와 바인딩되는 개별 이벤트 리스너입니다.
+* 다음 `QOSProvider event listeners onBufferStart()`, `onBufferComplete()`, `onSeekStart()`, `onSeekComplete()`, 및 `onLoadInfo()` mediaPlayer 인스턴스로 바인딩된 개별 이벤트 리스너입니다.
 
 ```java
 //TVSDK v1.4
@@ -1231,4 +1230,4 @@ LOG_TAG + "::LoadInformationEventListener#onLoadInfomation()", "Url: " + loadInf
 
 ## 유용한 리소스 {#helpful-resources}
 
-* [Adobe Primetime 학습 및 지원](https://helpx.adobe.com/support/primetime.html) 페이지에서 전체 도움말 설명서를 참조하십시오.
+* 다음 위치에서 전체 도움말 문서 를 참조하십시오. [Adobe Primetime 학습 및 지원](https://helpx.adobe.com/support/primetime.html) 페이지를 가리키도록 업데이트하는 중입니다.

@@ -1,7 +1,6 @@
 ---
-description: 클라이언트가 JSON 형식의 추적 정보를 요청하는 경우 매니페스트 서버는 JSON 형식 중 하나의 파일을 다시 전송합니다.
-title: URL 추적을 위한 JSON 형식
-translation-type: tm+mt
+description: 클라이언트에서 추적 정보를 JSON 형식으로 요청하면 매니페스트 서버는 JSON 형식 중 하나로 파일을 다시 보냅니다.
+title: 추적 URL에 대한 JSON 형식
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '211'
@@ -10,13 +9,13 @@ ht-degree: 0%
 ---
 
 
-# URL 추적을 위한 JSON 형식 {#json-formats-for-tracking-urls}
+# 추적 URL에 대한 JSON 형식 {#json-formats-for-tracking-urls}
 
-클라이언트가 JSON 형식의 추적 정보를 요청하는 경우 매니페스트 서버는 JSON 형식 중 하나의 파일을 다시 전송합니다.
+클라이언트에서 추적 정보를 JSON 형식으로 요청하면 매니페스트 서버는 JSON 형식 중 하나로 파일을 다시 보냅니다.
 
 ## 버전 1 추적을 위한 JSON 형식 {#json_v1}
 
-매니페스트 서버가 `pttrackingversion=v1`에 다음과 같은 일반 형식이 있는 경우 보내는 JSON 파일:
+매니페스트 서버가 다음과 같은 경우에 전송하는 JSON 파일 `pttrackingversion=v1` 에는 다음과 같은 일반 형식이 있습니다.
 
 ```
 { 
@@ -34,9 +33,9 @@ ht-degree: 0%
 
 ## 버전 2 추적을 위한 JSON 형식 {#json_v2}
 
-매니페스트 서버가 `pttrackingversion=v2`에 일반적인 JSON 블록에서 오는 다음 예제의 형식이 있는 경우 보내는 JSON 파일입니다.
+매니페스트 서버가 다음과 같은 경우에 전송하는 JSON 파일 `pttrackingversion=v2` 에는 일반적인 JSON 블록에서 가져온 다음 예제의 형식이 있습니다.
 
-불필요한 반복을 피하기 위해 짧게 해서, 구조가 더 분명해졌다. 줄임표(세 점, 공백으로 구분)는 일부 URL 내 및 일부 코드 블록 간의 생략된 정보를 나타냅니다. 단축되지 않은 URL은 JSON 파일의 한 줄에 표시되지만 여러 줄에 표시됩니다.
+불필요한 반복을 피하기 위해 줄여서 구조를 더 명확히 하였다. 생략 부호(세 점, 공백으로 구분)는 일부 URL 내에서 일부 코드 블록 사이에 생략된 정보를 나타냅니다. 단축되지 않은 URL은 JSON 파일의 한 줄에 표시되지만 여러 줄에 표시됩니다.
 
 ```
 { 
@@ -364,11 +363,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`ad breaks`에서 추출된 `scte35` 속성의 `offset` 값은 음수일 수 있습니다. 이는 JSON V2 사이드카가 현재 재생 창의 일부분에 있는 광고 중단에 대한 정보를 포함하기 때문입니다. 따라서 `scte35` 속성에는 이러한 광고 중단에 대한 정보도 포함되어 있습니다.
+>다음 `offset` 값 `scte35` 다음에서 추출된 속성 `ad breaks` 음수일 수 있습니다. 이는 JSON V2 사이드카에 현재 재생 창에 부분적으로 있는 광고 브레이크에 대한 정보가 포함되어 있기 때문입니다. 그래서, `scte35` 속성에는 이러한 광고 브레이크에 대한 정보도 포함되어 있습니다.
 
-## 추적 버전 3 {#json_v3}에 대한 JSON 형식
+## 버전 3 추적을 위한 JSON 형식 {#json_v3}
 
-매니페스트 서버가 `pttrackingversion=v3`에 다음과 같은 일반 형식이 있는 경우 보내는 JSON 파일:
+매니페스트 서버가 다음과 같은 경우에 전송하는 JSON 파일 `pttrackingversion=v3` 에는 다음과 같은 일반 형식이 있습니다.
 
 ```
 { 

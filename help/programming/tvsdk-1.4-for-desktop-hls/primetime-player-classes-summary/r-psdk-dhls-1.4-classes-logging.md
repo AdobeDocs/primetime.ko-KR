@@ -1,20 +1,19 @@
 ---
-description: 이러한 클래스를 사용하여 로깅을 사용자 정의할 수 있습니다.
+description: 이러한 클래스를 사용하면 로깅을 사용자 지정할 수 있습니다.
 title: 클래스 로깅
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 85cf33dc-54c0-43f0-8386-2805853226ed
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
 
 ---
 
-
 # 클래스 로깅{#logging-classes}
 
-이러한 클래스를 사용하여 로깅을 사용자 정의할 수 있습니다.
+이러한 클래스를 사용하면 로깅을 사용자 지정할 수 있습니다.
 
-패키지:[com.adobe.mediacore.logging](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/package-detail.html)
+패키지: [com.adobe.mediacore.logging](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/package-detail.html)
 
 <table frame="all" colsep="1" rowsep="1" id="table_389797D3CEF14EA2862E0B20C6E6CC41"> 
  <thead> 
@@ -25,12 +24,12 @@ ht-degree: 0%
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/BaseLogger.html" format="html" scope="external"> BaseLogger</a></span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/BaseLogger.html" format="html" scope="external"> 기본 로거</a></span> </td> 
    <td colname="2"> 클래스. 로거 인터페이스의 기본 구현 클래스입니다. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/DefaultLogger.html" format="html" scope="external"> DefaultLogger</a></span> </td> 
-   <td colname="2"> 클래스. 기본 로거는 들어오는 모든 메시지를 추적하도록 보냅니다. </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/DefaultLogger.html" format="html" scope="external"> 기본 로거</a></span> </td> 
+   <td colname="2"> 클래스. 기본 로거는 모든 들어오는 메시지를 추적에 보냅니다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/Log.html" format="html" scope="external"> 로그</a></span> </td> 
@@ -41,13 +40,12 @@ ht-degree: 0%
    <td colname="2"> 클래스. 기본 로깅 팩터리입니다.</td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/Logger.html" format="html" scope="external"> 로거</a></span> </td> 
-   <td colname="2">인터페이스. 구문에 대한 사용자 정의 로거를 구현하는 데 필요한 방법입니다. </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/Logger.html" format="html" scope="external"> Logger</a></span> </td> 
+   <td colname="2">인터페이스. 구문에 대한 사용자 지정 로거를 구현하는 데 필요한 메서드입니다. </td> 
   </tr> 
   <tr rowsep="0"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/NullLogger.html" format="html" scope="external"> NullLogger</a></span> </td> 
-   <td colname="2"> 클래스. 로거(logger)를 사용하면</td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/NullLogger.html" format="html" scope="external"> 널 로거</a></span> </td> 
+   <td colname="2"> 클래스. 아무것도 기록하지 않는 로거입니다.</td> 
   </tr> 
  </tbody> 
 </table>
-

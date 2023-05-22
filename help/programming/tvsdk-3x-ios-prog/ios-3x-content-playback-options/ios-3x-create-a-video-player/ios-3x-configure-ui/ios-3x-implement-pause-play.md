@@ -1,20 +1,19 @@
 ---
-description: 미디어를 일시 중지하고 재생하기 위해 TVSDK 메서드를 호출하는 단추를 설정할 수 있습니다.
-title: 재생/일시 정지 단추 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: TVSDK 메서드를 호출하는 버튼을 설정하여 미디어를 일시 중지하고 재생할 수 있습니다.
+title: 재생/일시 중지 버튼 구현
+exl-id: 370cdc86-1efe-4364-8cf9-6689ebab3c9e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
+# 재생/일시 중지 버튼 구현 {#implement-a-play-pause-button}
 
-# 재생/일시 정지 단추 {#implement-a-play-pause-button} 구현
+TVSDK 메서드를 호출하는 버튼을 설정하여 미디어를 일시 중지하고 재생할 수 있습니다.
 
-미디어를 일시 중지하고 재생하기 위해 TVSDK 메서드를 호출하는 단추를 설정할 수 있습니다.
-
-다음 샘플 코드를 사용하여 재생 또는 일시 정지 단추를 구현합니다.
+다음 샘플 코드를 사용하여 재생 또는 일시 중지 버튼을 구현합니다.
 
 <!--<a id="example_BC2632D673FE451190A30A23145090D0"></a>-->
 

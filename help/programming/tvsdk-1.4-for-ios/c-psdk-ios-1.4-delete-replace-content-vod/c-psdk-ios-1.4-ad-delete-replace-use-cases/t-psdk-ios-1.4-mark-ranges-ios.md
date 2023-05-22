@@ -1,23 +1,22 @@
 ---
-title: 표시 범위
-description: 표시 범위
+title: 범위 표시
+description: 범위 표시
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e13db995-8910-43aa-a302-d8b1175af181
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
+# 범위 표시{#mark-ranges}
 
-# 표시 범위{#mark-ranges}
+를 구현하려면 `PTTimeRangeCollection` 컨텐츠 범위를 광고로 표시:
+1. 준비 `PTTimeRangeCollection`.
+1. 의 유형을 설정합니다. `PTTimeRangeCollection` 끝 `PTTimeRangeCollectionTypeMarkRanges`.
 
-`PTTimeRangeCollection`을 구현하고 컨텐츠 범위를 광고로 표시하려면:
-1. `PTTimeRangeCollection`을 준비합니다.
-1. `PTTimeRangeCollection`의 유형을 `PTTimeRangeCollectionTypeMarkRanges`으로 설정합니다.
-
-   이 단계에서는 사용자 지정 범위를 광고처럼 취급해야 한다고 TVSDK에 알립니다.
+   이 단계에서는 사용자 지정 범위를 광고처럼 처리해야 함을 TVSDK에 알립니다.
 
    ```
    #define PSDK_TIMESCALE 100000 
@@ -36,7 +35,7 @@ ht-degree: 0%
        type:PTTimeRangeCollectionTypeMarkRanges];
    ```
 
-1. `PTAdMetadata`을(를) 만들고 `PTTimeRangeCollection`을(를) 설정합니다.
+1. 만들기 `PTAdMetadata` 및 설정 `PTTimeRangeCollection`.
 
    ```
    // Create the PTPlayerItem metadata 
@@ -68,13 +67,13 @@ ht-degree: 0%
    [player play];
    ```
 
-## 범위 대체{#replace-ranges}
+## 범위 바꾸기{#replace-ranges}
 
-`PTTimeRangeCollection`을(를) 구현하고 컨텐츠 범위를 광고로 삭제하려면:
-1. `PTTimeRangeCollection`을(를) 준비합니다.
-1. `PTTimeRangeCollection`의 유형을 `PTTimeRangeCollectionTypeReplaceRanges`으로 설정합니다.
+를 구현하려면 `PTTimeRangeCollection` 광고로 컨텐츠 범위 삭제:
+1. 준비 `PTTimeRangeCollection`.
+1. 의 유형을 설정합니다. `PTTimeRangeCollection` 끝 `PTTimeRangeCollectionTypeReplaceRanges`.
 
-   이 단계에서는 제공된 범위를 대체 컨텐츠(광고)로 바꿔야 한다고 TVSDK에 알립니다.
+   이 단계에서는 제공된 범위를 대체 콘텐츠(광고)로 대체해야 함을 TVSDK에 알립니다.
 
    ```
    #define PSDK_TIMESCALE 100000 
@@ -95,9 +94,9 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >인수 `replacementDuration`은(는) 선택 사항입니다. 정의되지 않은 경우 `AdServer`은(는) 광고 분리의 기간을 결정합니다.
+   >인수 `replacementDuration` 는 선택 사항입니다. 정의되지 않은 경우 `AdServer` 광고 브레이크 기간을 결정합니다.
 
-1. `PTAdMetadata`을(를) 만들고 `PTTimeRangeCollection`을(를) 설정합니다.
+1. 만들기 `PTAdMetadata` 및 설정 `PTTimeRangeCollection`.
 
    ```
    //Create the PTPlayerItem metadata 
@@ -121,7 +120,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >`signalingMode`이(가) `PTAdSignalingModeCustomRanges`로 설정되었지만 이 광고 신호 모드는 `PTTimeRangeCollectionTypeReplace` 유형의 `PTTimeRangeCollection`를 설정할 때 자동으로 설정됩니다.
+   >하지만 `signalingMode` 다음으로 설정됨 `PTAdSignalingModeCustomRanges`, 이 광고 신호 모드는 를 설정할 때 자동으로 설정됩니다. `PTTimeRangeCollection` 유형 `PTTimeRangeCollectionTypeReplace`.
 
 1. 플레이어를 만들고 재생을 시작합니다.
 
@@ -138,9 +137,9 @@ ht-degree: 0%
 
 ## 범위 삭제 {#delete-ranges}
 
-`PTTimeRangeCollection`을(를) 구현하고 컨텐츠 범위를 광고로 삭제하려면:
-1. `PTTimeRangeCollection`을 준비합니다.
-1. `PTTimeRangeCollection`의 유형을 `PTTimeRangeCollectionTypeDeleteRanges`로 설정합니다. 이 방법은 제공된 범위를 삭제해야 함을 TVSDK에 알립니다.
+를 구현하려면 `PTTimeRangeCollection` 광고로 컨텐츠 범위 삭제:
+1. 준비 `PTTimeRangeCollection`.
+1. 의 유형을 설정합니다. `PTTimeRangeCollection` 끝 `PTTimeRangeCollectionTypeDeleteRanges`: 제공된 범위를 삭제해야 함을 TVSDK에 알립니다.
 
    ```
    #define PSDK_TIMESCALE 100000 
@@ -157,7 +156,7 @@ ht-degree: 0%
                                               type:PTTimeRangeCollectionTypeDeleteRanges];
    ```
 
-1. `PTAdMetadata`을(를) 만들고 `PTTimeRangeCollection`을(를) 설정합니다.
+1. 만들기 `PTAdMetadata` 및 설정 `PTTimeRangeCollection`.
 
    ```
    //Create the PTPlayerItem metadata 
@@ -181,7 +180,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >광고 삽입은 `PTAdMetadata` 및 현재 `PTAdSignalingMode`을 기준으로 사용자 지정 범위를 삭제한 후에 발생합니다.
+   >광고 삽입은 를 기반으로 사용자 지정 범위를 삭제한 후 발생합니다. `PTAdMetadata` 및 현재 `PTAdSignalingMode`.
 
 1. 플레이어를 만들고 재생을 시작합니다.
 

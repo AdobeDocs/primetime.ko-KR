@@ -1,28 +1,27 @@
 ---
-description: 이 멀티 DRM 워크플로우에서는 Widine 및 PlayReady를 사용하여 암호화된 DASH 컨텐츠의 설정, 패키징, 라이선스 및 재생을 수행할 수 있습니다.
-title: Widevine 및 PlayReady를 위한 멀티 DRM 워크플로우
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 이 Multi-DRM 워크플로우는 Widevine 및 PlayReady로 암호화된 DASH 콘텐츠의 설정, 패키징, 라이센싱 및 재생을 안내합니다.
+title: Widevine 및 PlayReady용 다중 DRM 워크플로
+exl-id: 97adfa69-52ef-470b-903a-eff1f075b7be
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
+# Widevine 및 PlayReady용 다중 DRM 워크플로 {#multi-drm-workflow-for-widevine-and-playready}
 
-# Widevine 및 PlayReady {#multi-drm-workflow-for-widevine-and-playready}에 대한 다중 DRM 작업 과정
+이 Multi-DRM 워크플로우는 Widevine 및 PlayReady로 암호화된 DASH 콘텐츠의 설정, 패키징, 라이센싱 및 재생을 안내합니다.
 
-이 멀티 DRM 워크플로우에서는 Widine 및 PlayReady를 사용하여 암호화된 DASH 컨텐츠의 설정, 패키징, 라이선스 및 재생을 수행할 수 있습니다.
-
-Primetime TVSDK는 TVSDK 버전 2.X에서만 HTML5 및 Android에서 Widevine으로 암호화된 또는 PlayReady로 암호화된 DASH 컨텐츠를 재생할 수 있습니다.DASH 컨텐츠 암호화는 일반 암호화 사양에 의해 정의되며, 전체 세부 사항은 이 문서의 범위를 벗어납니다. 이 섹션에서는 DASH 형식 및 암호화 사양의 관련 세부 정보와 지원되는 컨텐츠를 생성하는 데 사용할 수 있는 일부 도구에 대한 정보를 제공합니다.
+Primetime TVSDK는 TVSDK 버전 2.X에서만 Android와 HTML 5에서 Widevine 암호화 또는 PlayReady 암호화 DASH 콘텐츠 재생을 지원합니다. DASH 콘텐츠 암호화는 일반 암호화 사양에 따라 정의되며, 전체 세부 정보는 이 문서의 범위를 벗어납니다. 이 섹션에서는 DASH 형식 및 암호화 사양에 대한 관련 세부 정보와 지원되는 콘텐츠를 생성하는 데 사용할 수 있는 도구에 대한 정보를 제공합니다.
 
 >[!NOTE]
 >
->Android TVSDK 1.X로 Widevine으로 암호화된 DASH 컨텐츠를 재생할 계획이 없습니다.
+>Android TVSDK 1.X에 Widevine 암호화 DASH 콘텐츠 재생을 백포트하는 계획은 없습니다.
 
-## 대시 내용 및 공통 암호화 개요 {#section_33A881158F724835B4B89AAE97302B17}
+## DASH 콘텐츠 및 공통 암호화 개요 {#section_33A881158F724835B4B89AAE97302B17}
 
-대시 컨텐츠는 xml로 작성된 기본 매니페스트로 이루어져 재생되는 비디오 및 오디오 파일을 가리킵니다. 아래 예에서 DASH 매니페스트는 매니페스트 URL에 상대적인 비디오 URL, video/1080_30.mp4 및 오디오 URL audio/1080_30.mp4를 가리킵니다.
+대시 콘텐츠는 비디오 및 오디오 파일을 재생하도록 지정하는 xml로 작성된 기본 매니페스트로 구성됩니다. 아래 예에서 DASH 매니페스트는 매니페스트의 URL에 상대적인 비디오 URL, video/1080_30.mp4 및 오디오 URL, audio/1080_30.mp4를 가리킵니다.
 
 ```
 <MPD xmlns="urn:mpeg:DASH:schema:MPD:2011" xmlns:cenc="urn:mpeg:cenc:2013" xmlns:scte35="urn:scte:scte35:2013" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"mediaPresentationDuration="PT30S" minBufferTime="PT8S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 DASH-MPD.xsd">
@@ -44,7 +43,7 @@ Primetime TVSDK는 TVSDK 버전 2.X에서만 HTML5 및 Android에서 Widevine으
 </MPD>
 ```
 
-다음은 공통 암호화를 적용한 매니페스트 예입니다. 매니페스트의 Widevine 내용 보호 XML 요소(`<ContentProtection>` 블록)에는 base64 인코딩된 pssh(Protection System 특정 헤더) 상자가 포함되어 있습니다. pssh 상자에는 컨텐츠 암호 해독을 초기화하는 데 필요한 데이터가 포함되어 있습니다. 이 데이터는 매니페스트가 참조하는 비디오/오디오 컨텐츠에도 포함됩니다. DASH 컨텐츠에는 PlayReady 1과 Widevine 1과 같이 여러 컨텐츠 보호 요소가 있을 수 있습니다.
+다음은 일반 암호화가 적용된 예제 매니페스트입니다. Widevine 콘텐츠 보호 XML 요소( `<ContentProtection>` manifest에 base64 인코딩 pssh(Protection System Specific Header) 상자가 있습니다. pssh 상자에는 콘텐츠 암호 해독을 초기화하는 데 필요한 데이터가 포함되어 있습니다. 이 데이터는 매니페스트가 참조하는 비디오/오디오 콘텐츠에도 포함됩니다. DASH 컨텐츠는 복수의 컨텐츠 보호 요소를 가질 수 있다, 예를 들어, PlayReady에 대한 1 및 Widevine에 대한 1.
 
 ```
 <?xml version="1.0" ?>
@@ -121,7 +120,7 @@ Primetime TVSDK는 TVSDK 버전 2.X에서만 HTML5 및 Android에서 Widevine으
 </MPD>
 ```
 
-위의 첫 번째 예는 각 스트림에 대해서만 하나의 파일을 참조하지만 두 번째 예제는 일련의 작은 컨텐츠 조각을 나타냅니다. 조각을 명시적으로 참조하는 대신 조각 템플릿을 정의할 수도 있습니다. 예:
+위의 첫 번째 예는 각 스트림에 대해서만 하나의 파일을 참조하고, 두 번째 예는 일련의 작은 콘텐츠 조각을 참조합니다. 조각을 명시적으로 참조하는 대신 다음과 같은 조각 템플릿을 정의할 수도 있습니다.
 
 ```
 <Representation bandwidth="348000" codecs="avc1.42c01e" height="360" id="1" width="640">
@@ -137,4 +136,4 @@ Primetime TVSDK는 TVSDK 버전 2.X에서만 HTML5 및 Android에서 Widevine으
 </Representation>
 ```
 
-이 경우 컨텐츠 파서(TVSDK)는 Jaigo0.m4s, Jaigo1.m4s, Jaigo2.m4s 등에서 비디오 컨텐츠를 찾을 것으로 예상합니다. 이것은 주로 실시간 스트리밍에 사용되며 때때로 클라이언트에서 매니페스트를 다시 다운로드하지 않아도 된다는 이점이 있습니다.
+이 경우 콘텐츠 파서(TVSDK)는 Jigo0.m4s, Jigo1.m4s, Jigo2.m4s 등에서 비디오 콘텐츠를 찾을 수 있습니다. 이 기능은 주로 라이브 스트리밍에 사용되며 클라이언트가 매니페스트를 때때로 다시 다운로드할 필요가 없다는 장점이 있습니다.

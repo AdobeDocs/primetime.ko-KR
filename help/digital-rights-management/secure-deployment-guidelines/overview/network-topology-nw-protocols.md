@@ -1,20 +1,19 @@
 ---
-description: 보안 네트워크 아키텍처를 구성할 때 네트워크 프로토콜은 기업 네트워크의 Adobe Primetime DRM과 다른 시스템 간의 상호 작용을 위해 필요합니다.
+description: 보안 네트워크 아키텍처를 구성할 때 Adobe Primetime DRM과 엔터프라이즈 네트워크의 다른 시스템 간의 상호 작용을 위한 네트워크 프로토콜이 필요합니다.
 title: Adobe Primetime DRM 네트워크 프로토콜
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d5720ef4-6845-4a62-940a-9d8ba9b43b13
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Primetime DRM 네트워크 프로토콜 {#adobe-primetime-drm-network-protocols}
 
-보안 네트워크 아키텍처를 구성할 때 네트워크 프로토콜은 기업 네트워크의 Adobe Primetime DRM과 다른 시스템 간의 상호 작용을 위해 필요합니다.
+보안 네트워크 아키텍처를 구성할 때 Adobe Primetime DRM과 엔터프라이즈 네트워크의 다른 시스템 간의 상호 작용을 위한 네트워크 프로토콜이 필요합니다.
 
-보안 네트워크 아키텍처를 구성할 때 이러한 상호 작용에 다음과 같은 네트워크 프로토콜이 필요합니다.
+보안 네트워크 아키텍처를 구성할 때 이 상호 작용을 위해서는 다음 네트워크 프로토콜이 필요합니다.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_itc_33z_n4"> 
  <thead class="- topic/thead "> 
@@ -30,19 +29,19 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">HTTPS(선택 사항) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR 및 Adobe Primetime 클라이언트는 HTTPS를 사용하여 Primetime DRM과 통신할 수 있습니다.FMRMS 1.x 클라이언트를 지원하지 않는 경우 HTTPS(SSL)가 필요하지 않습니다. 자세한 내용은 <a href="../../secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="dita" scope="local"> 수신 URL </a> 및 SSL 구성을 참조하십시오. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR 및 Adobe Primetime 클라이언트는 HTTPS를 사용하여 Primetime DRM과 통신할 수 있습니다. HTTPS(SSL)는 FMRMS 1.x 클라이언트를 지원하지 않는 한 필요하지 않습니다. 자세한 내용은 <a href="../../secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="dita" scope="local"> 수신 URL </a> 및 SSL 구성 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 응용 프로그램 서버용 포트 {#ports-for-application-servers}
+## 애플리케이션 서버용 포트 {#ports-for-application-servers}
 
-모든 네트워크 포트를 사용하도록 Adobe Primetime DRM 라이선스 서버를 구성할 수 있습니다.
+네트워크 포트를 사용하도록 Adobe Primetime DRM 라이센스 서버를 구성할 수 있습니다.
 
-Primetime DRM을 실행하는 응용 프로그램 서버에 연결하는 클라이언트를 허용하려는 네트워크 기능에 따라, 내부 방화벽에서 이 포트를 활성화하거나 비활성화해야 합니다.
+이러한 포트는 Primetime DRM을 실행하는 애플리케이션 서버에 접속하는 클라이언트를 허용하려는 네트워크 기능에 따라 내부 방화벽에서 활성화되거나 비활성화되어야 합니다.
 
-## SSL {#configuring-ssl} 구성
+## SSL 구성 {#configuring-ssl}
 
-SSL(Secure Sockets Layer)은 Flash Media Library Server 1.x 클라이언트에 대한 지원이 필요한 경우에만 필요합니다.
+SSL(Secure Sockets Layer)은 Flash 미디어 Rights Management 서버 1.x 클라이언트에 대한 지원이 필요한 경우에만 필요합니다.
 
-Adobe Primetime DRM 키 서버에 클라이언트 인증을 사용하는 SSL이 필요합니다. 자세한 내용은 [Adobe Primetime DRM 키 서버 사용](../../using-the-drm-key-server/requirements.md)을 참조하십시오.
+Adobe Primetime DRM 키 서버에는 클라이언트 인증이 있는 SSL이 필요합니다. 자세한 내용은 [Adobe Primetime DRM 키 서버 사용](../../using-the-drm-key-server/requirements.md).

@@ -1,26 +1,25 @@
 ---
-description: 기본적으로 TV SDK는 사용자가 광고 브레이크를 검색할 때 광고를 중단하도록 합니다. 이전 중단 완료 후 경과된 시간이 특정 시간 이내인 경우 광고 나누기를 건너뛸 동작을 사용자 정의할 수 있습니다.
-title: 일정 기간 동안 광고 중단 건너뛰기
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 기본적으로 TVSDK는 사용자가 광고 브레이크를 검색할 때 광고 브레이크를 강제로 재생합니다. 이전 브레이크 완료에서 경과된 시간이 특정 분 이내인 경우 광고 브레이크를 건너뛰도록 동작을 사용자 지정할 수 있습니다.
+title: 일정 기간 동안 광고 브레이크 건너뛰기
+exl-id: 7d5ee788-4a67-4c70-acc7-a950e6b2db8a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
+# 일정 기간 동안 광고 브레이크 건너뛰기{#skip-ad-breaks-for-a-period-of-time}
 
-# {#skip-ad-breaks-for-a-period-of-time} 기간 동안 광고 중단 건너뛰기
-
-기본적으로 TV SDK는 사용자가 광고 브레이크를 검색할 때 광고를 중단하도록 합니다. 이전 중단 완료 후 경과된 시간이 특정 시간 이내인 경우 광고 나누기를 건너뛸 동작을 사용자 정의할 수 있습니다.
+기본적으로 TVSDK는 사용자가 광고 브레이크를 검색할 때 광고 브레이크를 강제로 재생합니다. 이전 브레이크 완료에서 경과된 시간이 특정 분 이내인 경우 광고 브레이크를 건너뛰도록 동작을 사용자 지정할 수 있습니다.
 
 >[!IMPORTANT]
 >
->광고를 건너뛰려는 내부 검색이 있는 경우 재생에 약간의 일시 중지가 있을 수 있습니다.
+>광고를 건너뛰려는 내부 찾기가 있는 경우 재생이 약간 일시 중지될 수 있습니다.
 
-사용자 지정된 광고 정책 선택기의 다음 예는 사용자가 광고 분리를 본 후 다음 5분(월 시계 시간)에 광고를 건너뜁니다.
+사용자 지정된 광고 정책 선택기의 다음 예제는 사용자가 광고 브레이크를 시청한 후 5분(벽면 시계 시간) 안에 광고를 건너뜁니다.
 
-1. 기본 광고 정책 선택기를 확장하여 기본 동작을 무시합니다.
+1. 기본 광고 정책 선택기를 확장하여 기본 동작을 재정의합니다.
 
    ```
    /** 
@@ -116,4 +115,3 @@ ht-degree: 0%
    mediaPlayerItemConfig.advertisingFactory = new CustomAdPolicyContentFactory(); 
    player.replaceCurrentResource(mediaResource, mediaPlayerItemConfig);
    ```
-

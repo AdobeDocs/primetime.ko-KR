@@ -1,20 +1,19 @@
 ---
-description: OpportunityGenerator 클래스를 구현하여 고유한 기회 생성기를 구현할 수 있습니다.
-title: 사용자 정의 기회 생성기 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: OpportunityGenerator 클래스를 구현하여 고유한 Opportunity Generator를 구현할 수 있습니다.
+title: 사용자 정의 영업 기회 생성기 구현
+exl-id: 215259bd-d8df-43df-9dba-a373559fd926
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
+# 사용자 정의 영업 기회 생성기 구현 {#implement-a-custom-opportunity-generator}
 
-# 사용자 지정 기회 생성기 {#implement-a-custom-opportunity-generator} 구현
+OpportunityGenerator 클래스를 구현하여 고유한 Opportunity Generator를 구현할 수 있습니다.
 
-OpportunityGenerator 클래스를 구현하여 고유한 기회 생성기를 구현할 수 있습니다.
-
-1. `ContentFactory` 인터페이스를 구현하고 `retrieveGenerators`을(를) 재정의하여 사용자 지정 `ContentFactory`을 구현합니다.
+1. 사용자 정의 구현 `ContentFactory` 를 구현하여 `ContentFactory` 인터페이스 및 재정의 `retrieveGenerators`.
 
    예:
 
@@ -30,7 +29,7 @@ OpportunityGenerator 클래스를 구현하여 고유한 기회 생성기를 구
    }
    ```
 
-1. `ContentFactory`을 `MediaPlayer`에 등록합니다.
+1. 등록 `ContentFactory` (으)로 `MediaPlayer`.
 
    예:
 
@@ -47,14 +46,14 @@ OpportunityGenerator 클래스를 구현하여 고유한 기회 생성기를 구
    itemLoader.load(resource, id, config);
    ```
 
-1. `OpportunityGenerator` 클래스를 구현하는 사용자 지정 기회 생성기 클래스를 만듭니다.
+1. 다음을 구현하는 사용자 지정 영업 기회 생성기 클래스 만들기 `OpportunityGenerator` 클래스.
 
    ```java
    public class CustomOpportunityGenerator implements OpportunityGenerator  
    {...}
    ```
 
-   1. 사용자 지정 기회 생성기에서 `doConfigure`, `doUpdate` 및 `doCleanup`:
+   1. 사용자 지정 영업 기회 생성기에서 `doConfigure`, `doUpdate` 및 `doCleanup`:
 
       ```java
       @Override 
@@ -69,13 +68,13 @@ OpportunityGenerator 클래스를 구현하여 고유한 기회 생성기를 구
       }
       ```
 
-      시간 지정 메타데이터를 가져오려면 다음을 수행하십시오.
+      시간 메타데이터를 가져오려면 다음을 수행합니다.
 
       ```java
       List<TimedMetadata> tList = getItem().getTimedMetadata(); 
       ```
 
-   1. 각 `TimedMetadata` 또는 `TimedMetadata` 그룹에 대해 다음 속성을 사용하여 기회를 만듭니다.
+   1. 각 `TimedMetadata` 또는 그룹 `TimedMetadata`, 다음 속성을 사용하여 기회를 만듭니다.
 
       ```java
       Opportunity( 
@@ -86,11 +85,11 @@ OpportunityGenerator 클래스를 구현하여 고유한 기회 생성기를 구
       ); 
       ```
 
-   1. 만든 각 기회에 대해 `OpportunityGeneratorClient:getClient().resolve(opportunity);`에서 `resolve`으로 전화하십시오.
+   1. 생성된 각 영업 기회에 대해 `resolve` 다음에 있음 `OpportunityGeneratorClient:getClient().resolve(opportunity);`.
 
 <!--<a id="example_7A46377EBE79458E87423EB95D0568D4"></a>-->
 
-다음은 사용자 지정 배치 기회 탐지기의 예입니다.
+다음은 샘플 사용자 지정 배치 기회 감지기입니다.
 
 ```java
 public class MyOpportunityGenerator implements OpportunityGenerator {

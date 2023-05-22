@@ -1,34 +1,33 @@
 ---
-description: MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
+description: MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
 title: MediaPlayer 설정
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f492b2bb-3280-4306-ac4b-8b8d0fd68409
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
 
 ---
 
-
 # MediaPlayer 설정{#set-up-the-mediaplayer}
 
-MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
+MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
 
-1. 다음을 사용하여 `MediaPlayer`을(를) 인스턴스화합니다.
+1. 인스턴스화 `MediaPlayer` 다음을 사용합니다.
 
    ```js
    var player = new AdobePSDK.MediaPlayer();
    ```
 
-1. `MediaPlayerView` 인스턴스를 만듭니다.
+1. 만들기 `MediaPlayerView` 인스턴스:
 
    ```js
    var view = new AdobePSDK.MediaPlayerView(container);
    ```
 
-   여기서 `container`은 `HTMLMediaElement`가 포함된 대상 `div` 요소입니다.
+   위치 `container` 대상임 `div` 을 포함하는 요소 `HTMLMediaElement`.
 
-   예를 들어, HTML 페이지에서:
+   예를 들어 HTML 페이지에서 다음을 수행합니다.
 
    ```
    <div id="videoDiv"> 
@@ -40,7 +39,7 @@ MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡
    </div>
    ```
 
-   전화 문의:
+   호출:
 
    ```js
    var view = new  
@@ -50,15 +49,15 @@ MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡
          document.getElementById("videoDiv"));  
    ```
 
-1. `MediaPlayerView` 인스턴스를 `MediaPlayer` 인스턴스에 첨부합니다.
+1. 다음을 첨부합니다 `MediaPlayerView` 인스턴스: `MediaPlayer` 인스턴스:
 
    ```js
    player.view = view;
    ```
 
-1. 사용자 정의 컨트롤 `div` 요소를 MediaPlayer 인스턴스에 첨부합니다.
+1. 사용자 지정 컨트롤 첨부 `div` 요소를 MediaPlayer 인스턴스에 추가합니다.
 
-   예를 들어, HTML에서는:
+   예를 들어 HTML:
 
    ```
    <div id="videoDiv"> 
@@ -68,7 +67,7 @@ MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡
    </div>
    ```
 
-   전화 문의:
+   호출:
 
    ```js
    if (typeof player.getView() !== 'undefined') { 
@@ -77,4 +76,4 @@ MediaPlayer 객체는 미디어 플레이어의 비헤이비어와 기능을 캡
    }
    ```
 
-이제 `MediaPlayer` 인스턴스를 사용할 수 있으며 장치 화면에 비디오 내용을 표시하도록 올바르게 구성됩니다.
+다음 `MediaPlayer` 이제 인스턴스를 사용할 수 있으며 장치 화면에 비디오 콘텐츠를 표시하도록 올바르게 구성되었습니다.

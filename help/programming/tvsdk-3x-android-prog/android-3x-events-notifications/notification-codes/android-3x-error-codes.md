@@ -1,22 +1,21 @@
 ---
 title: PSDK 오류 코드
-description: 다양한 오류 코드, 경고 및 기본 오류 코드에 대한 정보입니다.
-translation-type: tm+mt
-source-git-commit: eddc327087411a6214cfd8dafef66b850a603f97
+description: 다양한 오류 코드, 경고 및 네이티브 오류 코드에 대한 정보입니다.
+exl-id: 90d66c13-c40c-4602-83da-186c2b623375
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 6%
 
 ---
 
-
 # PSDK 오류 코드 {#psdk-error-codes}
 
-PSDK 오류 코드, 경고 및 기본 오류 코드에 대해 자세히 알아보려면 읽어 보십시오.
+PSDK 오류 코드, 경고 및 네이티브 오류 코드에 대해 알아보려면 계속 읽으십시오.
 
 ## 오류
 
-다음 표에서는 ERROR 유형 알림에 대한 자세한 정보를 제공합니다. 대부분의 오류에는 관련 메타데이터가 포함됩니다.예를 들어 다운로드하지 못한 리소스의 URL입니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
+다음 표는 오류 유형 알림에 대한 자세한 정보를 제공합니다. 대부분의 오류에는 관련 메타데이터(예: 다운로드하지 못한 리소스의 URL)가 포함되어 있습니다. 일부 알림에는 기본 비디오 콘텐츠, 대체 오디오 콘텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함됩니다.
 
 <table frame="all" colsep="1" rowsep="1">
   <tr> 
@@ -30,24 +29,24 @@ PSDK 오류 코드, 경고 및 기본 오류 코드에 대해 자세히 알아�
     <td>기본 API에서 수행한 작업이 성공했습니다.</td>
   </tr>
   <tr>
-    <td>INVALID_ARGUMENT</td>
+    <td>잘못된 인수</td>
     <td>1</td>
-    <td>기본 API에 제공된 인수의 데이터 또는 형식이 잘못되었습니다.</td>
+    <td>기본 API에 제공된 데이터 또는 인수 형식이 잘못되었습니다.</td>
   </tr>
   <tr>
-    <td>NULL_POINTER</td>
+    <td>NULL_포인터</td>
     <td>2</td>
     <td>전달된 인수 중 하나가 NULL이거나 내부 구성원 중 하나가 초기화되지 않았습니다.</td>
   </tr>
   <tr>
     <td>ILLEGAL_STATE</td>
     <td>3</td>
-    <td>현재 플레이어 상태에서는 작업이 지원되지 않습니다.</td>
+    <td>작업이 현재 플레이어 상태에서 지원되지 않습니다.</td>
   </tr>
   <tr>
     <td>INTERFACE_NOT_FOUND</td>
     <td>4</td>
-    <td>이렇게 하면 요청한 인터페이스가 구현되지 않거나 상속되지 않을 때 interfaceCast 메서드에서 이 오류가 발생합니다.</td>
+    <td>요청한 인터페이스가 이에 의해 구현/상속되지 않은 경우 interfaceCast 메서드에서 이 오류가 발생합니다.</td>
   </tr>
   <tr>  
     <td>CREATION_FAILED</td>
@@ -65,9 +64,9 @@ PSDK 오류 코드, 경고 및 기본 오류 코드에 대해 자세히 알아�
     <td>요청한 데이터는 현재 사용할 수 없습니다.</td>
   </tr>
   <tr>
-    <td>SEEK_ERROR</td>
+    <td>찾기 오류</td>
     <td>8</td>
-    <td>검색 작업을 수행하는 동안 오류가 발생했습니다.</td>
+    <td>찾기 작업을 수행하는 동안 오류가 발생했습니다.</td>
   </tr>
   <tr>
     <td>UNSUPPORTED_FEATURE</td>
@@ -75,34 +74,34 @@ PSDK 오류 코드, 경고 및 기본 오류 코드에 대해 자세히 알아�
     <td>이 기능/기능은 지원되지 않습니다.</td>
   </tr>
   <tr>
-    <td>RANGE_ERROR</td>
+    <td>범위 오류</td>
     <td>10</td>
     <td>지정한 값이 범위를 벗어났습니다.</td>
   </tr>
   <tr>
-    <td>CODEC_NOT_SUPPORTED</td>
+    <td>CODEC_NOT_SUPPORT</td>
     <td>11</td>
-    <td>지정된 스트림의 오디오/비디오 코덱은 TVSDK 또는 기본 장치에서 지원되지 않습니다.</td>
+    <td>해당 스트림의 오디오/비디오 코덱이 TVSDK 또는 기본 장치에서 지원되지 않습니다.</td>
   </tr>
   <tr>
-    <td>MEDIA_ERROR</td>
+    <td>MEDIA_오류</td>
     <td>12</td>
     <td>지정한 미디어를 찾을 수 없습니다.</td>
   </tr>
   <tr>
-    <td>NETWORK_ERROR</td>
+    <td>네트워크 오류</td>
     <td>13</td>
-    <td>조각 또는 세그먼트(비디오 및 오디오 모두)를 다운로드하는 동안 오류가 발생했습니다.</td>
+    <td>조각 또는 세그먼트(비디오와 오디오 모두)를 다운로드하는 동안 오류가 발생했습니다.</td>
   </tr>
   <tr>
-    <td>GENERIC_ERROR</td>
+    <td>일반_오류</td>
     <td>14</td>
-    <td>일반 오류 이벤트입니다. 실제로 TVSDK에서 발행되지 않은 경우 TVSDK 오류 이벤트에 해당하는 숫자 코드 범위 끝에 대한 표시자만 있습니다.</td>
+    <td>일반 오류 이벤트. 실제로 TVSDK에서 발급하지 않았습니다. 이것은 TVSDK 오류 이벤트에 대응하는 숫자 코드 범위의 끝에 대한 마커일 뿐입니다.</td>
   </tr>
   <tr>
-    <td>INVALID_SEEK_TIME</td>
+    <td>INVALID_SEARCH_TIME</td>
     <td>15</td>
-    <td>제공된 검색 시간이 잘못되었습니다.</td>
+    <td>입력한 검색 시간이 잘못되었습니다.</td>
   </tr>
   <tr>
     <td>AUDIO_TRACK_ERROR</td>
@@ -116,35 +115,35 @@ PSDK 오류 코드, 경고 및 기본 오류 코드에 대해 자세히 알아�
   </tr>
   <tr>
     <td>ELEMENT_NOT_FOUND</td>
-    <td>18년</td>
+    <td>18</td>
     <td>요소를 찾을 수 없습니다.</td>
   </tr>
   <tr>
-    <td>NOT_IMPROVED</td>
-    <td>19년</td>
+    <td>NOT_IMPLEMENTED</td>
+    <td>19</td>
     <td>기능이 구현되지 않았습니다.</td>
   </tr>
   <tr>
     <td>PRE_ROLL_DISABLED</td>
-    <td>20년</td>
+    <td>20</td>
     <td>AdvertisingMetadata를 통해 프리롤이 비활성화되었습니다.</td>
   </tr>
   <tr>
     <td>PLAYBACK_NOT_AUTHORIZED</td>
-    <td>57년</td>
-    <td>Flash Player에서 HLS 재생이 활성화되지 않았습니다. AuthorizedFeatures.enableMediaPlayerHLSPlayback()을 참조하십시오.</td>
+    <td>57</td>
+    <td>Flash Player에서 HLS 재생이 활성화되지 않았습니다. AuthorizedFeatures.enableMediaPlayerHLSPlayback() 을 참조하십시오.</td>
   </tr>
   <tr>
-    <td>NETWORK_TIMEOUT</td>
-    <td>58년</td>
+    <td>NETWORK_TIME</td>
+    <td>58</td>
     <td>리소스/연결 서버를 가져오는 동안 네트워크 시간이 초과되었습니다.</td>
   </tr>
 </table>
 
 ## 경고
 
-다음 표에서는 WARN 유형 알림에 대한 자세한 정보를 제공합니다.
-대부분의 경고에는 관련 메타데이터가 포함됩니다.예를 들어 다운로드하지 못한 리소스의 URL입니다. 일부 알림에는 주 비디오 컨텐츠, 대체 오디오 컨텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함되어 있습니다.
+다음 표는 WARN 유형 알림에 대한 자세한 정보를 제공합니다.
+대부분의 경고에는 관련 메타데이터(예: 다운로드하지 못한 리소스의 URL)가 포함되어 있습니다. 일부 알림에는 기본 비디오 콘텐츠, 대체 오디오 콘텐츠 또는 광고에서 문제가 발생했는지 여부를 지정하는 메타데이터가 포함됩니다.
 
 <table frame="all" colsep="1" rowsep="1">
   <tr>
@@ -154,27 +153,27 @@ PSDK 오류 코드, 경고 및 기본 오류 코드에 대해 자세히 알아�
   </tr>
   <tr>
     <td>PLAYBACK_OPERATION_FAILED</td>
-    <td>200년</td>
-    <td>재생 작업 중 오류가 발생했습니다. 재생 관련 작업이 실패했습니다.</td>
+    <td>200</td>
+    <td>재생 작업 도중 오류가 발생했습니다. 재생 관련 작업이 실패했습니다.</td>
   </tr>
   <tr>  
-    <td>NATIVE_WARNING</td>
+    <td>NATIVE_ALERT</td>
     <td>201</td>
     <td>낮은 수준의 AVE 라이브러리에서 오류가 발생했습니다.</td>
   </tr>
   <tr>
     <td>AD_RESOLVER_FAILED</td>
-    <td>202년</td>
-    <td>광고 플러그인이 광고를 확인하지 못했습니다.</td>
+    <td>202</td>
+    <td>광고 플러그인으로 광고를 해결하지 못했습니다.</td>
   </tr>
   <tr>
     <td>AD_MANIFEST_LOAD_FAILED</td>
-    <td>203년</td>
+    <td>203</td>
     <td>광고 매니페스트를 로드하지 못했습니다.</td>
   </tr>
   <tr>
     <td>AD_RESOLUTION_IN_PROGRESS</td>
-    <td>204년</td>
+    <td>204</td>
     <td>광고 해결 작업이 진행 중입니다.</td>
   </tr>
   </table>
@@ -189,14 +188,14 @@ PSDK 오류 코드, 경고 및 기본 오류 코드에 대해 자세히 알아�
   </tr>
   <tr>
     <td>REVENUE_OPTIMIZATION_REPORTING</td>
-    <td>300년</td>
-    <td>추가 보고 및 분석을 위한 TVSDK 세부 알림</td>
+    <td>300</td>
+    <td>추가 보고 및 분석을 위한 TVSDK 세부 알림.</td>
   </tr>
  </table>
 
-## 기본 오류 코드
+## 네이티브 오류 코드
 
-AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개체에서 이러한 비디오 재생 알림을 반환합니다.
+AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 객체에서 이러한 비디오 재생 통지를 반환한다.
 
 <table frame="all" colsep="1" rowsep="1">
   <tr>
@@ -207,22 +206,22 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr>  
     <td>END_OF_PERIOD</td>
     <td>-1</td>
-    <td>기간이 종료되었습니다.</td>
+    <td>기간 종료.</td>
   </tr>
   <tr>
     <td>성공</td>
     <td>0</td>
-    <td>작업이 성공했습니다.</td>
+    <td>작업이 완료되었습니다.</td>
   </tr>
   <tr>
     <td>ASYNC_OPERATION_IN_PROGRESS</td>
-    <td>3</td>
+    <td>1</td>
     <td>비동기 작업. 작업 요청이 수행되었습니다. 성공/실패 정보는 나중에 사용할 수 있습니다.</td>
   </tr>
   <tr>
     <td>EOF</td>
     <td>2</td>
-    <td>파일 끝(EOF) 조건으로 인해 작업을 수행할 수 없습니다.</td>
+    <td>EOF(파일 끝) 조건으로 인해 작업을 수행할 수 없습니다.</td>
   </tr>
   <tr>
     <td>DECODER_FAILED</td>
@@ -235,54 +234,54 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
     <td>하드웨어 디코더를 열지 못했습니다.</td>
   </tr>
   <tr>
-    <td>FILE_NOT_FOUND</td>
+    <td>파일 없음_찾음</td>
     <td>5</td>
     <td>리소스를 찾을 수 없습니다.</td>
   </tr>
   <tr>
-    <td>GENERIC_ERROR</td>
+    <td>일반_오류</td>
     <td>6</td>
     <td>일반 오류입니다.</td>
   </tr>
   <tr>
-    <td>IRRECOVERABLE_ERROR</td>
+    <td>복구할 수 없음 오류</td>
     <td>7</td>
-    <td>비디오 엔진을 복구할 수 없는 오류 조건입니다.</td>
+    <td>비디오 엔진에서 복구할 수 없는 오류 조건입니다.</td>
   </tr>
   <tr>
-    <td>LOST_CONNECTION_RECOVERABLE</td>
+    <td>LOST_CONNECTION_RECOVERY</td>
     <td>8</td>
-    <td>네트워크 오류입니다. 복구하려고 합니다.</td>
+    <td>네트워크 오류입니다. 복구를 시도하고 있습니다.</td>
   </tr>
   <tr> 
     <td>NO_FIXED_SIZE</td>
     <td>9</td>
-    <td>리소스의 크기를 확인할 수 없습니다.</td>
+    <td>리소스의 크기를 결정할 수 없습니다.</td>
   </tr>
   <tr>
-    <td>NOT_IMPROVED</td>
+    <td>NOT_IMPLEMENTED</td>
     <td>10</td>
     <td>기능이 구현되지 않았습니다.</td>
   </tr>
   <tr>
-    <td>OUT_OF_MEMORY</td>
+    <td>메모리 부족</td>
     <td>11</td>
     <td>메모리가 부족합니다.</td>
   </tr>
   <tr>
-    <td>PARSE_ERROR</td>
+    <td>구문 분석 오류</td>
     <td>12</td>
-    <td>미디어 파일을 구문 분석하는 동안 오류가 발생했습니다.</td>
+    <td>미디어 파일을 구문 분석하는 중 오류가 발생했습니다.</td>
   </tr>
   <tr>  
-    <td>SIZE_UNKNOWN</td>
+    <td>SIZE_알 수 없음</td>
     <td>13</td>
-    <td>리소스 크기가 있지만 알 수 없습니다.</td>
+    <td>리소스의 크기가 있지만 알 수 없습니다.</td>
   </tr>
   <tr>  
     <td>UNDER_FLOW</td>
     <td>14</td>
-    <td>언더플로우 조건.</td>
+    <td>언더플로우 상태.</td>
   </tr>
   <tr> 
     <td>UNSUPPORTED_CONFIG</td>
@@ -301,18 +300,18 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   </tr>
   <tr>  
     <td>INVALID_PARAMETER</td>
-    <td>18년</td>
-    <td>매개 변수가 잘못되었습니다.</td>
+    <td>18</td>
+    <td>잘못된 매개변수.</td>
   </tr>
   <tr>
     <td>INVALID_OPERATION</td>
-    <td>19년</td>
-    <td>작업이 허용되지 않습니다.</td>
+    <td>19</td>
+    <td>작업이 허용되지 않았습니다.</td>
   </tr>
   <tr>
     <td>OP_ONLY_ALLOWED_IN_PAUSED_STATE</td>
-    <td>20년</td>
-    <td>작업은 일시 중지된 동안에만 허용됩니다.</td>
+    <td>20</td>
+    <td>일시 중지된 동안에만 작업이 허용됩니다.</td>
   </tr>
   <tr> 
     <td>OP_INVALID_WITH_AUDIO_ONLY_FILE</td>
@@ -322,7 +321,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr>
     <td>PREVIOUS_STEP_SEEK_IN_PROGRESS</td>
     <td>22</td>
-    <td>이전 검색 작업이 아직 진행 중입니다.</td>
+    <td>이전 찾기 작업이 아직 진행 중입니다.</td>
   </tr>
   <tr> 
     <td>SOURCE_NOT_SPECIFIED</td>
@@ -330,19 +329,19 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
     <td>리소스를 지정하지 않았습니다.</td>
   </tr>
   <tr>
-    <td>RANGE_ERROR</td>
+    <td>범위 오류</td>
     <td>24</td>
     <td>지정한 값이 범위를 벗어났습니다.</td>
   </tr>
   <tr>
-    <td>INVALID_SEEK_TIME</td>
+    <td>INVALID_SEARCH_TIME</td>
     <td>25</td>
-    <td>검색 시간이 잘못되었습니다.</td>
+    <td>잘못된 검색 시간.</td>
   </tr>
   <tr>
     <td>FILE_STRUCTURE_INVALID</td>
     <td>26</td>
-    <td>지정한 파일이 필요한 구문을 따르지 않습니다.</td>
+    <td>지정한 파일이 예상 구문을 준수하지 않습니다.</td>
   </tr>
   <tr>
     <td>COMPONENT_CREATION_FAILURE</td>
@@ -357,15 +356,15 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr>
     <td>CONTAINER_NOT_SUPPORTED</td>
     <td>29</td>
-    <td>컨테이너 유형은 지원되지 않습니다.</td>
+    <td>컨테이너 유형이 지원되지 않습니다.</td>
   </tr>
   <tr>
     <td>SEEK_FAILED</td>
     <td>30</td>
-    <td>검색에 실패했습니다.</td>
+    <td>찾기에 실패했습니다.</td>
   </tr>
   <tr>
-    <td>CODEC_NOT_SUPPORTED</td>
+    <td>CODEC_NOT_SUPPORT</td>
     <td>31</td>
     <td>지원되지 않는 코덱입니다.</td>
   </tr>
@@ -375,14 +374,14 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
     <td>네트워크를 사용할 수 없습니다.</td>
   </tr>
   <tr>  
-    <td>NETWORK_ERROR</td>
+    <td>네트워크 오류</td>
     <td>33</td>
-    <td>네트워크에서 데이터를 가져오는 동안 오류가 발생했습니다.</td>
+    <td>네트워크에서 데이터를 가져오는 도중 오류 발생.</td>
   </tr>
   <tr>
     <td>오버플로</td>
     <td>34</td>
-    <td>오버플로.</td>
+    <td>오버플로입니다.</td>
   </tr>
   <tr>  
     <td>VIDEO_PROFILE_NOT_SUPPORTED</td>
@@ -397,32 +396,32 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr> 
     <td>INVALID_REPLACE_DURATION</td>
     <td>37</td>
-    <td>지정한 대체 기간이 잘못되었거나 스트림 끝을 지나 확장됩니다.</td>
+    <td>지정한 바꾸기 기간이 잘못되었거나 스트림의 끝을 지나 확장되었습니다.</td>
   </tr>
   <tr>
     <td>CALLED_FROM_WRONG_THREAD</td>
     <td>38</td>
-    <td>잘못된 스레드에서 API를 호출할 수 없습니다. 대부분, Main 스레드에서만 호출되어야 하는 API 요소의 경우.</td>
+    <td>잘못된 스레드에서 API를 호출할 수 없습니다. 대부분, 기본 스레드에서만 호출해야 하는 API 요소의 경우.</td>
   </tr>
   <tr>
-    <td>FRAGMENT_READ_ERROR</td>
+    <td>FRAGMENT_READ_오류</td>
     <td>39</td>
-    <td>조각 읽기 오류입니다. 장애 조치(failover)가 없습니다. 엔진은 다음 조각을 읽으려고 합니다.</td>
+    <td>조각 읽기 오류. 장애 조치(failover)가 없습니다. 엔진은 다음 조각을 읽으려고 시도합니다.</td>
   </tr>
   <tr>
     <td>중단됨</td>
     <td>40</td>
-    <td>명시적 중단 또는 제거 호출로 작업이 중단되었습니다.</td>
+    <td>명시적 Abort 또는 Destroy 호출에 의해 작업이 중단되었습니다.</td>
   </tr>
   <tr>
-    <td>UNSUPPORTED_HLS_VERSION</td>
+    <td>지원되지 않는 HLS_VERSION</td>
     <td>41</td>
     <td>이 버전의 HLS 미디어를 재생할 수 없습니다.</td>
   </tr>
   <tr>
     <td>CANNOT_FAIL_OVER</td>
     <td>42</td>
-    <td>실패할 수 없습니다.</td>
+    <td>장애 조치(failover)할 수 없습니다.</td>
   </tr>
   <tr> 
     <td>HTTP_TIME_OUT</td>
@@ -432,7 +431,7 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr>
     <td>NETWORK_DOWN</td>
     <td>44</td>
-    <td>사용자의 네트워크 연결이 끊어졌습니다. 재생을 중단하거나 연결이 해제되면 다시 시작됩니다.</td>
+    <td>사용자의 네트워크 연결이 끊어졌습니다. 재생은 언제든지 중단될 수 있으며 연결을 사용할 수 있을 때 다시 시작됩니다.</td>
   </tr>
   <tr>
     <td>NO_USABLE_BITRATE_PROFILE</td>
@@ -452,42 +451,42 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr>
     <td>REPLACEMENT_FAILED</td>
     <td>48</td>
-    <td>삽입 API에 지정된 대체가 실패할 수 있습니다. 삽입에 성공했지만 대체가 되지 않았음을 의미합니다. 교체할 매니페스트를 타임라인에서 제거한 경우 교체가 실패할 수 있습니다.</td>
+    <td>삽입 API에 지정된 대체를 수행할 수 없습니다. 삽입은 성공했지만 교체는 성공하지 못했다는 의미다. 대체할 매니페스트가 타임라인에서 제거된 경우 교체가 실패할 수 있습니다.</td>
   </tr>
   <tr>
-    <td>SWITCH_TO_비대칭_PROFILE</td>
+    <td>SWITCH_TO_ASYMMETRIC_PROFILE</td>
     <td>49</td>
-    <td>DRM이 비대칭 프로파일로 전환하고 있습니다. 모든 프로파일은 지속 시간 동안 정렬될 예정입니다. 그렇지 않으면 이 경고가 발생하고 재생 중에 이동할 수 있습니다.</td>
+    <td>DRM이 비대칭 프로파일로 전환되고 있습니다. 모든 프로필은 기간이 일치해야 합니다. 그렇지 않으면 이 경고가 표시되고 재생에서 점프가 있을 수 있습니다.</td>
   </tr>
   <tr>
     <td>LIVE_WINDOW_MOVED_BACKWARD</td>
     <td>50</td>
-    <td>라이브 창은 앞으로만 이동할 예정입니다. 그렇지 않으면 이 경고가 발생하고 창을 읽을 수 없습니다. 이로 인해 재생에 이동(또는 중지/장시간 일시 중지)이 있을 수 있습니다.</td>
+    <td>라이브 창은 앞으로 이동해야 합니다. 그렇지 않으면 이 경고가 표시되고 창이 읽히지 않습니다. 이로 인해 재생에서 점프(또는 정지/긴 일시 중지)가 있을 수 있습니다.</td>
   </tr>
   <tr>
     <td>CURRENT_PERIOD_EXPIRED</td>
     <td>51</td>
-    <td>라이브 창이 현재 기간을 넘었습니다.</td>
+    <td>라이브 창이 현재 기간 이상으로 이동되었습니다.</td>
   </tr>
   <tr>
     <td>CONTENT_LENGTH_MISMATCH</td>
     <td>52</td>
-    <td>HTTP 서버에서 보고한 컨텐츠 길이가 실제 미디어 크기와 일치하지 않습니다.</td>
+    <td>HTTP 서버에서 보고한 콘텐츠 길이가 실제 미디어 크기와 일치하지 않습니다.</td>
   </tr>
   <tr>
-    <td>PERIOD_HOLD</td>
+    <td>기간 보류</td>
     <td>53</td>
-    <td>미디어 판독기가 setHoldAt API에서 설정한 시간에 도달했기 때문에 더 이상 읽을 수 없습니다.</td>
+    <td>setHoldAt API에서 설정한 시간에 도달했기 때문에 미디어 판독기에서 더 이상 읽을 수 없습니다.</td>
   </tr>
   <tr>  
     <td>LIVE_HOLD</td>
     <td>54</td>
-    <td>미디어 판독기가 라이브 창의 끝에 도달하여 세그먼트를 로드할 수 없습니다. 서버가 새 미디어를 라이브 창에 광고를 하면 세그먼트 로드가 다시 시작됩니다. 이 상태는 일반적으로 다음과 같은 경우에 도달합니다.<ul><li>bufferTime이 너무 높음(라이브 창 지속 시간과 같거나 높음).</li><li>하나 이상의 삽입/지우기 API가 조합되어 추가된 것보다 더 많은 미디어를 대체합니다.</li><li>다음 기간은 보류 중인 미디어 교체(InsertBy API 호출로 인해)가 있는 라이브 기간입니다</li></ul></td>
+    <td>라이브 창의 끝에 도달했으므로 미디어 판독기에서 세그먼트를 로드할 수 없습니다. 서버가 새 미디어를 라이브 창에 광고하면 세그먼트 로드가 다시 시작됩니다. 이 상태는 일반적으로 다음과 같은 경우에 도달합니다.<ul><li>bufferTime이 너무 높습니다(라이브 창 기간과 같거나 그보다 높음).</li><li>삽입/지우기 API 중 하나 이상의 조합이 추가된 미디어보다 더 많은 미디어를 대체했습니다.</li><li>다음 기간은 InsertBy API 호출로 인해 미디어 교체가 보류 중인 라이브 기간입니다</li></ul></td>
   </tr>
   <tr>
     <td>BAD_MEDIA_INTERLEAVING</td>
     <td>55</td>
-    <td>미디어의 오디오 및 비디오 인터리브가 제대로 수행되지 않습니다. 패키징 오류입니다. 차이가 2초를 초과하면 경고가 전달됩니다.</td>
+    <td>미디어의 오디오 및 비디오 인터리빙이 제대로 수행되지 않습니다. 패키징 오류입니다. 차이가 2초를 초과하면 경고가 발송됩니다.</td>
   </tr>
   <tr>
     <td>DRM_NOT_AVAILABLE</td>
@@ -496,68 +495,68 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   </tr>
   <tr>  
     <td>PLAYBACK_NOT_AUTHORIZED</td>
-    <td>57년</td>
+    <td>57</td>
     <td>Flash Player에서 HLS 재생이 활성화되지 않았습니다. AuthorizedFeatures.enableHLSPlayback을 참조하십시오.</td>
   </tr>
   <tr>
     <td>BAD_MEDIA_SAMPLE_FOUND</td>
-    <td>58년</td>
-    <td>디코더가 디코딩할 수 없는 잘못된 샘플을 받았습니다. 이는 일반적으로 치명적인 오류가 아니지만 오디오/비디오에 문제가 있을 수 있음을 나타냅니다. 이 오류의 인스턴스가 너무 많으면 인코딩이 잘못되거나 파일이 잘못되었음을 나타냅니다.</td>
+    <td>58</td>
+    <td>디코더가 디코딩할 수 없는 잘못된 샘플을 받았습니다. 이는 일반적으로 치명적인 오류는 아니지만 오디오/비디오에 결함이 있을 수 있음을 나타냅니다. 이 오류의 인스턴스가 너무 많으면 인코딩이나 파일이 잘못되었음을 나타냅니다.</td>
   </tr>
   <tr>
     <td>RANGE_SPANS_READ_HEAD</td>
     <td>59</td>
-    <td>재생을 시작한 후에는 삽입/바꾸기 범위에 읽기 헤드가 포함되어서는 안 됩니다.</td>
+    <td>재생이 시작된 후 삽입/바꾸기 범위에 읽기 헤드가 포함되지 않아야 합니다.</td>
   </tr>
   <tr> 
     <td>POSTROLL_WITH_LIVE_NOT_ALLOWED</td>
     <td>60</td>
-    <td>라이브 미디어에서는 포스트롤 삽입이 허용되지 않습니다. 그러나 서버가 미디어를 완료로 표시한 후에 허용됩니다.</td>
+    <td>포스트롤 삽입은 라이브 미디어에서 허용되지 않습니다. 그러나 서버에서 미디어를 완료된 것으로 표시한 후에는 허용됩니다.</td>
   </tr>
   <tr>
-    <td>INTERNAL_ERROR</td>
+    <td>내부 오류</td>
     <td>61</td>
-    <td>절대 일어나서는 안 되는 매우 드문 문제죠.</td>
+    <td>결코 일어나서는 안 되는 아주 드문 문제이다.</td>
   </tr>
   <tr>  
     <td>SPS_PPS_FOUND_OUTSIDE_AVCC</td>
     <td>62</td>
-    <td>스트림은 항상 H264 SPS/PPS를 AVCC에 넣는 패키지 권장 사항을 따르지 않습니다. 검색/재생 문제가 표시될 수 있습니다.</td>
+    <td>스트림은 항상 AVCC에 H264 SPS/PPS를 넣는 패키징 권장 사항을 따르지 않습니다. 찾기/재생 문제가 표시될 수 있습니다.</td>
   </tr>
   <tr>  
     <td>PARTIAL_REPLACEMENT</td>
     <td>63</td>
-    <td>삽입 API에 지정된 대체는 부분적으로만 수행되었습니다. 이 문제는 ReplaceDuration 범위가 타임라인 기간에 걸쳐 있을 때 발생합니다.</td>
+    <td>Insert API에 지정된 교체는 일부만 수행되었습니다. replaceDuration이 타임라인 지속 시간 전체에 걸쳐 있는 경우 이 문제가 발생합니다.</td>
   </tr>
   <tr>
     <td>RENDITION_M3U8_ERROR</td>
     <td>64</td>
-    <td>변환 재생 목록을 로드하는 동안 오류가 발생했습니다. 이는 AVE용이지 FlashPlayer용은 아닙니다.</td>
+    <td>렌디션 재생 목록을 로드하는 도중 오류가 발생했습니다. 이 기능은 AVE에만 해당되며 FlashPlayer에는 해당되지 않습니다.</td>
   </tr>
   <tr>
-    <td>NULL_OPERATION</td>
+    <td>작업 없음</td>
     <td>65</td>
-    <td>수술은 아무 것도 하지 않습니다.</td>
+    <td>작업이 아무 작업도 수행하지 않습니다.</td>
   </tr>
   <tr>
-    <td>SEGMENT_SWIGLED_ON_FAILURE</td>
+    <td>SEGMENT_SKIPPED_ON_FAILURE</td>
     <td>66</td>
-    <td>세그먼트를 재생할 수 없으며 실패 시 건너뜁니다.</td>
+    <td>세그먼트는 재생할 수 없으며 실패 시 건너뜁니다.</td>
   </tr>
   <tr>
-    <td>INCOMPATIBLE_RENDER_MODE</td>
+    <td>호환되지 않는_RENDER_MODE</td>
     <td>67</td>
     <td>호환되지 않는 렌더링 모드입니다.</td>
   </tr>
   <tr>
-    <td>PROTOCOL_NOT_SUPPORTED</td>
+    <td>PROTOCOL_NOT_SUPPORT</td>
     <td>68</td>
     <td>URL에 사용된 웹 프로토콜은 지원되지 않습니다.</td>
   </tr>
   <tr>
     <td>PARSE_ERROR_INCOMPATIBLE_VERSION</td>
     <td>69</td>
-    <td>미디어 파일을 구문 분석하는 동안 오류가 발생했습니다.</td>
+    <td>미디어 파일을 구문 분석하는 중 오류가 발생했습니다.</td>
   </tr>
   <tr>  
     <td>MANIFEST_FILE_UNEXPECTED_CHANGED</td>
@@ -616,13 +615,13 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   </tr>
   <tr>
     <td>ID3PARSE_ERROR</td>
-    <td>61</td>
-    <td>ID3 데이터를 구문 분석하는 동안 오류가 발생했습니다.</td>
+    <td>81</td>
+    <td>ID3 데이터를 구문 분석하는 도중 오류가 발생했습니다.</td>
   </tr>
   <tr>
     <td>SECURITY_ERROR</td>
     <td>82</td>
-    <td>보안 제한 때문에 콘텐츠를 로드하지 못했습니다.</td>
+    <td>보안 제한으로 인해 콘텐츠를 로드하지 못했습니다.</td>
   </tr>
   <tr>
     <td>TIMELINE_TOO_SHORT</td>
@@ -637,46 +636,46 @@ AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 개�
   <tr>  
     <td>AUDIO_ONLY_STREAM_END</td>
     <td>85</td>
-    <td>스트림은 오디오 전용 스트림에서 비디오가 포함된 스트림으로 전환되었습니다.</td>
+    <td>스트림이 오디오 전용 스트림에서 비디오가 있는 스트림으로 전환되었습니다.</td>
   </tr>
   <tr>
-    <td>KEY_NOT_FOUND</td>
+    <td>키 없음_찾음</td>
     <td>87</td>
     <td>키를 찾을 수 없습니다.</td>
   </tr>
   <tr>
-    <td>INVALID_KEY</td>
+    <td>잘못된 키</td>
     <td>88</td>
     <td>키가 잘못되었습니다.</td>
   </tr>
   <tr>
     <td>KEY_SERVER_NOT_FOUND</td>
-    <td>89년</td>
-    <td>키 서버에서 키를 반환하지 않습니다.</td>
+    <td>89</td>
+    <td>키 서버가 키를 반환하지 않습니다.</td>
   </tr>
   <tr>
     <td>MAIN_MANIFEST_UPDATE_TO_BE_HANDLED</td>
     <td>90</td>
-    <td>주 매니페스트 업데이트를 처리할 수 없습니다.</td>
+    <td>기본 매니페스트 업데이트를 처리할 수 없습니다.</td>
   </tr>
   <tr>
     <td>UNREPORTED_TIME_DISCONTINUITY_FOUND</td>
-    <td>91년</td>
-    <td>보고되지 않은 시간(PTS) 불연속성이 있습니다.</td>
+    <td>91</td>
+    <td>보고되지 않은 시간(PTS) 불연속성이 발견되었습니다.</td>
   </tr>
   <tr>
     <td>UNMATCHED_AV_DISCONTINUITY_FOUND</td>
-    <td>92년</td>
-    <td>탁월한 오디오 및 비디오 연속성이 없습니다.</td>
+    <td>92</td>
+    <td>탁월한 오디오 및 비디오 불연속성이 발견되었습니다.</td>
   </tr>
   <tr>
     <td>TRICKPLAY_ENDED_DUE_TO_ERROR</td>
     <td>93</td>
-    <td>트릭 재생 모드에서 미디어를 재생하는 동안 오류가 발생했습니다. 트릭 재생 모드가 종료되고 스트림이 일시 중지됩니다. 일반 모드에서 미디어를 재생하려면 Play()를 호출합니다.</td>
+    <td>트릭 재생 모드에서 미디어를 재생하는 동안 오류가 발생했습니다. 트릭 재생 모드가 종료되고 스트림이 일시 중지되었습니다. 일반 모드에서 미디어를 재생하려면 Play()를 호출하십시오.</td>
   </tr>
   <tr>
     <td>LIVE_WINDOW_MOVED_AHEAD</td>
-    <td>95년</td>
-    <td>그 선수는 라이브 윈도우 밖에 있어서 앞으로 나아가 따라잡아야 한다.</td>
+    <td>95</td>
+    <td>플레이어가 라이브 창을 벗어났으므로 따라잡기 위해 앞으로 나아가야 합니다.</td>
   </tr>
 </table>

@@ -1,22 +1,21 @@
 ---
-description: TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제공합니다.
+description: TVSDK는 일시 중단 기간 처리를 위한 API 및 샘플 코드를 제공합니다.
 title: 일시 중단 처리 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9b23674d-76d5-4879-b595-3a6e368c45cd
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-
 # 일시 중단 처리 구현{#implement-blackout-handling}
 
-TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제공합니다.
+TVSDK는 일시 중단 기간 처리를 위한 API 및 샘플 코드를 제공합니다.
 
-일시 중단 중 대체 컨텐츠 제공을 포함하여 일시 중단 처리를 구현하려면
+일시 중단 중에 대체 컨텐츠를 제공하는 등 일시 중단 처리를 구현하려면 다음 작업을 수행하십시오.
 
-1. 라이브 스트림 매니페스트에서 블랙아웃 태그를 검색하도록 앱을 설정합니다.
+1. 라이브 스트림 매니페스트에서 일시 중단 태그를 검색하도록 앱을 설정합니다.
 
    ```java
    public void createMediaPlayer { 
@@ -27,7 +26,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 전경 및 백그라운드 스트림에서 시간 지정 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
+1. 전경 및 배경 스트림에서 시간이 지정된 메타데이터 이벤트에 대한 이벤트 리스너를 만듭니다.
 
    ```java
    private MediaPlayer createMediaPlayer() { 
@@ -36,7 +35,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 전경 스트림과 백그라운드 스트림 모두에 대한 시간 지정 메타데이터 이벤트 핸들러를 구현합니다.
+1. 전경 및 백그라운드 스트림 모두에 대해 시간 설정된 메타데이터 이벤트 핸들러를 구현합니다.
 
    전경:
 
@@ -75,7 +74,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }; 
    ```
 
-1. `MediaPlayer` 시간이 실행될 때 `TimedMetadata` 개체를 처리합니다.
+1. 핸들 `TimedMetadata` 다음의 경우 오브젝트 `MediaPlayer` 시간이 실행됩니다.
 
    ```java
    _playbackClockEventListener = new Clock.ClockEventListener() { 
@@ -98,7 +97,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    };
    ```
 
-1. 일시 중단 기간의 시작과 끝에 컨텐츠를 전환하는 방법을 만듭니다.
+1. 일시 중단 기간 시작 및 종료 시 컨텐츠를 전환하는 방법을 생성합니다.
 
    ```java
    private void handleTimedMetadataList(long currentTime) { 
@@ -150,7 +149,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
    }
    ```
 
-1. 일시 중단 범위가 재생 스트림의 DVR에 있는 경우 검색할 수 없는 범위를 업데이트합니다.
+1. 일시 중단 범위가 재생 스트림에서 DVR에 있는 경우 찾을 수 없는 범위를 업데이트합니다.
 
    ```java
    // prepare and update blackout nonSeekable ranges 
@@ -183,7 +182,7 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
 
    >[!NOTE]
    >
-   >현재 다양한 비트 전송률의 실시간 스트림에서 조정 가능한 비트 전송률(ABR) 프로필은 동기화되지 않을 수 있습니다. 이렇게 하면 동일한 구독 태그에 대해 `timedMetadata` 개체가 중복됩니다. 검색할 수 없는 잘못된 계산을 방지하려면 다음 예제와 같이 계산 후 볼 수 없는 범위를 겹치는 것이 좋습니다.
+   >현재 여러 비트 전송률 라이브 스트림의 경우, 경우에 따라 조정 가능한 비트 전송률(ABR) 프로필이 동기화되지 않을 수 있습니다. 이로 인해 중복 발생 `timedMetadata` 동일한 구독한 태그에 대한 개체입니다. 검색할 수 없는 잘못된 계산을 방지하려면 다음 예제와 같이 계산 후 검색할 수 없는 범위가 겹치는지 확인하는 것이 좋습니다.
 
    ```java
    List<TimeRange> rangesToRemove = new ArrayList<TimeRange>(); 
@@ -209,4 +208,3 @@ TVSDK는 일시 중단 기간을 처리하기 위해 API와 샘플 코드를 제
        nonSeekableRanges.removeAll(rangesToRemove); 
    }
    ```
-

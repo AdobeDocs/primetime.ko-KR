@@ -1,26 +1,25 @@
 ---
-description: VOD 컨텐츠에 광고를 삽입할 수 있습니다.
+description: VOD 콘텐츠에 광고를 삽입할 수 있습니다.
 title: 시간 범위를 광고로 바꾸기
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b341d337-e190-4e2d-bad6-579771bcc577
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
+# 시간 범위를 광고로 바꾸기{#replace-time-ranges-with-an-ad}
 
-# 시간 범위를 광고{#replace-time-ranges-with-an-ad}으로 바꾸기
+VOD 콘텐츠에 광고를 삽입할 수 있습니다.
 
-VOD 컨텐츠에 광고를 삽입할 수 있습니다.
-
-이 경우 `localTime`의 `begin`과 `end` 사이의 `TimeRanges`이 타임라인에서 제거됩니다. `begin`의 `AdBreak`이 `begin+replaceDuration`로 대체됩니다. 교체 기간이 매개 변수로 존재하지 않으면 서버는 반환된 Adbreak에 대해 결정합니다.
+이 경우, `TimeRanges` 다음 사이 `begin` 및 `end` 위치: `localTime` 타임라인에서 제거됩니다. (으)로 대체됩니다. `AdBreak` / `begin` 끝 `begin+replaceDuration`. replacement-duration이 매개 변수로 존재하지 않으면 서버는 반환된 Adbreak를 확인합니다.
 
 >[!NOTE]
 >
->사용자 지정 범위에 대해 항상 특정 교체 기간을 제공해야 합니다. 이 사용자 지정 범위를 대체할 광고가 없을 경우에는 대체 기간을 0으로 지정합니다.
+>항상 사용자 지정 범위에 대한 특정 대체 기간을 제공해야 합니다. 이 사용자 지정 범위를 대체할 광고가 없는 경우 0의 대체 기간을 제공하십시오.
 
-범위를 Primetime 광고 결정 광고로 바꿉니다.
+범위를 Primetime 광고 의사 결정 광고로 대체합니다.
 
 ```
 {   
@@ -76,4 +75,3 @@ VOD 컨텐츠에 광고를 삽입할 수 있습니다.
     "id": "vod_003"
 }
 ```
-

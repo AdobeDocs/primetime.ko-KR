@@ -1,33 +1,32 @@
 ---
-description: 브라우저 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위해 구현할 수 있는 다양한 HLS 기능을 지원합니다.
+description: 브라우저 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위해 구현할 수 있는 여러 HLS 기능을 지원합니다.
 title: 지원되는 HLS 기능
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 111a6683-fb5c-4f0a-8665-5b1aab77056c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
 
 ---
 
-
 # 지원되는 HLS 기능 {#supported-hls-features}
 
-브라우저 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위해 구현할 수 있는 다양한 HLS 기능을 지원합니다.
+브라우저 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위해 구현할 수 있는 여러 HLS 기능을 지원합니다.
 
-* [HLS Core 재생](#hls-core-playback)
+* [HLS 코어 재생](#hls-core-playback)
 * [HLS 고급 재생 기능](#hls-advanced-playback)
-* [HLS 컨텐츠 보호 기능](#hls-content-protection)
+* [HLS 콘텐츠 보호 기능](#hls-content-protection)
 * [HLS 핵심 광고 삽입 기능](#hls-core-ad-insertion)
 * [HLS 고급 광고 삽입 기능](#hls-advanced-ad-insertion)
 * [HLS 통합](#hls-integrations)
 
 >[!TIP]
 >
->아래의 기능 매트릭스 표에서 ![지원되는 아이콘](assets/supported15.png)은 이 기능이 현재 릴리스에서 지원됨을 의미합니다.
+>아래 기능 매트릭스 테이블에서 ![지원됨 아이콘](assets/supported15.png) 는 해당 기능이 현재 릴리스에서 지원됨을 의미합니다.
 
 >[!TIP]
 >
->Safari 열 &quot;플랫폼 제한&quot;은 해당 플랫폼에서 지원 구현을 허용하지 않으므로 사용 사례가 지원되지 않음을 의미합니다. 삽입의 경우 SSAI를 사용합니다. 중요한 재생 제한 사항이 있는 경우 플랫폼이 광고 삽입 사용 사례를 지원할 때까지 Safari의 Flash으로 강제 폴백합니다.
+>Safari 열에서 &quot;플랫폼 제한&quot;은 해당 플랫폼에서 사용 사례에 대한 지원 구현을 허용하지 않으므로 사용 사례가 지원되지 않음을 의미합니다. 삽입의 경우 SSAI를 사용합니다. 중요한 재생 제한 사항이 있는 경우 플랫폼이 Flash 삽입 사용 사례를 지원할 때까지 Safari에서 광고로 강제로 폴백합니다.
 
 <!--<a id="section_9FB9193D5763448CB228B96164661738"></a>-->
 
@@ -83,71 +82,71 @@ Removed Nielsen row
 
 ## HLS 통합 {#hls-integrations}
 
-| 카테고리 | 컨텐츠 유형 | 기능 | Flash | HTML5:FF, IE, Chrome, Android Chrome | HTML5:Safari, iOS Safari |
+| 범주 | 컨텐츠 유형 | 기능 | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| 통합 | VOD + 라이브 | Adobe Analytics VHL 통합 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
+| 통합 | VOD + 라이브 | Adobe Analytics VHL 통합 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
 
 ## HLS 고급 광고 삽입 기능(CSAI) {#hls-advanced-ad-insertion}
 
-| 카테고리 | 컨텐츠 유형 | 기능 | Flash | HTML5:FF, IE, Chrome, Android Chrome | HTML5:Safari, iOS Safari |
+| 범주 | 컨텐츠 유형 | 기능 | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| Ad Insertion | VOD | 광고 전용 | 지원되지 않음 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| Ad Insertion | VOD + 라이브 | 타깃팅 매개 변수 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| Ad Insertion | VOD + 라이브 | 맞춤형 광고 정책 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| Ad Insertion | VOD + 라이브 | 레이지 광고 로딩 | ![지원되는 아이콘](assets/supported15.png) | 지원되지 않음 | 플랫폼 제한 사항 |
-| Ad Insertion | VOD | 부록 광고, 배너 광고 및 클릭 가능한 광고 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
+| Ad Insertion | VOD | 광고만 | 지원되지 않음 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| Ad Insertion | VOD + 라이브 | 타겟팅 매개 변수 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| Ad Insertion | VOD + 라이브 | 사용자 지정 광고 정책 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| Ad Insertion | VOD + 라이브 | 지연 광고 로드 | ![지원됨 아이콘](assets/supported15.png) | 지원되지 않음 | 플랫폼 제한 |
+| Ad Insertion | VOD | 컴패니언 광고, 배너 광고 및 클릭 가능한 광고 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
 | Ad Insertion | VOD | VPAID 2.0 | SWF | JavaScript | JavaScript |
 
 ## HLS 핵심 광고 삽입 기능(CSAI) {#hls-core-ad-insertion}
 
-| 카테고리 | 컨텐츠 유형 | 기능 | Flash | HTML5:FF, IE, Chrome, Android Chrome | HTML5:Safari, iOS Safari |
+| 범주 | 컨텐츠 유형 | 기능 | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| Ad Insertion | VOD + 라이브 | 프리롤 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| Ad Insertion | VOD + 라이브 | 중롤 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
+| Ad Insertion | VOD + 라이브 | 프리롤 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| Ad Insertion | VOD + 라이브 | 미드롤 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
 | Ad Insertion | VOD + 라이브 | 포스트롤 | VOD만 | VOD만 | VOD만 |
-| Ad Insertion | FER VOD | 광고 해상도 및 비헤이비어 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| Ad Insertion | VOD + 라이브 | 기본 광고 정책 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| Ad Insertion | VOD + 라이브 | VAST 2.0/3.0 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| Ad Insertion | VOD + 라이브 | VMAP 1.0 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| Ad Insertion | VOD + 라이브 | CRS v3.1 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
+| Ad Insertion | VOD 재생 | 광고 해상도 및 동작 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| Ad Insertion | VOD + 라이브 | 기본 광고 정책 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| Ad Insertion | VOD + 라이브 | VAST 2.0/3.0 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| Ad Insertion | VOD + 라이브 | VMAP 1.0 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| Ad Insertion | VOD + 라이브 | CRS v3.1 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
 
-## HLS 컨텐츠 보호 기능 {#hls-content-protection}
+## HLS 콘텐츠 보호 기능 {#hls-content-protection}
 
-| 카테고리 | 컨텐츠 유형 | 기능 | Flash | HTML5:FF, IE, Chrome, Android Chrome | HTML5:Safari, iOS Safari |
+| 범주 | 컨텐츠 유형 | 기능 | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| 컨텐츠 보호 | VOD + 라이브 | AES-128 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 컨텐츠 보호 | VOD + 라이브 | 샘플-AES | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 컨텐츠 보호 | VOD | DRM | Adobe 액세스 | 지원되지 않음 | FairPlay |
+| 콘텐츠 보호 | VOD + 라이브 | AES-128 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 콘텐츠 보호 | VOD + 라이브 | Sample-AES | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 콘텐츠 보호 | VOD | DRM | Adobe 액세스 | 지원되지 않음 | 페어플레이 |
 
 ## HLS 고급 재생 기능 {#hls-advanced-playback}
 
-| 카테고리 | 컨텐츠 유형 | 기능 | Flash | HTML5:FF, IE, Chrome, Android Chrome | HTML5:Safari, iOS Safari |
+| 범주 | 컨텐츠 유형 | 기능 | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| 재생 | VOD | 오프셋 시 재생 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD | 오디오 전용 재생 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD | 트릭 플레이 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD | 부드러운 트릭 재생 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | ID3 구문 분석 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 지원되지 않음 |
-| 재생 | VOD + 라이브 | 비연속성 마커 지원 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD + 라이브 | 토큰화된 스트림 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | 청구 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD + 라이브 | 검색 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
+| 재생 | VOD | 오프셋에서 재생 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD | 오디오 전용 재생 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD | 트릭 플레이 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD | 매끄러운 트릭 플레이 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | ID3 구문 분석 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 지원되지 않음 |
+| 재생 | VOD + 라이브 | 불연속 마커 지원 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD + 라이브 | 토큰화된 스트림 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | 청구 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD + 라이브 | Browserify | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
 
 ## HLS 코어 재생 {#hls-core-playback}
 
-| 카테고리 | 컨텐츠 유형 | 기능 | Flash | HTML5:FF, IE, Chrome, Android Chrome | HTML5:Safari, iOS Safari |
+| 범주 | 컨텐츠 유형 | 기능 | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| 재생 | VOD + 라이브 | 일반 재생(재생, 일시 정지, 검색) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | FER VOD | 일반 재생(재생, 일시 정지, 검색) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD + 라이브 | 적응형 비트 전송률 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD + 라이브 | 608/708 캡션 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD + 라이브 | WebVTT | ![지원되는 아이콘](assets/supported15.png) | VOD만 | VOD만 |
-| 재생 | VOD + 라이브 | 매니페스트 장애 조치(failover) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) |
-| 재생 | VOD + 라이브 | 고급 페일오버 | ![지원되는 아이콘](assets/supported15.png) | VOD만 | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | QoS 및 플레이어 알림 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 제한된 QoS 지원 |
-| 재생 | VOD + 라이브 | 쿠키 헤더 지원 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | 버퍼 컨트롤 매개 변수 설정 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | 적응형 비트 전송률 컨트롤 설정 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | 사용자 지정 태그 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | 지연 바인딩 오디오 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
-| 재생 | VOD + 라이브 | 302 리디렉션 | ![지원되는 아이콘](assets/supported15.png) | ![지원되는 아이콘](assets/supported15.png) | 플랫폼 제한 사항 |
+| 재생 | VOD + 라이브 | 일반 재생(재생, 일시 중지, 찾기) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD 재생 | 일반 재생(재생, 일시 중지, 찾기) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD + 라이브 | 적응형 비트 전송률 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD + 라이브 | 608/708 캡션 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD + 라이브 | WebVTT | ![지원됨 아이콘](assets/supported15.png) | VOD만 | VOD만 |
+| 재생 | VOD + 라이브 | 매니페스트 장애 조치 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) |
+| 재생 | VOD + 라이브 | 고급 페일오버 | ![지원됨 아이콘](assets/supported15.png) | VOD만 | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | QoS 및 플레이어 알림 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 제한된 QoS 지원 |
+| 재생 | VOD + 라이브 | 쿠키 헤더 지원 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | 버퍼 제어 매개 변수 설정 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | 적응형 비트 전송률 제어 설정 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | 사용자 정의 태그 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | 지연 바인딩 오디오 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |
+| 재생 | VOD + 라이브 | 302 리디렉션 | ![지원됨 아이콘](assets/supported15.png) | ![지원됨 아이콘](assets/supported15.png) | 플랫폼 제한 |

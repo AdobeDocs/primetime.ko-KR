@@ -1,16 +1,15 @@
 ---
-title: 광고 지원
-description: 광고 지원
+title: 광고 지원됨
+description: 광고 지원됨
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ecb14487-0bd4-4cdd-b613-4bd4393b37b0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '25'
 ht-degree: 0%
 
 ---
 
+# 광고 지원됨 {#ad-funded}
 
-# 광고 자금 {#ad-funded}
-
-컨텐츠는 경험의 일부로 광고를 포함함으로써 수익을 창출합니다. 이 모델을 사용하면 사용자 인증 없이 컨텐츠를 배포할 수 있습니다.
+콘텐츠는 경험의 일부로 광고를 포함하여 수익화됩니다. 이 모델을 사용하면 사용자 인증 없이 콘텐츠를 배포할 수 있습니다.

@@ -1,26 +1,25 @@
 ---
-description: 닫힌 캡션의 가시성을 제어할 수 있습니다. 가시성이 설정되어 있으면 현재 선택된 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
-title: 자막 가시성 제어
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 닫힘 캡션의 가시성을 제어할 수 있습니다. 가시성이 켜져 있으면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하는 경우 가시성 설정은 동일하게 유지됩니다.
+title: 닫힌 캡션 표시 제어
+exl-id: fac24d97-b83e-4bc4-a824-8a1692509519
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-
 # 닫힌 캡션 표시 제어{#control-closed-caption-visibility}
 
-닫힌 캡션의 가시성을 제어할 수 있습니다. 가시성이 설정되어 있으면 현재 선택된 트랙이 표시됩니다. 현재 트랙을 변경하면 가시성 설정이 동일하게 유지됩니다.
+닫힘 캡션의 가시성을 제어할 수 있습니다. 가시성이 켜져 있으면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하는 경우 가시성 설정은 동일하게 유지됩니다.
 
 >[!TIP]
 >
->플레이어가 검색 모드로 들어갈 때 닫힌 캡션 텍스트가 표시되는 경우 검색이 완료된 후 텍스트가 표시되는 문제가 해결되었습니다. 대신, 몇 초 후 TVSDK는 끝 검색 위치 뒤에 비디오에 다음 닫힌 캡션 텍스트를 표시합니다.
+>플레이어가 찾기 모드에 들어갈 때 닫힌 캡션 텍스트가 표시되면 찾기가 완료된 후 텍스트가 더 이상 표시되지 않습니다. 대신, 몇 초 후에 TVSDK는 종료 탐색 위치 후에 비디오에 다음 자막 텍스트를 표시합니다.
 
 >[!NOTE]
 >
->닫힌 캡션의 가시성 값은 `ClosedCaptionsVisibility`에 정의됩니다.
+>폐쇄 캡션의 가시성 값은에 정의되어 있습니다. `ClosedCaptionsVisibility`.
 >
 >
 ```
@@ -28,14 +27,14 @@ ht-degree: 0%
 >public static const VISIBLE:String = visible;
 >```
 
-1. `MediaPlayer`이(가) PREMITED 상태 이상을 가질 때까지 기다리십시오([유효한 상태](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md) 대기 참조).
-1. 닫힌 캡션의 현재 가시성 설정을 가져오려면 가시성 값을 반환하는 `MediaPlayer`의 getter 메서드를 사용합니다.
+1. 다음을 기다리십시오. `MediaPlayer` 적어도 PREPARED 상태를 가지고 있어야 합니다(참조). [유효한 상태를 기다립니다.](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)).
+1. 닫힘 캡션에 대한 현재 가시성 설정을 가져오려면 `MediaPlayer`- 가시성 값을 반환합니다.
 
    ```
    public function get ccVisibility():String
    ```
 
-1. 닫힌 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 `ClosedCaptionsVisibility`의 가시성 값을 전달합니다.
+1. 닫힘 캡션의 가시성을 변경하려면 setter 메서드를 사용하여 가시성 값을 다음 위치에 전달합니다. `ClosedCaptionsVisibility`.
 
    예:
 
@@ -52,7 +51,7 @@ ht-degree: 0%
                    prompt="CC"/>
    ```
 
-1. 닫힌 캡션 트랙의 바인딩 가능한 배열을 정의합니다.
+1. 선택 캡션 트랙의 바인딩 가능한 배열을 정의합니다.
 
    ```
    [Bindable] private var _ccTracks:ArrayCollection =  
@@ -66,7 +65,7 @@ ht-degree: 0%
    player.addEventListener(MediaPlayerItemEvent.CAPTIONS_UPDATED, onCaptionUpdated);
    ```
 
-   파괴 코드에서 리스너를 제거하려면:
+   삭제 코드에서 리스너를 제거하려면:
 
    ```
    player.removeEventListener(MediaPlayerItemEvent.ITEM_CREATED, onItemCreated); 
@@ -146,4 +145,3 @@ ht-degree: 0%
        ccTracksList.selectedIndex = selectedIndex; 
    } 
    ```
-

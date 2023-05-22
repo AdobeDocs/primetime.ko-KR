@@ -1,20 +1,19 @@
 ---
-description: Digital Rights Management(DRM) 전용 워크플로우를 완료할 수 있습니다.
+description: Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
 title: Digital Rights Management
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5a40252b-2917-4341-bc64-8642432ddda9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-
 # Digital Rights Management {#digital-rights-management}
 
-Digital Rights Management(DRM) 전용 워크플로우를 완료할 수 있습니다.
+Digital Rights Management(DRM)별 워크플로우를 완료할 수 있습니다.
 
-`AdobePSDK.DRMMetadataInfoEvent` 이벤트를 수신하여 DRM 워크플로우를 처리할 수 있습니다.
+다음 내용을 들을 수 있습니다. `AdobePSDK.DRMMetadataInfoEvent` drm 워크플로우를 처리하는 이벤트:
 
 ```js
 ... 
@@ -22,15 +21,15 @@ player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onD
 ...
 ```
 
-## Digital Rights Management {#add-digital-rights-management} 추가
+## Digital Rights Management 추가 {#add-digital-rights-management}
 
-1. `DRMMetadataInfoAvailableEvent`을(를) 추가하여 `DRMMetadata`을(를) 가져옵니다.
+1. 추가 `DRMMetadataInfoAvailableEvent` 을(를) 가져오려면 `DRMMetadata`.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onDRMMetadataInfoAvaialble);
    ```
 
-1. 1단계에서 줄 위에 `onDRMMetadataInfoAvailable` 섹션을 구현합니다.
+1. 구현 `onDRMMetadataInfoAvailable` 1단계에서 줄 위에 있는 섹션입니다.
 
    ```js
    var onDRMMetadataInfoAvaialble = function(event) { 
@@ -51,7 +50,7 @@ player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onD
    var drmManager = player.drmManager;
    ```
 
-1. 다음 샘플을 복사하여 Widevine 및 PlayReady 보호 데이터를 만듭니다.
+1. 다음 샘플을 복사하여 Widevine 및 PlayReady에 대한 보호 데이터를 만듭니다.
 
    ```js
    var protectionData = { 

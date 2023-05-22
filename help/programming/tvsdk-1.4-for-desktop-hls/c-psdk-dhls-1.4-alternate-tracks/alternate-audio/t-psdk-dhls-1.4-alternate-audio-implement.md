@@ -1,25 +1,24 @@
 ---
-description: 늦게 바인딩 오디오에서는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정된 비디오와 여러 개의 대체 오디오 스트림이 포함될 수 있는 비디오를 재생합니다.
+description: 지연 바인딩 오디오는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되어 있으며 여러 대체 오디오 스트림을 포함할 수 있는 비디오를 재생합니다.
 title: 대체 오디오 트랙 액세스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 08158b3b-1ed2-4f86-a710-2b128bb28ed0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
-
 # 대체 오디오 트랙 액세스{#access-alternate-audio-tracks}
 
-늦게 바인딩 오디오에서는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정된 비디오와 여러 개의 대체 오디오 스트림이 포함될 수 있는 비디오를 재생합니다.
+지연 바인딩 오디오는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되어 있으며 여러 대체 오디오 스트림을 포함할 수 있는 비디오를 재생합니다.
 
-1. `MediaPlayer`이(가) PREMITED 상태 이상이어야 합니다.
-1. 다음 이벤트에 대한 의견 수렴:
+1. 다음을 기다리십시오. `MediaPlayer` 적어도 준비됨 상태여야 합니다.
+1. 다음 이벤트를 수신합니다.
 
-   * `MediaPlayerItemEvent.ITEM_CREATED`:오디오 트랙의 초기 목록을 사용할 수 있습니다.
-   * `MediaPlayerItemEvent.AUDIO_UPDATED`:재생 중에 오디오 트랙 변경
+   * `MediaPlayerItemEvent.ITEM_CREATED`: 오디오 트랙의 초기 목록을 사용할 수 있습니다.
+   * `MediaPlayerItemEvent.AUDIO_UPDATED`: 재생 중 오디오 트랙이 변경됨
 
-1. `MediaPlayerItem` 인스턴스에서 사용 가능한 오디오 트랙을 가져옵니다.
-1. (선택 사항) 사용 가능한 트랙을 사용자에게 표시합니다.
-1. `MediaPlayerItem` 인스턴스에서 선택한 오디오 트랙을 설정합니다.
+1. 에서 사용 가능한 오디오 트랙 가져오기 `MediaPlayerItem` 인스턴스.
+1. (선택 사항) 사용 가능한 트랙을 사용자에게 제공합니다.
+1. 에서 선택한 오디오 트랙을 설정합니다. `MediaPlayerItem` 인스턴스.

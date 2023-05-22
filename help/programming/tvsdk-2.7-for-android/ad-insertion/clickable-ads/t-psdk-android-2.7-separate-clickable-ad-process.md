@@ -1,22 +1,21 @@
 ---
-description: 플레이어의 UI 로직과 광고 클릭을 관리하는 프로세스를 구분해야 합니다. 한 가지 방법은 한 활동에 대해 여러 조각을 구현하는 것입니다.
+description: 광고 클릭을 관리하는 프로세스에서 플레이어의 UI 논리를 분리해야 합니다. 이를 수행하는 한 가지 방법은 활동에 대해 여러 조각을 구현하는 것입니다.
 title: 클릭 가능한 광고 프로세스 구분
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9b6fad9b-d46d-4965-8770-0bb85c052e0e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
 
 ---
 
+# 클릭 가능한 광고 프로세스 구분 {#separate-the-clickable-ad-process}
 
-# 클릭 가능한 광고 프로세스 {#separate-the-clickable-ad-process} 분리
+광고 클릭을 관리하는 프로세스에서 플레이어의 UI 논리를 분리해야 합니다. 이를 수행하는 한 가지 방법은 활동에 대해 여러 조각을 구현하는 것입니다.
 
-플레이어의 UI 로직과 광고 클릭을 관리하는 프로세스를 구분해야 합니다. 한 가지 방법은 한 활동에 대해 여러 조각을 구현하는 것입니다.
+1. 포함할 하나의 조각 구현 `MediaPlayer`.
 
-1. `MediaPlayer`을(를) 포함할 조각 하나를 구현합니다.
-
-   이 조각은 `notifyClick()`을(를) 호출해야 하며 비디오 재생을 책임집니다.
+   이 조각은 `notifyClick()` 및 은 비디오 재생을 담당합니다.
 
    ```java
    public class PlayerFragment extends SherlockFragment { 
@@ -28,9 +27,9 @@ ht-degree: 0%
    } 
    ```
 
-1. 다른 조각을 구현하여 광고를 클릭할 수 있음을 나타내는 UI 요소를 표시하고, 해당 UI 요소를 모니터링하고, 사용자 클릭 수를 `MediaPlayer`이 포함된 단편에 알립니다.
+1. 다른 조각을 구현하여 광고를 클릭할 수 있음을 나타내는 UI 요소를 표시하고, 해당 UI 요소를 모니터링하고, 사용자 클릭을 가 포함된 조각으로 전달합니다. `MediaPlayer`.
 
-   이 조각은 조각 통신에 대한 인터페이스를 선언해야 합니다. 조각은 `onAttach()` 라이프사이클 메서드 동안 인터페이스 구현을 캡처하고 인터페이스 메서드를 호출하여 활동과 통신할 수 있습니다.
+   이 조각은 조각 통신을 위한 인터페이스를 선언해야 합니다. 조각은 다음 기간 동안 인터페이스 구현을 캡처합니다. `onAttach()` lifecycle 메서드를 호출하고 인터페이스 메서드를 호출하여 활동과 통신할 수 있습니다.
 
    ```java
    public class PlayerClickableAdFragment extends SherlockFragment { 
@@ -87,4 +86,3 @@ ht-degree: 0%
        } 
    } 
    ```
-

@@ -1,32 +1,31 @@
 ---
-description: 매니페스트의 태그에 대한 알림을 받으려면 적절한 이벤트 리스너를 등록합니다.
-title: 시간 지정 메타데이터 알림에 대한 리스너 추가
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 매니페스트의 태그에 대한 알림을 받으려면 적절한 이벤트 리스너를 등록하십시오.
+title: 시간 초과된 메타데이터 알림에 대한 리스너 추가
+exl-id: 1df8a4fc-8368-4a80-8f8b-00c1207e6602
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
+# 시간 초과된 메타데이터 알림에 대한 리스너 추가{#add-listeners-for-timed-metadata-notifications}
 
-# 시간 지정 메타데이터 알림의 리스너 추가{#add-listeners-for-timed-metadata-notifications}
+매니페스트의 태그에 대한 알림을 받으려면 적절한 이벤트 리스너를 등록하십시오.
 
-매니페스트의 태그에 대한 알림을 받으려면 적절한 이벤트 리스너를 등록합니다.
+관련 활동을 애플리케이션에 알리는 다음 이벤트를 수신하여 시간 메타데이터를 모니터링할 수 있습니다.
 
-응용 프로그램에 관련 활동을 알리는 다음 이벤트를 수신하여 시간 메타데이터를 모니터링할 수 있습니다.
+* `MediaPlayerItemEvent.ITEM_CREATED`: 의 초기 목록 `TimedMetadata` 객체는 다음 이후에서 사용할 수 있습니다. `MediaPlayerItem` 이(가) 만들어졌습니다.
 
-* `MediaPlayerItemEvent.ITEM_CREATED`:객체의 초기 목록 `TimedMetadata` 은 객체를 만든 후 사용할 수  `MediaPlayerItem` 있습니다.
+   이 이벤트는 이러한 상황이 발생하면 애플리케이션에 알립니다.
 
-   이 이벤트는 이러한 경우 응용 프로그램에 알립니다.
+* `MediaPlayerItemEvent.ITEM_UPDATED`: 매니페스트/재생 목록이 주기적으로 새로 고치는 라이브/선형 스트림의 경우 업데이트된 재생 목록/매니페스트에 추가 사용자 지정 태그가 나타날 수 있으므로 추가 `TimedMetadata` 개체가 `MediaPlayerItem.timedMetadata` 속성.
 
-* `MediaPlayerItemEvent.ITEM_UPDATED`:매니페스트/재생 목록이 정기적으로 새로 고쳐지는 라이브/선형 스트림의 경우 업데이트된 재생 목록/매니페스트에 추가 사용자 지정 태그가 나타날 수 있으므로 속성에 추가  `TimedMetadata` 객체를 추가할 수  `MediaPlayerItem.timedMetadata` 있습니다.
+   이 이벤트는 이러한 상황이 발생하면 애플리케이션에 알립니다.
 
-   이 이벤트는 이러한 경우 응용 프로그램에 알립니다.
+* `TimedMetadataEvent.TIMED_METADATA_AVAILABLE`: 매번 새로 만들기 `TimedMetadata` 개체가 만들어지고 MediaPlayer에서 이 이벤트를 전달합니다.
 
-* `TimedMetadataEvent.TIMED_METADATA_AVAILABLE`:새  `TimedMetadata` 객체를 만들 때마다 이 이벤트가 MediaPlayer에 의해 전달됩니다.
-
-   이 이벤트는 초기화 단계 동안 만들어진 `TimedMetadata` 객체에 대해 전달되지 않습니다.
+   이 이벤트는 다음에 대해 발송되지 않습니다. `TimedMetadata` 초기화 단계에서 생성된 객체입니다.
 
 1. 적절한 리스너를 구현합니다.
 
@@ -56,4 +55,4 @@ ht-degree: 0%
                            onTimedMetadataAvailable);
    ```
 
-ID3 메타데이터는 동일한 `TimedMetadataEvent.TIMED_METADATA_AVAILABLE`을 통해 전달됩니다. 그러나 TimedMetadata 객체의 `type` 속성을 사용하여 TAG와 ID3를 구분할 수 있으므로 혼란이 발생하지 않습니다. ID3 태그에 대한 자세한 내용은 [ID3 태그](../../../tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-id3-metadata-retrieve.md)를 참조하십시오.
+ID3 메타데이터가 동일한 `TimedMetadataEvent.TIMED_METADATA_AVAILABLE`. 그러나 TimedMetadata objtec의 `type` TAG와 ID3을 구분하는 속성입니다. ID3 태그에 대한 자세한 내용은 [ID3 태그](../../../tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-id3-metadata-retrieve.md).

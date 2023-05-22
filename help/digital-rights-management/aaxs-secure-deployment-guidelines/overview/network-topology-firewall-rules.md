@@ -2,20 +2,19 @@
 title: 방화벽 규칙
 description: 방화벽 규칙
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5f560782-7b09-411a-8791-8d227bc4049b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
-
 # 방화벽 규칙 {#firewall-rules}
 
-## 들어오는 URL {#section-F111526A9DB844CBBF21A3CAE5F50880}
+## 수신 URL {#section-F111526A9DB844CBBF21A3CAE5F50880}
 
-최종 사용자에게 제공하려는 응용 프로그램 기능에 대한 URL만 표시되도록 외부 방화벽을 구성합니다. 외부 사용자가 외부 방화벽을 통해 다음 표에 나열된 URL에만 액세스할 수 있도록 허용:
+최종 사용자에게 제공하려는 애플리케이션 기능에 대한 URL만 노출되도록 외부 방화벽을 구성합니다. 외부 사용자가 외부 방화벽을 통해 다음 표에 나열된 URL에만 액세스할 수 있도록 허용:
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table-bqs-whz-n4"> 
  <thead class="- topic/thead "> 
@@ -27,7 +26,7 @@ ht-degree: 0%
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/getServerVersion/v3</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">서버 버전을 확인하는 URL입니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">서버 버전을 결정하기 위한 URL입니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -37,7 +36,7 @@ ht-degree: 0%
      <li id="li-ED3C15EB4D194FFE99954BDB7D5C1E41"><span class="filepath"> /flashaccess/authn/v4/*</span> </li> 
      <li id="li-4DD6CBBE939F4E6EABA474E3DCCBD893"><span class="filepath"> /flashaccess/authn/v5/*</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">사용자 인증을 위한 URL. 이 URL은 Adobe 액세스 클라이언트 API를 사용하여 사용자 인증을 수행하는 경우에만 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">사용자 인증용 URL. 이 URL은 Adobe 액세스 클라이언트 API를 사용하여 사용자 인증을 수행하는 경우에만 액세스할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -56,7 +55,7 @@ ht-degree: 0%
      <li id="li-B333B85FFE8A46DD884595B0A620B4EE"><span class="filepath"> /flashaccess/sync/v4</span> </li> 
      <li id="li-E4771D3C5AA5454CA1EDCFAA3E027CC1"><span class="filepath"> /flashaccess/sync/v5</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">동기화 요청에 대한 URL입니다. 이 URL은 라이센스에 동기화 요구 사항을 지정하는 경우에만 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">동기화 요청에 대한 URL. 라이센스에 동기화 요구 사항을 지정한 경우에만 이 URL에 액세스할 수 있어야 합니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -65,7 +64,7 @@ ht-degree: 0%
      <li id="li-40F0952F09674CA3B9AAFB5A62F9D02E"><span class="filepath"> /flashaccess/domain/v4</span> </li> 
      <li id="li-3ADE44B959B548F8A31A6FF08537AF46"><span class="filepath"> /flashaccess/domain/v5</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">도메인 등록용 URL. 이 URL은 도메인 지원을 구현하는 경우에만 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">도메인 등록용 URL. 이 URL은 도메인 지원을 구현하는 경우에만 액세스할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -74,28 +73,28 @@ ht-degree: 0%
      <li id="li-AB33657BC7E140E695767710DF7AEC72"><span class="filepath"> /flashaccess/dereg/v4</span> </li> 
      <li id="li-D15B32BCD4674269A3A2644DD5204707"><span class="filepath"> /flashaccess/dereg/v5</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">도메인 등록 취소에 대한 URL. 이 URL은 도메인 지원을 구현하는 경우에만 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">도메인 등록 취소를 위한 URL. 이 URL은 도메인 지원을 구현하는 경우에만 액세스할 수 있습니다. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/headerconversion/v1/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 FMRMS 1.x DRM 메타데이터를 Adobe 액세스 DRM 메타데이터로 변환하기 위해 사용하는 URL. </p> <p class="- topic/p ">참고:<i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)</i>을 사용해야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">클라이언트가 FMRMS 1.x DRM 메타데이터를 Adobe 액세스 DRM 메타데이터로 변환하는 데 사용하는 URL. </p> <p class="- topic/p ">참고: <i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)을 사용해야 합니다.</i>. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /edcws/services/urn:EDCLicenseService/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">LiveCycle Rights Management ES 웹 서비스 URL. 이전 버전의 FMRMS를 사용하여 컨텐츠를 게시한 경우 이 URL을 통해 이전 클라이언트가 서버에 연결할 수 있으며 Adobe 액세스로 업그레이드하라는 메시지가 표시됩니다. </p> <p class="- topic/p ">참고:<i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)</i>을 사용해야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">LiveCycle Rights Management ES 웹 서비스 URL. 이전 버전의 FMRMS를 사용하여 콘텐츠를 게시한 경우 이 URL을 사용하면 이전 클라이언트가 서버에 연결할 수 있으며 Adobe 액세스로 업그레이드하라는 메시지가 표시됩니다. </p> <p class="- topic/p ">참고: <i class="+ topic/ph hi-d/i ">이 URL은 SSL(HTTPS)을 사용해야 합니다.</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/lreturn/v5</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>라이센스 반환에 대한 URL. 라이센스 반환 지원을 구현하는 경우에만 URL에 액세스할 수 있어야 합니다. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>라이선스 반환용 URL. 라이선스 반환 지원을 구현하는 경우에만 URL에 액세스할 수 있어야 합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->내부 방화벽은 역방향 프록시를 통해 Adobe 액세스 라이센스 서버에 연결되고 위에 나열된 URL에만 연결되도록 허용해야 합니다. 확장성을 높이기 위해 역방향 프록시와 Adobe 액세스 간의 연결은 HTTP를 통해 수행됩니다.
+>내부 방화벽에서는 역방향 프록시를 통해 Adobe 액세스 라이선스 서버에 연결할 수만 있고 위에 나열된 URL에만 연결할 수 있어야 합니다. 확장성을 향상시키기 위해 역방향 프록시와 Adobe 액세스 간의 연결은 HTTP를 통해 이루어집니다.
 
-## 나가는 URL {#section-FFF9F7BB353149F4A27F8788E9934A48}
+## 발신 URL {#section-FFF9F7BB353149F4A27F8788E9934A48}
 
 라이센스 서버는 Adobe에서 다음 CRL을 다운로드하려면 방화벽을 통해 액세스해야 합니다.
 

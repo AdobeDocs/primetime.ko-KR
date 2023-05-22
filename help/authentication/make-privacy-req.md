@@ -1,26 +1,26 @@
 ---
-title: 개인 정보 보호 요청 방법
-description: 개인 정보 보호 요청 방법
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+title: 개인 정보 보호 요청을 하는 방법
+description: 개인 정보 보호 요청을 하는 방법
+exl-id: abb21306-98d6-4899-914a-bdfa85cbd204
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
 
 ---
 
-
-# 개인 정보 보호 요청 방법 {#howto-make-privacy-request}
+# 개인 정보 보호 요청을 하는 방법 {#howto-make-privacy-request}
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
 ## 식별자 및 네임스페이스 {#identifier-namespace}
 
-액세스 또는 삭제 개인 정보 요청을 보낼 때 고객 애플리케이션에는 다음 식별자를 포함해야 합니다.
+액세스 또는 삭제 개인 정보 보호 요청을 보낼 때 고객 애플리케이션은 다음 식별자를 포함해야 합니다.
 
-* **mvpdID** - MVPD의 고유 식별자입니다.
-* **userID** - 프로그래머 앱의 사용자를 고유하게 식별하지만 MVPD에서 구성됩니다. 프로그래머 개요에서 사용자 ID 이해 를 참조하십시오.
+* **mvpdID** - MVPD에 대한 고유 식별자.
+* **userID** - 프로그래머 앱의 사용자를 고유하게 식별하지만 MVPD에서 시작됩니다. 프로그래머 개요에서 사용자 ID 이해 를 참조하십시오.
 * **IMSOrgID** - Adobe Experience Cloud에서 고객을 고유하게 식별하는 Adobe Experience Cloud Identity Management 서비스 조직 ID입니다
 
 
@@ -36,23 +36,23 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Primetime 인증에 대한 개인 정보 보호 요청을 생성할 수 있으려면 사용자가 인증되어야 합니다. 그렇지 않으면 프로그래머는 MVPD userID를 추출하는 다른 방법을 찾아야 합니다.
+>Primetime 인증에 대한 개인 정보 요청을 생성하려면 사용자가 인증되어야 합니다. 그렇지 않으면 프로그래머는 MVPD userID를 추출하는 다른 방법을 찾아야 합니다.
 
 ## 요청 유형 {#req-type}
 
-Primetime 인증에서는 액세스 및 삭제 요청을 지원합니다.
+Primetime 인증은 액세스 및 삭제 요청을 지원합니다.
 
 ### 액세스 {#access-req}
 
-액세스 요청의 경우:
+Access 요청의 경우:
 
-해당 데이터 주체에 대해 만들어진 총 인증 및 인증 요청의 요약이 포함된 JSON 파일을 다시 제공할 것입니다.
+해당 데이터 주체에 대해 생성된 인증 및 권한 부여 요청의 총 수에 대한 요약이 포함된 JSON 파일을 다시 제공합니다.
 이러한 모든 이벤트는 고객별로 필터링됩니다.
 
 
-**샘플 요청**
+**요청 샘플**
 
-데이터 액세스 요청을 제출하는 Primetime 인증 식별자가 있는 JSON을 업로드해야 합니다. 형식이 잘 지켜진 JSON의 모습을 보려면 다음 샘플을 참조하십시오.
+데이터 액세스 요청을 제출하는 Primetime 인증 식별자와 함께 JSON을 업로드해야 합니다. 잘 구성된 JSON의 모습을 보려면 다음 샘플을 참조하십시오.
 
 ```JSON
 {
@@ -132,9 +132,9 @@ Primetime 인증에서는 액세스 및 삭제 요청을 지원합니다.
 
 ### 삭제 {#delete-req}
 
-데이터 삭제 요청을 제출하는 Primetime 인증 식별자가 있는 JSON을 업로드해야 합니다. 형식이 잘 지켜진 JSON의 모습을 보려면 다음 샘플을 참조하십시오.
+데이터 삭제 요청을 제출하는 Primetime 인증 식별자와 함께 JSON을 업로드해야 합니다. 잘 구성된 JSON의 모습을 보려면 다음 샘플을 참조하십시오.
 
-**샘플 요청**
+**요청 샘플**
 
 ```JSON
 {
@@ -162,10 +162,10 @@ Primetime 인증에서는 액세스 및 삭제 요청을 지원합니다.
 
 **응답 샘플**
 
-삭제 요청의 경우:
+Delete 요청의 경우:
 
-* 데이터가 제거된 영수증만 공유하며, 제거된 모든 데이터가 집계된 파일은 공유하지 않습니다.
-* 응답에 포함된 수신에는 해당 데이터 주체에 대해 발견된 총 인증 및 인증 토큰의 요약이 포함되어 있습니다.
+* 제거된 모든 데이터와 집계된 파일이 아니라 데이터가 제거된 영수증만 공유합니다.
+* 응답에 포함된 영수증에는 해당 데이터 주체에 대해 발견된 총 인증 및 권한 부여 토큰 수의 요약이 포함되어 있습니다.
 
 ```JSON
 {
@@ -219,27 +219,27 @@ Primetime 인증에서는 액세스 및 삭제 요청을 지원합니다.
 
 ## 요청을 트리거하는 방법 {#trigger-req}
 
-고객이 개인 정보 보호 요청을 Adobe에 보낼 수 있는 두 가지 옵션이 있습니다.
+고객이 Adobe에 개인 정보 보호 요청을 보낼 수 있는 옵션은 두 가지가 있습니다.
 
-* **수동** - 사용 [Privacy Service 사용자 인터페이스](#privacy-service-ui)
-* **자동으로** - 사용 [Privacy Service API ](#privacy-service-api)
+* **수동** - 를 사용하여 [Privacy Service 사용자 인터페이스](#privacy-service-ui)
+* **자동으로** - 를 사용하여 [PRIVACY SERVICE API ](#privacy-service-api)
 
 ### Privacy Service UI 사용 {#privacy-service-ui}
 
-A [전체 자습서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) Privacy Service 사용자 인터페이스에 액세스하고 사용하는 방법은 Adobe I/O 서비스를 통해 온라인으로 이용할 수 있습니다. 또한 고객은 이 링크를 사용하여 개인 정보 보호 규정에 대한 비디오 및 문서 라이브러리에 액세스할 수 있습니다. Adobe Experience Cloud 및 GDPR 메뉴를 클릭합니다. 이렇게 하면 많은 비디오가 열립니다. &quot;GDPR UI 사용 방법&quot;은 이 비디오 사용 방법을 설명합니다.
+A [전체 자습서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) Privacy Service 사용자 인터페이스에 액세스하고 사용하는 방법에 대한 자세한 내용은 Adobe I/O 서비스를 통해 온라인으로 확인할 수 있습니다. 또한 고객은 이 링크를 사용하여 개인 정보 보호 규정에 대한 비디오 및 문서 라이브러리에 액세스할 수 있습니다. Adobe Experience Cloud 및 GDPR 메뉴를 클릭합니다. 이렇게 하면 많은 비디오가 열립니다. 이 비디오의 사용 방법은 &quot;GDPR UI 방법&quot;을 설명합니다.
 
-UI에서 고객은 각 제품에 대한 GDPR 요청 세부 사항이 포함된 고유한 IMSOrgID 및 JSON을 로드해야 합니다.
+UI에서 고객은 각 제품에 대한 GDPR 요청 세부 사항이 포함된 JSON 및 자체 IMSOrgID를 로드해야 합니다.
 
 ### Privacy Service API 사용 {#privacy-service-api}
 
-Adobe Experience Platform Privacy Service은 개인 데이터에 대한 액세스/삭제 요청 및 판매 중지 요청에 대해 중앙 집중식 공통 지원을 제공합니다.
+Adobe Experience Platform Privacy Service은 개인 데이터에 대한 액세스/삭제 요청 및 판매 중지 요청에 대한 중앙의 공통 지원 기능을 제공합니다.
 
-다음 **Privacy Service API 설명서** 에서는 Adobe 고객이 Adobe API와 통합하는 방법을 자세히 설명합니다.
+다음 **Privacy Service API 설명서** Adobe 고객이 Adobe API와 통합할 수 있는 방법에 대해 자세히 설명합니다.
 
-**Postman을 사용하여 API 호출 시각화(무료 타사 소프트웨어):**
+**Postman(무료 타사 소프트웨어)를 사용하여 API 호출 시각화:**
 
 * [GitHub에서 API Postman 컬렉션 Privacy Service](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/experience-platform/Privacy%20Service%20API.postman_collection.json)
-* [Postman 환경 만들기를 위한 비디오 안내서](https://video.tv.adobe.com/v/28832)
+* [Postman 환경 만들기에 대한 비디오 안내서](https://video.tv.adobe.com/v/28832)
 * [Postman에서 환경 및 컬렉션을 가져오는 단계](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/)
 
 
@@ -252,8 +252,8 @@ Adobe Experience Platform Privacy Service은 개인 데이터에 대한 액세�
 
 **필수 헤더:**
 
-* 모든 호출에는 헤더가 필요합니다 `Authorization`, `x-gw-ims-org-id`, 및 `x-api-key`. 이러한 값을 가져오는 방법에 대한 자세한 내용은 **인증 자습서**.
-* 요청 본문에서 페이로드가 포함된 모든 요청(예: POST, PUT 및 PATCH 호출)에는 헤더를 포함해야 합니다 `Content-Type` 값 `application/json`.
+* 모든 호출에는 헤더가 필요합니다 `Authorization`, `x-gw-ims-org-id`, 및 `x-api-key`. 이러한 값을 얻는 방법에 대한 자세한 내용은 **인증 자습서**.
+* 요청 본문(예: POST, PUT 및 PATCH 호출)에 페이로드가 있는 모든 요청에는 헤더가 포함되어야 합니다 `Content-Type` (값: `application/json`.
 
 <!--
 

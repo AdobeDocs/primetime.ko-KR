@@ -1,40 +1,39 @@
 ---
-description: 이벤트 핸들러를 통해 TVSDK가 이벤트에 응답할 수 있습니다.
+description: 이벤트 핸들러를 사용하면 TVSDK가 이벤트에 응답할 수 있습니다.
 title: 이벤트 리스너 및 콜백 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: eda5cd4e-4ee8-4b37-a179-242e8697f61f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%
 
 ---
 
-
 # 이벤트 리스너 및 콜백 구현{#implement-event-listeners-and-callbacks}
 
-이벤트 핸들러를 통해 TVSDK가 이벤트에 응답할 수 있습니다.
+이벤트 핸들러를 사용하면 TVSDK가 이벤트에 응답할 수 있습니다.
 
-이벤트가 발생하면 TVSDK의 이벤트 메커니즘은 등록된 이벤트 핸들러를 호출하고 이벤트 정보를 핸들러에 전달합니다.
+이벤트가 발생하면 TVSDK의 이벤트 메커니즘이 등록된 이벤트 핸들러를 호출하고 이벤트 정보를 핸들러로 전달합니다.
 
-TVSDK는 `MediaPlayer` 인터페이스에서 수신기를 공용 내부 인터페이스로 정의합니다.
+TVSDK는에서 리스너를 공용 내부 인터페이스로 정의합니다. `MediaPlayer` 인터페이스.
 
-응용 프로그램은 응용 프로그램에 영향을 주는 TVSDK 이벤트에 대한 이벤트 리스너를 구현해야 합니다.
+애플리케이션에 영향을 주는 TVSDK 이벤트에 대해 애플리케이션이 이벤트 리스너를 구현해야 합니다.
 
-비디오 분석에 대한 이벤트의 전체 목록은 코어 비디오 재생 추적을 참조하십시오.
+비디오 분석에 대한 전체 이벤트 목록은 코어 비디오 재생 추적 을 참조하십시오.
 
-1. 응용 프로그램에서 수신해야 하는 이벤트를 결정합니다.
+1. 애플리케이션이 수신해야 하는 이벤트를 결정합니다.
 
-   * **필요한 이벤트**:모든 재생 이벤트에 대한 의견 수렴
+   * **필수 이벤트**: 모든 재생 이벤트를 수신합니다.
 
       >[!IMPORTANT]
       >
-      >재생 이벤트 `onStateChanged`는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다.
+      >재생 이벤트 `onStateChanged` 는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다
 
-   * **기타 이벤트**:애플리케이션에 따라 선택 사항입니다.
+   * **기타 이벤트**: 애플리케이션에 따라 선택 사항입니다.
 
       예를 들어 재생에 광고를 통합하는 경우 AdPlaybackEventListener 콜백을 구현합니다.
 
-1. 각 이벤트에 대한 이벤트 리스너를 구현합니다.
+1. 각 이벤트에 대해 이벤트 리스너를 구현합니다.
 
    TVSDK는 이벤트 리스너 콜백에 매개 변수 값을 반환합니다. 이러한 값은 리스너에서 적절한 작업을 수행하는 데 사용할 수 있는 이벤트에 대한 관련 정보를 제공합니다.
 
@@ -47,7 +46,7 @@ TVSDK는 `MediaPlayer` 인터페이스에서 수신기를 공용 내부 인터�
     MediaPlayer.PlayerState state, MediaPlayerNotification notification)
    ```
 
-1. `MediaPlayer.addEventListener`을 사용하여 콜백 리스너를 `MediaPlayer` 개체에 등록합니다.
+1. 콜백 리스너를 `MediaPlayer` 을 사용한 개체 `MediaPlayer.addEventListener`.
 
    ```
    mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK, 
@@ -61,35 +60,35 @@ TVSDK는 `MediaPlayer` 인터페이스에서 수신기를 공용 내부 인터�
 
 ## 재생 이벤트 순서 {#section_6D412C33ACE54E9D90DB1DAA9AA30272}
 
-TVSDK는 일반적으로 예상 시퀀스로 이벤트/알림을 전달합니다. 플레이어는 예상 시퀀스의 이벤트를 기반으로 동작을 구현할 수 있습니다.
+TVSDK는 일반적으로 예상되는 시퀀스로 이벤트/알림을 발송합니다. 플레이어는 예상되는 시퀀스의 이벤트를 기반으로 작업을 구현할 수 있습니다.
 
-다음 예제에서는 재생 이벤트를 포함하는 일부 이벤트의 순서를 보여 줍니다.
+다음 예는 재생 이벤트가 포함된 일부 이벤트의 순서를 보여줍니다.
 
-* `MediaPlayer.replaceCurrentResource`을(를) 통해 미디어 리소스를 성공적으로 로드할 때 이벤트의 순서는 다음과 같습니다.
+* 다음을 통해 미디어 리소스를 성공적으로 로드한 경우 `MediaPlayer.replaceCurrentResource`, 이벤트 순서는 다음과 같습니다.
 
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태  `MediaPlayer.PlayerState.INITIALIZING`
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태 `MediaPlayer.PlayerState.INITIALIZING`
 
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태  `MediaPlayer.PlayerState.INITIALIZED`
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태 `MediaPlayer.PlayerState.INITIALIZED`
 
 >[!TIP]
 >
->기본 스레드에 미디어 리소스를 로드합니다. 배경 스레드에 미디어 리소스를 로드하는 경우 이 작업 또는 후속 TVSDK 작업 또는 둘 다에 오류가 발생할 수 있습니다(예: `IllegalStateException`).
+>기본 스레드에서 미디어 리소스를 로드합니다. 백그라운드 스레드에 미디어 리소스를 로드하는 경우 이 작업이나 후속 TVSDK 작업 또는 두 작업 모두에서 오류가 발생할 수 있습니다(예: `IllegalStateException`) 및 를 종료합니다.
 
-* `MediaPlayer.prepareToPlay`을 통해 재생을 준비할 때 이벤트의 순서는 다음과 같습니다.
+* 다음을 통해 재생을 준비할 때 `MediaPlayer.prepareToPlay`, 이벤트 순서는 다음과 같습니다.
 
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태  `MediaPlayerStatus.PREPARING`
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태 `MediaPlayerStatus.PREPARING`
 
-1. `MediaPlayer.PlaybackEventListener.onTimelineUpdated` 광고가 삽입된 경우입니다.
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태  `MediaPlayerStatus.PREPARED`
+1. `MediaPlayer.PlaybackEventListener.onTimelineUpdated` 광고를 삽입한 경우.
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` 상태 `MediaPlayerStatus.PREPARED`
 
-* 라이브/선형 스트림의 경우 재생 창이 이동하고 추가 기회가 해결되면 재생되는 동안 이벤트의 순서는 다음과 같습니다.
+* 라이브/선형 스트림의 경우 재생 창이 진행되고 추가 기회가 해결됨에 따라 재생하는 동안 이벤트 순서는 다음과 같습니다.
 
 1. `MediaPlayer.PlaybackEventListener.onUpdated`
 1. `MediaPlayer.PlaybackEventListener.onTimelineUpdated` 광고가 삽입된 경우
 1. `MediaPlayerItemEvent.ITEM_UPDATED`
 1. `TimelineEvent.TIMELINE_UPDATED` 광고가 삽입된 경우
 
-다음 예는 일반적인 이벤트 진행 상태를 보여줍니다.
+다음 예는 일반적인 이벤트 진행률을 보여 줍니다.
 
 ```java
 mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK,  
@@ -112,20 +111,20 @@ mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK,
 
 ## 광고 이벤트 순서 {#section_7B3BE3BD3B6F4CF69D81F9CFAC24CAD5}
 
-재생에 광고가 포함되면 TVSDK는 일반적으로 예상 시퀀스에 이벤트/알림을 전달합니다. 플레이어는 예상 시퀀스의 이벤트를 기반으로 동작을 구현할 수 있습니다.
+재생에 광고가 포함되는 경우 TVSDK는 일반적으로 예상되는 시퀀스로 이벤트/알림을 발송합니다. 플레이어는 예상되는 시퀀스의 이벤트를 기반으로 작업을 구현할 수 있습니다.
 
 광고를 재생할 때 이벤트의 순서는 다음과 같습니다.
 
 * `AdPlaybackEventListener.onAdBreakStart`
-* 광고 노출의 모든 광고에 대해 다음 사항이 전달됩니다.
+* 다음은 광고 브레이크의 모든 광고에 대해 발송됩니다.
 
    * `AdPlaybackEventListener.onAdStart`
-   * `AdPlaybackEventListener.onAdProgress` (광고를 재생하는 동안 여러 번)
-   * `AdPlaybackEventListener.onAdClick` (각 클릭에 대해)
+   * `AdPlaybackEventListener.onAdProgress` (광고 재생 중 여러 번)
+   * `AdPlaybackEventListener.onAdClick` (클릭할 때마다)
    * `AdPlaybackEventListener.onAdStart`
    * `AdPlaybackEventListener.onAdBreakComplete`
 
-다음 예는 광고 재생 이벤트의 일반적인 진행 상태를 보여줍니다.
+다음 예는 광고 재생 이벤트의 일반적인 진행률을 보여 줍니다.
 
 ```java
 mediaPlayer.addEventListener(MediaPlayer.Event.AD_PLAYBACK,  
@@ -148,16 +147,16 @@ mediaPlayer.addEventListener(MediaPlayer.Event.AD_PLAYBACK,
 광고를 재생할 때 이벤트의 순서는 다음과 같습니다.
 
 * `AdPlaybackEventListener.onAdBreakStart`
-* 광고 노출의 모든 광고에 대해 다음 사항이 전달됩니다.
+* 다음은 광고 브레이크의 모든 광고에 대해 발송됩니다.
 
    * `AdPlaybackEventListener.onAdStart`
-   * `AdPlaybackEventListener.onAdProgress` (광고를 재생하는 동안 여러 번)
-   * `AdPlaybackEventListener.onAdClick` (각 클릭에 대해)
+   * `AdPlaybackEventListener.onAdProgress` (광고 재생 중 여러 번)
+   * `AdPlaybackEventListener.onAdClick` (클릭할 때마다)
    * `AdPlaybackEventListener.onAdStart`
 
 * `AdPlaybackEventListener.onAdBreakComplete`
 
-다음 예는 광고 재생 이벤트의 일반적인 진행 상태를 보여줍니다.
+다음 예는 광고 재생 이벤트의 일반적인 진행률을 보여 줍니다.
 
 ```java
 mediaPlayer.addEventListener(MediaPlayer.Event.AD_PLAYBACK,  
@@ -179,9 +178,9 @@ mediaPlayer.addEventListener(MediaPlayer.Event.AD_PLAYBACK,
 
 ## QoS 이벤트 {#section_9BFF3CD7AA1C4BD6960ACF6B9C0B25CC}
 
-TVSDK는 서비스 품질(QoS) 이벤트를 전달하여 버퍼링 및 검색 이벤트와 같은 QoS 통계 계산에 영향을 줄 수 있는 이벤트를 애플리케이션에 알립니다.
+TVSDK는 QoS(서비스 품질) 이벤트를 발송하여 버퍼링 및 검색 이벤트와 같은 QoS 통계 계산에 영향을 줄 수 있는 이벤트에 대해 애플리케이션에 알립니다.
 
-다음 예는 이러한 이벤트의 일반적인 진행 상태를 보여줍니다.
+다음 예는 이러한 이벤트의 일반적인 진행률을 보여 줍니다.
 
 ```java
 mediaPlayer.addEventListener(MediaPlayer.Event.QOS,  
@@ -207,11 +206,11 @@ mediaPlayer.addEventListener(MediaPlayer.Event.QOS,
 
 ## DRM 이벤트 {#section_3FECBF127B3E4EFEAB5AE87E89CCDE7C}
 
-TVSDK는 새로운 DRM 메타데이터를 사용할 수 있는 시기 등 DRM 관련 작업에 대한 응답으로 디지털 저작권 관리(DRM) 이벤트를 전달합니다. 플레이어는 이러한 이벤트에 응답하여 작업을 구현할 수 있습니다.
+TVSDK는 새 DRM 메타데이터를 사용할 수 있게 되는 등의 DRM 관련 작업에 대한 응답으로 DRM(디지털 권한 관리) 이벤트를 전달합니다. 플레이어는 이러한 이벤트에 대한 응답으로 작업을 구현할 수 있습니다.
 
-모든 DRM 관련 이벤트에 대한 알림을 받으려면 `onDRMMetadata(DRMMetadataInfo drmMetadataInfo)`을 수신하십시오. TVSDK는 `DRMManager` 클래스를 통해 추가 DRM 이벤트를 전달합니다.
+모든 DRM 관련 이벤트에 대한 알림을 받으려면 다음을 들어보십시오. `onDRMMetadata(DRMMetadataInfo drmMetadataInfo)`. TVSDK는 를 통해 추가 DRM 이벤트를 전달합니다. `DRMManager` 클래스.
 
-다음 예는 일반적인 진행 상태를 보여줍니다.
+다음 예는 일반적인 진행률을 보여 줍니다.
 
 ```
 mediaPlayer.addEventListener(MediaPlayer.Event.DRM, 
@@ -228,5 +227,4 @@ mediaPlayer.addEventListener(MediaPlayer.Event.DRM,
 | 이벤트 | 의미 |
 |---|---|
 | `onLoadComplete (mediaPlayerItem playerItem)` | 미디어 리소스 로드가 완료되었습니다. |
-| `onError` | 미디어 리소스를 로드하는 동안 문제가 발생했습니다. |
-
+| `onError` | 미디어 리소스를 로드하는 도중 문제가 발생했습니다. |

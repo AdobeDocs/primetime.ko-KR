@@ -1,24 +1,23 @@
 ---
-description: 브라우저 TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형과 콜백 이름을 지정합니다. 이벤트가 발생하면 브라우저 TVSDK는 콜백을 호출하고 적절한 유형의 이벤트 객체에 전달합니다.
-title: 콜백을 위한 이벤트 유형 및 클래스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 브라우저 TVSDK에 이벤트 리스너를 등록하면 수신할 이벤트 유형과 콜백의 이름을 지정합니다. 이벤트가 발생하면 브라우저 TVSDK가 콜백을 호출하고 적절한 유형의 이벤트 개체를 전달합니다.
+title: 콜백에 대한 이벤트 유형 및 클래스
+exl-id: 94c571ea-6dd2-4c15-89db-7015d89c9208
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
+# 콜백에 대한 이벤트 유형 및 클래스{#event-types-and-classes-for-callbacks}
 
-# 콜백{#event-types-and-classes-for-callbacks}에 대한 이벤트 유형 및 클래스
-
-브라우저 TVSDK에 이벤트 리스너를 등록할 때 수신할 이벤트 유형과 콜백 이름을 지정합니다. 이벤트가 발생하면 브라우저 TVSDK는 콜백을 호출하고 적절한 유형의 이벤트 객체에 전달합니다.
+브라우저 TVSDK에 이벤트 리스너를 등록하면 수신할 이벤트 유형과 콜백의 이름을 지정합니다. 이벤트가 발생하면 브라우저 TVSDK가 콜백을 호출하고 적절한 유형의 이벤트 개체를 전달합니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_FE58AD65AF3B4483816C00D7EAD2FB4F"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="2" class="entry"> 이 이벤트 이름을 수신할 때(AdobePSDK.EventType) </th> 
-   <th class="entry">구문/browser-tvsdk-name은 이 개체 유형의 콜백으로 이벤트를 전달합니다(<span class="codeph"> AdobePSDK.Event</span>). </th> 
+   <th colname="2" class="entry"> 이 이벤트 이름(AdobePSDK.EventType)을 수신하는 경우 </th> 
+   <th class="entry">phrases/browser-tvsdk-name은 이 개체 유형의 콜백에 이벤트를 전달합니다(<span class="codeph"> AdobePSDK.Event</span>) </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -27,7 +26,7 @@ ht-degree: 0%
     <ul id="ul_kj4_jc4_2y"> 
      <li id="li_C00AD7DE32C94431A4550E21CAC1DCA5"><span class="codeph"> AD_STARTED</span> </li> 
      <li id="li_1A3EA7527B3642E9ADF39F3CC3D87EDC"><span class="codeph"> AD_PROGRESS</span> </li> 
-     <li id="li_9FB16D4B43EC4905909E881BC1C86E74"><span class="codeph"> AD_COMPLETED</span> </li> 
+     <li id="li_9FB16D4B43EC4905909E881BC1C86E74"><span class="codeph"> 광고 완료됨</span> </li> 
     </ul> </td> 
    <td><span class="codeph"> AdPlaybackEvent</span> </td> 
   </tr> 
@@ -35,22 +34,22 @@ ht-degree: 0%
    <td colname="2"> 
     <ul id="ul_jpq_pc4_2y"> 
      <li id="li_782365D715684DDC835E16D08CC0BBDB"><span class="codeph"> AD_BREAK_STARTED</span> </li> 
-     <li id="li_78D7EAEE99D04A35AD7C6EC60DDDC1CC"><span class="codeph"> AD_BREAK_COMPLETED</span> </li> 
-     <li id="li_6155ADAF5E964C458E92AFFB4F7D6347"><span class="codeph"> AD_BREAK_OVERSEED</span> </li> 
+     <li id="li_78D7EAEE99D04A35AD7C6EC60DDDC1CC"><span class="codeph"> AD_BREAK_COMPLETE</span> </li> 
+     <li id="li_6155ADAF5E964C458E92AFFB4F7D6347"><span class="codeph"> AD_BREAK_SKIPPED</span> </li> 
     </ul> </td> 
    <td><span class="codeph"> AdBreakPlaybackEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"><span class="codeph"> AD_CLICK</span> </td> 
-   <td><span class="codeph"> AdClickEvent</span> </td> 
+   <td><span class="codeph"> AdClickevent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> 
     <ul id="ul_eny_tc4_2y"> 
-     <li id="li_13F95E4BF905425CA5A95ECC138CC078"><span class="codeph"> 버퍼링_시작</span> </li> 
-     <li id="li_BA6F4E38E2F440FAAA4E70DF906A3350"><span class="codeph"> 버퍼링_끝</span> </li> 
+     <li id="li_13F95E4BF905425CA5A95ECC138CC078"><span class="codeph"> BUFFERING_BEGIN</span> </li> 
+     <li id="li_BA6F4E38E2F440FAAA4E70DF906A3350"><span class="codeph"> 버퍼링 종료</span> </li> 
     </ul> </td> 
-   <td><span class="codeph"> 버퍼 이벤트</span> </td> 
+   <td><span class="codeph"> BufferEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"><span class="codeph"> DRM_METADATA_INFO_AVAILABLE</span> </td> 
@@ -63,16 +62,16 @@ ht-degree: 0%
   <tr rowsep="1"> 
    <td colname="2"> 
     <ul id="ul_kwy_cd4_2y"> 
-     <li id="li_D5455D287EA5472D95A45AD1A8835D61"><span class="codeph"> 오디오_업데이트됨</span> </li> 
-     <li id="li_AFF5B14338AB4AA8B4DF3963F2FDD4CF"><span class="codeph"> 캡션_업데이트됨</span> </li> 
-     <li id="li_F7C9B933C6A44E80B57EB5274640A17B"><span class="codeph"> 업데이트 기본_날짜</span> </li> 
-     <li id="li_C9FDF852BF4F4B638A8A1CAAFC27A23F"><span class="codeph"> ITEM_CREATED</span> </li> 
-     <li id="li_85E13B35A6DB44A4BA0F93EA52B9D08A"><span class="codeph"> ITEM_UPDATED</span> </li> 
+     <li id="li_D5455D287EA5472D95A45AD1A8835D61"><span class="codeph"> AUDIO_UPDATED</span> </li> 
+     <li id="li_AFF5B14338AB4AA8B4DF3963F2FDD4CF"><span class="codeph"> 캡션 업데이트됨</span> </li> 
+     <li id="li_F7C9B933C6A44E80B57EB5274640A17B"><span class="codeph"> 기본_UPDATED</span> </li> 
+     <li id="li_C9FDF852BF4F4B638A8A1CAAFC27A23F"><span class="codeph"> ITEM_생성됨</span> </li> 
+     <li id="li_85E13B35A6DB44A4BA0F93EA52B9D08A"><span class="codeph"> 항목 업데이트됨</span> </li> 
     </ul> </td> 
    <td><span class="codeph"> MediaPlayerItemEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"><span class="codeph"> STATUS_CHANGED</span> </td> 
+   <td colname="2"><span class="codeph"> 상태 변경됨</span> </td> 
    <td><span class="codeph"> StatusChangeEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -80,20 +79,20 @@ ht-degree: 0%
    <td><span class="codeph"> NotificationEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"><span class="codeph"> RESERVATION_REACHED</span> </td> 
+   <td colname="2"><span class="codeph"> RESERVATION_REACH</span> </td> 
    <td><span class="codeph"> ReservationEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> 
     <ul id="ul_jfl_224_2y"> 
-     <li id="li_02B430978FA14A41A000DF8F9A345793"><span class="codeph"> RATE_SELECTED</span> </li> 
+     <li id="li_02B430978FA14A41A000DF8F9A345793"><span class="codeph"> 선택된 비율(_S)</span> </li> 
      <li id="li_1EDC0664B59E49448040DF312C928FAA"><span class="codeph"> RATE_PLAYING</span> </li> 
     </ul> </td> 
    <td><span class="codeph"> PlaybackRateEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"><span class="codeph"> PROFILE_CHANGED</span> </td> 
-   <td><span class="codeph"> ProfileEvent</span> </td> 
+   <td colname="2"><span class="codeph"> 프로필 변경됨</span> </td> 
+   <td><span class="codeph"> 프로필 이벤트</span> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"><span class="codeph"> PLAY_START</span> </td> 
@@ -102,8 +101,8 @@ ht-degree: 0%
   <tr rowsep="1"> 
    <td colname="2"> 
     <ul id="ul_nwg_w24_2y"> 
-     <li id="li_7CABB2AD7AB140E3BD4061460987BA40"><span class="codeph"> SEEK_POSITION_ADJUTED</span> </li> 
-     <li id="li_D44BEC28BDBB408280F5AA77E06107B3"><span class="codeph"> SEEK_BEGIN</span> </li> 
+     <li id="li_7CABB2AD7AB140E3BD4061460987BA40"><span class="codeph"> SEEK_POSITION_ADJUSTED</span> </li> 
+     <li id="li_D44BEC28BDBB408280F5AA77E06107B3"><span class="codeph"> SEEK_START</span> </li> 
      <li id="li_EC000CF7E3DF4BC18443E368E347E7ED"><span class="codeph"> SEEK_END</span> </li> 
     </ul> </td> 
    <td><span class="codeph"> SeekEvent</span> </td> 
@@ -113,21 +112,20 @@ ht-degree: 0%
    <td><span class="codeph"> SizeAvailableEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"><span class="codeph"> TIME_CHANGED</span> </td> 
+   <td colname="2"><span class="codeph"> TIME_변경됨</span> </td> 
    <td><span class="codeph"> TimeChangeEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"><span class="codeph"> TIMED_METADATA_AVAILABLE</span> </td> 
-   <td><span class="codeph"> TimedMetadataEvent</span> </td> 
+   <td><span class="codeph"> TimedMetaEvent</span> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"><span class="codeph"> TIMELINE_UPDATED</span> </td> 
-   <td><span class="codeph"> TimelineEvent</span> </td> 
+   <td colname="2"><span class="codeph"> 타임라인 업데이트됨</span> </td> 
+   <td><span class="codeph"> 타임라인 이벤트</span> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"><span class="codeph"> PLAYBACK_RANGE_UPDATED</span> </td> 
+   <td colname="2"><span class="codeph"> PLAYBACK_RANGE_UPDATE</span> </td> 
    <td></td> 
   </tr> 
  </tbody> 
 </table>
-

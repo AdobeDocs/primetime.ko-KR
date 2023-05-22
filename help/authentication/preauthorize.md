@@ -1,53 +1,53 @@
 ---
-title: iOS/tvOS API 사전 승인
-description: iOS/tvOS API 사전 승인
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+title: iOS/tvOS API 사전 인증
+description: iOS/tvOS API 사전 인증
+exl-id: 79c596a4-0e38-4b6c-bb85-f97c6af45ed8
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-
-# 사전 인증 {#preauthorize}
+# 사전 승인 {#preauthorize}
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
-사전 인증 API를 사용하여 하나 이상의 리소스에 대한 사전 인증 결정을 얻을 수 있습니다. 이렇게 하면 애플리케이션에서 UI 힌트 및/또는 콘텐츠 필터링을 구현할 수 있습니다.
-
->[!IMPORTANT]
->
->인증 API **반드시** 지정된 리소스에 대한 사용자 액세스 권한을 부여하기 전에 사용됩니다.
-
-API 사전 인증 응답 결과에 사전 권한 부여 결정이 거부된 리소스가 하나 이상 포함되어 있는 경우 추가 오류 정보를 포함할 수 있습니다 **(아래 참고 참조)** 영향을 받는 각 리소스에 대해
+사전 권한 부여 API를 사용하여 하나 이상의 리소스에 대한 사전 권한 부여 결정을 얻을 수 있습니다. 이렇게 하면 애플리케이션이 UI 힌트 및/또는 콘텐츠 필터링을 구현할 수 있습니다.
 
 >[!IMPORTANT]
 >
->Adobe Primetime 인증 구성 쪽에서 활성화해야 하므로 요청 시 거부된 사전 인증 결정에 대한 추가 오류 정보를 추가하는 향상된 오류 보고 기능을 사용할 수 있습니다.
+>인증 API **필수** 사용자에게 지정된 리소스에 대한 액세스 권한을 부여하기 전에 사용할 수 있습니다.
 
-Adobe Primetime 인증 SDK 오류로 인해 API 사전 인증 요청을 처리할 수 없거나 Adobe Primetime 인증 서비스 오류가 발생하는 경우 추가 오류 정보(위의 구성에 관계 없음)가 발생하고 사전 인증 API 응답 결과의 일부로 리소스가 포함되지 않습니다.
+사전 권한 부여 API 응답 결과에 사전 권한 부여 거부됨 결정이 있는 리소스가 하나 이상 포함된 경우, 추가 오류 정보가 포함될 수 있습니다 **(아래 참고 참조)** 영향을 받는 각 리소스에 대해
+
+>[!IMPORTANT]
+>
+>거부된 사전 권한 부여 결정에 대한 추가 오류 정보를 추가하는 향상된 오류 보고 기능은 Adobe Primetime 인증 구성 측에서 활성화해야 하므로 요청 시 사용할 수 있습니다.
+
+Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리할 수 없거나 Adobe Primetime 인증 서비스 오류가 발생하는 경우 추가 오류 정보(위의 구성과 상관없이)가 포함되며 사전 승인 API 응답 결과의 일부로 리소스가 포함되지 않습니다.
 
 </br>
 
 ## `- (void) preauthorize:(nonnull PreauthorizeRequest *)request didCompleteWith:(nonnull AccessEnablerCallback<PreauthorizeResponse *> *)callback;`
 
 
-**사용 가능:** v3.6.0+
+**가용성:** v3.6.0+
 
 **매개 변수:**
 
-- PreauthorizationRequest: API 요청 컨텐츠를 전달하는 데 사용되는 요청 개체
-- AccessEnablerCallback: API 응답을 반환하는 데 사용되는 콜백 개체입니다.
-- PreauthorizationResponse: API 응답 콘텐츠를 반환하는 데 사용되는 응답 개체
+- PreauthorizeRequest: API 요청 콘텐츠를 전달하는 데 사용되는 요청 개체
+- AccessEnablerCallback: API 응답을 반환하는 데 사용되는 콜백 개체
+- PreauthorizeResponse: API 응답 콘텐츠를 반환하는 데 사용되는 응답 개체
 
  
 </br>
 
 ## `class PreauthorizeRequest`{#androidpreauthorizerequest}
 
-### **class PreauthorizationRequest.Builder**
+### **클래스 PreauthorizeRequest.Builder**
 
 ```
     ///
@@ -111,7 +111,7 @@ Adobe Primetime 인증 SDK 오류로 인해 API 사전 인증 요청을 처리�
 ```
  
 
-## **enum PreauthorizationRequest.Feature**
+## **enum PreauthorizeRequest.Feature**
 
 ```
     ///
@@ -161,19 +161,19 @@ Adobe Primetime 인증 SDK 오류로 인해 API 사전 인증 요청을 처리�
 
 ### 예:
 
-이 섹션에서는 가능한 일부 PreauthorizationResponse 객체의 JSON 구조를 강조 표시합니다.
+이 섹션에서는 사용 가능한 일부 PreauthorizeResponse 개체의 JSON 구조를 중점적으로 다룹니다.
 
 >[!IMPORTANT]
 >
->다음 예제에서 제공하는 JSON은 이 문서에 제시된 모델 클래스를 통해서만 액세스할 수 있습니다. 그렇지 않으면 공개 메서드의 매체를 통해 이러한 JSON의 속성에 액세스할 수 없습니다.
+>다음 예제에서 제공하는 JSON은 이 문서에 표시된 모델 클래스를 통해서만 액세스할 수 있습니다. 공개 메서드의 매체를 통하지 않으면 이러한 JSON의 속성에 액세스할 수 없습니다.
 
 >[!IMPORTANT]
 >
->향상된 오류 보고 기능의 매체를 통해 검색된 가능한 추가 오류 목록은 [고급 오류 보고](/help/authentication/enhanced-error-codes.md).
+>향상된 오류 보고 기능의 미디어를 통해 검색된 가능한 추가 오류 목록은 [고급 오류 보고](/help/authentication/enhanced-error-codes.md).
 
 #### 성공
 
-요청된 모든 리소스는 긍정적인 사전 인증 결정을 가지고 있습니다
+요청된 모든 리소스에 긍정적인 사전 승인 결정이 있습니다.
 
 ```JSON
     {
@@ -195,7 +195,7 @@ Adobe Primetime 인증 SDK 오류로 인해 API 사전 인증 요청을 처리�
 ```
  
 
-하나 이상의 리소스에 대해 권한 부여 거부 결정이 있고 Adobe Primetime 인증 구성에서 향상된 오류 보고 기능을 사용할 수 없습니다
+하나 이상의 리소스에 거부된 사전 권한 부여 결정이 있으며 향상된 오류 보고 기능이 Adobe Primetime 인증 구성에서 활성화되지 않았습니다
 
 ```JSON
     {
@@ -218,7 +218,7 @@ Adobe Primetime 인증 SDK 오류로 인해 API 사전 인증 요청을 처리�
 ```
  
 
-하나 이상의 리소스에 거부 사전 인증 결정이 있고 Adobe Primetime 인증 구성에서 향상된 오류 보고 기능을 사용할 수 있습니다
+하나 이상의 리소스에 거부된 사전 권한 부여 결정이 있으며 Adobe Primetime 인증 구성에서 향상된 오류 보고 기능이 활성화됩니다
 
 ```JSON
     {
@@ -253,7 +253,7 @@ Adobe Primetime 인증 SDK 오류로 인해 API 사전 인증 요청을 처리�
 
  
 
-Adobe Primetime 인증 서비스에서 API 사전 권한 요청을 제공하는 동안 오류가 발생했습니다
+Adobe Primetime 인증 서비스가 API 사전 인증 요청을 제공하는 동안 오류가 발생했습니다.
 
 ```JSON
     {
@@ -273,7 +273,7 @@ Adobe Primetime 인증 서비스에서 API 사전 권한 요청을 제공하는 
 
 #### 실패
 
-Adobe Primetime 인증 SDK에서 API 사전 권한 요청을 제공하는 동안 오류가 발생했습니다
+Adobe Primetime 인증 SDK가 사전 인증 API 요청을 제공하는 동안 오류가 발생합니다
 
 ```JSON
     {

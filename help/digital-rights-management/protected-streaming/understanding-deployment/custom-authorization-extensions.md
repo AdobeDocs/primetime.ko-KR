@@ -1,23 +1,22 @@
 ---
-description: 라이센스 획득 중에 사용자 정의 인증 논리를 호출하여 요청한 클라이언트에 라이센스를 발급할지 결정할 수 있습니다.
-title: 사용자 정의 인증 확장
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 라이센스 획득 중에 사용자 지정 인증 로직을 호출하여 요청하는 클라이언트에 라이센스를 발급해야 하는지 결정할 수 있습니다.
+title: 사용자 지정 권한 부여 확장
+exl-id: dbdda9c6-32bf-4904-981f-0029bf0a82f0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
 
 ---
 
+# 사용자 지정 권한 부여 확장{#custom-authorization-extensions}
 
-# 사용자 지정 인증 확장{#custom-authorization-extensions}
+라이센스 획득 중에 사용자 지정 인증 로직을 호출하여 요청하는 클라이언트에 라이센스를 발급해야 하는지 결정할 수 있습니다.
 
-라이센스 획득 중에 사용자 정의 인증 논리를 호출하여 요청한 클라이언트에 라이센스를 발급할지 결정할 수 있습니다.
+고유한 고객 인증 확장을 구현하려면 먼저 다음을 확인해야 합니다. [!DNL SampleAuthorizer.java] samples 디렉터리에 있는 샘플 코드입니다. 이 샘플의 컴파일된 버전은 [!DNL flashaccess-license-server-ext-sample.jar].
 
-고유한 고객 인증 확장을 구현하려면 먼저 샘플 디렉토리에 있는 [!DNL SampleAuthorizer.java] 샘플 코드를 살펴보아야 합니다. 이 샘플의 컴파일된 버전은 [!DNL flashaccess-license-server-ext-sample.jar]에 있습니다.
+고유한 확장을 빌드하려면 를 구현해야 합니다. `com.adobe.flashaccess.server.license.extension.auth.IAuthorizer` 인터페이스 및 확인 [!DNL flashaccess-license-server-exts.jar] 및 [!DNL commons-logging.jar] 빌드 경로( [!DNL adobe-flashaccess-sdk.jar] 에서 특정 필드를 사용하는 경우 빌드 경로에도 있어야 합니다. `IMessageFacade`).
 
-자체 확장을 만들려면 `com.adobe.flashaccess.server.license.extension.auth.IAuthorizer` 인터페이스를 구현하고 [!DNL flashaccess-license-server-exts.jar] 및 [!DNL commons-logging.jar]이(가) 빌드 경로에 있는지 확인해야 합니다( `IMessageFacade`에서 특정 필드를 사용하는 경우 [!DNL adobe-flashaccess-sdk.jar] 역시 빌드 경로에 있어야 합니다.)
+확장을 배포하려면 jar 또는 클래스 파일을 *LicenseServer.ConfigRoot* [!DNL /flashaccessserver/libs].
 
-확장을 배포하려면 jar 또는 클래스 파일을 *LicenseServer.ConfigRoot* [!DNL /flashaccessserver/libs]에 복사해야 합니다.
-
-jar 또는 클래스 파일을 업데이트하려면 업데이트된 버전을 사용하기 전에 서버를 다시 시작해야 합니다. 또한 권한이 있는 클래스 이름을 테넌트 구성 파일에 추가해야 합니다.
+jar 또는 클래스 파일을 업데이트하려면 업데이트된 버전을 사용하기 전에 서버를 다시 시작해야 합니다. 또한 권한 부여자 클래스 이름을 테넌트 구성 파일에 추가해야 합니다.

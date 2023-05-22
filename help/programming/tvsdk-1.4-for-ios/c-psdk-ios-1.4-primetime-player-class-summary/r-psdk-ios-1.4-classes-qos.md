@@ -1,18 +1,17 @@
 ---
-description: 이러한 클래스는 플레이어의 성능을 확인하는 데 도움이 되는 정보를 제공합니다.
-title: QoS 클래스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 이러한 클래스는 플레이어가 얼마나 성과가 있는지 확인하는 데 도움이 되는 정보를 제공합니다.
+title: Qos 클래스
+exl-id: ba0cddd0-3af9-4e35-9079-97c260cbd3e9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
+# Qos 클래스{#qos-classes}
 
-# QoS 클래스{#qos-classes}
-
-이러한 클래스는 플레이어의 성능을 확인하는 데 도움이 되는 정보를 제공합니다.
+이러한 클래스는 플레이어가 얼마나 성과가 있는지 확인하는 데 도움이 되는 정보를 제공합니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_2893EFF9755149159A4F94E781C76B6E"> 
  <thead> 
@@ -36,7 +35,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTPlaybackInformation.html" format="html" scope="external"> PTPlaybackInformation</a> </td> 
-   <td colname="2"> 재생의 성능에 대한 정보를 제공합니다. 여기에는 프레임 속도, 프로필 비트 전송률, 버퍼링에서 보낸 총 시간, 버퍼링 시도 횟수, 첫 번째 비디오 조각의 첫 번째 바이트를 가져오는 데 걸린 시간, 첫 번째 프레임을 렌더링하는 데 걸린 시간, 현재 버퍼링된 길이 및 버퍼 시간이 포함됩니다. </td> 
+   <td colname="2"> 재생 수행 방법에 대한 정보를 제공합니다. 이는 프레임 레이트, 프로필 비트 레이트, 버퍼링에 소요된 총 시간, 버퍼링 시도 횟수, 제1 비디오 조각으로부터 제1 바이트를 얻는 데 걸린 시간, 제1 프레임을 렌더링하는 데 걸린 시간, 현재 버퍼링된 길이, 버퍼 시간을 포함한다. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTQoSProvider.html" format="html" scope="external"> PTQoSProvider</a> </td> 
@@ -50,4 +49,3 @@ ht-degree: 0%
   </tr> 
  </tbody> 
 </table>
-

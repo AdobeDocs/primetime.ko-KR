@@ -1,22 +1,21 @@
 ---
-title: Java API를 사용하여 정책 만들기
-description: Java API를 사용하여 정책 만들기
+title: Java API를 사용하여 정책 생성
+description: Java API를 사용하여 정책 생성
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 60e26fd6-1b72-413c-a35b-b317389cd9ed
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
+# Java API를 사용하여 정책 생성 {#creating-a-policy-using-the-java-api}
 
-# Java API {#creating-a-policy-using-the-java-api}을 사용하여 정책 만들기
+Java API를 사용하여 정책을 생성하려면 다음 단계를 수행하십시오.
 
-Java API를 사용하여 정책을 만들려면 다음 단계를 수행하십시오.
-
-1. 개발 환경을 설정하고 프로젝트 내에 [개발 환경 설정](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md)에 언급된 모든 JAR 파일을 포함합니다.
-1. `com.adobe.flashaccess.sdk.policy.Policy` 개체를 만들고 권한, 라이선스 캐싱 기간 및 정책 종료 날짜와 같은 속성을 지정합니다.
+1. 개발 환경을 설정하고에 언급된 모든 JAR 파일을 포함하십시오. [개발 환경 설정](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) 을 참조하십시오.
+1. 만들기 `com.adobe.flashaccess.sdk.policy.Policy` 을 클릭하고 권한, 라이선스 캐싱 기간 및 정책 종료 날짜 등, 해당 속성을 지정합니다.
 
    ```java
      // Create a new Policy object.  
@@ -52,7 +51,7 @@ Java API를 사용하여 정책을 만들려면 다음 단계를 수행하십시
      }
    ```
 
-1. `Policy` 개체를 일련화하고 파일 또는 데이터베이스에 저장합니다.
+1. 직렬화 `Policy` 개체를 만들고 파일이나 데이터베이스에 저장합니다.
 
    ```java
      // Serialize the policy  
@@ -66,4 +65,4 @@ Java API를 사용하여 정책을 만들려면 다음 단계를 수행하십시
      out.close();
    ```
 
-이 샘플 코드의 전체 소스는 참조 구현 명령줄 도구 &quot;[!DNL samples]&quot; 디렉토리의 *com.adobe.flashaccess.samples.policy.CreatePolicy*&#x200B;을 참조하십시오.
+이 샘플 코드의 전체 소스는 다음을 참조하십시오. *com.adobe.flashaccess.samples.policy.CreatePolicy* 참조 구현 명령줄 도구 &quot; [!DNL samples]&quot; 디렉토리.

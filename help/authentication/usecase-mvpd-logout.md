@@ -1,21 +1,21 @@
 ---
 title: MVPD 로그아웃
 description: MVPD 로그아웃
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: a2b57d02-9688-48e3-beff-1012cd361d0c
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
-
 # MVPD 로그아웃
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
-로그아웃 사용 사례는 IdP에 전송된 SAML 로그아웃 요청 또는 호출되는 사용자 지정 로그아웃 종단점에 의해 구현할 수 있습니다.  아래 요청 및 응답 예는 SAML 로그아웃 구현의 샘플을 제공합니다.
+로그아웃 사용 사례는 IdP에 전송된 SAML 로그아웃 요청 또는 호출되는 사용자 지정 로그아웃 끝점에 의해 구현될 수 있습니다.  아래의 요청 및 응답 예제는 SAML 로그아웃 구현의 샘플을 제공합니다.
 
 ## 샘플 로그아웃 요청 {#sample-logout-request}
 

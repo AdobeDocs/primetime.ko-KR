@@ -1,8 +1,7 @@
 ---
-title: 상대적 종료 날짜
-description: 상대적 종료 날짜
+title: 상대적 종료일
+description: 상대적 종료일
 copied-description: true
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '72'
@@ -11,8 +10,8 @@ ht-degree: 0%
 ---
 
 
-# 상대적 종료 날짜{#relative-end-date}
+# 상대적 종료일{#relative-end-date}
 
-상대적 종료 날짜는 라이센스 만료 날짜를 지정합니다. 이 날짜는 라이센스 발급 일을 기준으로 하는 날짜가 아니라 패키지 날짜에 따라 표시됩니다.
+상대적 종료 날짜는 라이선스가 발급된 날짜와는 관련이 없고 포장 날짜를 기준으로 표시되는 라이선스 만료 날짜를 지정합니다.
 
-사용 사례 예:자동화된 패키징 과정에서는 일련의 비디오에 대해 이 옵션을 사용하여 단일 Primetime DRM 정책을 통해 만료 날짜를 패키징 날짜에 따라 30일로 설정할 수 있습니다.
+예제 사용 사례: 자동화된 패키징 프로세스에서 일련의 비디오에 대해 이 옵션과 함께 단일 Primetime DRM 정책을 사용하여 만료 날짜를 패키징 날짜를 기준으로 30일로 설정합니다.

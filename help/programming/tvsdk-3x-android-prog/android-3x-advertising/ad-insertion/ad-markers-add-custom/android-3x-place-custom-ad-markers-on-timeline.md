@@ -1,44 +1,43 @@
 ---
-description: 이 예는 재생 타임라인에 사용자 정의 광고 마커를 포함하는 권장 방법을 보여줍니다.
-title: 타임라인에 사용자 정의 광고 마커 배치
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 이 예는 재생 타임라인에 사용자 지정 광고 마커를 포함하는 권장 방법을 보여 줍니다.
+title: 타임라인에 사용자 지정 광고 마커 배치
+exl-id: 32a4b342-1f26-42c5-9682-789c541f0fa6
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
+# 타임라인에 사용자 지정 광고 마커 배치 {#place-custom-ad-markers-on-the-timeline}
 
-# 사용자 지정 광고 마커를 타임라인 {#place-custom-ad-markers-on-the-timeline}에 배치
+이 예는 재생 타임라인에 사용자 지정 광고 마커를 포함하는 권장 방법을 보여 줍니다.
 
-이 예는 재생 타임라인에 사용자 정의 광고 마커를 포함하는 권장 방법을 보여줍니다.
-
-1. 대역외 광고 위치 정보를 `RepaceTimeRange` 클래스의 목록/배열로 변환합니다.
-1. `CustomRangeMetadata` 클래스의 인스턴스를 만들고 목록/배열과 함께 `setTimeRangeList` 메서드를 인수로 사용하여 시간 범위 목록을 설정합니다.
-1. `setType` 메서드를 사용하여 유형을 `MARK_RANGE`으로 설정합니다.
-1. `CustomRangeMetadata` 인스턴스와 함께 `MediaPlayerItemConfig.setCustomRangeMetadata` 메서드를 인수로 사용하여 사용자 지정 범위 메타데이터를 설정합니다.
-1. `MediaPlayerItemConfig` 인스턴스와 함께 `MediaPlayer.replaceCurrentResource` 메서드를 인수로 사용하여 새 리소스를 현재 리소스로 설정합니다.
-1. 플레이어가 `PREPARED` 상태임을 보고하는 `STATE_CHANGED` 이벤트를 기다립니다.
-1. `MediaPlayer.play`을(를) 호출하여 비디오 재생을 시작합니다.
+1. 대역 외 광고 위치 정보를 목록/배열로 변환 `RepaceTimeRange` 클래스.
+1. 의 인스턴스 만들기 `CustomRangeMetadata` 클래스 및 클래스 사용 `setTimeRangeList` 시간 범위 목록을 설정하는 인수로 list/array를 사용하는 메서드입니다.
+1. 사용 `setType` 유형을 로 설정하는 방법 `MARK_RANGE`.
+1. 사용 `MediaPlayerItemConfig.setCustomRangeMetadata` 을 사용하는 메서드 `CustomRangeMetadata` 인스턴스를 그 인수로 사용하여 사용자 지정 범위 메타데이터를 설정합니다.
+1. 사용 `MediaPlayer.replaceCurrentResource` 을 사용하는 메서드 `MediaPlayerItemConfig` 인스턴스를 의 인수로 사용하여 새 리소스를 현재 리소스로 만듭니다.
+1. 다음 시간 동안 대기 `STATE_CHANGED` 이벤트: 플레이어가 다음에 있음을 보고합니다. `PREPARED` 주.
+1. 를 호출하여 비디오 재생 시작 `MediaPlayer.play`.
 
 다음은 이 예제의 작업을 완료한 결과입니다.
 
-* 예를 들어, 재생 타임라인에서 `ReplaceTimeRange`이(가) 다른 항목과 겹치는 경우 `ReplaceTimeRange`의 시작 위치가 이미 배치한 종료 위치보다 이전 위치일 경우 TVSDK는 충돌을 피하기 위해 공격적인 `ReplaceTimeRange`의 시작을 자동으로 조정합니다.
+* 다음과 같은 경우 `ReplaceTimeRange` 재생 타임라인에서 다른 재생 위치와 겹칩니다(예: 의 시작 위치). `ReplaceTimeRange` 이미 배치된 종료 위치보다 이전인 경우 TVSDK는 자동으로 위반의 시작을 조정합니다 `ReplaceTimeRange` 충돌을 피하려고.
 
-   이렇게 하면 조정된 `ReplaceTimeRange`이(가) 원래 지정한 것보다 짧습니다. 조정이 지속 시간이 0으로 이어지는 경우 TVSDK가 자동으로 잘못된 `ReplaceTimeRange`을(를) 삭제합니다.
+   이렇게 하면 가 조정됩니다. `ReplaceTimeRange` 원래 지정한 것보다 짧습니다. 조정 시간이 0이면 TVSDK는 자동으로 위반을 중단합니다 `ReplaceTimeRange`.
 
-* TVSDK는 사용자 지정 광고 분리를 위해 인접한 시간 범위를 찾아 별도의 광고 분리로 묶습니다.
+* TVSDK는 사용자 지정 광고 브레이크에 대한 인접 시간 범위를 찾아 별도의 광고 브레이크로 클러스터링합니다.
 
-다른 시간 범위와 인접하지 않은 시간 범위는 단일 광고가 포함된 광고 나누기로 변환됩니다.
+다른 시간 범위와 인접하지 않은 시간 범위는 단일 광고가 포함된 광고 브레이크로 변환됩니다.
 
-* 컨텍스트 사용자 지정 광고 마커에서만 사용할 수 있는 `CustomRangeMetadata` 구성이 포함된 미디어 리소스를 로드하려고 하는 경우 기본 자산이 VOD 유형이 아닌 경우 TVSDK에서 예외가 발생합니다.
+* 응용 프로그램이 구성에 이 포함된 미디어 리소스를 로드하려고 할 경우 `CustomRangeMetadata` tvsdk는 컨텍스트 사용자 지정 광고 마커에서만 사용할 수 있으며, 기본 자산이 VOD 유형이 아닌 경우 예외를 throw합니다.
 
-* 맞춤형 광고 마커를 처리할 때 TVSDK는 기타 광고 해결 메커니즘(예: Adobe Primetime 광고 결정)을 비활성화합니다.
+* 사용자 지정 광고 마커를 처리할 때 TVSDK는 다른 광고 해결 메커니즘(예: Adobe Primetime 광고 결정)을 비활성화합니다.
 
-   모든 TVSDK 광고 해결 프로그램 모듈 또는 사용자 정의 광고 마커 메커니즘을 사용할 수 있습니다. 사용자 지정 광고 마커를 사용하면 광고 컨텐츠가 확인되었다고 간주되어 타임라인에 배치됩니다.
+   모든 TVSDK ad-resolver 모듈 또는 사용자 지정 광고 마커 메커니즘을 사용할 수 있습니다. 사용자 지정 광고 마커를 사용하면 광고 콘텐츠가 해결된 것으로 간주되어 타임라인에 배치됩니다.
 
-다음 코드 조각은 타임라인에 사용자 정의 광고 마커로 3개의 시간 범위를 배치합니다.
+다음 코드 조각은 타임라인에 세 개의 시간 범위를 사용자 지정 광고 마커로 배치합니다.
 
 ```java
 // Assume that the 3 time ranges are obtained through external means 

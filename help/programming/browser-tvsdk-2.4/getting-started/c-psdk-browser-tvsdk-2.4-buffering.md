@@ -1,20 +1,19 @@
 ---
-description: 컨텐츠가 버퍼링되고 있음을 사용자에게 알리도록 시각적 요소를 구성할 수 있습니다.
+description: 콘텐츠가 버퍼링되고 있음을 사용자에게 알리도록 비주얼을 구성할 수 있습니다.
 title: 버퍼링
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1b2f32b4-1839-4256-82d6-b262569aa751
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%
 
 ---
 
-
 # 버퍼링{#buffering}
 
-컨텐츠가 버퍼링되고 있음을 사용자에게 알리도록 시각적 요소를 구성할 수 있습니다.
+콘텐츠가 버퍼링되고 있음을 사용자에게 알리도록 비주얼을 구성할 수 있습니다.
 
-`AdobePSDK.PSDKEventType.BUFFERING_BEGIN` 및 `AdobePSDK.PSDKEventType.BUFFERING_END` 이벤트를 수신합니다. 예:
+잘 들어 `AdobePSDK.PSDKEventType.BUFFERING_BEGIN` 및 `AdobePSDK.PSDKEventType.BUFFERING_END` 이벤트. 예:
 
 ```js
 player.addEventListener(AdobePSDK.PSDKEventType.BUFFERING_BEGIN,  
@@ -30,7 +29,7 @@ player.addEventListener(AdobePSDK.PSDKEventType.BUFFERING_END,
                         });
 ```
 
-UI 프레임워크는 기본 버퍼링 오버레이 동작 구현을 제공하며, 아래에서 보듯이 확장할 수 있습니다.
+UI 프레임워크는 다음과 같이 확장할 수 있는 기본 버퍼링 오버레이 비헤이비어 구현을 제공합니다.
 
 ```js
 // Using UI Framework 
@@ -49,7 +48,7 @@ var playerWrapper = ptp.videoPlayer('.videoDiv', {
 }); 
 ```
 
-다음은 DOM의 결과입니다.
+DOM의 결과는 다음과 같습니다.
 
 ```
 <div id=" videoDiv" class="ptp-root-element"> 
@@ -58,4 +57,3 @@ var playerWrapper = ptp.videoPlayer('.videoDiv', {
 </div> 
 </div> 
 ```
-

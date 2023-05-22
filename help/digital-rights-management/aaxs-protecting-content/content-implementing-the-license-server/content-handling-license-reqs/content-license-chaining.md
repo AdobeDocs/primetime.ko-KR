@@ -2,15 +2,14 @@
 title: 라이선스 체인
 description: 라이선스 체인
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2f439e21-c748-45aa-a87c-36e70ee3722a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
 
 ---
 
-
 # 라이선스 체인{#license-chaining}
 
-라이센스 체인을 생성하는 데 사용된 정책이 라이센스 체인을 지원하는 경우 서버는 리프 라이센스, 루트 라이센스 또는 둘 다를 발급할지 여부를 결정해야 합니다. 정책에 지원되는 라이선스 체인 유형을 결정하려면 `Policy.getLicenseChainType()`을 사용하거나 `Policy.getRootLicenseId()`을 호출하여 정책에 루트 라이센스가 있는지 확인합니다. Adobe Access 2.0 라이선스 체인으로 인해 서버는 일반적으로 사용자가 특정 컴퓨터에 대한 라이선스를 처음 요청할 때 리프 라이센스를 발급하고 이후 루트 라이센스를 요청합니다. 컴퓨터에 지정된 정책에 대한 리프 라이선스가 이미 있는지 확인하려면 `LicenseRequestMessage.clientHasLeafForPolicy()`을(를) 호출하십시오.
+라이선스 생성에 사용된 정책이 라이선스 체인 기능을 지원하는 경우 서버는 Leaf 라이선스, Root 라이선스 또는 둘 다 발급할지 여부를 결정해야 합니다. 정책이 지원하는 라이선스 유형을 확인하려면 `Policy.getLicenseChainType()`또는 호출 `Policy.getRootLicenseId()` 정책에 루트 라이선스가 있는지 확인합니다. Adobe 액세스 2.0 라이선스 체인을 사용하면 일반적으로 서버는 사용자가 특정 컴퓨터에 대한 라이선스를 처음 요청할 때 리프 라이선스를 발급하고 그 후 루트 라이선스를 발급합니다. 컴퓨터에 지정된 정책에 대한 리프 라이선스가 이미 있는지 확인하려면 을(를) 호출합니다. `LicenseRequestMessage.clientHasLeafForPolicy()`.

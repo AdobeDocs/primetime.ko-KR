@@ -1,20 +1,19 @@
 ---
-description: 비디오 컨텐츠를 재생할 때 캡션을 표시할 수 있습니다.
+description: 비디오 콘텐츠를 재생할 때 캡션을 표시할 수 있습니다.
 title: 캡션
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2144a6b2-0b9a-49ea-ad44-997adf36cbe6
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%
 
 ---
 
-
 # 캡션{#captions}
 
-비디오 컨텐츠를 재생할 때 캡션을 표시할 수 있습니다.
+비디오 콘텐츠를 재생할 때 캡션을 표시할 수 있습니다.
 
-캡션을 처리하려면 `AdobePSDK.PSDKEventType.CAPTIONS_UPDATED` 이벤트 리스너를 추가해야 합니다.
+캡션을 처리하려면 `AdobePSDK.PSDKEventType.CAPTIONS_UPDATED` 이벤트 리스너:
 
 ```js
 ... 
@@ -34,7 +33,7 @@ function onCaptionsUpdateEvent (event) {
 </pre>
 ```
 
-UI 프레임워크는 수정할 수 있는 기본 캡션 동작 구현을 제공합니다. 또한 기본 닫힌 캡션 비헤이비어를 확장하여 닫힌 캡션 동작을 수정할 수 있습니다. 예:
+UI 프레임워크는 수정할 수 있는 기본 캡션 동작 구현을 제공합니다. 기본 폐쇄 캡션 동작을 확장하여 폐쇄 캡션 동작을 수정할 수도 있습니다. 예:
 
 ```js
 // Using UI Framework 

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
-## REST API 엔드포인트 {#clientless-endpoints}
+## REST API 끝점 {#clientless-endpoints}
 
 &lt;reggie_fqdn>:
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 인증 응답을 가져옵니다. 
 
-| 끝점 | 호출됨  </br>기준 | 입력   </br>매개 변수 | HTTP  </br>메서드 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
-| &lt;sp_fqdn>/api/v1/authorization | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자(필수)</br>2.  deviceId(필수)</br>3.  자원(필수)</br>4.  device_info/X-Device-Info(필수)</br>5.  _deviceType_</br> 6.  _deviceUser_ (더 이상 사용되지 않음)</br>7.  _appId_ (더 이상 사용되지 않음)</br>8.  추가 매개 변수(선택 사항) | GET | 실패한 경우 인증 세부 사항 또는 오류 세부 정보가 포함된 XML 또는 JSON입니다. 아래 샘플을 참조하십시오. | 200 - 성공  </br>403 - 성공 없음 |
+| &lt;sp_fqdn>/api/v1/authorize | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자(필수)</br>2.  deviceId(필수)</br>3.  리소스(필수)</br>4.  device_info/X-Device-Info (필수)</br>5.  _deviceType_</br> 6.  _deviceUser_ (사용하지 않음)</br>7.  _appId_ (사용하지 않음)</br>8.  추가 매개 변수(선택 사항) | GET | 실패한 경우 인증 세부 정보 또는 오류 세부 정보가 포함된 XML 또는 JSON입니다. 아래 샘플을 참조하십시오. | 200 - 성공  </br>403 - 성공 없음 |
 
 {style="table-layout:auto"}
 
@@ -44,28 +44,28 @@ ht-degree: 0%
 
 | 입력 매개 변수 | 설명 |
 | --- | --- |
-| 요청자 | 이 작업이 유효한 ProgrammerId입니다. |
+| 요청자 | 이 작업이 유효한 Programmer requestorId입니다. |
 | deviceId | 장치 ID 바이트입니다. |
-| 리소스 | resourceId(또는 MRSS 조각)를 포함하는 문자열로서, 사용자가 요청한 컨텐츠를 식별하고 MVPD 인증 끝점에 의해 인식됩니다. |
-| device_info/</br></br>X-Device-Info | 스트리밍 장치 정보.</br></br>**참고**: 이 URL은 URL 매개 변수로서 device_info를 전달할 수 있지만 이 매개 변수의 잠재적 크기와 GET URL의 길이에 대한 제한 사항으로 인해 http 헤더에서 X-Device-Info로 전달해야 합니다. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
-| _deviceType_ | 장치 유형(예: Roku, PC)입니다.</br></br>이 매개 변수가 올바르게 설정되면 ESM은 다음 지표를 제공합니다 [장치 유형별 분류](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) clientless를 사용하는 경우 Roku, AppleTV, Xbox 등과 같은 다양한 유형의 분석을 수행할 수 있습니다.</br></br>자세한 내용은 [전달 지표에서 clientless device type 매개 변수의 이점&#x200B;](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**참고**: device_info가 이 매개 변수를 대체합니다. |
-| _deviceUser_ | 장치 사용자 식별자입니다. |
-| _appId_ | 애플리케이션 ID/이름입니다. </br></br>**참고**: device_info는 이 매개 변수를 대체합니다. |
-| 추가 매개 변수 | 호출에는 다음과 같은 다른 기능을 활성화하는 선택적 매개 변수가 포함될 수도 있습니다.</br></br>* generic_data - [프로모션 TempPass](/help/authentication/promotional-temp-pass.md)</br></br>예: `generic_data=("email":"email@domain.com")` |
+| 리소스 | resourceId(또는 MRSS 조각)가 포함된 문자열은 사용자가 요청한 콘텐츠를 식별하며 MVPD 인증 종단점에서 인식됩니다. |
+| device_info/</br></br>X-Device-Info | 스트리밍 장치 정보입니다.</br></br>**참고**: 이 매개 변수는 URL 매개 변수로 device_info를 전달할 수 있지만, 이 매개 변수의 잠재적 크기와 GET URL 길이 제한으로 인해 http 헤더에서 X-Device-Info로 전달해야 합니다. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
+| _deviceType_ | 디바이스 유형(예: Roku, PC).</br></br>이 매개 변수가 올바르게 설정되면 ESM은 다음과 같은 지표를 제공합니다. [장치 유형별 분류](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) 예: Roku, AppleTV, Xbox 등에 대해 다양한 유형의 분석을 수행할 수 있도록 Clientless를 사용할 때</br></br>다음을 참조하십시오 [전달 지표에서 클라이언트 없는 장치 유형 매개 변수의 이점&#x200B;](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**참고**: device_info가 이 매개 변수를 대체합니다. |
+| _deviceUser_ | 장치 사용자 식별자. |
+| _appId_ | 애플리케이션 ID/이름입니다. </br></br>**참고**: device_info가 이 매개 변수를 대체합니다. |
+| 추가 매개 변수 | 호출에는 다음과 같은 다른 기능을 활성화하는 선택적 매개 변수도 포함될 수 있습니다.</br></br>* generic_data - 다음을 사용할 수 있습니다. [프로모션 TempPass](/help/authentication/promotional-temp-pass.md)</br></br>예: `generic_data=("email":"email@domain.com")` |
 
 {style="table-layout:auto"}
 
 >[!CAUTION]
 >
 >**스트리밍 장치 IP 주소**</br>
->클라이언트-서버 구현의 경우 스트리밍 장치 IP 주소가 이 호출을 사용하여 암시적으로 전송됩니다.  서버 간 구현의 경우, 여기서 **regcode** 는 스트리밍 장치가 아니라 Programmer Service에 의해 수행되며 스트리밍 장치 IP 주소를 전달하려면 다음 헤더가 필요합니다.</br></br>
+>클라이언트-서버 구현의 경우 스트리밍 장치 IP 주소는 이 호출과 함께 암시적으로 전송됩니다.  서버 간 구현의 경우 **regcode** 호출은 스트리밍 장치가 아닌 프로그래머 서비스에서 수행되며, 스트리밍 장치 IP 주소를 전달하려면 다음 헤더가 필요합니다.</br></br>
 >
 >
 ```
 >X-Forwarded-For : <streaming\_device\_ip>
 >```
 >
->여기서 `<streaming\_device\_ip>` 는 스트리밍 장치 공개 IP 주소입니다.</br></br>
+>위치 `<streaming\_device\_ip>` 는 스트리밍 장치 공용 IP 주소입니다.</br></br>
 >예 :</br>
 >
 >
@@ -80,7 +80,7 @@ ht-degree: 0%
 * **사례 1: 성공**
 
 </br>
-  **XML:**
+  * **XML:**
   </br>
 
     &quot;XML
@@ -108,11 +108,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->프록시 MVPD에서 응답이 오면 이름이 지정된 추가 요소가 포함될 수 있습니다 `proxyMvpd`. 
+>응답이 프록시 MVPD로부터 나오는 경우, 이는 이라는 추가 요소를 포함할 수 있다 `proxyMvpd`. 
 
  
 
-* **사례 2: 승인 거부**
+* **사례 2: 권한 부여 거부됨**
 
 
    ```JSON

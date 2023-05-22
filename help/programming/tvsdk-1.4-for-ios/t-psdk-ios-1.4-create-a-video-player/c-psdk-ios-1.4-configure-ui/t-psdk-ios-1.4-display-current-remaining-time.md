@@ -1,20 +1,19 @@
 ---
-description: 재생되는 컨텐츠의 현재 및 남은 시간을 표시할 수 있습니다.
+description: 재생 중인 콘텐츠의 현재 및 나머지 시간을 표시할 수 있습니다.
 title: 현재 시간 및 남은 시간 표시
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 61043b2c-949e-494a-9b93-9cf5104d5bde
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
 
 ---
 
+# 현재 시간 및 남은 시간 표시 {#display-the-current-time-and-remaining-time}
 
-# 현재 시간 및 남은 시간 {#display-the-current-time-and-remaining-time} 표시
+재생 중인 콘텐츠의 현재 및 나머지 시간을 표시할 수 있습니다.
 
-재생되는 컨텐츠의 현재 및 남은 시간을 표시할 수 있습니다.
-
-1. 활성 컨텐츠의 현재 시간 및 남은 시간을 보여주는 표시를 구현하려면 다음 샘플 코드를 사용하십시오.
+1. 활성 콘텐츠의 현재 및 남은 시간을 표시하는 디스플레이를 구현하려면 다음 샘플 코드를 사용하십시오.
 
    ```
    // 1. Register for the PTMediaPlayerTimeChangeNotification 
@@ -67,7 +66,7 @@ ht-degree: 0%
    } 
    ```
 
-1. 광고의 진행 상황과 남은 시간을 보여주는 표시를 구현하려면 다음 샘플 코드를 사용하십시오.
+1. 광고 진행 상황과 남은 시간을 보여 주는 표시를 구현하려면 다음 샘플 코드를 사용하십시오.
 
    ```
    double adBreakDurationLeft; 
@@ -102,4 +101,3 @@ ht-degree: 0%
    ```
 
 <!--<a id="example_D2FC658F27FC42A0B3E1AEC99B36788B"></a>-->
-

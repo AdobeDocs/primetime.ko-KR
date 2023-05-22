@@ -1,21 +1,21 @@
 ---
 title: 인증 토큰 검색
 description: 인증 토큰 검색
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 7fb03854-edad-41e7-b218-1858fc071876
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
-
 # 인증 토큰 검색 {#retrieve-authentication-token}
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
-## REST API 엔드포인트 {#clientless-endpoints}
+## REST API 끝점 {#clientless-endpoints}
 
 &lt;reggie_fqdn>:
 
@@ -33,21 +33,21 @@ ht-degree: 0%
 
 인증(AuthN) 토큰을 검색합니다.  
 
-| 끝점 | 호출됨  </br>기준 | 입력   </br>매개 변수 | HTTP  </br>메서드 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
-| &lt;sp_fqdn>/api/v1/tokens/authn</br></br>예:</br></br>&lt;sp_fqdn>/api/v1/tokens/authn | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자(필수)</br>2.  deviceId(필수)</br>3.  device_info/X-Device-Info(필수)</br>4.  _deviceType_ (사용 중지)</br>5.  _deviceUser_ (더 이상 사용되지 않음)</br>6.  _appId_ (더 이상 사용되지 않음) | GET | 인증 정보 또는 오류 세부 정보가 포함된 XML 또는 JSON이 들어 있습니다(실패한 경우). | 200 - 성공.  </br>404 - 토큰을 찾을 수 없음  </br>410 - 토큰 만료 |
+| &lt;sp_fqdn>/api/v1/tokens/authn</br></br>예:</br></br>&lt;sp_fqdn>/api/v1/tokens/authn | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자(필수)</br>2.  deviceId(필수)</br>3.  device_info/X-Device-Info (필수)</br>4.  _deviceType_ (사용하지 않음)</br>5.  _deviceUser_ (사용하지 않음)</br>6.  _appId_ (사용하지 않음) | GET | 실패한 경우 인증 정보 또는 오류 세부 정보가 포함된 XML 또는 JSON. | 200 - 성공  </br>404 - 토큰을 찾을 수 없음  </br>410 - 토큰이 만료됨 |
 
 {style="table-layout:auto"}
 
 
 | 입력 매개 변수 | 설명 |
 | --- | --- |
-| 요청자 | 이 작업이 유효한 ProgrammerId입니다. |
+| 요청자 | 이 작업이 유효한 Programmer requestorId입니다. |
 | deviceId | 장치 ID 바이트입니다. |
-| device_info/</br></br>X-Device-Info | 스트리밍 장치 정보.</br></br>**참고**: 이 URL은 URL 매개 변수로서 device_info를 전달할 수 있지만 이 매개 변수의 잠재적 크기와 GET URL의 길이에 대한 제한 사항으로 인해 http 헤더에서 X-Device-Info로 전달해야 합니다. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
-| _deviceType_ | 장치 유형(예: Roku, PC)입니다.</br></br>**참고**: device_info는 이 매개 변수를 대체합니다. |
-| _deviceUser_ | 장치 사용자 식별자입니다.</br></br>**참고**: 를 사용하는 경우 deviceUser는 와 동일한 값을 가져야 합니다 [등록 코드 만들기](/help/authentication/registration-code-request.md) 요청. |
-| _appId_ | 애플리케이션 ID/이름입니다. </br></br>**참고**: device_info는 이 매개 변수를 대체합니다. 사용하는 경우, `appId` 에는 와 동일한 값이 있어야 합니다. [등록 코드 만들기](/help/authentication/registration-code-request.md) 요청. |
+| device_info/</br></br>X-Device-Info | 스트리밍 장치 정보입니다.</br></br>**참고**: 이 매개 변수는 URL 매개 변수로 device_info를 전달할 수 있지만, 이 매개 변수의 잠재적 크기와 GET URL 길이 제한으로 인해 http 헤더에서 X-Device-Info로 전달해야 합니다. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
+| _deviceType_ | 디바이스 유형(예: Roku, PC).</br></br>**참고**: device_info가 이 매개 변수를 대체합니다. |
+| _deviceUser_ | 장치 사용자 식별자.</br></br>**참고**: 사용하는 경우 deviceUser는 [등록 코드 만들기](/help/authentication/registration-code-request.md) 요청. |
+| _appId_ | 애플리케이션 ID/이름입니다. </br></br>**참고**: device_info가 이 매개 변수를 대체합니다. 사용하는 경우 `appId` 은(는) 과(와) 동일한 값을 가져야 합니다. [등록 코드 만들기](/help/authentication/registration-code-request.md) 요청. |
 
 {style="table-layout:auto"}
 
@@ -108,4 +108,3 @@ ht-degree: 0%
         "message": "Not Found"
     }
 ```
-

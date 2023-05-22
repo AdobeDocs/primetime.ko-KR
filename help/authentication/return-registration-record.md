@@ -1,22 +1,22 @@
 ---
 title: 등록 레코드 반환
 description: 등록 레코드 반환
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 7b9e63a2-59b6-4123-a19b-ee1f021219ea
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
-
 # 등록 레코드 반환 {#return-registration-record}
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
 
-## REST API 엔드포인트 {#clientless-endpoints}
+## REST API 끝점 {#clientless-endpoints}
 
 &lt;reggie_fqdn>:
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 <div>
 
 
-| 끝점 | 호출됨  </br>기준 | 입력   </br>매개 변수 | HTTP  </br>메서드 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
-| &lt;reggie_fqdn>;/register/v1/{requestorId}/regcode/{registrationCode}</br></br>예:</br></br>&lt;reggie_fqdn>/register/v1/sampleRequestorId/regcode/TJCFK?format=xml | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자  </br>    (경로 구성 요소)</br>2.  등록 코드  </br>    (경로 구성 요소) | GET | 등록 코드 및 정보가 포함된 XML 또는 JSON입니다. 아래의 스키마와 샘플을 참조하십시오. | 200 |
+| &lt;reggie_fqdn>;/reggie/v1/{requestorId}/regcode/{registrationCode}</br></br>예:</br></br>&lt;reggie_fqdn>/reggie/v1/sampleRequestorId/regcode/TJCFK?format=xml | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자  </br>    (경로 구성 요소)</br>2.  등록 코드  </br>    (경로 구성 요소) | GET | 등록 코드 및 정보가 포함된 XML 또는 JSON입니다. 아래 스키마 및 샘플을 참조하십시오. | 200 |
 
 {style="table-layout:auto"}
 
@@ -50,8 +50,8 @@ ht-degree: 0%
 
 | 입력 매개 변수 | 설명 |
 | --- | --- |
-| 요청자 | 이 작업이 유효한 ProgrammerId입니다. |
-| 등록 코드 | 스트리밍 장치(인증 플로우에 입력)에 표시될 등록 코드 값입니다. |
+| 요청자 | 이 작업이 유효한 Programmer requestorId입니다. |
+| 등록 코드 | 스트리밍 장치에 표시될(인증 흐름에 입력될) 등록 코드 값입니다. |
 
 </br>
 
@@ -93,18 +93,18 @@ ht-degree: 0%
 
 | 요소 이름 | 설명 |
 | --- | --- |
-| id | 등록 코드 서비스에서 생성한 UUID |
+| id | 등록 코드 서비스에서 생성된 UUID |
 | 코드 | 등록 코드 서비스에서 생성한 등록 코드 |
 | 요청자 | 요청자 ID |
 | mvpd | MVPD ID |
-| 생성 | 등록 코드 생성 타임스탬프(1970년 1월 1일 GMT 이후 밀리초) |
+| 생성됨 | 등록 코드 생성 타임스탬프(1970년 1월 1일 GMT 이후 밀리초) |
 | 만료 | 등록 코드가 만료되는 타임스탬프(1970년 1월 1일 GMT 이후 밀리초) |
 | deviceId | 고유 장치 ID(또는 XSTS 토큰) |
 | deviceType | 장치 유형 |
 | deviceUser | 사용자가 장치에 로그인함 |
-| appId | 애플리케이션 Id |
-| appVersion | 애플리케이션 버전 |
-| registrationURL | 최종 사용자에게 표시할 로그인 웹 앱의 URL |
+| appId | 애플리케이션 ID |
+| appVersion | 응용 프로그램 버전 |
+| registrationURL | 최종 사용자에게 표시될 로그인 웹 앱의 URL |
 
 {style="table-layout:auto"}
 

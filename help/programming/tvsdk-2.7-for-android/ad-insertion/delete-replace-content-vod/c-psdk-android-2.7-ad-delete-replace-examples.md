@@ -1,20 +1,19 @@
 ---
 description: 다음은 광고를 삭제하고 바꾸는 프로세스의 몇 가지 예입니다.
-title: 광고 삭제 및 바꾸기 예
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+title: 광고 삭제 및 바꾸기 예제
+exl-id: a6fdb86e-507e-4a65-bb32-928e216c6e9a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-
-# 광고 {#examples-to-delete-and-replace-ads} 삭제 및 바꾸기 예
+# 광고 삭제 및 바꾸기 예제 {#examples-to-delete-and-replace-ads}
 
 다음은 광고를 삭제하고 바꾸는 프로세스의 몇 가지 예입니다.
 
-다음은 `DELETE_RANGE` 사용 예입니다.
+다음은 를 사용하는 예제입니다. `DELETE_RANGE`:
 
 ```java
 // Assume that the 3 timerange specs are obtained through external means,  
@@ -43,7 +42,7 @@ config.setCustomRangeMetadata(customRangeMetadata);
 mediaPlayer.replaceCurrentResource(mediaResource, config);
 ```
 
-다음은 `REPLACE_RANGE` 사용 예입니다.
+다음은 를 사용하는 예제입니다. `REPLACE_RANGE`:
 
 ```java
 // Assume that the 3 timerange specs are obtained through external means, like 
@@ -76,4 +75,3 @@ config.setCustomRangeMetadata(customRangeMetadata);
 // prepare the content for playback by calling replaceCurrentResource 
 mediaPlayer.replaceCurrentResource(mediaResource, config);
 ```
-

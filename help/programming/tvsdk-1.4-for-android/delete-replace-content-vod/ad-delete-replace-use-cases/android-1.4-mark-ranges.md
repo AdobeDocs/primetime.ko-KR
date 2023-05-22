@@ -1,26 +1,25 @@
 ---
-description: VOD 컨텐츠의 시간 간격을 광고 중단으로 지정할 수 있습니다.
-title: 표시 범위
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: VOD 콘텐츠에서 시간 간격을 광고 브레이크로 지정할 수 있습니다.
+title: 범위 표시
+exl-id: cd661327-20b2-4a49-8002-6ecee86c2a2c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%
 
 ---
 
+# 범위 표시{#mark-ranges}
 
-# 표시 범위{#mark-ranges}
+VOD 콘텐츠에서 시간 간격을 광고 브레이크로 지정할 수 있습니다.
 
-VOD 컨텐츠의 시간 간격을 광고 중단으로 지정할 수 있습니다.
-
-이 경우 `localTime`의 `begin`과 `end` 사이의 `TimeRanges`은 타임라인에서 `AdBreak`로 표시됩니다. 다른 광고 설정은 무시됩니다.
+이 경우, `TimeRanges` 다음 사이 `begin` 및 `end` 위치: `localTime` 이(가) (으)로 표시됩니다. `AdBreak` 타임라인에서. 다른 광고 설정은 무시됩니다.
 
 >[!NOTE]
 >
->컨텐츠의 특정 범위를 광고로만 표시하려면(동적 광고 삽입 없이) `CustomRangeMetadata` 인스턴스를 만들고 정의된 사용자 지정 범위로 MARK 작업으로 유형을 지정합니다.
+>콘텐츠의 특정 범위만 광고로 표시하려는 경우(동적 광고 삽입 없음) `CustomRangeMetadata` 을 클릭하고 유형을 정의된 사용자 지정 범위의 MARK 작업으로 지정합니다.
 
-1. 표시 범위를 참조하십시오.
+1. 범위를 표시합니다.
 
    ```
    {   
@@ -62,4 +61,3 @@ VOD 컨텐츠의 시간 간격을 광고 중단으로 지정할 수 있습니다
        "id": "vod_004"
    }
    ```
-

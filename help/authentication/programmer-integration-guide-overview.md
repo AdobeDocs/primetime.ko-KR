@@ -1,21 +1,20 @@
 ---
 title: 프로그래머 통합 안내서 개요
 description: 프로그래머 통합 안내서 설명
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 51461caf-08ef-459e-b284-8f317f45e7b1
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-
-
 # 프로그래머 통합 안내서 {#programmer-integration-guide}
 
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
 ## 요리책 {#cookbooks}
 
@@ -23,7 +22,7 @@ ht-degree: 0%
 * AccessEnabler iOS/tvOS SDK Cookbook
 * AccessEnabler Android SDK Cookbook
 * REST API Cookbook(서버 간)
-* REST API Cookbook(Client-to-Server)
+* REST API Cookbook(클라이언트-서버)
 
 ## API 참조 {#api-references}
 
@@ -39,7 +38,7 @@ ht-degree: 0%
 * AccessEnabler Android SDK 개요
 * REST API 개요
 
-Adobe Primetime 인증 통합의 기술 측면을 처리할 소프트웨어 엔지니어를 위한 것입니다.
+이는 Adobe Primetime 인증 통합의 기술 측면을 처리할 소프트웨어 엔지니어를 위한 것입니다.
 
 <!--
 

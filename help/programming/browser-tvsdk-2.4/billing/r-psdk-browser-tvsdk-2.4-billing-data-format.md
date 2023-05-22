@@ -1,22 +1,21 @@
 ---
-description: 브라우저 TVSDK는 XML 포맷으로 결제 지표를 Adobe으로 전송합니다.
-title: 결제 지표 전송
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 브라우저 TVSDK가 과금 지표를 XML 형식으로 Adobe에 보냅니다.
+title: 과금 지표 전송
+exl-id: f6ed72be-a5a8-48f2-b518-76c710300ea7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
+# 과금 지표 전송{#transmit-billing-metrics}
 
-# 청구 지표 전송{#transmit-billing-metrics}
-
-브라우저 TVSDK는 XML 포맷으로 결제 지표를 Adobe으로 전송합니다.
+브라우저 TVSDK가 과금 지표를 XML 형식으로 Adobe에 보냅니다.
 
 <!--<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>-->
 
-네트워크 캡처 도구를 사용하여 통계 Browser TVSDK가 Adobe으로 전송되는 통계를 모니터하는 경우 다음과 같은 장치가 표시됩니다.
+네트워크 캡처 도구를 사용하여 TVSDK가 Adobe에 전송하는 통계를 모니터링하는 경우 다음과 같은 단위가 표시됩니다.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,4 +39,4 @@ ht-degree: 0%
 </request>
 ```
 
-부울 속성 `drmProtected`, `adsEnabled` 및 `midrollEnabled`은 true인 경우에만 나타납니다.
+부울 속성 `drmProtected`, `adsEnabled`, 및 `midrollEnabled` true인 경우에만 표시됩니다.

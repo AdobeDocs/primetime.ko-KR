@@ -1,67 +1,66 @@
 ---
-description: PTNotification 객체는 플레이어 상태, 경고 및 오류 변화에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류는 플레이어의 상태도 변경됩니다.
-title: 알림 내용
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: PTNotification 객체는 플레이어 상태, 경고 및 오류의 변경 내용에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류는 플레이어의 상태에도 변화를 일으킵니다.
+title: 알림 콘텐츠
+exl-id: 62423718-b154-4105-82b2-f6e389105ec8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
-
 # 플레이어 상태, 활동, 오류 및 로깅에 대한 알림 {#notifications-player-status-activity-errors-logging}
 
-`PTNotification` 개체는 플레이어 상태, 경고 및 오류의 변경 사항에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류는 플레이어의 상태도 변경됩니다.
+`PTNotification` 개체는 플레이어 상태, 경고 및 오류의 변경 내용에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류는 플레이어의 상태에도 변화를 일으킵니다.
 
-응용 프로그램에서 알림 및 상태 정보를 검색할 수 있습니다. 알림 정보를 사용하여 진단 및 유효성 검사를 위한 로깅 시스템을 만들 수도 있습니다.
+애플리케이션은 알림 및 상태 정보를 검색할 수 있습니다. 알림 정보를 사용하여 진단 및 유효성 검사를 위한 로깅 시스템을 만들 수도 있습니다.
 
 >[!NOTE]
 >
->또한 TVSDK는 플레이어 활동에 대한 정보를 제공하기 위해 전달되는 *`notification`*( `NSNotifications` 알림) *`event`* 알림을 참조하기 위해 사용합니다.`PTMediaPlayer`
+>TVSDK는 *`notification`* 을(를) 참조하려면 `NSNotifications` ( `PTMediaPlayer` 알림) *`event`* 플레이어 활동에 대한 정보를 제공하기 위해 발송되는 알림입니다.
 
-또한 TVSDK는 `PTNotification`을(를) 발행할 때 `PTMediaPlayerNewNotificationItemEntryNotification`을(를) 발행합니다.
+TVSDK도 문제 `PTMediaPlayerNewNotificationItemEntryNotification` 문제 발생 시 `PTNotification`.
 
-이벤트를 캡처하고 응답하도록 이벤트 리스너를 구현합니다. 많은 이벤트에서 `PTNotification` 상태 알림을 제공합니다.
+이벤트 리스너를 구현하여 이벤트를 캡처하고 응답합니다. 많은 이벤트가 다음을 제공합니다 `PTNotification` 상태 알림입니다.
 
-## 알림 내용 {#notification-content}
+## 알림 콘텐츠 {#notification-content}
 
-`PTNotification` 플레이어 상태와 관련된 정보를 제공합니다.
+`PTNotification` 는 플레이어 상태와 관련된 정보를 제공합니다.
 
-TVSDK는 `PTNotification` 알림의 시간순 목록을 제공합니다. 각 알림에는 다음 정보가 포함됩니다.
+TVSDK는 의 시간 순 목록을 제공합니다. `PTNotification` 알림입니다. 각 알림에는 다음 정보가 포함됩니다.
 
 * 타임스탬프
 * 다음 요소로 구성된 진단 메타데이터:
 
-   * `type`:정보, 경고 또는 오류입니다.
-   * `code`:알림의 숫자 표현입니다.
-   * `name`:SEEK_ERROR와 같이 사용자가 읽을 수 있는 알림 설명
-   * `metadata`:알림에 대한 관련 정보가 들어 있는 키/값 쌍. 예를 들어 `URL` 키는 알림과 관련된 URL인 값을 제공합니다.
+   * `type`: 정보, 경고 또는 오류.
+   * `code`: 알림의 숫자 표현입니다.
+   * `name`: 사람이 인식할 수 있는 알림 설명(예: SEEK_ERROR)
+   * `metadata`: 알림에 대한 관련 정보가 포함된 키/값 쌍. 예를 들어 `URL` 알림과 관련된 URL인 값을 제공합니다.
 
-   * `innerNotification`:이 알림에 직접 영향을 주는 다른  `PTNotification` 개체에 대한 참조입니다.
+   * `innerNotification`: 다른 참조에 대한 참조 `PTNotification` 이 알림에 직접 영향을 주는 개체입니다.
 
-나중에 분석을 위해 이 정보를 로컬에 저장하거나 원격 서버에 보내 로깅과 그래픽 표현을 할 수 있습니다.
+나중에 분석할 수 있도록 이 정보를 로컬에 저장하거나 로깅 및 그래픽 표시를 위해 원격 서버로 전송할 수 있습니다.
 
 ## 알림 설정 {#notification-setup}
 
-사용자 지정 알림에 대해 동일한 설정을 완료해야 하지만 TVSDK는 기본 알림에 대해 플레이어를 설정합니다.
+사용자 지정 알림에 대해 동일한 설정을 완료해야 하지만, TVSDK는 기본 알림에 대해 플레이어를 설정합니다.
 
-`PTNotification`에 대한 두 가지 구현이 있습니다.
+에는 두 가지 구현이 있습니다 `PTNotification`:
 
-* 경청하기
-* `PTNotificationHistory`에 사용자 지정 알림을 추가하려면
+* 듣다
+* 에 사용자 지정 알림을 추가하려면 `PTNotificationHistory`
 
-알림을 수신하기 위해 TVSDK는 `PTNotification` 클래스를 인스턴스화하여 PTMediaPlayer 인스턴스에 첨부된 `PTMediaPlayerItem` 인스턴스에 첨부합니다. `PTMediaPlayer`에 대해 하나의 `PTNotificationHistory` 인스턴스만 있습니다.
+알림을 수신하기 위해 TVSDK는 `PTNotification` 클래스를 만들고 이 클래스를 의 인스턴스에 연결합니다. `PTMediaPlayerItem`: PTMediaPlayer 인스턴스에 첨부됩니다. 하나만 있습니다. `PTNotificationHistory` 인스턴스 `PTMediaPlayer`.
 
 >[!IMPORTANT]
 >
->사용자 정의 설정을 추가하는 경우 TVSDK가 아닌 응용 프로그램이 해당 단계를 수행해야 합니다.
+>사용자 지정을 추가하는 경우 TVSDK가 아닌 애플리케이션이 해당 단계를 수행해야 합니다.
 
 ## 알림 수신 {#listen-to-notifications}
 
-`PTMediaPlayer`에서 `PTNotification` 알림을 수신하는 방법은 두 가지가 있습니다.
+다음 두 가지 방법으로 음악을 들을 수 있습니다. `PTNotification` 의 알림 `PTMediaPlayer`:
 
-1. 타이머와 함께 `PTMediaPlayerItem`의 `PTNotificationHistory`을 수동으로 확인하고 차이점을 확인합니다.
+1. 수동으로 확인 `PTNotificationHistory` / `PTMediaPlayerItem` 타이머를 사용하여 차이점 확인:
 
    ```
    //Access to the PTMediaPlayerItem  
@@ -72,8 +71,8 @@ TVSDK는 `PTNotification` 알림의 시간순 목록을 제공합니다. 각 알
    NSArray *notifications = notificationHistory.notificationItems;
    ```
 
-1. `PTMediaPlayerPTMediaPlayerNewNotificationEntryAddedNotification`의 게시된 [NSNotification](https://developer.apple.com/library/mac/%23documentation/Cocoa/Reference/Foundation/Classes/NSNotification_Class/Reference/Reference.html)을 사용합니다.
-1. 알림을 받을 `PTMediaPlayer` 인스턴스를 사용하여 `NSNotification`에 등록합니다.
+1. 게시한 항목 사용 [NSN 알림](https://developer.apple.com/library/mac/%23documentation/Cocoa/Reference/Foundation/Classes/NSNotification_Class/Reference/Reference.html) / `PTMediaPlayerPTMediaPlayerNewNotificationEntryAddedNotification`.
+1. 에 등록 `NSNotification` 의 인스턴스를 사용하여 `PTMediaPlayer` 알림을 받을 원본:
 
    ```
    //Register to the NSNotification 
@@ -86,7 +85,7 @@ TVSDK는 `PTNotification` 알림의 시간순 목록을 제공합니다. 각 알
 
 알림 콜백을 구현할 수 있습니다.
 
-`NSNotification` 사용자 정보에서 `PTNotification`을 가져오고 `PTMediaPlayerNotificationKey`를 사용하여 해당 값을 읽음으로써 알림 콜백을 구현합니다.
+다음을 가져와 알림 콜백 구현 `PTNotification` 다음에서 `NSNotification` 사용자 정보 및 를 사용하여 해당 값 읽기 `PTMediaPlayerNotificationKey`:
 
 ```
 - (void) onMediaPlayerNotification:(NSNotification *) nsnotification { 
@@ -97,8 +96,7 @@ TVSDK는 `PTNotification` 알림의 시간순 목록을 제공합니다. 각 알
 
 ## 사용자 지정 알림 추가 {#add-custom-notifications}
 
-사용자 지정 알림을 추가하려면:
-새 `PTNotification`을(를) 만들고 현재 `PTMediaPlayerItem`를 사용하여 `PTNotificationHistory`에 추가합니다.
+사용자 지정 알림을 추가하려면: 새로 만들기 `PTNotification` 및에 추가합니다. `PTNotificationHistory` 현재 사용 `PTMediaPlayerItem`:
 
 ```
 //Access to the PTMediaPlayerItem  

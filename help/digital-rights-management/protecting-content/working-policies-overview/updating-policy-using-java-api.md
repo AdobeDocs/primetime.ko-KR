@@ -1,28 +1,27 @@
 ---
-title: Java API로 DRM 정책 업데이트
-description: Java API로 DRM 정책 업데이트
+title: Java API를 사용하여 DRM 정책 업데이트
+description: Java API를 사용하여 DRM 정책 업데이트
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 00bb9b64-30f7-4900-b6bd-57604295b44d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
+# Java API를 사용하여 DRM 정책 업데이트 {#updating-a-drm-policy-with-the-java-api}
 
-# Java API {#updating-a-drm-policy-with-the-java-api}으로 DRM 정책 업데이트
+Java API를 사용하여 DRM 정책을 업데이트하려면 다음을 수행하십시오.
 
-Java API로 DRM 정책을 업데이트하려면:
-
-1. 개발 환경을 설정하고 [개발 환경 설정](../../protecting-content/setting-up-the-sdk/setup-dev-env.md)에 나열된 모든 JAR 파일을 프로젝트에 포함합니다.
-1. DRM `Policy` 인스턴스를 만들고 파일 또는 데이터베이스에서 DRM 정책을 읽습니다.
+1. 개발 환경을 설정하여에 나열된 모든 JAR 파일을 프로젝트에 포함합니다. [개발 환경 설정](../../protecting-content/setting-up-the-sdk/setup-dev-env.md).
+1. DRM 생성 `Policy` 를 클릭하고 파일이나 데이터베이스에서 DRM 정책을 읽습니다.
 
    ```
    Policy policy = new Policy(policyBytes);
    ```
 
-1. 이름 및 사용 규칙과 같은 속성을 설정하여 DRM `Policy` 개체를 업데이트합니다.
+1. DRM 업데이트 `Policy` 이름 및 사용 규칙과 같은 속성을 설정하여 객체를 만듭니다.
 
    ```java
    // Change the DRM policy name.  
@@ -47,7 +46,7 @@ Java API로 DRM 정책을 업데이트하려면:
    }
    ```
 
-1. 업데이트된 DRM `Policy` 개체를 직렬화하고 파일 또는 데이터베이스에 저장합니다.
+1. 업데이트된 DRM 직렬화 `Policy` 개체를 만들고 파일이나 데이터베이스에 저장합니다.
 
    ```java
    // Serialize the DRM policy.  
@@ -61,4 +60,4 @@ Java API로 DRM 정책을 업데이트하려면:
    out.close();
    ```
 
-이 샘플 코드의 소스는 참조 구현 명령줄 도구 [!DNL samples] 디렉토리의 `com.adobe.flashaccess.samples.policy.UpdatePolicy`을 참조하십시오.
+다음을 참조하십시오 `com.adobe.flashaccess.samples.policy.UpdatePolicy` 참조 구현 명령줄 도구 [!DNL samples] 이 샘플 코드의 소스에 대한 디렉토리입니다.

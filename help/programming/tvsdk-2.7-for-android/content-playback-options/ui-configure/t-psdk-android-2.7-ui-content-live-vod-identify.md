@@ -1,21 +1,20 @@
 ---
-description: 미디어 컨텐츠가 실시간 또는 VOD(Video On Demand)인지 알아야 할 수도 있습니다.
-title: 컨텐츠가 실시간 또는 VOD인지 확인
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 미디어 컨텐츠가 라이브 또는 VOD(Video On Demand)인지 알고 있어야 할 수 있습니다.
+title: 콘텐츠가 라이브인지 VOD인지 식별
+exl-id: 756d4f04-d354-4194-80c9-c2ea6198a566
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
 
 ---
 
+# 콘텐츠가 라이브인지 VOD인지 식별 {#identify-whether-the-content-is-live-or-vod}
 
-# 컨텐츠가 실시간 또는 VOD {#identify-whether-the-content-is-live-or-vod}인지 확인합니다.
+미디어 컨텐츠가 라이브 또는 VOD(Video On Demand)인지 알고 있어야 할 수 있습니다.
 
-미디어 컨텐츠가 실시간 또는 VOD(Video On Demand)인지 알아야 할 수도 있습니다.
-
-1. 플레이어가 `PREPARED` 상태 이상이어야 합니다.
-1. `MediaPlayerItem` 콘텐트가 실시간( `true`) 또는 VOD( `false`)인지 확인합니다.
+1. 플레이어가 최소한 다음 위치에 있는지 확인합니다. `PREPARED` 주.
+1. 다음을 수행할지 여부를 결정합니다. `MediaPlayerItem` 콘텐츠가 라이브임( `true`) 또는 VOD ( `false`).
 
    ```java
    boolean isLive();

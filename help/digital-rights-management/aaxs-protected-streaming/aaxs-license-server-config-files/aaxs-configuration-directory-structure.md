@@ -1,24 +1,23 @@
 ---
-description: 보호된 스트리밍을 위한 Adobe Access Server을 사용하려면 글로벌 구성 파일(flashaccess-global.xml)과 각 테넌트에 대한 테넌트 구성 파일(flashaccess-tenant.xml)의 두 가지 유형의 구성 파일이 필요합니다.
-title: 구성 디렉토리 구조
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: Protected Streaming용 Adobe Access Server에는 글로벌 구성 파일(flashaccess-global.xml)과 각 테넌트에 대한 테넌트 구성 파일(flashaccess-tenant.xml)의 두 가지 구성 파일이 필요합니다.
+title: 디렉터리 구조 구성
+exl-id: 6561c001-798c-4503-8afb-93580d957372
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
+# 라이선스 서버 구성 파일 및 구성 디렉터리 구조 {#configuration-directory-structure}
 
-# 라이센스 서버 구성 파일 및 구성 디렉터리 구조 {#configuration-directory-structure}
+보호 스트리밍용 Adobe Access Server에는 글로벌 구성 파일(flashaccess-global.xml)과 각 테넌트에 대한 테넌트 구성 파일(flashaccess-tenant.xml)의 두 가지 구성 파일이 필요합니다.
 
-보호된 스트리밍을 위한 Adobe Access Server에는 두 가지 유형의 구성 파일이 필요합니다.전역 구성 파일(flashaccess-global.xml)과 각 테넌트에 대한 테넌트 구성 파일(flashaccess-tenant.xml)입니다.
+Adobe 구성 파일을 편집한 후에는 보호된 스트리밍용 Adobe Access Server과 함께 제공되는 유틸리티를 사용하여 파일이 제대로 구성되어 있는지 확인하는 것이 좋습니다. 자세한 내용은 &quot;[구성 검사기](../../aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)&quot;.
 
-구성 파일을 편집한 후 Adobe은 보호된 스트리밍을 위해 Adobe Access Server에서 제공하는 유틸리티를 사용하여 파일이 제대로 구성되어 있는지 확인할 것을 권장합니다. 자세한 내용은 &quot;[구성 유효성 검사기](../../aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)&quot;를 참조하십시오.
+구성 파일에서 암호를 일반 텍스트로 사용할 수 없도록 하려면 전역 및 테넌트 구성 파일에 지정된 모든 암호를 암호화해야 합니다. 암호의 암호화와 관련된 자세한 내용은 &quot;[암호 스크램블러](../../aaxs-protected-streaming/aaxs-protected-streaming-utilities/password-scrambler.md)&quot;.
 
-구성 파일의 투명한 텍스트에서 암호를 사용할 수 없도록 하려면 전역 및 테넌트 구성 파일에 지정된 모든 암호를 암호화해야 합니다. 암호 암호화에 대한 자세한 내용은 &quot;[암호 스크램블러](../../aaxs-protected-streaming/aaxs-protected-streaming-utilities/password-scrambler.md)&quot;를 참조하십시오.
-
-구성 디렉토리에는 다음과 같은 구조가 있습니다.
+구성 디렉토리의 구조는 다음과 같습니다.
 
 ```
 <i class="+ topic ph hi-d="" i "="">
@@ -43,4 +42,3 @@ ht-degree: 0%
  </i class="+ topic> 
 </i class="+ topic>
 ```
-

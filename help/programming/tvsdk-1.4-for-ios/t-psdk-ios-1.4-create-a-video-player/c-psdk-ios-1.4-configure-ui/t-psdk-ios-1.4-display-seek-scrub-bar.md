@@ -1,18 +1,17 @@
 ---
-description: 재생되는 컨텐츠의 현재 및 남은 시간을 표시할 수 있습니다.
-title: 현재 재생 시간 위치에 검색 스크럽 막대 표시
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 재생 중인 콘텐츠의 현재 및 나머지 시간을 표시할 수 있습니다.
+title: 현재 재생 시간 위치로 찾기 스크러빙 막대 표시
+exl-id: a8b34cf4-4dfd-4799-9408-87c4d60eff4c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
+# 현재 재생 시간 위치로 찾기 스크러빙 막대 표시 {#display-a-seek-scrub-bar-with-the-current-playback-time-position}
 
-# 현재 재생 시간 위치 {#display-a-seek-scrub-bar-with-the-current-playback-time-position}에 검색 스크러빙 막대를 표시합니다.
-
-재생되는 컨텐츠의 현재 및 남은 시간을 표시할 수 있습니다.
+재생 중인 콘텐츠의 현재 및 나머지 시간을 표시할 수 있습니다.
 
 스크러빙 막대를 구현하려면 다음 샘플 코드를 사용하십시오.
 

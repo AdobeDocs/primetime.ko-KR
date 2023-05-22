@@ -1,30 +1,29 @@
 ---
-description: MediaResource가 더 이상 필요하지 않은 경우 MediaPlayer 인스턴스 및 리소스를 해제해야 합니다.
+description: MediaResource가 더 이상 필요하지 않은 경우 MediaPlayer 인스턴스 및 리소스를 릴리스해야 합니다.
 title: MediaPlayer 인스턴스 및 리소스 릴리스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2a802754-5c51-4e5f-8c36-843074b487b5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
+# MediaPlayer 인스턴스 및 리소스 릴리스{#release-a-mediaplayer-instance-and-resources}
 
-# MediaPlayer 인스턴스 및 리소스 해제{#release-a-mediaplayer-instance-and-resources}
+MediaResource가 더 이상 필요하지 않은 경우 MediaPlayer 인스턴스 및 리소스를 릴리스해야 합니다.
 
-MediaResource가 더 이상 필요하지 않은 경우 MediaPlayer 인스턴스 및 리소스를 해제해야 합니다.
+를 릴리스할 때 `MediaPlayer` 개체와 관련된 기본 하드웨어 리소스 `MediaPlayer` 개체가 할당 해제되었습니다.
 
-`MediaPlayer` 개체를 놓으면 이 `MediaPlayer` 개체와 관련된 기본 하드웨어 리소스가 할당 해제됩니다.
-
-다음은 `MediaPlayer`을(를) 해제하는 몇 가지 이유입니다.
+다음은 를 릴리스해야 하는 몇 가지 이유입니다. `MediaPlayer`:
 
 * 불필요한 리소스를 보유하는 것은 성능에 영향을 줄 수 있습니다.
-* 동일한 비디오 코덱의 여러 인스턴스가 장치에서 지원되지 않는 경우 다른 응용 프로그램에서 재생 오류가 발생할 수 있습니다.
+* 동일한 비디오 코덱의 여러 인스턴스가 장치에서 지원되지 않는 경우 다른 응용 프로그램에 대해 재생 오류가 발생할 수 있습니다.
 
-1. `MediaPlayer`을(를) 해제합니다.
+1. 릴리스 `MediaPlayer`.
 
    ```
    function release():void;
    ```
 
-`MediaPlayer` 인스턴스가 릴리스되면 더 이상 사용할 수 없습니다. `MediaPlayer` 인터페이스의 어떤 메서드도 실행 후 호출되면 `IllegalStateException`이 발생합니다.
+다음 이후 `MediaPlayer` 인스턴스가 릴리스되었으므로 더 이상 사용할 수 없습니다. 다음 방법 중 하나라도 `MediaPlayer` 인터페이스는 릴리스된 후에 호출됩니다. `IllegalStateException` 이 throw됩니다.

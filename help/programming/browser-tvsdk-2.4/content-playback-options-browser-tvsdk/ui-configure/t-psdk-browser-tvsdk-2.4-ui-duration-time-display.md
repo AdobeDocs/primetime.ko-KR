@@ -1,42 +1,41 @@
 ---
-description: 브라우저 TV SDK를 사용하여 검색 표시줄에서 표시할 수 있는 미디어에 대한 정보를 검색할 수 있습니다.
-title: 비디오 지속 시간, 현재 시간 및 남은 시간 표시
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 브라우저 TVSDK를 사용하여 검색 막대에 표시할 수 있는 미디어에 대한 정보를 검색할 수 있습니다.
+title: 비디오의 지속 시간, 현재 시간 및 남은 시간을 표시합니다.
+exl-id: f2aa3c42-9c47-4a55-aed6-7dc5a8d0662b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
+# 비디오의 지속 시간, 현재 시간 및 남은 시간을 표시합니다.{#display-the-duration-current-time-and-remaining-time-of-the-video}
 
-# 비디오{#display-the-duration-current-time-and-remaining-time-of-the-video} 지속 시간, 현재 시간 및 남은 시간 표시
+브라우저 TVSDK를 사용하여 검색 막대에 표시할 수 있는 미디어에 대한 정보를 검색할 수 있습니다.
 
-브라우저 TV SDK를 사용하여 검색 표시줄에서 표시할 수 있는 미디어에 대한 정보를 검색할 수 있습니다.
+1. 플레이어가 적어도 PREPARED 상태가 될 때까지 기다립니다.
+1. 를 사용하여 현재 플레이헤드 시간 검색 `MediaPlayer.currentTime` 특성.
 
-1. 플레이어가 준비 상태가 될 때까지 기다리십시오.
-1. `MediaPlayer.currentTime` 특성을 사용하여 현재 재생 헤드 시간을 검색합니다.
-
-   이 속성은 가상 타임라인의 현재 재생 헤드 위치를 밀리초 단위로 반환합니다. 여러 광고 또는 광고가 기본 스트림에 분할되는 등 대체 컨텐츠의 여러 인스턴스가 포함될 수 있는 해결된 스트림에 대해 시간을 계산합니다. 실시간/선형 스트림의 경우, 반환된 시간은 항상 재생 창 범위에 있습니다.
+   이 속성은 가상 타임라인의 현재 플레이헤드 위치를 밀리초 단위로 반환합니다. 이 시간은 기본 스트림에 여러 광고 또는 광고 브레이크와 같은 대체 콘텐츠의 여러 인스턴스를 포함할 수 있는 확인된 스트림을 기준으로 계산됩니다. 라이브/선형 스트림의 경우 반환되는 시간은 항상 재생 창 범위입니다.
 
    ```js
    MediaPlayer.currentTime
    ```
 
 1. 스트림의 재생 범위를 검색하고 지속 시간을 결정합니다.
-   1. 가상 타임라인 시간 범위를 가져오려면 `mediaPlayer.playbackRange` 속성을 사용합니다.
+   1. 사용  `mediaPlayer.playbackRange` 속성을 사용하여 가상 타임라인 시간 범위를 가져올 수 있습니다.
 
-   1. 지속 기간을 결정하려면 범위 끝에서부터 시작을 제외합니다.
+   1. 기간을 결정하려면 범위의 끝에서 시작을 뺍니다.
 
-      여기에는 스트림에 삽입되는 추가 컨텐츠(광고)의 지속 시간이 포함됩니다.
+      여기에는 스트림(광고)에 삽입되는 추가 콘텐츠 지속 시간이 포함됩니다.
 
-      VOD의 경우 범위는 항상 0으로 시작하고 종료 값은 기본 컨텐츠 지속 기간의 합계와 스트림(광고)에 삽입된 추가 컨텐츠 지속 시간을 합한 것입니다.
+      VOD의 경우 범위는 항상 0으로 시작하며 종료 값은 기본 콘텐츠 지속 시간과 스트림(광고)에 삽입된 추가 콘텐츠 지속 시간의 합계와 같습니다.
 
-      선형/라이브 에셋의 경우 범위는 재생 창 범위를 나타내며 재생 중에 이 범위가 변경됩니다.
+      선형/라이브 에셋의 경우 범위는 재생 창 범위를 나타내며 이 범위는 재생 중에 변경됩니다.
 
-1. MediaPlayer 및 Browser TVSDK 요소에서 사용할 수 있는 메서드를 사용하여 검색 막대 매개 변수를 설정합니다.
+1. MediaPlayer 및 브라우저 TVSDK 요소에서 사용할 수 있는 메서드를 사용하여 검색 막대 매개 변수를 설정합니다.
 
-   예를 들어, HTML에서 검색 막대를 표시할 수 있는 레이아웃이 있습니다.
+   예를 들어 HTML 시 검색 막대를 표시할 수 있는 레이아웃이 있습니다.
 
    ```
    <div class="seekbar" id="seekbar"> 
@@ -50,7 +49,7 @@ ht-degree: 0%
      </div> 
    ```
 
-   해당 css는 다음과 같습니다.
+   다음은 해당 css입니다.
 
    ```
    #seekbar { 
@@ -148,7 +147,7 @@ ht-degree: 0%
    } 
    ```
 
-1. `AdobePSDK.TimeChangeEvent`에 귀 기울이고 그에 따라 sekbar를 업데이트합니다.
+1. 잘 들어 `AdobePSDK.TimeChangeEvent` 및 그에 따라 seekbar를 업데이트합니다.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.TIME_CHANGED, onTimeChange); 
@@ -172,7 +171,7 @@ ht-degree: 0%
        } 
    ```
 
-   이 예제에서는 sekbar 객체를 만들어 sekbar를 업데이트합니다.
+   다음 예제에서는 seekbar 개체를 만들어 seekbar를 업데이트합니다.
 
    ```js
    /** 
@@ -343,4 +342,3 @@ ht-degree: 0%
    
            })(); 
    ```
-

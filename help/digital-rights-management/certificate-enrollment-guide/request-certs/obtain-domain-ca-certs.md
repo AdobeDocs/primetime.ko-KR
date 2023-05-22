@@ -1,28 +1,27 @@
 ---
-title: 도메인 CA 인증서 가져오기
-description: 도메인 CA 인증서 가져오기
+title: 도메인 CA 인증서 받기
+description: 도메인 CA 인증서 받기
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cad233e0-41f7-4897-ab5f-d5a098c37306
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 0%
 
 ---
 
+# 도메인 CA 인증서 받기{#obtain-domain-ca-certificates}
 
-# 도메인 CA 인증서 가져오기{#obtain-domain-ca-certificates}
+License Server, Packager 또는 Transport 인증서와 달리 Domain CA 인증서는 Adobe에서 발급하지 않습니다. 인증 기관에서 이 인증서를 받거나 이 용도로 사용할 자체 서명된 인증서를 생성할 수 있습니다.
 
-라이센스 서버, 패키지 또는 전송 인증서와 달리 도메인 CA 인증서는 Adobe을 통해 발급되지 않습니다. 인증 기관에서 이 인증서를 얻거나 이 용도로 사용할 자체 서명된 인증서를 생성할 수 있습니다.
+도메인 CA 인증서는 1024비트 키를 사용하고 CA 인증서에 필요한 표준 속성을 포함해야 합니다.
 
-도메인 CA 인증서는 1024비트 키를 사용해야 하며 CA 인증서에 필요한 표준 특성을 포함해야 합니다.
+* CA 플래그가 true로 설정된 기본 제약 조건 확장
+* 인증서 서명을 지정하는 키 사용 확장이 허용됩니다.
 
-* CA 플래그가 true로 설정된 기본 제한 확장
-* 인증서 서명을 지정하는 키 사용 확장이 허용됨
+예를 들어 OpenSSL을 사용하여 다음과 같이 자체 서명된 CA 인증서를 생성할 수 있습니다.
 
-예를 들어, OpenSSL을 사용하여 자체 서명된 CA 인증서를 다음과 같이 생성할 수 있습니다.
-
-1. 다음을 포함하는 [!DNL ca-extensions.txt]라는 파일을 만듭니다.
+1. 라는 파일 만들기 [!DNL ca-extensions.txt] 포함:
 
    ```
    keyUsage=critical,keyCertSign  
@@ -61,4 +60,3 @@ ht-degree: 0%
    openssl pkcs12 -export -inkey domain-ca.key \ 
    -in domain-ca.cer -out domain-ca.pfx
    ```
-

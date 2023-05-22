@@ -1,24 +1,23 @@
 ---
-description: NotificationEvent를 사용하여 AVE(Adobe 비디오 엔진)에서 전달된 경고를 추적할 수 있습니다.
+description: NotificationEvent를 사용하면 Adobe 비디오 엔진(AVE)에서 전달되는 경고를 추적할 수 있습니다.
 title: 플레이어에서 AVE 경고 추적
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 49118d7f-ed79-4d22-ba91-8929f97c7256
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
 
-
 # 플레이어에서 AVE 경고 추적{#track-ave-warnings-in-your-player}
 
-NotificationEvent를 사용하여 AVE(Adobe 비디오 엔진)에서 전달된 경고를 추적할 수 있습니다.
+NotificationEvent를 사용하면 Adobe 비디오 엔진(AVE)에서 전달되는 경고를 추적할 수 있습니다.
 
-플레이어 앱은 재생을 중단하지 않는 장애 조치(failover) 또는 네트워크 작동 중지 이벤트와 같은 AVE에서 생성된 재생 경고와 오류를 추적할 수 있으며 앱의 작업이 필요하지 않습니다. 일부 AVE 오류는 TVSDK에서 처리되지만 `NotificationEvent`은(는) AVE 경고를 위해 응용 프로그램 레이어에 대한 일반적인 통과 메커니즘 역할을 합니다. AVE 경고를 받은 후 미리 재생 중지, 우발사항 계획 활성화, 메시지 로깅 등과 같은 일부 조치를 취할 수 있습니다.
+플레이어 앱은 AVE가 생성하는 재생 경고 및 오류(예: 재생을 중지하지 않고 앱에서 작업을 수행할 필요가 없는 장애 조치 또는 네트워크 종료 이벤트)를 추적할 수 있습니다. 일부 AVE 오류는 TVSDK에서 처리하는 동안, `NotificationEvent` 은 AVE 경고를 위해 애플리케이션 레이어에 대한 일반적인 통과 메커니즘 역할을 합니다. AVE 경고를 수신한 후 미리 재생을 중지하거나 비상 계획을 활성화하거나 메시지를 로깅하는 등의 일부 작업을 수행하도록 선택할 수 있습니다.
 
-플레이어에서 AVE 경고를 추적하려면 다음 API 요소를 사용하십시오.
+다음 API 요소를 사용하여 플레이어에서 AVE 경고를 추적하십시오.
 
-**NotificationCode**
+**알림 코드**
 
 ```
 public final class NotificationCode { 
@@ -76,7 +75,7 @@ public class NotificationEvent extends Event {
 }
 ```
 
-플레이어에 이벤트 리스너를 추가하여 AVE 경고를 포착합니다.
+플레이어에 이벤트 리스너를 추가하여 AVE 경고를 catch합니다.
 
 예:
 
@@ -99,7 +98,7 @@ private function onWarningAvailable(event:NotificationEvent):void {
 
 <!--<a id="example_C35262605D394718B40C084B569A5052"></a>-->
 
-다음은 `NotificationEvent`을(를) 사용하여 추적된 AVE 경고의 예입니다.
+다음은 를 사용하여 추적한 AVE 경고의 예입니다. `NotificationEvent`:
 
 ```
 [WARN ] [psdkdemo::PSDKDemo] #onWarningAvailable metadata [resourceType:HLS] 

@@ -2,20 +2,18 @@
 title: 로그 파일
 description: 로그 파일
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 23de35da-1583-4718-ba35-e9d4bf750239
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%
 
 ---
 
-
 # 로그 파일{#log-files}
 
-보호된 스트리밍을 위한 Adobe Access Server에서 생성된 로그 파일은 *LicenseServer.LogRoot*&#x200B;에서 지정한 디렉토리에 있습니다.
+Adobe Access Server for Protected Streaming 응용 프로그램에서 생성한 로그 파일은에 지정된 디렉터리에 있습니다. *LicenseServer.Logroot*.
 
 >[!NOTE]
 >
->서버가 실행되는 동안 현재 로그 파일이 삭제되거나 이동하면 로그 파일이 다시 생성되지 않을 수 있으며 일부 로그 정보가 손실됩니다.
-
+>서버가 실행되는 동안 현재 로그 파일을 삭제하거나 이동하면 로그 파일이 다시 생성되지 않을 수 있으며 일부 로그 정보가 손실됩니다.

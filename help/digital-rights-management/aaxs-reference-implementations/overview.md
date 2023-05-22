@@ -2,23 +2,22 @@
 title: 개요 - 참조 구현 사용
 description: 개요 - 참조 구현 사용
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2a5075f4-3e7b-4e4c-b69d-c044b064e282
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
-
 # 개요 - 참조 구현 사용 {#overview-using-the-reference-implementations}
 
-Adobe 액세스 제품은 다음 구성 요소에 대한 참조 구현과 함께 제공됩니다.
+Adobe 액세스 제품에는 다음 구성 요소에 대한 참조 구현이 함께 제공됩니다.
 
 * 명령줄 도구
-* 라이선스 서버 및 감시 폴더 패키저
-* Flash Access 관리자 AIR 응용 프로그램
+* 라이선스 서버 및 감시 폴더 패커
+* Flash Access 관리자 AIR 애플리케이션
 
 >[!NOTE]
 >
->보호된 스트리밍을 위한 Adobe Access Server, 참조 구현 또는 라이센스 서버를 배포해야 합니다.
+>Protected Streaming용 Adobe Access Server, 참조 구현 또는 고유한 라이선스 서버를 배포해야 합니다.

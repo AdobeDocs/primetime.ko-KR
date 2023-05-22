@@ -1,26 +1,25 @@
 ---
-description: TVSDK는 이러한 개체가 콘텐츠 매니페스트에서 나타날 때마다 구독 태그의 TimedMetadata 개체를 준비합니다.
+description: TVSDK는 콘텐츠 매니페스트에서 태그가 발견될 때마다 구독한 태그에 대한 TimedMetadata 개체를 준비합니다.
 title: 사용자 정의 태그 구독
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: faefcefb-e52f-4e32-859a-7da4284ca52e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
 
 ---
 
+# 사용자 정의 태그 구독 {#subscribe-to-custom-tags}
 
-# 사용자 정의 태그 {#subscribe-to-custom-tags} 구독
+TVSDK는 콘텐츠 매니페스트에서 태그가 발견될 때마다 구독한 태그에 대한 TimedMetadata 개체를 준비합니다.
 
-TVSDK는 이러한 개체가 콘텐츠 매니페스트에서 나타날 때마다 구독 태그의 TimedMetadata 개체를 준비합니다.
+재생이 시작되기 전에 태그를 구독해야 합니다. HLS 매니페스트의 사용자 지정 태그에 대한 알림을 받으려면:
 
-재생이 시작되기 전에 태그에 가입해야 합니다. HLS 매니페스트의 사용자 지정 태그에 대한 알림을 받으려면:
-
-1. 사용자 지정 태그가 포함된 배열을 `MediaPlayerItemConfig`의 `setSubscribedTags`에 전달하여 사용자 지정 광고 태그 이름을 전체적으로 설정합니다.
+1. 사용자 지정 태그가 포함된 배열을 로 전달하여 사용자 지정 광고 태그 이름을 전체적으로 설정합니다. `setSubscribedTags` 위치: `MediaPlayerItemConfig`.
 
    >[!IMPORTANT]
    >
-   >HLS 스트림을 사용할 때는 `#` 접두어를 포함해야 합니다.
+   >다음을 포함해야 합니다. `#` hls 스트림 작업 시 접두사를 사용합니다.
 
    예:
 

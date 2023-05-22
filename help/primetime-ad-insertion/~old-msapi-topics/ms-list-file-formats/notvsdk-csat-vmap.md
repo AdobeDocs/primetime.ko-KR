@@ -1,7 +1,6 @@
 ---
-description: 클라이언트가 추적 정보를 요청하면 매니페스트 서버가 형식이 지정된 파일을 다시 전송합니다. 형식 및 내용은 쿼리 매개 변수 pttrackingversion의 값에 따라 달라집니다.
+description: 클라이언트에서 추적 정보를 요청하면 매니페스트 서버에서 형식이 지정된 파일을 다시 보냅니다. 형식 및 내용은 쿼리 매개 변수 pttrackingversion의 값에 따라 다릅니다
 title: URL 추적을 위한 VMAP 형식
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '138'
@@ -10,13 +9,13 @@ ht-degree: 0%
 ---
 
 
-# 추적 URL {#vmap-format-for-tracking-urls}에 대한 VMAP 형식
+# URL 추적을 위한 VMAP 형식 {#vmap-format-for-tracking-urls}
 
-클라이언트가 추적 정보를 요청하면 매니페스트 서버가 형식이 지정된 파일을 다시 전송합니다. 형식 및 내용은 쿼리 매개 변수 `pttrackingversion`의 값에 따라 다릅니다.
+클라이언트에서 추적 정보를 요청하면 매니페스트 서버에서 형식이 지정된 파일을 다시 보냅니다. 형식 및 콘텐츠는 쿼리 매개 변수의 값에 따라 다릅니다 `pttrackingversion`
 
 ## 단일 VMAP 형식 {#vmap}
 
-매니페스트 서버가 `pttrackingversion=vmap`에 일반적인 VMAP 블록에서 오는 다음 예제의 형식이 있을 경우 보내는 VMAP 파일입니다. 불필요한 반복을 피하기 위해 짧게 해서, 구조가 더 분명해졌다. 줄임표(세 점, 공백으로 구분)는 일부 URL 내 및 일부 코드 블록 간의 생략된 정보를 나타냅니다. 단축되지 않은 URL은 VMAP 파일의 한 줄에 표시되지만 여러 줄에 표시됩니다.
+매니페스트 서버가 다음과 같은 경우에 전송하는 VMAP 파일입니다. `pttrackingversion=vmap` 는 일반적인 VMAP 블록에서 가져온 다음 예제의 형식을 갖습니다. 불필요한 반복을 피하기 위해 줄여서 구조를 더 명확히 하였다. 생략 부호(세 점, 공백으로 구분)는 일부 URL 내에서 일부 코드 블록 사이에 생략된 정보를 나타냅니다. 단축되지 않은 URL은 VMAP 파일의 한 줄에 표시되지만 여러 줄에 나타납니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?> 

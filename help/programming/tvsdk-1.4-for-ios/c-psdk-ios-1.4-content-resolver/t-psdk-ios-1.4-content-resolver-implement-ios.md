@@ -1,30 +1,29 @@
 ---
-description: 기본 해상도에 따라 해상도를 구현할 수 있습니다.
-title: 사용자 지정 기회/컨텐츠 해결 프로그램 구현
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: 기본 확인자를 기반으로 확인자를 구현할 수 있습니다.
+title: 사용자 지정 영업 기회/콘텐츠 해결사 구현
+exl-id: f2a8512f-9f6c-4fd9-8694-32132cddc7d2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
+# 사용자 지정 영업 기회/콘텐츠 해결사 구현{#implement-a-custom-opportunity-content-resolver}
 
-# 사용자 지정 기회/컨텐츠 확인자 구현{#implement-a-custom-opportunity-content-resolver}
-
-기본 해상도에 따라 해상도를 구현할 수 있습니다.
+기본 확인자를 기반으로 확인자를 구현할 수 있습니다.
 
 <!--<a id="fig_CC41E2A66BDB4115821F33737B46A09B"></a>-->
 
 ![](assets/ios_psdk_content_resolver.png)
 
-1. `PTContentResolver` 추상 클래스를 확장하여 사용자 지정 광고 확인자를 개발합니다.
+1. 를 확장하여 사용자 지정 광고 해결자 개발 `PTContentResolver` 추상 클래스입니다.
 
-   `PTContentResolver` 는 content resolver 클래스에서 구현해야 하는 인터페이스입니다. 같은 이름의 추상 클래스도 사용할 수 있으며, 구성을 자동으로 처리합니다(위임 가져오기).
+   `PTContentResolver` 는 content resolver 클래스로 구현해야 하는 인터페이스입니다. 이름이 같은 추상 클래스도 사용할 수 있으며, 구성을 자동으로 처리합니다(위임자 가져오기).
 
    >[!TIP]
    >
-   >`PTContentResolver` 는 클래스를 통해  `PTDefaultMediaPlayerClientFactory` 노출됩니다. 클라이언트는 `PTContentResolver` 추상 클래스를 확장하여 새 내용 확인자를 등록할 수 있습니다. 기본적으로, 특별히 제거하지 않는 한 `PTDefaultAdContentResolver`은 `PTDefaultMediaPlayerClientFactory`에 등록됩니다.
+   >`PTContentResolver` 을 통해 노출됩니다. `PTDefaultMediaPlayerClientFactory` 클래스. 클라이언트는 를 확장하여 새 콘텐츠 확인자를 등록할 수 있습니다. `PTContentResolver` 추상 클래스입니다. 기본적으로, 그리고 특별히 제거하지 않는 한 `PTDefaultAdContentResolver` 이(가)에 등록되어 있습니다. `PTDefaultMediaPlayerClientFactory`.
 
    ```
    @protocol PTContentResolver <NSObject> 
@@ -52,27 +51,27 @@ ht-degree: 0%
    @end
    ```
 
-1. `shouldResolveOpportunity`을(를) 구현하고 `YES`이 수신된 `PTPlacementOpportunity`를 처리해야 하는 경우 반환합니다.
-1. 대체 내용 또는 광고 로드를 시작하는 `resolvePlacementOpportunity`을 구현합니다.
-1. 광고가 로드되면 삽입할 컨텐트에 대한 정보가 있는 `PTTimeline`을 준비합니다.
+1. 구현 `shouldResolveOpportunity` 및 반환 `YES` 수신자를 처리해야 하는 경우 `PTPlacementOpportunity`.
+1. 구현 `resolvePlacementOpportunity`: 대체 콘텐츠 또는 광고 로드를 시작합니다.
+1. 광고가 로드된 후 다음을 준비합니다. `PTTimeline` 삽입할 콘텐츠에 대한 정보 포함
 
-       타임라인에 대한 유용한 정보는 다음과 같습니다.
+       다음은 타임라인에 대한 유용한 정보입니다.
    
-   * 프리롤, 미드롤 및 포스트롤 유형의 `PTAdBreak`이 여러 개 있을 수 있습니다.
+   * 여러 개가 있을 수 있습니다. `PTAdBreak`s 프리롤, 미드롤 및 포스트롤 유형입니다.
 
-      * `PTAdBreak`의 값은 다음과 같습니다.
+      * A `PTAdBreak` 에는 다음이 포함되어 있습니다.
 
-         * 시작 시간 및 중단 기간이 있는 `CMTimeRange`.
+         * A `CMTimeRange` (시작 시간 및 브레이크 기간 포함)
 
-            이 속성은 `PTAdBreak`의 범위 속성으로 설정됩니다.
+            범위 속성으로 설정됩니다. `PTAdBreak`.
 
-         * `NSArray` 의 `PTAd`를 참조하십시오.
+         * `NSArray` / `PTAd`s.
 
-            이 속성은 `PTAdBreak`의 광고 속성으로 설정됩니다.
-   * `PTAd`은 광고를 나타내며 각 `PTAd`에는 다음 내용이 있습니다.
+            의 광고 속성으로 설정됩니다. `PTAdBreak`.
+   * A `PTAd` 는 광고를 나타내고, 각각은 `PTAd` 에는 다음이 포함되어 있습니다.
 
-      * 광고의 기본 자산 속성으로 설정된 `PTAdHLSAsset`
-      * 클릭 가능한 광고 또는 배너 광고로 여러 개의 `PTAdAsset` 인스턴스가 있을 수 있습니다.
+      * A `PTAdHLSAsset` 를 광고의 기본 자산 속성으로 설정합니다.
+      * 아마도 복수 `PTAdAsset` 인스턴스: 클릭 가능한 광고 또는 배너 광고.
 
    예:
 
@@ -103,8 +102,8 @@ ht-degree: 0%
    _timeline.adBreaks = ptBreaks;
    ```
 
-1. `PTTimeline`을(를) 제공하는 `didFinishResolvingPlacementOpportunity`을(를) 호출합니다.
-1. `registerContentResolver`을(를) 호출하여 사용자 정의 컨텐트/광고 확인자를 기본 미디어 플레이어 팩터리에 등록합니다.
+1. 호출 `didFinishResolvingPlacementOpportunity`, 다음을 제공합니다 `PTTimeline`.
+1. 를 호출하여 사용자 지정 콘텐츠/광고 해결자를 기본 미디어 플레이어 팩토리에 등록합니다. `registerContentResolver`.
 
    ```
    //Remove default content/ad resolver 
@@ -117,11 +116,11 @@ ht-degree: 0%
    [[PTDefaultMediaPlayerFactory defaultFactory] registerContentResolver:[contentResolver autorelease]];
    ```
 
-1. 사용자 지정 기회 해결 프로그램을 구현한 경우 기본 미디어 플레이어 팩터리에 등록합니다.
+1. 사용자 지정 Opportunity Resolver를 구현한 경우 기본 미디어 플레이어 팩토리에 등록합니다.
 
    >[!TIP]
    >
-   >사용자 지정 컨텐츠/광고 해결 프로그램을 등록하려면 사용자 지정 기회 확인자를 등록하지 않아도 됩니다.
+   >사용자 지정 콘텐츠/광고 확인자를 등록하기 위해 사용자 지정 영업 기회 확인자를 등록할 필요가 없습니다.
 
    ```
    //Remove default opportunity resolver 
@@ -135,6 +134,6 @@ ht-degree: 0%
               registerOpportunityResolver:[opportunityResolver autorelease]];
    ```
 
-플레이어가 컨텐츠를 로드하고 VOD 또는 LIVE 유형으로 판단되면 다음 중 하나가 발생합니다.>
-* 컨텐츠가 VOD인 경우 사용자 정의 컨텐츠 확인자는 전체 비디오의 광고 타임라인을 가져오는 데 사용됩니다.
-* 컨텐츠가 LIVE이면 컨텐츠에서 배치 기회(큐 포인트)가 검색될 때마다 사용자 지정 컨텐츠 확인자가 호출됩니다.
+플레이어가 콘텐츠를 로드하고 VOD 또는 LIVE 유형이라고 판단되면 다음 중 하나가 발생합니다. >
+* 콘텐츠가 VOD인 경우 사용자 지정 콘텐츠 해결자를 사용하여 전체 비디오의 광고 타임라인을 가져옵니다.
+* 콘텐츠가 라이브인 경우 콘텐츠에서 배치 기회(큐 포인트)가 감지될 때마다 사용자 지정 콘텐츠 확인자가 호출됩니다.

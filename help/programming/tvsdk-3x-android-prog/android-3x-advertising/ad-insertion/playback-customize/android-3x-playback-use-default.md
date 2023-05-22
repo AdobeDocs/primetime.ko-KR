@@ -1,59 +1,58 @@
 ---
-description: 기본 광고 동작을 사용하도록 선택할 수 있습니다.
+description: 기본 광고 비헤이비어를 사용하도록 선택할 수 있습니다.
 title: 기본 재생 동작 사용
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 0ea3d2bb-b4d4-4090-ab5f-b6c31c1abe32
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
 
 ---
 
-
 # 기본 재생 동작 사용 {#use-the-default-playback-behavior}
 
-기본 광고 동작을 사용하도록 선택할 수 있습니다.
+기본 광고 비헤이비어를 사용하도록 선택할 수 있습니다.
 
 1. 기본 동작을 사용하려면 다음 작업 중 하나를 완료하십시오.
 
-   * 자체 `AdvertisingFactory` 클래스를 구현하는 경우 `createAdPolicySelector`에 대해 null을 반환합니다.
+   * 자체 를 구현하는 경우 `AdvertisingFactory` class, 다음에 대해 null 반환: `createAdPolicySelector`.
 
-   * `AdvertisingFactory` 클래스에 대한 사용자 정의 구현이 없는 경우 TVSDK는 기본 광고 정책 선택기를 사용합니다.
+   * 에 대한 사용자 지정 구현이 없는 경우 `AdvertisingFactory` 클래스, TVSDK는 기본 광고 정책 선택기를 사용합니다.
 
-## 사용자 지정된 재생 {#set-up-customized-playback} 설정
+## 사용자 지정 재생 설정 {#set-up-customized-playback}
 
-광고 동작을 사용자 정의하거나 재정의할 수 있습니다.
+광고 비헤이비어를 사용자 정의하거나 재정의할 수 있습니다.
 
-광고 행동을 사용자 정의하거나 무시하려면 먼저 에 광고 정책 인스턴스를 등록합니다.
-광고 동작을 사용자 정의하려면 다음 중 하나를 수행합니다.
+광고 동작을 사용자 정의하거나 재정의하려면 먼저 광고 정책 인스턴스를( )에 등록합니다.
+광고 동작을 사용자 지정하려면 다음 중 하나를 수행하십시오.
 
-* `AdPolicySelector` 인터페이스와 모든 메서드를 구현합니다.
+* 구현 `AdPolicySelector` 인터페이스 및 모든 해당 메서드.
 
-   이 옵션은 기본 광고 비헤이비어를 **모두**&#x200B;로 재정의해야 하는 경우에 좋습니다.
+   재정의해야 하는 경우 이 옵션을 권장합니다. **모두** 기본 광고 동작입니다.
 
-* `DefaultAdPolicySelector` 클래스를 확장하고 사용자 지정이 필요한 비헤이비어에 대해서만 구현을 제공합니다.
+* 확장 `DefaultAdPolicySelector` 클래스를 만들고 맞춤화가 필요한 비헤이비어에 대해서만 구현을 제공합니다.
 
-   이 옵션은 기본 비헤이비어의 **일부**&#x200B;만 재정의해야 하는 경우에 좋습니다.
+   이 옵션은 재정의해야 하는 경우에만 권장됩니다. **일부** 기본 동작.
 
-광고 비헤이비어를 사용자 정의하려면
+광고 비헤이비어를 사용자 지정하려면:
 
-1. `AdPolicySelector` 인터페이스와 모든 메서드를 구현합니다.
-1. 광고 공장을 통해 TVSDK에서 사용할 정책 인스턴스를 지정합니다.
+1. 구현 `AdPolicySelector` 인터페이스 및 모든 해당 메서드를 사용합니다.
+1. Advertising Factory를 통해 TVSDK에서 사용할 정책 인스턴스를 할당합니다.
 
    >[!NOTE]
    >
-   >class CustomContentFactory는 ContentFactory &amp;lbrace;를 확장합니다.
+   >클래스 CustomContentFactory가 ContentFactory &amp;lbrace;를 확장합니다.
    >...
    >@Override
-   >public AdPolicySelector retrieveAdPolicySelector>(MediaPlayerItem mediaPlayerItem) amp;lbrace;
-   >새 CustomAdPolicySelector(mediaPlayerItem);를 반환합니다.
+   >public AdPolicySelector retrieveAdPolicySelector>>(MediaPlayerItem mediaPlayerItem) &amp;lbrace;
+   >새 CustomAdPolicySelector(mediaPlayerItem) 반환;
    >&amp;rbrace;
    >...
    >&amp;rbrace;
-   >// 사용자 정의 컨텐츠 팩토리를 미디어 플레이어에 등록
-   >MediaPlayerItemConfig = new MediaPlayerItemConfig();
-   >config.setAdvertisingFactory(new CustomContentFactory());
-   >// 리소스를 로드하는 동안 이 구성이 나중에 전달되어야 합니다.
+   >// 미디어 플레이어에 사용자 지정 콘텐츠 팩토리 등록
+   >MediaPlayerItemConfig = 새 MediaPlayerItemConfig();
+   >config.setAdvertisingFactory(새로운 CustomContentFactory());
+   >// >리소스를 로드하는 동안 이 구성을 나중에 전달해야 합니다.
    >mediaPlayer.replaceCurrentResource(resource, config);
 
-1. 사용자 정의 구현
+1. 맞춤화 구현.

@@ -1,43 +1,43 @@
 ---
 title: JavaScript SDK 개요
 description: JavaScript SDK 개요
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 8756c804-a4c1-4ee3-b2b9-be45f38bdf94
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
-
 # JavaScript SDK 개요 {#javascript-sdk-overview}
 
 >[!NOTE]
 >
->이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 무단 사용이 허용되지 않습니다.
+>이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
 ## 소개
 
-Adobe은 AccessEnabler 라이브러리의 최신 JS v4.x로 마이그레이션할 것을 권장합니다.
+Adobe은 AccessEnabler 라이브러리의 최신 JS v4.x로 마이그레이션하는 것이 좋습니다.
 
-Adobe Primetime 인증 JavaScript 통합은 프로그래머에게 친숙한 JS 웹 애플리케이션 개발 환경에서 TV-Everywhere 솔루션을 제공합니다. 통합의 주요 구성 요소는 &quot;고급&quot; 애플리케이션(사용자 상호 작용, 비디오 프레젠테이션)과 자격 부여 흐름에 대한 항목을 제공하고 Adobe Primetime 인증 서버와의 통신을 처리하는 Adobe 제공 &quot;낮은 수준&quot; AccessEnabler 라이브러리입니다.
+Adobe Primetime 인증 JavaScript 통합은 익숙한 JS 웹 애플리케이션 개발 환경에서 프로그래머에게 TV-Everywhere 솔루션을 제공합니다. 통합의 주요 구성 요소는 &quot;높은 수준의&quot; 애플리케이션(사용자 상호 작용, 비디오 프레젠테이션)과 자격 흐름에 대한 항목을 제공하고 Adobe Primetime 인증 서버와의 통신을 처리하는 Adobe 제공 &quot;낮은 수준의&quot; AccessEnabler 라이브러리입니다.
 
-일반적인 Adobe Primetime 인증 자격 흐름은 [프로그래머 자격 흐름](/help/authentication/entitlement-flow.md), 및 JavaScript 통합 Cookbook 은 구현을 안내합니다. 다음 섹션에서는 JavaScript AccessEnabler 통합에 대한 설명 및 샘플을 제공합니다.
+일반 Adobe Primetime 인증 권한 플로우는에서 다룹니다 [프로그래머 권한 흐름](/help/authentication/entitlement-flow.md)및 JavaScript 통합 Cookbook에서는 구현을 안내합니다. 다음 섹션에서는 JavaScript AccessEnabler 통합과 관련된 설명 및 샘플을 제공합니다.
 
 >[!IMPORTANT]
 >
->이 문서에서는 데스크톱 웹 솔루션에 대한 구현에 대해 설명합니다. JavaScript 라이브러리는 모바일 플랫폼(예: iOS의 Safari, Android의 Chrome)에서 지원되지 않습니다. 모바일 플랫폼(iOS, Android, Windows)을 타깃팅하려면 기본 SDK를 사용하십시오.
+>이 문서에서는 데스크탑 웹 솔루션의 구현에 대해 설명합니다. JavaScript 라이브러리는 모바일 플랫폼(예: iOS의 Safari, Android의 Chrome)에서 지원되지 않습니다. 모바일 플랫폼(iOS, Android, Windows)을 타깃팅하려면 기본 SDK를 사용하십시오.
 
 ## MVPD 선택 대화 상자 만들기 {#creating-the-mvpd-selection-dialog}
 
-사용자가 MVPD에 로그인하고 인증되려면 페이지 또는 플레이어에서 사용자가 MVPD를 식별할 수 있는 방법을 제공해야 합니다. 개발을 위해 MVPD 선택 대화 상자의 기본 버전이 제공됩니다. 프로덕션 사용을 위해 자체 MVPD 선택기를 구현해야 합니다. 
+사용자가 MVPD에 로그인하여 인증되려면, 페이지 또는 플레이어에서 사용자가 해당 MVPD를 식별할 수 있는 방법을 제공해야 합니다. 개발을 위해 MVPD 선택 대화 상자의 기본 버전이 제공됩니다. 프로덕션 사용을 위해 고유한 MVPD 선택기를 구현해야 합니다. 
 
-고객의 공급자를 이미 알고 있는 경우 다음을 수행할 수 있습니다 [프로그래밍 방식으로 MVPD 설정](/help/authentication/home.md): 사용자 상호 작용 없이 이 기법은 동일하지만 [공급자 선택기] 대화 상자를 호출하고 고객에게 MVPD를 선택하도록 요청하는 단계를 건너뜁니다.
+고객의 공급자가 누구인지 이미 알고 있는 경우 다음을 수행할 수 있습니다 [프로그래밍 방식으로 MVPD 설정](/help/authentication/home.md), 사용자 상호 작용 없음. 이 기술은 동일하지만 공급자 선택기 대화 상자를 호출하여 고객에게 MVPD를 선택하라고 요청하는 단계를 거치지 않습니다.
 
 ## 서비스 공급자 표시 {#displaying-the-service-provider}
 
-다음 코드 샘플은 현재 고객을 위한 서비스 공급자를 검색하고 표시하는 방법을 보여 줍니다.
+다음 코드 샘플은 현재 고객의 서비스 공급자를 검색하고 표시하는 방법을 보여 줍니다.
 
- **HTML** - 고객이 이미 로그인한 경우 이 페이지는 고객이 선택한 공급자를 표시하는 페이지에 섹션을 추가합니다.
+ **HTML** - 이 페이지에는 고객이 선택한 공급자가 이미 로그인한 경우 해당 공급자를 표시하는 섹션이 추가됩니다.
 
 ```HTML
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
@@ -76,7 +76,7 @@ Adobe Primetime 인증 JavaScript 통합은 프로그래머에게 친숙한 JS �
 ```
  
 
-**JavaScript** 이 JavaScript 파일은 사용자가 이미 로그인되어 있는 경우 현재 공급자에 대한 Access Enabler를 쿼리하고, 해당 사용자에 대해 예약된 페이지 섹션에 결과를 표시합니다. 또한 MVPD 선택기 대화 상자가 구현됩니다.
+**JavaScript** 이 JavaScript 파일은 사용자가 이미 로그인한 경우 현재 공급자에 대한 Access Enabler를 쿼리하고 그 결과를 예약된 페이지 섹션에 표시합니다. 또한 MVPD 선택기 대화 상자를 구현합니다.
 
 ```JS
     $(function() {
@@ -197,19 +197,19 @@ Adobe Primetime 인증 JavaScript 통합은 프로그래머에게 친숙한 JS �
 
 ## 로그아웃 {#logout}
 
-호출 `logout()` 로그아웃 프로세스를 시작하려면 이 메서드는 인수를 사용하지 않으며 현재 사용자를 로그아웃하고 해당 사용자에 대한 모든 인증 및 인증 정보를 지우고 로컬 시스템에서 모든 AuthN 및 AuthZ 토큰을 삭제합니다.
+호출 `logout()` 로그아웃 프로세스를 시작합니다. 이 메서드는 인수를 사용하지 않습니다. 현재 사용자를 로그아웃하여 해당 사용자에 대한 모든 인증 및 권한 부여 정보를 지우고 로컬 시스템에서 모든 AuthN 및 AuthZ 토큰을 삭제합니다.
 
-플레이어에서 사용자 로그아웃 처리를 담당하지 않는 경우가 있습니다.
+플레이어가 사용자 로그아웃을 처리할 책임이 없는 경우가 있습니다.
 
  
 
-- **Adobe Primetime 인증과 통합되지 않은 사이트에서 로그아웃을 시작할 때** 이 경우 MVPD는 브라우저 리디렉션을 통해 Adobe Primetime 인증 단일 로그아웃 서비스를 호출할 수 있습니다. (현재 백채널 호출을 통해 SLO를 호출하는 것은 지원되지 않습니다.)
+- **Adobe Primetime 인증과 통합되지 않은 사이트에서 로그아웃이 시작되면.** 이 경우 MVPD는 브라우저 리디렉션을 통해 Adobe Primetime 인증 단일 로그아웃 서비스를 호출할 수 있습니다. (백채널 호출을 통한 SLO 호출은 현재 지원되지 않습니다.)
 
 >[!NOTE]
 >
->사용자가 토큰이 만료될 때까지 시스템 유휴 상태를 충분히 오래 두면 여전히 세션으로 돌아가서 성공적으로 로그아웃할 수 있습니다. Adobe Primetime 인증을 사용하면 모든 토큰이 삭제되고 MVPD에게 세션 삭제에도 알립니다.
+>토큰이 만료될 때까지 사용자가 컴퓨터를 유휴 상태로 두면 여전히 세션으로 돌아가서 로그아웃을 성공적으로 시작할 수 있습니다. Adobe Primetime 인증은 모든 토큰이 삭제되도록 하며 MVPD에 해당 세션을 삭제하도록 알립니다.
 
-다음 JavaScript 코드는 현재 인증된 사용자를 로그아웃하거나(비인증)하는 방법을 보여 줍니다.
+다음 JavaScript 코드는 현재 인증된 사용자를 로그아웃(비인증)하는 방법을 보여 줍니다.
 
 ```JS
     [...]

@@ -2,18 +2,17 @@
 title: 문제 해결
 description: 문제 해결
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6c4f15b6-507e-496e-ad1c-702ce77dd069
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
 
 ---
 
-
 # 문제 해결{#troubleshooting}
 
-배포 중에 발생할 수 있는 몇 가지 문제 및 해결 방법은 다음과 같습니다.
+다음은 배포 중에 발생할 수 있는 몇 가지 문제와 해결 방법입니다.
 
 * 다음 오류 메시지가 표시되는 경우:
 
@@ -22,7 +21,7 @@ ht-degree: 0%
        javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher"
    ```
 
-   암호가 `ScrambleUtil` 클래스로 암호화되었는지 확인합니다.
+   암호가 `ScrambleUtil` 클래스.
 
 * 다음 오류 메시지가 표시되는 경우:
 
@@ -38,5 +37,4 @@ ht-degree: 0%
    "javax.crypto.BadPaddingException: Given final block not properly padded"
    ```
 
-   참조 구현&#x200B;*과 함께 제공된 암호 scrambler 클래스*&#x200B;를 사용해야 합니다. 이 scrambler 유틸리티는 보호된 스트리밍을 위한 Adobe Primetime DRM Server와 함께 제공된 유틸리티와는 다릅니다.
-
+   암호 스크램블러 클래스를 사용하는지 확인합니다. *참조 구현과 함께 제공됩니다*. 이 스크램블러 유틸리티는 Protected Streaming용 Adobe Primetime DRM Server와 함께 제공된 것과는 다릅니다.

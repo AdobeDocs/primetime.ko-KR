@@ -1,14 +1,13 @@
 ---
 description: Digital Rights Management(DRM) 활동에 대한 정보를 제공합니다.
 title: Digital Rights Management 클래스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 97a81f00-4e64-4981-a02c-8723a53cfca2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
 
 ---
-
 
 # Digital Rights Management 클래스 {#digital-rights-management-classes}
 

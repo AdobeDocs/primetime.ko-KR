@@ -1,32 +1,31 @@
 ---
-description: 대체 오디오에서는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되고 몇 개의 대체 오디오 스트림이 포함될 수 있는 비디오를 재생합니다.
+description: 대체 오디오는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되어 있으며 여러 대체 오디오 스트림을 포함할 수 있는 비디오를 재생합니다.
 title: 대체 오디오 트랙 액세스
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 88fa8f42-59d7-4a57-90c6-4c23b2ea7e00
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
-
 # 대체 오디오 트랙 액세스{#access-alternate-audio-tracks}
 
-대체 오디오에서는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되고 몇 개의 대체 오디오 스트림이 포함될 수 있는 비디오를 재생합니다.
+대체 오디오는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되어 있으며 여러 대체 오디오 스트림을 포함할 수 있는 비디오를 재생합니다.
 
-1. `MediaPlayer`이(가) 적어도 `MediaPlayerStatus.PREPARED` 상태에 있을 때까지 기다립니다.
-1. `MediaPlayerEvent.STATUS_CHANGED` 상태가 `MediaPlayerStatus.PREPARED`인 이벤트를 수신합니다.
+1. 다음을 기다리십시오. `MediaPlayer` 에 있어야 합니다. `MediaPlayerStatus.PREPARED` 상태.
+1. 다음을 들어보십시오. `MediaPlayerEvent.STATUS_CHANGED` 상태가 인 이벤트 `MediaPlayerStatus.PREPARED`.
 
    이 단계는 오디오 트랙의 초기 목록을 사용할 수 있음을 의미합니다.
 
-1. `MediaPlayerItem` 인스턴스에서 사용 가능한 오디오 트랙을 가져옵니다.
+1. 에서 사용 가능한 오디오 트랙 가져오기 `MediaPlayerItem` 인스턴스.
 
    ```java
    mediaPlayerItem.getAudioTracks()
    ```
 
-1. (선택 사항) 사용 가능한 트랙을 사용자에게 표시합니다.
-1. `MediaPlayerItem` 인스턴스에서 선택한 오디오 트랙을 설정합니다.
+1. (선택 사항) 사용 가능한 트랙을 사용자에게 제공합니다.
+1. 에서 선택한 오디오 트랙을 설정합니다. `MediaPlayerItem` 인스턴스.
 
    ```java
    mediaPlayerItem.selectAudioTrack(audioTrack)
