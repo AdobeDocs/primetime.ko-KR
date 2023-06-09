@@ -3,9 +3,9 @@ title: NATIVE_ERROR 알림 세부 정보
 description: NATIVE_ERROR 알림 세부 정보
 copied-description: true
 exl-id: 08121879-d5a6-4224-b08d-9e66fe4d185a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '6888'
+source-wordcount: '6868'
 ht-degree: 2%
 
 ---
@@ -141,7 +141,7 @@ TVSDK가 네이티브 오류를 처리할 때 다음 메타데이터 키 값의 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> AUDITUDE_ERROR_CODE</span> </td> 
-   <td colname="col2"> 감사 오류 코드(숫자). </td> 
+   <td colname="col2"> Auditude 오류 코드(숫자). </td> 
   </tr> 
  </tbody> 
 </table>
@@ -349,7 +349,7 @@ Adobe에 DRM 오류를 보고할 때 `NATIVE_SUBERROR_CODE` 및 `DRM_ERROR_STRIN
    <td colname="col2"><span class="codeph"> AAXS_I15nFailed </span> </td> 
    <td colname="col3"> <p>키를 사용하여 클라이언트를 프로비저닝하지 못했습니다. subErrorId에 클라이언트별, 서버별 또는 줄 오류가 포함되어 있습니다. </p> 
     <ul id="ul_98D919B9060A441AACB6106F6D8E8DA7"> 
-     <li id="li_DCAB00A8AC4A426CBBD377374B3F71AE">배포자의 소프트웨어가 작업을 한 번 이상 다시 시도해야 합니다. <p>Windows에서 Google Chrome을 사용하는 경우 샌드박스에 없는 플러그인 액세스를 허용하는 방법에 대한 설명을 제공합니다. 자세한 내용은 <a href="https://helpx.adobe.com/adobe-access/kb/error-3321.html" format="html" scope="external"> Google Chrome의 샌드박스 해제 액세스가 거부됨</a>. </p> </li> 
+     <li id="li_DCAB00A8AC4A426CBBD377374B3F71AE">배포자의 소프트웨어가 작업을 한 번 이상 다시 시도해야 합니다. <p>Windows에서 Google Chrome을 사용하는 경우 샌드박스에 없는 플러그인 액세스를 허용하는 방법에 대한 설명을 제공합니다. Google Chrome의 샌드박스 해제 액세스가 거부됨</a>. </p> </li> 
      <li id="li_7FB7681FE32D444BB1BDBA3E5953A2C3">배포자는 다음 작업 중 하나를 완료해야 합니다. 
       <ul id="ul_486B64F187C44AE3B4775953A6142836"> 
        <li id="li_095B1D4CD051427CB2BFA7082B454056">플랫폼 간에 오류가 일관적인 경우 Adobe으로 문제를 에스컬레이션해야 합니다. </li> 
@@ -682,7 +682,7 @@ Adobe에 DRM 오류를 보고할 때 `NATIVE_SUBERROR_CODE` 및 `DRM_ERROR_STRIN
   <tr> 
    <td colname="col1"> 3368 </td> 
    <td colname="col2"><span class="codeph"> AAXS_UserSettingsNoAccess</span> </td> 
-   <td colname="col3"> <p>사용자가 작업을 취소했거나 시스템에 대한 액세스를 허용하지 않는 설정을 입력했습니다. </p> <p>이 오류는 SWF 버전이 19 이상일 때만 발생합니다. 이전 버전과의 호환성을 위해 SWF이 버전 18 이하일 때 3321이 발생합니다. </p> <p>배포자의 소프트웨어는 사용자에게 샌드박스가 해제된 플러그인 액세스를 허용하는 방법에 대한 설명을 안내해야 합니다. 자세한 내용은 <a href="https://helpx.adobe.com/adobe-access/kb/error-3321.html" format="html" scope="external"> Google Chrome의 샌드박스 해제 액세스가 거부됨</a> 및 <a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> Chrome의 DRM 오류 3322/3346/3368(정보 표시줄 문제)</a>. </p> </td> 
+   <td colname="col3"> <p>사용자가 작업을 취소했거나 시스템에 대한 액세스를 허용하지 않는 설정을 입력했습니다. </p> <p>이 오류는 SWF 버전이 19 이상일 때만 발생합니다. 이전 버전과의 호환성을 위해 SWF이 버전 18 이하일 때 3321이 발생합니다. </p> <p>배포자의 소프트웨어는 사용자에게 샌드박스가 해제된 플러그인 액세스를 허용하는 방법에 대한 설명을 안내해야 합니다. Google Chrome의 샌드박스 해제 액세스가 거부됨</a> 및 <a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> Chrome의 DRM 오류 3322/3346/3368(정보 표시줄 문제)</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3369 </td> 

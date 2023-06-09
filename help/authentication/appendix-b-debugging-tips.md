@@ -2,9 +2,9 @@
 title: 부록 B "디버깅 팁"
 description: 부록 B "디버깅 팁"
 exl-id: ea024797-315e-47c0-99ea-1ac49c8c9697
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Primetime 인증은 브라우저 캐시, LSO 캐시 및 쿠키와 같은 �
 
 - [브라우저 캐시 및 쿠키 지우기](#clearing-the-browser-cache-and-cookies)
 - [LSO 캐시 지우기](#clearing-lsos-cache)\
-    
+   
 
 ## 브라우저 캐시 및 쿠키 지우기 {#clearing-the-browser-cache-and-cookies}
 
@@ -41,8 +41,7 @@ Firefox에서는 브라우저를 신뢰할 수 있지만, &quot;도구&quot; -\>
 Adobe Primetime 인증 엔지니어는 다음 디버깅 도구를 사용합니다.
 
 - 파이어버그 - <http://www.getfirebug.com/>
-- Flashbug(Flash Player의 디버그 버전에서 작동) <https://addons.mozilla.org/en-US/firefox/addon/14465/>
-- 라이브 http 헤더 - <https://addons.mozilla.org/en-US/firefox/addon/3829/>
+- Flashbug(Flash Player의 디버그 버전에서 작동)
 - 바이올린 - <http://www.fiddler2.com/fiddler2/>
 - Charles - <http://www.charlesproxy.com/>
 - 와이어샤크 <http://www.wireshark.org/>

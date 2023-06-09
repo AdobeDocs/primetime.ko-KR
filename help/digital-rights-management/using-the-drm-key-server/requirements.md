@@ -3,9 +3,9 @@ title: Primetime DRM 키 서버 사용을 위한 요구 사항
 description: Primetime DRM 키 서버 사용을 위한 요구 사항
 copied-description: true
 exl-id: a5c0db05-15a1-45b0-abb9-11f857f5e34c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,9 @@ Primetime DRM 키 서버를 사용하기 위한 최소 요구 사항은 다음�
 
 * [Java JRE 1.6](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 나중에 Windows 64비트에서 HSM을 사용하려면 JRE 8이 필요합니다.
 
-   >[!NOTE]
-   >
-   >64비트 PKCS11은 이제 OpenJDK 8에서 지원됩니다. [https://openjdk.java.net/jeps/131](https://openjdk.java.net/jeps/131)및 Oracle JDK: [https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6880559](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6880559).
-
+  >[!NOTE]
+  >
+  >64비트 PKCS11은 이제 OpenJDK 8에서 지원됩니다. [https://openjdk.java.net/jeps/131](https://openjdk.java.net/jeps/131), 및 Oracle
 * [Apache Tomcat 7](https://tomcat.apache.org)
 * Adobe에서 발급한 자격 증명
 * Microsoft에서 발급한 자격 증명(Xbox 360 클라이언트용)

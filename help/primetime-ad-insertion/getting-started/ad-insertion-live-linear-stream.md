@@ -2,9 +2,9 @@
 title: 라이브/선형 스트림에서 Ad Insertion 사용
 description: 라이브/선형 스트림에서 Ad Insertion 사용
 exl-id: d56ed723-ec72-4bbd-befc-6858c7c9d800
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Primetime Ad Insertion은 다음을 포함한 광범위한 표준 및 비표준 
 
 * DPI SCTE-35(SCTE-35 향상된 광고 마커)
 
-* [Adobe 디지털 프로그램 삽입 시그널링 사양](https://www.adobe.com/content/dam/acom/en/devnet/primetime/PrimetimeDigitalProgramInsertionSignalingSpecification.pdf)
+* [Adobe 디지털 프로그램 삽입 시그널링 사양](assets/PrimetimeDigitalProgramInsertionSignalingSpecification.pdf)
 
 * 이진 SCTE-35(HLS 및 DASH 모두)
 
@@ -33,4 +33,4 @@ Primetime Ad Insertion은 다음을 포함한 광범위한 표준 및 비표준 
 
 ## 조기 복귀(조기 광고 종료) {#early-return-early-ad-exit}
 
-스포츠 이벤트가 갑자기 동작으로 돌아오는 경우와 같이 라이브/선형 스트림에서 광고 브레이크에서 조기에 반환해야 하는 경우가 있습니다. 각 광고 결정 형식에는 &quot;cue-out&quot;(ads) 또는 &quot;cue-in&quot;(content)에 대한 태그가 포함되어 있습니다.  광고 브레이크가 종료되기 전에 &quot;큐 인&quot; 태그가 발생하면 Adobe Primetime Ad Insertion에서 큐 인을 처리합니다.  조기 반환을 활성화하려면 콘텐츠 포장기에 문의하십시오.
+스포츠 이벤트가 갑자기 동작으로 돌아오는 경우와 같이 라이브/선형 스트림에서 광고 브레이크에서 조기에 반환해야 하는 경우가 있습니다. 각 광고 결정 형식에는 &quot;cue-out&quot;(ads) 또는 &quot;cue-in&quot;(content)에 대한 태그가 포함되어 있습니다.  광고 브레이크가 끝나기 전에 &quot;큐 인&quot; 태그가 발견되면 Adobe Primetime Ad Insertion이 큐 인을 처리합니다.  조기 반환을 활성화하려면 콘텐츠 포장기에 문의하십시오.
