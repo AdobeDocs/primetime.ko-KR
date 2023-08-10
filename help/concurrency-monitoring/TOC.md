@@ -2,10 +2,10 @@
 product: adobe primetime
 audience: end-user
 user-guide-title: Primetime 동시 모니터링
-user-guide-description: null
-source-git-commit: ac0c15b951f305e29bb8fa0bd45aa2c53de6ad15
+user-guide-description: 여러 애플리케이션에서 동시 사용 제한을 정의하고 적용하는 방법에 대해 알아봅니다.
+source-git-commit: d84723842e5c540ddf83c4007da09e44b4f08eff
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
