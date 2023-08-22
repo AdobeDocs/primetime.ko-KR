@@ -2,14 +2,14 @@
 title: iOS/tvOS 애플리케이션 등록
 description: iOS/tvOS 애플리케이션 등록
 exl-id: 89ee6b5a-29fa-4396-bfc8-7651aa3d6826
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
-# iOS/tvOS 애플리케이션 등록 {#iostvos-application-registration}
+# iOS/tvOS 애플리케이션 등록 {#iostvos-application-registration}
 
 >[!NOTE]
 >

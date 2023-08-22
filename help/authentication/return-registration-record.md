@@ -2,7 +2,7 @@
 title: 등록 레코드 반환
 description: 등록 레코드 반환
 exl-id: 7b9e63a2-59b6-4123-a19b-ee1f021219ea
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -20,27 +20,27 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
- </br>
- 
+</br>
+
 
 ## 설명 {#description}
 
-등록 코드 UUID, 등록 코드 및 해시된 장치 ID가 포함된 등록 코드 레코드를 반환합니다. 
+등록 코드 UUID, 등록 코드 및 해시된 장치 ID가 포함된 등록 코드 레코드를 반환합니다.
 
- 
+
 
 <div>
 
 
-| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
 | &lt;reggie_fqdn>;/reggie/v1/{requestorId}/regcode/{registrationCode}</br></br>예:</br></br>&lt;reggie_fqdn>/reggie/v1/sampleRequestorId/regcode/TJCFK?format=xml | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자  </br>    (경로 구성 요소)</br>2.  등록 코드  </br>    (경로 구성 요소) | GET | 등록 코드 및 정보가 포함된 XML 또는 JSON입니다. 아래 스키마 및 샘플을 참조하십시오. | 200 |
 

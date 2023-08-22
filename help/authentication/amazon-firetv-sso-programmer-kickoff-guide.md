@@ -2,7 +2,7 @@
 title: Amazon fireTV SSO - 프로그래머 시작 안내서
 description: Amazon fireTV SSO - 프로그래머 시작 안내서
 exl-id: cf9ba614-57ad-46c3-b154-34204b38742d
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -56,7 +56,7 @@ fireTV의 일반, HBA 및 SSO 시나리오를 설명하는 사용자 흐름의 �
 1. 은(는) 어떻게 됩니까? **SSO** 일?
 
    * SSO는 동일한 Amazon fireTV 장치에서 새로운 fireTV SDK를 사용하는 Adobe Primetime 인증에서 제공하는 모든 프로그래머 애플리케이션에서 작동합니다
-   * Clientless REST API에 구현된 프로그래머 앱과 fireTV SDK에 구현된 앱 간의 SSO **이(가) 지원되지 않습니다.**
+   * Clientless REST API에 구현된 프로그래머 앱과 fireTV SDK에 구현된 앱 간의 SSO **이(가) 지원되지 않습니다.**
 
 1. fireTV SSO의 MVPD 범위는 얼마입니까?
 

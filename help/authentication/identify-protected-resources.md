@@ -2,7 +2,7 @@
 title: 보호된 리소스 식별
 description: 보호된 리소스 식별
 exl-id: e96aea02-54b2-491d-ba91-253c0d0e681c
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
@@ -23,15 +23,14 @@ ht-degree: 0%
    - 채널
       - 표시
          - 에피소드
-            - 자산\
-                
+            - 자산
 
 </br>
 
 ## 미디어 RSS 형식 {#media_rss}
 
-리소스는 간단한 문자열(채널의 고유 식별자)로 식별하거나, Adobe(또는 Adobe Primetime 인증 승인 파트너)와 참여 MVPD 및 프로그래머 간에 합의된 대로 MRSS(미디어 RSS 형식)로 나타낼 수 있습니다. 리소스 지정자로 사용되는 RSS 문자열에는 등급 및 자녀 보호 메타데이터와 같은 추가 정보가 포함될 수 있습니다.\
- 
+리소스는 간단한 문자열(채널의 고유 식별자)로 식별하거나, Adobe(또는 Adobe Primetime 인증 승인 파트너)와 참여 MVPD 및 프로그래머 간에 합의된 대로 MRSS(미디어 RSS 형식)로 나타낼 수 있습니다. 리소스 지정자로 사용되는 RSS 문자열에는 등급 및 자녀 보호 메타데이터와 같은 추가 정보가 포함될 수 있습니다.
+
 
 &quot;TNT&quot;와 같은 단순 리소스 식별자를 사용하는 경우 이 리소스 식별자가 채널을 나타낸다고 가정하고 이 RSS 리소스 지정자로 변환됩니다.
 
@@ -42,7 +41,7 @@ ht-degree: 0%
         </channel>
     </rss>
 ```
- 
+
 
 예를 들어, 보다 복잡한 지정자에는 추가 등급 정보가 포함될 수 있습니다. 리소스 ID가 필요한 Access Enabler 함수에 전체 RSS 문자열을 전달할 수 있습니다. [`getAuthorization()`](/help/authentication/rest-api-reference.md):
 

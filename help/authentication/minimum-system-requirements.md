@@ -2,7 +2,7 @@
 title: 최소 시스템 요구 사항
 description: 최소 시스템 요구 사항
 exl-id: 57b21e2a-abd7-4b4b-85f1-25584a850e40
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Adobe Primetime 인증 팀에서는 안정적인 최신 버전의 브라우저 �
 
 이러한 오래된 플랫폼에 나타나는 문제를 완화하기 위한 초기 접근 방식은 최신 버전으로 업그레이드해야 합니다. OS 버전, 브라우저 버전 또는 설치된 애플리케이션 버전일 수 있습니다.
 
-이러한 플랫폼에 나타나는 모든 문제는 Adobe Primetime 인증 팀에서 최선을 다해 해결합니다. 
+이러한 플랫폼에 나타나는 모든 문제는 Adobe Primetime 인증 팀에서 최선을 다해 해결합니다.
 
-Adobe Primetime은 고객 및 파트너에게 성능, 효율성 및 보안 개선 외에도 잠재적인 문제에 대한 Adobe의 모든 지원을 활용할 수 있도록 최신 버전으로 업그레이드하는 것을 고려할 것을 권장합니다. 
+Adobe Primetime은 고객 및 파트너에게 성능, 효율성 및 보안 개선 외에도 잠재적인 문제에 대한 Adobe의 모든 지원을 활용할 수 있도록 최신 버전으로 업그레이드하는 것을 고려할 것을 권장합니다.
 
 
 ## 브라우저 및 운영 체제 요구 사항 {#browser-OS-system-requirements}
@@ -56,13 +56,13 @@ Adobe Primetime은 고객 및 파트너에게 성능, 효율성 및 보안 개�
 
 >[!NOTE]
 >
->서드파티 쿠키 - 서드파티 쿠키가 비활성화되면 Adobe Primetime 인증 권한 흐름이 실패할 수 있습니다.  이 문제는 브라우저 설정을 수정할 때만 실행됩니다. 지원되는 모든 브라우저의 경우 Primetime 인증이 기본 설정에서 작동해야 합니다.\
- 
+>서드파티 쿠키 - 서드파티 쿠키가 비활성화되면 Adobe Primetime 인증 권한 흐름이 실패할 수 있습니다.  이 문제는 브라우저 설정을 수정할 때만 실행됩니다. 지원되는 모든 브라우저의 경우 Primetime 인증이 기본 설정에서 작동해야 합니다.
+
 
 ## REST(클라이언트 없음) 구현을 위한 장치 요구 사항 {#general_clientless_reqs}
 
- 
-클라이언트 없는 구현을 통해 Adobe Primetime 인증 서비스를 사용하는 모든 장치 **은(는) 다음을 수행할 수 있어야 합니다.**:
+
+클라이언트 없는 구현을 통해 Adobe Primetime 인증 서비스를 사용하는 모든 장치 **은(는) 다음을 수행할 수 있어야 합니다.**:
 
 * 고유한 해시된 장치 ID를 제공합니다. 장치에서 해시된 고유 장치 ID를 제공하지 않는 경우 Adobe Primetime 인증에서 제공한 고유 ID를 유지할 수 있어야 합니다. 장치는 Adobe Primetime 인증 API를 호출할 때 로컬 저장소에서 고유 ID를 영구적으로 유지하고 고유 ID를 장치 ID로 제공할 수 있어야 합니다.
 * HMAC-SHA1 알고리즘을 사용하여 디지털 서명 생성

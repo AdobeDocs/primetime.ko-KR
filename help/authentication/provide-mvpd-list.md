@@ -2,7 +2,7 @@
 title: MVPD 목록 제공
 description: MVPD 목록 제공
 exl-id: db2d8f19-d0b9-4195-bf0b-f9de0d96062b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
- </br>
+</br>
 
 ## 설명 {#description}
 
 요청자에 대해 구성된 MVPD 목록을 반환합니다.
 
-| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
 | &lt;sp_fqdn>/api/v1/config/{requestorId}</br></br>예:</br></br>&lt;sp_fqdn>/api/v1/config/sampleRequestorId | Primetime 인증 | 1. 요청자</br>    (경로 구성 요소)</br>_2.  deviceType(더 이상 사용되지 않음)_ | GET | MVPD 목록이 포함된 XML 또는 JSON. | 200 |
 

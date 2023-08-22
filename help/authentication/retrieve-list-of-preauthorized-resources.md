@@ -2,7 +2,7 @@
 title: 사전 승인된 리소스 목록 검색
 description: 사전 승인된 리소스 목록 검색
 exl-id: 3821378c-bab5-4dc9-abd7-328df4b60cc3
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 API에는 스트리밍 앱 또는 프로그래머 서비스용 세트와 두 번째 화면 웹 앱용 세트, 이렇게 두 개의 API 세트가 있습니다. 이 페이지에서는 스트리밍 앱 또는 프로그래머 서비스용 API에 대해 설명합니다.
 
 
-| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
-| &lt;sp_fqdn>/api/v1/사전 승인 | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자(필수)</br>2.  deviceId(필수)</br>3.  리소스 목록(필수)</br>4.  device_info/X-Device-Info (필수)</br>5.  _deviceType_</br> 6.  _deviceUser_ (사용하지 않음)</br>7.  _appId_ (사용하지 않음) | GET | 개별 사전 인증 결정 또는 오류 세부 정보가 포함된 XML 또는 JSON입니다. 아래 샘플을 참조하십시오. | 200 - 성공</br></br>400 - 잘못된 요청</br></br>401 - 승인되지 않음</br></br>405 - 메서드가 허용되지 않음  </br></br>412 - 사전 조건 오류</br></br>500 - 내부 서버 오류 |
+| &lt;sp_fqdn>/api/v1/사전 승인 | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자(필수)</br>2.  deviceId(필수)</br>3.  리소스 목록(필수)</br>4.  device_info/X-Device-Info (필수)</br>5.  _deviceType_</br> 6.  _deviceUser_ (사용하지 않음)</br>7.  _appId_ (사용하지 않음) | GET | 개별 사전 인증 결정 또는 오류 세부 정보가 포함된 XML 또는 JSON입니다. 아래 샘플을 참조하십시오. | 200 - 성공</br></br>400 - 잘못된 요청</br></br>401 - 승인되지 않음</br></br>405 - 메서드가 허용되지 않음  </br></br>412 - 사전 조건 오류</br></br>500 - 내부 서버 오류 |
 
 
 | 입력 매개 변수 | 설명 |
@@ -46,16 +46,16 @@ API에는 스트리밍 앱 또는 프로그래머 서비스용 세트와 두 번
 | 요청자 | 이 작업이 유효한 Programmer requestorId입니다. |
 | deviceId | 장치 ID 바이트입니다. |
 | 리소스 목록 | 사용자가 액세스할 수 있고 MVPD 권한 부여 종단점에서 인식하는 콘텐츠를 식별하는, 쉼표로 구분된 resourceId 목록이 포함된 문자열입니다. |
-| device_info/</br></br>X-Device-Info | 스트리밍 장치 정보입니다.</br></br>**참고**: 이 매개 변수는 URL 매개 변수로 device_info를 전달할 수 있지만, 이 매개 변수의 잠재적 크기와 GET URL 길이 제한으로 인해 http 헤더에서 X-Device-Info로 전달해야 합니다. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
-| _deviceType_ | 디바이스 유형(예: Roku, PC).</br></br>이 매개 변수가 올바르게 설정되면 ESM은 다음과 같은 지표를 제공합니다. [장치 유형별 분류](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) 예를 들어 Roku, AppleTV 및 Xbox와 같은 다양한 유형의 분석을 수행할 수 있도록 Clientless를 사용할 때</br></br>다음을 참조하십시오. [전달 지표에서 클라이언트 없는 장치 유형 매개 변수 사용의 이점&#x200B;](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**참고**: `device_info` 이 매개 변수를 대체합니다. |
+| device_info/</br></br>X-Device-Info | 스트리밍 장치 정보입니다.</br></br>**참고**: URL 매개 변수로 device_info를 전달할 수 있지만, 이 매개 변수의 잠재적 크기와 GET URL 길이 제한으로 인해 http 헤더에서 X-Device-Info로 전달해야 합니다. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
+| _deviceType_ | 디바이스 유형(예: Roku, PC).</br></br>이 매개 변수가 올바르게 설정되면 ESM은 다음과 같은 지표를 제공합니다. [장치 유형별 분류](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) 예를 들어 Roku, AppleTV 및 Xbox와 같은 다양한 유형의 분석을 수행할 수 있도록 Clientless를 사용할 때</br></br>다음을 참조하십시오. [전달 지표에서 클라이언트 없는 장치 유형 매개 변수 사용의 이점&#x200B;](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**참고**: `device_info` 이 매개 변수를 대체합니다. |
 | _deviceUser_ | 장치 사용자 식별자. |
-| _appId_ | 애플리케이션 ID/이름입니다. </br></br>**참고**: device_info가 이 매개 변수를 대체합니다. |
+| _appId_ | 애플리케이션 ID/이름입니다. </br></br>**참고**: device_info가 이 매개 변수를 대체합니다. |
 
 
 
 ### 샘플 응답 {#sample-response}
 
- 
+
 
 **XML:**
 
@@ -85,7 +85,7 @@ Content-Type: application/xml; charset=utf-8
   </resource>
 </resources>
 ```
- 
+
 </br>
 
 **JSON:**

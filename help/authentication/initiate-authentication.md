@@ -2,7 +2,7 @@
 title: 인증 시작
 description: 인증 시작
 exl-id: 55dddd29-68d6-4aae-8744-307fea285e29
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -19,24 +19,24 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
 
 ## 설명 {#description}
 
-MVPD 선택 이벤트를 알려 인증 프로세스를 시작합니다. Primetime 인증 데이터베이스에 레코드를 만듭니다. 이 데이터베이스는 MVPD에서 성공적인 응답을 받으면 조정됩니다. 
+MVPD 선택 이벤트를 알려 인증 프로세스를 시작합니다. Primetime 인증 데이터베이스에 레코드를 만듭니다. 이 데이터베이스는 MVPD에서 성공적인 응답을 받으면 조정됩니다.
 
 
 
-| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
 | &lt;sp_fqdn>/api/v1/authenticate | AuthN 모듈 | 1. requestor_id (필수)</br>2.  mso_id(필수)</br>3.  reg_code(필수)</br>4.  domain_name(필수)</br>5.  noflash=true -  </br>    (필수, 잔여 매개 변수)</br>6.  no_iframe=true (필수, 잔차 매개 변수)</br>7.  추가 매개 변수(선택 사항)</br>8.  redirect_url(필수) | GET | 로그인 웹 앱은 MVPD 로그인 페이지로 리디렉션됩니다. | 전체 리디렉션 구현의 경우 302 |
 
@@ -60,10 +60,9 @@ MVPD 선택 이벤트를 알려 인증 프로세스를 시작합니다. Primetim
 >**중요: 필수 매개 변수 -** 클라이언트측 구현에 관계없이 위의 모든 매개 변수는 필수입니다.
 >
 >
->예:    
+>예:
 >
->
-```
+>```
 >domain_name=loginwebapp.com
 >mso_id=sampleMvpdId
 >reg_code=RO0885W
@@ -88,10 +87,10 @@ MVPD 선택 이벤트를 알려 인증 프로세스를 시작합니다. Primetim
 
 ### **메모** {#notes}
 
-* 값 `domain_name` 매개 변수는 Primetime 인증에 등록된 도메인 이름 중 하나로 설정해야 합니다. 자세한 내용은 다음을 참조하십시오. [등록 및 초기화](/help/authentication/programmer-overview.md).
+* 값 `domain_name` 매개 변수는 Primetime 인증에 등록된 도메인 이름 중 하나로 설정해야 합니다. 자세한 내용은 다음을 참조하십시오. [등록 및 초기화](/help/authentication/programmer-overview.md).
 
 * [/authenticate 요청에 &#39;&amp;&#39;reg\_code를 사용하지 마십시오(기술 노트).](/help/authentication/clientless-avoid-using-reg-code-in-authenticate-request.md)
 
-* 다음 `redirect_url` 매개 변수는 순서대로 마지막 매개 변수여야 합니다.
+* 다음 `redirect_url` 매개 변수는 순서대로 마지막 매개 변수여야 합니다.
 
-* 값 `redirect_url` 매개 변수는 URL로 인코딩해야 합니다.
+* 값 `redirect_url` 매개 변수는 URL로 인코딩해야 합니다.

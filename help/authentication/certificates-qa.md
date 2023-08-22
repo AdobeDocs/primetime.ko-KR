@@ -2,7 +2,7 @@
 title: 인증서 Q&A
 description: 인증서 Q&A
 exl-id: d4e493b0-4467-42b1-9758-16c5941d8051
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -29,6 +29,6 @@ ht-degree: 0%
 
 </br>
 
-**Q3:** 새로운 유연한 TempPass를 사용하는 웹 페이지에 새 인증서가 필요합니까? 
+**Q3:** 새로운 유연한 TempPass를 사용하는 웹 페이지에 새 인증서가 필요합니까?
 
-**A:** 인증서(및 모든 인증서)는 미디어 회사 및 프로그래머 수준에서 구성됩니다. FlexibleTempPass는 MVPD이므로 이에 대한 인증서를 구성할 필요가 없습니다. 따라서 기존 프로그래머를 유연한 TempPass와 통합하는 경우 프로그래머/미디어 회사 수준에서 이미 구성된 인증서가 사용됩니다.
+**A:** 인증서(및 모든 인증서)는 미디어 회사 및 프로그래머 수준에서 구성됩니다. FlexibleTempPass는 MVPD이므로 이에 대한 인증서를 구성할 필요가 없습니다. 따라서 기존 프로그래머를 유연한 TempPass와 통합하는 경우 프로그래머/미디어 회사 수준에서 이미 구성된 인증서가 사용됩니다.

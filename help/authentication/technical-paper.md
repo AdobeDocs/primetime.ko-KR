@@ -2,7 +2,7 @@
 title: Adobe Primetime 인증 및 TV Everywhere
 description: Adobe Primetime 인증 및 TV Everywhere
 exl-id: 5edeaccb-f9fa-4395-83b4-706c518d5a03
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '6288'
 ht-degree: 0%
@@ -290,7 +290,6 @@ Adobe Primetime 인증과의 통합을 시작하기 전에 프로그래머는 �
 >* 권한 부여는 SP(Adobe Primetime 인증)와 IdP(유료 TV 공급자) 간에 백 채널(서버 간) 웹 서비스 교환을 사용합니다.
 
 
-
 ##### Access Enabler를 사용한 프로그래머 커뮤니케이션
 
 Access Enabler와 Programmer의 웹 페이지 또는 플레이어 앱 간의 양방향 통신 채널은 완전히 비동기적인 패턴을 따릅니다. 프로그래머는 Access Enabler API에 의해 노출된 방법을 통해 Access Enabler에 메시지를 전송합니다. Access Enabler는 Access Enabler 라이브러리에 등록된 콜백을 통해 응답합니다.
@@ -420,3 +419,4 @@ Adobe Primetime 인증을 사용하면 Adobe Primetime 인증과 참여 유료 T
 >[!NOTE]
 >
 >**다음 단계:** 자세한 내용은 Adobe 담당자에게 문의하거나 정보 요청 양식 을 작성하십시오 [여기](https://www.adobe.com/cfusion/mmform/index.cfm?name=adobepass_rfi).
+>

@@ -2,7 +2,7 @@
 title: 등록 레코드 삭제
 description: 등록 리소스 삭제
 exl-id: 42707070-2e1f-4847-93fd-30025aef56c1
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -19,22 +19,22 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
 
 ## 설명 {#delete-record}
 
-정규 코드 레코드를 삭제하고 재사용을 위해 정규 코드를 해제합니다. 
+정규 코드 레코드를 삭제하고 재사용을 위해 정규 코드를 해제합니다.
 
-| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
 | &lt;reggie_fqdn>/reggie/v1/{requestorId}/regcode/{registrationCode}</br></br>예:</br></br>&lt;reggie_fqdn>/reggie/v1/regcode/ER45RTY | 스트리밍 앱</br></br>또는</br></br>프로그래머 서비스 | 1. 요청자 ID  </br>    (경로 구성 요소)</br>2.  등록 코드  </br>    (경로 구성 요소) | DELETE | 없음 | 204 |
 

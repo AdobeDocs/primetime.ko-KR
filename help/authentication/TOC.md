@@ -1,9 +1,10 @@
 ---
 product: adobe primetime
 audience: end-user
+feature: Authentication
 user-guide-title: Primetime 인증
 user-guide-description: Primetime 인증은 TV Everywhere에 대한 권한 부여 솔루션으로서, 리소스 액세스를 요청하는 사용자에게 권한이 있는지 여부를 결정하는 모듈식 프레임워크를 제공합니다.
-source-git-commit: 5e649f1c0937882c9a05809af8916229f6a95e73
+source-git-commit: 11ca161ebaaeca08b6bdc84f9bd719dfc8509d09
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%

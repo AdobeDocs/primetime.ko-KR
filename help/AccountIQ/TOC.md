@@ -1,8 +1,9 @@
 ---
 product: adobe primetime
 audience: end-user
+feature: Account IQ
 user-guide-description: Primetime 계정 IQ 도움말은 계정 IQ 구성 요소에 대한 정보를 제공하며, 다양한 구성 요소를 사용할 수 있는 사용자 여정에 대해 안내합니다.
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 11ca161ebaaeca08b6bdc84f9bd719dfc8509d09
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 title: iOS/tvOS API 사전 인증
 description: iOS/tvOS API 사전 인증
 exl-id: 79c596a4-0e38-4b6c-bb85-f97c6af45ed8
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->인증 API **필수** 사용자에게 지정된 리소스에 대한 액세스 권한을 부여하기 전에 사용할 수 있습니다.
+>인증 API **필수** 사용자에게 지정된 리소스에 대한 액세스 권한을 부여하기 전에 사용할 수 있습니다.
 
-사전 권한 부여 API 응답 결과에 사전 권한 부여 거부됨 결정이 있는 리소스가 하나 이상 포함된 경우, 추가 오류 정보가 포함될 수 있습니다 **(아래 참고 참조)** 영향을 받는 각 리소스에 대해
+사전 권한 부여 API 응답 결과에 사전 권한 부여 거부됨 결정이 있는 리소스가 하나 이상 포함된 경우, 추가 오류 정보가 포함될 수 있습니다 **(아래 참고 참조)** 영향을 받는 각 리소스에 대해
 
 >[!IMPORTANT]
 >
@@ -31,7 +31,7 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
 
 </br>
 
-## `- (void) preauthorize:(nonnull PreauthorizeRequest *)request didCompleteWith:(nonnull AccessEnablerCallback<PreauthorizeResponse *> *)callback;`
+## `- (void) preauthorize:(nonnull PreauthorizeRequest *)request didCompleteWith:(nonnull AccessEnablerCallback<PreauthorizeResponse *> *)callback;`
 
 
 **가용성:** v3.6.0+
@@ -42,10 +42,10 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
 - AccessEnablerCallback: API 응답을 반환하는 데 사용되는 콜백 개체
 - PreauthorizeResponse: API 응답 콘텐츠를 반환하는 데 사용되는 응답 개체
 
- 
+
 </br>
 
-## `class PreauthorizeRequest`{#androidpreauthorizerequest}
+## `class PreauthorizeRequest`{#androidpreauthorizerequest}
 
 ### **클래스 PreauthorizeRequest.Builder**
 
@@ -69,7 +69,7 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
     ///
     public func setResources(resources: [String]) -> PreauthorizeRequest.Builder
 
- 
+ 
 
     ///
     /// Sets the features which you want to have them disabled when obtaining preauthorization decisions.
@@ -88,9 +88,9 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
     ///
     /// - Returns: The reference to the same `Builder` object instance which is the receiver of the function call. It does this in order to allow the creation of function chaining.
     ///
-    public func disableFeatures(features: Set<PreauthorizeRequest.Feature>) -> PreauthorizeRequest.Builder
+    public func disableFeatures(features: Set<PreauthorizeRequest.Feature>) -> PreauthorizeRequest.Builder
 
- 
+ 
 
     ///
     /// Creates and retrieves the reference of a new `PreauthorizeRequest` object instance.
@@ -107,9 +107,9 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
     ///
     /// - Returns: The reference to a new `PreauthorizeRequest` object instance.
     ///
-    public func build() -> PreauthorizeRequest
+    public func build() -> PreauthorizeRequest
 ```
- 
+
 
 ## **enum PreauthorizeRequest.Feature**
 
@@ -132,11 +132,11 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
 ## `interface AccessEnablerCallback<PreauthorizeResponse>` {#accessenablercallback}
 
 ```
-    /// Response callback called by the SDK when the preauthorize API request was fulfilled. The result is either a successful or an error result containing a status.
+    /// Response callback called by the SDK when the preauthorize API request was fulfilled. The result is either a successful or an error result containing a status.
     public func onResponse(result: PreauthorizeResponse)
 
 
-    /// Failure callback called by the SDK when the preauthorize API request could not be serviced. The result is a failure result containing a status. 
+    /// Failure callback called by the SDK when the preauthorize API request could not be serviced. The result is a failure result containing a status. 
     public func onFailure(result: PreauthorizeResponse)
 ```
 
@@ -150,13 +150,13 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
     /// - Returns: Additional status (state) information in case of error or failure.
     ///   Might hold a `nil` value.
     ///
-    public Status getStatus()
+    public Status getStatus()
 
     ///
     /// - Returns: The list of preauthorization decisions. One decision for each resource.
     ///            The list might be empty in case of error or failure.
     ///
-    public List<Decision> getDecisions()
+    public List<Decision> getDecisions()
 ```
 
 ### 예:
@@ -193,7 +193,7 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
         ]
     }
 ```
- 
+
 
 하나 이상의 리소스에 거부된 사전 권한 부여 결정이 있으며 향상된 오류 보고 기능이 Adobe Primetime 인증 구성에서 활성화되지 않았습니다
 
@@ -216,7 +216,7 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
         ]
     }
 ```
- 
+
 
 하나 이상의 리소스에 거부된 사전 권한 부여 결정이 있으며 Adobe Primetime 인증 구성에서 향상된 오류 보고 기능이 활성화됩니다
 
@@ -247,29 +247,29 @@ Adobe Primetime 인증 SDK 오류로 인해 사전 승인 API 요청을 처리�
         ]
     }
 ```
- 
+
 
 #### 오류
 
- 
+
 
 Adobe Primetime 인증 서비스가 API 사전 인증 요청을 제공하는 동안 오류가 발생했습니다.
 
 ```JSON
     {
-        "resources": [],
-        "status": {
-            "status": 400,
-            "code" : "bad_request",
-            "message": "Missing required parameter : deviceId",
-            "details": "",
-            "helpUrl" : "https://experienceleague.adobe.com/docs/primetime/authentication/auth-features/error-reportn/enhanced-error-codes.html",
-            "trace" : "9f115e1c-0158-4a41-8805-9f68923f3646",
-            "action" : "none"
-        }
+        "resources": [],
+        "status": {
+            "status": 400,
+            "code" : "bad_request",
+            "message": "Missing required parameter : deviceId",
+            "details": "",
+            "helpUrl" : "https://experienceleague.adobe.com/docs/primetime/authentication/auth-features/error-reportn/enhanced-error-codes.html",
+            "trace" : "9f115e1c-0158-4a41-8805-9f68923f3646",
+            "action" : "none"
+        }
     }
 ```
- 
+
 
 #### 실패
 
@@ -385,14 +385,14 @@ Adobe Primetime 인증 SDK가 사전 인증 API 요청을 제공하는 동안 �
     ///
     /// - Returns: The resource id for which the decision was obtained.
     ///
-    public Status getId()
+    public Status getId()
 
     ///
     /// This is a getter function.
     ///
     /// - Returns: The value of the flag indicating if the decision is successful or not.
     ///
-    public boolean isAuthorized()
+    public boolean isAuthorized()
 
     ///
     /// This is a getter function.
@@ -400,7 +400,7 @@ Adobe Primetime 인증 SDK가 사전 인증 API 요청을 제공하는 동안 �
     /// - Returns: Additional status (state) information in case some error has occurred.
     ///            Might hold a `nil` value.
     ///
-    public Status getError()
+    public Status getError()
 ```
 
 </br>
@@ -417,15 +417,15 @@ let disabledFeatures: Set<PreauthorizationRequest.Feature> = [PreauthorizationRe
 
 let request: PreauthorizationRequest = PreauthorizationRequest.Builder()
 
-                  .setResources(resources: resources)
+                  .setResources(resources: resources)
 
 
-                  .disableFeatures(features: disabledFeatures)  // It is **optional** to disable features. If not used all features are enabled by default.
+                  .disableFeatures(features: disabledFeatures)  // It is **optional** to disable features. If not used all features are enabled by default.
 
-                  .build();
+                  .build();
 
 // Build the AccessEnablerCallback by providing the constructor two callbacks for onResponse and onFailure handling  
-func onResponseCallback(result: PreauthorizeResponse) -> Void {  //
+func onResponseCallback(result: PreauthorizeResponse) -> Void {  //
 TODO };
 
 func onFailureCallback(result: PreauthorizeResponse) -> Void {

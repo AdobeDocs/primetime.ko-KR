@@ -2,7 +2,7 @@
 title: 권한 부여 서비스 모니터링 API
 description: 권한 부여 서비스 모니터링 API
 exl-id: a9572372-14a6-4caa-9ab6-4a6baababaa1
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '2026'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ESM(Entitlement Service Monitoring)은 WOLAP(웹 기반)로 구현됨 [온라인
 >
 >ESM API는 일반적으로 사용할 수 없습니다. 가용성에 대한 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
 
-ESM API는 기본 OLAP 큐브의 계층 구조 보기를 제공합니다. 각 리소스([차원](#esm_dimensions) 차원 계층에서 URL 경로 세그먼트로 매핑됨)은 (집계됨)을 사용하여 보고서를 생성합니다 [지표](#esm_metrics) 현재 선택 항목에 사용됩니다. 각 리소스는 상위 리소스(롤업용)와 하위 리소스(드릴다운용)를 가리킵니다. 슬라이싱 및 다이싱은 특정 값 또는 범위에 차원을 고정하는 쿼리 문자열 매개 변수를 통해 수행됩니다.
+ESM API는 기본 OLAP 큐브의 계층 구조 보기를 제공합니다. 각 리소스([차원](#esm_dimensions) 차원 계층에서 URL 경로 세그먼트로 매핑됨)은 (집계됨)을 사용하여 보고서를 생성합니다 [지표](#esm_metrics) 현재 선택 항목에 사용됩니다. 각 리소스는 상위 리소스(롤업용)와 하위 리소스(드릴다운용)를 가리킵니다. 슬라이싱 및 다이싱은 특정 값 또는 범위에 차원을 고정하는 쿼리 문자열 매개 변수를 통해 수행됩니다.
 
 REST API는 차원 경로, 제공된 필터 및 선택한 지표에 따라 요청에 지정된 시간 간격(제공되지 않은 경우 기본값으로 폴백) 내에 사용 가능한 데이터를 제공합니다. 시간 차원 (연도, 월, 일, 시간, 분, 초)이 포함되지 않은 보고서에는 시간 범위가 적용되지 않습니다.
 
-끝점 URL 루트 경로는 사용 가능한 드릴다운 옵션에 대한 링크와 함께 단일 레코드 내에서 전체 집계된 지표를 반환합니다. API 버전은 끝점 URI 경로의 후행 세그먼트로 매핑됩니다. 예를 들어, `https://mgmt.auth.adobe.com/*v2*` 는 클라이언트가 WOLAP 버전 2에 액세스함을 의미합니다.
+끝점 URL 루트 경로는 사용 가능한 드릴다운 옵션에 대한 링크와 함께 단일 레코드 내에서 전체 집계된 지표를 반환합니다. API 버전은 끝점 URI 경로의 후행 세그먼트로 매핑됩니다. 예를 들어, `https://mgmt.auth.adobe.com/*v2*` 는 클라이언트가 WOLAP 버전 2에 액세스함을 의미합니다.
 
-사용 가능한 URL 경로는 응답에 포함된 링크를 통해 검색할 수 있습니다. 유효한 URL 경로는 집계된 지표를 보유하는 기본 드릴다운 트리 내의 경로를 매핑하기 위해 유지됩니다. 양식의 경로 `/dimension1/dimension2/dimension3` 이 세 가지 차원의 사전 집계를 반영합니다(SQL과 동일). `clause GROUP` 작성자: `dimension1`, `dimension2`, `dimension3`). 이러한 사전 집계가 존재하지 않고 시스템이 즉시 계산할 수 없는 경우, API는 404 Not Found 응답을 반환합니다.
+사용 가능한 URL 경로는 응답에 포함된 링크를 통해 검색할 수 있습니다. 유효한 URL 경로는 집계된 지표를 보유하는 기본 드릴다운 트리 내의 경로를 매핑하기 위해 유지됩니다. 양식의 경로 `/dimension1/dimension2/dimension3` 이 세 가지 차원의 사전 집계를 반영합니다(SQL과 동일). `clause GROUP` 작성자: `dimension1`, `dimension2`, `dimension3`). 이러한 사전 집계가 존재하지 않고 시스템이 즉시 계산할 수 없는 경우, API는 404 Not Found 응답을 반환합니다.
 
 ## 드릴다운 트리 {#drill-down-tree}
 
@@ -44,7 +44,7 @@ REST API는 차원 경로, 제공된 필터 및 선택한 지표에 따라 요�
 
 ![](assets/esm-mvpd-dimensions.png)
 
-GET: `https://mgmt.auth.adobe.com/v2` API 끝점은 다음을 포함하는 표현을 반환합니다.
+GET: `https://mgmt.auth.adobe.com/v2` API 끝점은 다음을 포함하는 표현을 반환합니다.
 
 * 사용 가능한 루트 드릴다운 경로 링크:
 
@@ -134,7 +134,7 @@ GET: `https://mgmt.auth.adobe.com/v2` API 끝점은 다음을 포함하는 표
 
 클라이언트가 사용할 수 있는 콘텐츠 협상 전략은 다음과 같습니다(우선 순위는 목록의 위치에 의해 지정됩니다.).
 
-1. URL 경로의 마지막 세그먼트에 추가된 &quot;파일 확장명&quot;: 예: `/esm/v2/media-company/year/month/day.xml`. URL에 쿼리 문자열이 포함된 경우 확장은 물음표 앞에 와야 합니다. `/esm/v2/media-company/year/month/day.csv?mvpd= SomeMVPD`
+1. URL 경로의 마지막 세그먼트에 추가된 &quot;파일 확장명&quot;: 예: `/esm/v2/media-company/year/month/day.xml`. URL에 쿼리 문자열이 포함된 경우 확장은 물음표 앞에 와야 합니다. `/esm/v2/media-company/year/month/day.csv?mvpd= SomeMVPD`
 1. 형식 쿼리 문자열 매개 변수: 예: `/esm/report?format=json`
 1. 표준 HTTP Accept 헤더(예: ) `Accept: application/xml`
 
@@ -198,32 +198,32 @@ XML 및 JSON 형식의 경우 레코드 내의 필드(차원 및 지표) 순서�
    </resource>
 ```
 
-* https://mgmt.auth.adobe.com/esm/v2/year/month.json 
+* https://mgmt.auth.adobe.com/esm/v2/year/month.json
 
-   ```JSON
-       {
-         "_links" : {
-           "self" : {
-             "href" : "/esm/v2/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21"
-           },
-           "roll-up" : {
-             "href" : "/esm/v2/year"
-           },
-           "drill-down" : {
-             "href" : "/esm/v2/year/month/day"
-           }
-         },
-         "report" : [ {
-           "month" : "6",
-           "year" : "2012",
-           "clients" : "205"
-         }, {
-           "month" : "7",
-           "year" : "2012",
-           "clients" : "466"
-         } ]
-       }
-   ```
+  ```JSON
+      {
+        "_links" : {
+          "self" : {
+            "href" : "/esm/v2/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21"
+          },
+          "roll-up" : {
+            "href" : "/esm/v2/year"
+          },
+          "drill-down" : {
+            "href" : "/esm/v2/year/month/day"
+          }
+        },
+        "report" : [ {
+          "month" : "6",
+          "year" : "2012",
+          "clients" : "205"
+        }, {
+          "month" : "7",
+          "year" : "2012",
+          "clients" : "466"
+        } ]
+      }
+  ```
 
 ### CSV
 

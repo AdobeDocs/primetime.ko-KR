@@ -2,7 +2,7 @@
 title: 오류 보고
 description: 오류 보고
 exl-id: a52bd2cf-c712-40a2-a25e-7d9560b46ba6
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '2961'
 ht-degree: 1%
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 Adobe Primetime 인증의 오류 보고는 현재 두 가지 방법으로 구현됩니다.
 
-* **고급 오류 보고** 구현자는 의 경우 오류 콜백을 등록합니다. [AccessEnabler JavaScript SDK](#accessenabler-javascript-sdk) 또는 라는 인터페이스 메서드를 구현합니다.`status`의 경우 &quot; [AccessEnabler iOS/tvOS SDK](#accessenabler-ios-tvos-sdk) 및 [AccessEnabler Android SDK](#accessenabler-android-sdk)고급 오류 보고를 받습니다. 오류는 다음과 같이 분류됩니다. **정보**, **경고**, 및 **오류** 유형. 이 보고 시스템은 **비동기**, 해당 **여러 오류가 트리거되는 순서는 보장되지 않습니다**.  고급 오류 보고 시스템에 대한 자세한 내용은 [고급 오류 보고](#advanced-error-reporting) 섹션.
+* **고급 오류 보고** 구현자는 의 경우 오류 콜백을 등록합니다. [AccessEnabler JavaScript SDK](#accessenabler-javascript-sdk) 또는 라는 인터페이스 메서드를 구현합니다.`status`의 경우 &quot; [AccessEnabler iOS/tvOS SDK](#accessenabler-ios-tvos-sdk) 및 [AccessEnabler Android SDK](#accessenabler-android-sdk)고급 오류 보고를 받습니다. 오류는 다음과 같이 분류됩니다. **정보**, **경고**, 및 **오류** 유형. 이 보고 시스템은 **비동기**, 해당 **여러 오류가 트리거되는 순서는 보장되지 않습니다**.  고급 오류 보고 시스템에 대한 자세한 내용은 [고급 오류 보고](#advanced-error-reporting) 섹션.
 
-* **원래 오류 보고 -** 특정 요청이 실패할 때 특정 콜백 함수에 오류 메시지가 전달되는 정적 보고 시스템입니다. 오류는 일반, 인증 및 권한 부여 유형으로 그룹화됩니다. 원래 시스템에서 보고된 오류 목록은 [원래 오류 보고](#original-error-reporting) 섹션.
+* **원래 오류 보고 -** 특정 요청이 실패할 때 특정 콜백 함수에 오류 메시지가 전달되는 정적 보고 시스템입니다. 오류는 일반, 인증 및 권한 부여 유형으로 그룹화됩니다. 원래 시스템에서 보고된 오류 목록은 [원래 오류 보고](#original-error-reporting) 섹션.
 
 
 ## 고급 오류 보고 {#advanced-error-reporting}
@@ -38,7 +38,7 @@ Adobe Primetime 인증의 오류 보고는 현재 두 가지 방법으로 구현
 
 ### AccessEnabler JavaScript SDK {#accessenabler-javascript-sdk}
 
-새 오류 보고 시스템은 선택 사항으로 남아 있으므로 구현자는 오류 처리기 콜백을 명시적으로 등록하여 고급 오류 보고서를 수신할 수 있습니다. 이 시스템에는 여러 오류 콜백을 동적으로 등록 및 등록 취소할 수 있는 기능이 포함되어 있습니다. 또한 AccessEnabler JavaScript SDK가 로드되면 다른 초기화를 수행하지 않고도 새 오류 콜백을 등록할 수 있습니다(호출 전) `setRequestor()`)를 입력하여 초기화 및 구성 오류에 대한 고급 보고서를 받을 수 있습니다.
+새 오류 보고 시스템은 선택 사항으로 남아 있으므로 구현자는 오류 처리기 콜백을 명시적으로 등록하여 고급 오류 보고서를 수신할 수 있습니다. 이 시스템에는 여러 오류 콜백을 동적으로 등록 및 등록 취소할 수 있는 기능이 포함되어 있습니다. 또한 AccessEnabler JavaScript SDK가 로드되면 다른 초기화를 수행하지 않고도 새 오류 콜백을 등록할 수 있습니다(호출 전) `setRequestor()`)를 입력하여 초기화 및 구성 오류에 대한 고급 보고서를 받을 수 있습니다.
 
 
 #### 구현 {#access-enab-js-imp}
@@ -65,12 +65,12 @@ yourErrorHandler(errorData:Object)
 
 이벤트에 대한 핸들러를 연결합니다.
 
-**`eventType`** - &quot;만`errorEvent`&quot;값을 지정하면 AccessEnabler JavaScript SDK에서 고급 오류 보고서 콜백을 트리거합니다.
+**`eventType`** - &quot;만`errorEvent`&quot;값을 지정하면 AccessEnabler JavaScript SDK에서 고급 오류 보고서 콜백을 트리거합니다.
 
-**`handlerName`** - 오류 처리기 함수의 이름을 지정하는 문자열.\
- 
+**`handlerName`** - 오류 처리기 함수의 이름을 지정하는 문자열.
 
-두 바인드 매개 변수는 모두 다음 집합의 문자만 사용해야 합니다. `[0-9a-zA-Z][-._a-zA-Z0-9]`즉, 매개 변수는 숫자나 문자로 시작해야 하며 하이픈, 마침표, 밑줄 및 영숫자만 포함할 수 있습니다.  또한 매개 변수는 1,024자를 초과할 수 없습니다.  
+
+두 바인드 매개 변수는 모두 다음 집합의 문자만 사용해야 합니다. `[0-9a-zA-Z][-._a-zA-Z0-9]`즉, 매개 변수는 숫자나 문자로 시작해야 하며 하이픈, 마침표, 밑줄 및 영숫자만 포함할 수 있습니다.  또한 매개 변수는 1,024자를 초과할 수 없습니다.
 
 **예** 바인딩 오류 처리기의 경우:
 
@@ -81,18 +81,18 @@ accessEnabler.bind('errorEvent', 'errorLogger');
 
 기술적 한계로 인해 닫힘이나 익명 함수를 바인딩할 수 없습니다. 두 번째 매개 변수에서 메서드의 이름을 지정해야 합니다.
 
- 
+
 ### 2. 바인딩 해제 {#unbind}
 
 **`.unbind(eventType:String, handlerName:String=null):void`**
 
 이전에 첨부된 이벤트 처리기를 제거합니다.
 
-**`eventType`** - &#39;`errorEvent`&#39; 값을 지정하면 AccessEnabler JavaScript SDK에서 고급 오류 보고서 콜백을 트리거합니다.
+**`eventType`** - &#39;`errorEvent`&#39; 값을 지정하면 AccessEnabler JavaScript SDK에서 고급 오류 보고서 콜백을 트리거합니다.
 
-**`handlerName`** - 이 null이거나 지정된 의 연결된 모든 처리기가 누락된 경우 오류 처리기 함수의 이름을 지정하는 문자열 `eventType` 제거됩니다.
+**`handlerName`** - 이 null이거나 지정된 의 연결된 모든 처리기가 누락된 경우 오류 처리기 함수의 이름을 지정하는 문자열 `eventType` 제거됩니다.
 
-두 바인드 매개 변수는 모두 다음 집합의 문자만 사용해야 합니다. `[0-9a-zA-Z][-._a-zA-Z0-9]`즉, 매개 변수는 숫자나 문자로 시작해야 하며 하이픈, 마침표, 밑줄 및 영숫자만 포함할 수 있습니다.  또한 매개 변수는 1,024자를 초과할 수 없습니다.  
+두 바인드 매개 변수는 모두 다음 집합의 문자만 사용해야 합니다. `[0-9a-zA-Z][-._a-zA-Z0-9]`즉, 매개 변수는 숫자나 문자로 시작해야 하며 하이픈, 마침표, 밑줄 및 영숫자만 포함할 수 있습니다.  또한 매개 변수는 1,024자를 초과할 수 없습니다.
 
 **예** 단일 오류 핸들러를 제거하는 경우:
 
@@ -109,7 +109,7 @@ accessEnabler.bind('errorEvent', 'errorLogger');
 
 #### 구현 {#accessenab-ios-tvossdk-imp}
 
-구현자는 다음을 준수해야 합니다 **EntitlementStatus** 프로토콜:
+구현자는 다음을 준수해야 합니다 **EntitlementStatus** 프로토콜:
 
 **EntitlementStatus.h**
 
@@ -121,7 +121,7 @@ accessEnabler.bind('errorEvent', 'errorLogger');
     @end
 ```
 
-사용자 **상태** 함수는 단일 개체를 수신합니다( `NSDictionary`)를 사용할 수 있습니다.
+사용자 **상태** 함수는 단일 개체를 수신합니다( `NSDictionary`)를 사용할 수 있습니다.
 
 ```OBJ-C
     {
@@ -153,11 +153,11 @@ accessEnabler.bind('errorEvent', 'errorLogger');
 
 ### AccessEnabler Android SDK {#accessenabler-android-sdk}
 
-구현자가 을 명시적으로 준수해야 하므로 새 오류 보고 시스템은 필수입니다. `IAccessEnablerDelegate` 인터페이스 정의 프로토콜입니다. 이 새로운 접근 방식을 통해 프로그래머는 고급 오류 보고를 받을 수 있습니다.
+구현자가 을 명시적으로 준수해야 하므로 새 오류 보고 시스템은 필수입니다. `IAccessEnablerDelegate` 인터페이스 정의 프로토콜입니다. 이 새로운 접근 방식을 통해 프로그래머는 고급 오류 보고를 받을 수 있습니다.
 
 #### 구현 {#access-enablr-androidsdk-imp}
 
-구현자가 새 를 처리해야 합니다. `status` 인터페이스의 메서드`IAccessEnablerDelegate`. 다음 **`status`** 함수가 단일 **`AdvancedStatus`** 다음 모델이 있는 개체:
+구현자가 새 를 처리해야 합니다. `status` 인터페이스의 메서드`IAccessEnablerDelegate`. 다음 **`status`** 함수가 단일 **`AdvancedStatus`** 다음 모델이 있는 개체:
 
 ```C++
     class AdvancedStatus {
@@ -240,7 +240,7 @@ accessEnabler.bind('errorEvent', 'errorLogger');
 | VSA503 | 정보 | 응용 프로그램 비디오 구독자 계정 메타데이터 요청이 실패했습니다. | MVPD 끝점이 응답하지 않습니다. 응용 프로그램이 일반 인증 흐름으로 전환될 수 있습니다. | 해당 사항 없음 | 해당 사항 없음 | 예 | 해당 사항 없음 |
 | 500 | 오류 | 내부 오류 | AccessEnablerDebug를 사용하고 디버그 로그(console.log 출력)를 검사하여 무엇이 잘못되었는지 확인합니다. | 해당 사항 없음 | 예 | 예 | 해당 사항 없음 |
 | SEC403 | 오류 | 도메인 보안 오류입니다. 요청자가 잘못된 도메인을 사용하고 있습니다. 특정 요청자 ID에 사용되는 모든 도메인은 Adobe으로 허용 목록에 추가해야 합니다. | - 허용된 도메인 목록에서만 AccessEnabler 로드 <br> <br> - 사용된 요청자 ID에 대한 도메인 허용 목록을 관리하려면 Adobe에게 문의하십시오. <br> <br> - iOS: 올바른 인증서를 사용하고 있으며 서명이 제대로 생성되었는지 확인합니다. | 해당 사항 없음 | 해당 사항 없음 | 예 | 해당 사항 없음 |
-| SEC412 | 경고 | [ 릴리스 2.5에서 사용 가능 ] 장치 ID가 일치하지 않습니다. 이 문제는 기본 플랫폼이 장치 ID를 변경할 때마다 발생할 수 있습니다. 이 경우 기존 토큰이 지워지고 사용자가 더 이상 인증되지 않습니다. 이 문제는 사용자가 JS SDK를 사용하고 로밍 중일 때 합법적으로 발생합니다(JS에서 클라이언트 IP는 장치 ID의 일부임). 그렇지 않으면 사기 시도를 나타낼 수 있습니다. 즉, 다른 디바이스에서 토큰을 복사하려는 시도입니다. | - 경고 수를 모니터링합니다. 뚜렷한 이유 없이 급증하는 경우(최근 브라우저 업데이트가 없음, 새 운영 체제) 사기 시도를 나타낼 수 있습니다.  <br> <br>- 원할 경우 다시 로그인해야 함을 사용자에게 알립니다. | 다시 로그인합니다. | 예 | 예 | 예 부터 3.2 |
+| SEC412 | 경고 | [릴리스 2.5에서 사용 가능] 장치 ID가 일치하지 않습니다. 이 문제는 기본 플랫폼이 장치 ID를 변경할 때마다 발생할 수 있습니다. 이 경우 기존 토큰이 지워지고 사용자가 더 이상 인증되지 않습니다. 이 문제는 사용자가 JS SDK를 사용하고 로밍 중일 때 합법적으로 발생합니다(JS에서 클라이언트 IP는 장치 ID의 일부임). 그렇지 않으면 사기 시도를 나타낼 수 있습니다. 즉, 다른 디바이스에서 토큰을 복사하려는 시도입니다. | - 경고 수를 모니터링합니다. 뚜렷한 이유 없이 급증하는 경우(최근 브라우저 업데이트가 없음, 새 운영 체제) 사기 시도를 나타낼 수 있습니다.  <br> <br>- 원할 경우 다시 로그인해야 함을 사용자에게 알립니다. | 다시 로그인합니다. | 예 | 예 | 예 부터 3.2 |
 | SEC420 | 오류 | Adobe Primetime 인증 서버와 통신할 때 HTTP 보안 오류가 발생합니다. 이 오류는 일반적으로 스푸핑/프록시가 있을 때 발생합니다. | - 로드 `[https://]{SP_FQDN\}` 예를 들어 브라우저에서 SSL 인증서를 수동으로 승인합니다. **https://api.auth.adobe.com** 또는 **https://api.auth-staging.adobe.com** <br> <br>- 프록시 인증서를 신뢰할 수 있는 것으로 표시 | 일반 사용자의 경우 이 문제가 발생할 경우 중간자 공격 가능성이 있음을 나타냅니다. | 예 | 예 | 예 부터 3.2 |
 | CFG100 | 경고 | 클라이언트 컴퓨터 날짜/시간/시간대가 올바르게 설정되지 않았습니다. 이로 인해 인증/권한 부여 오류가 발생할 수 있습니다. | - 사용자에게 올바른 시간을 설정하도록 알립니다. <br> <br> 권리 유형 흐름이 실패할 수 있으므로 이를 방지하기 위해 조치를 취하십시오. | 올바른 날짜/시간을 설정합니다. | 예 | 예 | 예 부터 3.2 |
 | CFG400 | 오류 | 잘못된 요청자 ID가 입력되었습니다. | 개발자는 유효한 요청자 ID를 지정해야 합니다. | 해당 사항 없음 | 예 | 예 | 예 부터 3.2 |
@@ -285,17 +285,17 @@ accessEnabler.bind('errorEvent', 'errorLogger');
 원래 오류 보고 및 상태 API는 이전과 동일하게 계속 작동합니다. 그러나 앞으로는 원래 오류 보고 API가 업데이트되지 않습니다. 이전 오류에 대한 모든 새 오류 보고 및 업데이트가 새 오류에만 반영됩니다. [고급 오류 보고 시스템](#advanced-error-reporting).
 
 
-원래 오류 보고 시스템을 사용하는 예는 [JavaScript API 참조](/help/authentication/javascript-sdk-api-reference.md):[setAuthenticationStatus()](/help/authentication/javascript-sdk-api-reference.md#set-authn-status-isauthn-error) 및 [tokenRequestFailed()](/help/authentication/javascript-sdk-api-reference.md#token-request-failed-error-msg) 함수, [iOS/tvOS API 참조](/help/authentication/iostvos-sdk-api-reference.md): [setAuthenticationStatus()](/help/authentication/javascript-sdk-api-reference.md#setAuthNStatus)및 [tokentRequestFailed()](/help/authentication/javascript-sdk-api-reference.md#tokenReqFailed), [Android API 참조](/help/authentication/android-sdk-api-reference.md): [setAuthenticationStatus()](/help/authentication/android-sdk-api-reference.md#setAuthNStatus) 및 [tokenRequestFailed()](/help/authentication/android-sdk-api-reference.md#setAuthNStatus#tokenRequestFailed).
+원래 오류 보고 시스템을 사용하는 예는 [JavaScript API 참조](/help/authentication/javascript-sdk-api-reference.md):[setAuthenticationStatus()](/help/authentication/javascript-sdk-api-reference.md#set-authn-status-isauthn-error) 및 [tokenRequestFailed()](/help/authentication/javascript-sdk-api-reference.md#token-request-failed-error-msg) 함수, [iOS/tvOS API 참조](/help/authentication/iostvos-sdk-api-reference.md): [setAuthenticationStatus()](/help/authentication/javascript-sdk-api-reference.md#setAuthNStatus)및 [tokentRequestFailed()](/help/authentication/javascript-sdk-api-reference.md#tokenReqFailed), [Android API 참조](/help/authentication/android-sdk-api-reference.md): [setAuthenticationStatus()](/help/authentication/android-sdk-api-reference.md#setAuthNStatus) 및 [tokenRequestFailed()](/help/authentication/android-sdk-api-reference.md#setAuthNStatus#tokenRequestFailed).
 
 ### 원래 콜백 오류 코드 {#original-callback-error-codes}
 
-| **일반 오류** |  |
+| **일반 오류** | |
 |---|---|
 | 내부 오류 | 요청을 처리하는 동안 시스템 오류가 발생했습니다. |
 | 공급자가 선택되지 않음 오류 | 고객이 공급자 선택 대화 상자에서 취소할 때 발생합니다. |
 | 공급자를 사용할 수 없음 오류 | 사용할 수 있는 공급자가 없을 때 발생합니다. |
 |  |  |
-| **인증 오류** |  |
+| **인증 오류** | |
 | 일반 인증 오류 | 이유를 알 수 없거나 게시할 수 없을 때 반환됩니다. |
 | 내부 인증 오류 | 인증을 시도하는 동안 시스템 오류가 발생했습니다. |
 | 사용자가 인증되지 않음 오류 | 사용자가 인증되지 않았습니다. |

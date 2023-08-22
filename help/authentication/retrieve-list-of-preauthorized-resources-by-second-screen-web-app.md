@@ -2,7 +2,7 @@
 title: 두 번째 화면 웹 앱으로 사전 승인된 리소스 목록 검색
 description: 두 번째 화면 웹 앱으로 사전 승인된 리소스 목록 검색
 exl-id: 78eeaf24-4cc1-4523-8298-999c9effdb7a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
@@ -35,8 +35,10 @@ ht-degree: 0%
 
 API에는 스트리밍 앱 또는 프로그래머 서비스용 세트와 두 번째 화면 웹 앱용 세트, 이렇게 두 개의 API 세트가 있습니다. 이 페이지에서는 AuthN 앱용 API에 대해 설명합니다.
 
- \
-| 끝점 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 | | — | — | — | — | — | — | | &lt;sp_fqdn>/api/v1/preauthorize/{registration code} | 인증 모듈 | 1.  등록 코드  </br>    (경로 구성 요소)</br>2.  요청자(필수)</br>3.  리소스 목록(필수) | GET | 개별 사전 인증 결정 또는 오류 세부 사항이 포함된 XML 또는 JSON. 아래 샘플을 참조하십시오. | 200 - 성공</br></br>400 - 잘못된 요청</br></br>401 - 승인되지 않음</br></br>405 - 메서드가 허용되지 않음  </br></br>412 - 사전 조건 오류</br></br>500 - 내부 서버 오류 |
+
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
+| --- | --- | --- | --- | --- | --- |
+| &lt;sp_fqdn>/api/v1/preauthorize/{registration code} | AuthN 모듈 | 1. 등록 코드  </br>    (경로 구성 요소)</br>2.  요청자(필수)</br>3.  리소스 목록(필수) | GET | 개별 사전 인증 결정 또는 오류 세부 정보가 포함된 XML 또는 JSON입니다. 아래 샘플을 참조하십시오. | 200 - 성공</br></br>400 - 잘못된 요청</br></br>401 - 승인되지 않음</br></br>405 - 메서드가 허용되지 않음  </br></br>412 - 사전 조건 오류</br></br>500 - 내부 서버 오류 |
 
 
 
@@ -58,23 +60,23 @@ Adobe-Response-Confidence : full
 Content-Type: application/xml; charset=utf-8
 
 <resources>
-    <resource>
-        <id>TestStream1</id>
-        <authorized>true</authorized>
-    </resource>
-    <resource>
-        <id>TestStream2</id>
-        <authorized>false</authorized>  
-        <error>
-            <status>403</status>
-            <code>authorization_denied_by_mvpd</code>
-            <message>User not authorized</message>
-            <details>Your subscription package does not include the "TestStream3" channel.</details>
-            <helpUrl>https://experienceleague-review.corp.adobe.com/docs/primetime/authentication/auth-features/error-reportn/enhanced-error-codes.html#error-codes</helpUrl>
-            <trace>0453f8c8-167a-4429-8784-cd32cfeaee58</trace>
-            <action>none</action>
-        </error>
-    <resource>
+    <resource>
+        <id>TestStream1</id>
+        <authorized>true</authorized>
+    </resource>
+    <resource>
+        <id>TestStream2</id>
+        <authorized>false</authorized>  
+        <error>
+            <status>403</status>
+            <code>authorization_denied_by_mvpd</code>
+            <message>User not authorized</message>
+            <details>Your subscription package does not include the "TestStream3" channel.</details>
+            <helpUrl>https://experienceleague-review.corp.adobe.com/docs/primetime/authentication/auth-features/error-reportn/enhanced-error-codes.html#error-codes</helpUrl>
+            <trace>0453f8c8-167a-4429-8784-cd32cfeaee58</trace>
+            <action>none</action>
+        </error>
+    <resource>
 </resources>
 ```
 

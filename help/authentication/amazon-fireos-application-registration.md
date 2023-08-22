@@ -2,7 +2,7 @@
 title: Amazon FireOS 애플리케이션 등록
 description: Amazon FireOS 애플리케이션 등록
 exl-id: 650fd4a2-dfc3-4c74-9b5b-6bea832a28ca
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -55,8 +55,8 @@ FireOS AccessEnabler SDK 버전 3.0부터 Adobe 서버의 인증 메커니즘을
 
 ## 소프트웨어 명령문 사용 방법 {#use-both}
 
-응용 프로그램의 리소스 파일에서 `strings.xml` 다음 코드를 추가합니다.
+응용 프로그램의 리소스 파일에서 `strings.xml` 다음 코드를 추가합니다.
 
 ```XML
-<string name="software_statement">softwarestatement value</string>
+<string name="software_statement">softwarestatement value</string>
 ```

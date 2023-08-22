@@ -2,7 +2,7 @@
 title: 용어집
 description: 용어집
 exl-id: e64a94f6-7460-4aa8-8d6b-e0553ba1e4ec
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Adobe Primetime 인증 설명서에서 사용되는 용어는 Adobe Primetime �
 
 ## MVPD ID {#mvpd-id}
 
-다음을 참조하십시오 [사용자 ID](#user-id).
+다음을 참조하십시오 [사용자 ID](#user-id).
 
 ## 파트너 ID {#partner-id}
 

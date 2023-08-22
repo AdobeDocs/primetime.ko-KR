@@ -2,14 +2,14 @@
 title: Android 사전 인증
 description: Android 사전 인증
 exl-id: b5337595-135f-4981-a578-2da432f125d6
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-# 사전 승인 {#preuthorize-android}
+# 사전 승인 {#preuthorize-android}
 
 >[!NOTE]
 >
@@ -25,10 +25,10 @@ ht-degree: 0%
 예기치 않은 오류가 발생하는 경우(예: 네트워크 문제, MVPD 인증 끝점을 사용할 수 없음 등) Adobe Primetime 인증 서비스에서 사전 승인 API 요청을 처리할 때 발생하는 하나 이상의 분리된 오류 정보는 사전 승인 API 응답 결과의 일부로 영향을 받는 리소스에 포함됩니다.
 
 
-## `public void preauthorize(PreauthorizeRequest request, AccessEnablerCallback<PreauthorizeResponse> callback);`
+## `public void preauthorize(PreauthorizeRequest request, AccessEnablerCallback<PreauthorizeResponse> callback);`
 
 
-**설명:** 
+**설명:**
 
 **가용성:** v3.6.0+
 
@@ -41,8 +41,7 @@ ht-degree: 0%
 
 ### 공용 클래스 PreauthorizeRequest {#androidpreauthorizerequest}
 
-**클래스 PreauthorizeRequest.Builder**\
- 
+**클래스 PreauthorizeRequest.Builder**
 
 ```java
     ///
@@ -129,18 +128,18 @@ ht-degree: 0%
 ### `abstract class AccessEnablerCallback<PreauthorizeResponse> {#accessenablercallback}`
 
 ```java
-    /// Response callback called by the SDK when the preauthorize API request was fulfilled. The result is either a successful or an error result containing a status.
+    /// Response callback called by the SDK when the preauthorize API request was fulfilled. The result is either a successful or an error result containing a status.
 
 **public void onResponse(PreauthorizeResponse result)**
 
- 
+ 
 
-    /// Failure callback called by the SDK when the preauthorize API request could not be serviced. The result is a failure result containing a status. 
+    /// Failure callback called by the SDK when the preauthorize API request could not be serviced. The result is a failure result containing a status. 
 
 **public void onFailure(PreauthorizeResponse result)**
 ```
 
- 
+
 
 ### 클래스 PreauthorizeResponse {#preauthorizeresponse}
 
@@ -150,16 +149,16 @@ ht-degree: 0%
     ///   Might hold a `null` value.
     ///
 
-**public [Status](#status) getStatus()**
+**public [Status](#status) getStatus()**
 
- 
+ 
 
     ///
     /// - Returns: The list of preauthorization decisions. One decision for each resource.
     ///            The list might be empty in case of failure.
     ///
 
-**public List\<[Decision](#status)\> getDecisions()**
+**public List\<[Decision](#status)\> getDecisions()**
 ```
 
 
@@ -172,7 +171,7 @@ ht-degree: 0%
 
 ///
 
-**public int getStatus()**
+**public int getStatus()**
 
     ///
     /// - Returns: The standard Adobe Primetime Authentication services error code.
@@ -236,9 +235,9 @@ ht-degree: 0%
     /// - Returns: The resource id for which the decision was obtained.
     ///
 
-    public Status getId()
+    public Status getId()
 
- 
+ 
 
     ///
     /// This is a getter function.
@@ -246,9 +245,9 @@ ht-degree: 0%
     /// - Returns: The value of the flag indicating if the decision is successful or not.
     ///
 
-**public boolean isAuthorized()**
+**public boolean isAuthorized()**
 
- 
+ 
 
     ///
     /// This is a getter function.
@@ -257,14 +256,14 @@ ht-degree: 0%
     ///            Might hold a `null` value.
     ///
 
-**public Status getError()**
+**public Status getError()**
 ```
 
 </br>
 
 
 
-예 : 
+예 :
 
 
 ```java

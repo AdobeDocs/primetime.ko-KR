@@ -2,7 +2,7 @@
 title: 프로그래머 권한 흐름
 description: 프로그래머 권한 흐름
 exl-id: b1c8623a-55da-4b7b-9827-73a9fe90ebac
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 0%
@@ -56,17 +56,17 @@ Adobe Primetime 인증은 양측에 안전하고 일관된 인터페이스를 �
 
 * **`setRequestor()`** - AccessEnalber 및 확장으로 Adobe Primetime 인증 서버를 사용하여 ID를 설정합니다. 이 호출은 권한 흐름의 나머지 부분에 대한 전조입니다. 예를 들어 JavaScript에서는
 
-   ```JavaScript
-     /* Define the requestor ID (Programmer/aggregator ID). */
-       var requestorID = "sample_requestor_Id";
-       ...
-       // Callback indicating that the AccessEnabler swf has initialized
-       function swfLoaded() {
-           // AccessEnabler is loaded so we can use the API function it provides
-           accessEnablerObject.setRequestor(requestorID); 
-       ...
-       }
-   ```
+  ```JavaScript
+    /* Define the requestor ID (Programmer/aggregator ID). */
+      var requestorID = "sample_requestor_Id";
+      ...
+      // Callback indicating that the AccessEnabler swf has initialized
+      function swfLoaded() {
+          // AccessEnabler is loaded so we can use the API function it provides
+          accessEnablerObject.setRequestor(requestorID); 
+      ...
+      }
+  ```
 
 **클라이언트 없는 API**
 
@@ -110,6 +110,7 @@ Adobe Primetime 인증은 양측에 안전하고 일관된 인터페이스를 �
 
 >[!IMPORTANT]
 >Comcast는 현재 로고에 대한 정적 URL을 제공하지 않는 유일한 MVPD입니다. 프로그래머는에서 최신 최신 로고를 가져와야 합니다. [XFINITY 개발자 포털](https://developers.xfinity.com/products/tv-everywhere).
+>
 
 ### 인증 흐름 {#authorization}
 

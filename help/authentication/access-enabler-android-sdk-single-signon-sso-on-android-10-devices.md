@@ -2,7 +2,7 @@
 title: Android 10 앱에서 Enabler Android SDK SSO(Single Sign-On) 액세스
 description: Android 10 앱에서 Enabler Android SDK SSO(Single Sign-On) 액세스
 exl-id: dedade15-c451-4757-b684-d3728e11dd87
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -30,8 +30,8 @@ Adobe Primetime 인증 기반 앱 간의 SSO(Single Sign-On)는 Access Enabler A
 앱에 따라 **target SDK 수준** 또는 의 사용 **android:requestLegacyExternalStorage** manifest 특성 Access Enabler Android 버전 3.2.1 SDK(최신) 및 이전 버전에서 제공하는 SSO(Single Sign-On)는 현재 다음과 같이 동작합니다.
 
 - 앱 타겟 **Android 9(API 레벨 28)** 또는 더 낮음 **-\>** SSO(단일 인증) **작동 예정**
-- 앱 타겟 **안드로이드 10** **(API 레벨 29)** 및 **set** 값: **requestLegacyExternalStorage to true** 앱의 매니페스트 파일에서 **-\>** SSO(단일 인증) **작동 예정**
-- 앱 타겟 **안드로이드 10** **(API 레벨 29)** 및 **설정되지 않음** 값: **requestLegacyExternalStorage to true** 앱의 매니페스트 파일에서 **-\>** SSO(단일 인증) **작동하지 않음**
+- 앱 타겟 **안드로이드 10** **(API 레벨 29)** 및 **set** 값: **requestLegacyExternalStorage to true** 앱의 매니페스트 파일에서 **-\>** SSO(단일 인증) **작동 예정**
+- 앱 타겟 **안드로이드 10** **(API 레벨 29)** 및 **설정되지 않음** 값: **requestLegacyExternalStorage to true** 앱의 매니페스트 파일에서 **-\>** SSO(단일 인증) **작동하지 않음**
 
 
 >[!TIP]

@@ -2,7 +2,7 @@
 title: iOS/tvOS v3.x 마이그레이션 안내서
 description: iOS/tvOS v3.x 마이그레이션 안내서
 exl-id: 4c43013c-40af-48b7-af26-0bd7f8df2bdb
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -21,7 +21,6 @@ ht-degree: 0%
 >
 > - iOS sdk 버전 3.1부터 구현자는 이제 WKWebView 또는 UIWebView를 서로 교환하여 사용할 수 있습니다. UIWebView는 더 이상 사용되지 않으므로 향후 iOS 버전과 관련된 문제를 방지하려면 앱을 WKWebView로 마이그레이션해야 합니다.
 > - 마이그레이션은 단순히 UIWebView 클래스를 WKWebView로 전환한다는 것을 의미하므로 Adobe의 AccessEnabler에 대해서는 수행할 작업이 없습니다.
-
 
 </br>
 
@@ -69,9 +68,9 @@ ht-degree: 0%
 
 ## 사용자 지정 URL 체계에서 호출 가로채기 {#intercept}
 
-이는 애플리케이션이 이전에 를 통해 수동 Safari View Controller(SVC) 처리를 활성화한 경우에만 적용됩니다. [setOptions(\[&quot;handleSVC&quot;:true&quot;\])](/help/authentication/iostvos-sdk-api-reference.md) SVC(Safari View Controller)가 필요한 특정 MVPD에 대해 및 를 호출하므로 UIWebView/WKWebView 컨트롤러 대신 SFSafariViewController 컨트롤러를 사용하여 인증 및 로그아웃 끝점의 URL을 로드해야 합니다.
+이는 애플리케이션이 이전에 를 통해 수동 Safari View Controller(SVC) 처리를 활성화한 경우에만 적용됩니다. [setOptions(\[&quot;handleSVC&quot;:true&quot;\])](/help/authentication/iostvos-sdk-api-reference.md) SVC(Safari View Controller)가 필요한 특정 MVPD에 대해 및 를 호출하므로 UIWebView/WKWebView 컨트롤러 대신 SFSafariViewController 컨트롤러를 사용하여 인증 및 로그아웃 끝점의 URL을 로드해야 합니다.
 
-인증 및 로그아웃 흐름 중에 애플리케이션은 의 활동을 모니터링해야 합니다. `SFSafariViewController `몇 번의 리디렉션을 거치는 동안 컨트롤러에서 작동합니다. 응용 프로그램은 사용자가 정의한 특정 사용자 정의 URL을 로드하는 순간을 감지해야 합니다. `application's custom URL scheme` (예:`adbe.u-XFXJeTSDuJiIQs0HVRAg://adobe.com)`. 제어기가 이 특정 사용자 지정 URL을 로드하면 애플리케이션이 `SFSafariViewController` 및 AccessEnabler 호출 `handleExternalURL:url `API 메서드.
+인증 및 로그아웃 흐름 중에 애플리케이션은 의 활동을 모니터링해야 합니다. `SFSafariViewController `몇 번의 리디렉션을 거치는 동안 컨트롤러에서 작동합니다. 응용 프로그램은 사용자가 정의한 특정 사용자 정의 URL을 로드하는 순간을 감지해야 합니다. `application's custom URL scheme` (예:`adbe.u-XFXJeTSDuJiIQs0HVRAg://adobe.com)`. 제어기가 이 특정 사용자 지정 URL을 로드하면 애플리케이션이 `SFSafariViewController` 및 AccessEnabler 호출 `handleExternalURL:url `API 메서드.
 
 내 `AppDelegate` 다음 메서드를 추가합니다.
 

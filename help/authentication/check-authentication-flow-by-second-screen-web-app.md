@@ -2,7 +2,7 @@
 title: 두 번째 화면 웹 앱별 인증 흐름 확인
 description: 두 번째 화면 웹 앱별 인증 흐름 확인
 exl-id: 5807f372-a520-4069-b837-67ae41b7f79b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 두 번째 화면 로그인 웹 앱에서는 이 API를 사용하여 Adobe Primetime 인증이 MVPD에서 성공적으로 로그인되었음을 확인해야 합니다. 최종 사용자가 장치 콘솔로 이동하여 워크플로우를 계속하도록 지시하는 성공 메시지를 표시하기 전에 이 API를 호출하는 것이 좋습니다.
 
 
-| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
+| 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
 | --- | --- | --- | --- | --- | --- |
-| SP_FQDN/api/v1/checkauthn/{registration code} | 로그인 웹 앱 | 1. 등록 코드  </br>    (경로 구성 요소)</br>2.  요청자  </br>    (필수) | GET | 실패한 경우 오류 세부 정보가 포함된 XML 또는 JSON. | 200 - 성공   </br>403 - 금지됨 |
+| SP_FQDN/api/v1/checkauthn/{registration code} | 로그인 웹 앱 | 1. 등록 코드  </br>    (경로 구성 요소)</br>2.  요청자  </br>    (필수) | GET | 실패한 경우 오류 세부 정보가 포함된 XML 또는 JSON. | 200 - 성공   </br>403 - 금지됨 |
 
 </br>
 
@@ -50,8 +50,8 @@ ht-degree: 0%
 
 ```JSON
     {
-        "status": 403,
-        "message": "Forbidden"
+        "status": 403,
+        "message": "Forbidden"
     }
 ```
 

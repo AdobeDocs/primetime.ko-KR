@@ -2,9 +2,9 @@
 title: iOS/tvOS Cookbook
 description: iOS/tvOS Cookbook
 exl-id: 4743521e-d323-4d1d-ad24-773127cfbe42
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AccessEnabler의 네트워크 작업은 자체 스레드에서 수행되므로 U
 
 ## 방문자 ID 구성 {#visitorIDSetup}
 
-구성 [Marketing Cloud visitorID](https://marketing.adobe.com/resources/help/en_US/mcvid/) analytics 관점에서 가치는 매우 중요합니다. visitorID 값이 설정되면 SDK는 모든 네트워크 호출과 함께 이 정보를 전송하고 Adobe Primetime 인증 서버는 이 정보를 수집합니다. 앞으로는 Adobe Primetime 인증 서비스의 분석을 다른 애플리케이션이나 웹 사이트에서 얻은 다른 분석 보고서와 상호 연관시킬 수 있습니다. visitorID 설정 방법에 대한 정보를 찾을 수 있습니다 [여기](#setOptions).
+구성 [Marketing Cloud visitorID](https://experienceleague.adobe.com/docs/id-service/using/home.html) analytics 관점에서 가치는 매우 중요합니다. visitorID 값이 설정되면 SDK는 모든 네트워크 호출과 함께 이 정보를 전송하고 Adobe Primetime 인증 서버는 이 정보를 수집합니다. 앞으로는 Adobe Primetime 인증 서비스의 분석을 다른 애플리케이션이나 웹 사이트에서 얻은 다른 분석 보고서와 상호 연관시킬 수 있습니다. visitorID 설정 방법에 대한 정보를 찾을 수 있습니다 [여기](#setOptions).
 
 ## 권한 흐름 {#entitlement}
 
@@ -69,51 +69,51 @@ H.  [Apple SSO를 사용하지 않고 로그아웃 플로우](#logout_flow_wo_Ap
    * [`displayProviderDialog(mvpds)`](#$dispProvDialog) </br>
       * 트리거 기준 [`getAuthentication()`](#$getAuthN) 사용자가 공급자(MVPD)를 선택하지 않고 아직 인증되지 않은 경우에만 해당합니다. </br>
       * 다음 `mvpds` 매개 변수는 사용자가 사용할 수 있는 공급자의 배열입니다.
+
    * `setAuthenticationStatus(status, errorcode)` </br>
       * 트리거 기준 `checkAuthentication()` 항상. </br>
       * 트리거 기준 [`getAuthentication()`](#$getAuthN) 사용자가 이미 인증되고 공급자를 선택한 경우에만 해당합니다. </br>
       * 반환된 상태는 성공 또는 실패이며, errorcode는 실패 유형을 설명합니다.
+
    * [`navigateToUrl(url)`](#$nav2url) </br>
       * 트리거 기준 [`getAuthentication()`](#$getAuthN) 사용자가 MVPD를 선택하면 다음 `url` 매개 변수는 MVPD의 로그인 페이지 위치를 제공합니다.
+
    * `sendTrackingData(event, data)` </br>
       * 트리거 기준 `checkAuthentication()`, [`getAuthentication()`](#$getAuthN), `checkAuthorization()`, [`getAuthorization()`](#$getAuthZ), `setSelectedProvider()`.
-      * 다음 `event` 매개 변수는 발생한 권한 부여 이벤트를 나타냅니다. `data` 매개 변수는 이벤트와 관련된 값의 목록입니다. 
+      * 다음 `event` 매개 변수는 발생한 권한 부여 이벤트를 나타냅니다. `data` 매개 변수는 이벤트와 관련된 값의 목록입니다.
+
    * `setToken(token, resource)`
 
       * 트리거 기준 [checkAuthorization()](#checkAuthZ) 및 [getAuthorization()](#$getAuthZ) 리소스를 볼 수 있는 인증 성공 후.
       * 다음 `token` 매개 변수는 단기 미디어 토큰입니다. `resource` 매개 변수는 사용자에게 보기 권한이 있는 콘텐츠입니다.
+
    * `tokenRequestFailed(resource, code, description)` </br>
       * 트리거 기준 [checkAuthorization()](#checkAuthZ) 및 [getAuthorization()](#$getAuthZ) 인증에 실패한 후.
       * 다음 `resource` 매개 변수는 사용자가 보려고 한 콘텐츠입니다. `code` parameter는 발생한 실패 유형을 나타내는 오류 코드입니다. `description` 매개 변수는 오류 코드와 관련된 오류를 설명합니다.
+
    * `selectedProvider(mvpd)` </br>
       * 트리거 기준 [`getSelectedProvider()`](#getSelProv).
       * 다음 `mvpd` 매개 변수는 사용자가 선택한 공급자에 대한 정보를 제공합니다.
+
    * `setMetadataStatus(metadata, key, arguments)`
       * 트리거 기준 `getMetadata().`
       * 다음 `metadata` 매개 변수는 요청한 특정 데이터를 제공합니다. `key` 매개 변수는 [getMetadata()](#getMeta) 요청 및 `arguments` 매개 변수가에 전달된 것과 동일한 사전입니다. [getMetadata()](#getMeta).
+
    * [&#39;preauthorizedResources(authorizedResources)&#39;](#preauthResources)
 
       * 트리거 기준 [`checkPreauthorizedResources()`](#checkPreauth).
 
       * 다음 `authorizedResources` 매개 변수는 사용자에게 보기 권한이 있는 리소스를 제공합니다.
+
    * [`presentTvProviderDialog(viewController)`](#presentTvDialog)
 
       * 트리거 기준 [getAuthentication()](#getAuthN) 현재 요청자가 SSO를 지원하는 MVPD를 최소 한 개 이상 지원하는 경우.
       * viewController 매개 변수는 Apple SSO 대화 상자이며 기본 보기 컨트롤러에 표시되어야 합니다.
+
    * [`dismissTvProviderDialog(viewController)`](#dismissTvDialog)
 
       * 사용자 작업에 의해 트리거됩니다(Apple SSO 대화 상자에서 &quot;취소&quot; 또는 &quot;기타 TV 공급자&quot;를 선택하여).
       * viewController 매개 변수는 Apple SSO 대화 상자로 기본 보기 컨트롤러에서 해제해야 합니다.
-
-
-
-
-
-
-
-
-
-
 
 ![](assets/iOS-flows.png)
 
@@ -124,12 +124,14 @@ H.  [Apple SSO를 사용하지 않고 로그아웃 플로우](#logout_flow_wo_Ap
 
    a. 호출 [`init`](#$init) Adobe Primetime 인증 AccessEnabler의 단일 인스턴스를 만듭니다.
    * **종속성:** Adobe Primetime 인증 기본 iOS/tvOS 라이브러리(AccessEnabler)
+
    b. 호출 `setRequestor()` 프로그래머의 정체성을 확립하려면 프로그래머&#39;s를 `requestorID` 및(선택 사항) Adobe Primetime 인증 엔드포인트 배열. tvOS의 경우 공개 키와 암호를 제공해야 합니다. 다음을 참조하십시오 [Clientless 설명서](#create_dev) 을 참조하십시오.
 
    * **종속성:** 유효한 Adobe Primetime 인증 요청자 ID(Adobe Primetime 인증 계정 관리자와 협력하여 정리하십시오.)
 
    * **트리거:**
-      [setRequestorComplete()](#$setReqComplete) callback.
+     [setRequestorComplete()](#$setReqComplete) callback.
+
    >[!NOTE]
    >
    >요청자 ID가 완전히 설정될 때까지 권한 부여 요청을 완료할 수 없습니다. 이는 을 통해 다음을 효과적으로 의미합니다. [`setRequestor()`](#$setReq)  은(는) 모든 후속 권한 부여 요청에서 계속 실행 중입니다. 예를 들어, [`checkAuthentication()`](#checkAuthN) 차단되었습니다.
@@ -139,8 +141,6 @@ H.  [Apple SSO를 사용하지 않고 로그아웃 플로우](#logout_flow_wo_Ap
    1. 의 트리거를 기다립니다. [`setRequestorComplete()`](#setReqComplete) callback(AccessEnabler 대리자의 일부). 이 옵션은 다음과 같은 가장 확실성을 제공합니다. [`setRequestor()`](#$setReq) 완료되었으므로 대부분의 구현에 권장됩니다.
 
    1. 이 트리거될 때까지 기다리지 않고 계속합니다. [`setRequestorComplete()`](#setReqComplete) 콜백을 실행하고 권한 부여 요청 실행을 시작합니다. 이러한 호출(checkAuthentication, checkAuthorization, getAuthentication, getAuthorization, checkPreauthorizedResource, getMetadata, logout)은 AccessEnabler 라이브러리에 의해 큐에 추가되며 이후에 실제 네트워크 호출을 수행합니다. [`setRequestor()`](#$setReq). 예를 들어 네트워크 연결이 불안정한 경우 이 옵션이 가끔 중단될 수 있습니다.
-
-
 
 1. 호출 `checkAuthentication()` 전체 인증 흐름을 시작하지 않고 기존 인증을 확인합니다.  이 호출이 성공하면 인증 플로우로 직접 진행할 수 있습니다. 그렇지 않으면 인증 플로우로 이동합니다.
 
