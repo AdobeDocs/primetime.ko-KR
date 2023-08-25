@@ -2,7 +2,7 @@
 title: OAuth 2.0 프로토콜을 사용한 인증
 description: OAuth 2.0 프로토콜을 사용한 인증
 exl-id: 0c1f04fe-51dc-4b4d-88e7-66e8f4609e02
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: d7d284e7e8563c5ca1ab1c8627cb75ecb1e1cbe5
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
@@ -39,7 +39,7 @@ OAuth 2.0은 매우 성공적이므로 기업은 이를 지원하기 위해 인�
 
 OAuth 2.0을 통한 인증을 지원하려면 MVPD가 다음 사전 요구 사항을 충족해야 합니다.
 
-무엇보다도 MVPD가 *를 지원하는지 확인해야 합니다.[인증 코드 부여](https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html) 흐름.
+무엇보다도 MVPD가 다음을 지원하는지 확인해야 합니다. [인증 코드 부여](https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html) 흐름.
 
 MVPD는 흐름을 지원함을 확인한 후 다음과 같은 정보를 제공해야 합니다.
 
