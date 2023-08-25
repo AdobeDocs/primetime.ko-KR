@@ -2,9 +2,9 @@
 title: 사용자 메타데이터 기능
 description: 사용자 메타데이터 기능
 exl-id: 9fd68885-7b3a-4af0-a090-6f1f16efd2a1
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 36cf160c42bb68412c71e100a7d4fb3ca9c58d89
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
@@ -212,10 +212,9 @@ ht-degree: 0%
     }
 ```
 
-
-특정 플랫폼에 대한 세부 사항을 확인하거나 사용자 메타데이터가 MVPD측에서 처리되는 방법에 대한 통찰력을 얻으려면 아래 관련 정보에서 해당 링크를 참조하십시오.
-
 <!---
+
+For details on your particular platform, or to gain some insight into how User Metadata is processed on the MVPD side, see the appropriate link in Related Information below.  
 
 ## Related Information {#related}
 
