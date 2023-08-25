@@ -2,9 +2,9 @@
 title: iOS/tvOS API 참조
 description: iOS/tvOS API 참조
 exl-id: 017a55a8-0855-4c52-aad0-d3d597996fcb
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: d4fd2590ec0e7388c1d4df6c2c1313141659ed9e
 workflow-type: tm+mt
-source-wordcount: '7000'
+source-wordcount: '6990'
 ht-degree: 0%
 
 ---
@@ -1554,10 +1554,3 @@ AccessEnabler는 자격 흐름과 관련이 없는 추가 콜백을 트리거합
    * **3** - 운영 체제 유형
 
 </br>
-
-## 관련 정보 {#related}
-
-* [iOS 통합 Cookbook](/help/authentication/iostvos-sdk-cookbook.md)
-* [iOS 기술 개요](/help/authentication/iostvos-sdk-overview.md)
-* [권한 흐름](/help/authentication/entitlement-flow.md)
-  <!--* [Tracking Data in Primetime authentication](https://tve.helpdocsonline.com/tracking-data-in-adobe-pass)-->
