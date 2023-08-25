@@ -2,7 +2,7 @@
 title: Android SDK 개요
 description: Android SDK 개요
 exl-id: a1d98325-32a1-4881-8635-9a3c38169422
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 4b858a06080ec221c60548e2a2a0f3b6010ede15
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Primetime 인증 권한 부여 솔루션은 인증 및 권한 부여 워크플�
 
 #### 인증 토큰
 
-- **AccessEnabler 1.6 이상** - **** 인증 토큰이 장치에서 캐시되는 방식은 다음에 따라 다릅니다. &quot;**요청자별 인증&quot;** 현재 MVPD와 연결된 플래그:
+- **AccessEnabler 1.6 이상** - 인증 토큰이 장치에서 캐시되는 방법은 다음에 따라 다릅니다. &quot;**요청자별 인증&quot;** 현재 MVPD와 연결된 플래그:
 
 
 1. &quot;요청자별 인증&quot; 기능이 *비활성화됨*&#x200B;그러면 단일 인증 토큰이 전역 임시 보드에 로컬로 저장됩니다. 이 토큰은 현재 MVPD와 통합된 모든 응용 프로그램 간에 공유됩니다.
