@@ -1,7 +1,7 @@
 ---
 title: 동시성 모니터링 소개
 description: 동시성 모니터링 소개
-source-git-commit: ac0c15b951f305e29bb8fa0bd45aa2c53de6ad15
+source-git-commit: 9bc4298edb22d72131156bf92717284866728ec5
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 동시 모니터링을 사용하면 ID 및 콘텐츠 공급자(MVPD 및 프로그래머) 모두 여러 애플리케이션(잠재적으로 여러 파트너가 소유)에서 동시 사용에 대한 제한을 정의하고 적용할 수 있습니다.
 
-**동시성 모니터링 API는 다음 위치에서 호스팅됩니다.
+**동시성 모니터링 API는 다음 위치에서 호스팅됩니다.**
 
-* V2.0: [동시성 모니터링 API](http://docs.adobeptime.io/cm-api-v2/)**
+* **V2.0: [동시성 모니터링 API](http://docs.adobeptime.io/cm-api-v2/)**
 
 Concurrency Monitoring 서비스에 등록하려면 [지원 팀](mailto:tve-support@adobe.com). 다음 정보를 지정하십시오. 그러면 저희 팀이 기꺼이 도와드리겠습니다.
 
