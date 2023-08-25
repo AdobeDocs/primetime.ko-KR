@@ -2,7 +2,7 @@
 title: Amazon FireOS 통합 Cookbook
 description: Amazon FireOS 통합 Cookbook
 exl-id: 1982c485-f0ed-4df3-9a20-9c6a928500c2
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: e5e42763fecae437cfc34bae98a5d2bd5adc4643
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 0%
@@ -198,7 +198,6 @@ AccessEnabler의 네트워크 작업은 다른 스레드에서 수행되므로 U
 
 ### F. 로그아웃 흐름 {#logout_flow}
 
-1. 호출 [`logout()`](#$logout) 로그아웃할 수 있습니다.\
-   AccessEnabler는 단일 사인온을 통해 로그인을 공유하는 모든 요청자에서 현재 MVPD에 대해 사용자가 얻은 모든 캐시된 값과 토큰을 지웁니다. 캐시를 지운 후 AccessEnabler가 서버 호출을 수행하여 서버측 세션을 정리합니다.  서버 호출로 인해 IdP로 SAML 리디렉션이 발생할 수 있으므로(IdP측에서 세션 정리가 허용됨) 이 호출은 모든 리디렉션을 따라야 합니다. 따라서 이 호출은 WebView 컨트롤 내에서 처리되며 사용자가 볼 수 없습니다.
+1. 호출 [`logout()`](#$logout) 로그아웃할 수 있습니다. AccessEnabler는 단일 사인온을 통해 로그인을 공유하는 모든 요청자에서 현재 MVPD에 대해 사용자가 얻은 모든 캐시된 값과 토큰을 지웁니다. 캐시를 지운 후 AccessEnabler가 서버 호출을 수행하여 서버측 세션을 정리합니다.  서버 호출로 인해 IdP로 SAML 리디렉션이 발생할 수 있으므로(IdP측에서 세션 정리가 허용됨) 이 호출은 모든 리디렉션을 따라야 합니다. 따라서 이 호출은 WebView 컨트롤 내에서 처리되며 사용자가 볼 수 없습니다.
 
    **참고:** 로그아웃 흐름은 사용자가 어떤 방식으로든 WebView와 상호 작용할 필요가 없다는 점에서 인증 흐름과 다릅니다. 따라서 로그아웃 프로세스 중에 WebView 컨트롤을 보이지 않게(즉, 숨김으로) 만들 수 있습니다(권장).
