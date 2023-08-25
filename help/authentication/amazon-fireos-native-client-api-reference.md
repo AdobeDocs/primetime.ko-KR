@@ -2,7 +2,7 @@
 title: Amazon FireOS 기본 클라이언트 API 참조
 description: Amazon FireOS 기본 클라이언트 API 참조
 exl-id: 8ac9f976-fd6b-4b19-a80d-49bfe57134b5
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 220c571db04afbd6bafc026b3179f78f60543372
 workflow-type: tm+mt
 source-wordcount: '3416'
 ht-degree: 0%
@@ -98,7 +98,7 @@ ht-degree: 0%
 | ```public void setRequestor(String requestorId)``` |
 
 
-**가용성:**v 3.0+
+**가용성:** v3.0+
 
 
 | API 호출: 요청자 구성 |
