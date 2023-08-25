@@ -2,9 +2,9 @@
 title: JavaScript SDK Cookbook
 description: JavaScript SDK Cookbook
 exl-id: d57f7a4a-ac77-4f3c-8008-0cccf8839f7c
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: df9d2bbef16cceb6a7e594f9b81262d475a5b334
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 >
 >이 페이지의 컨텐츠는 정보용으로만 제공됩니다. 이 API를 사용하려면 Adobe의 현재 라이선스가 필요합니다. 허가되지 않은 사용은 허용되지 않습니다.
 
-## 소개(#intro)
+## 소개 {#intro}
 
 이 문서에서는 프로그래머의 상위 수준 애플리케이션이 Adobe Primetime 인증 서비스와의 JavaScript 통합을 위해 구현하는 권한 부여 워크플로에 대해 설명합니다. JavaScript API 참조에 대한 링크는 전체에 포함되어 있습니다.
 
 또한 [관련 정보](#related) 섹션에는 JavaScript 코드 샘플 세트에 대한 링크가 포함되어 있습니다.
 
-## 권한 흐름(#entitlement)
+## 권한 흐름 {#entitlement}
 
 1. [전제 조건](#prereq)
 2. [시작 흐름](#startup)
@@ -34,7 +34,7 @@ ht-degree: 0%
 ![](assets/javascript-flows.png)
 
 
-## 사전 요구 #prereq
+## 전제 조건 {#prereq}
 
 **종속성:**
 
@@ -141,7 +141,7 @@ src="https://entitlement.auth.adobe.com/entitlement/v4/AccessEnabler.js">
 
 AccessEnabler가 호출되면 인증 플로우가 완료됩니다. `setAuthenticationStatus()`포함 `isAuthenticated == 1`.
 
-## 4. 인증 흐름(#authz)
+## 4. 인증 흐름 {#authz}
 
 **종속성:**
 
@@ -164,7 +164,7 @@ AccessEnabler가 호출되면 인증 플로우가 완료됩니다. `setAuthentic
 - 유효성 검사가 성공하는 경우: 사용자에 대해 요청된 미디어를 표시/재생합니다.
 - 실패하면: AuthZ 토큰이 올바르지 않고 미디어 요청이 거부되어야 하며 사용자에게 오류 메시지가 표시되어야 합니다.
 
-## 5. 미디어 흐름 보기(#logout)
+## 5. 미디어 흐름 보기 {#logout}
 
 - 사용자가 보려는 미디어를 선택합니다.
    - 미디어가 보호됩니까?
@@ -173,7 +173,7 @@ AccessEnabler가 호출되면 인증 플로우가 완료됩니다. `setAuthentic
          - 미디어가 보호되지 않은 경우 미디어 보기 플로우를 계속 진행합니다.
          - 미디어 재생
 
-## 방문자 ID 구성(#visitorID)
+## 방문자 ID 구성 {#visitorID}
 
 구성 [Experience Cloud visitorID](https://experienceleague.adobe.com/docs/id-service/using/home.html) analytics 관점에서 가치는 매우 중요합니다. EC visitorID 값이 설정되면 SDK는 모든 네트워크 호출과 함께 이 정보를 전송하며 Adobe Primetime 인증 서비스는 이 정보를 수집합니다. 이렇게 하면 Adobe Primetime 인증 서비스의 분석 데이터를 다른 애플리케이션이나 웹 사이트에서 얻은 다른 분석 보고서와 상호 연관시킬 수 있습니다. EC visitorID 설정 방법에 대한 정보를 찾을 수 있습니다. [여기](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en).
 
