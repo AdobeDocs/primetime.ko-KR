@@ -2,7 +2,7 @@
 title: 등록 페이지
 description: 등록 페이지
 exl-id: 581b8e2e-7420-4511-88b9-f2cd43a41e10
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 58657dda8528e9f33b3cee4a84904cc5ae28d81f
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
@@ -129,9 +129,9 @@ ht-degree: 0%
 | registrationURL | 최종 사용자에게 표시될 로그인 웹 앱의 URL |
 
 {style="table-layout:auto"}
+
+
 </br>
-
-
 
 ### 오류 메시지 XSD  {#error-message}
 
