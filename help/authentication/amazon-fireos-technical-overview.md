@@ -2,7 +2,7 @@
 title: Amazon FireOS 기술 개요
 description: Amazon FireOS 기술 개요
 exl-id: 939683ee-0dd9-42ab-9fde-8686d2dc0cd0
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 4691e769e1fee51507550c8e1fbecdcdff7e44eb
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Primetime 인증 권한 부여 솔루션은 인증 및 권한 부여 워크플�
 
 #### 인증 토큰
 
-- **FireOS용 AccessEnabler 1.10.1**Android용 AccessEnabler 1.9.1을 기반으로 함 - 이 SDK는 여러 프로그래머-MVPD 버킷과 여러 인증 토큰을 활성화함으로써 토큰 스토리지의 새로운 방식을 도입했습니다.
+- **FireOS용 AccessEnabler 1.10.1** 은 Android 1.9.1용 AccessEnabler를 기반으로 합니다. 이 SDK는 여러 프로그래머-MVPD 버킷과 여러 인증 토큰을 가능하게 하는 새로운 토큰 스토리지 방식을 도입했습니다.
 
 #### 인증 토큰
 
