@@ -2,7 +2,7 @@
 title: 사용자 메타데이터
 description: 사용자 메타데이터
 exl-id: 3d7b6429-972f-4ccb-80fd-a99870a02f65
-source-git-commit: a9158c4b688b6e0c5b5bf664656587f0ecb0f00b
+source-git-commit: 4479df7985da16e8632a538f1042de05109f2392
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -59,9 +59,6 @@ MVPD가 인증된 사용자에 대해 공유한 메타데이터를 검색합니�
 
 호출이 성공하면 서버는 아래 표시된 구조와 유사한 구조를 가진 XML(기본값) 또는 JSON 개체로 응답합니다.
 
-<!--
-Please check syntax below. I added a close tag on line 70.
--->
 
 ```JSON
     {
@@ -73,10 +70,11 @@ Please check syntax below. I added a close tag on line 70.
                   "MPAA": "PG-13",
                   "VCHIP": "TV-Y", 
                   "URL": "http://exam.pl/e/manage/ratings"
-              }},
+                         },
               householdID: "3456",
               userID: "BgSdasfsdk23/dsaf3+saASesadgfsShggssd=",
               channelID: ["channel-1", "channel-2"]
+              }
     }
 ```
 
