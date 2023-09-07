@@ -2,7 +2,7 @@
 title: 등록 레코드 반환
 description: 등록 레코드 반환
 exl-id: 7b9e63a2-59b6-4123-a19b-ee1f021219ea
-source-git-commit: 622767e06f3b25222286a09a41e6a0cecff1967a
+source-git-commit: 9e1d178e00c49cab7bcf9693c3b16234cb29ba4c
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 * 프로덕션 - [api.auth.adobe.com](http://api.auth.adobe.com/)
 * 스테이징 - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
-</br>
+
 
 
 ## 설명 {#description}
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 
 
-<div>
+
 
 
 | 엔드포인트 | 호출됨  </br>작성자: | 입력   </br>매개 변수 | HTTP  </br>방법 | 응답 | HTTP  </br>응답 |
@@ -46,14 +46,16 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-</br>
+
+
 
 | 입력 매개 변수 | 설명 |
 | --- | --- |
 | 요청자 | 이 작업이 유효한 Programmer requestorId입니다. |
 | 등록 코드 | 스트리밍 장치에 표시될(인증 흐름에 입력될) 등록 코드 값입니다. |
 
-</br>
+
+
 
 ## 응답 XML 스키마 {#response-xml-schema}
 
