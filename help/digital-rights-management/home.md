@@ -3,9 +3,9 @@ title: Primetime Digital Rights Management 도움말
 description: Primetime Digital Rights Management 도움말
 copied-description: true
 exl-id: 07e4b91d-fc64-480b-aa41-218f682e1d1a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,3 @@ Adobe Primetime에 대한 Digital Rights Management 도움말을 시작합니다
 
 * [Adobe Primetime DRM 포럼](https://forums.adobe.com/community/adobe_access)
 
-* [Adobe Primetime 개발자 리소스](https://www.adobe.com/devnet/primetime.html)

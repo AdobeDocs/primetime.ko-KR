@@ -3,9 +3,9 @@ title: Primetime 참조 구현
 description: Primetime 참조 구현
 copied-description: true
 exl-id: 66be90f1-27e4-4e5f-b84e-fa11ec6f43de
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,3 @@ Adobe Primetime에 대한 참조 구현 도움말을 시작합니다. 왼쪽 탐
 
 * [Adobe Primetime DRM 포럼](https://forums.adobe.com/community/adobe_access)
 
-* [Adobe Primetime 개발자 리소스](https://www.adobe.com/devnet/primetime.html)

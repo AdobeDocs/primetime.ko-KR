@@ -3,9 +3,9 @@ title: Adobe Primetime 프로그래밍 도움말
 description: Adobe Primetime 프로그래밍 도움말
 copied-description: true
 exl-id: 4abaa7a7-4302-4471-88fd-a23eb6af6175
-source-git-commit: 5619a2170d85871c7a92221181cd05e929ce6ce2
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,3 @@ Adobe Primetime용 Android 및 iOS 프로그래밍 도움말을 시작합니다.
 * [Primetime 인증](https://tve.helpdocsonline.com/home)
 
 * [Adobe Primetime DRM 포럼](https://forums.adobe.com/community/adobe_access)
-
-* [Adobe Primetime 개발자 리소스](https://www.adobe.com/devnet/primetime.html)

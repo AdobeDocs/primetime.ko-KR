@@ -2,9 +2,9 @@
 title: Adobe Primetime Ad Insertion
 description: Adobe Primetime Ad Insertion 도움말
 exl-id: e758044e-a1f5-498a-a809-b6a351dfe8f0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -49,4 +49,3 @@ Primetime Ad Insertion은 게시자가 라이브, 선형 및 VOD 스트림에서
 
 * [Adobe Primetime DRM 포럼](https://forums.adobe.com/community/adobe_access)
 
-* [Adobe Primetime 개발자 리소스](https://www.adobe.com/devnet/primetime.html)

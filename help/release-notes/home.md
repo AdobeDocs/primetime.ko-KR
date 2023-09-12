@@ -3,9 +3,9 @@ title: Primetime 릴리스 노트
 description: Primetime 릴리스 노트
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -54,4 +54,3 @@ Adobe Primetime 릴리스 노트를 시작합니다. 왼쪽 탐색에 나열된 
 
 * [Adobe Primetime DRM 포럼](https://forums.adobe.com/community/adobe_access)
 
-* [Adobe Primetime 개발자 리소스](https://www.adobe.com/devnet/primetime.html)

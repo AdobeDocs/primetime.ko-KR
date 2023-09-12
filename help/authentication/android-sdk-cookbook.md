@@ -2,9 +2,9 @@
 title: Android SDK Cookbook
 description: Android SDK Cookbook
 exl-id: 7f66ab92-f52c-4dae-8016-c93464dd5254
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 9fcbb5285ffa85306c0e18337da9564ac862a6eb
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ AccessEnabler의 네트워크 작업은 다른 스레드에서 수행되므로 U
 
    **참고:** 이 시점에서 사용자는 인증 흐름을 취소할 수 있습니다. 이 경우 UI 레이어는 를 호출하여 이 이벤트에 대해 AccessEnabler에 알립니다. `setSelectedProvider()` 포함 `null` 를 매개 변수로 사용하십시오. 이렇게 하면 AccessEnabler가 내부 상태를 정리하고 인증 흐름을 재설정할 수 있습니다.
 
-1. 사용자가 성공적으로 로그인하면 애플리케이션 레이어가 &quot;사용자 지정 리디렉션 URL&quot;(즉,: [http://adobepass.android.app](http://adobepass.android.app/)). 이 사용자 지정 URL은 실제로 WebView에서 로드하기 위한 것이 아닌 잘못된 URL입니다. 인증 흐름이 완료되었으며 WebView를 닫아야 한다는 신호입니다.
+1. 사용자가 성공적으로 로그인하면 애플리케이션 레이어가 &quot;사용자 지정 리디렉션 URL&quot;(즉,: `http://adobepass.android.app`). 이 사용자 지정 URL은 실제로 WebView에서 로드하기 위한 것이 아닌 잘못된 URL입니다. 인증 흐름이 완료되었으며 WebView를 닫아야 한다는 신호입니다.
 
 1. WebView 컨트롤을 닫고 `getAuthenticationToken()`: AccessEnabler가 백엔드 서버에서 인증 토큰을 검색하도록 지시합니다.
 
@@ -207,7 +207,7 @@ AccessEnabler의 네트워크 작업은 다른 스레드에서 수행되므로 U
 
    a. 인증 워크플로와 동일한 패턴에 따라 AccessEnabler 도메인은 다음을 통해 UI 애플리케이션 계층에 요청을 수행합니다.`navigateToUrl()` callback)을 사용하여 WebView 컨트롤을 만들고 해당 컨트롤이 백엔드 서버에 로그아웃 끝점의 URL을 로드하도록 지시합니다.
 
-   b. UI는 WebView 컨트롤의 활동을 모니터링하고 컨트롤이 여러 리디렉션을 거치면서 애플리케이션의 사용자 지정 URL(예: [http://adobepass.android.app/](http://adobepass.android.app/)). 이 이벤트가 발생하면 UI 애플리케이션 레이어가 WebView를 닫고 로그아웃 프로세스가 완료됩니다.
+   b. UI는 WebView 컨트롤의 활동을 모니터링하고 컨트롤이 여러 리디렉션을 거치면서 애플리케이션의 사용자 지정 URL(예: `http://adobepass.android.app/`). 이 이벤트가 발생하면 UI 애플리케이션 레이어가 WebView를 닫고 로그아웃 프로세스가 완료됩니다.
 
    **참고:** 로그아웃 흐름은 사용자가 어떤 방식으로든 WebView와 상호 작용할 필요가 없다는 점에서 인증 흐름과 다릅니다. UI 애플리케이션 레이어는 WebView 를 사용하여 모든 리디렉션이 준수되는지 확인합니다. 따라서 로그아웃 프로세스 중에 WebView 컨트롤을 보이지 않게(즉, 숨김으로) 만들 수 있습니다(권장).
 
