@@ -1,17 +1,17 @@
 ---
-description: Primetime DRM의 기본 구성 요소는 Java SDK와 Flash Player 및 Adobe AIR 클라이언트 런타임 환경으로 구성됩니다.
-title: Java SDK, Flash Player 및 Adobe AIR 클라이언트
+description: Primetime DRM의 기본 구성 요소는 Java&trade; SDK, Flash Player 및 Adobe AIR 클라이언트 런타임 환경으로 구성됩니다.
+title: Java&trade; SDK, Flash Player 및 Adobe AIR 클라이언트
 exl-id: 01bb53dc-211d-4ec0-9e06-3bdbca01a071
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: d49042b559ce6083eca0738517d04c490755a033
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 # 개요 {#drm-components-overview}
 
-Primetime DRM의 기본 구성 요소는 Java SDK와 Flash Player 및 Adobe AIR 클라이언트 런타임 환경으로 구성됩니다.
+Primetime DRM의 기본 구성 요소는 Java™ SDK와 Flash Player 및 Adobe AIR 클라이언트 런타임 환경으로 구성됩니다.
 
 SDK 설정에 대한 자세한 내용은 다음에서 SDK 설정 을 참조하십시오. *컨텐츠 보호에 Adobe Primetime DRM SDK 사용*
 
