@@ -1,8 +1,7 @@
 ---
 description: MediaResource를 직접 인스턴스화하고 재생할 비디오 콘텐츠를 로드하여 리소스를 로드합니다.
 title: MediaPlayer에서 미디어 리소스 로드
-exl-id: b775c33e-399c-4a03-a132-407944f07706
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -23,7 +22,7 @@ MediaResource를 직접 인스턴스화하고 재생할 비디오 콘텐츠를 �
    * `MediaPlayerStatus.PREPARED`
    * `MediaPlayerStatus.ERROR`
 
-      이러한 이벤트를 통해 MediaPlayer 개체는 미디어 리소스가 성공적으로 로드되었는지 여부를 응용 프로그램에 알립니다.
+     이러한 이벤트를 통해 MediaPlayer 개체는 미디어 리소스가 성공적으로 로드되었는지 여부를 응용 프로그램에 알립니다.
 
 1. 미디어 플레이어의 상태가 (으)로 변경되는 경우 `MediaPlayerStatus.INITIALIZED`, 를 호출할 수 있습니다. `MediaPlayer.prepareToPlay`.
 

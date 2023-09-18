@@ -1,8 +1,7 @@
 ---
 description: 응용 프로그램에서 ERROR 상태에 대한 응답으로 오류 처리를 수행할 위치를 설정할 수 있습니다.
 title: 오류 처리 설정
-exl-id: c0ce1d80-85d5-4344-9ab0-bd56906421cb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

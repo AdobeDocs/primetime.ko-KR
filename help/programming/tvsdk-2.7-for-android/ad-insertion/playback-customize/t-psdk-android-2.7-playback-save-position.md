@@ -1,8 +1,7 @@
 ---
 description: 비디오에서 현재 재생 위치를 저장하고 이후 세션에서 동일한 위치에서 재생을 재개할 수 있습니다.
 title: 비디오 위치를 저장하고 나중에 다시 시작
-exl-id: 6b1eeeeb-ae13-437f-80cc-1ceb7bf8ac19
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
@@ -73,9 +72,9 @@ ht-degree: 0%
 
    * 이전 세션에서 저장된 위치에서 비디오 재생을 재개하려면 `seekToLocalTime`.
 
-      >[!TIP]
-      >
-      >이 메서드는 현지 시간 값으로만 호출됩니다. 현재 시간 결과를 사용하여 메서드가 호출되면 잘못된 동작이 발생합니다.
+     >[!TIP]
+     >
+     >이 메서드는 현지 시간 값으로만 호출됩니다. 현재 시간 결과를 사용하여 메서드가 호출되면 잘못된 동작이 발생합니다.
 
    * 현재 시간을 찾으려면 다음을 사용합니다 `seek`.
 

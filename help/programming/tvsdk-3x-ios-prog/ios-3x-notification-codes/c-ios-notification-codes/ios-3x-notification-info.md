@@ -1,8 +1,7 @@
 ---
 description: 이 표에는 INFO 유형 알림에 대한 자세한 정보가 나와 있습니다.
 title: 정보 알림 코드
-exl-id: c3703871-26cd-4f83-9a01-0993c6ef3d6b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 4%

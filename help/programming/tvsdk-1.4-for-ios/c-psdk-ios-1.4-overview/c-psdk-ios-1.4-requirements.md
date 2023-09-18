@@ -1,8 +1,7 @@
 ---
 description: TVSDK에는 미디어 콘텐츠, 매니페스트 콘텐츠 및 소프트웨어 버전에 대한 특정 속성이 필요합니다.
 title: 요구 사항
-exl-id: 2b81ae19-7907-4038-80e1-f579a8c04540
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -35,7 +34,7 @@ DRM 암호화 키를 포함하여 스트림 및 재생 목록(매니페스트)�
 
 * 버전은 HLS 재생 목록의 기능 및 속성과 일치해야 합니다. 그렇지 않으면 재생 오류가 발생할 수 있습니다.
 
-   자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1)을 참조하십시오.
+  자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1)을 참조하십시오.
 * 태그가 마스터 또는 미디어 재생 목록에 포함되지 않았거나 버전이 지정되지 않은 경우 기본적으로 버전 1이 사용됩니다. 버전 1을 준수하지 않는 콘텐츠는 재생되지 않습니다.
 * Adobe은 TVSDK 기반 클라이언트에서 재생에 버전 2 이상을 사용할 것을 권장합니다.
 

@@ -1,8 +1,7 @@
 ---
 description: TVSDK가 청구 지표를 XML 형식으로 Adobe에 보냅니다.
 title: 과금 지표 전송
-exl-id: 55009ce6-a814-4a20-bfa5-e8cf2d7ba923
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%

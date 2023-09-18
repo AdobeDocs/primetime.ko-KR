@@ -1,8 +1,7 @@
 ---
 description: NotificationEvent를 사용하면 Adobe 비디오 엔진(AVE)에서 전달되는 경고를 추적할 수 있습니다.
 title: 플레이어에서 AVE 경고 추적
-exl-id: 49118d7f-ed79-4d22-ba91-8929f97c7256
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%

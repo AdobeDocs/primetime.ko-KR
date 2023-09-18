@@ -1,8 +1,7 @@
 ---
 description: 광고 클릭을 관리하는 프로세스에서 플레이어의 UI 논리를 분리해야 합니다. 이를 수행하는 한 가지 방법은 활동에 대해 여러 조각을 구현하는 것입니다.
 title: 클릭 가능한 광고 프로세스 구분
-exl-id: d36d3b7f-8fd0-4d8c-a733-c3b79d564fba
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%

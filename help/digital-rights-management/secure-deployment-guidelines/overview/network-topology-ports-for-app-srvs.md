@@ -1,8 +1,7 @@
 ---
 description: 네트워크 포트를 사용하도록 Adobe Primetime DRM 라이센스 서버를 구성할 수 있습니다.
 title: 애플리케이션 서버용 포트
-exl-id: a482c54a-5f26-43c0-8fd7-c517ab296924
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 0%

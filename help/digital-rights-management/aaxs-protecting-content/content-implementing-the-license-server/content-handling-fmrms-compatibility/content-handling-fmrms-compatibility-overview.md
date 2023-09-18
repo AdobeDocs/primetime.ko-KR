@@ -2,8 +2,7 @@
 title: FMRMS 호환성 처리 중
 description: FMRMS 호환성 처리 중
 copied-description: true
-exl-id: 17029cf8-6be7-4bcb-a615-95dff9a7d723
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 title: 프로그래머 담당자별 상위 10개 MVPD에 대한 보고서를 보는 방법.
 description: 상위 10개의 MVPD에 대한 보고서를 봅니다.
-exl-id: 76fd1af8-dd96-426b-b9c8-a356b53b491d
-source-git-commit: 5963c55d87385fbd92646bfc45a3650fb568bca5
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%

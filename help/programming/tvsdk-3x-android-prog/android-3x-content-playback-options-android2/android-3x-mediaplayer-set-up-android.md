@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 다른 Primetime 구성 요소와 통합할 수 있는 고급 비디오 플레이어 애플리케이션(Primetime 플레이어)을 만드는 도구를 제공합니다. 또한 비디오 재생 품질을 극대화하도록 설계된 다양한 기능을 제공합니다.
 title: 미디어 플레이어 설정
-exl-id: 99fdc4c1-0c67-4de5-87a5-b42d76f43ae9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%

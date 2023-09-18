@@ -1,8 +1,7 @@
 ---
 description: 기본 광고 비헤이비어를 사용하도록 선택할 수 있습니다.
 title: 기본 재생 동작 사용
-exl-id: c277db2a-546e-4097-96ce-83914b726576
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: Adobe Primetime DRM Professional을 사용하는 경우 라이선스를 미리 생성하고 콘텐츠에 라이선스를 포함할 수 있습니다. 이 기능은 Enhanced License Chaining과 결합하여 Leaf 라이선스가 미리 생성되어 콘텐츠에 포함되고 클라이언트가 라이선스 서버에서 루트 라이선스(컴퓨터 또는 도메인에 바인딩됨)를 요청할 수 있습니다. 또는 클라이언트 응용 프로그램은 장치가 서버에 사전 등록되고, 서버가 해당 장치에 바인딩된 라이선스를 사전 생성하고, 클라이언트가 간단한 HTTP 웹 서버에서 해당 라이선스를 검색하는 워크플로우를 구현할 수 있습니다.
 title: 라이선스 사전 생성 중
-exl-id: 6ced7dde-b4bb-470d-bdae-3042f5577b67
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%

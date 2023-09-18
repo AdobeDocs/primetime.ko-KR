@@ -1,8 +1,7 @@
 ---
 description: Adobe Analytics 계정에서 작동하도록 구성하여 Primetime Android 참조 구현에서 비디오 사용을 추적할 수 있습니다.
 title: 비디오 분석 구성
-exl-id: 42498e2a-9ff2-442c-8cf9-bd7901f618f4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%

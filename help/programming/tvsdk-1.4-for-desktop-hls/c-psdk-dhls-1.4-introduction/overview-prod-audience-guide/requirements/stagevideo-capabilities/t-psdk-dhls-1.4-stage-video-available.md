@@ -1,8 +1,7 @@
 ---
 description: StageVideo를 사용할 수 없고 애플리케이션이 StageVideo를 사용하려고 하면 TVSDK에서 오류가 발생하지 않습니다. 응용 프로그램은 StageVideoAvailabilityEvent를 수신하여 StageVideo를 사용할 수 있는지 여부를 확인할 수 있습니다.
 title: StageVideo 사용 가능 여부 확인
-exl-id: 24136a14-8d7d-4569-9911-fac4e2de3227
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%

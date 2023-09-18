@@ -1,8 +1,7 @@
 ---
 title: PTAI 21.11.1 릴리스 노트
 description: PTAI 릴리스 노트는 2021년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다.
-exl-id: 39a05f6d-431a-4416-81b1-21d82c0dbd69
-source-git-commit: f4c6ef44c7f13bf8170a1f23a7ae8eba0171316a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: TVSDK 메서드를 호출하는 버튼을 설정하여 미디어를 일시 중지하고 재생할 수 있습니다.
 title: 재생/일시 중지 버튼 구현
-exl-id: 72b90a67-d5a3-4575-a67e-58a0f0d0acf1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%

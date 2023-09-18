@@ -2,8 +2,7 @@
 description: Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 Adobe의 통합 Primetime DRM 솔루션 대신 타사 DRM 솔루션을 사용할 수 있습니다.
 keywords: DRM;DASH;HLS
 title: Primetime DRM 인터페이스 개요
-exl-id: e07c1551-5a9b-4907-94ea-6b7536918b91
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -30,9 +29,9 @@ TVSDK 패키지에 포함된 DRM 샘플 플레이어 코드를 참조하십시�
 
 * DRM 하위 시스템을 구현하는 DRM 관리자 개체에 대한 미디어 플레이어의 참조:
 
-   ```
-   @property (readonly, nonatomic) DRMManager *drmManager
-   ```
+  ```
+  @property (readonly, nonatomic) DRMManager *drmManager
+  ```
 
 <!--<a id="section_F986DB1EDD6F44CD8E57419CCA0921E8"></a>-->
 

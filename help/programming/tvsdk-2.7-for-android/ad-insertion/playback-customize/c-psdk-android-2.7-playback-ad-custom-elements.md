@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 광고가 포함된 콘텐츠의 재생 동작을 사용자 지정하는 데 사용할 수 있는 클래스와 메서드를 제공합니다.
 title: 광고 재생용 API 요소
-exl-id: 0be9f9ed-5ec7-475e-abd0-bc14258a926b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -48,7 +47,7 @@ TVSDK는 광고가 포함된 콘텐츠의 재생 동작을 사용자 지정하�
    <td colname="col2"> 
     <ul id="ul_37700A741403448A8760FDDA68B099AA"> 
      <li id="li_B465170D449E49489C5924572BEEB4A5"><span class="codeph"> getLocalTime</span> <p>이는 배치된 광고 브레이크를 제외한 재생의 로컬 시간입니다. </p> </li> 
-     <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"><span class="codeph"> seekTolocal</span>. <p>여기서, 찾기는 스트림 내의 로컬 시간에 관하여 발생한다. </p> </li> 
+     <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"><span class="codeph"> seekTolocal</span>. <p>여기에서, 찾기는 스트림 내의 로컬 시간에 관하여 발생한다. </p> </li> 
      <li id="li_9DBCA75537DC4824AA66B53A3FA28812"><span class="codeph"> getTimeline.convertToLocalTime</span>. <p>타임라인에서 가상 위치가 로컬 위치로 변환됩니다. </p> </li> 
     </ul> <p>중요 사항:  <span class="codeph"> getLocalTime</span> 위치: <span class="codeph"> MediaPlayer</span> 동적으로 스플라이싱된 광고 없이 원래 콘텐츠에 상대적인 현재 시간을 반환합니다. <span class="codeph"> getLocalTime</span> 위치: <span class="codeph"> AdBreak</span> 원래 컨텐츠를 기준으로 브레이크의 시작 시간을 반환합니다. </p> </td> 
   </tr> 

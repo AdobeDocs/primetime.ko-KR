@@ -1,8 +1,7 @@
 ---
 description: 자막을 닫으면 소리가 들리지 않거나 시청자가 듣기 어려울 때 비디오의 오디오 부분이 화면에 텍스트로 표시됩니다.
 title: 폐쇄 캡션 작업
-exl-id: 523e384f-4f45-41cc-b0a1-27c0c1adf2b7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 도우미 클래스 AuditudeSettings를 사용하여 Adobe Primetime 광고 결정 메타데이터를 설정합니다.
 title: 광고 삽입 메타데이터 설정
-exl-id: 03b2237b-6b3b-46cf-bc0b-691513033463
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Adobe Primetime ad decisioning을 이전에 Auditude 라고 했습니다.
+>이전에 Adobe Primetime ad decisioning을 Auditude 라고 했습니다.
 
 1. 빌드 `AuditudeSettings` 인스턴스.
 

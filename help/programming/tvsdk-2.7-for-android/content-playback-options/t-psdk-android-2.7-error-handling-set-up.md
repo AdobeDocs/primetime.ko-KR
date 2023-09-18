@@ -1,8 +1,7 @@
 ---
 description: 오류를 처리할 하나의 레이스를 설정할 수 있습니다.
 title: 오류 처리 설정
-exl-id: 594cd9b8-491f-4972-990a-5657f87c7f89
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: Adobe Primetime DRM은 고부가가치 시청각 콘텐츠를 위한 고급 Digital Rights Management(DRM) 및 콘텐츠 보호 솔루션입니다. Java API 생성을 지원하는 애플리케이션에서 Primetime DRM SDK를 사용하여 DRM 정책을 지정하고, 이러한 정책을 콘텐츠에 적용하고, 해당 콘텐츠를 암호화할 수 있습니다.
 title: Adobe Primetime DRM의 새로운 기능
-exl-id: 998dae80-b3d3-419e-8fd3-d925a83d8b53
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%

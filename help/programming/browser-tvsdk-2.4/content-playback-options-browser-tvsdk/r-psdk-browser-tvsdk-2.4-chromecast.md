@@ -1,8 +1,7 @@
 ---
 description: TVSDK 기반 발신자 앱에서 스트림을 캐스팅하고 브라우저 TVSDK를 사용하여 Chromecast에서 스트림이 재생되도록 할 수 있습니다.
 title: 브라우저 TVSDK용 Google 캐스트 앱
-exl-id: 71077467-8040-4f04-a43b-cc963701c426
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -19,12 +18,12 @@ TVSDK 기반 발신자 앱에서 스트림을 캐스팅하고 브라우저 TVSDK
 
 * 원격 제어 역할을 하는 발신자 앱입니다.
 
-   발신자 앱에는 스마트폰, PC 등이 포함됩니다. iOS, Android 및 Chrome용 기본 SDK를 사용하여 앱을 개발할 수 있습니다.
+  발신자 앱에는 스마트폰, PC 등이 포함됩니다. iOS, Android 및 Chrome용 기본 SDK를 사용하여 앱을 개발할 수 있습니다.
 * Chromecast에서 실행되고 콘텐츠를 재생하는 수신자 앱입니다.
 
-   >[!IMPORTANT]
-   >
-   >이 앱은 HTML5 앱일 수 있습니다.
+  >[!IMPORTANT]
+  >
+  >이 앱은 HTML5 앱일 수 있습니다.
 
 보낸 사람과 받은 사람은 Cast SDK를 사용하여 메시지를 전달하여 통신합니다.
 
@@ -67,18 +66,18 @@ var MSG_NAMESPACE = "urn:x-cast:com.adobe.primetime";
 * 발신자는 다음 위치에서 플랫폼에 대한 설명서를 검토해야 합니다. [보낸 사람 앱 개발](https://developers.google.com/cast/docs/sender_apps).
 * 수신자는 캐스트 수신자 API를 사용하여 발신자 앱과의 연결을 설정합니다. 예:
 
-   ```js
-   window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance(); 
-   
-   window.castReceiverManager.onReady = function (event) { /*handle event*/ }; 
-   window.castReceiverManager.onSenderConnected = function (event) { /*handle event*/ }; 
-   window.castReceiverManager.onSenderDisconnected = function (event) { /*handle event*/ }; 
-   
-   var customMessageBus = window.castReceiverManager.getCastMessageBus(MSG_NAMESPACE); 
-   customMessageBus.onMessage = function (event) { /*handle messages*/ }; 
-   
-   window.castReceiverManager.start(); 
-   ```
+  ```js
+  window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance(); 
+  
+  window.castReceiverManager.onReady = function (event) { /*handle event*/ }; 
+  window.castReceiverManager.onSenderConnected = function (event) { /*handle event*/ }; 
+  window.castReceiverManager.onSenderDisconnected = function (event) { /*handle event*/ }; 
+  
+  var customMessageBus = window.castReceiverManager.getCastMessageBus(MSG_NAMESPACE); 
+  customMessageBus.onMessage = function (event) { /*handle messages*/ }; 
+  
+  window.castReceiverManager.start(); 
+  ```
 
 ## 메시지 처리 {#section_3E4814546F5946C9B3E7A1AE384B4FF8}
 

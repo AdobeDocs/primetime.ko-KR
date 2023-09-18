@@ -1,8 +1,7 @@
 ---
 description: DRM 암호화 키를 포함하여 스트림 및 재생 목록(매니페스트)에 대한 제한 및 요구 사항을 확인하십시오.
 title: 컨텐츠 및 매니페스트 요구 사항
-exl-id: 96b2b245-558b-4606-87c0-22140430c326
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%

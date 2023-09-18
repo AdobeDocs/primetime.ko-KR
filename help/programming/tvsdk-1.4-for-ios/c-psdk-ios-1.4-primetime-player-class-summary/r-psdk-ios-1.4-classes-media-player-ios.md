@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 미디어 플레이어와 해당 리소스에 대해 설명합니다.
 title: 미디어 플레이어 클래스
-exl-id: de7f7488-2026-43b4-b74d-feff67bdc69a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK에 이벤트 리스너를 등록하면 수신할 이벤트 유형과 콜백의 이름을 지정합니다. 이벤트가 발생하면 브라우저 TVSDK가 콜백을 호출하고 적절한 유형의 이벤트 개체를 전달합니다.
 title: 콜백에 대한 이벤트 유형 및 클래스
-exl-id: 94c571ea-6dd2-4c15-89db-7015d89c9208
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%

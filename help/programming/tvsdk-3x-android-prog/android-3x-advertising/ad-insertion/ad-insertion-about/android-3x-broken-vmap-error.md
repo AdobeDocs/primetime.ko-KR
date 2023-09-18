@@ -2,8 +2,7 @@
 description: TVSDK는 광고 서버 응답에서 손상된 VMAP이 발생하면 1109(NETWORK_AD_URL_FAILED) 오류를 발송합니다.
 keywords: 1109;NETWORK_AD_URL_FAILED;손상된 VMAP
 title: 손상된 VMAP에 대한 클라이언트 오류 처리
-exl-id: e0ca36e7-ac88-44b8-bbdd-bcf29467417b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%

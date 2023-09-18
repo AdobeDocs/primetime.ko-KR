@@ -1,8 +1,7 @@
 ---
 description: 라이센스 서버에서 구성 및 로그 파일의 위치를 제어하도록 구성할 수 있는 몇 가지 Java 시스템 속성이 있습니다.
 title: Java 시스템 속성
-exl-id: 08fe6910-9d58-41c3-91d3-514406bedf05
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 * *`LicenseServer.ConfigRoot`* — 라이센스 서버의 구성 파일이 포함된 디렉토리의 이름입니다.
 
-   다음을 참조하십시오 *라이선스 서버 구성 파일* 이러한 파일의 내용에 대한 자세한 내용은 을 참조하십시오. 구성되지 않은 경우 기본값은 입니다. `CATALINA_BASE/licenseserver`.
+  다음을 참조하십시오 *라이선스 서버 구성 파일* 이러한 파일의 내용에 대한 자세한 내용은 을 참조하십시오. 구성되지 않은 경우 기본값은 입니다. `CATALINA_BASE/licenseserver`.
 
 * *LicenseServer.Logroot* — 이름 [!DNL logs] 라이선스 서버 응용 프로그램 로그가 있는 디렉터리입니다. 이 디렉토리의 이름을 수정하지 않은 경우 이 디렉토리의 이름은 로 구성됩니다. *LicenseServer.ConfigRoot* 기본적으로.
 

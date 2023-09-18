@@ -1,8 +1,7 @@
 ---
 description: 대체 또는 지연 바인딩 오디오를 사용하면 비디오 트랙에 사용할 수 있는 오디오 트랙 간에 전환할 수 있습니다. 이러한 방식으로, 사용자는 비디오가 재생될 때 언어 트랙을 선택할 수 있다.
 title: 대체 오디오
-exl-id: ce3dbdd3-9cc2-4732-b980-33b091667f70
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%

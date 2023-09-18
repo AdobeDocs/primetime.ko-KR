@@ -1,8 +1,7 @@
 ---
 description: 기본적으로 재생을 시작할 때 VOD 미디어는 0에 시작되고 라이브 미디어는 클라이언트 라이브 포인트에서 시작됩니다(DefaultMediaPlayer.LIVE_POINT).
 title: 특정 시간에 스트림 입력
-exl-id: b97dbabf-e2ab-4669-a9f3-9129af938a40
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%

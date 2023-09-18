@@ -1,8 +1,7 @@
 ---
 description: 이 표에서는 수익 최적화 알림에 대한 자세한 정보를 제공합니다.
 title: 수익 최적화 코드
-exl-id: 3657ba70-ec35-495b-ae7b-4198429bdf6a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%

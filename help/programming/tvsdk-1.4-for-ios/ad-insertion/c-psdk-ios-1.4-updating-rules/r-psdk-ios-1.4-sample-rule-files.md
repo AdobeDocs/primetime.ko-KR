@@ -1,8 +1,7 @@
 ---
 description: AdobeTVSDKConfig.json에서 특정 영역에 대한 규칙뿐만 아니라 기본 규칙을 지정할 수 있습니다.
 title: 샘플 크리에이티브 선택 규칙
-exl-id: 30580890-933f-4fd4-86fe-e766ac02dca4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%

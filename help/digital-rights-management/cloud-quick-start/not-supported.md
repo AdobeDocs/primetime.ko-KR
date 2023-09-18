@@ -2,8 +2,7 @@
 title: Primetime Cloud DRM에서 지원하지 않는 사항
 description: Primetime Cloud DRM에서 지원하지 않는 사항
 copied-description: true
-exl-id: 11dac4e3-6f08-43d0-a0db-3d3849baa8a9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 title: 사용자 세그먼트에 대한 작업 만들기 및 효과 추적
 description: 정의된 사용자 세그먼트에 미치는 영향을 효과를 효과를 효과를 효과를 효과를 효과를 분석하고 추적하는 작업을 만드는 방법입니다.
-exl-id: ab74f857-e178-4120-8f9c-655ec921d096
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -25,8 +24,8 @@ ht-degree: 0%
 1. 다음에서 **새 작업 만들기** 페이지에서 다음에 대한 양식 필드에 세부 사항을 입력합니다.
 
    * [작업 이름](#operation-details) 작업 세부 정보
-   * 다음에서 작업을 실행할 세그먼트 [Target 세그먼트](#segment) 및 을 사용하여 세그먼트 세분화 [추가 세분화](#additional-segmentation)
-   * [세그먼트 유형](#segment-type) 아래에 [Target 세그먼트](#segment)
+   * 다음에서 작업을 실행할 세그먼트 [대상 세그먼트](#segment) 및 을 사용하여 세그먼트 세분화 [추가 세분화](#additional-segmentation)
+   * [세그먼트 유형](#segment-type) 아래에 [대상 세그먼트](#segment)
    * [작업](#action)
    * [활성화 예약](#schedule)
 
@@ -46,9 +45,9 @@ ht-degree: 0%
 
 +++
 
-## Target 세그먼트 {#segment}
+## 대상 세그먼트 {#segment}
 
-+++프로그래머- Target 세그먼트
++++프로그래머 - Target 세그먼트
 
 다음 **세그먼트** 여기에서는 이 작업으로 작업을 수행할 사용자 또는 작업에 대한 샘플 그룹을 정의합니다. 기본 세그먼트는 입니다 **세그먼트** 다음을 사용하여 선택함 [세그먼트 및 일정 패널](/help/AccountIQ/howto-select-segment-timeframe.md) 위의 1단계에서 기본 보고서 또는 대시보드 페이지에서 다음을 수행합니다.
 
@@ -62,7 +61,7 @@ ht-degree: 0%
 
 +++
 
-+++MVPD- Target 세그먼트
++++MVPD- 대상 세그먼트
 
 다음 **세그먼트** 여기에서는 이 작업으로 작업을 수행할 사용자 또는 작업에 대한 샘플 그룹을 정의합니다. 기본 세그먼트는 입니다 **세그먼트** 다음을 사용하여 선택함 [세그먼트 및 일정 패널](/help/AccountIQ/howto-select-segment-timeframe.md) 위의 1단계에서 기본 보고서 또는 대시보드 페이지에서 다음을 수행합니다.
 

@@ -1,8 +1,7 @@
 ---
 description: 콘텐츠를 패키지하려면 먼저 하나 이상의 정책을 만들어야 합니다. 정책에 지정할 수 있는 사용 규칙에 대한 개요는 Adobe 액세스 SDK 개요에서 사용 규칙 을 참조하십시오.
 title: 새 정책 만들기
-exl-id: c8c78983-3578-4895-8f61-8f812aa59e20
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 이벤트 핸들러를 사용하면 브라우저 TVSDK가 이벤트에 응답할 수 있습니다.
 title: 이벤트 리스너 및 콜백 구현
-exl-id: 2ab33c03-4df6-48e5-825c-95aeef8855d2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
@@ -21,13 +20,13 @@ ht-degree: 0%
 
    * **필수 이벤트**: 모든 재생 이벤트를 수신합니다.
 
-      >[!IMPORTANT]
-      >
-      >재생 이벤트 `STATUS_CHANGED` 는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다.
+     >[!IMPORTANT]
+     >
+     >재생 이벤트 `STATUS_CHANGED` 는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다.
 
    * **기타 이벤트**: 애플리케이션에 따라 선택 사항입니다.
 
-      예를 들어 재생에 광고를 통합하는 경우 모두 수신 대기하십시오 `AdBreakPlaybackEvent` 및 `AdPlaybackEvent` 이벤트.
+     예를 들어 재생에 광고를 통합하는 경우 모두 수신 대기하십시오 `AdBreakPlaybackEvent` 및 `AdPlaybackEvent` 이벤트.
 
 1. 각 이벤트에 대해 이벤트 리스너를 구현합니다.
 

@@ -2,8 +2,7 @@
 title: 개요
 description: 개요
 copied-description: true
-exl-id: ba6e8fab-b199-4969-b372-06fa6d7a1e4a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -30,7 +29,7 @@ java -jar AdobeLicenseGenerator.jar -m
 
 * `metadata` - Adobe Primetime DRM 메타데이터를 포함합니다.
 
-   다음을 사용하여 보호된 콘텐츠에서 이 파일을 검색할 수 있습니다. `-d -m` media Packager의 옵션입니다.
+  다음을 사용하여 보호된 콘텐츠에서 이 파일을 검색할 수 있습니다. `-d -m` media Packager의 옵션입니다.
 
 **이전에 생성한 라이선스 표시:**
 

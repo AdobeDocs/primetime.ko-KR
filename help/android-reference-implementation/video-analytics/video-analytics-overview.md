@@ -1,8 +1,7 @@
 ---
 description: TVSDK 기반 앱을 Adobe Analytics 계정과 통합하여 비디오를 쉽게 추적할 수 있습니다.
 title: 개요
-exl-id: bc86b48f-3e55-4825-89f8-74d3e61d1e67
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%

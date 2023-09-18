@@ -1,8 +1,7 @@
 ---
 description: 해상도 기반 출력 보호(RBOP)는 컨텐츠의 수직 픽셀 카운트에 기초하여 출력 보호를 제공하는 메커니즘이다.
 title: RBOP 개요
-exl-id: 57c39c4e-d8f3-4f28-95a5-2e61a1bd7793
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%

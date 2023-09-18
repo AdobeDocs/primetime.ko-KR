@@ -1,8 +1,7 @@
 ---
 description: 비디오 플레이어 광고 서비스 제공 인터페이스 정의(VPAID)는 비디오 광고를 재생하는 공통 인터페이스를 제공합니다. VPAID는 사용자에게 풍부한 미디어 경험을 제공하며 게시자가 광고를 더 잘 타겟팅하고, 광고 노출 횟수를 추적하고, 비디오 콘텐츠를 수익화할 수 있도록 합니다.
 title: 사용자 지정 광고 요구 사항
-exl-id: c13748d6-23f1-4f34-95b4-7b532db6e536
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -23,7 +22,7 @@ TVSDK는 다음 기능을 지원합니다.
 * 선형 VPAID 광고 온디맨드(VOD) 콘텐츠
 * Flash VPAID 광고
 
-   VPAID 광고는 Flash 기반이어야 하며, 광고 응답은 VPAID 광고의 미디어 유형을 다음으로 식별해야 합니다. `application/x-shockwave-flash`.
+  VPAID 광고는 Flash 기반이어야 하며, 광고 응답은 VPAID 광고의 미디어 유형을 다음으로 식별해야 합니다. `application/x-shockwave-flash`.
 
 다음 기능은 지원되지 않습니다.
 

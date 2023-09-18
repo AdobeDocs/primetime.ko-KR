@@ -1,8 +1,7 @@
 ---
 description: VOD(video-on-demand) 광고 삽입 프로세스는 광고 해결, 광고 삽입 및 광고 재생 단계로 구성됩니다. 광고 추적의 경우 TVSDK는 원격 추적 서버에 각 광고의 재생 진행 상황을 알려야 합니다. 예상치 못한 상황이 발생하면 적절한 조치를 취한다.
 title: VOD에 대한 Advertising 삽입 및 장애 조치
-exl-id: 5af5bef6-e948-4215-a89f-ee46fd2d8a38
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -21,17 +20,17 @@ TVSDK는 다음 유형의 광고 공급자를 지원합니다.
 
 * 메타데이터 광고 공급자
 
-   광고 데이터는 일반 텍스트 JSON 파일로 인코딩됩니다.
+  광고 데이터는 일반 텍스트 JSON 파일로 인코딩됩니다.
 * Primetime ad decisioning 광고 공급자
 
-   TVSDK가 타겟팅 매개 변수 세트와 자산 식별 번호를 포함하는 요청을 Primetime ad decisioning 백엔드 서버로 전송합니다. Primetime ad decisioning 은 필수 광고 정보가 포함된 SMIL(Synchronized Multimedia Integration Language) 문서에 응답합니다.
+  TVSDK가 타겟팅 매개 변수 세트와 자산 식별 번호를 포함하는 요청을 Primetime ad decisioning 백엔드 서버로 전송합니다. Primetime ad decisioning 은 필수 광고 정보가 포함된 SMIL(Synchronized Multimedia Integration Language) 문서에 응답합니다.
 
 이 단계에서 다음 페일오버 상황 중 하나가 발생할 수 있습니다.
 
 * 리소스가 없는 등의 연결 결여 또는 서버측 오류 등의 이유로 데이터를 검색할 수 없습니다.
 * 데이터가 검색되었지만 형식이 잘못되었습니다.
 
-   예를 들어 인바운드 데이터의 구문 분석이 실패했기 때문에 이러한 문제가 발생할 수 있습니다.
+  예를 들어 인바운드 데이터의 구문 분석이 실패했기 때문에 이러한 문제가 발생할 수 있습니다.
 
 TVSDK에서 오류에 대한 경고 알림을 보내고 처리를 계속합니다.
 
@@ -63,6 +62,6 @@ TVSDK는 광고 세그먼트를 다운로드하여 장치의 화면에서 렌더
 * 페일오버 알고리즘으로 인해 프로필이 변경될 때 발생하는 알림 이벤트입니다.
 * 모든 페일오버 옵션을 고려할 때 알림 이벤트가 트리거되며 추가 작업을 자동으로 수행할 수 없습니다.
 
-   응용 프로그램에서 적절한 작업을 수행해야 합니다.
+  응용 프로그램에서 적절한 작업을 수행해야 합니다.
 
 오류 발생 여부에 관계없이 TVSDK 호출 `AdBreakPlaybackEvent.AD_BREAK_COMPLETE` 각 `AdBreakPlaybackEvent.AD_BREAK_STARTED` 및 `AdPlaybackEvent.AD_COMPLETED` 마다 `AdPLaybackEvent.AD_STARTED`. 그러나 세그먼트를 다운로드할 수 없는 경우에는 타임라인에 간격이 있을 수 있습니다. 간격이 충분히 큰 경우 플레이헤드 위치의 값과 보고된 광고 진행률이 불연속성을 나타낼 수 있습니다.

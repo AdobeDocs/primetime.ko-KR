@@ -1,8 +1,7 @@
 ---
 description: TVSDK 앱에서 FairPlay 스트리밍을 구현하려면 리소스 로더를 작성해야 하며, 이 로더는 FairPlay 스트리밍 서버에 라이선스 획득 요청을 보냅니다.
 title: TVSDK 애플리케이션의 Apple FairPlay
-exl-id: 44bc076d-77bd-4fbc-9813-4146546ec264
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -39,113 +38,113 @@ https://fp-gen.service.expressplay.com
 
 * **엔드 투 엔드 재생 초기 테스트** 콘텐츠를 패키징할 때 `skd:` URL. 앱을 테스트할 때 ExpressPlay에서 라이선스를 수동으로 획득하고 라이선스를 하드코드(및 `https:` URL)과 콘텐츠 URL이 들어 있습니다.
 
-   예:
+  예:
 
-   ```
-   NSString* const PLAYLIST_URL =  
-     @"https://{your_content_URL}/{your_manifest}.m3u8"; 
-   NSString* const EXPRESSPLAY_TOKEN =  
-     @"https://fp.service.expressplay.com:80/hms/fp/rights/? 
-       ExpressPlayToken={copy_your_token_to_here}";
-   ```
+  ```
+  NSString* const PLAYLIST_URL =  
+    @"https://{your_content_URL}/{your_manifest}.m3u8"; 
+  NSString* const EXPRESSPLAY_TOKEN =  
+    @"https://fp.service.expressplay.com:80/hms/fp/rights/? 
+      ExpressPlayToken={copy_your_token_to_here}";
+  ```
 
 * **대부분의 기타 사례** 콘텐츠를 패키징할 때 `skd:` 콘텐츠의 ID를 고유하게 나타내는 URL입니다. 로더에서 `skd:` URL을 만든 후 서버에 보내어 토큰을 얻은 다음 결과 토큰을 URL로 사용합니다.
 
-   예:
+  예:
 
-   ```
-   - (BOOL)resourceLoader:(AVAssetResourceLoader *)resourceLoader  
-         shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *)loadingRequest { 
-       NSURL *url = [[loadingRequest request] URL]; 
-       if (![[url scheme] isEqual:@"skd"]) 
-           return NO; 
-   
-       NSString *strUrl = [url absoluteString]; 
-       NSLog(@"url is: %@", strUrl); 
-   
-       strUrl = [strUrl stringByReplacingOccurrencesOfString:@"skd://" withString:@"https://"]; 
-   
-       NSData *assetId; 
-   
-       NSData *requestBytes; 
-       NSError* error = nil; 
-       BOOL handled = NO; 
-   
-       NSData  *responseData = nil; 
-   
-       assetId = getMyAssetIdentifierFromURL(url); 
-   
-       /* Usecase 1: "On Premise Fairplay Server" 
-        * Set the strUrl to the OnPremise Fairplay Server Url. The OnPremise Fairplay  
-        * Server Url is either hardcoded in the App or derived from strUrl. 
-        */ 
-   #if 0  
-       // Insert your use case 1 codes here: 
-       // strUrl = getOnPremiseServerUrl(strUrl, assetId); 
-   #endif // 
-   
-       /* Usecase 2: The strUrl is the entitlement server. 
-        * Send assetId to the entitlement server; if the user is allowed to playback  
-        * the content, the entitlement server will send back an ExpressPlay Token Url. 
-        */ 
-   
-   #if 0 
-       // The hardcoded SEES server: 
-       strUrl = @"https://10.0.248.85:8080/sees/SEESServlet"; 
-   
-       // You can use the following code to simulate a device binding entitlement  
-       // request:  
-       // First, invoke getExpressPlayTokenUrlFromEntilementServer with  
-       // bEnforceDeviceID set to false. When you play the content, the device_id  
-       // will be registered on the ExpressPlay Server.  Now change code to set  
-       // bEnforceDeviceID to true, and rerun the program. The ExpressPlay token  
-       // sent back by the SEES server will be device bound. 
-   
-       // The strUrl returned below is the ExpressPlay Token URL. 
-       strUrl = getExpressPlayTokenUrlFromEntilementServer(strUrl, assetId, true, &error); 
-   #endif 
-   
-       /* Usecase 3: The strUrl is already the ExpressPlay Token Url. 
-        */ 
-   
-       // Read in the certificate 
-       NSLog(@"Get Application Certificate"); 
-       NSString* certPath = [[NSBundle mainBundle] pathForResource:@"my_certificate.cer"  
-                                                            ofType:nil]; 
-   
-       NSData *appCert = [NSData dataWithContentsOfFile:certPath]; 
-   
-       // To create the request blob for the server: 
-       requestBytes = [loadingRequest streamingContentKeyRequestDataForApp: appCert 
-                                                         contentIdentifier:assetId  
-                                                                   options:nil  
-                                                                     error:&error]; 
-       if (requestBytes == nil) { 
-           NSLog(@"Error creating server request: %@", error); 
-           return false; 
-       } 
-       // Per the specification, send requestBytes along with the assetId to the Key 
-       // Server and obtain the response. 
-       NSError *err; 
-   
-       responseData = getCKCFromExpressPlayService( strUrl, requestBytes, assetId, &err); 
-   
-       if (responseData != nil) { 
-           NSLog(@"Get response data: "); 
-           [loadingRequest finishLoadingWithResponse:nil  
-                                                data:(NSData *)responseData 
-                                            redirect:nil]; 
-       } 
-       else { 
-           [loadingRequest finishLoadingWithError:err]; 
-           NSLog(@"bad key response"); 
-       } 
-       handled = YES; 
-   bail: 
-       return handled; 
-   
-   }
-   ```
+  ```
+  - (BOOL)resourceLoader:(AVAssetResourceLoader *)resourceLoader  
+        shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *)loadingRequest { 
+      NSURL *url = [[loadingRequest request] URL]; 
+      if (![[url scheme] isEqual:@"skd"]) 
+          return NO; 
+  
+      NSString *strUrl = [url absoluteString]; 
+      NSLog(@"url is: %@", strUrl); 
+  
+      strUrl = [strUrl stringByReplacingOccurrencesOfString:@"skd://" withString:@"https://"]; 
+  
+      NSData *assetId; 
+  
+      NSData *requestBytes; 
+      NSError* error = nil; 
+      BOOL handled = NO; 
+  
+      NSData  *responseData = nil; 
+  
+      assetId = getMyAssetIdentifierFromURL(url); 
+  
+      /* Usecase 1: "On Premise Fairplay Server" 
+       * Set the strUrl to the OnPremise Fairplay Server Url. The OnPremise Fairplay  
+       * Server Url is either hardcoded in the App or derived from strUrl. 
+       */ 
+  #if 0  
+      // Insert your use case 1 codes here: 
+      // strUrl = getOnPremiseServerUrl(strUrl, assetId); 
+  #endif // 
+  
+      /* Usecase 2: The strUrl is the entitlement server. 
+       * Send assetId to the entitlement server; if the user is allowed to playback  
+       * the content, the entitlement server will send back an ExpressPlay Token Url. 
+       */ 
+  
+  #if 0 
+      // The hardcoded SEES server: 
+      strUrl = @"https://10.0.248.85:8080/sees/SEESServlet"; 
+  
+      // You can use the following code to simulate a device binding entitlement  
+      // request:  
+      // First, invoke getExpressPlayTokenUrlFromEntilementServer with  
+      // bEnforceDeviceID set to false. When you play the content, the device_id  
+      // will be registered on the ExpressPlay Server.  Now change code to set  
+      // bEnforceDeviceID to true, and rerun the program. The ExpressPlay token  
+      // sent back by the SEES server will be device bound. 
+  
+      // The strUrl returned below is the ExpressPlay Token URL. 
+      strUrl = getExpressPlayTokenUrlFromEntilementServer(strUrl, assetId, true, &error); 
+  #endif 
+  
+      /* Usecase 3: The strUrl is already the ExpressPlay Token Url. 
+       */ 
+  
+      // Read in the certificate 
+      NSLog(@"Get Application Certificate"); 
+      NSString* certPath = [[NSBundle mainBundle] pathForResource:@"my_certificate.cer"  
+                                                           ofType:nil]; 
+  
+      NSData *appCert = [NSData dataWithContentsOfFile:certPath]; 
+  
+      // To create the request blob for the server: 
+      requestBytes = [loadingRequest streamingContentKeyRequestDataForApp: appCert 
+                                                        contentIdentifier:assetId  
+                                                                  options:nil  
+                                                                    error:&error]; 
+      if (requestBytes == nil) { 
+          NSLog(@"Error creating server request: %@", error); 
+          return false; 
+      } 
+      // Per the specification, send requestBytes along with the assetId to the Key 
+      // Server and obtain the response. 
+      NSError *err; 
+  
+      responseData = getCKCFromExpressPlayService( strUrl, requestBytes, assetId, &err); 
+  
+      if (responseData != nil) { 
+          NSLog(@"Get response data: "); 
+          [loadingRequest finishLoadingWithResponse:nil  
+                                               data:(NSData *)responseData 
+                                           redirect:nil]; 
+      } 
+      else { 
+          [loadingRequest finishLoadingWithError:err]; 
+          NSLog(@"bad key response"); 
+      } 
+      handled = YES; 
+  bail: 
+      return handled; 
+  
+  }
+  ```
 
 ## TVSDK 애플리케이션에서 Apple FairPlay 활성화 {#section_61CFA3C22FE64F52B2C8CE860B72E88B}
 

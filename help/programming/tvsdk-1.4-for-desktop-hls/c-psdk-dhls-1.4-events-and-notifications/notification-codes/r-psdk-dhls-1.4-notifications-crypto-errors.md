@@ -1,8 +1,7 @@
 ---
 description: Adobe 비디오 엔진의 암호화 모듈은 NATIVE_ERROR 메타데이터 개체에서 이러한 알림을 반환합니다.
 title: NATIVE_ERROR 암호화 값
-exl-id: c14b35c1-ed91-4a44-b826-fd6a05dbe345
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 8%

@@ -1,8 +1,7 @@
 ---
 description: 비디오 플레이어 광고 서비스 제공 인터페이스 정의(VPAID) 2.0에서는 비디오 광고를 재생할 수 있는 공통 인터페이스를 제공합니다. 사용자에게 풍부한 미디어 경험을 제공하고 게시자가 광고를 더 잘 타겟팅하고, 광고 노출 횟수를 추적하고, 비디오 콘텐츠를 수익화할 수 있도록 합니다.
 title: VPAID 2.0 광고 지원
-exl-id: ee3e0cd9-463e-4de9-a94f-292e968b6f08
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -17,11 +16,11 @@ ht-degree: 0%
 
 * VPAID 사양의 버전 2.0
 
-   자세한 내용은 다음을 참조하십시오. [IAB VPAID 2.0](https://www.iab.com/wp-content/uploads/2015/06/VPAID_2_0_Final_04-10-2012.pdf).
+  자세한 내용은 다음을 참조하십시오. [IAB VPAID 2.0](https://www.iab.com/wp-content/uploads/2015/06/VPAID_2_0_Final_04-10-2012.pdf).
 * 선형 VPAID 광고 온디맨드(VOD) 콘텐츠
 * JavaScript VPAID 광고
 
-   VPAID 광고는 JavaScript 기반이어야 하며, 광고 응답은 VPAID 광고의 미디어 유형을 다음으로 식별해야 합니다. `application/javascript`.
+  VPAID 광고는 JavaScript 기반이어야 하며, 광고 응답은 VPAID 광고의 미디어 유형을 다음으로 식별해야 합니다. `application/javascript`.
 
 다음 기능은 지원되지 않습니다.
 
@@ -38,15 +37,15 @@ API가 다음과 같이 변경되었습니다.
 
 * A `getCustomAdView` 함수가에 추가되었습니다. `MediaPlayer` 및 은 VPAID 광고를 렌더링하는 웹 보기를 반환합니다.
 
-   에 대한 자세한 내용은 `CustomAdView` 이 함수에서 반환되는 개체는 다음을 참조하십시오. [API 참조](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/index.html).
+  에 대한 자세한 내용은 `CustomAdView` 이 함수에서 반환되는 개체는 다음을 참조하십시오. [API 참조](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/index.html).
 
 * A `CUSTOM_AD` 미디어 플레이어 인스턴스에서 이벤트를 발송합니다.
 
-   응용 프로그램은 다음을 구현하여 이벤트 콜백을 등록할 수 있습니다 `CustomAdEventListener`.
+  응용 프로그램은 다음을 구현하여 이벤트 콜백을 등록할 수 있습니다 `CustomAdEventListener`.
 
 * `MediaPlayer.setCustomAdTimeout(int milliseconds)` vpaid 로드 프로세스에서 기본 시간 제한을 변경할 수 있습니다.
 
-   기본 시간 초과 값은 10초입니다.
+  기본 시간 초과 값은 10초입니다.
 
 <!--<a id="section_495700E1C5404A7B85307A4137C740C5"></a>-->
 
@@ -57,7 +56,7 @@ VPAID 광고가 재생되는 동안:
 
 * VPAID 광고는 대화형일 수 있으므로 사전 정의된 기간이 없습니다.
 
-   광고 서버 응답으로 정의된 광고 기간 및 총 광고 브레이크 기간이 정확하지 않을 수 있습니다.
+  광고 서버 응답으로 정의된 광고 기간 및 총 광고 브레이크 기간이 정확하지 않을 수 있습니다.
 
 ## VPAID 2.0 통합 구현 {#implement-vpaid-integration}
 

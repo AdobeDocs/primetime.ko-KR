@@ -2,8 +2,7 @@
 description: 장치 화면이 꺼져 있고 켜져 있는 경우 TVSDK MediaPlayer를 일시 중단하고 복원하려면 애플리케이션이 처리해야 합니다.
 keywords: SurfaceView;일시 중단;복원;BroadcastReceiver
 title: MediaPlayer 일시 중단 및 복원
-exl-id: 159f0f4f-2bb7-40a1-9747-be970dfbb04d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%

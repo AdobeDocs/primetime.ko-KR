@@ -1,8 +1,7 @@
 ---
 title: MVPD 로그인 페이지를 iFrame에서 Popup으로 마이그레이션하는 방법
 description: MVPD 로그인 페이지를 iFrame에서 Popup으로 마이그레이션하는 방법
-exl-id: 389ea0ea-4e18-4c2e-a527-c84bffd808b4
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
@@ -232,4 +231,3 @@ function checkClosed() {
 >* 샘플 코드는 사용된 요청자 ID와 연결된 화이트리스트에 있는 도메인에서만 제대로 실행됩니다.
 >* 전체 코드를 다운로드할 수 있으므로 이 기술 노트에 표시된 코드는 잘렸습니다. 전체 샘플을 보려면 **JS iFrame과 팝업 샘플 비교**.
 >* 외부 JavaScript 라이브러리가 다음에서 연결되었습니다. [Google Hosted Services](https://developers.google.com/speed/libraries/).
-

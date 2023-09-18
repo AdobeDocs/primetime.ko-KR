@@ -1,8 +1,7 @@
 ---
 description: 미디어 재생 비헤이비어는 찾기, 일시 정지, 빨리 감기 또는 되감기(트릭 재생 모드) 및 광고 포함에 의해 영향을 받습니다.
 title: 광고가 있는 기본 및 사용자 지정된 재생 비헤이비어
-exl-id: 56544683-28a3-4720-bfd8-946cb09880aa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%

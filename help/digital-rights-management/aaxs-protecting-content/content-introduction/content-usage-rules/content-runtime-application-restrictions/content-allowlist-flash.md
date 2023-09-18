@@ -2,8 +2,7 @@
 title: 보호된 컨텐츠 재생이 허용된 Adobe® Flash® 플레이어 SWF 허용 목록
 description: 보호된 컨텐츠 재생이 허용된 Adobe® Flash® 플레이어 SWF 허용 목록
 copied-description: true
-exl-id: e6adf548-c5d5-45d0-bcd3-ef5185092291
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%

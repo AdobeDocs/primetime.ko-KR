@@ -1,8 +1,7 @@
 ---
 description: DRM 워크플로에는 콘텐츠를 패키징하고, 콘텐츠에 대한 라이선스를 제공하고, 자체 비디오 애플리케이션에서 보호된 콘텐츠를 재생하는 작업이 포함됩니다. 워크플로우는 일반적으로 각 DRM 솔루션에 대해 유사하지만 세부 사항에 차이가 있습니다.
 title: FairPlay용 Multi-DRM 워크플로
-exl-id: a66cecda-762b-48f7-afed-6fef6303d169
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -202,44 +201,44 @@ M3U8 매니페스트에서 각 키 태그는 다음 키 태그까지 또는 파�
 
 * 라이선스 순환 시간 동안 새 FairPlay 키 태그를 삽입합니다.
 
-   여러 개의 키 태그를 추가할 수 있습니다.
+  여러 개의 키 태그를 추가할 수 있습니다.
 
-   선형 콘텐츠의 경우 M3U8 창에서 최신 키 태그를 유지해야 합니다. 재생될 TS 세그먼트가 약 2개 남아 있을 때(약 20초) iOS은 다음 M3U8을 요청합니다. 새 M3U8에 새 키 태그가 포함된 경우 모든 키 요청이 즉시 발생합니다. 이전의 기존 키는 다시 요청되지 않습니다. iOS은 재생이 시작되기 전에 모든 주요 요청이 완료될 때까지 기다립니다.
+  선형 콘텐츠의 경우 M3U8 창에서 최신 키 태그를 유지해야 합니다. 재생될 TS 세그먼트가 약 2개 남아 있을 때(약 20초) iOS은 다음 M3U8을 요청합니다. 새 M3U8에 새 키 태그가 포함된 경우 모든 키 요청이 즉시 발생합니다. 이전의 기존 키는 다시 요청되지 않습니다. iOS은 재생이 시작되기 전에 모든 주요 요청이 완료될 때까지 기다립니다.
 
-   라이선스 회전이 있는 VOD 콘텐츠의 경우, 모든 키 요청이 재생 시작 시 발생합니다.
+  라이선스 회전이 있는 VOD 콘텐츠의 경우, 모든 키 요청이 재생 시작 시 발생합니다.
 
-   다음은 키 회전이 있는 샘플 M3U8 입니다.
+  다음은 키 회전이 있는 샘플 M3U8 입니다.
 
-   ```
-   #EXTM3U
-   #EXT-X-TARGETDURATION:10
-   #EXT-X-VERSION:5
-   #EXT-X-MEDIA-SEQUENCE:0
-   #EXT-X-PLAYLIST-TYPE:VOD
-   #EXT-X-KEY:METHOD=SAMPLE-AES,URI="skd://one?cek=1dc2cc71d913f4f74eca0c4632
-   212b25&iv=e21f0f72b6363ff6143737cb1e9ca8d7",KEYFORMAT="com.apple.streaming
-   keydelivery",KEYFORMATVERSIONS="1"
-   #EXTINF:10,
-   fileSequence0.ts
-   #EXTINF:10,
-   fileSequence1.ts
-   #EXTINF:10,
-   fileSequence2.ts
-   #EXTINF:10,
-   fileSequence3.ts
-   #EXTINF:10,
-   fileSequence4.ts
-   #EXTINF:10,
-   fileSequence5.ts
-   #EXTINF:10,
-   fileSequence6.ts
-   #EXTINF:10,
-   fileSequence7.ts
-   #EXTINF:10,
-   #EXT-X-KEY:METHOD=SAMPLE-AES,URI="skd://two?cek=f6efc698b96cf8f4fa46d5237d
-   337c77&iv=18401077091784bcda8079acf978dc95",KEYFORMAT="com.apple.streaming
-   keydelivery",KEYFORMATVERSIONS="1"
-   #EXTINF:10,
-   fileSequence8.ts
-   #EXTINF:10,
-   ```
+  ```
+  #EXTM3U
+  #EXT-X-TARGETDURATION:10
+  #EXT-X-VERSION:5
+  #EXT-X-MEDIA-SEQUENCE:0
+  #EXT-X-PLAYLIST-TYPE:VOD
+  #EXT-X-KEY:METHOD=SAMPLE-AES,URI="skd://one?cek=1dc2cc71d913f4f74eca0c4632
+  212b25&iv=e21f0f72b6363ff6143737cb1e9ca8d7",KEYFORMAT="com.apple.streaming
+  keydelivery",KEYFORMATVERSIONS="1"
+  #EXTINF:10,
+  fileSequence0.ts
+  #EXTINF:10,
+  fileSequence1.ts
+  #EXTINF:10,
+  fileSequence2.ts
+  #EXTINF:10,
+  fileSequence3.ts
+  #EXTINF:10,
+  fileSequence4.ts
+  #EXTINF:10,
+  fileSequence5.ts
+  #EXTINF:10,
+  fileSequence6.ts
+  #EXTINF:10,
+  fileSequence7.ts
+  #EXTINF:10,
+  #EXT-X-KEY:METHOD=SAMPLE-AES,URI="skd://two?cek=f6efc698b96cf8f4fa46d5237d
+  337c77&iv=18401077091784bcda8079acf978dc95",KEYFORMAT="com.apple.streaming
+  keydelivery",KEYFORMATVERSIONS="1"
+  #EXTINF:10,
+  fileSequence8.ts
+  #EXTINF:10,
+  ```

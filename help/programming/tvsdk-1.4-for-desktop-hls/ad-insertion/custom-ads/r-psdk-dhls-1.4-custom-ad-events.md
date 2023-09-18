@@ -1,8 +1,7 @@
 ---
 description: TVSDK 플레이어는 이벤트를 발송하여 사용자 지정 광고 로드 상태를 표시하거나, 로드하는 데 너무 오래 걸리거나 오류가 있는 광고를 무시합니다. 이러한 이벤트는 events.CustomAdEvents에 정의되어 있습니다.
 title: 사용자 지정 광고 이벤트
-exl-id: 44f32584-7f6c-4071-82b6-9cc9584418ee
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%

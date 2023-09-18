@@ -1,8 +1,7 @@
 ---
 description: 타임라인 업데이트에 대한 알림을 받으려면 적절한 이벤트 리스너를 등록합니다.
 title: TimelineUpdatedEvent에 대한 리스너 추가
-exl-id: 7b55beb5-fd84-4144-8d02-bbd998f99e3a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 0%

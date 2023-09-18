@@ -1,8 +1,7 @@
 ---
 description: PTMediaPlayer 객체는 미디어 플레이어를 나타냅니다. PTMediaPlayerItem은 플레이어의 오디오 또는 비디오를 나타냅니다.
 title: MediaPlayer 개체 작업
-exl-id: 57dd455e-e78c-4e5b-80af-070ae7982864
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%

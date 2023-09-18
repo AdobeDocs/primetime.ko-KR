@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK는 QoS(서비스 품질) 이벤트를 발송하여 버퍼링 및 검색 이벤트와 같은 QoS 통계 계산에 영향을 줄 수 있는 이벤트에 대해 애플리케이션에 알립니다.
 title: QoS 이벤트
-exl-id: b0fab68e-ef0f-4812-b4ad-3f69dcdf2d9e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

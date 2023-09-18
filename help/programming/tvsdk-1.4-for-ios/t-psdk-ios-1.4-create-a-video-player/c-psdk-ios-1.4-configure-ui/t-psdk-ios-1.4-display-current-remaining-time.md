@@ -1,8 +1,7 @@
 ---
 description: 재생 중인 콘텐츠의 현재 및 나머지 시간을 표시할 수 있습니다.
 title: 현재 시간 및 남은 시간 표시
-exl-id: 61043b2c-949e-494a-9b93-9cf5104d5bde
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%

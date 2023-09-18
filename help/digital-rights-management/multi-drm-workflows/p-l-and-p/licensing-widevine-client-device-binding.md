@@ -1,8 +1,7 @@
 ---
 description: 경우에 따라 콘텐츠를 구매하거나 대여할 때 최종 사용자가 여러 디바이스에서 콘텐츠를 재생하지 못하도록 제한할 수 있습니다. 고객이 Expressplay를 사용하는 경우 Expressplay API를 사용하여 사용자의 Expressplay 토큰을 사용자 컴퓨터에 바인딩하면 됩니다.
 title: 장치 바인딩
-exl-id: 96ead794-e3eb-4059-91d3-a2c351a17ea3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -26,6 +25,6 @@ ht-degree: 0%
 
    * 이 토큰을 사용자에게 제공합니다.
 
-      이 프로세스는 사용자의 device_id에 바인딩된 컨텐츠에 대한 토큰을 생성합니다. 사용자의 컴퓨터에서 이 토큰이 포함된 라이선스 요청을 보내면 Expressplay 백 엔드가 토큰의 device_id와 라이선스 요청의 device_id를 상호 확인합니다.
+     이 프로세스는 사용자의 device_id에 바인딩된 컨텐츠에 대한 토큰을 생성합니다. 사용자의 컴퓨터에서 이 토큰이 포함된 라이선스 요청을 보내면 Expressplay 백 엔드가 토큰의 device_id와 라이선스 요청의 device_id를 상호 확인합니다.
 
-      샘플 Expressplay 권한 서버는 이 워크플로를 구현합니다.
+     샘플 Expressplay 권한 서버는 이 워크플로를 구현합니다.

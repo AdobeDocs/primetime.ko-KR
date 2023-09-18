@@ -1,8 +1,7 @@
 ---
 description: MediaPlayer 개체는 미디어 플레이어를 나타냅니다. MediaPlayerItem은 플레이어의 오디오 또는 비디오를 나타냅니다.
 title: MediaPlayerItem 클래스 정보
-exl-id: ff7011ae-57d7-41e1-98be-5319bdc6f799
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%

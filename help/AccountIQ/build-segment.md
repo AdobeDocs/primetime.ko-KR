@@ -1,8 +1,7 @@
 ---
 title: 세그먼트 작성
 description: 계정 IQ에서 세그먼트를 작성하는 방법.
-exl-id: 93b7fc6a-e15a-441a-aaa1-2d6d7aed6e0b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '39'
 ht-degree: 0%

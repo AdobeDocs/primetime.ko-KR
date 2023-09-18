@@ -1,8 +1,7 @@
 ---
 title: 계정 IQ를 온보딩하고 시작하는 방법
 description: 계정 IQ 온보드, 사전 요구 사항 및 시작 방법.
-exl-id: 840ab081-0073-492f-86b2-ba174ae93256
-source-git-commit: b83105b94dc1c78de84908f5676ade6a62486349
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%

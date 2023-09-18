@@ -1,8 +1,7 @@
 ---
 title: 여러 MVPD에 대한 계정 공유 보고서 보기
 description: 여러 MVPD에 대한 공유 보고서를 보는 방법입니다.
-exl-id: c616e6e1-373c-471d-a2dc-c484b7cd5cf5
-source-git-commit: 5963c55d87385fbd92646bfc45a3650fb568bca5
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
@@ -25,9 +24,9 @@ ht-degree: 0%
 
 * [대시보드](/help/AccountIQ/dashboard.md) (대시보드에서는 다른 보고서 페이지에서 선택한 그래프를 볼 수 있습니다.)
 
-   ![](assets/mult-mvpds-dashboard.png)
+  ![](assets/mult-mvpds-dashboard.png)
 
-   *그림: 여러 MVPD에 대한 대시보드 보고서*
+  *그림: 여러 MVPD에 대한 대시보드 보고서*
 
 * [일반 사용](/help/AccountIQ/general-usage-reports.md)
 

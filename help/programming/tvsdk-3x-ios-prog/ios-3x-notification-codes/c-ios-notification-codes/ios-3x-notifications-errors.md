@@ -1,8 +1,7 @@
 ---
 description: TVSDK 알림 시스템은 진단 메타데이터를 제공하는 다양한 오류, 경고 및 정보 알림을 생성합니다.
 title: 오류 알림 코드
-exl-id: 2354aad6-dc18-4c55-a1e7-a4938597e124
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 5%
@@ -246,10 +245,10 @@ ht-degree: 5%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170011 </span> </td> 
-   <td colname="2"><span class="codeph"> Target AD_INCOMPATIBLE_DURATION_INCOMPATIBLE </span> </td> 
+   <td colname="2"><span class="codeph"> AD_TARGET_DURATION_INCOMPATIBLE </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
-   <td colname="5"> <p>광고의 TARGET 지속 시간이 콘텐츠의 TARGET 지속 시간보다 높습니다. </p> </td> 
+   <td colname="5"> <p>광고의 타겟 기간이 콘텐츠의 타겟 기간보다 높습니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>

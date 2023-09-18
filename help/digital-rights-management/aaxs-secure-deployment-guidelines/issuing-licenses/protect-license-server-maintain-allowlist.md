@@ -2,8 +2,7 @@
 title: 신뢰할 수 있는 컨텐츠 패키지 허용 목록 유지
 description: 신뢰할 수 있는 컨텐츠 패키지 허용 목록 유지
 copied-description: true
-exl-id: 4c296d23-75c1-4d0b-a636-31b49e99c753
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%

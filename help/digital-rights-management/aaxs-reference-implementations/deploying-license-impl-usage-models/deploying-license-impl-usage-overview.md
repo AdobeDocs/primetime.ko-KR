@@ -2,8 +2,7 @@
 title: 사용 모델 구현 개요
 description: 사용 모델 구현 개요
 copied-description: true
-exl-id: 48e7db54-484f-4c46-9a4e-a51bae7c84b4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -46,11 +45,11 @@ ht-degree: 0%
          * If `CustomerAuthorization.UsageType` 은(는) `DTO`, 다음에 대한 라이선스 생성 *소유로 다운로드* 사용 모델을 생성하여 사용자에게 보냅니다.
 
          * If `CustomerAuthorization.UsageType` 은(는) `VOD`, 다음에 대한 라이선스 생성 *Video On Demand* 사용 모델을 생성하여 사용자에게 보냅니다.
+
    * 익명 액세스를 허용하는 정책이 없는 경우:
 
       * 요청에 유효한 인증 토큰이 없으면 &quot;인증 필수&quot; 오류를 반환합니다.
       * 그렇지 않으면 &quot;승인되지 않음&quot; 오류를 반환합니다.
-
 
 * 정책 중 하나에서 익명 액세스를 허용하는 경우 광고 자금 사용 모델에 대한 라이선스를 생성하여 사용자에게 보냅니다.
 

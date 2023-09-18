@@ -1,8 +1,7 @@
 ---
 title: AAXS DRM 외부 CEK 워크플로우
 description: 이 워크플로우는 중앙 저장소 또는 CKMS(Content Key Management System)를 사용할 필요가 없으므로 대부분의 기존 DRM 시스템에서 벗어납니다
-exl-id: f084aa57-8bef-40a0-b52d-4d23dfdf36c4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%

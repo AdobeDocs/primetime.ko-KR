@@ -1,8 +1,7 @@
 ---
 title: 문제 해결
 description: 보고서 패널을 보거나 로드할 수 없습니까? 또는 보고서를 내보낼 수 없습니까? 제품에서 일반적으로 발생하는 문제를 해결하는 방법을 이해합니다.
-exl-id: 2c3f22c4-5534-424c-b321-b57045bcb7a6
-source-git-commit: b83105b94dc1c78de84908f5676ade6a62486349
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 * 페이지 또는 개별 패널을 로드하는 데 너무 오래 걸리는 경우 페이지를 새로 고침해 보십시오. 현재 버전의 경우 MVPD 및 프로그래머의 선택에 따라 페이지를 로드하는 데 최대 1분이 걸릴 수 있습니다.
 
-   ![](assets/troubleshoot.png)
+  ![](assets/troubleshoot.png)
 
 * 새로 고친 후에도 데이터 또는 그래프를 볼 수 없는 경우 계정 IQ에서 로그아웃한 다음 다시 로그인합니다.
 

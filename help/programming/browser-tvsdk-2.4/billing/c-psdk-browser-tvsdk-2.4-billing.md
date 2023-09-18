@@ -1,8 +1,7 @@
 ---
 description: 실제 사용과 상관없이 고정 요금이 아니라 사용하는 만큼만 지불하고자 하는 고객을 수용하기 위해 Adobe은 사용 지표를 수집하고 이 지표를 사용하여 고객에게 청구할 금액을 결정합니다.
 title: 청구 지표
-exl-id: f4200573-571f-4ed3-be8c-08b72d4f9e0e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%

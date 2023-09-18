@@ -1,8 +1,7 @@
 ---
 description: 버전 3.0 참조 구현 라이선스 서버 또는 감시 폴더 패키저를 지원하는 서버를 업그레이드하려면 애플리케이션 서버에 배포된 .war 파일을 Adobe Primetime DRM 참조 구현 서버에 포함된 파일로 바꿔야 합니다.
 title: 기존 배포 업그레이드
-exl-id: 83edaf0a-e527-470d-8b8d-23e5ba86b039
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%

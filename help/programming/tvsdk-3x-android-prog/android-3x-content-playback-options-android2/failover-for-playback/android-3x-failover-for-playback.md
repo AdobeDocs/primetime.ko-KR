@@ -1,8 +1,7 @@
 ---
 description: 인터넷을 통한 스트리밍은 원격 서버에서 스트림을 재생하기 위해 지속적이고 안정적인 연결이 필요합니다. 그러나 뷰어의 인터넷 연결이나 스트리밍 재생이 가변적이라는 것은 원격 재생이 로컬에서 재생되는 미디어의 품질을 가지지 않을 수 있다는 것을 의미합니다.
 title: 재생 및 장애 조치
-exl-id: ba8326ba-4ff1-46ad-bd18-9c83147ab619
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%

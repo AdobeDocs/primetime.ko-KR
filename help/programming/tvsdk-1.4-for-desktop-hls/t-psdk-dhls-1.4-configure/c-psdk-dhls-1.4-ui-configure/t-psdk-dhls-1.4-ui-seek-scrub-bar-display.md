@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 VOD(video on demand) 및 라이브 스트림 모두에서 스트림이 슬라이딩 창 재생 목록인 특정 위치(시간)로 이동하는 것을 지원합니다.
 title: 현재 재생 위치에 검색 스크러빙 막대 표시
-exl-id: a85a06d8-040e-435a-8f55-9df5af3babe1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%

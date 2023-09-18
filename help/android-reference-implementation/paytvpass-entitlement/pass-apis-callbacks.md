@@ -1,8 +1,7 @@
 ---
 description: 권한 부여 관리자는 플레이어에서 Adobe Primetime 인증을 통합하기 위해 이러한 클래스를 노출합니다.
 title: 관련 API 설명서
-exl-id: 29a6b88b-1152-4a27-badb-85b06de0dcbc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%

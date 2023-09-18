@@ -1,8 +1,7 @@
 ---
 description: Primetime DRM을 설정하려면 DVD에서 파일을 복사합니다. 이러한 파일에는 코드, 인증서 및 서드파티 클래스를 포함하는 JAR 파일이 포함됩니다. 또한 Adobe Systems, Incorporated에 인증서를 요청해야 합니다. 그런 다음 Adobe에서 패키지화된 콘텐츠의 무결성, 라이센스 및 클라이언트와 서버 간 통신을 보호하는 데 사용하는 여러 자격 증명을 발급합니다.
 title: 개발 환경 설정
-exl-id: c10f85b6-84bc-444f-9001-f49dc88cf99c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -43,9 +42,9 @@ Adobe은 DVD에 Primetime DRM SDK를 제공합니다.
    * [!DNL jsafe.dll] - Windows
    * [!DNL libjsafe.so] - Linux
 
-      >[!NOTE]
-      >
-      >이러한 라이브러리의 32비트 및 64비트 버전을 사용할 수 있습니다. 64비트 OS가 있고 64비트 버전의 Java를 실행하는 경우에만 64비트 버전을 사용해야 합니다.
+     >[!NOTE]
+     >
+     >이러한 라이브러리의 32비트 및 64비트 버전을 사용할 수 있습니다. 64비트 OS가 있고 64비트 버전의 Java를 실행하는 경우에만 64비트 버전을 사용해야 합니다.
 
 1. (선택 사항) Adobe Flash Rights Management FMRMS(Media Media Server) 1.x 호환성과 관련된 기능을 보려면 를 복사합니다. `[DRM DVD]/SDK/adobe-flashaccess-lcrm.jar]` 를 개발 시스템에 추가합니다.
 

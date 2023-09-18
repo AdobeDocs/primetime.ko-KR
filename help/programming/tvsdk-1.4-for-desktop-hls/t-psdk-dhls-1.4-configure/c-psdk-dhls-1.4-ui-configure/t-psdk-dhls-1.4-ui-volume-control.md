@@ -1,8 +1,7 @@
 ---
 description: 사운드 볼륨에 대한 사용자 인터페이스 컨트롤을 설정할 수 있습니다.
 title: 볼륨 컨트롤 제공
-exl-id: 058d79d2-35cc-4238-8fc1-2820a2d91ffb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%

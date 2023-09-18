@@ -1,8 +1,7 @@
 ---
 description: TVSDK에는 미디어 콘텐츠, 매니페스트 콘텐츠, DRM 및 소프트웨어 버전에 대한 특정 요구 사항이 필요합니다.
 title: 요구 사항
-exl-id: 8fafc52e-01b5-448f-a235-7bc3a72f4d80
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -32,7 +31,7 @@ DRM 암호화 키를 포함하여 스트림 및 재생 목록(매니페스트)�
 |---|---|
 | 광고 변형 매니페스트 | 기본 콘텐츠 렌디션과 동일한 비트율 렌디션을 가져야 합니다. |
 
-## #EXT-X-VERSION 요구 사항 {#section_49A33664651A46EC9ED888BA9C1C3F6D}
+## #EXT-X-VERSION requirements {#section_49A33664651A46EC9ED888BA9C1C3F6D}
 
 [!DNL .m3u8] 파일의 `#EXT-X-VERSION` 버전은 응용 프로그램에서 사용할 수 있는 기능과 재생 목록/매니페스트에서 사용할 수 있는 `EXT` 태그에 영향을 줍니다.
 
@@ -41,7 +40,7 @@ DRM 암호화 키를 포함하여 스트림 및 재생 목록(매니페스트)�
 * 버전은 HLS 재생 목록의 기능 및 속성과 일치해야 합니다. 그렇지 않으면 재생 오류가 발생할 수 있습니다. 자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1).
 * Adobe은 TVSDK 기반 클라이언트에서 재생하기 위해 HLS 버전 2 이상을 사용할 것을 권장합니다.
 
-   클라이언트와 서버는 다음 방법으로 버전을 구현해야 합니다.
+  클라이언트와 서버는 다음 방법으로 버전을 구현해야 합니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6"> 
  <thead> 
@@ -59,11 +58,11 @@ DRM 암호화 키를 포함하여 스트림 및 재생 목록(매니페스트)�
    <td colname="1"> <span class="codeph"> EXT-X-VERSION:3 </span> </td> 
    <td colname="2"> 
     <ul id="ul_C9500D3F934848639C204BF248F139FF"> 
-     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">부동 소수점 <span class="codeph"> EXTINA </span> 기간 값 <p>버전 2의 기간 태그( <span class="codeph"> #EXTINF: </span>&lt;duration&gt;,&lt;title&gt;)가 정수 값으로 반올림되었습니다. 버전 3 이상에서는 지속 시간을 부동 소수점에 정확히 지정해야 합니다. </p> </li> 
+     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">부동 소수점 <span class="codeph"> EXTINA </span> 기간 값 <p>버전 2의 기간 태그( <span class="codeph"> #EXTINF: </span>&lt;duration&gt;,&lt;title&gt;)가 정수 값으로 반올림되었습니다. Version 3 and above require durations to be specified exactly, in floating point. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr rowsep="0"> 
-   <td colname="1"> <span class="codeph"> EXT-X-VERSION:4 </span> </td> 
+   <td colname="1"> <span class="codeph"></span> </td> 
    <td colname="2"> 
     <ul id="ul_3355A6CBBE2141DDB92660BB4B604D70"> 
      <li id="li_5E73D41AF6DC4CEE88D6C029FFCFC350">다음 <span class="codeph"> EXT-X-BYTERANGE </span> 태그 </li> 

@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK가 주 광고 서버에 없는 광고를 요청할 때 플레이어는 보조 서버에서 광고를 요청해야 합니다. 비디오 광고 서비스 제공 템플릿(VAST)은 광고 서버와 비디오 플레이어 간의 통신 표준을 설정하며, 광고가 요청될 때 보조 광고 서버에서 보내는 응답입니다.
 title: VAST 광고
-exl-id: b0ebade5-b5da-413d-84f4-abebac579f45
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,7 +28,7 @@ VAST에 대한 자세한 내용은 [디지털 비디오 광고 서비스 제공 
 * `AdTitle`
 * `Impression`
 
-   지원되는 선택적 요소는 다음과 같습니다.
+  지원되는 선택적 요소는 다음과 같습니다.
 
 * `Description`
 * `Survey`
@@ -56,17 +55,17 @@ VAST에 대한 자세한 내용은 [디지털 비디오 광고 서비스 제공 
 
       * `MediaFile`
 
-         >[!TIP]
-         >
-         >이 요소에서 `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework`, 및 `type` 속성이 지원됩니다.
+        >[!TIP]
+        >
+        >이 요소에서 `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework`, 및 `type` 속성이 지원됩니다.
 
 * **비선형 광고** 지원되는 요소는 다음과 같습니다.
 
    * `Non-linear`
 
-      >[!TIP]
-      >
-      >이 요소에서 `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio`, 및 `minSuggestedDuration` 속성이 지원됩니다.
+     >[!TIP]
+     >
+     >이 요소에서 `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio`, 및 `minSuggestedDuration` 속성이 지원됩니다.
 
       * `StaticResource`
       * `IFrameResource`
@@ -78,9 +77,9 @@ VAST에 대한 자세한 내용은 [디지털 비디오 광고 서비스 제공 
 
    * `Companion`
 
-      >[!TIP]
-      >
-      >이 요소에서 `id`, `width`, `height`, `apiFramework`, `expandedWidth`, 및 `expandedHeight` 속성이 지원됩니다.
+     >[!TIP]
+     >
+     >이 요소에서 `id`, `width`, `height`, `apiFramework`, `expandedWidth`, 및 `expandedHeight` 속성이 지원됩니다.
 
       * `StaticResource`
       * `IFrameResource`

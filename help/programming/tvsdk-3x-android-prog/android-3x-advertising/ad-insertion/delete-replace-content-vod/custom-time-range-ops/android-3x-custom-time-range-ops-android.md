@@ -1,8 +1,7 @@
 ---
 description: CustomRangeMetadata 클래스는 VOD 스트림 표시, 삭제 및 바꾸기에서 서로 다른 유형의 시간 범위를 식별합니다. 이러한 각 사용자 지정 시간 범위 유형에 대해 광고 콘텐츠 삭제 및 바꾸기를 포함하여 해당 작업을 수행할 수 있습니다.
 title: 사용자 정의 시간 범위 작업
-exl-id: ae457ee6-5649-469b-b5f1-1e0b16b6eb9c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -27,8 +26,8 @@ CustomRangeMetadata 클래스는 VOD 스트림에서 표시, 삭제 및 바꾸�
 
 * 여러 콘텐츠 해결자
 
-   스트림은 광고 시그널링 모드 및 광고 메타데이터에 기초하여 다수의 콘텐츠 해결기들을 가질 수 있다. 비헤이비어는 광고 시그널링 모드와 광고 메타데이터의 다른 조합으로 변경됩니다.
+  스트림은 광고 시그널링 모드 및 광고 메타데이터에 기초하여 다수의 콘텐츠 해결기들을 가질 수 있다. 비헤이비어는 광고 시그널링 모드와 광고 메타데이터의 다른 조합으로 변경됩니다.
 * 을 사용하는 여러 개의 초기 기회 `CustomMarkerOpportunityGenerator`.
 * 새로운 광고 신호 모드, `CUSTOM_RANGES`.
 
-   광고는 JSON 파일과 같은 외부 소스의 시간 범위 데이터를 기반으로 배치됩니다.
+  광고는 JSON 파일과 같은 외부 소스의 시간 범위 데이터를 기반으로 배치됩니다.

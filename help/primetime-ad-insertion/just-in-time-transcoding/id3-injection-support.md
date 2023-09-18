@@ -1,8 +1,7 @@
 ---
 description: Just-in-time-transcoding은 ID3 시간 메타데이터를 광고 크리에이티브에 삽입하여 클라이언트측 광고 추적을 용이하게 할 수 있습니다.
 title: Just-in-time-transcoding을 사용하여 ID3 시간 메타데이터 태그 주입
-exl-id: 6171223a-71f9-45a2-a3f5-7ede4a9b101a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%

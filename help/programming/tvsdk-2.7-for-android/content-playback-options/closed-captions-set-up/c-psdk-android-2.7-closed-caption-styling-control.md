@@ -1,8 +1,7 @@
 ---
 description: 플레이어에서 표시하는 폐쇄 캡션의 스타일을 설정하는 TextFormat 클래스를 사용하여 폐쇄 캡션 트랙의 스타일 정보를 제공할 수 있습니다.
 title: 자막 스타일 제어
-exl-id: fa96f9f5-f709-4749-90c8-cf237cf074c0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
@@ -56,94 +55,93 @@ TVSDK 메서드를 사용하여 자막 텍스트의 스타일을 지정할 수 �
 
    * 를 사용하여 모든 스타일 설정 가져오기 `MediaPlayer.getCCStyle` 반환 값은 `TextFormat` 인터페이스.
 
-      ```java
-      /** 
-      * @return the current closed captioning style.  
-      * If no style was previously set, it returns a TextFormat object 
-      * with default values for each attribute. 
-      * @throws MediaPlayerException if media player was already released. 
-      */ 
-      public TextFormat getCCStyle() throws MediaPlayerException;
-      ```
+     ```java
+     /** 
+     * @return the current closed captioning style.  
+     * If no style was previously set, it returns a TextFormat object 
+     * with default values for each attribute. 
+     * @throws MediaPlayerException if media player was already released. 
+     */ 
+     public TextFormat getCCStyle() throws MediaPlayerException;
+     ```
 
    * 다음을 통해 설정을 한 번에 하나씩 가져옵니다. `TextFormat` 인터페이스 getter 메서드.
 
-      ```java
-      public java.lang.String getFontColor(); 
-      public java.lang.String getBackgroundColor(); 
-      public java.lang.String getFillColor(); // retrieve the font fill color 
-      public java.lang.String getEdgeColor(); // retrieve the font edge color 
-      public TextFormat.Size getSize(); // retrieve the font size 
-      public TextFormat.FontEdge getFontEdge(); // retrieve the font edge type 
-      public TextFormat.Font getFont(); // retrieve the font type 
-      public int getFontOpacity(); 
-      public int getBackgroundOpacity(); 
-      public java.lang.String getBottomInset(java.lang.String bi); 
-      public java.lang.String getSafeArea(java.lang.String sa);
-      ```
+     ```java
+     public java.lang.String getFontColor(); 
+     public java.lang.String getBackgroundColor(); 
+     public java.lang.String getFillColor(); // retrieve the font fill color 
+     public java.lang.String getEdgeColor(); // retrieve the font edge color 
+     public TextFormat.Size getSize(); // retrieve the font size 
+     public TextFormat.FontEdge getFontEdge(); // retrieve the font edge type 
+     public TextFormat.Font getFont(); // retrieve the font type 
+     public int getFontOpacity(); 
+     public int getBackgroundOpacity(); 
+     public java.lang.String getBottomInset(java.lang.String bi); 
+     public java.lang.String getSafeArea(java.lang.String sa);
+     ```
 
 1. 스타일 설정을 변경하려면 다음 중 하나를 수행합니다.
 
    * setter 메서드 사용 `MediaPlayer.setCCStyle`, 의 인스턴스 전달 `TextFormat` 인터페이스:
 
-      ```java
-      /** 
-      * Sets the closed captioning style. Used to control the closed captioning font, 
-      * size, color, edge and opacity.  
-      * 
-      * This method is safe to use even if the current media stream doesn't have closed 
-      * captions. 
-      * 
-      * @param textFormat 
-      * @throws MediaPlayerException 
-      */ 
-      public void setCCStyle(TextFormat textFormat) throws MediaPlayerException;
-      ```
+     ```java
+     /** 
+     * Sets the closed captioning style. Used to control the closed captioning font, 
+     * size, color, edge and opacity.  
+     * 
+     * This method is safe to use even if the current media stream doesn't have closed 
+     * captions. 
+     * 
+     * @param textFormat 
+     * @throws MediaPlayerException 
+     */ 
+     public void setCCStyle(TextFormat textFormat) throws MediaPlayerException;
+     ```
 
    * 사용 `TextFormatBuilder` 개별 setter 메서드를 정의하는 클래스입니다.
 
-      다음 `TextFormat` 인터페이스는 getter 메서드만 있고 설정자는 없도록 변경할 수 없는 개체를 정의합니다. 폐쇄 캡션 스타일 매개 변수는 `TextFormatBuilder` 클래스:
+     다음 `TextFormat` 인터페이스는 getter 메서드만 있고 설정자는 없도록 변경할 수 없는 개체를 정의합니다. 폐쇄 캡션 스타일 매개 변수는 `TextFormatBuilder` 클래스:
 
-      ```java
-      // set font type 
-      public void setFont(Font font)  
-      public void setBackgroundColor(String backgroundColor) 
-      public void setFillColor(String fillColor) 
-      // set the font-edge color 
-      public void setEdgeColor(String edgeColor)  
-      // set the font size 
-      public void setSize(Size size)  
-      // set the font edge type 
-      public void setFontEdge(FontEdge fontEdge)  
-      public void setFontOpacity(int fontOpacity) 
-      public void setBackgroundOpacity(int backgroundOpacity) 
-      // set the font-fill opacity level 
-      public void setFillOpacity(int fillOpacity)  
-      public void setFontColor(String fontColor) 
-      public void setBottomInset(String bi) 
-      public void setSafeArea(String sa) 
-      public void setTreatSpaceAsAlphaNum(bool)
-      ```
+     ```java
+     // set font type 
+     public void setFont(Font font)  
+     public void setBackgroundColor(String backgroundColor) 
+     public void setFillColor(String fillColor) 
+     // set the font-edge color 
+     public void setEdgeColor(String edgeColor)  
+     // set the font size 
+     public void setSize(Size size)  
+     // set the font edge type 
+     public void setFontEdge(FontEdge fontEdge)  
+     public void setFontOpacity(int fontOpacity) 
+     public void setBackgroundOpacity(int backgroundOpacity) 
+     // set the font-fill opacity level 
+     public void setFillOpacity(int fillOpacity)  
+     public void setFontColor(String fontColor) 
+     public void setBottomInset(String bi) 
+     public void setSafeArea(String sa) 
+     public void setTreatSpaceAsAlphaNum(bool)
+     ```
 
-      >[!IMPORTANT]
-      >
-      >**색상 설정:** Android TVSDK 2.X에서는 폐쇄 캡션의 색상 스타일이 개선되었습니다. 향상된 기능을 통해 RGB 색상 값을 나타내는 16진수 문자열을 사용하여 닫힌 캡션 색상을 설정할 수 있습니다. RGB 16진수 색상 표현은 Photoshop과 같은 애플리케이션에서 사용하는 친숙한 6바이트 문자열입니다.
-      >
-      >* FFFFFF = 검정
-      >* 000000 = 흰색
-      >* FF0000 = 빨간색
-      >* 00FF00 = 녹색
-      >* 0000FF = 파랑
-
-      >
-      >기타 등등.
-      >
-      >응용 프로그램에서 색상 스타일 정보를에 전달할 때마다 `TextFormatBuilder`, 여전히 `Color` 이전과 같이 열거되지만 이제 다음을 추가해야 합니다. `getValue()` 을 추가하여 값을 문자열로 가져옵니다. 예:
-      >
-      >
-      ```
-      >tfb = tfb.setBackgroundColor(TextFormat.Color.RED <b>.getValue()</b>);
-      >```
+     >[!IMPORTANT]
+     >
+     >**색상 설정:** Android TVSDK 2.X에서는 폐쇄 캡션의 색상 스타일이 개선되었습니다. 향상된 기능을 통해 RGB 색상 값을 나타내는 16진수 문자열을 사용하여 닫힌 캡션 색상을 설정할 수 있습니다. RGB 16진수 색상 표현은 Photoshop과 같은 애플리케이션에서 사용하는 친숙한 6바이트 문자열입니다.
+     >
+     >* FFFFFF = 검정
+     >* 000000 = 흰색
+     >* FF0000 = 빨간색
+     >* 00FF00 = 녹색
+     >* 0000FF = 파랑
+     >
+     >기타 등등.
+     >
+     >응용 프로그램에서 색상 스타일 정보를에 전달할 때마다 `TextFormatBuilder`, 여전히 `Color` 이전과 같이 열거되지만 이제 다음을 추가해야 합니다. `getValue()` 을 추가하여 값을 문자열로 가져옵니다. 예:
+     >
+     >```
+     >tfb = tfb.setBackgroundColor(TextFormat.Color.RED <b>.getValue()</b>);
+     >```
+     >
 
 폐쇄 캡션 스타일을 설정하는 것은 비동기 작업이므로 변경 사항이 화면에 표시되는 데 최대 몇 초 정도 걸릴 수 있습니다.
 

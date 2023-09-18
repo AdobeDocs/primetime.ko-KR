@@ -1,8 +1,7 @@
 ---
 description: ConfigProvider 클래스를 사용하여 처음에 DVR 스트림을 입력하는 기본 동작 대신 언제 DVR 스트림을 입력할지 지정할 사용자 지정 시작점을 선택할 수 있습니다.
 title: DVR의 사용자 지정 시작 지점 선택
-exl-id: 9813bf60-a91d-4376-a5fe-02311b73e8a0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 라이브/선형 콘텐츠의 경우 TVSDK는 기본 스트림 콘텐츠의 청크를 동일한 길이의 광고 브레이크로 대체하므로 타임라인 지속 시간이 동일하게 유지됩니다.
 title: 라이브/선형 광고 해결 및 삽입
-exl-id: b0fbdddf-8529-4f7a-aef2-1764320307f1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%

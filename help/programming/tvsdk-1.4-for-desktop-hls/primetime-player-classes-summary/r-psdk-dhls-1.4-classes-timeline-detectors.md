@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 타임라인에서 광고 기회를 탐지하는 데 도움이 됩니다.
 title: 타임라인 감지기 클래스
-exl-id: c6a39ac5-53bb-4a5b-802b-eeb18ca6a7bc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%

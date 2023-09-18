@@ -1,8 +1,7 @@
 ---
 description: 비디오용 재생 목록은 기본 비디오 콘텐츠에 대한 대체 오디오 트랙을 무제한으로 지정할 수 있습니다. 예를 들어, 비디오 콘텐츠에 다른 언어를 추가하거나 콘텐츠가 재생되는 동안 사용자가 장치의 다른 트랙 간을 전환하도록 허용할 수 있습니다.
 title: 재생 목록의 대체 오디오 트랙
-exl-id: 8640cc09-91db-4bd3-87d1-c4fac395a0bc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 title: Preflight 기능, 문제를 활성화, 문제 해결 또는 확인하는 방법
 description: Preflight 기능, 문제를 활성화, 문제 해결 또는 확인하는 방법
-exl-id: 9e4ec343-371f-4116-915f-191e5f42cb47
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%

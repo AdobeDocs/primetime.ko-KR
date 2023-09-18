@@ -1,8 +1,7 @@
 ---
 title: MVPD 개요
 description: MVPD 개요
-exl-id: b918550b-96a8-4e80-af28-0a2f63a02396
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '2736'
 ht-degree: 0%
@@ -34,7 +33,7 @@ TV Everywhere(TVE)는 이제 유료 TV 가입자가 집 안팎에서 여러 디�
 
 Adobe Primetime 인증을 통해 MVPD는 다음을 수신합니다.
 
-프로그래머와의 쉬운 통합.  단일 통합으로 여러 콘텐츠 소유자로부터 즉각적인 연결을 제공합니다.
+프로그래머와의 쉬운 통합.  하나의 통합으로 여러 콘텐츠 소유자로부터 즉각적인 연결을 제공합니다.
 
 향상된 고객 참여  고객이 여러 플랫폼 및 디바이스에서 콘텐츠를 볼 수 있도록 원활한 브랜드 경험을 지원합니다.
 
@@ -77,6 +76,7 @@ Client Side: 클라이언트측 Access Enabler - Access Enabler는 프로그래�
 >[!NOTE]
 >
 >MVPD로서 웹 서비스는 Adobe Primetime 인증에서 인증 및 권한 부여에 대한 요청을 인식하고 필요한 데이터를 예상 형식으로 응답할 수 있어야 합니다.
+>
 
 Adobe Primetime 인증을 사용하면 고객에게 SSO(Single Sign-On) 인증 및 인증이라고도 하는 통합 ID 관리를 제공할 수 있습니다. Adobe Primetime 인증을 사용하면 MVPD에서 해당 인증이 계속 허용되는 한 구독자가 첫 번째 인증 후 다시 로그인할 필요가 없습니다. (일반적으로 30일) 이를 위해 Adobe Primetime 인증은 고객을 위한 인증 토큰에 대한 공통 도메인을 제공합니다. 이 인증 상태 정보는 주어진 MVPD와 통합된 모든 참여 사이트에서 사용할 수 있습니다.
 
@@ -164,9 +164,9 @@ Adobe Primetime 인증 권한 부여 솔루션은 인증/권한 부여 워크플
 
 다음 단계에서는 Adobe Primetime 인증 흐름의 예를 보여 줍니다.  이것은 프로그래머가 사용자가 MVPD의 유효한 고객인지 여부를 결정하는 자격 프로세스의 일부입니다.  이 시나리오에서, 사용자는 MVPD에 대한 유효한 가입자이다.  사용자가 프로그래머 Flash 응용 프로그램을 사용하여 보호된 콘텐츠를 보려고 합니다.
 
-1. 사용자가 프로그래머 Flash 응용 프로그램과 Adobe Primetime 인증 Access Enabler 구성 요소를 사용자 컴퓨터에 로드하는 프로그래머 웹 페이지로 이동합니다. Flash 애플리케이션은 Access Enabler를 사용하여 프로그래머의 ID를 Adobe Primetime 인증으로 설정하고 Adobe Primetime 인증은 Access Enabler를 해당 프로그래머(&quot;요청자&quot;)에 대한 구성 및 상태 데이터로 채웁니다. Access Enabler는 다른 API 호출을 수행하기 전에 서버에서 이 데이터를 받아야 합니다.  기술 참고 사항: 프로그래머는 Access Enabler를 사용하여 ID를 설정합니다. `setRequestor()` 메서드, 자세한 내용은 [프로그래머 통합 안내서](/help/authentication/programmer-integration-guide-overview.md).
+1. 사용자가 Programmer의 Flash 응용 프로그램과 Adobe Primetime 인증 Access Enabler 구성 요소를 사용자 컴퓨터에 로드하는 Programmer 웹 페이지로 이동합니다. Flash 애플리케이션은 Access Enabler를 사용하여 프로그래머의 ID를 Adobe Primetime 인증으로 설정하고 Adobe Primetime 인증은 Access Enabler를 해당 프로그래머(&quot;요청자&quot;)에 대한 구성 및 상태 데이터로 채웁니다. Access Enabler는 다른 API 호출을 수행하기 전에 서버에서 이 데이터를 받아야 합니다.  기술 참고 사항: 프로그래머는 Access Enabler를 사용하여 ID를 설정합니다. `setRequestor()` 메서드, 자세한 내용은 [프로그래머 통합 안내서](/help/authentication/programmer-integration-guide-overview.md).
 1. 사용자가 프로그래머로 보호된 콘텐츠를 보려고 하면 프로그래머 애플리케이션은 MVPD의 목록을 사용자에게 제공하고, 사용자는 이 목록에서 공급자를 선택합니다.
-1. 사용자는 Adobe Primetime 인증 서버로 리디렉션되며, 여기서 사용자가 선택한 MVPD에 대한 암호화된 SAML 요청이 만들어집니다. 이 요청은 프로그래머를 대신하여 MVPD에 인증 요청으로 보내진다. MVPD 시스템에 따라 사용자의 브라우저는 로그인을 위해 MVPD 사이트로 리디렉션되거나 프로그래머 앱에서 로그인 iFrame이 만들어집니다.
+1. 사용자는 Adobe Primetime 인증 서버로 리디렉션되며, 여기서 사용자가 선택한 MVPD에 대한 암호화된 SAML 요청이 만들어집니다. 이 요청은 프로그래머를 대신하여 MVPD에 인증 요청으로 보내진다. MVPD의 시스템에 따라 사용자의 브라우저는 로그인을 위해 MVPD의 사이트로 리디렉션되거나 프로그래머 앱에서 로그인 iFrame이 만들어집니다.
 1. 두 경우(리디렉션 또는 iFrame) 모두 MVPD가 요청을 수락하고 해당 로그인 페이지를 표시합니다.
 1. 사용자가 MVPD에 로그인하면 MVPD가 사용자의 결제 고객 상태를 확인한 다음 MVPD가 자체 HTTP 세션을 만듭니다.
 1. 사용자가 인증되면 MVPD는 응답(SAML 및 암호화)을 만들어 MVPD가 다시 Adobe Primetime 인증으로 보냅니다.

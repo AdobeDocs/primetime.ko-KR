@@ -1,8 +1,7 @@
 ---
 description: Primetime ad decisioning가 비어 있거나 HLS에 대해 잘못된 미디어 유형이 있는 VAST 광고(크리에이티브)에 대한 카운터 값을 지정하면 대체 광고를 평가하여 반환할 항목을 결정합니다.
 title: VAST 및 VMAP에 대한 광고 대체 동작
-exl-id: 65814b91-6528-4eea-abfb-f45dd2dbb899
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%

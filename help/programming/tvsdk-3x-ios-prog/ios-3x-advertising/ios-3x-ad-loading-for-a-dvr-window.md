@@ -1,8 +1,7 @@
 ---
 description: 사용자의 현재 라이브 포인트 이후에 발생하는 광고만 해결할지 또는 현재 라이브 포인트 이전에 발생하는 광고도 해결할지 여부를 결정할 수 있습니다.
 title: DVR 창에 대한 광고 로드
-exl-id: 3e8542a8-0912-4023-904d-0fdb28411a9d
-source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%

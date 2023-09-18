@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 재생을 시작하는 비디오와 같은 미디어 재생 작업이 발생할 때 재생 이벤트를 전달합니다.
 title: 재생 이벤트
-exl-id: 675dd444-d58c-4316-9d62-b64e6433b650
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%

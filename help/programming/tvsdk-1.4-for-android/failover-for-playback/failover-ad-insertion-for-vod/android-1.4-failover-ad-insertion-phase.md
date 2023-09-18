@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 기본 콘텐츠에 해당하는 타임라인에 대체 콘텐츠(광고)를 삽입합니다.
 title: 광고 삽입 단계
-exl-id: bad246e9-ff2b-4584-a320-826385bb0e6d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%

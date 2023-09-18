@@ -1,8 +1,7 @@
 ---
 description: QoS(서비스 품질)는 비디오 엔진이 수행되는 방식에 대한 세부 보기를 제공합니다. TVSDK는 재생, 버퍼링 및 장치에 대한 자세한 통계를 제공합니다.
 title: 서비스 품질 통계
-exl-id: 62b2b65e-7383-4694-bdec-aacc4c2ae372
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%

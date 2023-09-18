@@ -1,8 +1,7 @@
 ---
 description: 이 안내서에서는 Java로 구현된 Android용 TVSDK를 사용하여 비디오 플레이어 애플리케이션을 개발하는 방법에 대한 정보를 제공합니다.
 title: 제품 개요, 대상 및 이 안내서
-exl-id: 85d7ff0f-a024-4cde-84e6-35f5b7adae86
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%

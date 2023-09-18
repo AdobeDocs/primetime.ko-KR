@@ -1,8 +1,7 @@
 ---
 description: MediaResource를 직접 인스턴스화하고 재생할 비디오 콘텐츠를 로드하여 리소스를 로드합니다. 이는 미디어 리소스를 로드하는 한 가지 방법입니다.
 title: MediaPlayer에서 미디어 리소스 로드
-exl-id: 2d5e95bc-3962-4356-b90f-e550066f7a70
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -36,7 +35,6 @@ MediaResource를 직접 인스턴스화하고 재생할 비디오 콘텐츠를 �
 >* A `state` 유형의 매개변수 `MediaPlayer.PlayerState` (값: `MediaPlayer.PlayerState.ERROR`.
 >
 >* A `notification` 유형의 매개변수 `MediaPlayerNotification` 오류 이벤트에 대한 진단 정보를 포함합니다.
-
 
 다음은 미디어 리소스 로드 프로세스를 설명하는 간소화된 샘플 코드입니다.
 

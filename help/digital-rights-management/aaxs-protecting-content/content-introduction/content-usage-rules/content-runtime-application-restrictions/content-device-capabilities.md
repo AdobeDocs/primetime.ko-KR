@@ -2,8 +2,7 @@
 title: 보호된 콘텐츠를 재생하는 데 필요한 장치 기능
 description: 보호된 콘텐츠를 재생하는 데 필요한 장치 기능
 copied-description: true
-exl-id: 5f2089e9-3176-46a7-9998-2dad0e77e453
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 콘텐츠에 액세스하는 데 필요한 하드웨어 기능을 지정합니다. 하드웨어 기능에 대한 정보는 이식 키트를 사용하는 장치에 제공됩니다.
 
-장치 기능은 다음 표에 지정된 속성으로 식별할 수 있습니다.
+디바이스 기능은 다음 표에 지정된 속성에 의해 식별될 수 있습니다.
 
 <table id="table_v3n_fks_n4"> 
  <tbody> 

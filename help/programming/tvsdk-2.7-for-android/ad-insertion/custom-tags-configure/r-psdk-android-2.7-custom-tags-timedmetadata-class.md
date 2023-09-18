@@ -1,8 +1,7 @@
 ---
 description: TVSDK가 재생 목록/매니페스트에서 구독한 태그를 검색하면 플레이어가 자동으로 태그를 처리하여 TimedMetadata 개체의 형태로 노출합니다.
 title: 시간 메타데이터 클래스
-exl-id: 1d392a97-f3f4-4027-9515-32bec2008f37
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -62,15 +61,15 @@ TVSDK가 재생 목록/매니페스트에서 구독한 태그를 검색하면 �
 
 * TVSDK는 특성 목록을 키-값 쌍으로 자동으로 추출하고 특성을 메타데이터 속성에 저장합니다.
 
-   >[!TIP]
-   >
-   >매니페스트의 사용자 지정 태그에 있는 복잡한 데이터(예: 특수 문자가 있는 문자열)는 따옴표로 묶어야 합니다. 예:
-   >
-   >
-   ```
-   >#EXT-CUSTOM-TAG:type=SpliceOut,ID=1,time=71819.7222,duration=30.0,url= 
-   >"www.example.com:8090?parameter1=xyz&parameter2=abc"
-   >```
+  >[!TIP]
+  >
+  >매니페스트의 사용자 지정 태그에 있는 복잡한 데이터(예: 특수 문자가 있는 문자열)는 따옴표로 묶어야 합니다. 예:
+  >
+  >```
+  >#EXT-CUSTOM-TAG:type=SpliceOut,ID=1,time=71819.7222,duration=30.0,url= 
+  >"www.example.com:8090?parameter1=xyz&parameter2=abc"
+  >```
+  >
 
 * 사용자 지정 태그 형식으로 인해 추출에 실패하면 메타데이터 속성이 비어 있고 응용 프로그램에서 실제 정보를 추출해야 합니다. 이 경우 오류가 발생하지 않습니다.
 

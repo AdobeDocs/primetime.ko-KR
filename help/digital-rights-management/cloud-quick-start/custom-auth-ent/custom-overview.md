@@ -2,8 +2,7 @@
 title: 사용자 지정 인증/권한 부여 개요(선택 사항)
 description: 사용자 지정 인증/권한 부여 개요(선택 사항)
 copied-description: true
-exl-id: d92c4246-c772-44da-80b6-4086dfc30ff4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

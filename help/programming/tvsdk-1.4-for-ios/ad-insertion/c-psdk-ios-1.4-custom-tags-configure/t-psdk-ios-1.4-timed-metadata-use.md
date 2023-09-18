@@ -1,8 +1,7 @@
 ---
 description: 현재 재생 시간이 시작 시간과 일치하는 경우 TimedMetadata를 사용할 수 있습니다.
 title: 시간 메타데이터 사용
-exl-id: 19375158-3647-4d6e-a2fb-6b06a2fd23c5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%

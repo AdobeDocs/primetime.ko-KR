@@ -1,8 +1,7 @@
 ---
 title: 클라이언트 정보 전달(장치, 연결 및 애플리케이션)
 description: 클라이언트 정보 전달(장치, 연결 및 애플리케이션)
-exl-id: 0b21ef0e-c169-48ff-ac01-25411cfece1e
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1681'
 ht-degree: 0%
@@ -43,30 +42,30 @@ ht-degree: 0%
 >
 >다음 키에는 **제한됨** 값: `primaryHardwareType`, `osName`, `osFamily`, `browserName`, `browserVendor`, `connectionSecure`.
 
-|  | 키 | 제한됨 | 설명 | 가능한 값 |
+|   | 키 | 제한됨 | 설명 | 가능한 값 |
 |---|---|---|---|---|
-|  | 기본 하드웨어 유형 | # 예 | 디바이스의 기본 하드웨어 유형입니다. | # 값이 제한됨: Camera DataCollectionTerminal Desktop EmbeddedNetworkModule eReader GamesConsole GeolocationTracker Glasses MediaPlayer MobilePhone PaymentTerminal PluginModem SetTopBox TV Tablet WirelessHotspot Wristwatch Unknown |
+|            | 기본 하드웨어 유형 | # 예 | 디바이스의 기본 하드웨어 유형입니다. | # 값이 제한됨: Camera DataCollectionTerminal Desktop EmbeddedNetworkModule eReader GamesConsole GeolocationTracker Glasses MediaPlayer MobilePhone PaymentTerminal PluginModem SetTopBox TV Tablet WirelessHotspot Wristwatch Unknown |
 | #mandatory | 모델 | 아니요 | 장치의 모델 이름입니다. | 예: iPhone, SM-G930V, AppleTV 등 |
-|  | 버전 | 아니요 | 디바이스 버전. | 예: 2.0.1 등 |
-|  | 제조업체 | 아니요 | 장치의 제조 회사/조직입니다. | 예: 삼성, LG, ZTE, 화웨이, 모토로라, Apple 등 |
-|  | 공급업체 | 아니요 | 장치의 판매 회사/조직입니다. | 예: Apple, Samsung, LG, Google 등 |
+|            | 버전 | 아니요 | 디바이스 버전. | 예: 2.0.1 등 |
+|            | 제조업체 | 아니요 | 장치의 제조 회사/조직입니다. | 예: 삼성, LG, ZTE, 화웨이, 모토로라, Apple 등 |
+|            | 공급업체 | 아니요 | 장치의 판매 회사/조직입니다. | 예: Apple, Samsung, LG, Google 등 |
 | #mandatory | osName | # 예 | 장치의 운영 체제(OS) 이름입니다. | # 값은 제한됩니다. Android Chrome OS Linux Mac OS X OpenBSD Roku OS Windows iOS tvOS webOS |
-|  | osFamily | 예 | 장치의 운영 체제(OS) 그룹 이름입니다. | # 값이 제한됩니다. Android BSD Linux PlayStation OS Roku OS Symbian Tizen Windows iOS macOS tvOS webOS |
-|  | osVendor | 아니요 | 장치의 운영 체제(OS) 공급업체. | Amazon Apple Google LG Microsoft Mozilla 닌텐도 Nokia Roku 삼성 소니 타이젠 프로젝트 |
-|  | osVersion | 아니요 | 장치의 운영 체제(OS) 버전입니다. | 예: 10.2, 9.0.1 등 |
-|  | browserName | # 예 | 브라우저의 이름입니다. | # 값이 제한됩니다: Android 브라우저 Chrome Edge Firefox Internet Explorer Opera Safari SeaMonkey Symbian 브라우저 |
-|  | browserVendor | # 예 | 브라우저의 빌드 회사/조직입니다. | # 값이 제한됨: Amazon Apple Google Microsoft Motorola Mozilla Netscape Nintendo Nokia Samsung Sony Ericsson |
-|  | browserVersion | 아니요 | 장치의 브라우저 버전입니다. | 예: 60.0.3112 |
-|  | userAgent | 아니요 | 장치의 사용자 에이전트입니다. | 예: Mozilla/5.0 (Macintosh, Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, 예: Gecko) 버전/10.0.3 Safari/602.4.8 |
-|  | displayWidth | 아니요 | 장치의 실제 화면 너비입니다. |  |
-|  | displayHeight | 아니요 | 장치의 실제 화면 높이입니다. |  |
-|  | displayPi | 아니요 | 장치의 실제 화면 픽셀 밀도입니다. | 예: 294 |
-|  | 대각 화면 크기 | 아니요 | 디바이스의 물리적 화면 대각선 치수(인치)입니다. | 예: 5.5, 10.1 |
-|  | connectionIp | 아니요 | HTTP 요청을 보내는 데 사용되는 장치의 IP입니다. | 예: 8.8.4.4 |
-|  | connectionPort | 아니요 | HTTP 요청을 전송하는 데 사용되는 장치의 포트입니다. | 예: 53124 |
-|  | connectionType | 아니요 | 네트워크 연결 유형입니다. | 예: WiFi, LAN, 3G, 4G, 5G |
-|  | connectionSecure | # 예 | 네트워크 연결 보안 상태입니다. | # 값이 제한됨: true - 보안 네트워크의 경우 false - 공용 핫스팟의 경우 |
-|  | applicationId | 아니요 | 애플리케이션 고유 식별자. | 예: CNN |
+|            | osFamily | 예 | 장치의 운영 체제(OS) 그룹 이름입니다. | # 값이 제한됩니다. Android BSD Linux PlayStation OS Roku OS Symbian Tizen Windows iOS macOS tvOS webOS |
+|            | osVendor | 아니요 | 장치의 운영 체제(OS) 공급업체. | Amazon Apple Google LG Microsoft Mozilla 닌텐도 Nokia Roku 삼성 소니 타이젠 프로젝트 |
+|            | osVersion | 아니요 | 장치의 운영 체제(OS) 버전입니다. | 예: 10.2, 9.0.1 등 |
+|            | browserName | # 예 | 브라우저의 이름입니다. | # 값이 제한됩니다: Android 브라우저 Chrome Edge Firefox Internet Explorer Opera Safari SeaMonkey Symbian 브라우저 |
+|            | browserVendor | # 예 | 브라우저의 빌드 회사/조직입니다. | # 값이 제한됨: Amazon Apple Google Microsoft Motorola Mozilla Netscape Nintendo Nokia Samsung Sony Ericsson |
+|            | browserVersion | 아니요 | 장치의 브라우저 버전입니다. | 예: 60.0.3112 |
+|            | userAgent | 아니요 | 장치의 사용자 에이전트입니다. | 예: Mozilla/5.0 (Macintosh, Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, 예: Gecko) 버전/10.0.3 Safari/602.4.8 |
+|            | displayWidth | 아니요 | 장치의 실제 화면 너비입니다. |                                                                                                                                                                                                                                                                                                                                                           |
+|            | displayHeight | 아니요 | 장치의 실제 화면 높이입니다. |                                                                                                                                                                                                                                                                                                                                                           |
+|            | displayPi | 아니요 | 장치의 실제 화면 픽셀 밀도입니다. | 예: 294 |
+|            | 대각 화면 크기 | 아니요 | 디바이스의 물리적 화면 대각선 치수(인치)입니다. | 예: 5.5, 10.1 |
+|            | connectionIp | 아니요 | HTTP 요청을 보내는 데 사용되는 장치의 IP입니다. | 예: 8.8.4.4 |
+|            | connectionPort | 아니요 | HTTP 요청을 전송하는 데 사용되는 장치의 포트입니다. | 예: 53124 |
+|            | connectionType | 아니요 | 네트워크 연결 유형입니다. | 예: WiFi, LAN, 3G, 4G, 5G |
+|            | connectionSecure | # 예 | 네트워크 연결 보안 상태입니다. | # 값이 제한됨: true - 보안 네트워크의 경우 false - 공용 핫스팟의 경우 |
+|            | applicationId | 아니요 | 애플리케이션 고유 식별자. | 예: CNN |
 
 ## API 참조 {#api-ref}
 
@@ -135,31 +134,32 @@ AccessEnabler iOS/tvOS SDK는 **전체 재정의** 다음을 통한 클라이언
 
 장치 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---------------|-----------------------------|---------------|
 | ! | 모델 | Build.MODEL | GT-I9505 |
-|  | 공급업체 | Build.BRAND | 삼성 |
-|  | 제조업체 | Build.MANUFACTURER | 삼성 |
+|   | 공급업체 | Build.BRAND | 삼성 |
+|   | 제조업체 | Build.MANUFACTURER | 삼성 |
 | ! | 버전 | Build.DEVICE | jflte |
-|  | displayWidth | DisplayMetrics.widthPixels | 600 |
-|  | displayHeight | DisplayMetrics.heightPixels | 800 |
+|   | displayWidth | DisplayMetrics.widthPixels | 600 |
+|   | displayHeight | DisplayMetrics.heightPixels | 800 |
 | ! | osName | 하드코드 | Android |
 | ! | osVersion | Build.VERSION.RELEASE | 5.0.1 |
 
 연결 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---|---|---|
 | ! | connectionType | `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>` `getSystemService(Context.CONNECTIVITY_SERVICE).getActiveNetworkInfo().getType()` | `"WIFI","BLUETOOTH","MOBILE","ETHERNET","VPN","DUMMY","MOBILE_DUN","WIMAX","notAccessible"` |
-|  | connectionSecure |  |  |
+|   | connectionSecure |                                                                                                                                                           |                                                                                           |
 
 애플리케이션 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---------------|-----------|--------------|
-|  | applicationId | 하드코드 | CNN |
+|   | applicationId | 하드코드 | CNN |
 
 >[!IMPORTANT]
+>
 장치, 연결 및 애플리케이션 정보를 동일한 JSON 개체에 추가해야 합니다. 그런 다음 결과 객체는 다음과 같아야 합니다. **Base64 인코딩됨**. 또한 Adobe Primetime 인증 REST API의 경우 값은 다음과 같아야 합니다. **URL 인코딩됨**.
 
 **샘플 코드**
@@ -238,77 +238,79 @@ private JSONObject computeClientInformation() {
 ```
 
 >[!NOTE]
+>
 **리소스:**
 * 공개 수업 [빌드](https://developer.android.com/reference/android/os/Build.html){target=_blank} Java 개발자 설명서에서 참조하십시오.
-
 
 ### 파이어TV {#fire-tv}
 
 장치 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예:) |
+|   | 키 | 소스 | 값(예:) |
 |---|---------------|-----------------------------|--------------|
 | ! | 모델 | Build.MODEL | AFTM |
-|  | 공급업체 | Build.BRAND | Amazon |
-|  | 제조업체 | Build.MANUFACTURER | Amazon |
+|   | 공급업체 | Build.BRAND | Amazon |
+|   | 제조업체 | Build.MANUFACTURER | Amazon |
 | ! | 버전 | Build.DEVICE | 몬토야 |
-|  | displayWidth | DisplayMetrics.widthPixels |  |
-|  | displayHeight | DisplayMetrics.heightPixels |  |
+|   | displayWidth | DisplayMetrics.widthPixels |              |
+|   | displayHeight | DisplayMetrics.heightPixels |              |
 | ! | osName | 하드코드 | Android |
 | ! | osVersion | Build.VERSION.RELEASE | 5.1.1 |
 
 연결 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|------------------|--------|---------------|
-| ! | connectionType |  |  |
-|  | connectionSecure |  |  |
+| ! | connectionType |        |               |
+|   | connectionSecure |        |               |
 
 애플리케이션 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---------------|-----------|--------------|
-|  | applicationId | 하드코드 | CNN |
+|   | applicationId | 하드코드 | CNN |
 
 >[!IMPORTANT]
+>
 장치, 연결 및 애플리케이션 정보를 동일한 JSON 개체에 추가해야 합니다. 그런 다음 결과 객체는 다음과 같아야 합니다. **Base64 인코딩됨**. 또한 Adobe Primetime 인증 REST API의 경우 값은 다음과 같아야 합니다. **URL 인코딩됨**.
 
 >[!NOTE]
+>
 **리소스:**
 * 공개 수업 [빌드](https://developer.android.com/reference/android/os/Build.html){target=_blank} Android 개발자 설명서에서 확인할 수 있습니다.
 * [FireTV 장치 식별](https://developer.amazon.com/docs/fire-tv/identify-amazon-fire-tv-devices.html){target=_blank}
-
 
 ### iOS/tvOS {#ios-tvos}
 
 장치 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---------------|------------------------|--------------|
 | ! | 모델 | uname.machine | iPhone |
-|  | 공급업체 | 하드코드 | Apple |
-|  | 제조업체 | 하드코드 | Apple |
+|   | 공급업체 | 하드코드 | Apple |
+|   | 제조업체 | 하드코드 | Apple |
 | ! | 버전 | uname.machine | 8,1 |
-|  | displayWidth | UIScreen.mainScreen | 320 |
-|  | displayHeight | UIScreen.mainScreen | 568 |
+|   | displayWidth | UIScreen.mainScreen | 320 |
+|   | displayHeight | UIScreen.mainScreen | 568 |
 | ! | osName | UIDevice.systemName | iOS |
 | ! | osVersion | UIDevice.systemVersion | 10.2 |
 
 연결 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|------------------|-------------------------------------------|--------------|
-| ! | connectionType | [연결 가능 currentReachabilityStatus] |  |
-|  | connectionSecure |  |  |
+| ! | connectionType | [연결 가능 currentReachabilityStatus] |              |
+|   | connectionSecure |                                           |              |
 
 
 애플리케이션 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---------------|-----------|--------------|
-|  | applicationId | 하드코드 | CNN |
+|   | applicationId | 하드코드 | CNN |
 
 >[!IMPORTANT]
+>
 장치, 연결 및 애플리케이션 정보를 동일한 JSON 개체에 추가해야 합니다. 그런 다음 결과 개체가 Base64로 인코딩되어야 합니다. 또한 Adobe Primetime 인증 REST API의 경우 값은 URL로 인코딩되어야 합니다.
 
 **샘플 코드**
@@ -380,67 +382,69 @@ private JSONObject computeClientInformation() {
 ```
 
 >[!NOTE]
+>
 **리소스:**
 * [UIDevice](https://developer.apple.com/documentation/uikit/uidevice#//apple_ref/occ/cl/UIDevice){target=_blank}
 * [uname](https://man7.org/linux/man-pages/man2/uname.2.html){target=_blank}
 * [연결 정보](https://developer.apple.com/library/archive/samplecode/Reachability/Introduction/Intro.html){target=_blank}
 
-
 ### Roku {#roku}
 
 장치 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-| 키 | 소스 | 값(예) |  |
+| 키 | 소스 | 값(예) |                 |
 |-----|---------------|--------------------------------------------|-----------------|
 | ! | 모델 | 하드코드 | &quot;Roku&quot; |
-|  | 공급업체 | ifDeviceInfo.GetModelDetails().VendorName | &quot;Sharp&quot;, &quot;Roku&quot; |
-|  | 제조업체 | ifDeviceInfo.GetModelDetails().VendorName | &quot;Sharp&quot;, &quot;Roku&quot; |
+|     | 공급업체 | ifDeviceInfo.GetModelDetails().VendorName | &quot;Sharp&quot;, &quot;Roku&quot; |
+|     | 제조업체 | ifDeviceInfo.GetModelDetails().VendorName | &quot;Sharp&quot;, &quot;Roku&quot; |
 | ! | 버전 | ifDeviceInfo.GetModelDetails().ModelNumber | &quot;5303X&quot; |
-|  | displayWidth | ifDeviceInfo.GetDisplaySize().w | 1920 |
-|  | displayHeight | ifDeviceInfo.GetDisplaySize().h | 1080 |
+|     | displayWidth | ifDeviceInfo.GetDisplaySize().w | 1920 |
+|     | displayHeight | ifDeviceInfo.GetDisplaySize().h | 1080 |
 | ! | osName | 하드코드 | &quot;Roku&quot; |
-| ! | osVersion | ifDeviceInfo.getVersion() |  |
+| ! | osVersion | ifDeviceInfo.getVersion() |                 |
 
 연결 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---|---|---|
 | ! | connectionType | ifDeviceInfo.GetConnectionType() | &quot;WifiConnection&quot;, &quot;WiredConnection&quot; |
-|  | connectionSecure | 하드코드 | 연결이 유선인 경우 true |
+|   | connectionSecure | 하드코드 | 연결이 유선인 경우 true |
 
 애플리케이션 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---------------|-----------|--------------|
-|  | applicationId | 하드코드 | CNN |
+|   | applicationId | 하드코드 | CNN |
 
 >[!IMPORTANT]
+>
 장치, 연결 및 애플리케이션 정보를 동일한 JSON 개체에 추가해야 합니다. 그런 다음 결과 객체는 다음과 같아야 합니다. **Base64 인코딩됨**. 또한 Adobe Primetime 인증 REST API의 경우 값은 URL로 인코딩되어야 합니다.
 
 >[!NOTE]
+>
 자세한 내용은 [ifDeviceInfo](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md)
 
 ### 엑스박스 {#xbox}
 
 장치 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 값(예) |
+|   | 키 | 소스 | 값(예) |
 |---|---|---|---|
-| ! | 모델 | EasClientDeviceInformation.SystemProductName |  |
-|  | 공급업체 | 하드코드 | Microsoft |
-|  | 제조업체 | 하드코드 | Microsoft |
-| ! | 버전 | EasClientDeviceInformation.SystemHardwareVersion |  |
-|  | displayWidth | DisplayInformation.ScreenWidthInRawPixels | 1920 |
-|  | displayHeight | DisplayInformation.ScreenHeightInRawPixels | 1080 |
-| ! | osName | EasClientDeviceInformation.OperatingSystem |  |
-| ! | osVersion | EasClientDeviceInformation.SystemFirmwareVersion |  |
+| ! | 모델 | EasClientDeviceInformation.SystemProductName |                 |
+|   | 공급업체 | 하드코드 | Microsoft |
+|   | 제조업체 | 하드코드 | Microsoft |
+| ! | 버전 | EasClientDeviceInformation.SystemHardwareVersion |                 |
+|   | displayWidth | DisplayInformation.ScreenWidthInRawPixels | 1920 |
+|   | displayHeight | DisplayInformation.ScreenHeightInRawPixels | 1080 |
+| ! | osName | EasClientDeviceInformation.OperatingSystem |                 |
+| ! | osVersion | EasClientDeviceInformation.SystemFirmwareVersion |                 |
 
 연결 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
-|  | 키 | 소스 | 예 |
+|   | 키 | 소스 | 예 |
 |---|---|---|---|
-| ! | connectionType |  |  |
-|  | connectionSecure | NetworkAuthenticationType | &quot;없음&quot;, &quot;Wpa&quot; 등 |
+| ! | connectionType |                                                   |                   |
+|   | connectionSecure | NetworkAuthenticationType | &quot;없음&quot;, &quot;Wpa&quot; 등 |
 
 애플리케이션 정보는 다음과 같은 방법으로 구성할 수 있습니다.
 
@@ -449,6 +453,7 @@ private JSONObject computeClientInformation() {
 | applicationId | 하드코드 | CNN |
 
 >[!IMPORTANT]
+>
 장치, 연결 및 애플리케이션 정보를 동일한 JSON 개체에 추가해야 합니다. 그런 다음 결과 객체는 다음과 같아야 합니다. **Base64 인코딩됨**. 또한 Adobe Primetime 인증 REST API의 경우 값은 다음과 같아야 합니다. **URL 인코딩됨**.
 
 **리소스**

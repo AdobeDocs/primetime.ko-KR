@@ -2,8 +2,7 @@
 title: DRMErrorEvent 클래스 개요 사용
 description: DRMErrorEvent 클래스 개요 사용
 copied-description: true
-exl-id: c651cdcf-f8f8-4085-a88e-d82030f90f11
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -22,7 +21,7 @@ Primetime에서 `DRMErrorEvent` Primetime 개체가 보호된 콘텐츠를 재�
 
 보호된 콘텐츠를 재생하려는 동안 오류가 발생하면 Primetime에서 발송된 오류 이벤트를 처리할 이벤트 처리기를 만드십시오.
 
-일반적으로 응용 프로그램에서 오류가 발생하면 여러 정리 작업을 수행합니다. 그런 다음 사용자에게 오류를 알리고 문제를 해결하기 위한 옵션을 제공합니다.
+일반적으로 응용 프로그램에 오류가 발생하면 여러 정리 작업을 수행합니다. 그런 다음 사용자에게 오류를 알리고 문제를 해결하기 위한 옵션을 제공합니다.
 
 ```
 private function drmErrorEventHandler(event:DRMErrorEvent):void {  

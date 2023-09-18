@@ -1,8 +1,7 @@
 ---
 description: TVSDK에서 재생 중인 현재 선택한 항목과 연결된 타임라인에 대한 설명을 가져올 수 있습니다. 이 기능은 응용 프로그램에서 광고 콘텐츠에 해당하는 콘텐츠 섹션이 식별되는 사용자 지정 스크러바 컨트롤을 표시할 때 가장 유용합니다.
 title: 재생 타임라인 Inspect
-exl-id: 95792354-76f6-44fd-9207-73e862b434e1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%

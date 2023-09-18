@@ -2,8 +2,7 @@
 description: XMLHttpRequests에서 withCredentials 특성을 지원하면 CORS(원본 간 리소스 공유) 요청이 다양한 요청 유형에 대한 대상 도메인의 쿠키를 포함할 수 있습니다.
 keywords: CORS;원본 간;리소스 공유;쿠키;자격 증명 포함
 title: 원본 간 리소스 공유
-exl-id: 02826c87-b0c6-495b-a17d-67c5693a9772
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%

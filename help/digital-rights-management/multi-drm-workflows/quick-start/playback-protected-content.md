@@ -1,8 +1,7 @@
 ---
 description: DRM 솔루션을 테스트하려면 작업 중인 특정 DRM 솔루션을 처리할 수 있는 비디오 애플리케이션이 필요합니다. 이 플레이어는 Adobe 또는 고유한 TVSDK 기반 비디오 애플리케이션에서 사용할 수 있는 샘플 플레이어일 수 있습니다.
 title: 보호된 콘텐츠 재생
-exl-id: b0e09474-f752-495f-a702-93f288535403
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -23,21 +22,21 @@ DRM 솔루션을 테스트하려면 작업 중인 특정 DRM 솔루션을 처리
 
    보호된 콘텐츠의 URL(테스트 중인 DRM 솔루션에 따라 M3U8 또는 MPD 매니페스트의 위치)을 제공합니다.
 
-   테스트하는 플레이어에서 제공하는 인터페이스에 따라 라이선스 URL과 토큰을 입력 필드의 문자열로 분리하거나, 텍스트 상자에 붙여 넣은 JSON 개체로 제공하거나, URL의 쿼리 매개 변수로 제공하라는 메시지가 표시될 수 있습니다.
+   테스트하는 플레이어에서 제공하는 인터페이스에 따라 라이선스 URL과 토큰을 입력 필드의 문자열로 분리하거나 텍스트 상자에 붙여 넣는 JSON 개체로 제공하거나 URL의 쿼리 매개 변수로 제공하라는 메시지가 표시될 수 있습니다.
 
    테스트 플레이어의 몇 가지 가능성이 여기에 나열됩니다.
 
    * HTML5 참조 플레이어:
 
-      ```
-      https://ptdemos.com/html5/internal/1_2/2.4_GM/samples/reference/reference_player.html
-      ```
+     ```
+     https://ptdemos.com/html5/internal/1_2/2.4_GM/samples/reference/reference_player.html
+     ```
 
    * Shaka 플레이어:
 
-      ```
-      https://shaka-player-demo.appspot.com
-      ```
+     ```
+     https://shaka-player-demo.appspot.com
+     ```
 
    * 샘플 TVSDK 플레이어(개발 중) -
 

@@ -1,8 +1,7 @@
 ---
 description: 재생에 광고가 포함되는 경우 브라우저 TVSDK는 일반적으로 예상되는 순서로 이벤트/알림을 발송합니다. 플레이어는 예상되는 시퀀스의 이벤트를 기반으로 작업을 구현할 수 있습니다.
 title: 광고 이벤트 순서
-exl-id: fcc40aa8-9364-40a8-b2f2-9327e24819af
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%

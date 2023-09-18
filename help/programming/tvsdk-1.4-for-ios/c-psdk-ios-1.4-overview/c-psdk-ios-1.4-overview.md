@@ -1,8 +1,7 @@
 ---
 description: Adobe Primetime 소프트웨어 개발 키트(TVSDK)는 고급 비디오 재생 기능을 애플리케이션에 추가할 수 있는 툴킷입니다.
 title: 개요
-exl-id: 81a60813-138d-456e-ace3-1efc7859159f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%

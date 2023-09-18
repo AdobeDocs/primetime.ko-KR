@@ -1,8 +1,7 @@
 ---
 description: TVSDK가 시간 범위를 적절하게 병합하거나 교체하여 잘못된 시간 범위 지정에 응답합니다.
 title: 시간 범위 오류 예
-exl-id: 70bbd98b-4084-4a26-8420-fdbe9029194d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%

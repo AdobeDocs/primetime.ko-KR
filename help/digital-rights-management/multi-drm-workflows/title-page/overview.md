@@ -1,8 +1,7 @@
 ---
 description: ExpressPlay에서 제공하는 Primetime DRM Cloud를 사용하여 TVSDK 앱에 대한 여러 DRM 솔루션을 구현할 수 있습니다. DRM 솔루션에는 Apple의 FairPlay, Google의 Widevine, Microsoft의 PlayReady 및 Adobe의 Primetime Access가 포함됩니다.
 title: 다중 DRM 개요
-exl-id: 27614bb6-bfa6-445a-8fb5-a1b8af080bcc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%

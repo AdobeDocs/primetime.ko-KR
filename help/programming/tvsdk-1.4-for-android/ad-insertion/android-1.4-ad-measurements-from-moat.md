@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 FreeWheel 및 VAST 응답을 제공하는 기타 광고 서버에서 정보를 가져옵니다. FreeWheel은 VAST 응답 내에서 Moat 서비스에서 정보를 제공합니다. Moat 서비스는 광고 크리에이티브가 대상의 관심사를 포착하는지 또는 무시하는지를 더 잘 보여 주는 정확도로 광고 노출 횟수를 계산합니다.
 title: Moat의 광고 측정
-exl-id: 7ce1a495-a88f-4c96-90b1-1d30933b3dcf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 기본 확인자를 기반으로 확인자를 구현할 수 있습니다.
 title: 사용자 지정 영업 기회/콘텐츠 해결사 구현
-exl-id: a73f62e1-7e6e-4b16-9bf8-118ec0381c41
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -63,11 +62,12 @@ ht-degree: 0%
 
          * A `CMTimeRange` (시작 시간 및 브레이크 기간 포함)
 
-            범위 속성으로 설정됩니다. `PTAdBreak`.
+           범위 속성으로 설정됩니다. `PTAdBreak`.
 
          * `NSArray` / `PTAd`s.
 
-            의 광고 속성으로 설정됩니다. `PTAdBreak`.
+           의 광고 속성으로 설정됩니다. `PTAdBreak`.
+
    * A `PTAd` 는 광고를 나타내고, 각각은 `PTAd` 에는 다음이 포함되어 있습니다.
 
       * A `PTAdHLSAsset` 를 광고의 기본 자산 속성으로 설정합니다.

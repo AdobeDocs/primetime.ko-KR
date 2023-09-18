@@ -2,8 +2,7 @@
 title: 컴패니언 배너 광고에 대한 우수 사례
 description: 컴패니언 배너 광고에 대한 우수 사례
 copied-description: true
-exl-id: e7d15916-9059-4993-a588-baf7d7ddc534
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
@@ -19,9 +18,9 @@ TVSDK는 컴패니언 배너 광고를 지원합니다. 광고는 선형 광고�
 * 플레이어의 레이아웃에 맞게 비디오 광고의 컴패니언 배너 광고를 최대한 많이 표시하십시오.
 * 광고의 지정된 높이 및 너비와 일치하는 위치가 있는 경우에만 컴패니언 배너를 표시합니다.
 
-   >[!IMPORTANT]
-   >
-   >광고 크기를 조정하지 마십시오.
+  >[!IMPORTANT]
+  >
+  >광고 크기를 조정하지 마십시오.
 
 * 광고가 시작된 후 가능한 한 빨리 컴패니언 배너를 발표하기 시작합니다.
 * 기본 광고/비디오 컨테이너를 컴패니언 배너와 오버레이하지 마십시오.

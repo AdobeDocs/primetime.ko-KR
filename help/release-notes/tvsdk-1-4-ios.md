@@ -3,8 +3,7 @@ title: iOS용 TVSDK 1.4 릴리스 노트
 description: iOS용 TVSDK 1.4 릴리스 노트에서는 TVSDK iOS 1.4의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제, 장치 문제를 설명합니다
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 30284f89-969b-49be-98b4-bd3f23258590
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '6549'
 ht-degree: 0%
@@ -28,7 +27,7 @@ iOS용 TVSDK 1.4 릴리스 노트에서는 TVSDK iOS 1.4의 새로운 기능 또
 **버전 1.4.43**
 
 * 부분 광고의 추적을 트리거하지 않고 광고 중간에 참가할 수 있는 TV와 유사한 경험.\
-   예: 사용자가 3개의 30초 광고로 구성된 90초 광고 브레이크 중간(40초)에 참가합니다. 중간 광고 두 번째 광고에 10초입니다.
+  예: 사용자가 3개의 30초 광고로 구성된 90초 광고 브레이크 중간(40초)에 참가합니다. 중간 광고 두 번째 광고에 10초입니다.
 
    * 두 번째 광고가 나머지 기간(20초) 동안 재생되고 세 번째 광고가 재생됩니다.
    * 재생되는 부분 광고(두 번째 광고)에 대한 광고 추적기는 트리거되지 않습니다. 세 번째 광고에 대해서만 추적기가 트리거됩니다.
@@ -65,7 +64,7 @@ iOS TVSDK에서 VHL 2.0 통합 및 인증 : API의 복잡성을 줄여 VideoHear
 
 * 네트워크 광고 정보
 
-   이제 TVSDK API는 서드파티 VAST 응답에 대한 추가 정보를 제공합니다. 광고 ID, 광고 시스템 및 VAST 광고 확장 기능은에 제공됩니다. `PTNetworkAdInfo` 클래스 액세스  `networkAdInfo`  광고 자산의 속성입니다. 이 정보는 와 같은 다른 Ad Analytics 플랫폼과 통합하는 데 사용할 수 있습니다. **모트 분석**.
+  이제 TVSDK API는 서드파티 VAST 응답에 대한 추가 정보를 제공합니다. 광고 ID, 광고 시스템 및 VAST 광고 확장 기능은에 제공됩니다. `PTNetworkAdInfo` 클래스 액세스  `networkAdInfo`  광고 자산의 속성입니다. 이 정보는 와 같은 다른 Ad Analytics 플랫폼과 통합하는 데 사용할 수 있습니다. **모트 분석**.
 
 **버전 1.4.31**
 
@@ -93,7 +92,7 @@ VPAID 2.0에 대한 자세한 내용은 [VPAID 광고 지원](../programming/tvs
 
 * tvOS
 
-   TVSDK는 tvOS 기본 애플리케이션을 지원합니다.
+  TVSDK는 tvOS 기본 애플리케이션을 지원합니다.
 * 다음 유형의 콘텐츠를 재생할 수 있습니다.
 
    * VOD
@@ -180,7 +179,6 @@ VPAID 2.0에 대한 자세한 내용은 [VPAID 광고 지원](../programming/tvs
 >* 플랫폼 또는 버전에서 슬로우 모션.
 >* 라이브 트릭 플레이.
 
-
 **버전 1.4.43**
 
 * TVSDK 1.4.43은 iOS 11에 대해 인증되었습니다.
@@ -203,9 +201,9 @@ VPAID 2.0에 대한 자세한 내용은 [VPAID 광고 지원](../programming/tvs
 
 * tvOS
 
-   이 버전의 TVSDK는 tvOS에 대한 지원을 포함하며 암호화되지 않은 HLS 스트림에 대해 인증되었습니다.
+  이 버전의 TVSDK는 tvOS에 대한 지원을 포함하며 암호화되지 않은 HLS 스트림에 대해 인증되었습니다.
 
-   **참고**: 다음 컴파일 지침을 숙지하십시오.
+  **참고**: 다음 컴파일 지침을 숙지하십시오.
 
    * TVSDK tvOs 지원은 Adobe이 아닌 DRM 암호화 스트림으로 제한됩니다. tvOS 빌드 설정에서 drmNativeInterface.framework에 대한 참조를 제거해야 합니다. AES 암호화 스트림은 계속 지원됩니다.
    * Apple을 사용하려면 모든 Apple TV 응용 프로그램이 비트코드를 활성화해야 하므로 프로젝트 설정에서 이 플래그를 켜야 합니다.
@@ -268,96 +266,96 @@ Comment Type: draft
 
 * (ZD#34385) - 신호 기반 광고 삽입에서 돌아올 때 잘못된 URL로 재생이 중단됩니다.
 
-   매니페스트 읽기가 계속 실행될 수 있도록 CustomAVAssetLoaderOperations에 대한 최대 동시 수를 늘리십시오.
+  매니페스트 읽기가 계속 실행될 수 있도록 CustomAVAssetLoaderOperations에 대한 최대 동시 수를 늘리십시오.
 * (ZD#34373) - 스트림 기록이 허용되지 않는 경우 최종 사용자는 HDMI 연결 장치로 스트리밍할 수 없습니다.
 * (ZD#32678) - TVSDK가 iOS에서 올바른 광고 ID를 수집하지 않습니다.
 
-   이제 VAST/VMAP 리디렉션의 경우 VHL Ping에서 최종 광고 크리에이티브의 광고 ID를 선택합니다.
+  이제 VAST/VMAP 리디렉션의 경우 VHL Ping에서 최종 광고 크리에이티브의 광고 ID를 선택합니다.
 * (ZD#33904) - TVSDK가 AVFoundation 알림 AVAudioSessionMediaServicesWasLostNotification 및 AVAudioSessionMediaServicesWasResetNotification에 등록되지 않았습니다.
 
-   이제 미디어 서비스가 재설정되거나 손실될 때 알림을 받기 위해 PTMediaServicesWasLostNotification 및 PTMediaServicesWasResetNotification을 플레이어 앱에 등록할 수 있습니다.
+  이제 미디어 서비스가 재설정되거나 손실될 때 알림을 받기 위해 PTMediaServicesWasLostNotification 및 PTMediaServicesWasResetNotification을 플레이어 앱에 등록할 수 있습니다.
 
 * (ZD#33815) - 고객은 앱 업데이트를 요구하지 않고는 우선 순위 지정 및 표준화 CRS 규칙을 업데이트할 수 없습니다.
 
-   iOS TVSDK에 getCRSRulesJsonURL 및 setCRSRulesJsonURL API를 추가했습니다.
+  iOS TVSDK에 getCRSRulesJsonURL 및 setCRSRulesJsonURL API를 추가했습니다.
 
 **버전 1.4.41(1.4.41.76)**
 
 * (ZD #34464) - TVSDK 버전 1.4.41로 참조 앱을 빌드하는 도중 문제 발생
 
-   이 버전부터 iOS용 TVSDK를 컴파일하려면 Xcode 9가 필요합니다.
+  이 버전부터 iOS용 TVSDK를 컴파일하려면 Xcode 9가 필요합니다.
 * (ZD #29456) - 일시 중지된 상태에서 에어플레이 시작
 
-   Airplay를 시작할 때 비디오가 일시 중지되는 일시 중지 문제를 해결했습니다.
+  Airplay를 시작할 때 비디오가 일시 중지되는 일시 중지 문제를 해결했습니다.
 * (ZD #30371) - 선형 스트림에 2개 이상의 광고를 삽입하면 AdBreak 시작 시간이 변경됩니다
 
-   Apple TV에서 콘텐츠를 재생하려고 할 때 재생이 완전히 되지 않는 오류를 해결했습니다
+  Apple TV에서 콘텐츠를 재생하려고 할 때 재생이 완전히 되지 않는 오류를 해결했습니다
 * (ZD #32146) - iOS 11 개발 베타 차단에서 HLS 라이브 컨텐츠에 대한 PTMediaPlayerStatusError가 수신되지 않습니다.
 
-   Charles(Drop connection 및 403)를 사용하여 차단할 때 HLS Live 및 VOD 컨텐츠에 대해 PTMediaPlayerStatusError가 수신되지 않음
+  Charles(Drop connection 및 403)를 사용하여 차단할 때 HLS Live 및 VOD 컨텐츠에 대해 PTMediaPlayerStatusError가 수신되지 않음
 * (ZD #29242) - 광고가 활성화된 상태에서 Airplay 비디오 재생 실패
 
-   광고가 활성화되고 비디오 재생을 시작하는 AirPlay가 활성화되면 비디오 재생이 시작되지 않고 오류가 표시되지 않습니다
+  광고가 활성화되고 비디오 재생을 시작하는 AirPlay가 활성화되면 비디오 재생이 시작되지 않고 오류가 표시되지 않습니다
 * (ZD#33341) - DRMInterface.h는 Xcode 9에서 빌드 경고를 트리거합니다.
 
-   매개 변수 목록에서 &#39;void&#39;라는 단어가 누락된 DRMIinterface.h의 두 블록 프로토타입을 수정했습니다
+  매개 변수 목록에서 &#39;void&#39;라는 단어가 누락된 DRMIinterface.h의 두 블록 프로토타입을 수정했습니다
 * (ZD#31979) - iPhone 7/iPhone7+의 iOS 10 이상일 때 컴파일/실행되지 않습니다.
 
-   iOS 7 이전의 IB 문서 컴파일이 더 이상 지원되지 않습니다.
+  iOS 7 이전의 IB 문서 컴파일이 더 이상 지원되지 않습니다.
 * (ZD#32920) - 광고 브레이크 내의 빈 화면이며 광고 브레이크 완료가 없습니다.
 
-   광고 브레이크가 광고 인스턴스를 표시할 때와 광고 인스턴스가 완료된 후 빈 화면이 표시됩니다
+  광고 브레이크가 광고 인스턴스를 표시할 때와 광고 인스턴스가 완료된 후 빈 화면이 표시됩니다
 * (ZD#32509) - iOS 11 화면 레코딩 비활성화 iOS 11에서 화면 레코딩 비활성화
 
 * (ZD#33179) - iOS11의 간헐적 이벤트 오류
 
-   iOS 11의 이벤트 오류를 수정했습니다.
+  iOS 11의 이벤트 오류를 수정했습니다.
 
 **버전 1.4.40** (1.4.40.72)
 
 * (ZD #32465) - 플레이어는 병합된 플레이리스트를 처리할 수 없습니다.
 
-   AV foundation에 대해 finishLoadingWithError(with: Error)를 호출하여 대체 스트림/트리거 장애 조치를 시도합니다.
+  AV foundation에 대해 finishLoadingWithError(with: Error)를 호출하여 대체 스트림/트리거 장애 조치를 시도합니다.
 
 * (ZD #31951) - 라이선스 순환 중 TVSDK 오류.
 
-   라이선스 순환 문제를 해결했습니다.
+  라이선스 순환 문제를 해결했습니다.
 * (ZD #31951) - 광고 브레이크 내의 빈 화면이며 광고 브레이크 완료가 없습니다.
 
-   facebook VPAID 광고가 종종 단일 \&amp;lt;AdParameters\&amp;gt; VAST 노드에서 여러 CDATA 블록을 반환하는 문제를 해결했습니다.
+  facebook VPAID 광고가 종종 단일 \&amp;lt;AdParameters\&amp;gt; VAST 노드에서 여러 CDATA 블록을 반환하는 문제를 해결했습니다.
 * (ZD #33336) - [iOS] TVSDK - Freewheel에서 충분한 광고가 반환되더라도 광고 Pod가 채워지지 않습니다.
 
-   시퀀스 광고 및 대체 광고와 상위 시퀀스 및 인덱스를 기반으로 정렬 간에 상위-하위 관계가 생성되었습니다.
+  시퀀스 광고 및 대체 광고와 상위 시퀀스 및 인덱스를 기반으로 정렬 간에 상위-하위 관계가 생성되었습니다.
 
 **버전 1.4.39** (1.4.39.43)
 
 * (ZD #32178) - iOS TVSDK 버전이 잘못되었습니다.
 
-   로그 파일의 TVSDK 버전 출력은 1.0.211입니다. 올바른 버전을 출력하도록 수정되었습니다.
+  로그 파일의 TVSDK 버전 출력은 1.0.211입니다. 올바른 버전을 출력하도록 수정되었습니다.
 
 * (ZD #32199) - 지연 광고 로드 - 콘텐츠에 대한 비디오가 표시되지 않습니다.
 
-   이전에 초기화되지 않았던 로컬 Adbreak 타임라인이 이제 사용 전에 새로 고쳐졌습니다.
+  이전에 초기화되지 않았던 로컬 Adbreak 타임라인이 이제 사용 전에 새로 고쳐졌습니다.
 
 * (ZD #27528) - iOS 1.2에서 보조 오디오가 기본이 아닌 것으로 설정된 경우, 에셋 재생이 시작된 후 1~45초 후에 비디오, 오디오 또는 둘 다 중지됩니다.
 
-   준비 상태의 오디오 트랙을 준비하고 알립니다.
+  준비 상태의 오디오 트랙을 준비하고 알립니다.
 
 * (ZD #30411) - 보조 Sap 언어를 선택하면 오디오 없음 또는 잘못된 오디오와 같은 예기치 않은 결과가 발생할 수 있습니다.
 
-   준비 상태의 오디오 트랙을 준비하고 알립니다.
+  준비 상태의 오디오 트랙을 준비하고 알립니다.
 
 * (ZD #32199) - 지연 광고 로드 - 콘텐츠에 대한 비디오가 표시되지 않습니다.
 
-   이전에 초기화되지 않았던 로컬 Adbreak 타임라인이 이제 사용 전에 새로 고쳐졌습니다.
+  이전에 초기화되지 않았던 로컬 Adbreak 타임라인이 이제 사용 전에 새로 고쳐졌습니다.
 
 * (ZD #27528) - iOS 1.2에서 보조 오디오가 기본이 아닌 것으로 설정된 경우, 에셋 재생이 시작된 후 1~45초 후에 비디오, 오디오 또는 둘 다 중지됩니다.
 
-   준비 상태의 오디오 트랙을 준비하고 알립니다.
+  준비 상태의 오디오 트랙을 준비하고 알립니다.
 
 * (ZD #30411) - 보조 Sap 언어를 선택하면 오디오 없음 또는 잘못된 오디오와 같은 예기치 않은 결과가 발생할 수 있습니다.
 
-   준비 상태의 오디오 트랙을 준비하고 알립니다.
+  준비 상태의 오디오 트랙을 준비하고 알립니다.
 
 **버전 1.4.38** (1.4.38.860)
 
@@ -407,7 +405,7 @@ CRS 표준화 규칙을 기반으로 하는 CRS 요청에서 Creative Id 및 AdS
 
 * (ZD #27830) - iOS에서 폐쇄 캡션과 자막의 차이를 프로그래밍 방식으로 결정해야 합니다.
 
-이제 TVSDK는 필수 캡션 유형을 필터링하는 데 사용할 수 있는 두 가지 유형을 표시합니다.
+이제 TVSDK는 필수 캡션 유형을 필터링하는 데 사용할 수 있는 두 가지 유형을 노출합니다.
 
 * (ZD #29160) - EXT-X-CUE-OUT 광고 큐가 TVSDK iOS에 올바르게 추가되지 않았습니다.
 
@@ -470,7 +468,6 @@ CRS 백 엔드에 대한 요구 사항에 따라, 정규화된 URL 대신 1401 C
 이 문제는 요청된 대로 PSDKLibrary.framework를 패키징하여 해결되었습니다.
 
 * (ZD# 26364) CRS 광고에 대한 다중 CDN 지원
-
 <!-- 
 Comment Type: draft
 For more information, see [Multiple CDN support for CRS Ad Delivery](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
@@ -936,7 +933,7 @@ ZD 문제에 대한 수정 사항이 #4279
 
 * (ZD #2197) 광고 오류 추적. 자산에 대한 알림을 추가했지만 매니페스트를 로드하지 못했습니다.
 * (ZD #2894) 플레이어는 재생 중에 4개의 최상위 매니페스트 요청을 만듭니다.
-* (ZD #2992) 감사에서 이상한 기간 및 식별자를 보고합니다.
+* (ZD #2992) Auditude이 이상한 기간 및 식별자를 보고합니다.
 
 **버전 1.4.6**(1.4.6.325)
 
@@ -979,12 +976,12 @@ ZD 문제에 대한 수정 사항이 #4279
 * 라이선스 회전 비디오가 iOS 11에서 재생되지 않고 iOS 9.x 및 iOS 10.x에서 제대로 재생될 수 있습니다.
 * VPAID 2.0 지원에서 재생이 AirPlay를 통해 활성화된 경우 VPAID 광고를 건너뜁니다.
 * 최소 대상이 iOS7 이상으로 설정된 경우 drmNativeInterface.framework가 올바르게 연결되지 않습니다.\
-   해결 방법: 다음을 명시적으로 지정합니다. `libstdc++6`.  다음과 같은 dylib 라이브러리: Target->빌드 단계->바이너리를 라이브러리와 연결하고 추가 `libstdc++.6.dylib`.
+  해결 방법: 다음을 명시적으로 지정합니다. `libstdc++6`.  다음과 같은 dylib 라이브러리: Target->빌드 단계->바이너리를 라이브러리와 연결하고 추가 `libstdc++.6.dylib`.
 
 * API를 바꾸기 위해 포스트롤 광고가 삽입되지 않습니다.
 * 광고 브레이크에서 검색(광고 브레이크 없이) 시 중복 광고가 발행되고 광고 브레이크 알림이 시작됩니다
 * currentTimeUpdateInterval 설정은 영향을 주지 않습니다.\
-   참고: 특정 iOS 버전에서는 OS가 PSDKLibrary.framework 내에 있는 리소스를 자동으로 로드하지 않습니다. PSDKResources.bundle을 애플리케이션의 번들 리소스에 수동으로 복사하는 것이 중요합니다. &quot;빌드 단계&quot;로 이동하여 번들 리소스를 복사합니다.
+  참고: 특정 iOS 버전에서는 OS가 PSDKLibrary.framework 내에 있는 리소스를 자동으로 로드하지 않습니다. PSDKResources.bundle을 애플리케이션의 번들 리소스에 수동으로 복사하는 것이 중요합니다. &quot;빌드 단계&quot;로 이동하여 번들 리소스를 복사합니다.
 * Xcode 8 이하 버전을 사용하여 참조 앱을 빌드할 수 없습니다. iOS TVSDK 버전 1.4.41 이상에서 Xcode 9를 사용하여 컴파일합니다.
 
 ## 유용한 리소스 {#helpful-resources}

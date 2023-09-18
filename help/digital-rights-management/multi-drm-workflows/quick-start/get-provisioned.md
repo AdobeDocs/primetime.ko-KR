@@ -1,8 +1,7 @@
 ---
 description: ExpressPlay에서 제공하는 Primetime DRM Cloud를 시작하려면 Adobe 담당자의 도움을 받아 Adobe 인증서 및 ExpressPlay 계정을 설정해야 합니다.
 title: 프로비저닝 받기(계정 등)
-exl-id: 2543d997-3495-4545-9395-072c07431aba
-source-git-commit: a0917e128862184ce18050792c2ee2ac265050d2
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%

@@ -2,8 +2,7 @@
 title: 온-프레미스 DRM 메타데이터 생성
 description: 온-프레미스 DRM 메타데이터 생성
 copied-description: true
-exl-id: b42e3491-081b-45bf-bd00-8fb769a97446
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -20,7 +19,7 @@ A [!DNL CreateMetadata.jar] 유틸리티는에 포함되어 있습니다. [!DNL 
    * [!DNL commons-cli-1.2.jar]
    * [!DNL createMetadata.properties]
 
-      두 JAR 파일이 [!DNL Command Line Tools/libs] 폴더를 삭제합니다. 다음 [!DNL createMetadata.properties] 파일은 다음 옆에 있을 수 있습니다. [!DNL flashaccesstools.properties] 파일.
+     두 JAR 파일이 [!DNL Command Line Tools/libs] 폴더를 삭제합니다. 다음 [!DNL createMetadata.properties] 파일은 다음 옆에 있을 수 있습니다. [!DNL flashaccesstools.properties] 파일.
 
 <!--<a id="example_2116349CA33642CD9293EAD94A532ED8"></a>-->
 

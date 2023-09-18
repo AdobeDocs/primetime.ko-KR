@@ -1,8 +1,7 @@
 ---
 description: Primetime DRM(디지털 권한 관리) 시스템의 주요 클라이언트측 요소는 DRM 관리자입니다.
 title: Primetime DRM 인터페이스 개요
-exl-id: 8d6b9416-5d8a-4d1e-b8e6-47c43389f079
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
@@ -23,9 +22,9 @@ TVSDK는 Primetime DRM 통합을 사용자 지정 DRM 워크플로우로 지원�
 
 * DRM 하위 시스템을 구현하는 DRM 관리자 개체에 대한 미디어 플레이어의 참조:
 
-   ```
-   public function get drmManager():DRMManager 
-   ```
+  ```
+  public function get drmManager():DRMManager 
+  ```
 
 <!--<a id="section_4204CE2731A44F67A3664AEDE8CCCA47"></a>-->
 

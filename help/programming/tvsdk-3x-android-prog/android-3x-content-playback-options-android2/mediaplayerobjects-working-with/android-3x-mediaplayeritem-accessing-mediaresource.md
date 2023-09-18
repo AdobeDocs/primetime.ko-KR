@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerItem 클래스의 메서드를 사용하면 로드된 MediaResource가 나타내는 콘텐츠 스트림에 대한 정보를 얻을 수 있습니다.
 title: MediaResource 정보에 액세스하기 위한 MediaPlayerItem 메서드
-exl-id: d6a547f3-0267-4a49-93a4-628b4879aef4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

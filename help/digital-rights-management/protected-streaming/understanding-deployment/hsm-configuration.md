@@ -1,8 +1,7 @@
 ---
 description: 서버 자격 증명을 저장할 HSM을 선택하는 경우 HSM에 개인 키와 인증서를 로드하고 pkcs11.cfg 구성 파일을 생성해야 합니다.
 title: HSM 구성
-exl-id: 4c4423ea-b7af-4a30-99ac-f5b74a1e1168
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%

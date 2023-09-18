@@ -1,8 +1,7 @@
 ---
 description: 시간 기반 사용 규칙이 포함된 라이센스를 미리 생성하는 경우 라이센스에 동기화 요구 사항이 포함되어 있어야 라이센스 만료를 안전하게 적용할 수 있습니다.
 title: 라이선스 사전 생성 중
-exl-id: f3b6927d-66cf-4aa2-802d-d4b3a5652c63
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%

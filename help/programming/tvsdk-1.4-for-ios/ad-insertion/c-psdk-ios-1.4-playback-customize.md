@@ -1,8 +1,7 @@
 ---
 description: 재생이 광고 브레이크에 도달하거나, 광고 브레이크를 전달하거나, 광고 브레이크에서 종료되면 TVSDK는 현재 플레이헤드의 위치에 대한 몇 가지 기본 동작을 정의합니다.
 title: 광고를 사용하여 재생 사용자 지정
-exl-id: f59e94c2-7ca0-4e0b-b0b1-af076fdd4064
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
@@ -25,7 +24,7 @@ ht-degree: 0%
 * 사용자에게 광고 브레이크가 표시되면 사용자가 새 위치를 찾으려고 하더라도 몇 분 동안 추가 광고를 표시하지 않습니다.
 * 몇 분 후에 컨텐츠가 재생되지 않으면 스트림을 다시 시작하거나 동일한 컨텐츠의 다른 소스로 페일오버합니다.
 
-   페일오버 재생 세션에서 사용자가 광고를 건너뛰고 실패한 이전 위치로 다시 시작할 수 있도록 프리롤 및/또는 미드롤 광고를 비활성화할 수 있습니다. TVSDK는 프리롤 및 미드롤 광고를 건너뛸 수 있도록 하는 메서드를 제공합니다.
+  페일오버 재생 세션에서 사용자가 광고를 건너뛰고 실패한 이전 위치로 다시 시작할 수 있도록 프리롤 및/또는 미드롤 광고를 비활성화할 수 있습니다. TVSDK는 프리롤 및 미드롤 광고를 건너뛸 수 있도록 하는 메서드를 제공합니다.
 
 ## 광고 재생용 API 요소 {#section_296ADE00CFEA40CBA1B46142720D13A5}
 
@@ -57,7 +56,7 @@ TVSDK는 광고가 포함된 콘텐츠의 재생 동작을 사용자 지정하�
    <td colname="col2"> 
     <ul id="ul_37700A741403448A8760FDDA68B099AA"> 
      <li id="li_B465170D449E49489C5924572BEEB4A5"> <span class="codeph"> localTime </span>. <p>이는 배치된 광고 브레이크를 제외한 재생의 로컬 시간입니다. </p> </li> 
-     <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"> <span class="codeph"> seekToLocalTime </span> . <p>여기서, 찾기는 스트림 내의 로컬 시간에 관하여 발생한다. </p> </li> 
+     <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"> <span class="codeph"> seekToLocalTime </span> . <p>여기에서, 찾기는 스트림 내의 로컬 시간에 관하여 발생한다. </p> </li> 
      <li id="li_9DBCA75537DC4824AA66B53A3FA28812"> <span class="codeph"> getTimeline.convertToLocalTime </span>. <p>타임라인에서 가상 위치가 로컬 위치로 변환됩니다. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -76,11 +75,11 @@ TVSDK는 광고가 포함된 콘텐츠의 재생 동작을 사용자 지정하�
 
 * 다음 내용에 부합합니다. `PTAdPolicySelector` 필요한 모든 정책 선택 방법을 프로토콜로 지정하고 구현합니다.
 
-   재정의해야 하는 경우 이 옵션을 권장합니다. **모두** 기본 광고 동작입니다.
+  재정의해야 하는 경우 이 옵션을 권장합니다. **모두** 기본 광고 동작입니다.
 
 * 재정의 `PTDefaultAdPolicySelector` 클래스를 만들고 맞춤화가 필요한 비헤이비어에 대해서만 구현을 제공합니다.
 
-   이 옵션은 재정의해야 하는 경우에만 권장됩니다. **일부** 기본 동작.
+  이 옵션은 재정의해야 하는 경우에만 권장됩니다. **일부** 기본 동작.
 
 두 옵션 모두 다음 작업을 완료하십시오.
 

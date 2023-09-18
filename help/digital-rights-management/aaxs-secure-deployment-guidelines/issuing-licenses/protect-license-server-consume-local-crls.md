@@ -2,8 +2,7 @@
 title: 로컬에서 생성된 CRL 사용
 description: 로컬에서 생성된 CRL 사용
 copied-description: true
-exl-id: d96418d0-8fd3-4f6d-8480-191fe540080a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -16,8 +15,8 @@ ht-degree: 0%
 
 * 호출 `RevocationList.verifySignature` API에 RevocationList를 제공하기 전에 서명을 확인합니다.
 
-   자세한 내용은 `RevocationListFactory` 다음에서 *Adobe 액세스 API 참조*.
+  자세한 내용은 `RevocationListFactory` 다음에서 *Adobe 액세스 API 참조*.
 
 * 호출 `PolicyUpdateList.verifySignature`을(를) 제공하기 전에 서명을 확인하려면 `PolicyUpdateList` 모든 API에
 
-   자세한 내용은 `PolicyUpdateList` 다음에서 *Adobe 액세스 API 참조*.
+  자세한 내용은 `PolicyUpdateList` 다음에서 *Adobe 액세스 API 참조*.

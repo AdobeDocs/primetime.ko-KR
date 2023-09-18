@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerItem.timedMetadata 속성을 사용하면 재생 목록/매니페스트 태그 또는 미디어 스트림 내의 ID3 태그에서 만든 모든 TimedMetadata 개체에 액세스할 수 있습니다. MediaPlayerItem.hasTimedMetadata 속성은 구독한 사용자 지정 태그가 현재 미디어에 있는지 여부를 나타냅니다.
 title: 매니페스트 태그에 대한 알림
-exl-id: 1a91fa47-edd5-4496-9755-17c906a3cf54
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%

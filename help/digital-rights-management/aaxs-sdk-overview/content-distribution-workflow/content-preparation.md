@@ -1,8 +1,7 @@
 ---
 description: Adobe 액세스는 워크플로우의 여러 지점에서 두 가지 주요 단계로 구성됩니다. 콘텐츠 준비는 에셋당 한 번 수행되어야 하며, 이를 통해 보호된 콘텐츠가 생성됩니다. 보호된 자산을 시청하려는 모든 소비자에 대해 한 번, 콘텐츠 획득이 여러 번 수행됩니다.
 title: 컨텐츠 준비
-exl-id: c658c7e9-2583-4d74-a94b-800023cf5196
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%

@@ -2,8 +2,7 @@
 title: 개요
 description: 개요
 copied-description: true
-exl-id: 67c3d98f-8c17-4b5a-8abb-00f6f0f1e823
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # 개요 {#overview}
 
-*패키징* 는 FLV 또는 F4V 파일을 암호화하고 정책을 적용하는 프로세스를 말합니다. 미디어 패키징 API를 사용하여 파일을 패키징합니다. Adobe 액세스 Java SDK는 점진적 다운로드 Flash과 FLV, F4V 및 MP4와 같은 AIR 콘텐츠만 패키징할 수 있습니다. HDS(Adobe HTTP Dynamic Streaming) 또는 HLS(Apple HTTP Live Streaming)와 같은 다른 컨텐츠 형식에 대해 Adobe 액세스 DRM을 사용하여 컨텐츠를 패키징하려면 Adobe Medium 서버( )와 같은 다른 도구를 사용해야 합니다 [https://www.adobe.com/products/adobe-media-server-family.html](https://www.adobe.com/products/adobe-media-server-family.html)) 또는 Adobe 브로드캐스트 SDK( )를 구현하는 인코더 [https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf](https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf)). 또는 HDS, HLS 및 DASH와 같은 다양한 대상 형식에 대한 컨텐츠를 패키징할 수 있는 Adobe의 Java Primetime Packager 도구 세트를 사용할 수도 있습니다.
+*패키징* 는 FLV 또는 F4V 파일을 암호화하고 정책을 적용하는 프로세스를 말합니다. 미디어 패키징 API를 사용하여 파일을 패키징합니다. Adobe 액세스 Java SDK는 점진적 다운로드 Flash과 FLV, F4V 및 MP4와 같은 AIR 콘텐츠만 패키징할 수 있습니다. HDS(Adobe HTTP Dynamic Streaming) 또는 HLS(Apple HTTP Live Streaming)와 같은 다른 컨텐츠 형식에 대해 Adobe 액세스 DRM을 사용하여 컨텐츠를 패키징하려면 Adobe Media Server( [https://www.adobe.com/products/adobe-media-server-family.html](https://www.adobe.com/products/adobe-media-server-family.html)) 또는 Adobe 브로드캐스트 SDK( )를 구현하는 인코더 [https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf](https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf)). 또는 HDS, HLS 및 DASH와 같은 다양한 대상 형식에 대한 컨텐츠를 패키징할 수 있는 Adobe의 Java Primetime Packager 도구 세트를 사용할 수도 있습니다.
 
 패키지로 라이센스 서버에서 연결이 해제됩니다. 패키저가 라이센스 서버에 연결하여 콘텐츠에 대한 정보를 교환할 필요가 없습니다. 라이센스 서버가 라이센스를 발급하기 위해 알아야 하는 모든 사항이 컨텐츠 메타데이터에 포함됩니다.
 

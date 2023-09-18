@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 광고 재생이 시작되는 시기와 같은 광고 관련 작업에 응답하여 광고 재생 이벤트를 전달합니다.
 title: 광고 재생 이벤트
-exl-id: 61e7c9ec-20ed-4221-8ae7-b5d43adb4ce4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%

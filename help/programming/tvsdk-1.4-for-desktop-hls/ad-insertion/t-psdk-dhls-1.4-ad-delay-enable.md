@@ -1,8 +1,7 @@
 ---
 description: 모든 광고가 로드되어 타임라인에 배치되기 전에 재생을 허용할지 여부를 지정할 수 있습니다. 이러한 방식으로 재생을 시작하면 뷰어가 기본 콘텐츠에 더 빠르게 액세스할 수 있습니다. 이 기능은 라이브 DVR에만 적용할 수 있으며, VOD 자산과 같이 작동하지는 않습니다.
 title: 레이지 광고 로드 활성화
-exl-id: 6b70a7ae-28ce-4a19-9560-26e937c721cd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 이 표에는 오류 유형 알림에 대한 자세한 정보가 나와 있습니다.
 title: 오류 알림 코드
-exl-id: dc65670e-4764-4d68-aee1-87b2d27b09b6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 5%
@@ -248,10 +247,10 @@ ht-degree: 5%
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170011 </span> </td> 
-   <td colname="2"><span class="codeph"> Target AD_INCOMPATIBLE_DURATION_INCOMPATIBLE </span> </td> 
+   <td colname="2"><span class="codeph"> AD_TARGET_DURATION_INCOMPATIBLE </span> </td> 
    <td colname="3"> 없음 </td> 
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
-   <td colname="5"> <p>광고의 TARGET 지속 시간이 콘텐츠의 TARGET 지속 시간보다 높습니다. </p> </td> 
+   <td colname="5"> <p>광고의 타겟 기간이 콘텐츠의 타겟 기간보다 높습니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>

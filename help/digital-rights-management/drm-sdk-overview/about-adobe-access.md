@@ -1,8 +1,7 @@
 ---
 description: Primetime DRM을 사용하면 콘텐츠 소유자 및 배포자가 콘텐츠의 배포 방법과 경험 위치를 제어할 수 있으며, 콘텐츠 라이프사이클 전반에 걸쳐 완벽한 보호를 제공합니다. 비디오 파일을 암호화하여 Microsoft® Windows®, Apple® Mac OS®, Linux® 및 Android® 플랫폼으로 스트리밍하거나 다운로드할 수 있으며 온라인 비디오 대여와 같은 비즈니스 모델을 적용합니다. 소비자는 온라인이든 오프라인이든 편의에 맞춰 고품질 콘텐츠를 즐길 수 있다. Primetime DRM은 콘텐츠 소유자 및 배포자가 경쟁사와 차별화된 새로운 서비스를 신속하게 제공하는 데 사용할 수 있는 주요 이점을 제공합니다.
 title: Adobe Primetime DRM 정보
-exl-id: 28541200-d917-428f-b277-25d7f663d3f5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

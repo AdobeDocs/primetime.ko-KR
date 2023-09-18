@@ -1,8 +1,7 @@
 ---
 description: MediaPlayer 보기를 사용하여 비디오를 재생한 후, TVSDK 메서드를 사용하거나 수동으로 비디오를 숨기고 다시 표시할 수 있습니다.
 title: 비디오 보기 숨기기
-exl-id: 92354cd3-f0ed-4434-a7af-a3545e0e2460
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -22,9 +21,9 @@ MediaPlayer 보기를 사용하여 비디오를 재생한 후, TVSDK 메서드�
    * 숨기려는 비디오를 일시 중지합니다.
    * 뷰를 스테이지 밖으로 이동합니다. 예:
 
-      ```
-      view.x = -300; 
-      view.y = -300;
-      ```
+     ```
+     view.x = -300; 
+     view.y = -300;
+     ```
 
    * 비디오를 다시 표시하려면 보기를 다시 스테이지로 이동합니다.

@@ -1,8 +1,7 @@
 ---
 description: TVSDK를 사용하여 세션 관리, 게이트 액세스 등을 위해 쿠키 헤더에 임의의 데이터를 전송할 수 있습니다.
 title: 쿠키를 사용한 작업
-exl-id: f7a64c77-7db6-4bae-b299-69267fedc673
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: MediaResource는 MediaPlayer 인스턴스에서 로드하려는 콘텐츠를 나타냅니다.
 title: MediaPlayer 및 MediaResource 클래스
-exl-id: 5321a9b5-bdc2-4287-85a6-4571e93c7f14
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%

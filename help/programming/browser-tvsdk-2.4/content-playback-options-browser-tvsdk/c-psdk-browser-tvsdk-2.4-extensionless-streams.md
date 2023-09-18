@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK는 현재 매니페스트 및 조각에 확장이 포함되지 않은 스트림 재생을 지원합니다.
 title: 확장 없는 스트림
-exl-id: ef81bfd2-2bfa-4ff7-b826-fd80802b3c07
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%

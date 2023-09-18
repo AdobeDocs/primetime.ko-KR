@@ -1,8 +1,7 @@
 ---
 description: 일반적으로 모든 Primetime DRM 라이선스는 생성 시 고유한 디바이스에 바인딩됩니다. 이 바인딩은 사용자가 권한 부여 없이 서로 다른 장치 간에 라이선스를 공유하는 것을 방지합니다. Primetime DRM은 디바이스별 바인딩 외에 디바이스 도메인 또는 디바이스 그룹에 라이센스를 바인딩하는 기능을 제공합니다.
 title: 도메인 지원을 사용하여 암호화된 콘텐츠 재생
-exl-id: 3c9badfc-046b-4c56-bde1-7b3b708bfaa2
-source-git-commit: 59f7f8aa82be59c4012ee80648032600590bc4e1
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -28,6 +27,7 @@ Primetime DRM을 사용하여 암호화된 콘텐츠를 재생하려면 다음 �
 
       * 사용자의 사용자 이름 및 암호 가져오기 및 호출 `DRMManager.authenticate(deviceGroup.serverURL, deviceGroup.domain, username, password)`.
       * 캐시된/미리 생성된 인증 토큰을 가져오고 를 호출합니다. `DRMManager.setAuthenticationToken()`.
+
    1. 호출 `DRMManager.addToDeviceGroup()`
 1. 다음 작업 중 하나를 수행하여 콘텐츠에 대한 라이선스를 가져옵니다.
    1. 사용 `DRMManager.loadVoucher()` 메서드를 사용합니다.

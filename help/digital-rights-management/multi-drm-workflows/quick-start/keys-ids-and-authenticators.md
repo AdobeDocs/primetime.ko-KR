@@ -1,8 +1,7 @@
 ---
 description: DRM을 구현하려면 콘텐츠를 암호화할 콘텐츠 암호화 키 또는 CEK, ExpressPlay 서버와의 통신을 보호하기 위한 고객 인증자, 키 관리 시스템에 저장된 콘텐츠 암호화 키를 식별하기 위한 CEKSID를 포함한 특정 인증서 및 키가 필요합니다.
 title: 키, ID 및 인증자
-exl-id: b769192d-92ad-4b93-84dd-80b182fc6c43
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -42,16 +41,16 @@ openssl rand 16 -hex > cek_hex_file
 
 * **!DNL 만들기 [somefile].bin]** - Adobe Offline Packager가 CEK를 [!DNL]로 참조합니다. [somefile].bin]; 예: * [!DNL Keyfile.bin]* - Adobe 오프라인 포장기에서 사용하는 CEK로, 콘텐츠를 포장하는 데 사용하는 시스템의 파일 형식입니다.
 
-   임의의 CEK 16진수 문자열을 &quot;Base64&quot;하고 파일로 저장합니다(예: [!DNL keyfile.bin]), 일반적으로 다음 위치에 있음 [!DNL creds] 아래에 있는 디렉터리 [!DNL offlinepkgr/]. Packager 구성 파일(예: [!DNL widevine.xml] Widevine DRM에 대해 패키지하는 경우 다음과 같이 구성 파일에서 CEK를 참조합니다.
+  임의의 CEK 16진수 문자열을 &quot;Base64&quot;하고 파일로 저장합니다(예: [!DNL keyfile.bin]), 일반적으로 다음 위치에 있음 [!DNL creds] 아래에 있는 디렉터리 [!DNL offlinepkgr/]. Packager 구성 파일(예: [!DNL widevine.xml] Widevine DRM에 대해 패키지하는 경우 다음과 같이 구성 파일에서 CEK를 참조합니다.
 
-   ```
-   <config>  
-     <in_path>sample.mp4</in_path>  
-     <out_type>dash</out_type>
-     <b><key_file_path>keyfile.bin</key_file_path></b> // This is your CEK  
-     […] 
-   </config> 
-   ```
+  ```
+  <config>  
+    <in_path>sample.mp4</in_path>  
+    <out_type>dash</out_type>
+    <b><key_file_path>keyfile.bin</key_file_path></b> // This is your CEK  
+    […] 
+  </config> 
+  ```
 
 * **컨텐츠 키** - 호출에서 콘텐츠 키라고 하는 CEK가 표시될 수도 있습니다( `&contentKey=`), 오류 메시지, 지원 티켓 및 기타 설명서에서 확인할 수 있습니다.
 

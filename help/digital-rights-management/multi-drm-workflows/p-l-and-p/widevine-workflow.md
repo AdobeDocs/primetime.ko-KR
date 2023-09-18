@@ -1,8 +1,7 @@
 ---
 description: 이 Multi-DRM 워크플로우는 Widevine 및 PlayReady로 암호화된 DASH 콘텐츠의 설정, 패키징, 라이센싱 및 재생을 안내합니다.
 title: Widevine 및 PlayReady용 다중 DRM 워크플로
-exl-id: 97adfa69-52ef-470b-903a-eff1f075b7be
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

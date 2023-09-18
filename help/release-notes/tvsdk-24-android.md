@@ -3,8 +3,7 @@ title: Android용 TVSDK 2.4.1 릴리스 노트
 description: Android용 TVSDK 2.4.1 릴리스 노트에서는 TVSDK Android 2.4.1의 새로운 기능 및 지원되는 기능과 알려진 문제 및 제한 사항에 대해 설명합니다.
 topic-tags: release-notes
 products: SG_PRIMETIME
-exl-id: 3de09048-ae32-43b4-a019-34b217931a4c
-source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 0%

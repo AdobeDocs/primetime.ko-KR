@@ -4,8 +4,7 @@ description: 브라우저 TVSDK 2.4 릴리스 노트에서는 브라우저 TVSDK
 contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
-exl-id: 83fdf530-5cbb-41d9-ab2a-28e117f04488
-source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '6812'
 ht-degree: 0%
@@ -52,7 +51,7 @@ ht-degree: 0%
 
 * 재생이 음소거된 경우 iOS에서 자동 재생을 허용하도록 AdobePSDK.MediaPlayer의 볼륨 API 구현이 변경되었습니다.
 
-· 새로운 API, `auditudeSettings.ignoreVPAIDAds`가 추가되어 Auditude 서버에서 받은 VPAID 광고를 무시할 수 있습니다. API가 Flash 폴백에 대해 작동하지 않습니다.
+· 새로운 API, `auditudeSettings.ignoreVPAIDAds`Auditude 서버에서 받은 VPAID 광고를 무시할 수 있도록 가 추가되었습니다. API가 Flash 폴백에 대해 작동하지 않습니다.
 
 **버전 2.4.11**
 
@@ -104,7 +103,7 @@ AdobePSDK.ForceHttpsAdConfiguration 클래스.
 
 · 이제 UI 프레임워크는 Flash, 광고 전용 및 타겟팅 정보 워크플로우에서 HLS 액세스 DRM을 지원합니다.
 
-· setDRMAuthenticateData API가 UI 프레임워크에 추가됩니다. Adobe 액세스 DRM으로 보호된 스트림을 재생하려면 이 API를 호출합니다. 또는 플레이어에서 drmAuthenticateData 속성을 지정할 수 있습니다. 다음을 참조하십시오 [AdobePSDK.videoBehavior ](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/VideoBehavior.html)을 참조하십시오.
+· setDRMAuthenticateData API가 UI 프레임워크에 추가됩니다. Adobe 액세스 DRM으로 보호된 스트림을 재생하려면 이 API를 호출합니다. 또는 플레이어에서 drmAuthenticateData 속성을 지정할 수 있습니다. 다음을 참조하십시오 [AdobePSDK.videoBehavior](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/VideoBehavior.html)을 참조하십시오.
 
 **버전 2.4.7**
 
@@ -188,15 +187,15 @@ Browserialize를 사용하면 브라우저에서 node.js 스타일 모듈을 사
 
 * **전체 이벤트 재생 및 광고**
 
-   HLS FER(Full Event Replay) 스트림은 이제 광고 해상도 및 광고 동작을 지원합니다. 이 지원을 활성화하려면 광고 신호 모드를 다음으로 설정하십시오. `MANIFEST_CUES` 을(를) 만들 때 `MediaPlayerItemConfig` 개체.
+  HLS FER(Full Event Replay) 스트림은 이제 광고 해상도 및 광고 동작을 지원합니다. 이 지원을 활성화하려면 광고 신호 모드를 다음으로 설정하십시오. `MANIFEST_CUES` 을(를) 만들 때 `MediaPlayerItemConfig` 개체.
 
 * **MediaplayerView ScalePolicy 지원**
 
-   이제 응용 프로그램 개발자는 MediaplayerView scalePolicy 속성을 사용하여 보기에 대해 다른 scalePolicy를 지정할 수 있습니다.
+  이제 응용 프로그램 개발자는 MediaplayerView scalePolicy 속성을 사용하여 보기에 대해 다른 scalePolicy를 지정할 수 있습니다.
 
 * **애너모픽 콘텐츠 지원**
 
-   이제 MSE 및 Flash 재생을 사용할 때 애너모픽 콘텐츠 재생이 지원됩니다.
+  이제 MSE 및 Flash 재생을 사용할 때 애너모픽 콘텐츠 재생이 지원됩니다.
 
 * **선택적 적용`withCredentials`**
 
@@ -220,11 +219,11 @@ Browserialize를 사용하면 브라우저에서 node.js 스타일 모듈을 사
 
 * **DASH VOD에 대한 사용자 지정 태그**
 
-   인라인 사용자 지정 태그(이벤트)는 TimedMetadata 개체로 구독하고 받을 수 있습니다.
+  인라인 사용자 지정 태그(이벤트)는 TimedMetadata 개체로 구독하고 받을 수 있습니다.
 
 * **확장 없이 스트림 재생**
 
-   이제 확장이 없는 HLS 및 DASH 스트림이 지원됩니다. 매니페스트 파일의 경우 리소스를 로드할 때 resourceType을 지정해야 합니다. 세그먼트 및 VTT 파일의 경우 컨텐츠 유형 응답 헤더를 사용하여 컨텐츠 유형을 결정합니다.
+  이제 확장이 없는 HLS 및 DASH 스트림이 지원됩니다. 매니페스트 파일의 경우 리소스를 로드할 때 resourceType을 지정해야 합니다. 세그먼트 및 VTT 파일의 경우 컨텐츠 유형 응답 헤더를 사용하여 컨텐츠 유형을 결정합니다.
 
 **버전 2.4.2**
 
@@ -236,15 +235,15 @@ API 패리티의 전체 목록은 [1.4 DHLS용 TVSDK-브라우저 TVSDK 2.4 마�
 
 * **샘플-AES 지원**
 
-   이 릴리스에는 MSE 및 Flash 대체 기능에서 샘플-AES 암호화 콘텐츠 재생에 대한 지원이 추가되었습니다. Google Chrome에서 보안 원본을 통해 AES 콘텐츠를 호스팅해야 하는 요구 사항이 제거되었습니다.
+  이 릴리스에는 MSE 및 Flash 대체 기능에서 샘플-AES 암호화 콘텐츠 재생에 대한 지원이 추가되었습니다. Google Chrome에서 보안 원본을 통해 AES 콘텐츠를 호스팅해야 하는 요구 사항이 제거되었습니다.
 
 * **AAC 컨테이너 지원**
 
-   이제 확장명이 .aac인 파일 재생이 지원됩니다. 오디오 전용 스트림 또는 대체 오디오일 수 있습니다.
+  이제 확장명이 .aac인 파일 재생이 지원됩니다. 오디오 전용 스트림 또는 대체 오디오일 수 있습니다.
 
-   >[!NOTE]
-   >
-   >AC3 및 향상된 AC3 코덱은 아직 지원되지 않습니다.
+  >[!NOTE]
+  >
+  >AC3 및 향상된 AC3 코덱은 아직 지원되지 않습니다.
 
 * **토큰화된 스트림 재생**
 
@@ -280,11 +279,11 @@ JavaScript 기반 비디오 플레이어 애플리케이션에 대한 UI 개발�
 
 * **MP3 오디오 재생**
 
-   이 릴리스는 MSE(Media Source Extensions) 및 Safari 비디오 태그가 있는 브라우저에서 MP3 오디오 재생을 지원합니다.
+  이 릴리스는 MSE(Media Source Extensions) 및 Safari 비디오 태그가 있는 브라우저에서 MP3 오디오 재생을 지원합니다.
 
 * **MP4 비디오 재생**
 
-   지원되는 기능은 다음과 같습니다.
+  지원되는 기능은 다음과 같습니다.
 
    * 단일 스트림 재생
    * 광고 비헤이비어 및 추적을 사용하는 프리롤 및 포스트롤 MP4 광고
@@ -1336,7 +1335,7 @@ HLS 또는 DASH 기능 지원에 대한 자세한 내용은 아래를 참조하�
 
 · **14126:** MSE 소스 버퍼의 내부 공백으로 인해 Firefox(문제 #1316024)에서 재생이 중단될 수 있습니다. 재생을 재개하려면 찾기 시도
 
-· **19608:** Auditude VMAP 응답에서 시간 오프셋 값을 따르도록 수정했습니다.
+· **19608:** Auditude VMAP 응답의 시간 오프셋 값을 적용하도록 수정했습니다.
 
 · **19635:** Windows 10의 Internet Explorer 11에서 비디오 중단이 수정되었습니다.
 
@@ -1386,7 +1385,7 @@ HLS 또는 DASH 기능 지원에 대한 자세한 내용은 아래를 참조하�
 
 다음 문제가 버전 2.4.7에서 해결되었습니다.
 
-· **8397**: 세그먼트가 키 프레임으로 시작하지 않는 경우 Adobe Medium 서버를 통해 생성된 HLS 라이브 스트림이 재생되지 않을 수 있습니다.
+· **8397**: 세그먼트가 키 프레임으로 시작하지 않는 경우 Adobe Media Server을 통해 생성된 HLS 라이브 스트림이 재생되지 않을 수 있습니다.
 
 · **13606**: Chrome 브라우저의 HLS 스트림에 대한 여러 찾기 관련 문제가 해결되었습니다.
 

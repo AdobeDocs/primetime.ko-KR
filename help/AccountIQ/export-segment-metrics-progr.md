@@ -1,8 +1,7 @@
 ---
 title: 세그먼트에서 프로그래머 및 선택한 MVPD에 대한 지표 내보내기
 description: 세그먼트에서 프로그래머 및 선택한 MVPD에 대한 지표 내보내기
-exl-id: 129f3ae3-09ff-4b40-98a1-157dbd14f13e
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
@@ -20,15 +19,15 @@ ht-degree: 0%
 1. 다음 패널 중 하나로 이동합니다.
 
    * 선택한 MVPD에 대한 업계 전체 공유 점수
-      ![](assets/ind-sharpanel-export-option.png)
+     ![](assets/ind-sharpanel-export-option.png)
 
    * 채널 및 MVPD별 점수 공유
 
-      ![](assets/sharscorepanel-export-option.png)
+     ![](assets/sharscorepanel-export-option.png)
 
    * 확률 수준을 공유한 계정 수 및 사용량
 
-      ![](assets/usage-panel-export-option.png)
+     ![](assets/usage-panel-export-option.png)
 
 1. 선택 **내보내기** 옵션은 패널의 오른쪽 상단 모서리에서 사용할 수 있습니다.
 
@@ -36,12 +35,12 @@ ht-degree: 0%
 
 * 선택한 MVPD에 대한 업계 수준 공유 점수
 
-   ![](assets/export-ind-sharing-score.png)
+  ![](assets/export-ind-sharing-score.png)
 
 * 세그먼트의 채널 및 MVPD별 점수 공유
 
-   ![](assets/export-risk-index-by-mvpdchannels.png)
+  ![](assets/export-risk-index-by-mvpdchannels.png)
 
 * 확률 수준을 공유한 계정 수 및 사용량
 
-   ![](assets/export-acc-usage.png)
+  ![](assets/export-acc-usage.png)

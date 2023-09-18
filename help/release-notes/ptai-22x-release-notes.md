@@ -1,8 +1,7 @@
 ---
 title: PTAI 22.9.2 릴리스 노트
 description: PTAI 릴리스 정보는 2022년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다.
-exl-id: 58b254b8-18b9-48ba-bd4e-378785e56af5
-source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: TVSDK를 사용하여 라이브 및 VOD(Video On Demand)에 대한 기본 재생 환경을 제어할 수 있습니다. TVSDK는 플레이어 사용자 인터페이스를 구성하는 데 사용할 수 있는 플레이어 인스턴스의 메서드 및 속성을 제공합니다.
 title: 유효한 상태를 기다립니다.
-exl-id: ab9da066-429f-44ca-b2e7-2bde9e5c0f90
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%

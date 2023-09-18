@@ -1,8 +1,7 @@
 ---
 description: 대체 오디오를 사용하면 비디오 트랙에 사용할 수 있는 오디오 트랙 간에 전환할 수 있습니다. 사용자는 비디오가 재생될 때 원하는 언어 트랙을 선택할 수 있습니다.
 title: 대체 오디오
-exl-id: 7438d667-3003-42ba-88f3-818fa093c7d9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

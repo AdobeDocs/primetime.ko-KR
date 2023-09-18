@@ -1,8 +1,7 @@
 ---
 description: 다음 정보를 사용하여 플레이어의 스킨을 조정할 수 있습니다. 각 시각적 구문에 대해 해당 비헤이비어가 기본 비헤이비어에 언급됩니다.
 title: 선수 껍질 벗기기
-exl-id: 4ad50f96-d174-401f-a731-21e5fbfdbe31
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -415,7 +414,7 @@ ht-degree: 0%
 
 ## 앞으로 감기 {#section_F90ED8B3739B49ACAB1F12DF18F0E4D6}
 
-다음은 앞으로 감기 버튼의 스타일입니다.
+앞으로 감기 버튼의 스타일은 다음과 같습니다.
 
 <table id="table_F166BD1E8B934B34AF3690BBBAD894B7">
  <thead>
@@ -879,7 +878,7 @@ ht-degree: 0%
 
 ## 특정 선택기 {#section_51F735AEF82E41E890FF59E031A0DB89}
 
-다음은 앞으로 감기 버튼의 스타일입니다.
+앞으로 감기 버튼의 스타일은 다음과 같습니다.
 
 <table id="table_E77EDC7D227348E79C7E73FB5D46F992"> 
  <thead> 

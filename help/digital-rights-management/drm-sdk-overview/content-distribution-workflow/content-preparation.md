@@ -1,8 +1,7 @@
 ---
 description: Adobe Primetime DRM을 사용하는 모든 방법은 워크플로의 서로 다른 지점에서 두 개의 키 단계로 구성됩니다. 콘텐츠 준비는 에셋당 한 번 수행되어야 하며, 이를 통해 보호된 콘텐츠가 생성됩니다. 보호된 자산을 시청하려는 모든 소비자에 대해 한 번, 콘텐츠 획득이 여러 번 수행됩니다.
 title: 컨텐츠 준비
-exl-id: 6ec8e5a1-3cf4-498b-9cbb-760c525fb9c7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

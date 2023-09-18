@@ -2,8 +2,7 @@
 title: 라이선스 획득 프로세스 세부 정보
 description: 라이선스 획득 프로세스 세부 정보
 copied-description: true
-exl-id: d772339a-8d05-401b-b5c1-18169b3627b6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
@@ -99,7 +98,7 @@ ht-degree: 0%
 
       >[!NOTE]
       >
-      >또는 인증 방법에 관계없이 `.setAuthenticationToken()` 는 클라이언트에서 라이선스 서버로 사용자 지정 데이터를 전송하는 데 사용할 수 있습니다. 이 메커니즘은 라이선스 획득 시 클라이언트에서 라이선스 서버로 동적 사용자 지정 데이터를 전송할 수 있는 유일한 방법이므로 API의 오버로드입니다. 이 사용자 지정 데이터 전송 방법은 의 여러 포럼 게시물에서 자세히 설명합니다. [Primetime DRM(Adobe 액세스) 포럼 ](https://forums.adobe.com/community/adobe_access).
+      >또는 인증 방법에 관계없이 `.setAuthenticationToken()` 는 클라이언트에서 라이선스 서버로 사용자 지정 데이터를 전송하는 데 사용할 수 있습니다. 이 메커니즘은 라이선스 획득 시 클라이언트에서 라이선스 서버로 동적 사용자 지정 데이터를 전송할 수 있는 유일한 방법이므로 API의 오버로드입니다. 이 사용자 지정 데이터 전송 방법은 의 여러 포럼 게시물에서 자세히 설명합니다. [Primetime DRM(Adobe 액세스) 포럼](https://forums.adobe.com/community/adobe_access).
 
 1. 인증에 실패하면 애플리케이션이 6단계로 돌아가야 합니다.
 

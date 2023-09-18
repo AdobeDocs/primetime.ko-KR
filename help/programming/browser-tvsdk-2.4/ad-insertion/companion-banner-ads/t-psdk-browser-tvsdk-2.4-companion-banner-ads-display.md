@@ -1,8 +1,7 @@
 ---
 description: 배너 광고를 표시하려면 배너 인스턴스를 만들고 Browser TVSDK에서 광고 관련 이벤트를 수신하도록 해야 합니다.
 title: 배너 광고 표시
-exl-id: 331c10a4-ae31-4d3b-aaca-9497e2970ecf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%

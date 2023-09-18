@@ -1,8 +1,7 @@
 ---
 description: '세그먼트가 누락된 경우(예: 특정 세그먼트가 다운로드되지 않은 경우)는 다양한 장애 조치 시도를 통해 복구를 시도합니다. 복구할 수 없는 경우 오류가 발생합니다.'
 title: 세그먼트 장애 조치(failover) 누락
-exl-id: e941008a-99a5-4fff-ac88-133abcf9380d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%

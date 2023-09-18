@@ -1,8 +1,7 @@
 ---
 description: Bento4 packager와 Adobe 오프라인 packager를 모두 사용하여 암호화된 DASH 콘텐츠를 작성합니다. Bento4는 암호화되지 않은 mp4 콘텐츠를 입력으로 사용합니다.
 title: Bento4로 콘텐츠를 패키징합니다.
-exl-id: c873eaf6-c738-4f95-a900-a8aecb03754d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%

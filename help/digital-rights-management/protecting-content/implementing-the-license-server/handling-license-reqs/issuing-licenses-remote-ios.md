@@ -2,8 +2,7 @@
 title: iOS 클라이언트에 원격 키 전달을 위한 라이선스 발급(Adobe Primetime 필요)
 description: iOS 클라이언트에 원격 키 전달을 위한 라이선스 발급(Adobe Primetime 필요)
 copied-description: true
-exl-id: f9f13ab3-3394-4729-a64c-f28c67601e26
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%

@@ -2,8 +2,7 @@
 title: 자세한 정보 로깅
 description: 자세한 정보 로깅
 copied-description: true
-exl-id: f2d1b0c2-ba28-4fba-9a4e-71d1421f37fe
-source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '2155'
 ht-degree: 0%
@@ -107,7 +106,7 @@ TRACE_HTTP_HEADER 레코드만
 | 상태 | 문자열 | 반환된 HTTP 상태 코드 |
 | request_duration | 정수 | 요청에서 응답까지의 시간(밀리초) |
 | ad_server_query_url | 문자열 | 쿼리 매개 변수를 포함한 광고 호출용 URL |
-| ad_system_id | 문자열 | 광고 서버 응답의 광고 시스템(지정되지 않은 경우 감사) |
+| ad_system_id | 문자열 | 광고 서버 응답의 광고 시스템(지정되지 않은 경우 Auditude) |
 | availail_id | 문자열 | 콘텐츠 매니페스트 파일의 광고 큐에서 사용할 수 있는 ID(VOD의 경우 N/A) |
 | availail_duration | 숫자 | 콘텐츠 매니페스트 파일의 광고 큐에서 사용 가능한 기간(초)(VOD의 경우 N/A) |
 | ad_server_response | 문자열 | 광고 서버의 Base64 인코딩 응답 |
@@ -130,7 +129,7 @@ TRACE_HTTP_HEADER 레코드만
 | ad_duration | 정수 | 광고 서버 응답에서 광고 기간(초)입니다. |
 | ad_content_url | 문자열 | 광고 서버 응답에서 광고 매니페스트 파일의 URL. |
 | **†** ad_content_url_actual | 문자열 | 삽입된 광고의 매니페스트 파일 URL. TRACE_AD_REDIRECT에 대해 비어 있음. |
-| ad_system_id | 문자열 | 광고 서버 응답의 광고 시스템(지정되지 않은 경우 감사). |
+| ad_system_id | 문자열 | 광고 서버 응답의 광고 시스템(지정되지 않은 경우 Auditude). |
 | ad_id | 문자열 | 광고 서버 응답의 광고 ID. |
 | creative_id | 문자열 | 광고 노드, 광고 서버 응답의 크리에이티브 ID. |
 | **†** ad_call_id | 문자열 | 사용되지 않습니다. 향후 사용을 위해 예약되었습니다. |
@@ -185,7 +184,7 @@ Records of this type log the results of manifest server ad requests. Fields beyo
 | ad_manifest_url | 문자열 | 광고 서버 응답에서 광고 매니페스트 파일의 URL |
 | creative_type | 문자열 | 미디어 유형 |
 | 플래그 | 문자열 | ID3는 트랜스코딩 요청에 ID3 태그를 추가하라는 요청이 포함되어 있는지 여부를 나타낸다 |
-| target_duration | 문자열 | 트랜스코딩된 크리에이티브의 Target 기간(초) |
+| target_duration | 문자열 | 트랜스코딩된 크리에이티브의 타겟 기간(초) |
 
 이 유형의 레코드는 서버측 추적을 수행하기 위한 요청을 나타냅니다. 다음 범위 밖의 필드 `TRACE_TRACKING_REQUEST` 표에 표시된 순서대로 표시되며 탭으로 구분됩니다.
 
@@ -328,15 +327,13 @@ https://manifest.auditude.com/auditude/{live/vod}/{publisherAssetID}/{rendition}
 ```
 
 * **live/vod**
-매니페스트 서버는 콘텐츠의 재생 목록 유형을 기반으로 이 값을 설정합니다. 라이브/선형(
-`#EXT-X-PLAYLIST-TYPE:EVENT`) 또는 VOD (`#EXT-X-PLAYLIST-TYPE:VOD`)
+매니페스트 서버는 콘텐츠의 재생 목록 유형을 기반으로 이 값을 설정합니다. 라이브/선형(`#EXT-X-PLAYLIST-TYPE:EVENT`) 또는 VOD (`#EXT-X-PLAYLIST-TYPE:VOD`)
 
 * **게시자 자산 ID**
 Bootstrap URL 요청에 제공된 특정 컨텐츠에 대한 게시자의 고유 ID.
 
 * **렌디션**
-매니페스트 서버는 다음을 기반으로 이 값을 설정합니다. 
-`BANDWIDTH` 컨텐츠 스트림의 값이며, 광고 비트 전송률을 컨텐츠의 비트 전송률과 일치시키기 위해 사용합니다. 비트 전송률이 가장 낮은 광고 렌디션이 초과하지 않는 한 광고 비트 전송률은 콘텐츠의 비트 전송률을 초과할 수 없습니다.
+매니페스트 서버는 다음을 기반으로 이 값을 설정합니다. `BANDWIDTH` 컨텐츠 스트림의 값이며, 광고 비트 전송률을 컨텐츠의 비트 전송률과 일치시키기 위해 사용합니다. 비트 전송률이 가장 낮은 광고 렌디션이 초과하지 않는 한 광고 비트 전송률은 콘텐츠의 비트 전송률을 초과할 수 없습니다.
 
 * **groupID**
 매니페스트 서버는 이 값을 생성하여 클라이언트가 요청하는 비트율 렌디션에 관계없이 광고를 일관되게 배치하는 데 사용합니다.

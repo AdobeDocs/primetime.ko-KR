@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 미디어에 대한 정보를 제공합니다.
 title: 정보 클래스
-exl-id: af09c81f-07f4-423b-af97-53bc2274cddc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%

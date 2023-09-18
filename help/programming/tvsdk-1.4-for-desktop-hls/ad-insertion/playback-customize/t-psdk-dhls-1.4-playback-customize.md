@@ -1,8 +1,7 @@
 ---
 description: 광고 비헤이비어를 사용자 정의하거나 재정의할 수 있습니다.
 title: 사용자 지정 재생 설정
-exl-id: 28c28589-9e94-40de-b921-1bffc0392c29
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 * 구현 `AdPolicySelector` 인터페이스 및 모든 해당 메서드.
 
-   재정의해야 하는 경우 이 옵션을 권장합니다. **모두** 기본 광고 동작입니다.
+  재정의해야 하는 경우 이 옵션을 권장합니다. **모두** 기본 광고 동작입니다.
 
 * 확장 `DefaultAdPolicySelector` 클래스를 만들고 맞춤화가 필요한 비헤이비어에 대해서만 구현을 제공합니다.
 
-   이 옵션은 재정의해야 하는 경우에만 권장됩니다. **일부** 기본 동작.
+  이 옵션은 재정의해야 하는 경우에만 권장됩니다. **일부** 기본 동작.
 
 두 옵션 모두 다음 작업을 완료하십시오.
 

@@ -2,8 +2,7 @@
 title: 비디오 분석 초기화 및 구성
 description: 비디오 분석 초기화 및 구성
 copied-description: true
-exl-id: add832e3-5a17-4235-a76f-ae342e1d85f0
-source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -18,7 +17,7 @@ ht-degree: 0%
 * Android용 TVSDK 2.5.
 * 구성/초기화 정보
 
-   특정 비디오 추적 계정 정보는 Adobe 담당자에게 문의하십시오.
+  특정 비디오 추적 계정 정보는 Adobe 담당자에게 문의하십시오.
 
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 

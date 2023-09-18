@@ -1,8 +1,7 @@
 ---
 description: 미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환할 때, 너비 및 높이 정보 또는 다른 비트율이 사용된 이유 등을 포함하여 스위치에 대한 정보를 검색할 수 있습니다.
 title: 프로필 전환에 대한 정보 가져오기
-exl-id: b46909fe-666a-4730-8922-15c3eb7a1cba
-source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -22,7 +21,7 @@ ht-degree: 0%
    * `time`: 전환이 발생한 스트림 시간입니다.
    * `description`: 비트 전송률 변경의 이유에 대한 세미콜론으로 구분된 키/값 쌍의 문자열로서의 텍스트 설명입니다. 최대 1개 포함 `Reason` 및 1 `Bitrate`. 정보를 사용할 수 없거나 비트 전송률이 변경되지 않으면 이 문자열은 비어 있습니다.
 
-      <table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
+     <table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
        <thead> 
          <tr> 
          <th colname="col1" class="entry"> 키 이름 </th> 
@@ -51,20 +50,20 @@ ht-degree: 0%
        </tbody> 
        </table>
 
-      다음은 반환된 몇 가지 예입니다 `description` 문자열:
+     다음은 반환된 몇 가지 예입니다 `description` 문자열:
 
-      ```
-      "Bitrate::=up;Reason::=Network Adaptation;" 
-      
-      "Bitrate::=down;Reason::=Failover;"
-      ```
+     ```
+     "Bitrate::=up;Reason::=Network Adaptation;" 
+     
+     "Bitrate::=down;Reason::=Failover;"
+     ```
 
    * `width`: 폭을 픽셀 단위로 나타내는 정수입니다.
    * `height`: 높이를 픽셀 단위로 나타내는 정수.
 
-      >[!NOTE]
-      >
-      >폭 및 높이 데이터는 너비에 포함된 경우에만 사용할 수 있습니다. `RESOLUTION` M3U8 매니페스트의 태그입니다. 이 정보가 M3U8에 포함되지 않으면 프로필 정보에 포함되지 않으므로 너비 및 높이 속성이 0으로 설정됩니다.
+     >[!NOTE]
+     >
+     >폭 및 높이 데이터는 너비에 포함된 경우에만 사용할 수 있습니다. `RESOLUTION` M3U8 매니페스트의 태그입니다. 이 정보가 M3U8에 포함되지 않으면 프로필 정보에 포함되지 않으므로 너비 및 높이 속성이 0으로 설정됩니다.
 
 <!--<a id="example_A713D420AE2E4E3CB7B78C6BC732BE90"></a>-->
 

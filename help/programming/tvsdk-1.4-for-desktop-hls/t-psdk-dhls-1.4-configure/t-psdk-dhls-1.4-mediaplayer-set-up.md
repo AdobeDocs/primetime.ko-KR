@@ -1,8 +1,7 @@
 ---
 description: MediaPlayer 인터페이스는 미디어 플레이어의 기능 및 동작을 캡슐화합니다.
 title: MediaPlayer 설정
-exl-id: eec51f3e-4779-4fb5-b735-d5be412de64e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 에서 즉시 활성화란 하나 이상의 채널이 미리 로드됨을 의미합니다. 사용자가 채널을 선택하거나 채널을 전환하면 콘텐츠가 즉시 재생됩니다. 버퍼링은 사용자가 시청을 시작할 때까지 완료됩니다.
 title: 즉시 사용
-exl-id: 59293e07-160a-41a2-8ffe-7ca9323048f5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,18 +26,18 @@ ht-degree: 0%
 
 * QoS 공급자 만들기 및 연결 `mediaPlayerItemLoader` 인스턴스
 
-   ```
-   // Create an instance of QoSProvider  
-   private QOSProvider _qosProvider = new QOSProvider(this._context);  
-   
-   // Attach the QoSProvider instance to the mediaPlayerItemLoaderInstance  
-   // (before calling load API on mediaPlayerItemLoader instance)  
-   _qosProvider.attachMediaPlayerItemLoader(this._loader); 
-   ```
+  ```
+  // Create an instance of QoSProvider  
+  private QOSProvider _qosProvider = new QOSProvider(this._context);  
+  
+  // Attach the QoSProvider instance to the mediaPlayerItemLoaderInstance  
+  // (before calling load API on mediaPlayerItemLoader instance)  
+  _qosProvider.attachMediaPlayerItemLoader(this._loader); 
+  ```
 
-   재생이 시작되면 를 사용합니다. `_qosProvider` 다운로드하려면 `timeToLoad` 및 `timeToPrepare` QoSdata. 나머지 QoS 지표는 `QoSProvider` 이(가) 다음에 첨부되었습니다. `mediaPlayer`.
+  재생이 시작되면 를 사용합니다. `_qosProvider` 다운로드하려면 `timeToLoad` 및 `timeToPrepare` QoSdata. 나머지 QoS 지표는 `QoSProvider` 이(가) 다음에 첨부되었습니다. `mediaPlayer`.
 
-   에 대한 자세한 내용 `MediaPlayerItemLoader`, 참조 [MediaPlayerItemLoader를 사용하여 미디어 리소스 로드](../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md).
+  에 대한 자세한 내용 `MediaPlayerItemLoader`, 참조 [MediaPlayerItemLoader를 사용하여 미디어 리소스 로드](../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md).
 
 ## 즉시 사용할 수 있도록 버퍼링 구성 {#section_4FE346B7BE434BA8A2203896D6E52146}
 

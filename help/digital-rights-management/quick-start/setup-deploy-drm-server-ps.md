@@ -2,8 +2,7 @@
 title: 보호된 스트리밍을 위한 서버 설정 및 배포
 description: 보호된 스트리밍을 위한 서버 설정 및 배포
 copied-description: true
-exl-id: de1488e6-ccee-49e6-999e-6c6762dd55be
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%

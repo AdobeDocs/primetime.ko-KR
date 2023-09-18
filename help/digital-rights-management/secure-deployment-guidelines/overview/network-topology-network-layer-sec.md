@@ -1,8 +1,7 @@
 ---
 description: 네트워크 보안 취약성은 인터넷 연결 또는 인트라넷 연결 응용 프로그램 서버에 대한 첫 번째 위협 중 하나이며 이러한 취약점에 대비하여 네트워크의 호스트를 강화해야 합니다.
 title: 네트워크 계층 보안
-exl-id: 0a45d18a-66aa-4ecc-8eaf-e2af599eb3b8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%

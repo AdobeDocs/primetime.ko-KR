@@ -1,8 +1,7 @@
 ---
 description: VOD 콘텐츠에 광고를 삽입할 수 있습니다.
 title: 시간 범위를 광고로 바꾸기
-exl-id: b341d337-e190-4e2d-bad6-579771bcc577
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%

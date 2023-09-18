@@ -1,8 +1,7 @@
 ---
 description: Adobe의 Primetime Access DRM 솔루션에 익숙한 사용자의 경우 ExpressPlay 솔루션에서 제공하는 Primetime Cloud DRM과 Access 간에 몇 가지 근본적인 아키텍처 차이가 있습니다.
 title: Access에서 Multi-DRM으로 마이그레이션
-exl-id: f5e4cd88-091d-4049-933d-1c72ceeb2efb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%

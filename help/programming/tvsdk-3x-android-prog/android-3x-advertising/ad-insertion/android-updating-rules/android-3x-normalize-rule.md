@@ -2,8 +2,7 @@
 description: 정규화 규칙은 VAST/VMAP 응답에서 가져온 소스 크리에이티브 URL에 적용할 URL 변환을 정의합니다.
 keywords: 규칙 정규화;크리에이티브 선택 규칙
 title: 규칙 정규화
-exl-id: 731e0cfd-cabd-4e34-a01e-537c23be6a2d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%

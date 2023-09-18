@@ -1,8 +1,7 @@
 ---
 description: 현재 사용 가능한 자막 트랙 목록에서 트랙을 선택할 수 있습니다. 이 트랙이 가시성이 켜져 있을 때 표시되는 현재 트랙이 됩니다. 일부 트랙은 처음에 사용할 수 없으므로 사용할 수 있게 되었음을 나타내는 이벤트를 수신합니다.
 title: 사용 가능한 트랙 중에서 현재 캡션 트랙 선택
-exl-id: d604dedc-f3c3-4c97-9b0f-84da326c0678
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

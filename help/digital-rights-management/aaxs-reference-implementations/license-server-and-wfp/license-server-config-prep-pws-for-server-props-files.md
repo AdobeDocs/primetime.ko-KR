@@ -2,8 +2,7 @@
 title: 서버 속성 파일에 대한 암호 준비
 description: 서버 속성 파일에 대한 암호 준비
 copied-description: true
-exl-id: 70f75640-7075-450a-8191-dc348bd269b8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -21,9 +20,9 @@ ht-degree: 0%
 * 다음을 확인합니다. `sdkdir` 의 속성 [!DNL build-refimpl.xml] 는 Adobe 액세스 SDK가 포함된 디렉토리를 가리킵니다
 * ANT를 사용하여 다음 명령을 실행합니다.
 
-   ```
-       ant -f build-refimpl.xml
-   ```
+  ```
+      ant -f build-refimpl.xml
+  ```
 
 * 메시지가 표시되면 자격 증명의 암호를 입력합니다
 
@@ -35,17 +34,17 @@ Java를 사용하여 도구를 실행하려면:
 
 * Windows:
 
-   ```
-   java -classpath path_to_adobe-flashaccess-sdk.jar;.  
-   com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
-   ```
+  ```
+  java -classpath path_to_adobe-flashaccess-sdk.jar;.  
+  com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
+  ```
 
 * Linux의 경우:
 
-   ```
-       java -classpath path_to_adobe-flashaccess-sdk.jar;.  
-       com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
-   ```
+  ```
+      java -classpath path_to_adobe-flashaccess-sdk.jar;.  
+      com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
+  ```
 
 유틸리티는 암호화된 암호를 출력하며, 이 암호는 .properties 파일에 복사해야 합니다.
 

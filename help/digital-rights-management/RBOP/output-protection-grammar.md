@@ -1,8 +1,7 @@
 ---
 description: 이 섹션에서는 유효하고 잘못된 입력 옵션을 강조하고 생략된 옵션 필드를 해석하는 방법에 대해 설명하면서 구성 입력의 문법을 다룹니다.
 title: RBOP 문법
-exl-id: 311194ec-e59b-4145-b22b-6983e212fcab
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -238,23 +237,23 @@ NonZeroDigit ::=
 
 * 동일한 픽셀 카운트로 다수의 픽셀 제약을 정의하는 것은 부적합하다.
 
-   ```
-   {  
-     "pixelConstraints":  
-       [  
-         { "pixelCount": 720 }  
-       ]  
-    }  
-   ```
+  ```
+  {  
+    "pixelConstraints":  
+      [  
+        { "pixelCount": 720 }  
+      ]  
+   }  
+  ```
 
 * 픽셀 수는 지정된 최대 픽셀 해상도를 초과할 수 없습니다.
 
-   ```
-   { 
-     "maxPixel": 720, 
-     "pixelConstraints": 
-       [ 
-         {"pixelCount": 1080} 
-       ] 
-   } 
-   ```
+  ```
+  { 
+    "maxPixel": 720, 
+    "pixelConstraints": 
+      [ 
+        {"pixelCount": 1080} 
+      ] 
+  } 
+  ```

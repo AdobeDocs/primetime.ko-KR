@@ -1,8 +1,7 @@
 ---
 description: 광고 시그널링 모드는 비디오 스트림이 광고 정보를 받아야 하는 위치를 지정합니다.
 title: 광고 신호 모드
-exl-id: 87c56f8a-7a07-4232-9f90-53ab74a609b4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%

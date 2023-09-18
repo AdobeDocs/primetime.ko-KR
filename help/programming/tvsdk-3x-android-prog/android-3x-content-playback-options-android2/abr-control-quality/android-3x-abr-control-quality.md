@@ -1,8 +1,7 @@
 ---
 description: HLS 및 DASH 스트림은 동일한 짧은 비디오 버스트에 대해 상이한 비트 레이트 인코딩(프로필)을 제공한다. TVSDK는 현재 버퍼링 레벨 및 가용 대역폭에 기초하여 각 버스트에 대한 품질 레벨을 선택할 수 있다.
 title: 비디오 품질을 위한 적응형 비트 전송률(ABR)
-exl-id: ed062ef9-138d-446a-a454-3cb19c3bb388
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%

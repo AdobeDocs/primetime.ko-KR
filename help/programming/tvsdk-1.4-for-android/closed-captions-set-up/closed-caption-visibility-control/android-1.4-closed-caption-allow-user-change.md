@@ -1,8 +1,7 @@
 ---
 description: 다음은 사용자가 자막 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
 title: 예제 사용자가 캡션 트랙을 변경할 수 있음
-exl-id: d7ba19ac-cbfa-4fb4-a92d-21a3d0f7c23f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%

@@ -2,8 +2,7 @@
 title: 암호화된 콘텐츠 패키지
 description: 암호화된 콘텐츠 패키지
 copied-description: true
-exl-id: e5792917-8172-48b0-8792-7a7e942596c5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -26,6 +25,7 @@ ht-degree: 0%
    * `encrypt.sign.certfile=[packager-credentials.pfx]`: Packager 인증서 경로(다음으로 끝남) [!DNL .pfx]).
 
    * `encrypt.sign.certpass=[password]`: Packager 인증서의 암호입니다.
+
    >[!NOTE]
    >
    >암호를 스크램블하지 않는지 확인합니다.

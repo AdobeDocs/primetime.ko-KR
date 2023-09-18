@@ -1,8 +1,7 @@
 ---
 description: 참조 구현 프레임워크를 기반으로 사용자 지정 사용자 인터페이스를 쉽게 빌드할 수 있습니다.
 title: 사용자 지정 사용자 인터페이스 빌드
-exl-id: 96008010-cd63-4fb1-a3fc-2fc94b624413
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%

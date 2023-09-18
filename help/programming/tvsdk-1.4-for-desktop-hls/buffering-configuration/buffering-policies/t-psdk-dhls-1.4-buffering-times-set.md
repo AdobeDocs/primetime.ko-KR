@@ -1,8 +1,7 @@
 ---
 description: MediaPlayer에서는 초기 버퍼링 시간 및 재생 버퍼링 시간을 설정하고 가져오는 메서드를 제공합니다.
 title: 버퍼링 시간 설정
-exl-id: d2fbae05-2190-4acc-ae63-561db030608a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -23,17 +22,17 @@ MediaPlayer에서는 초기 버퍼링 시간 및 재생 버퍼링 시간을 설�
    
    * 초기 버퍼 시간을 재생 버퍼 시간과 동일하게 설정하려면 다음을 수행합니다.
 
-      ```
-      createSimple(bufferTime:uint):BufferControlParameters
-      ```
+     ```
+     createSimple(bufferTime:uint):BufferControlParameters
+     ```
 
    * 초기 및 재생 버퍼 시간을 모두 설정하려면 다음을 수행합니다.
 
-      ```
-      createDual(initialBufferTime:uint, playbackBufferTime:uint):BufferControlParameters 
-      ```
+     ```
+     createDual(initialBufferTime:uint, playbackBufferTime:uint):BufferControlParameters 
+     ```
 
-      이 메서드는 `IllegalArgumentException` 매개 변수가 유효하지 않은 경우(예: 다음과 같은 경우)
+     이 메서드는 `IllegalArgumentException` 매개 변수가 유효하지 않은 경우(예: 다음과 같은 경우)
 
    * 초기 버퍼 시간은 0보다 작습니다.
    * 초기 버퍼 시간은 버퍼 시간보다 크다.

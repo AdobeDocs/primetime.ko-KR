@@ -1,8 +1,7 @@
 ---
 description: 이 안내서에서는 브라우저 TVSDK를 사용하여 비디오 플레이어 애플리케이션을 개발하는 방법에 대한 정보를 제공합니다.
 title: 제품 개요 및 대상
-exl-id: e2bbec5e-d1ce-430c-986c-ba3152190b1c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%

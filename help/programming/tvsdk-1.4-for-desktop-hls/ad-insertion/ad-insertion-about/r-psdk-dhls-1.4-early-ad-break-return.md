@@ -1,8 +1,7 @@
 ---
 description: 라이브 스트림 광고 삽입의 경우, 광고 브레이크의 모든 광고가 완료될 때까지 재생되기 전에 광고 브레이크를 종료해야 할 수 있습니다.
 title: 조기 광고 브레이크 반환 구현
-exl-id: 584e870e-1408-41a9-bb6f-e82b921fe99e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -21,13 +20,13 @@ ht-degree: 0%
 
 * 다음과 같은 마커 구문 분석 `EXT-X-CUE-IN` 선형 또는 FER 스트림에 나타나는 (또는 상응하는 마커 태그).
 
-   마커를 광고 초기 반환점에 대한 마커로 등록합니다. 재생 전용 `adBreaks` 재생 중에 이 마커 위치까지. `adBreak` 행간으로 표시 `EXE-X-CUE-OUT` 마커.
+  마커를 광고 초기 반환점에 대한 마커로 등록합니다. 재생 전용 `adBreaks` 재생 중에 이 마커 위치까지. `adBreak` 행간으로 표시 `EXE-X-CUE-OUT` 마커.
 
 * 2인 경우 `EXT-X-CUE-IN` 마커가 동일한 항목에 존재합니다. `EXT-X-CUE-OUT` 마커, 첫 번째 `EXT-X-CUE-IN` 표시되는 마커가 카운트됩니다.
 
 * 다음과 같은 경우 `EXE-X-CUE-IN` 마커가 타임라인에 행간 없이 표시됨 `EXT-X-CUE-OUT` 마커, `EXE-X-CUE-IN` 마커가 삭제됩니다.
 
-   라이브 스트림에서 앞에 오는 경우 `EXT-X-CUE-OUT` 마커가 창 밖으로 방금 이동했습니다. TVSDK가 이에 응답하지 않습니다.
+  라이브 스트림에서 앞에 오는 경우 `EXT-X-CUE-OUT` 마커가 창 밖으로 방금 이동했습니다. TVSDK가 이에 응답하지 않습니다.
 
 * 광고 브레이크에서 조기에 돌아오는 경우 `adBreak` 광고 브레이크가 종료되어야 하는 원래 위치로 플레이헤드가 돌아올 때까지 재생하고 해당 위치에서 기본 컨텐츠 재생을 재개합니다.
 

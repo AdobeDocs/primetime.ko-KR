@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 HTTPS를 통한 보안 전달을 도입합니다.
 title: HTTPS를 통한 보안 게재
-exl-id: 41e2c925-2145-4dfd-909a-aec57dbae9cd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 Adobe Primetime TVSDK는 TVSDK에서 시작되는 모든 호출에 대해 HTTPS 전달을 지원합니다.
 
-* Auditude Ad 서버 호출
+* Auditude 광고 서버 호출
 * CRS 요청
 * DRM 라이센스 호출
 * Video Analytics Ping

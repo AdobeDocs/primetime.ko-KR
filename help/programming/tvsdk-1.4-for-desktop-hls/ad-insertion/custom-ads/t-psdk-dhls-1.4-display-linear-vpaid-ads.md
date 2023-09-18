@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 광고 브레이크에서 선형 비디오 플레이어 광고 인터페이스 정의(VPAID) 광고 표시를 지원합니다. VPAID 버전 1.0에는 Flash이 필요하지만, 버전 2.0은 브라우저 TVSDK 및 JavaScript에서도 작동합니다.
 title: 광고 브레이크에 선형 VPAID 광고 표시
-exl-id: 316a38ac-ec2d-498c-b441-304e2fa75993
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -47,10 +46,10 @@ VPAID 광고 제한 사항:
    >
    >전체 화면 변경 이벤트가 발생하고 광고 컨테이너에서 새 크기를 설정하면 단계 표시 상태를 다음과 같이 전달하여 플레이어의 크기가 올바르게 조정되도록 합니다.
    >
-   >
-   ```
+   >```
    >private function onFullScreenChange(event:FullScreenEvent):void { 
    >if (_adContainer) 
    >{ _adContainer.setSize(stage.stageWidth, stage.stageHeight, stage.displayState); } 
    >}
    >```
+   >

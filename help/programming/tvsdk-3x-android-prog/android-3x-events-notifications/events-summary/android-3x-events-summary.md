@@ -1,8 +1,7 @@
 ---
 description: 애플리케이션은 TVSDK에서 발송하는 이벤트를 수신하여 플레이어의 활동 및 플레이어의 변화하는 상태를 모니터링할 수 있습니다.
 title: Primetime 플레이어 이벤트 요약
-exl-id: 3912f140-1600-41fb-9dc4-306646b7cd85
-source-git-commit: 59f7f8aa82be59c4012ee80648032600590bc4e1
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%

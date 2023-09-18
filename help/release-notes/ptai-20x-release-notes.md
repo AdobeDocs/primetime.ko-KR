@@ -1,8 +1,7 @@
 ---
 title: PTAI 20.12.1 릴리스 노트
 description: PTAI 릴리스 노트는 2020년 Primetime Ad Insertion의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제를 설명합니다.
-exl-id: 47e36e42-b6a0-408c-93da-f63c929396b5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 0%
@@ -66,9 +65,9 @@ Primetime Ad Insertion 20.12.1 릴리스 노트는 2020년 Primetime Ad Insertio
 
 * 공급자가 응답하는 데 너무 오래 걸리는 경우 전체 광고 해결 시간을 제한하는 데 대한 지원이 제공되었습니다. 제한을 활성화하려면 부트스트랩 API 매개 변수를 설정합니다 `ptadtimeout` 을 밀리초 단위의 값으로 바꿉니다.
 
-   >[!NOTE]
-   >
-   >이 시간 제한은 광고 크리에이티브 요청이 아닌 광고 요청에만 적용됩니다.
+  >[!NOTE]
+  >
+  >이 시간 제한은 광고 크리에이티브 요청이 아닌 광고 요청에만 적용됩니다.
 
 ### 버전 20.9.1
 
@@ -118,7 +117,7 @@ Primetime Ad Insertion 20.12.1 릴리스 노트는 2020년 Primetime Ad Insertio
 
 ### 버전 20.6.1
 
-**시기:** 2020년 6월 2일 화요일 오전 3시부터 오전 5시까지 동부 시간
+**시기:** 2020년 6월 2일 화요일 오전 3시 ~ 오전 5시(동부 표준시)
 
 **새로운 기능**
 
@@ -195,11 +194,11 @@ Primetime Ad Insertion 20.12.1 릴리스 노트는 2020년 Primetime Ad Insertio
 
 * **nbc CueFormat에 대한 FER 지원 VMAP**
 
-   다음과 같은 경우 FER 스트림의 큐를 FW 타임라인 재정의 매개 변수로 변환합니다. `ptcueformat=nbc` 가 사용되고 스트림은 매니페스트 내 큐와 구운 광고가 있는 VOD 스트림입니다.
+  다음과 같은 경우 FER 스트림의 큐를 FW 타임라인 재정의 매개 변수로 변환합니다. `ptcueformat=nbc` 가 사용되고 스트림은 매니페스트 내 큐와 구운 광고가 있는 VOD 스트림입니다.
 
 * 서드파티 광고 공급자/CDN으로 전달하기 전에 HTTP 헤더의 사용자 에이전트 필드를 정리합니다.
 
-* Auditude 및 기타 광고 공급자인 CDN으로 전송하기 전에 사용자 에이전트 HTTP 헤더에서 제어/인쇄 불가능한 문자(ASCII 코드 &lt; 32)를 필터링합니다. 잘못된 헤더에 대한 감사 광고 호출이 실패했습니다.
+* Auditude 및 기타 광고 공급자인 CDN으로 전송하기 전에 사용자 에이전트 HTTP 헤더에서 제어/인쇄 불가능한 문자(ASCII 코드 &lt; 32)를 필터링합니다. 이러한 잘못된 헤더에 대한 광고 호출 실패에 사용된 Auditude.
 
 * NetStorage Groups에서 이전 V1 객체를 제거하여 객체 수를 Akamai의 안전 한도 이내로 유지합니다.
 

@@ -1,8 +1,7 @@
 ---
 description: Primetime 광고 삽입은 내부 목적을 위해 쿠키를 사용하며 스트림 및 광고 서버와의 작업을 용이하게 합니다.
 title: 쿠키
-exl-id: 13184a7a-4302-46af-a7f6-37678db05ce8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%

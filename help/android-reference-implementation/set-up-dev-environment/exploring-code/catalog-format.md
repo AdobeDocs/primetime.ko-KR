@@ -1,8 +1,7 @@
 ---
 description: Primetime 참조 구현에서는 응답에 JSON 기반 피드 형식을 사용합니다. 이 형식은 IFeedItemAdapter 인터페이스의 구현을 사용하여 구문 분석됩니다.
 title: 카탈로그 형식
-exl-id: faaeb647-9c01-4290-be1e-2b8461c8ad27
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -137,7 +136,7 @@ Primetime 참조 구현에서는 응답에 JSON 기반 피드 형식을 사용�
 | 속성 | 설명 |
 |--- |--- |
 | 광고 | 광고 관련 메타데이터. |
-| 유형 | 값은 Primetime 광고, 직접 광고 브레이크 또는 사용자 지정 광고 마커일 수 있습니다. <br/><br/>PSDK는 Primetime 광고 서비스(Primetime 광고)에 대한 감사 관련 메타데이터, 광고 URL이 있는 직접 광고 브레이크(Direct Ad Break) 및 각 광고 마커에 대해 TimeRange를 제공하는 사용자 지정 광고 마커(사용자 지정 광고 마커)와 같은 메타데이터 유형에 대한 기본 지원을 제공합니다. 각 유형에는 메타데이터를 처리하는 PSDK에 내장된 AdProvider가 있습니다.  <br/><br/>각 JSON에 대한 JSON 형식은 아래에 정의되어 있습니다. |
+| 유형 | 값은 Primetime 광고, 직접 광고 브레이크 또는 사용자 지정 광고 마커일 수 있습니다. <br/><br/>PSDK는 Primetime 광고 서비스(Primetime 광고)에 대한 Auditude 관련 메타데이터, 광고 URL이 있는 직접 광고 브레이크(Direct Ad Break) 및 각 광고 마커에 대해 TimeRange를 제공하는 사용자 지정 광고 마커(사용자 지정 광고 마커)와 같은 메타데이터 유형을 기본적으로 지원합니다. 각 유형에는 메타데이터를 처리하는 PSDK에 내장된 AdProvider가 있습니다.  <br/><br/>각 JSON에 대한 JSON 형식은 아래에 정의되어 있습니다. |
 | 세부 사항 | 광고 메타데이터 속성을 포함합니다. 두 유형의 광고 메타데이터에는 아래에 정의된 자체 속성 세트가 있습니다. 기본 제공 형식의 경우 포함된 속성은 해당 형식에 대해 PSDK에서 예상하는 데이터를 정의합니다. |
 | 권한 부여 | 권한 관련 메타데이터 |
 | id | Adobe Primetime pay-TV pass 서비스에 대한 인증 요청에 사용되는 미디어 리소스 ID입니다. 상기 ID는 텍스트 문자열 또는 HTML으로 인코딩된 mRSS 문자열일 수 있다. 인증이 필요한 모든 미디어 콘텐츠에는 유효한 리소스 ID가 있어야 합니다. |

@@ -1,8 +1,7 @@
 ---
 description: Adobe은 구성 파일을 변경할 경우 서버를 시작하기 전에 Configuration Validator 유틸리티를 실행해야 한다고 권장합니다. 이 유틸리티는 대부분의 구성 오류를 조기에 감지할 수 있으며, 이 경우 요청 처리 중에 오류가 발생하기 전에 미리 감지할 수 있습니다.
 title: 구성 검사기
-exl-id: 41d0a926-4e12-442c-886e-5f12cf10eed8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -51,12 +50,12 @@ Validator --<file path>/flashaccess-tenant.xml --tenant
 
 * `Tenant` — 특정 테넌트에 대한 구성 파일 및 자격 증명의 유효성을 검사합니다. 구성에 대한 유효성을 검사하려는 경우 `<tenant1>`, 유형:
 
-   ```
-       Validator --<root-path-to-LicenseServer.ConfigRoot> -d flashaccessserver/tenant1 -t
-   ```
+  ```
+      Validator --<root-path-to-LicenseServer.ConfigRoot> -d flashaccessserver/tenant1 -t
+  ```
 
 * `Global` — 모든 테넌트에 대한 전역 구성 파일 및 테넌트 유효성 검사를 확인합니다. 전역 배포 기반 유효성 검사를 수행하려면 다음을 입력합니다.
 
-   ```
-       Validator --<root-path-to-LicenseServer.ConfigRoot> -g
-   ```
+  ```
+      Validator --<root-path-to-LicenseServer.ConfigRoot> -g
+  ```

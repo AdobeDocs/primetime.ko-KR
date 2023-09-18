@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 패킷 및 태그에 대한 디코딩 및 구문 분석을 제공합니다.
 title: 시스템 디코더 클래스
-exl-id: 852ff1d0-aa8b-47d3-baff-ef5d78507e4b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 1%

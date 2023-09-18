@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 VOD 및 라이브/선형 스트림에 대한 광고 해결 및 삽입을 지원합니다.
 title: Primetime 광고 서버 메타데이터
-exl-id: 3723dd2f-292c-4ce5-9670-fda1b1f2b5df
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -22,7 +21,6 @@ TVSDK는 VOD 및 라이브/선형 스트림에 대한 광고 해결 및 삽입�
 >* 할당된 광고 서버의 도메인을 지정하는 광고 서버 도메인.
 >* 기타 타깃팅 매개 변수.
 >
-
 
 ## Primetime 광고 서버 메타데이터 설정 {#section_86C4A3B2DF124770B9B7FD2511394313}
 
@@ -86,7 +84,7 @@ FER 스트림의 경우, Adobe Primetime Ad Decisioning 서버는 재생을 시�
 
    유효한 값은 다음과 같습니다. `PTAdSignalingModeDefault`, `PTAdSignalingModeManifestCues`, 및 `PTAdSignalingModeServerMap`.
 
-   호출하기 전에 광고 신호 모드를 설정해야 합니다. `prepareToPlay`. TVSDK가 타임라인에서 광고를 확인하고 배치하면 광고 신호 모드에 대한 변경 사항이 무시됩니다. 리소스에 대한 광고 메타데이터를 만들 때 모드를 설정합니다.
+   를 호출하기 전에 광고 신호 모드를 설정해야 합니다. `prepareToPlay`. TVSDK가 타임라인에서 광고를 확인하고 배치하면 광고 신호 모드에 대한 변경 사항이 무시됩니다. 리소스에 대한 광고 메타데이터를 만들 때 모드를 설정합니다.
 
 1. 계속 재생합니다.
 

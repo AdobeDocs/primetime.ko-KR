@@ -1,8 +1,7 @@
 ---
 title: 계정 IQ의 작업
 description: 계정 IQ의 작업에는 구독자 계정에 대한 자동화 및 대량 작업을 수행하고 그 효과를 추적하는 작업이 포함됩니다.
-exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
-source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -68,6 +67,7 @@ ht-degree: 0%
    * 또 다른 부분은 원래 세그먼트에 있었지만 더 이상 작업 세그먼트의 기준을 충족하지 않는 해당 기간에 대한 활성 계정 수를 나타냅니다.
 
    * 세 번째 부분은 해당 기간에 활성화되지 않은 계정을 나타냅니다.
+
    >[!NOTE]
    >
    >첫 번째 막대는 평가 기간 시작 시 운영 세그먼트의 조건을 충족하는 계정 수를 나타냅니다.

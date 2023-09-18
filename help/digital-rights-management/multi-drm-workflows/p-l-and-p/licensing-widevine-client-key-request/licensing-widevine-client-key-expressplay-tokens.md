@@ -1,8 +1,7 @@
 ---
 description: 토큰 요청을 적절한 Expressplay 토큰 서버로 전송하여 암호화된 콘텐츠에 대한 Expressplay 토큰을 생성할 수 있습니다.
 title: Expressplay 토큰
-exl-id: 38faba06-6737-4dec-ac97-27db3124b993
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%

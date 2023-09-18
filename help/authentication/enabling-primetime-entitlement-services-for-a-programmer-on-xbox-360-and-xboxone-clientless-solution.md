@@ -1,8 +1,7 @@
 ---
 title: Xbox 360 및 XboxOne Clientless에서 프로그래머를 위해 Primetime 권한 부여 서비스 활성화
 description: Xbox 360 및 XboxOne Clientless에서 프로그래머를 위해 Primetime 권한 부여 서비스 활성화
-exl-id: ff7254de-9ea4-4c27-a186-d1c2eea12222
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

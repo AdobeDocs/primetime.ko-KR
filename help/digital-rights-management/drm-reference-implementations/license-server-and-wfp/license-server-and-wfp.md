@@ -1,8 +1,7 @@
 ---
 description: 참조 구현 서버를 사용하면 Adobe Primetime DRM Java SDK의 모든 기능을 사용하는 완전한 기능을 갖춘 라이선스 서버를 만들 수 있습니다.
 title: 라이선스 서버
-exl-id: a928b7ac-9191-4b8c-b038-eb92a09286fa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%

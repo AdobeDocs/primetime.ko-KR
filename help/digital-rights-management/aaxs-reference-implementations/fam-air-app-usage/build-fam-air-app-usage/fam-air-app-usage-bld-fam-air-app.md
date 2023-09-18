@@ -2,8 +2,7 @@
 title: Flash Access 관리자 AIR 애플리케이션 구축
 description: Flash Access 관리자 AIR 애플리케이션 구축
 copied-description: true
-exl-id: f15fe9d2-d5e8-43ef-a1d5-1211752d54da
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%

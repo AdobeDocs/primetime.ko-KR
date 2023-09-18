@@ -1,8 +1,7 @@
 ---
 description: 닫힘 캡션의 가시성을 제어할 수 있습니다. 가시성이 켜져 있으면 현재 선택한 트랙이 표시됩니다.
 title: 닫힌 캡션 표시 제어
-exl-id: e74c0344-43f3-4ed7-bbf2-d89dd3df8a33
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

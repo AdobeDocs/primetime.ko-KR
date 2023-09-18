@@ -2,8 +2,7 @@
 description: TVSDK 구성 파일(AdobeTVSDKConfig.json)을 사용하여 VAST/VMAP 응답에 대한 광고 크리에이티브 선택의 우선 순위를 업데이트할 수 있습니다. 이 구성 파일을 사용하여 광고 크리에이티브에 대한 소스 URL 변환 규칙을 정의할 수도 있습니다.
 keywords: 크리에이티브 선택 규칙;AdobeTVSDKConfig;광고 크리에이티브 우선 순위;변환 규칙
 title: 광고 크리에이티브 선택 규칙 업데이트
-exl-id: d52ac207-dbb9-49d7-bd04-b722159d0314
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -21,7 +20,6 @@ TVSDK 구성 파일(AdobeTVSDKConfig.json)을 사용하여 VAST/VMAP 응답에 �
 >* TVSDK 구성 파일의 이름을 변경하지 마십시오. 이름은 유지해야 합니다. [!DNL AdobeTVSDKConfig.json].
 >* 이 파일은 다음 위치에 배치해야 합니다. [!DNL assets/] 프로젝트의 폴더입니다.
 >
-
 
 에서 두 가지 유형의 규칙을 지정할 수 있습니다. [!DNL AdobeTVSDKConfig.json]: *우선 순위* 규칙 및 *정규화* 규칙.
 

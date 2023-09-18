@@ -1,8 +1,7 @@
 ---
 description: 이벤트 및 알림은 비디오 애플리케이션의 비동기 측면을 관리하는 데 도움이 됩니다.
 title: 플레이어 상태, 활동, 오류 및 로깅에 대한 알림 및 이벤트
-exl-id: 39149c41-920b-4016-9f31-83e772f41cab
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -76,7 +75,6 @@ Primetime 플레이어 알림 시스템의 핵심은 입니다. `Notification` �
    >1. 새 이벤트에 대해 폴링하는 스레드를 구동하는 시간 간격을 줄입니다.
    >
    >1. 알림 목록의 크기를 늘립니다.
-
 
 1. 최신 알림 이벤트 항목을 JSON 형식으로 serialize하고 사후 처리를 위해 원격 서버로 해당 항목을 보냅니다.
 

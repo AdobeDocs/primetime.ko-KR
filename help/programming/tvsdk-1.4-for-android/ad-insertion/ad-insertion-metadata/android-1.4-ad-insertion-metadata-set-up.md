@@ -1,8 +1,7 @@
 ---
 description: MetadataNode 클래스를 확장하는 도우미 클래스 AuditudeSettings를 사용하여 Adobe Primetime 광고 결정 메타데이터를 설정합니다.
 title: 광고 삽입 메타데이터 설정
-exl-id: 5afcdd51-a611-4ea9-88e1-5aa15b8a504a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -15,7 +14,7 @@ MetadataNode 클래스를 확장하는 도우미 클래스 AuditudeSettings를 �
 
 >[!TIP]
 >
->Adobe Primetime ad decisioning을 이전에 Auditude라고 했습니다.
+>이전에 Adobe Primetime ad decisioning을 Auditude라고 했습니다.
 
 광고 메타데이터는에 있습니다. `MediaResource.Metadata` 속성. 새 비디오 재생을 시작할 때 애플리케이션은 올바른 광고 메타데이터 설정을 담당합니다.
 
@@ -45,8 +44,7 @@ MetadataNode 클래스를 확장하는 도우미 클래스 AuditudeSettings를 �
    >
    >미디어 ID는 TVSDK에서 md5 값으로 변환되는 문자열로 사용되며 `u` Primetime ad decisioning URL 요청의 값입니다. 예:
    >
-   >
-   ```
+   >```
    >https://ad.auditude.com/adserver?
    >u=c76d04ee31c91c4ce5c8cee41006c97d
    >   &z=114100 

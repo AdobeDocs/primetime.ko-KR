@@ -1,8 +1,7 @@
 ---
 description: 다음 암호화 옵션은 패키징 시간에 선택되며 라이센스 획득 중에 수정할 수 없습니다.
 title: 키 회전
-exl-id: bcb90f0e-5c61-4c56-a030-2831d9a2a962
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%

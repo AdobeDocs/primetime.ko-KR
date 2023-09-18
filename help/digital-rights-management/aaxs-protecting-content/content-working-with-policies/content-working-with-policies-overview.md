@@ -2,8 +2,7 @@
 title: 개요
 description: 개요
 copied-description: true
-exl-id: 15733120-b1bb-46a7-90d2-4eb11c539d62
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
@@ -26,4 +25,4 @@ A *정책* 는 사용자가 컨텐츠를 보는 방법을 정의합니다. 보�
 
 이 장에서 설명한 Java API에 대한 자세한 내용은 *Adobe 액세스 API 참조*.
 
-정책 관리자 참조 구현에 대한 정보는 다음을 참조하십시오. *Adobe 액세스 참조 구현 사용*.
+정책 관리자 참조 구현에 대한 자세한 내용은 *Adobe 액세스 참조 구현 사용*.

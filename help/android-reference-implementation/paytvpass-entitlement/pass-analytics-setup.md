@@ -1,8 +1,7 @@
 ---
 description: Adobe Analytics 보고를 사용하도록 참조 구현을 설정할 수 있습니다.
 title: Adobe Analytics 보고 구성
-exl-id: 3607f9d4-1069-4722-af0b-121223125112
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -24,14 +23,14 @@ Adobe Analytics 보고를 사용하도록 참조 구현을 설정할 수 있습�
 |---|---|---|
 | 컨텍스트 데이터 | `a.media.pass.MvpdId (String)` | 사용자가 선택한 MVPD |
 |  | `a.media.pass.ClientType` | (문자열) 클라이언트 유형은 &quot;flash&quot;, &quot;html5&quot;, &quot;ios&quot; 또는 &quot;android&quot;입니다. |
-|  |  |  |
+|  | | |
 | 작업 이름 | `a.media.pass.event.AuthenticationDetection` | 인증 워크플로가 완료되었습니다. |
 | 컨텍스트 데이터 | `a.media.pass.Successful` | (부울) 토큰 요청의 성공 여부, true 또는 false |
 |  | `a.media.pass.MvpdId` | (문자열) 사용자가 선택한 MVPD입니다 |
 |  | `a.media.pass.Guid` | (문자열) 추적 ID |
 |  | `a.media.pass.Cached` | (부울) 토큰이 캐시에 이미 있습니다. true 또는 false |
 |  | `a.media.pass.ClientType` | (문자열) 클라이언트 유형은 &quot;flash&quot;, &quot;html5&quot;, &quot;ios&quot; 또는 &quot;android&quot;입니다. |
-|  |  |  |
+|  | | |
 | 작업 이름 | `a.media.pass.event.AuthorizationDetection` | 인증 워크플로우가 완료되었습니다. |
 | 컨텍스트 데이터 | `a.media.pass.Successful` | (부울) 토큰 요청의 성공 여부, true 또는 false |
 |  | `a.media.pass.MvpdId` | (문자열) 사용자가 MVPD를 선택했습니다 |

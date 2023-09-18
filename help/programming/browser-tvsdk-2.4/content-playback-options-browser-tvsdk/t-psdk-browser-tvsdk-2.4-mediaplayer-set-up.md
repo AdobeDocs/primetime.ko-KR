@@ -1,8 +1,7 @@
 ---
 description: MediaPlayer 개체는 미디어 플레이어의 비헤이비어와 기능을 캡슐화합니다.
 title: MediaPlayer 설정
-exl-id: f492b2bb-3280-4306-ac4b-8b8d0fd68409
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%

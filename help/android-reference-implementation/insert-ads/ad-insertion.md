@@ -1,8 +1,7 @@
 ---
 description: 참조 구현은 광고 삽입을 위한 비디오 메타데이터 설정과 VOD 또는 라이브/선형 비디오 스트림으로의 프리롤, 미드롤 및 포스트롤 광고 해결을 포함하여 광고에 대한 플레이어를 설정하는 방법을 보여 줍니다. 또한 클릭 가능한 광고를 처리하는 방법을 보여 줍니다.
 title: 광고 삽입
-exl-id: 3c2d8fca-2a0e-4577-81f3-7b390f6396e1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%

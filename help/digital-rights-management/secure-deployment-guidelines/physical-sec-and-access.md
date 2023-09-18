@@ -1,8 +1,7 @@
 ---
 description: Adobe Primetime DRM 환경을 물리적으로 보호하는 것은 무단 액세스를 방지하는 데 중요합니다.
 title: 물리적 보안 및 액세스
-exl-id: ecfe6036-8068-4936-892b-174cf7d4f480
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%

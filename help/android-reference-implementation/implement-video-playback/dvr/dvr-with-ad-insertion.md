@@ -1,8 +1,7 @@
 ---
 description: 기본적으로 DVR을 지원하는 라이브 스트림은 뷰어가 일시 중지하고 검색할 수 있는 검색 가능한 범위를 노출합니다.
 title: 광고 삽입 DVR
-exl-id: 3471741d-1ae3-4cbe-aa35-4e333aeb83c6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%

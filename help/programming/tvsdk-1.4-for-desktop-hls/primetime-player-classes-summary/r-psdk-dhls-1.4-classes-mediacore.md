@@ -1,8 +1,7 @@
 ---
 description: Primetime 플레이어 API를 사용하여 플레이어의 동작을 사용자 지정할 수 있습니다. 이러한 클래스는 미디어 플레이어와 해당 리소스를 설명합니다.
 title: Mediacore 클래스
-exl-id: 8948484d-a48d-49b4-ac11-b68f1abaf706
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 0%

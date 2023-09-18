@@ -1,8 +1,7 @@
 ---
 description: 참조 구현을 사용자 정의하여 프로덕션 환경에 Adobe Primetime 인증을 통합합니다.
 title: Primetime 인증 통합
-exl-id: ef6dc75d-d00f-481f-a620-4ec402cbebb6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%

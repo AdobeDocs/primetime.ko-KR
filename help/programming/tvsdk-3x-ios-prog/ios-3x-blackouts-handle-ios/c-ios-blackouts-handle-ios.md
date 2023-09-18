@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 라이브 비디오 스트림에서 일시 중단을 처리하고 일시 중단 중에 대체 콘텐츠를 제공합니다.
 title: 일시 중단 처리
-exl-id: 4a2ff371-69a9-4c13-ac61-3c5cd9c83a6f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -19,7 +18,7 @@ TVSDK는 라이브 비디오 스트림에서 일시 중단을 처리하고 일�
 
 1. 앱을 설정하여 라이브 스트림 매니페스트의 일시 중단 태그에 가입합니다.
 
-   TVSDK는 일시 중단 태그를 직접 인식하지 않지만 매니페스트 파일 구문 분석 중에 특정 태그가 발생할 경우 앱에서 알림을 구독할 수 있습니다.
+   TVSDK는 일시 중단 태그를 직접 인식하지는 않지만 매니페스트 파일 구문 분석 중에 특정 태그가 발생하는 경우 앱에서 알림을 구독할 수 있습니다.
 1. 에 대한 알림 수신기 추가 `PTTimedMetadataChangedNotification`.
 
    이 알림은 구독한 태그가 매니페스트에서 구문 분석될 때마다 발송되며 `PTTimedMetadata` 준비되었습니다.

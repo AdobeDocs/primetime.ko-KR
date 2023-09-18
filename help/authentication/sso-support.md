@@ -1,8 +1,7 @@
 ---
 title: 단일 사인온 지원
 description: 단일 사인온 지원
-exl-id: edc3719e-c627-464c-9b10-367a425698c6
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
@@ -35,10 +34,10 @@ ht-degree: 0%
 | tvOS - 새로운 Apple TV | 예 | Platform SSO - 토큰 교환 | Apple 지원에 따라 목록이 여기에 표시됩니다. | tvOS 10에서 Apple &amp; Adobe은 참여 프로그래머 및 MVPD를 위한 SSO 기능을 도입했습니다. 최신 Adobe tvOS SDK를 사용하거나 Adobe의 Clientless REST API를 사용하고 Apple SSO 기능을 구현하여 tvOS 디바이스에서 SSO의 이점을 얻을 수 있습니다. tvOS SDK에 대한 자세한 내용: 여기 와 여기 그리고 Clientless 구현에 대한 자세한 내용은 여기 를 참조하십시오. |
 | Roku | 예 | 공유 인증 토큰(SSO Adobe) | 곧 제공될 중요한 범위 전체 목록입니다. | Roku SSO는 Roku 지침을 준수하는 모든 고객을 위해 Clientless API를 사용하여 즉시 작동하며, 특별한 구현이 필요하지 않습니다. SSO는 Roku가 Adobe에게 안전하게 보내고 있는 장치 식별 정보를 기반으로 합니다. |
 | Amazon FireTV | 예 | 공유 인증 토큰(SSO Adobe) | 곧 제공될 중요한 범위 전체 목록입니다. | FireTV SDK는 Android 기능을 기반으로 단일 사인온을 지원합니다. 현재 Adobe FireTV SDK를 사용 중인 앱 간에만 이 플랫폼에서의 SSO가 가능합니다. 새로운 FireTV SDK에 대한 자세한 정보는 여기에서 확인하십시오. Clientless API 위에 구현된 FireTV 앱은 EOY 2018에서 SSO의 혜택을 누릴 수 있습니다. |
-| Xbox 360 | 아니요 |  |  | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
-| Xbox One | 아니요 |  |  | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
-| 윈도우 . | 아니요 |  |  | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
-| 삼성 | 아니요 |  |  | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
+| Xbox 360 | 아니요 |                                         |                                                     | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
+| Xbox One | 아니요 |                                         |                                                     | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
+| 윈도우 . | 아니요 |                                         |                                                     | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
+| 삼성 | 아니요 |                                         |                                                     | 활용할 수 있는 장치 ID가 없습니다. 앱 ID가 있으므로 사용자가 매번 인증할 필요는 없습니다. |
 
 ### Xbox 360 및 Xbox One의 메모 {#notes-xbox-360}
 

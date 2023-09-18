@@ -2,8 +2,7 @@
 title: 사용자 지정된 VOD 에셋의 예
 description: 사용자 지정된 VOD 에셋의 예
 copied-description: true
-exl-id: eb6b8438-11b4-4199-8186-d81b3797bfaa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%

@@ -2,8 +2,7 @@
 title: 보조 관리자 만들기
 description: 보조 관리자 만들기
 copied-description: true
-exl-id: c3c58361-d173-425c-b59d-ab4427640cdf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
@@ -19,13 +18,13 @@ ht-degree: 0%
 
    * **[!UICONTROL Add user]**.
 
-      사원에게 Adobe 계정이 있는 경우 전자 메일 주소를 입력합니다. 클릭 **[!UICONTROL Add]** 계속합니다.
+     사원에게 Adobe 계정이 있는 경우 전자 메일 주소를 입력합니다. 클릭 **[!UICONTROL Add]** 계속합니다.
 
    * **[!UICONTROL Invite user]** 직원에게 Adobe 계정이 없는 경우 초대하여 만드십시오. 직원의 전자 메일 주소와 이름을 입력하고 **[!UICONTROL Send an invitation]**. 이 사이트는 초대받은 사람에게 초대 이메일을 보냅니다. 이메일에는 초대받은 사람이 계정을 만들 수 있는 adobe.com에 대한 링크가 포함되어 있습니다. 초대받은 사람은 초대장이 전송된 이메일 주소를 사용해야 합니다.
 
-      >[!NOTE]
-      >
-      >사용자가 계정을 만든 경우 관리자는 알림을 받지 않습니다. 다음 확인: **[!UICONTROL User accounts]** 인증서 등록 사이트의 탭을 클릭하여 초대받은 사람이 계정을 만들었는지 확인합니다.
+     >[!NOTE]
+     >
+     >사용자가 계정을 만든 경우 관리자는 알림을 받지 않습니다. 다음 확인: **[!UICONTROL User accounts]** 인증서 등록 사이트의 탭을 클릭하여 초대받은 사람이 계정을 만들었는지 확인합니다.
 
 1. 사용자를 추가한 경우 **[!UICONTROL User accounts]** 탭이 열립니다. 다음을 수행합니다.
 

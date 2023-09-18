@@ -2,8 +2,7 @@
 title: 경로 및 클래스 경로 구성
 description: 경로 및 클래스 경로 구성
 copied-description: true
-exl-id: e6e9f837-4e3d-43e1-971d-3fa0ccaeff39
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -19,6 +18,7 @@ ht-degree: 0%
    * **Linux / [!DNL libjsafe.so] -** 다음 포함 디렉터리 [!DNL libjsafe.so] 은(는) 경로에 있어야 합니다(다른 플랫폼에서도 기본 Crypto-J 라이브러리를 사용할 수 있음). 예를 들어, 을 설정합니다. [!DNL libjsafe.so] 날짜 `LD_LIBRARY_PATH`.
 
    * **Windows / [!DNL jsafe.dll] -** Windows의 상대 [!DNL libjsafe.so] 적절함 [!DNL jsafe.dll].
+
    이러한 라이브러리는 다음에서 사용할 수 있습니다. [!DNL thirdparty] 라이브러리 폴더입니다.
 1. 다음 중 하나를 넣습니다. [!DNL adobe-flashaccess-certs] 클래스 경로에 있는 jar 파일입니다.
 

@@ -1,8 +1,7 @@
 ---
 title: 프록시 MVPD 웹 서비스
 description: 프록시 MVPD 웹 서비스
-exl-id: f75cbc4d-4132-4ce8-a81c-1561a69d1d3a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -209,9 +208,9 @@ Adobe은 당사의 공개 웹 서비스에서/로 프록시화된 MVPD를 게시
 * `id` (필수) - 프록시화된 MVPD ID는 다음 문자 중 하나를 사용하여 MVPD의 이름과 관련된 문자열이어야 합니다(추적 목적으로 프로그래머에게 노출됨).
    * 모든 영숫자, 밑줄(&quot;_&quot;) 및 하이픈(&quot;-&quot;).
    * idID는 다음 정규 표현식을 준수해야 합니다.
-      `(a-zA-Z0-9((-)|_)*)`
+     `(a-zA-Z0-9((-)|_)*)`
 
-      따라서 하나 이상의 문자가 있어야 하며, 문자로 시작하고, 문자, 숫자, 대시 또는 밑줄로 계속해야 합니다.
+     따라서 하나 이상의 문자가 있어야 하며, 문자로 시작하고, 문자, 숫자, 대시 또는 밑줄로 계속해야 합니다.
 
 * `iframeSize` (선택 사항) - iframeSize 요소는 선택 사항이며 MVPD 인증 페이지가 iFrame에 있어야 하는 경우 iFrame의 크기를 정의합니다. 그렇지 않으면 iframeSize 요소가 없으면 전체 브라우저 리디렉션 페이지에서 인증이 발생합니다.
 * `requestorIds` (선택 사항) - requestorIds 값은 Adobe에서 제공합니다. 프록시화된 MVPD를 하나 이상의 requestorId와 통합해야 합니다. 프록시화된 MVPD 요소에 &quot;requestorIds&quot; 태그가 없으면 프록시화된 MVPD는 프록시 MVPD 아래에 통합된 사용 가능한 모든 요청자와 통합됩니다.

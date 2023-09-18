@@ -1,8 +1,7 @@
 ---
 title: Primetime Authentication인 Adobe&reg에 오신 것을 환영합니다!
 description: Primetime Authentication 개요 Adobe&reg 시작
-exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -25,15 +24,17 @@ Adobe Primetime 인증은 TV Everywhere에 대한 권한 부여 솔루션으로,
 
 ## 자주 사용하는 도움말 및 FAQ {#help-faqs}
 
-| **특별 포함된 항목** | |-| | <ul><li>iOS용 단일 사인온</li><li>[프로모션 임시 패스](/help/authentication/promotional-temp-pass.md)</li><li>[홈 기반 인증(HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA 인포그래픽](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Primetime TVE 대시보드 사용 안내서](/help/authentication/tve-dashboard-user-guide.md)</li></ul> |
+| **특별 포함된 항목** |
+|-|
+| <ul><li>iOS용 단일 사인온</li><li>[프로모션 임시 패스](/help/authentication/promotional-temp-pass.md)</li><li>[홈 기반 인증(HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA 인포그래픽](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Primetime TVE 대시보드 사용 안내서](/help/authentication/tve-dashboard-user-guide.md)</li></ul> |
 
 | **프로그래머용** | **MVPD용** |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <ul><li>[프로그래머 킥스타트 안내서](/help/authentication/programmer-kickstart-guide.md)</li><li>**MVPD 선택기(&quot;선택기&quot;)**</li><li>[사용자 메타데이터](/help/authentication/user-metadata.md)</li></ul> | <ul><li>[MVPD 킥스타트 안내서](/help/authentication/mvpd-kickstart-guide.md)</li><li>[인증](/help/authentication/authn-usecase.md)</li><li>[인증](/help/authentication/authz-usecase.md)</li><li>[로그아웃](/help/authentication/usecase-mvpd-logout.md)</li></ul> |
 | **기본 앱 클라이언트의 경우** | **모든 사용자** |
 | <ul><li>[iOS 기술 개요](/help/authentication/iostvos-sdk-overview.md)</li><li>[Android 기술 개요](/help/authentication/android-sdk-overview.md)</li></ul> | <ul><li>[기술 문서](/help/authentication/technical-paper.md)</li><li>[에스컬레이션 절차](/help/authentication/escalation-procedures.md)</li><li>**지원되는 시스템**</li><li>[용어집](/help/authentication/glossary.md)</li></ul> |
-| **스마트 기기용** |  |
-| <ul><li>[Clientless 기술 개요](/help/authentication/rest-api-overview.md)</li><li>[클라이언트 없는 API](/help/authentication/rest-api-reference.md)</li></ul> |  |
+| **스마트 기기용** | |
+| <ul><li>[Clientless 기술 개요](/help/authentication/rest-api-overview.md)</li><li>[클라이언트 없는 API](/help/authentication/rest-api-reference.md)</li></ul> | |
 
 >[!IMPORTANT]
 >
@@ -42,6 +43,7 @@ Adobe Primetime 인증은 TV Everywhere에 대한 권한 부여 솔루션으로,
 >[지원 팀에 이메일 보내기](mailto:tve-support@adobe.com) 는 문제 또는 문제 보고서의 첫 번째 단계이기도 합니다.
 >
 >다음 항목이 있는 경우: [심각도 1 라이브](/help/authentication/escalation-procedures.md) 문제 및 이메일을 보냈으며 응답 없이 30분이 경과되었습니다. 다음을 참조하십시오. [에스컬레이션 절차](/help/authentication/escalation-procedures.md) 전화 번호를 위한 문서입니다.
+>
 
 
 ## 필요한 항목을 찾으려면 {#how-to-search}

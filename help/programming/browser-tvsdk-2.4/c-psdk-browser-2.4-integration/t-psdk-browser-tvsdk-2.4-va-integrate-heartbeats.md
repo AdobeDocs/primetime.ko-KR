@@ -1,8 +1,7 @@
 ---
 description: 비디오 사용을 추적하고 분석하도록 플레이어를 구성할 수 있습니다.
 title: 비디오 분석 초기화 및 구성
-exl-id: e0bf461b-a431-4fba-bd3d-c38be307a92f
-source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
@@ -54,11 +53,11 @@ ht-degree: 0%
    
    * 인스턴스화에는 Adobe에서 제공하는 Marketing Cloud 조직 ID 입력 매개 변수가 필요합니다.
 
-      문자열 값입니다.
+     문자열 값입니다.
    * VisitorAPI 라이브러리에 대한 유일한 구성 옵션은 현재 사용자의 고유 식별자를 제공하는 백엔드 끝점의 URL입니다.
    * 방문자 추적 서버의 URL은 Analytics 추적 서버의 URL과 동일합니다.
 
-      방문자 ID 서비스 구현에 대한 정보는 다음을 참조하십시오. [방문자 ID 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en).
+     방문자 ID 서비스 구현에 대한 정보는 다음을 참조하십시오. [방문자 ID 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en).
 
    ```js
    var_visitor = new Visitor("MARKETING_CLOUD_ORG_ID");
@@ -119,11 +118,12 @@ ht-degree: 0%
       * 항상 각 컨텐츠 재생 세션에 대한 새 추적기 인스턴스를 만들고 이전 참조를 제거합니다(미디어 플레이어 인스턴스를 분리한 후).
       * 하위 단계 1에서 만든 메타데이터는 Video Analytics 추적기의 생성자에 제공해야 합니다.
 
-         ```js
-         var videoAnalyticsMetadata = getVideoAnalyticsMetadata();
-         videoAnalyticsProvider = new AdobePSDK.VA.VideoAnalyticsProvider(videoAnalyticsMetadata);
-         videoAnalyticsProvider.attachMediaPlayer(player);
-         ```
+        ```js
+        var videoAnalyticsMetadata = getVideoAnalyticsMetadata();
+        videoAnalyticsProvider = new AdobePSDK.VA.VideoAnalyticsProvider(videoAnalyticsMetadata);
+        videoAnalyticsProvider.attachMediaPlayer(player);
+        ```
+
    3. Video Analytics 추적기를 제거합니다.
 새 컨텐츠 재생 세션을 시작하기 전에 비디오 추적기의 이전 인스턴스를 제거합니다. 콘텐츠 완료 이벤트(또는 알림)를 받은 후 비디오 추적기 인스턴스를 제거하기 전에 몇 분 정도 기다리십시오. 인스턴스를 즉시 제거하면 비디오 전체 Ping을 전송하는 Video Analytics 추적기의 기능에 방해가 될 수 있습니다.
 

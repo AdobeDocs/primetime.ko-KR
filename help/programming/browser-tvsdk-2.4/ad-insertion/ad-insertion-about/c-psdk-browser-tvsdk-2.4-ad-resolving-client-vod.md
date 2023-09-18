@@ -1,8 +1,7 @@
 ---
 description: VOD(video-on-demand) 콘텐츠의 경우, 브라우저 TVSDK는 타임라인 지속 시간이 늘어나도록 광고를 기본 콘텐츠에 연결하여 광고 브레이크를 삽입합니다.
 title: VOD 광고 해결 및 삽입
-exl-id: c2a2f14b-c90d-47fc-9dcc-eff8b1491dde
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -25,7 +24,7 @@ VOD(video-on-demand) 콘텐츠의 경우, 브라우저 TVSDK는 타임라인 지
 * 삽입됨
 * 삭제됨
 
-   예를 들어 광고 없는 경험을 제공하기 위해 콘텐츠에서 기본 제공 광고를 삭제할 수는 없습니다.
+  예를 들어 광고 없는 경험을 제공하기 위해 콘텐츠에서 기본 제공 광고를 삭제할 수는 없습니다.
 * 대체됨
 
-   예를 들어 기본 제공 광고를 타깃팅된 광고로 대체할 수 없습니다.
+  예를 들어 기본 제공 광고를 타깃팅된 광고로 대체할 수 없습니다.

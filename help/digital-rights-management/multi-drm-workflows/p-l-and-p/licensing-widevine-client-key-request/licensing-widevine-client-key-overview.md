@@ -1,8 +1,7 @@
 ---
 description: 콘텐츠 패키징으로 인한 DASH 콘텐츠를 재생하려면, TVSDK 클라이언트는 키 획득 워크플로우에서 패키징 프로세스 중에 전달된 콘텐츠 암호 해독 키를 획득해야 합니다. 클라이언트 콘텐츠 암호 해독 키는 일반적으로 클라이언트로부터의 하나 이상의 HTTP/HTTPS 게시물에 대한 응답으로 Widevine/PlayReady 라이센스 서버에 의해 클라이언트에 전달됩니다.
 title: 클라이언트 키 요청 워크플로 개요
-exl-id: ae600cbd-415b-441a-bf01-f259993071f2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 이 절차는 사용자가 닫힌 캡션 트랙을 선택할 수 있는 단추를 만드는 방법의 예입니다.
 title: 사용자가 캡션 트랙을 변경할 수 있음
-exl-id: b8c058ef-384c-4ad4-a289-dfd6bf3dfbdb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%

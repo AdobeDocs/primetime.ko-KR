@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 일시 중단 기간 처리를 위한 API 및 샘플 코드를 제공합니다.
 title: 일시 중단 처리 구현
-exl-id: 57823364-fdb3-41c3-8441-008e991f19a7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%

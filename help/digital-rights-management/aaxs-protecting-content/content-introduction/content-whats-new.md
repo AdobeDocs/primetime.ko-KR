@@ -1,8 +1,7 @@
 ---
 description: Adobe® 액세스™은 고부가가치 시청각 콘텐츠를 위한 고급 디지털 권한 관리 및 콘텐츠 보호 솔루션입니다. Java API를 사용하여 만드는 도구를 사용하여 정책을 만들고, 오디오 및 비디오 콘텐츠가 들어 있는 파일에 정책을 적용하고, 해당 파일을 암호화할 수 있습니다. 이러한 작업을 수행하기 위한 높은 수준의 단계는 다음과 같다
 title: 개요
-exl-id: cf081058-9b41-4b09-9258-a7d873799846
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%

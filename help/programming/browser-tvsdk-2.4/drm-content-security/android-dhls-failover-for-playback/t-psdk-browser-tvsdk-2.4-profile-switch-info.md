@@ -1,8 +1,7 @@
 ---
 description: 미디어 플레이어가 현재 프로필을 새 프로필로 전환하면 전환할 때, 너비 및 높이 정보 또는 다른 비트율이 사용된 이유 등을 포함하여 스위치에 대한 정보를 검색할 수 있습니다.
 title: 프로필 전환에 대한 정보 가져오기
-exl-id: 3ef4b319-dd78-4abd-9c2d-ab1d608f6cea
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%

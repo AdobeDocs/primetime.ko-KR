@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 타임라인 내에서 발생하는 광고에 대한 정보를 제공합니다.
 title: 타임라인 광고 클래스
-exl-id: 004c706a-55cc-446a-93b1-c5c7c011ba42
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%

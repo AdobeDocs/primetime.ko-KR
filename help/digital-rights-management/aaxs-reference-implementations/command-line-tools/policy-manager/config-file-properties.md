@@ -2,8 +2,7 @@
 title: 구성 파일 속성
 description: 구성 파일 속성
 copied-description: true
-exl-id: 6405126d-4cf2-4ffc-821d-fbfdc00b60ef
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 0%
@@ -92,7 +91,7 @@ ht-degree: 0%
       <li id="li_25CAF96C27F34848A95B2E3693847C71"><span class="codeph"> 시작</span> (필수) - 시작 간격은 클라이언트가 마지막 동기화 이후 몇 분 동안 서버와의 동기화를 시작해야 함을 지정합니다. </li> 
       <li id="li_CC9068CFE75645029C947C9E1B53351F"><span class="codeph"> 강제</span> (선택 사항) - 강제 동기화 확률은 재생 중에 클라이언트가 동기화 메시지를 강제로 수행해야 하는 확률(0-100)입니다. </li> 
       <li id="li_C31A6250F19348FBB8B7569D00C6314E"><span class="codeph"> 하드 스톱</span> (선택 사항) - 하드 중단 간격은 동기화할 수 없는 경우 클라이언트가 재생에 실패하는 시간(분)입니다. 설정된 경우 시작 간격보다 커야 합니다. </li> 
-     </ul>업데이트하는 동안 다음을 사용하십시오. <span class="codeph"> -sync</span> 동기화 요구 사항을 제거할 수 있는 나머지 인수 없이 </p> </td> 
+     </ul>업데이트하는 동안 다음을 사용하십시오. <span class="codeph"> -sync</span> 동기화 요구 사항을 제거할 수 있는 나머지 인수 없음 </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.useRootLicense</span> </td> 

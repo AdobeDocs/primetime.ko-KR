@@ -3,8 +3,7 @@ title: Android™용 TVSDK 2.7 릴리스 노트
 description: Android™용 TVSDK 2.7 릴리스 노트에서는 TVSDK Android™ 2.7의 새로운 기능 또는 변경 사항, 해결된 문제 및 알려진 문제, 장치 문제에 대해 설명합니다
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: d64f0ef2-60a9-43a1-b2f9-44764a570538
-source-git-commit: 59ea8008c828f3bdf275fea5cc2a59c37b0c4845
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '4037'
 ht-degree: 0%
@@ -25,9 +24,7 @@ Android™ 참조 플레이어는 배포의 샘플/디렉터리에 있는 Androi
 >
 >1. 에서 VideoHeartbeat.jar 다운로드 [https://github.com/Adobe-Marketing-Cloud/media-sdks/releases](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases) (Android™ v2.0.0용 VideoHeartbeat 라이브러리)
 >1. VideoHeartbeat.jar를 libs/ 폴더에 추출합니다.
-
 >
-
 
 ## 새로운 기능 {#new-features}
 
@@ -46,7 +43,7 @@ TVSDK 2.7은 순차적 해결 대신 광고 브레이크에서 모든 광고 요
 * **TVSDK 2.5는 Android™ P를 지원합니다**
 * **배경 오디오 활성화**
 
-   앱이 전경에서 배경으로 이동할 때 오디오 재생을 활성화하려면 플레이어가 준비 상태일 때 앱이 true를 인수로 사용하여 MediaPlayer의 enableAudioPlaybackInBackground API를 호출해야 합니다.
+  앱이 전경에서 배경으로 이동할 때 오디오 재생을 활성화하려면 플레이어가 준비 상태일 때 앱이 true를 인수로 사용하여 MediaPlayer의 enableAudioPlaybackInBackground API를 호출해야 합니다.
 
 * **MediaPlayer 클래스의 alwaysUseAudioOutputLatency(boolean val)**
 
@@ -60,14 +57,14 @@ TVSDK 2.7은 순차적 해결 대신 광고 브레이크에서 모든 광고 요
 
 * **부분 광고 브레이크 삽입**
 
-   부분적으로 시청한 광고에 대한 추적을 실행하지 않고 광고 중간에 참여하는 TV와 같은 경험.\
-   예: 사용자가 3개의 30초 광고로 구성된 90초 광고 브레이크 중간(40초)에 참가합니다. 중간 광고 두 번째 광고에 10초입니다.
+  부분적으로 시청한 광고에 대한 추적을 실행하지 않고 광고 중간에 참여하는 TV와 같은 경험.\
+  예: 사용자가 3개의 30초 광고로 구성된 90초 광고 브레이크 중간(40초)에 참가합니다. 중간 광고 두 번째 광고에 10초입니다.
    * 두 번째 광고가 나머지 기간(20초) 동안 재생되고 세 번째 광고가 재생됩니다.
    * 재생되는 부분 광고(두 번째 광고)에 대한 광고 추적기는 실행되지 않습니다. 세 번째 광고의 추적기만이 발사된다.
 
 * **HTTPS를 통한 보안 광고 로드**
 
-   Adobe Primetime은 https를 통해 primetime 광고 서버 및 CRS에 대한 첫 번째 호출을 요청하는 옵션을 제공합니다.
+  Adobe Primetime은 https를 통해 primetime 광고 서버 및 CRS에 대한 첫 번째 호출을 요청하는 옵션을 제공합니다.
 
 * **AdSystem 및 Creative Id가 CRS 요청에 추가됨**
 
@@ -81,7 +78,7 @@ Android™ TVSDK v2.5.4는 다음 업데이트 및 API 변경 사항을 제공�
 
 * 의 기본값 변경 `WebViewDebbuging`
 
-   다음 `WebViewDebbuging` 값이 (으)로 설정됨 _False_ 기본적으로. 활성화하려면 을 호출하십시오. `setWebContentsDebuggingEnabled` 끝 _True_ 을 클릭합니다.
+  다음 `WebViewDebbuging` 값이 (으)로 설정됨 _False_ 기본적으로. 활성화하려면 을 호출하십시오. `setWebContentsDebuggingEnabled` 끝 _True_ 을 클릭합니다.
 
 * OpenSSL 및 Curl 버전 업그레이드 `libcurl` v7.57.0 및 OpenSSL을 v1.0.2k로 변환
 * VAST 응답 개체에 대한 앱 수준 액세스 응용 프로그램에 대한 VAST 응답 개체의 액세스를 제공하는 새로운 API NetworkAdInfo::getVastXml()이 도입되었습니다.
@@ -92,7 +89,7 @@ Android™ TVSDK v2.5.3에서는 다음 업데이트 및 API 변경 사항을 �
 
 * CRS를 사용하는 모든 TVSDK 고객은 Android™에서 TVSDK 2.5.3.85 또는 최신 버전으로 앱을 업그레이드하는 것이 좋습니다. 기존 앱 구현에 대한 드롭인 대체입니다. TVSDK 업그레이드 후 프록시 도구(예: Charles)에서 CRS 크리에이티브 URL 요청을 확인하고 경로의 호스트 이름 및 버전이 아래 샘플 URL 구조에서와 같이 반영되는지 확인합니다.
 
-   `https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784 bf3586d.m3u8`
+  `https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784 bf3586d.m3u8`
 
 * 사용자 지정 가능한 TVSDK의 사용자 에이전트: 사용자 에이전트를 사용자 지정하기 위해 몇 가지 새로운 API를 추가했습니다.
 
@@ -138,9 +135,9 @@ TVSDK가 연결을 열면 서버에 *keep-live* 연결. 일부 서버는 이 유
    * **적응형 비트 전송률(ABR)을 사용한 트릭 플레이 -** 이 기능을 사용하면 TVSDK가 트릭 재생 모드에 있는 동안 iFrame 스트림 간을 전환할 수 있습니다. iFrame 이외의 프로필을 사용하여 더 낮은 속도에서 트릭 플레이를 수행할 수 있습니다.
    * **매끄러운 트릭 플레이 -** 이러한 개선 사항은 사용자 경험을 향상시킵니다.
 
-          * 대역폭 및 버퍼 프로필을 기반으로 트릭 플레이 중 적응형 비트 전송률 및 프레임 전송률 선택
-          * IDR 스트림 대신 주 스트림을 사용하여 최대 30fps 고속 재생을 가져옵니다.
-      
+         * 대역폭 및 버퍼 프로필을 기반으로 트릭 플레이 중 적응형 비트 전송률 및 프레임 전송률 선택
+         * IDR 스트림 대신 주 스트림을 사용하여 최대 30fps 고속 재생을 가져옵니다.
+     
 * **콘텐츠 보호**
 
    * **해상도 기반 출력 보호 -** 이 기능은 재생 제한을 특정 해상도에 연결하여 보다 세밀한 DRM 컨트롤을 제공합니다.
@@ -163,19 +160,19 @@ TVSDK는 고객 판매 계약을 준수하여 지표를 자동으로 수집하�
 * **크기 사용 가능한 이벤트 리스너**
    * 이제 SizeAvailableEvent의 getHeight() 및 getWidth() 메서드가 각각 height와 width의 출력을 반환합니다. 디스플레이 종횡비는 다음과 같이 계산할 수 있습니다.
 
-      ```
-      SizeAvailableEvent e;
-      
-      DAR = e.getWidth()/ e.getHeight();
-      
-      Storage Aspect Ratio in terms of Sar width and Sar height can also be used to calculate Frame width and Frame height:
-      
-      SAR = e.getSarWidth()/e.getSarHeight();
-      
-      frameHeight = e.getHeight();
-      
-      frameWidth = e.getWidth()/SAR;    
-      ```
+     ```
+     SizeAvailableEvent e;
+     
+     DAR = e.getWidth()/ e.getHeight();
+     
+     Storage Aspect Ratio in terms of Sar width and Sar height can also be used to calculate Frame width and Frame height:
+     
+     SAR = e.getSarWidth()/e.getSarHeight();
+     
+     frameHeight = e.getHeight();
+     
+     frameWidth = e.getWidth()/SAR;    
+     ```
 
 * **쿠키**
 
@@ -339,7 +336,7 @@ Android™용 TVSDK는 비디오 애플리케이션에 기능을 추가하기 �
 * Zendesk#25590 - 향상: TVSDK 쿠키 저장소(C++ ~ Java™)
    * Android™ TVSDK는 이제 Java™ 레이어(Android™ 애플리케이션의 CookieStore에 저장됨)와 C++ TVSDK 레이어 간 쿠키 액세스를 지원합니다.
 * Zendesk#32252 - TVSDK_Android_2.5.2.12에는 PTPLAY-20269에 대한 수정 사항이 없는 것 같습니다. 이 문제는 수정되었으며 2.5.2 분기에 통합되었습니다.
-* Zendesk#31806 - 응답 xml에 빈 태그가 있으므로 준비 중인 플레이어의 감사 표시가 준비 중 상태로 남아 있었습니다. 이제 문제가 해결되었습니다.
+* Zendesk#31806 - 응답 xml에 빈 태그가 있으므로 플레이어 준비에 있는 Auditude 스틱이 준비 중 상태에서 멈췄습니다. 이제 문제가 해결되었습니다.
 * Zendesk#31727 - TVSDK 2.5 자막 문자가 삭제되거나 철자가 잘못되었습니다.
    * 문제가 수정되었으며 문자를 삭제/오기하지 않습니다.
 * Zendesk#31485 - DrmManager in 2.5
@@ -364,15 +361,15 @@ Adobe Primetime 버전 문자열이 시스템 사용자 에이전트에 추가�
 * Zendesk #30809 Missing SEEK_END 이벤트로 인해 앱이 재생 상태로 전환되지 않습니다.
 * Zendesk #30415 Closed Caption의 &#39;Cyan&#39; 색상은 이제 이전 Primetime TVSDK 릴리스와 비교하여 더 어두운 색조의 파란색(청록색)입니다.
 
-   색상이 짙은 청록색에서 청록색으로 변경됩니다.
+  색상이 짙은 청록색에서 청록색으로 변경됩니다.
 
 * Zendesk #30727 VOD 광고가 다운로드/해결되지 않습니다.
 
-   명시적 닫기 태그(&#39;)가 없는 빈 VAST 태그가 있는 경우 VMAP XML에서&lt;/vast>&#39;) 그리고 그 뒤에 줄바꿈 문자가 없으면 VMAP XML이 제대로 구문 분석되지 않고 광고가 재생되지 않을 수 있습니다.
+  명시적 닫기 태그(&#39;)가 없는 빈 VAST 태그가 있는 경우 VMAP XML에서&lt;/vast>&#39;) 그리고 그 뒤에 줄바꿈 문자가 없으면 VMAP XML이 제대로 구문 분석되지 않고 광고가 재생되지 않을 수 있습니다.
 
 **Android™ TVSDK 2.5.1**
 
-* 장치별(Samsung Galaxy Tab 4) 충돌, 시청이 가능한 VOD DRM LBA 및 광고를 클릭합니다.
+* 디바이스별 (Samsung Galaxy Tab 4) 충돌; Auditude 및 클릭 광고가 있는 VOD DRM LBA.
 * VHL - 오프셋에서 콘텐츠를 시작할 때 잘못된 하트비트 호출이 전송됩니다.
 * VPAID 광고가 재생되면 VHL 하트비트가 이벤트를 호출합니다:type:재생 광고가 누락되었습니다.
 * 완료 상태로 전환되면 플레이어는 포스트롤 광고에 대한 SKIP adBreakPolicy를 사용하여 재생 상태로 돌아갑니다.

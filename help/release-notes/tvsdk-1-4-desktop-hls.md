@@ -4,8 +4,7 @@ description: 데스크탑 HLS용 TVSDK 릴리스 노트에서는 TVSDK DHLS의 �
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 5e227c99-acf6-4b16-a35a-68e2928fdbfd
-source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '5194'
 ht-degree: 0%
@@ -665,7 +664,7 @@ Mac Chrome에서 스트림이 깜박이기 시작하고 결국 검정색으로 �
 * Zendesk #3601 - 개선 요청: 래퍼 컴패니언 관리
 
    * TVSDK는 인라인에 닫히는 리소스(html, iframe 또는 정적 )를 포함하는 래퍼 컴패니언을 표시합니다. ( 인라인에 해당 크기에 대한 인라인이 포함되지 않은 경우)
-   * 표시용으로 사용되지 않는 한 리소스와 함께 래퍼는 무시됩니다. ( 추적에 를 사용하지 않음)
+   * 디스플레이에 사용되지 않는 한 리소스와 함께 래퍼는 무시됩니다. ( 추적에 를 사용하지 않음)
    * 리소스가 없는 래퍼 동반자만 추적 목적으로 사용됩니다. ( 추적만 포함하는 래퍼 컴패니언 )
 
 **버전 1.4.9**
@@ -695,7 +694,7 @@ hls 형식의 mime 유형은 대/소문자를 구분합니다. 올바르지 않�
 
 **버전 1.4.6**
 
-* Zendesk #2652 - 데스크탑 HLS용 Auditude 설명서, 데스크탑 HLS 설명서용 Auditude media_id를 명확히 함
+* Zendesk #2652 - 데스크탑 HLS용 Auditude 설명서, 데스크탑 HLS 설명서용 Auditude media_id 명확화
 
 **버전 1.4.5**
 

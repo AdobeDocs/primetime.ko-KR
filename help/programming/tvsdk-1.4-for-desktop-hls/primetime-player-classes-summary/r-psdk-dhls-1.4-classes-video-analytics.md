@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 TVSDK와 Adobe 비디오 분석 간에 인터페이스를 제공합니다.
 title: 비디오 분석 클래스
-exl-id: 980d8e36-cfd1-45d4-8c40-f3c53e29b6f6
-source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%

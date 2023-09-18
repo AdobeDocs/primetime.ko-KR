@@ -1,8 +1,7 @@
 ---
 description: 대체 오디오는 MediaPlayer를 사용하여 M3U8 HLS 재생 목록에 지정되어 있으며 여러 대체 오디오 스트림을 포함할 수 있는 비디오를 재생합니다.
 title: 대체 오디오 트랙 액세스
-exl-id: 88fa8f42-59d7-4a57-90c6-4c23b2ea7e00
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 0%

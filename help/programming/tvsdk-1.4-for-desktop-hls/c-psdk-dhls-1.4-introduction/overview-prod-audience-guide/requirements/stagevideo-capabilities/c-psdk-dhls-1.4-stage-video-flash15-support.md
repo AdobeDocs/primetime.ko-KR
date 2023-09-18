@@ -1,8 +1,7 @@
 ---
 description: Flash 15 이상부터 StageVideo를 사용한 하드웨어 렌더링을 사용할 수 없는 경우 StageVideo는 소프트웨어 StageVideo 개체로 원활하게 돌아갑니다.
 title: StageVideo에 대한 Flash 15 지원
-exl-id: 23ef0806-3aa5-4c48-a4f7-4ad9b72bdcc9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -18,11 +17,11 @@ Flash 15 이상부터 StageVideo를 사용한 하드웨어 렌더링을 사용�
 * 응용 프로그램에서 코드를 변경할 필요가 없습니다.
 * TVSDK를 변경할 필요가 없습니다.
 
-   StageVideo에서 소프트웨어로 폴백을 사용하기 위해 TVSDK 업데이트가 필요하지 않습니다.
+  StageVideo에서 소프트웨어로 폴백을 사용하기 위해 TVSDK 업데이트가 필요하지 않습니다.
 * Flash 15에 대해 응용 프로그램을 다시 컴파일해야 합니다.
 * Flash 15에 대해 다시 컴파일하는 애플리케이션은 이들 애플리케이션이 Flash 15에 도입된 새로운 API를 사용하지 않는 한 Flash Player 14 및 이전 버전에서 계속 작동합니다.
 
-   Flash 14 응용 프로그램에서 새 Flash 15 API를 사용해야 하는 경우 런타임에 Flash Player 14에서 응용 프로그램이 실패하지 않도록 개체 유형에 대한 캐스팅으로 API를 동적으로 호출해야 합니다.
+  Flash 14 응용 프로그램에서 새 Flash 15 API를 사용해야 하는 경우 런타임에 Flash Player 14에서 응용 프로그램이 실패하지 않도록 개체 유형에 대한 캐스팅으로 API를 동적으로 호출해야 합니다.
 
 ## HTML 오버레이 {#html-overlays}
 

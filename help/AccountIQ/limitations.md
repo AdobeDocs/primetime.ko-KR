@@ -1,8 +1,7 @@
 ---
 title: 제한 사항 및 알려진 문제
 description: 제품의 알려진 문제.
-exl-id: 08d65716-8b6a-4300-acda-fec63e1e6815
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -15,7 +14,7 @@ Adobe은 오퍼링을 통해 강력한 기능과 원활한 사용자 경험을 �
 
 * 대시보드 또는 보고서 페이지에서 집단을 정의할 때 현재 다음과 같은 지표를 추가할 옵션이 없습니다. **장치 수** 세그먼트를 세분화합니다. 이 기능은 향후 버전에서 사용할 수 있습니다.
 
-* 계정 IQ는 개별 계정에 대한 공유 점수를 추정할 때 기업이 상당한 자신감을 가지고 공유 작업을 수행할 수 있도록 보수적인 접근 방식을 취합니다. 그러나 이 접근 방식은 여러 계정에서 집계할 때 총 공유 양을 과소평가하는 경향이 있습니다.
+* 계정 IQ는 개별 계정에 대한 공유 점수를 추정할 때 기업이 상당한 자신감을 가지고 공유 작업을 수행할 수 있도록 보수적인 접근 방식을 취합니다. 그러나 이 접근 방식은 여러 계정에서 집계할 때 총 공유 양을 과소 평가하는 경향이 있습니다.
 
 * 다음 [전체 공유 점수](/help/AccountIQ/dashboard.md#overall-sharing-score) 현재에 있는 요소만 해당 [공유 수준](/help/AccountIQ/dashboard.md#sharing-level) 및 [공유 계정의 사용](/help/AccountIQ/dashboard.md#usage-from-shared-accounts). 이후 버전은 추가 지표를 반영합니다.
 

@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK는 비디오 애플리케이션에 기능을 추가하기 위해 구현할 수 있는 여러 HLS 기능을 지원합니다.
 title: 지원되는 HLS 기능
-exl-id: 111a6683-fb5c-4f0a-8665-5b1aab77056c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%

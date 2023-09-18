@@ -1,8 +1,7 @@
 ---
 title: 사전 코드 변환 API
 description: just-in-time repackaging API를 사용하여 광고 크리에이티브를 미리 코드 변환할 수 있으므로 콘텐츠 호환 버전은 필요할 때 사용할 수 있으며, JIT(Just-in-time) 리패키징과 관련된 2~4분 지연을 방지할 수 있습니다.
-exl-id: d45668e0-ec8a-4e5a-a56b-cffff27561f2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -31,27 +30,27 @@ CRS에 트랜스코딩 요청을 제출하려면 다음과 같이 HTTP 메시지
 
 * **본문 -** 다음 예제와 같은 XML
 
-   ```xml
-   <RepackageList>
-       <Repackage>
-           <AdSystem>Auditude</AdSystem>
-           <AdID>AUD1</AdID>
-           <CreativeID>AUD-CR1</CreativeID>
-           <CreativeURL>https://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
-           <Zone>3</Zone>
-       </Repackage>
-       <Repackage>
-           <AdSystem>Auditude</AdSystem>
-           <AdID>AUD2</AdID>
-           <CreativeID>AUD-CR1</CreativeID>
-           <CreativeURL>https://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
-           <Format>id3 targetdur=5</Format>
-           <Zone>3</Zone>
-       </Repackage>
-   </RepackageList>
-   ```
+  ```xml
+  <RepackageList>
+      <Repackage>
+          <AdSystem>Auditude</AdSystem>
+          <AdID>AUD1</AdID>
+          <CreativeID>AUD-CR1</CreativeID>
+          <CreativeURL>https://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
+          <Zone>3</Zone>
+      </Repackage>
+      <Repackage>
+          <AdSystem>Auditude</AdSystem>
+          <AdID>AUD2</AdID>
+          <CreativeID>AUD-CR1</CreativeID>
+          <CreativeURL>https://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
+          <Format>id3 targetdur=5</Format>
+          <Zone>3</Zone>
+      </Repackage>
+  </RepackageList>
+  ```
 
-다음 `RepackageList` 본문의 블록은 1에서 300까지 포함할 수 있습니다. `Repackage` 블록. 의 수인 경우 `Repackage` 본문의 블록이 300을 초과하면 HTTP 요청이 실패하고 다음 오류가 발생합니다.
+다음 `RepackageList` 본문의 블록은 1에서 300까지 포함할 수 있습니다. `Repackage` 블록. 의 수인 경우 `Repackage` 본문의 블록이 300을 초과하면 다음 오류로 인해 HTTP 요청이 실패합니다.
 
 ```
 <codeph>
@@ -70,23 +69,24 @@ CRS에 트랜스코딩 요청을 제출하려면 다음과 같이 HTTP 메시지
 * **`CreativeURL`** (필수) - 트랜스코딩할 광고 크리에이티브의 위치(URI)입니다. 이는 VAST `MediaFile` 요소를 생성하지 않습니다.
 
 * `CreativeID` (선택 사항) - 광고 경험의 일부로 포함될 광고 크리에이티브의 식별자입니다.
-* **`Zone`** (필수) - 계정의 영역 ID입니다(기술 계정 관리자에게 문의). 이는 Auditude 플랫폼에 해당하는 숫자 값입니다. `publisher_site_id` 설정.
+* **`Zone`** (필수) - 계정의 영역 ID입니다(기술 계정 관리자에게 문의). Auditude 플랫폼에 해당하는 숫자 값입니다 `publisher_site_id` 설정.
 
 * **`Format`** (선택 사항) - CRS가 광고 문안을 변환하는 방법을 제어하는 매개 변수:
 
    * `clientside` - TVSDK가 CDN과 통신하는 데 사용하는 URL과 호환되는 출력을 생성합니다.
-   >[!IMPORTANT]
-   >
-   >패키지된 광고가 클라이언트 측 Ad Insertion과 호환되도록 하려면 이 매개 변수를 제공해야 합니다. 이 기능을 제공하지 않으면 다시 패키징된 광고가 서버측 Ad Insertion과만 호환됩니다.
+
+  >[!IMPORTANT]
+  >
+  >패키지된 광고가 클라이언트 측 Ad Insertion과 호환되도록 하려면 이 매개 변수를 제공해야 합니다. 이 기능을 제공하지 않으면 다시 패키징된 광고가 서버측 Ad Insertion과만 호환됩니다.
 
    * `hls` - HLS 호환 코드 변환 광고 크리에이티브를 생성합니다.
    * `dash` - DASH 호환 코드 변환 광고 크리에이티브를 생성합니다.
    * `id3` - ID3 시간 메타데이터 태그를 코드 변환된 광고 크리에이티브에 삽입합니다.
    * `targetdur` - 코드 변환된 광고 문안의 세그먼트 기간(초). 기본값은 입니다 `targetdur=4`. 이 값은 의 매니페스트에 지정된 값에 해당해야 합니다. `<s>` target 기간 태그에서: `#EXT-X-TARGETDURATION:<s>`.
 
-   >[!NOTE]
-   >
-   >DASH 호환 에셋은 Adobe Primetime 광고 삽입과 호환되지 않습니다.
+  >[!NOTE]
+  >
+  >DASH 호환 에셋은 Adobe Primetime 광고 삽입과 호환되지 않습니다.
 
 >[!IMPORTANT]
 >

@@ -1,8 +1,7 @@
 ---
 title: 우수 사례
 description: 계정 IQ 도구를 더 잘 사용하는 방법을 이해하려면 계속 읽으십시오.
-exl-id: 55901f5d-d9c1-4ee5-9349-afa28445b324
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%

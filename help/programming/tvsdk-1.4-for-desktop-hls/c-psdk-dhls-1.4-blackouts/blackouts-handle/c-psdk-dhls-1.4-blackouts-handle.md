@@ -1,8 +1,7 @@
 ---
 description: 라이브 비디오 스트림에서 일시 중단을 처리하고 일시 중단 중에 대체 콘텐츠를 제공할 수 있습니다.
 title: 라이브 스트림에서 일시 중단 처리
-exl-id: 2e63fb0c-44b1-46f1-a4b8-f8f67389d183
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%

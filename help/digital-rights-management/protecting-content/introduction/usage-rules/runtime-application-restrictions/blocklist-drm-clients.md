@@ -2,8 +2,7 @@
 title: 보호된 콘텐츠에 대한 액세스가 제한되는 DRM 클라이언트 차단 목록
 description: 보호된 콘텐츠에 대한 액세스가 제한되는 DRM 클라이언트 차단 목록
 copied-description: true
-exl-id: 837e55ef-8dff-46eb-a952-c787d40d4a1b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -23,7 +22,7 @@ Primetime DRM 클라이언트 버전은 다음 표에 지정된 속성에 의해
 | 환경 | `“PC”, “PortingKit”` | 정확한 일치 | 클라이언트가 데스크탑 또는 기타 장치에서 실행 중인지 식별합니다. |
 | OS | `“Win”, “Mac”, “Linux”, “Android”, “iOS”, "ChromeOS"` | 정확한 일치 | 플랫폼 |
 | 아키텍처 | `“32”, “64”` | 정확한 일치 | 32비트 또는 64비트 |
-| 화면 유형 | `“PC”, “Mobile”, “TV”` | 정확한 일치 |  |
+| 화면 유형 | `“PC”, “Mobile”, “TV”` | 정확한 일치 | |
 | 런타임 버전 | 유효한 버전 번호입니다. 예, `“2.0.0”, "3.0", "4.0", "11.0"`등 | 클라이언트 버전이 지정된 버전보다 작거나 같은 경우 일치합니다. | 버전 번호는 숫자와 마침표의 조합으로 지정됩니다(&quot;.&quot;). 어떤 길이든. |
 | Primetime DRM 라이브러리 버전 | 유효한 버전 번호입니다. 예, `“2.0.0”`. | 클라이언트 버전이 지정된 버전보다 작거나 같은 경우 일치합니다. | 버전 번호는 숫자와 마침표의 조합으로 지정됩니다(&quot;.&quot;). 어떤 길이든. |
 | OEM 공급업체 | Primetime DRM을 장치에 포팅한 고객에게 발급된 런타임 인증서에서 찾을 수 있는 OEM 공급업체 문자열. | 정확한 일치 | 이식 키트를 사용하는 장치의 OEM 공급업체 식별 문자열. |

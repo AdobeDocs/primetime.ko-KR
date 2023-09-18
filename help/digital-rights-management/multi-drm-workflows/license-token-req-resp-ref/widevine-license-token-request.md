@@ -1,8 +1,7 @@
 ---
 description: Widevine 라이센스 토큰 인터페이스는 프로덕션 및 테스트 서비스를 제공합니다.
 title: Widevine 라이선스 토큰 요청/응답
-exl-id: f8d71f63-7783-44f9-8b1b-4b5646dca339
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 5%
@@ -25,16 +24,16 @@ Widevine 라이센스 토큰 인터페이스는 프로덕션 및 테스트 서�
 
 * **샘플 요청:**
 
-   ```
-   https://wv-gen.service.expressplay.com/hms/wv/token?customerAuthenticator= 
-   <ExpressPlay customer authenticator identifier>
-   ```
+  ```
+  https://wv-gen.service.expressplay.com/hms/wv/token?customerAuthenticator= 
+  <ExpressPlay customer authenticator identifier>
+  ```
 
 * **샘플 응답:**
 
-   ```
-   https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
-   ```
+  ```
+  https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
+  ```
 
 <!--<a id="section_1E22012EE4B94BB2974D3B16DE8812D9"></a>-->
 

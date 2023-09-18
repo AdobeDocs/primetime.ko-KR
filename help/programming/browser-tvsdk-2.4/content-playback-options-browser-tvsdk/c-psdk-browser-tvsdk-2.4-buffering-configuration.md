@@ -1,8 +1,7 @@
 ---
 description: 더 원활한 보기 환경을 제공하기 위해 브라우저 TVSDK가 비디오 스트림을 버퍼링하는 경우가 있습니다. 플레이어가 버퍼링하는 방식을 구성할 수 있습니다.
 title: 버퍼링
-exl-id: 786379d1-0f2d-44a9-b580-1c8dcbd3fd17
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -25,11 +24,11 @@ MediaPlayer에서는 초기 버퍼링 시간 및 재생 버퍼링 시간을 설�
 
 * 버퍼 매개 변수를 사용하려면 MediaPlayer `bufferControlParameters` 특성.
 
-   예를 들어 초기 버퍼를 2초로 설정하고 재생 버퍼 시간을 30초로 설정하려면 다음을 수행합니다.
+  예를 들어 초기 버퍼를 2초로 설정하고 재생 버퍼 시간을 30초로 설정하려면 다음을 수행합니다.
 
-   ```js
-   var params = new AdobePSDK.BufferControlParameters(2000, 30000);
-   ```
+  ```js
+  var params = new AdobePSDK.BufferControlParameters(2000, 30000);
+  ```
 
 ## 버퍼링 시간 정책 {#section_7EF2947931654CCC8DAB9172391FA4EB}
 

@@ -1,8 +1,7 @@
 ---
 description: Primetime DRM 클라이언트가 수락할 수 있는 유효한 라이선스를 발급하려면 Adobe이 발급한 자격 증명 집합으로 보호된 스트리밍에 대해 Primetime DRM 서버를 구성해야 합니다. 이러한 자격 증명을 PKCS#12(.pfx) 파일 또는 HSM에 저장할 수 있습니다.
 title: Adobe Primetime DRM 자격 증명 정보
-exl-id: a48da53f-2c2c-4a64-a512-dd69a8c9aa14
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%

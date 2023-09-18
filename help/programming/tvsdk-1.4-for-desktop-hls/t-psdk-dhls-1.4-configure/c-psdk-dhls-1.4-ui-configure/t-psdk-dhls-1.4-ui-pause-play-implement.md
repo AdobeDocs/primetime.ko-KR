@@ -1,8 +1,7 @@
 ---
 description: 일시 중지 및 재생 버튼을 위해 TVSDK 동작을 추가할 수 있습니다.
 title: 비디오 재생 및 일시 중지
-exl-id: c1c259a4-edb8-475b-96a2-7fa0903804c3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%

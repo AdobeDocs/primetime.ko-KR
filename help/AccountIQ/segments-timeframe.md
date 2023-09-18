@@ -1,8 +1,7 @@
 ---
 title: 구독자 세그먼트 및 시간대
 description: 계정 IQ의 그래픽 도구 및 보고서를 사용할 채널 뷰어의 계정 공유 가능성 및 패턴을 측정하려면 집단을 정의하거나 구독자 세그먼트를 선택하십시오.
-exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%

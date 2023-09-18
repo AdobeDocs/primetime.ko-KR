@@ -1,8 +1,7 @@
 ---
 description: 미디어 플레이어의 상태에 따라 합법적인 작업이 결정됩니다.
 title: MediaPlayer 개체의 라이프사이클 및 상태
-exl-id: b50d5378-4e9b-44c0-9098-8c3e27053b3b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

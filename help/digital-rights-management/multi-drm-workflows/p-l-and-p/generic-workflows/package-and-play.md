@@ -1,8 +1,7 @@
 ---
 description: ExpressPlay의 Bento4 패키지를 사용하여 ExpressPlay에서 제공하는 Primetime Cloud DRM에서 지원하는 DRM 솔루션에 대한 콘텐츠를 준비할 수 있습니다.
 title: ExpressPlay Packager / Cloud DRM / TVSDK
-exl-id: ff937279-3866-4d0a-9a19-cf61726299e1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 일부 타사 광고(또는 광고 크리에이티브)는 비디오 형식이 HLS와 호환되지 않으므로 HTTP 라이브 스트리밍(HLS) 콘텐츠 스트림에 결합할 수 없습니다. Primetime 광고 삽입 및 TVSDK는 선택적으로 호환되지 않는 광고를 호환되는 M3U8 비디오로 다시 패키징하려고 시도할 수 있습니다.
 title: Adobe 크리에이티브 리패키징 서비스를 사용하여 호환되지 않는 광고 리패키지
-exl-id: 6766bdf7-bffb-4dc1-bc8d-148a7f713f5f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

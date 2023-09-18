@@ -1,8 +1,7 @@
 ---
 description: 기본 확인자를 기반으로 자체 콘텐츠 확인자를 구현할 수 있습니다.
 title: 사용자 지정 콘텐츠 확인자 구현
-exl-id: abe967a5-ced3-4e23-8671-065e256974d3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%

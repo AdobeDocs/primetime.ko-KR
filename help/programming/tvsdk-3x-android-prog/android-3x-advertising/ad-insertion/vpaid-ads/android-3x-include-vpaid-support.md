@@ -1,8 +1,7 @@
 ---
 description: VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 수신기를 추가합니다.
 title: VPAID 2.0 통합 구현
-exl-id: a0d9a370-8fb6-4246-b59d-3b7c0b043bed
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -42,8 +41,7 @@ VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 
    >
    >재설정이 호출될 때만 사용자 지정 광고 보기를 삭제합니다. 예:
    >
-   >
-   ```
+   >```
    >// on reset 
    >if (_mediaPlayer != null) { 
    >       _mediaPlayer.disposeCustomAdView(); 
@@ -54,8 +52,7 @@ VPAID 2.0 지원을 추가하려면 사용자 지정 광고 보기와 적절한 
    >
    >마지막으로, 사용자 지정 광고 보기를 삭제하기 전에 `FrameLayout`. 예:
    >
-   >
-   ```
+   >```
    >if (_playerFrame != null) 
    >       _playerFrame.removeAllViews(); 
    >```

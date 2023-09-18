@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 PTMediaPlayerMediaSelectionOptionsAvailableNotification 알림을 사용하여 내부 AVAsset의 availableMediaCharacteristicsWithMediaSelectionOptions에 대한 사용 가능 여부를 플레이어 클라이언트에 알립니다.
 title: 자막 표시
-exl-id: dc726a5b-2eab-4ebd-8773-7396bf818205
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%

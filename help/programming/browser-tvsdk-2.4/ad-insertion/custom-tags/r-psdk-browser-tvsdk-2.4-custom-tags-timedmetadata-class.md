@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK가 재생 목록/매니페스트에서 구독한 태그를 검색하면 플레이어가 자동으로 태그를 처리하여 TimedMetadata 개체로 노출합니다.
 title: 시간 메타데이터 클래스
-exl-id: 893879b5-03ed-4c11-80a6-b57b7d54a95c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%

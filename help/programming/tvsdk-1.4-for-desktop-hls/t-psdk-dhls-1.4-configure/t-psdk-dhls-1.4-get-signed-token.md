@@ -1,8 +1,7 @@
 ---
 description: Flash 런타임 TVSDK에는 애플리케이션이 있는 도메인에서 TVSDK API를 호출할 권한이 있는지 확인하기 위해 서명된 토큰이 필요합니다.
 title: 서명된 토큰 로드
-exl-id: fef6b764-dc65-412e-a990-3f0b1fef94dd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -19,9 +18,9 @@ Flash 런타임 TVSDK에는 애플리케이션이 있는 도메인에서 TVSDK A
    
    * An [!DNL .xml] 단일 도메인 또는 와일드카드 도메인의 토큰 역할을 하는 파일입니다.
 
-      >[!NOTE]
-      >
-      >와일드카드 도메인의 토큰은 해당 도메인과 모든 하위 도메인을 포함합니다. 예를 들어 도메인에 대한 와일드카드 토큰 [!DNL mycompany.com] 다음의 것도 포함한다. [!DNL vids.mycompany.com] 및 [!DNL private.vids.mycompany.com]; 와일드카드 토큰 [!DNL vids.mycompany.com] 다음의 것도 포함한다. [!DNL private.vids.mycompany.com]. *와일드카드 도메인 토큰은 특정 Flash Player 버전에 대해서만 지원됩니다.*
+     >[!NOTE]
+     >
+     >와일드카드 도메인의 토큰은 해당 도메인과 모든 하위 도메인을 포함합니다. 예를 들어 도메인에 대한 와일드카드 토큰 [!DNL mycompany.com] 다음의 것도 포함한다. [!DNL vids.mycompany.com] 및 [!DNL private.vids.mycompany.com]; 와일드카드 토큰 [!DNL vids.mycompany.com] 다음의 것도 포함한다. [!DNL private.vids.mycompany.com]. *와일드카드 도메인 토큰은 특정 Flash Player 버전에 대해서만 지원됩니다.*
 
    * A [!DNL .swf] 애플리케이션이 동적으로 로드할 수 있는 여러 도메인(와일드카드 제외)(단일 또는 와일드카드)에 대한 토큰 정보가 포함된 파일.
 
@@ -36,6 +35,7 @@ Flash 런타임 TVSDK에는 애플리케이션이 있는 도메인에서 TVSDK A
    1. TVSDK에서 `COMPLETED` 이벤트(로드가 성공하거나 `FAILED` 그렇지 않은 경우. 두 이벤트 중 하나를 감지하면 적절한 조치를 취하십시오.
 
       애플리케이션이 필수 항목을 제공하려면 이 작업이 성공해야 합니다. `authorizedFeatures` 의 형식으로 TVSDK에 개체 `MediaPlayerContext`.
+
    이 예에서는 단일 토큰을 사용하는 방법을 보여 줍니다 [!DNL .xml] 파일.
 
    ```

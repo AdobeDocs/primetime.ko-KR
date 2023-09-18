@@ -1,8 +1,7 @@
 ---
 description: FMRMS 호환성 처리 중
 title: 클라이언트 업그레이드
-exl-id: 7774b408-c2cb-400b-be41-74cc9739e0e9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -20,7 +19,7 @@ FMRMS 1.x 클라이언트가 Adobe Primetime DRM 서버에 연결된 경우 서�
 * 요청 처리기 클래스는 다음과 같습니다 `com.adobe.flashaccess.sdk.protocol.compatibility.FMRMSv1RequestHandler`.
 * 요청 URL은 입니다.*1.x 콘텐츠의 기본 URL*&quot; + &quot; [!DNL /edcws/services/urn:EDCLicenseService]&quot;
 
-   다른 Adobe Primetime 요청 핸들러와 달리 이 핸들러는 요청 정보에 대한 액세스를 제공하지 않거나 응답 데이터를 설정해야 합니다. 의 인스턴스 만들기 `FMRMSv1RequestHandler`, 그런 다음 를 호출합니다. `close()`
+  다른 Adobe Primetime 요청 핸들러와 달리 이 핸들러는 요청 정보에 대한 액세스를 제공하지 않거나 응답 데이터를 설정해야 합니다. 의 인스턴스 만들기 `FMRMSv1RequestHandler`, 그런 다음 를 호출합니다. `close()`
 
 ## 메타데이터 업그레이드 중 {#upgrading-metadata}
 

@@ -1,8 +1,7 @@
 ---
 description: Adobe® Access™을 설정하려면 DVD에서 파일을 복사하십시오. 이러한 파일에는 코드, 인증서 및 서드파티 클래스가 들어 있는 JAR 파일이 포함되어 있습니다. 또한 Adobe Systems Incorporated에서 인증서를 요청합니다. 클라이언트와 서버 간의 통신, 라이센스 및 패키지 콘텐츠의 무결성을 보호하는 데 사용되는 여러 자격 증명이 발급됩니다.
 title: 개발 환경 설정
-exl-id: 66310fc8-7513-4aab-81d6-1370ce216cbf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

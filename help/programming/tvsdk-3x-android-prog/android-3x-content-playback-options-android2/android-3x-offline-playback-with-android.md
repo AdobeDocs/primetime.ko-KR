@@ -1,8 +1,7 @@
 ---
 description: 매니페스트를 다운로드할 때 TVSDK에 네트워크 연결 상태를 무시하도록 지시하는 새 API가 도입되었습니다.
 title: Android에서 오프라인 재생
-exl-id: 9ac50d3e-5839-4eb9-8811-efde56cfe375
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%

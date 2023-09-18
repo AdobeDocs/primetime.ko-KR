@@ -1,8 +1,7 @@
 ---
 description: 이제 com.adobe.mediacore.timeline.TimelineMarker 인터페이스에는 새 메서드가 포함됩니다
 title: 2.5.x 레이지 광고 해결에서 3.0.0 레이지 광고 해결로 업그레이드(API/워크플로우 변경)
-exl-id: 403ccb25-99a9-4545-9d17-3b71583bc6d8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%

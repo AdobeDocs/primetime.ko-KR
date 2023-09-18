@@ -2,8 +2,7 @@
 title: 보호된 스트리밍을 위한 Adobe Primetime DRM 서버 업그레이드
 description: 보호된 스트리밍을 위한 Adobe Primetime DRM 서버 업그레이드
 copied-description: true
-exl-id: 6edfba1b-46a2-4cbd-bc14-feeef1a36ed6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%

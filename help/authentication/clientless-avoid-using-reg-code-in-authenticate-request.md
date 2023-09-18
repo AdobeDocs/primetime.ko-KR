@@ -1,8 +1,7 @@
 ---
 title: /authenticate 요청에 '&'reg_code를 사용하지 마십시오.
 description: /authenticate 요청에 '&'reg_code를 사용하지 마십시오.
-exl-id: c0ecb6f9-2167-498c-8a2d-a692425b31c5
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%

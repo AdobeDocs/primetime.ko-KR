@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK를 사용하여 검색 막대에 표시할 수 있는 미디어에 대한 정보를 검색할 수 있습니다.
 title: 비디오의 지속 시간, 현재 시간 및 남은 시간을 표시합니다.
-exl-id: f2aa3c42-9c47-4a55-aed6-7dc5a8d0662b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%

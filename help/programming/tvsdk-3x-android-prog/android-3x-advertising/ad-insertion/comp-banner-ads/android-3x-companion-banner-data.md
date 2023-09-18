@@ -1,8 +1,7 @@
 ---
 description: AdAsset의 콘텐츠는 컴패니언 배너에 대해 설명합니다.
 title: 컴패니언 배너 데이터
-exl-id: fae96cb8-0092-43ed-a26b-cdaa1389a368
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%

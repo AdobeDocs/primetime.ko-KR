@@ -1,8 +1,7 @@
 ---
 title: 여러 프로그래머 및 채널에 대한 계정 공유 보고서 보기
 description: 여러 프로그래머 및 채널에 대한 계정 공유 보고서 보기
-exl-id: 8afa9e45-f0e3-43a3-970f-05a11adc0e42
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -25,9 +24,9 @@ ht-degree: 0%
 
 * [대시보드](/help/AccountIQ/dashboard.md) (대시보드에서는 다른 보고서 페이지에서 선택한 그래프를 볼 수 있습니다.)
 
-   ![](assets/mult-prog-dashboard.png)
+  ![](assets/mult-prog-dashboard.png)
 
-   *그림: 여러 프로그래머를 위한 대시보드 보고서*
+  *그림: 여러 프로그래머를 위한 대시보드 보고서*
 
 * [일반 사용](/help/AccountIQ/general-usage-reports.md)
 

@@ -1,8 +1,7 @@
 ---
 description: 콜백 함수를 사용하여 콘텐츠, 광고 및 챕터 추적 호출에 대한 사용자 지정 메타데이터를 제공할 수 있습니다.
 title: 사용자 지정 메타데이터 지원 구현
-exl-id: 56580338-5104-4121-b441-5d92ba6f4610
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%

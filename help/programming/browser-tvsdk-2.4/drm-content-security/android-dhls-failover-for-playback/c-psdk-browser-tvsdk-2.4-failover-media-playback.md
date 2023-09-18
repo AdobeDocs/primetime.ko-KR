@@ -1,8 +1,7 @@
 ---
 description: 라이브 및 VOD 미디어의 경우 브라우저 TVSDK는 중간 해상도 비트 전송률과 연결된 재생 목록을 다운로드한 다음 재생 목록에 정의된 중간 해상도 비트 전송률 미디어의 세그먼트를 다운로드하여 재생을 시작합니다.
 title: 미디어 재생
-exl-id: 56033ca2-8a63-4a0d-ac7d-bf208273a238
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 기회 생성기는 스트림의 사용자 지정 태그, 광고 시그널링 모드 사용자 지정 마커 등을 통해 배치 기회를 식별합니다. 기회 생성기는 이러한 배치 기회를 content resolver로 보내며, 이 resolver는 배치 기회의 속성 및 메타데이터를 기반으로 콘텐츠/광고 삽입 워크플로우를 사용자 정의합니다.
 title: 기회 생성기 및 콘텐츠 해결자 사용자 지정
-exl-id: 5d0ebaa6-4708-4602-b9d7-882c389fb030
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%

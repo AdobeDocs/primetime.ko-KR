@@ -1,8 +1,7 @@
 ---
 description: Primetime 개체가 재생 전에 인증을 위해 사용자 자격 증명이 필요한 보호된 콘텐츠를 재생하려고 할 때(아직 인증이 수행되지 않음) DRMAuthenticationEvent 개체가 발송됩니다. DRMAuthenticationEvent 처리기는 필수 자격 증명(사용자 이름, 암호 및 유형)을 수집하고 유효성 검사를 위해 .setDRMAuthenticationCredentials() 메서드에 값을 전달하는 역할을 합니다.
 title: DRMAuthenticationEvent 처리기 만들기
-exl-id: fe01340b-8a76-4fd4-8c6c-85454d0e2218
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 이 표에는 오류 유형 알림에 대한 자세한 정보가 나와 있습니다.
 title: 오류 알림 코드
-exl-id: 3e60488e-b368-41f6-b32c-cda5688d67de
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 4%

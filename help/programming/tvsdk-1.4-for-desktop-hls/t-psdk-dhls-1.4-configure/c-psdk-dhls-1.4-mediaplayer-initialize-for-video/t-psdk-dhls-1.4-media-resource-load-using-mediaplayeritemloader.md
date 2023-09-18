@@ -1,8 +1,7 @@
 ---
 description: 미디어 리소스를 확인하는 또 다른 방법은 MediaPlayerItemLoader를 사용하는 것입니다. 이 기능은 MediaPlayer 인스턴스를 인스턴스화하지 않고 특정 미디어 스트림에 대한 정보를 얻고자 할 때 유용합니다.
 title: MediaPlayerItemLoader를 사용하여 미디어 리소스 로드
-exl-id: 08379bd8-1602-4013-a6fb-b1aa6ba539aa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
    * `MediaPlayerItemLoaderEvent.ERROR` 이벤트
 
-      TVSDK는 이 함수를 사용하여 오류가 발생했음을 애플리케이션에 알립니다. TVSDK는 진단 정보가 포함된 오류 속성을 제공합니다.
+     TVSDK는 이 함수를 사용하여 오류가 발생했음을 애플리케이션에 알립니다. TVSDK는 진단 정보가 포함된 오류 속성을 제공합니다.
 
 1. 이 인스턴스를 다음에 등록 `MediaPlayerItemLoader`.
 1. 호출 `DefaultMediaPlayerItemLoader.load`, 인스턴스 전달 `MediaResource` 개체.

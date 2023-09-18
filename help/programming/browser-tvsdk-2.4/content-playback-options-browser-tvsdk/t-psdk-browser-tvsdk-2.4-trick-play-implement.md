@@ -1,8 +1,7 @@
 ---
 description: 사용자가 미디어를 통해 빠르게 앞으로 감거나 빠르게 되감으면 트릭 플레이 모드가 됩니다. 트릭 재생 모드로 전환하려면 MediaPlayer 재생 속도를 1이 아닌 값으로 설정해야 합니다.
 title: 신속한 전달 및 되감기 구현
-exl-id: 21f9a3f6-1cae-4240-991d-c03a0e49adf3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -20,7 +19,6 @@ ht-degree: 0%
 >* 기본 콘텐츠에서 광고로 전환할 때 브라우저 TVSDK는 트릭 재생 모드를 둡니다.
 >
 
-
 속도를 전환하려면 하나의 값을 설정해야 합니다.
 
 1. 속도를 로 설정하여 일반 재생 모드(1x)에서 트릭 재생 모드로 이동합니다. `MediaPlayer` 을 입력합니다.
@@ -28,23 +26,23 @@ ht-degree: 0%
    * 다음 `MediaPlayerItem` 클래스는 허용된 재생 속도를 정의합니다.
    * 지정된 속도가 허용되지 않는 경우 브라우저 TVSDK가 가장 가까운 허용 속도를 선택합니다.
 
-      다음 예제 함수는 비율을 설정합니다.
+     다음 예제 함수는 비율을 설정합니다.
 
-      ```js
-      setTrickPlayRate = function (player, trickPlayRate) { 
-                    player.rate = trickPlayRate; 
-      }
-      ```
+     ```js
+     setTrickPlayRate = function (player, trickPlayRate) { 
+                   player.rate = trickPlayRate; 
+     }
+     ```
 
-      다음 예제 함수를 사용하여 사용 가능한 재생 속도를 쿼리할 수 있습니다.
+     다음 예제 함수를 사용하여 사용 가능한 재생 속도를 쿼리할 수 있습니다.
 
-      ```js
-      getAvailableTrickPlayRates = function (player) { 
-               var item = player.currentItem; 
-               var availableRates = item. availablePlaybackRates; 
-               return availableRates; 
-      } 
-      ```
+     ```js
+     getAvailableTrickPlayRates = function (player) { 
+              var item = player.currentItem; 
+              var availableRates = item. availablePlaybackRates; 
+              return availableRates; 
+     } 
+     ```
 
 1. 원할 경우 요금 변경을 요청한 시점과 요금 변경이 실제로 발생하는 시점을 알려주는 요금 변경 이벤트를 수신할 수 있습니다.
 
@@ -54,7 +52,7 @@ ht-degree: 0%
 
    * `AdobePSDK.PSDKEventType.RATE_PLAYING` 선택한 속도로 재생이 다시 시작되는 때입니다.
 
-      플레이어가 trick-play 모드에서 일반 재생 모드로 돌아가면 브라우저 TVSDK가 이 두 이벤트를 모두 전달합니다.
+     플레이어가 trick-play 모드에서 일반 재생 모드로 돌아가면 브라우저 TVSDK가 이 두 이벤트를 모두 전달합니다.
 
 ## 속도 변경 API 요소 {#rate-change-API-elements}
 
@@ -67,12 +65,12 @@ ht-degree: 0%
 * `MediaPlayerItem.istrickPlaySupported`
 * `MediaPlayerItem.availablePlaybackRates` - 유효한 비율을 지정합니다.
 
-   | 비율 값 | 재생에 미치는 영향 |
-   |---|---|
-   | 2.0, 4.0, 8.0, 16.0, 32.0, 64.0 | 지정된 승수가 보통보다 빠르게(예: 4가 보통보다 4배 빠름) 빨리 감기 모드로 전환합니다. |
-   | -2.0, -4.0, -8.0, -16.0, -32.0, -64.0 | 빠른 되감기 모드로 전환 |
-   | 1.0 | 일반 재생 모드로 전환(호출) `play` rate 속성을 1.0으로 설정하는 것과 같습니다.) |
-   | 0.0 | 일시 중지(호출) `pause` rate 속성을 0.0으로 설정하는 것과 같습니다.) |
+  | 비율 값 | 재생에 미치는 영향 |
+  |---|---|
+  | 2.0, 4.0, 8.0, 16.0, 32.0, 64.0 | 지정된 승수가 보통보다 빠르게(예: 4가 보통보다 4배 빠름) 빨리 감기 모드로 전환합니다. |
+  | -2.0, -4.0, -8.0, -16.0, -32.0, -64.0 | 빠른 되감기 모드로 전환 |
+  | 1.0 | 일반 재생 모드로 전환(호출) `play` rate 속성을 1.0으로 설정하는 것과 같습니다.) |
+  | 0.0 | 일시 중지(호출) `pause` rate 속성을 0.0으로 설정하는 것과 같습니다.) |
 
 ## 트릭 플레이에 대한 제한 사항 및 동작 {#limitations-and-behavior-trick-play}
 
@@ -87,4 +85,4 @@ ht-degree: 0%
 * 찾기에서 재생이 트릭 재생 모드이면 재생 속도가 1로 설정되고 일반 재생이 다시 시작됩니다.
 * 적응형 비트 전송률(ABR) 논리를 사용합니다.
 
-   일반 적응을 사용할 때는 다음 기간 동안 프로필이 제한됩니다. `ABRControlParameters.minBitRate` 및 `ABRControlParameters.maxBitRate`. 트릭 플레이 적응을 사용할 때 프로필은 다음 기간 동안 제한됩니다. `ABRControlParameters.minTrickPlayBitRate` 및 `ABRControlParameters.maxTrickPlayBitRate`.
+  일반 적응을 사용할 때는 다음 기간 동안 프로필이 제한됩니다. `ABRControlParameters.minBitRate` 및 `ABRControlParameters.maxBitRate`. 트릭 플레이 적응을 사용할 때 프로필은 다음 기간 동안 제한됩니다. `ABRControlParameters.minTrickPlayBitRate` 및 `ABRControlParameters.maxTrickPlayBitRate`.

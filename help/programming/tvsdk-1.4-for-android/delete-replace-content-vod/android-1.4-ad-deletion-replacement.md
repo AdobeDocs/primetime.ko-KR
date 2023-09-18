@@ -1,8 +1,7 @@
 ---
 description: Android TVSDK API의 이러한 변경 사항은 광고 삭제 및 교체를 지원합니다.
 title: 광고 삭제 및 대체 API 변경 사항
-exl-id: bde8bd6e-0afe-42d0-b716-f33f75de757e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -24,7 +23,7 @@ Android TVSDK API의 이러한 변경 사항은 광고 삭제 및 교체를 지�
 
 * 신규 `ContentRemoval` 클래스
 
-   `TimelineOperation` 타임라인에서 제거할 시간 범위를 정의하는 클래스
+  `TimelineOperation` 타임라인에서 제거할 시간 범위를 정의하는 클래스
 
 * `AuditudeResolver`
 

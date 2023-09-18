@@ -1,8 +1,7 @@
 ---
 description: 시스템에서 하드웨어 지원 디코딩에 액세스할 수 있는 경우 iFrame 형식을 사용하여 순수 소프트웨어 TVSDK 구현보다 더 원활한 트릭 플레이를 수행할 수 있습니다.
 title: 매끄러운 트릭 플레이 작업
-exl-id: 2dcc8ee2-78a1-4ec8-b876-e06e5ec1e398
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%

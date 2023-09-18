@@ -1,8 +1,7 @@
 ---
 description: HLS 및 DASH 스트림은 동일한 짧은 비디오 버스트에 대해 상이한 비트 레이트 인코딩(프로필)을 제공한다. TVSDK는 가용 대역폭에 기초하여 각 버스트에 대한 품질 레벨을 선택할 수 있다.
 title: 비디오 품질을 위한 적응형 비트 전송률(ABR)
-exl-id: 2fd24360-4159-4330-a479-02310c6aa525
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 0%
@@ -81,8 +80,7 @@ ABR 컨트롤 매개 변수를 설정하려면 다음 중 하나를 수행합니
    >
    >예를 들어 다음 샘플은 모든 매개 변수를 기본값으로 초기화한 다음 정책만 보존으로 설정하고 최대 비트 전송률을 1000000으로 제한합니다.
    >
-   >
-   ```
+   >```
    >var abrBuilder:ABRControlParametersBuilder =  
    >   new ABRControlParametersBuilder(); 
    >abrBuilder.policy = ABRControlParameters.CONSERVATIVE_POLICY; 
@@ -90,6 +88,7 @@ ABR 컨트롤 매개 변수를 설정하려면 다음 중 하나를 수행합니
    >mediaPlayer.abrControlParameters =  
    >   abrBuilder.toABRControlParameters();
    >```
+   >
 
 1. 런타임에 개별 ABR 매개 변수를 수정합니다.
 

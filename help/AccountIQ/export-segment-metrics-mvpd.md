@@ -1,8 +1,7 @@
 ---
 title: MVPD 및 선택한 프로그래머를 위한 지표 내보내기
 description: MVPD 및 선택한 프로그래머를 위한 지표 내보내기
-exl-id: 868016ec-71aa-44b9-a002-0d124a64c167
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -20,11 +19,11 @@ ht-degree: 0%
 1. 다음 패널 중 하나로 이동합니다.
 
    * 세그먼트의 프로그래머
-      ![](assets/prog-segment-export-option.png)
+     ![](assets/prog-segment-export-option.png)
 
    * 확률 수준을 공유한 계정 수 및 사용량
 
-      ![](assets/progr-usage-panel-export.png)
+     ![](assets/progr-usage-panel-export.png)
 
 1. 선택 **내보내기** 옵션은 패널의 오른쪽 상단 모서리에서 사용할 수 있습니다.
 
@@ -32,9 +31,9 @@ ht-degree: 0%
 
 * 세그먼트의 프로그래머
 
-   ![](assets/export-progr-in-seg.png)
+  ![](assets/export-progr-in-seg.png)
 
 
 * 확률 수준을 공유한 계정 수 및 사용량
 
-   ![](assets/export-acc-usage.png)
+  ![](assets/export-acc-usage.png)

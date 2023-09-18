@@ -1,8 +1,7 @@
 ---
 description: 라이센싱 및 정책 시행을 조정하는 한 가지 방법은에서 권한 부여 서버에 이러한 기능을 구축하는 것입니다. Adobe은 고유한 서버를 빌드하기 위해 함께 사용할 수 있는 SEES 참조 권한 부여 서버를 제공합니다.
 title: 참조 서버 샘플 ExpressPlay 권한 서버(SEES)
-exl-id: aa5b63f4-dffc-4808-8aa6-6b8f63df592c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%

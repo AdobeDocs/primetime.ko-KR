@@ -2,8 +2,7 @@
 title: 플레이어에서 XSTS 토큰 설정
 description: 플레이어에서 XSTS 토큰 설정
 copied-description: true
-exl-id: 1b83baac-e6a6-4e84-8ea5-07bd7e4afd9d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -67,7 +66,7 @@ XSTS 요청의 경우 `customerSpecificAuthToken` 필드에는 Base64로 인코�
 | 시스템 속성 | 기본값 | 댓글 |
 |---|---|---|
 | xsts-keystore | xsts.jks | 유효성 검사기에서 사용하는 JKS 형식 키 저장소입니다. |
-| xsts-keystore-password |  | 키 저장소의 암호 |
+| xsts-keystore-password | | 키 저장소의 암호 |
 | xsts-alias | xsts | 키 저장소에서 암호 해독 키를 검색하는 데 사용되는 앨리어스 |
 | xsts-verify-cert-alias | xsts-verify-cert | 키 저장소에서 유효성 검사 인증서를 검색하는 데 사용되는 앨리어스 |
 

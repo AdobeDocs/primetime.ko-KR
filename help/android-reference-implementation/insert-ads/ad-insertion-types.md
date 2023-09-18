@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 현재 TVSDK 광고, 직접 광고 브레이크 및 사용자 지정 광고 마커에 대한 기본 제공 광고 공급자 메타데이터 지원을 제공합니다.
 title: 광고 삽입 유형
-exl-id: 1634ff41-8a8f-4f34-9685-149ec58518ba
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -27,7 +26,7 @@ VOD 및 라이브/선형 컨텐츠에 대한 다음 유형의 광고 삽입 워�
   <tr> 
    <td colname="col1"> Adobe Primetime ad decisioning 광고 </td> 
    <td colname="col2">VOD <p>라이브 </p> <p>선형 </p> </td> 
-   <td colname="col3">참조 구현은 다음을 제공합니다 <span class="codeph"> AuditudeMetadata</span> Primetime 광고 부분에 제공된 정보를 기반으로 Primetime 광고 의사 결정(이전 이름: Auditude)을 위해 서버에 연결하는 정보</a> / JSON 구성 파일</a>. </td> 
+   <td colname="col3">참조 구현은 다음을 제공합니다 <span class="codeph"> AuditudeMetadata</span> Primetime ads 부분에 제공된 정보를 기반으로 Primetime ad decisioning (이전에 Auditude으로 알려짐)을 위해 서버에 연결하기 위한 정보</a> / JSON 구성 파일</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 직접 광고 브레이크 </td> 

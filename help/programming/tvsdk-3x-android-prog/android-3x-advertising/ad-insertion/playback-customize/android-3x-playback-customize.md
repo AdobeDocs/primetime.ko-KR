@@ -1,8 +1,7 @@
 ---
 description: 재생이 광고 브레이크에 도달하거나, 광고 브레이크를 전달하거나, 광고 브레이크에서 종료되면 TVSDK는 현재 플레이헤드의 위치에 대한 몇 가지 기본 동작을 정의합니다.
 title: 광고를 사용하여 재생 사용자 지정
-exl-id: 5606c9c6-58ff-42a7-974e-3a445f3d3f28
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%

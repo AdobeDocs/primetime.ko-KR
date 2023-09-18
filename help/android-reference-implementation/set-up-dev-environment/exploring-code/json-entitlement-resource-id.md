@@ -1,8 +1,7 @@
 ---
 title: 권한 부여 리소스 ID에 대한 JSON 개체
 description: 다음 코드 블록은 자격 리소스 ID가 단순 텍스트 문자열인 경우 JSON 개체의 예를 제공합니다.
-exl-id: 396c43e7-404a-40f5-8113-a720e2c834e7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%

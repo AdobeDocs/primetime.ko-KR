@@ -4,8 +4,7 @@ description: Android용 TVSDK 1.4 릴리스 노트에서는 TVSDK Android 1.4의
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 1e3ec3b7-25be-4640-870e-928e832fe12d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '7802'
 ht-degree: 0%
@@ -58,22 +57,22 @@ Adobe Primetime은 HTTPS를 통해 primetime 광고 서버 및 CRS에 대한 첫
 * TVSDK는 Android Oreo 릴리스를 지원합니다.
 * 새 함수가에 추가됩니다. `AdClientFactory` 여러 Opportunity Detectors 등록을 지원하는 클래스:
 
-   ```
-   public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
-   ```
+  ```
+  public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
+  ```
 
-   이 경우 PlacementOpportunityDetector 배열이 반환됩니다. 이제 여러 Opportunity Detectors 를 등록할 수 있습니다. 예를 들어 조기 광고 종료 기능의 경우 두 개의 Opportunity Detectors 가 필요합니다. 하나는 광고 삽입용 이고 다른 하나는 광고의 조기 종료용 입니다. 이 새 함수는 자체 AdvertisingFactory를 구현한 경우(DefaultAdvertisingfactory를 사용하지 않는 경우)에만 영향을 줍니다. 기존 동작을 가져오려면 createOpportunityDetector() 함수에서와 같이 단일 Opportunity Detector를 만들고 배열에 넣은 다음 반환해야 합니다.
+  이 경우 PlacementOpportunityDetector 배열이 반환됩니다. 이제 여러 Opportunity Detectors 를 등록할 수 있습니다. 예를 들어 조기 광고 종료 기능의 경우 두 개의 Opportunity Detectors 가 필요합니다. 하나는 광고 삽입용 이고 다른 하나는 광고의 조기 종료용 입니다. 이 새 함수는 자체 AdvertisingFactory를 구현한 경우(DefaultAdvertisingfactory를 사용하지 않는 경우)에만 영향을 줍니다. 기존 동작을 가져오려면 createOpportunityDetector() 함수에서와 같이 단일 Opportunity Detector를 만들고 배열에 넣은 다음 반환해야 합니다.
 
-   ```
-   public class MyAdvertisingFactory extends AdvertisingFactory {  
-   …  
-   @Override  
-   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {  
-   List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();  
-   opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));  
-   return opportunityDetectors;  
-   } }
-   ```
+  ```
+  public class MyAdvertisingFactory extends AdvertisingFactory {  
+  …  
+  @Override  
+  public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {  
+  List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();  
+  opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));  
+  return opportunityDetectors;  
+  } }
+  ```
 
 >[!NOTE]
 >
@@ -87,7 +86,7 @@ Android에서 콘텐츠 건너뛰기에 대한 버그 수정.
 
 * **네트워크 광고 정보**
 
-   이제 TVSDK API는 서드파티 VAST 응답에 대한 추가 정보를 제공합니다. 광고 ID, 광고 시스템 및 VAST 광고 확장은 광고 자산의 networkAdInfo 속성을 통해 액세스할 수 있는 NetworkAdInfo 클래스에 제공됩니다. 이 정보는 와 같은 다른 Ad Analytics 플랫폼과 통합하는 데 사용할 수 있습니다. **모트 분석**.
+  이제 TVSDK API는 서드파티 VAST 응답에 대한 추가 정보를 제공합니다. 광고 ID, 광고 시스템 및 VAST 광고 확장은 광고 자산의 networkAdInfo 속성을 통해 액세스할 수 있는 NetworkAdInfo 클래스에 제공됩니다. 이 정보는 와 같은 다른 Ad Analytics 플랫폼과 통합하는 데 사용할 수 있습니다. **모트 분석**.
 
 **버전 1.4.31**
 
@@ -139,26 +138,26 @@ AC-3 5.1은 Amazon FireTV에서만 지원됩니다.
 * PlaybackEventListener 인터페이스에는 새 이벤트를 수신하는 데 사용할 수 있는 onReplaceMediaPlayerItem이라는 새 메서드가 있습니다. `ITEM_REPLACED`. 이 이벤트는 MediaPlayer에서 MediaPlayeritem 인스턴스가 대체될 때마다 발송됩니다. 이 PlaybackEventListener를 구현하는 클라이언트 응용 프로그램은 이 새 메서드를 구현하거나 재정의해야 합니다.
 * AdClientFactory에는 여러 Opportunity Detectors에 등록할 수 있도록 클래스에 새로운 기능이 추가되었습니다.
 
-   ```
-   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem item);
-   
-   For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  `ad`.
-   
-   To override this new function create a single Opportunity Detector, and put into an array and return:
-   
-   @Override
-   
-   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
-   
-   List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();
-   
-   opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));
-   
-   return opportunityDetectors;
-   }
-   
-   }
-   ```
+  ```
+  public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem item);
+  
+  For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  `ad`.
+  
+  To override this new function create a single Opportunity Detector, and put into an array and return:
+  
+  @Override
+  
+  public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
+  
+  List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();
+  
+  opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));
+  
+  return opportunityDetectors;
+  }
+  
+  }
+  ```
 
 ## 1.4에 대한 TVSDK 변경 사항 {#tvsdk-changes}
 
@@ -198,7 +197,6 @@ return opportunityDetectors;
 >
 >* 플랫폼 또는 버전에서 슬로우 모션.
 >* 라이브 트릭 플레이.
-
 
 **버전 1.4.43**
 
@@ -477,7 +475,7 @@ HDCP 상태를 동적으로 추적하려면 Nvidia Shield에서 올바르게 구
 
 * Zendesk #19038 - Asus Zenpad 10에 라이브 스트림 없음.
 
-   이 문제는 미디어 코덱 정보를 미리 로드하여 해결되었으므로 런타임에 함수를 쿼리하지 않습니다.
+  이 문제는 미디어 코덱 정보를 미리 로드하여 해결되었으므로 런타임에 함수를 쿼리하지 않습니다.
 
 * 다음 문제는 Zendesk 보고서와 #19038.
    * Zendesk #19483 - TVSDK가 인텔 플랫폼에서 충돌합니다.
@@ -492,7 +490,7 @@ HDCP 상태를 동적으로 추적하려면 Nvidia Shield에서 올바르게 구
 
 * Zendesk #18328 - 60FPS가 있는 콘텐츠의 Amazon Fire TV 2세대 장치에서 프레임 드롭 문제 이 문제는 수면 시간 의사 결정에 대해 인코딩된 FPS를 적용하고 더 나은 인코딩된 FPS 예측 논리를 사용하여 해결되었습니다.
 
-**버전 1.4.17 (1472)**
+**버전 1.4.17(1472)**
 
 * Zendesk #2231 - MediaPlayerNotification에서 사용할 수 없는 매니페스트를 가져오는 중 오류가 반환됨 구문 분석 오류가 있을 때 매니페스트의 응답 본문을 포함하여 이 문제를 해결했습니다.
 
@@ -507,7 +505,7 @@ HDCP 상태를 동적으로 추적하려면 Nvidia Shield에서 올바르게 구
 
 **버전 1.4.16 (1454)**
 
-* Zendesk #3875 - TVSDK가 이제 curl 대신 httpullconnection을 직접 사용하므로 재생 중에 탭 S가 충돌하고 CRS에 대한 감사에 대한 OKHTTP 종속성을 되돌립니다. 다른 JNI 호출을 수행하기 전에 예외를 지움으로써 문제가 해결되었습니다.
+* Zendesk #3875 - TVSDK가 이제 curl 대신 httpurlconnection을 직접 사용하므로 재생 중에 탭 S가 충돌하고 CRS에 대한 Auditude 시 OKHTTP 종속성을 되돌립니다. 다른 JNI 호출을 수행하기 전에 예외를 지움으로써 문제가 해결되었습니다.
 
 * Zendesk #4487 - 콘텐츠의 선형 채널 추적 선형 스트림 재생 세션 중에 비디오 하트비트 추적기를 다시 초기화할 수 있으므로 문제가 해결되었습니다.
 
@@ -640,7 +638,7 @@ Android 샘플 참조 플레이어가 디버그 로그를 켜고 결과를 이�
 * Zendesk #2805 - 재생 시작 시 플레이어 충돌, Zendesk #2719과 동일한 수정
 * Zendesk #2817 - Android 플레이어 - 디코드 버퍼를 2.0초에서 3.0초로 확장하여 플레이어가 때때로 정지되고 재생이 중지됩니다.
 * Zendesk #2839 - Adobe Primetime PSDK가 ARMv8 칩셋을 지원합니까?, Galaxy S6에서 발견된 충돌 수정 사항을 추가했습니다.
-* Zendesk #2885 - Auditude Cracking Playback, Zendesk #2719과 동일한 수정
+* Zendesk #2885 - Auditude 충돌 재생, Zendesk #2719과 동일한 수정
 * Zendesk #2895 - 재생 10분 후에도 지속적으로 라이브 HLS 실패
 * Zendesk #2925 - 입력 큐에 패킷을 대기시킬 때 특정 장치에서 Android 개발 빌드(1.4.5)에 대한 피드백, PTS가 음수이면 디코더는 이상한 상태로 전환되어 향후 패킷에 대해 항상 음성 출력 PTS를 받습니다. 이 문제를 방지하기 위해 음수일 경우 수정 사항은 입력 PTS를 0으로 설정합니다.
 * PTPLAY-4645 - openssl에서 RC4 암호 지원을 끕니다. RC4에 대한 알려진 업적들이 있다. 이는 RC4만 지원하는 서버와 접속하려고 하면 실패함을 의미한다.
@@ -802,7 +800,7 @@ minSdkVersion 을 업데이트하는 경우:
 | Nook tabletAndroid OS: 2.3 | TI 오맵 | 비디오가 재생되지 않고 앱이 중단됩니다. | Stagefright는 앱을 몇 번 실행한 후 불안정한 상태로 들어갑니다. mediaplayer::QueryCodecs에 대한 호출이 중단됩니다. | 장치를 다시 시작하여 상태를 재설정합니다. |
 | 삼성 갤럭시 에이스 | Qualcomm MSM7227 | SampleMediaPlayer 앱을 설치할 수 없습니다. | 보다 일반적인 ARM v7 칩셋 대신 ARM v6를 사용합니다. FP/AIR은 이 장치를 지원하지 않습니다. |  |
 | Samsung Galaxy ACE2Android OS: 2.3.6 | 노바토르 | 비디오를 재생할 수 없습니다. | 이 칩셋은 AVE의 Android 사전 ICS용 알 수 없는 디코더입니다. |  |
-| Samsung Galaxy S2 (GT-I9100) | 엑시노스 | 이 장치의 비디오 성능이 최대가 아닙니다. | HW 디코더는 잘못된 PTS를 갖는 디코딩된 프레임을 반환한다. 디코더가 프레젠테이션 시간 대신 디코딩 시간을 사용하는 것 같습니다. |  |
+| Samsung Galaxy S2 (GT-I9100) | 엑시노스 | 이 장치의 비디오 성능이 최대가 아닙니다. | HW 디코더는 잘못된 PTS를 갖는 디코딩된 프레임들을 반환하고 있다. 디코더가 프레젠테이션 시간 대신 디코딩 시간을 사용하는 것 같습니다. |  |
 | Samsung Galaxy S2 GAndroid OS: 2.3.6 | TI 오맵4 | 비디오를 시작할 때 충돌합니다. |  | Android 2.3.7 또는 4.x로 업그레이드하십시오. |
 | Samsung Galaxy S3 (I747) | Qualcomm MSM8960 | 간헐적으로 비디오가 정지하고 오디오만 재생된 후 응답하지 않습니다. |  |  |
 | Samsung Galaxy S3 I747M | SAMSUNG_M2ATT | 비디오가 중지됩니다. | 조사 중입니다. |  |

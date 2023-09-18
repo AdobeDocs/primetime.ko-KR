@@ -1,8 +1,7 @@
 ---
 description: FairPlay 라이선스 토큰 인터페이스는 프로덕션 및 테스트 서비스를 제공합니다.
 title: FairPlay 라이선스 토큰 요청/응답
-exl-id: 7073a74b-d907-4d45-8550-4305655c33f5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 4%
@@ -38,9 +37,9 @@ FairPlay 라이선스 토큰 인터페이스는 프로덕션 및 테스트 서�
 
 * **샘플 응답:**
 
-   ```
-   https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
-   ```
+  ```
+  https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
+  ```
 
 **요청 쿼리 매개 변수**
 

@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK는 EME(Encrypted Media Extensions)에 대한 W3C 사양을 사용하여 여러 DRM(Digital Rights Management) 시스템을 지원합니다. DRM 기능은 통합 API 및 워크플로우를 통해 애플리케이션에서 사용할 수 있습니다.
 title: 지원되는 DRM 시스템
-exl-id: 123939de-b9d0-451a-a752-f350b3560e88
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%

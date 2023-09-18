@@ -1,8 +1,7 @@
 ---
 description: 인스턴트 온이라는 용어는 하나 이상의 채널을 미리 로드하여 사용자가 채널을 선택하거나 채널을 전환하면 콘텐츠가 즉시 재생되는 것을 볼 수 있도록 하는 것을 말합니다. 버퍼링은 사용자가 시청을 시작할 때까지 이미 수행됩니다.
 title: 인스턴트 켜짐
-exl-id: f640f208-d1b3-467a-be97-38690e10b7ed
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%

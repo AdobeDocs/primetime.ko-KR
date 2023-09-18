@@ -1,8 +1,7 @@
 ---
 description: 사용자가 미디어를 통해 빠르게 앞으로 감거나 빠르게 되감으면 트릭 플레이 모드가 됩니다. 트릭 재생 모드로 전환하려면 MediaPlayer 재생 속도를 1이 아닌 값으로 설정해야 합니다.
 title: 신속한 전달 및 되감기 구현
-exl-id: 58ed9a96-9617-4364-81d4-b404b23cf265
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -54,4 +53,4 @@ ht-degree: 0%
 
    * `AdobePSDK.PSDKEventType.RATE_PLAYING` 선택한 속도로 재생이 다시 시작되는 때입니다.
 
-      TVSDK는 플레이어가 trick-play 모드에서 일반 재생 모드로 돌아가면 이 두 이벤트를 모두 전달합니다.
+     TVSDK는 플레이어가 trick-play 모드에서 일반 재생 모드로 돌아가면 이 두 이벤트를 모두 전달합니다.

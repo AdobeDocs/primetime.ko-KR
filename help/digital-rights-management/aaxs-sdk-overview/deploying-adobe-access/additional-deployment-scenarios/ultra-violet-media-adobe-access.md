@@ -1,8 +1,7 @@
 ---
 description: Adobe 액세스는 다른 타사 콘텐츠 스트리밍 솔루션과 함께 사용하여 완전하고 안전한 DRM 기반 미디어 배포 에코시스템을 설정할 수 있습니다.
 title: UltraViolet 미디어 및 Adobe 액세스
-exl-id: cca476a4-1961-46d8-aad4-bc7c996d7b02
-source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%

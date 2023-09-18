@@ -1,8 +1,7 @@
 ---
 description: Adobe Primetime 광고 의사 결정에서 키-값 쌍에 광고를 타깃팅할 수 있습니다.
 title: 타겟팅 정보
-exl-id: 25610f7d-6b14-4ed1-b61c-9e6bf13ba8e6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '37'
 ht-degree: 0%

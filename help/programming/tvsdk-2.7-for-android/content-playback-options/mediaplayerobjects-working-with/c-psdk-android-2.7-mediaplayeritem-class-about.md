@@ -1,8 +1,7 @@
 ---
 description: MediaResource 개체를 성공적으로 로드하면 TVSDK는 MediaPlayerItem 클래스의 인스턴스를 만들어 해당 리소스에 대한 액세스를 제공합니다.
 title: MediaPlayerItem 클래스 정보
-exl-id: 7bf9db5f-63e1-4098-b657-5905fdd12b70
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%

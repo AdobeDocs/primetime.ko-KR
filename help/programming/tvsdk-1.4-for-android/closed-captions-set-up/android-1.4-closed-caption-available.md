@@ -1,8 +1,7 @@
 ---
 description: 자막을 닫으면 소리가 들리지 않거나 시청자가 듣기 어려울 때 비디오의 오디오 부분이 화면에 텍스트로 표시됩니다.
 title: 사용 가능한 트랙 중에서 현재 캡션 트랙 선택
-exl-id: 75970604-c318-4621-bad3-caab292c8a04
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%

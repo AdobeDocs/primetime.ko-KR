@@ -1,8 +1,7 @@
 ---
 title: TV Everywhere를 위한 홈 기반 인증
 description: TV Everywhere를 위한 홈 기반 인증
-exl-id: abdc7724-4290-404a-8f93-953662cdc2bc
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 0%
@@ -151,7 +150,7 @@ SAML 인증 프로토콜에 대한 HBA 인증 흐름에 대한 설명
 
 * [HBA(Instant Access) Recommendations](http://www.ctamtve.com/instantaccess){target=_blank} - CTAM에 의해
 * [프로그래머 앱에서 HBA 구현 예](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/HBA_Flow_Sample.pdf?dc=201604222139-1346){target=_blank} - ADOBE
-   <!--* [Home Based Authentication User Experience Guidelines for TV Everywhere](http://oatc.us/Standards/DownloadRecommendedPractices.aspx){target=_blank} - by OATC-->
+  <!--* [Home Based Authentication User Experience Guidelines for TV Everywhere](http://oatc.us/Standards/DownloadRecommendedPractices.aspx){target=_blank} - by OATC-->
 * [홈 기반 인증 사용 사례 및 요구 사항](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/Defining%20TVE%20Home-Based%20Authentication%20(HBA)%20%20Use%20Cases%20and%20Requirements%20Recommended%20Practice%20Version%201_0%20FINAL%20DRAFT%20FOR%20BOARD%20APPROVAL.pdf){target=_blank} OATC별
 * [홈 기반 인증 인포그래픽](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf?dc=201604260953-2640){target=_blank} - ADOBE
 * [OAuth 2.0 프로토콜을 사용한 인증](/help/authentication/authn-oauth2-protocol.md)

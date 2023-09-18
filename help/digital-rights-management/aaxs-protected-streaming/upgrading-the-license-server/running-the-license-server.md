@@ -1,8 +1,7 @@
 ---
 description: Adobe Access Server for Protected Streaming을 실행하는 서버를 업그레이드하려면 응용 프로그램 서버에 배포된 flashaccessserver.war 파일을 최신 Adobe 액세스에 포함된 파일로 바꿉니다. 위에서 설명한 새 구성 옵션을 사용하려면 서버의 flashaccess-tenant.xml을 업데이트합니다. 또한 jsafe.dll 또는 libjsafe.so를 최신 Adobe 액세스에 포함된 버전으로 업데이트해야 합니다.
 title: 보호된 스트리밍을 위한 Adobe Access Server 실행
-exl-id: 02ba87c9-d4ec-4d39-926e-5d98b1858349
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 라이브 스트림에서 광고 중간에 참가할 수 있는 TV와 유사한 경험을 활성화할 수 있습니다.
 title: 부분 광고 브레이크 삽입
-exl-id: cb0d2f5f-c760-450e-ab34-fd7639d1190b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%

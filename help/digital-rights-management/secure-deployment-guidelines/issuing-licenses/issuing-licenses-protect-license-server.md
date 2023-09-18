@@ -1,8 +1,7 @@
 ---
 description: 라이선스를 안전하게 발급하고 있는지 확인해야 합니다. 라이선스 서버를 보호하기 위한 다음 모범 사례를 고려하십시오.
 title: 라이센스 서버 보호
-exl-id: 88b8f44f-c140-4cbc-be0a-f67058548fc3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 0%
@@ -21,11 +20,11 @@ ht-degree: 0%
 
 * 호출 [RevocationList.verifySignature](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/revocation/RevocationList.html#verifySignature(java.security.cert.X509Certificate)) 서명을제공하기 전에 확인하려면 [해지 목록](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/revocation/RevocationList.html) 모든 API에
 
-   자세한 내용은 [RevocationListFactory](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/revocation/RevocationListFactory.html).
+  자세한 내용은 [RevocationListFactory](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/revocation/RevocationListFactory.html).
 
 * 호출 [PolicyUpdateList.verifySign](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/policyupdate/PolicyUpdateList.html#verifySignature(java.security.cert.X509Certificate)) 을(를) 제공하기 전에 서명을 확인하려면 `PolicyUpdateList` 모든 API에
 
-   자세한 내용은 [정책 업데이트 목록](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/policyupdate/PolicyUpdateList.html).
+  자세한 내용은 [정책 업데이트 목록](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/policyupdate/PolicyUpdateList.html).
 
 ## Adobe에 의해 게시된 CRL 사용{#consuming-crls-published-by-adobe}
 
@@ -69,7 +68,7 @@ Adobe Primetime Adobe DRM 구현에서 클라이언트가 상태(예: 재생 창
 
 DoS 공격은 공격자가 서비스의 합법적인 사용자가 해당 서비스를 사용하지 못하도록 시도하는 것입니다. 예를 들어 롤백 카운터를 사용하는 재생 공격은 DRM 클라이언트가 상태를 롤백했다고 생각하도록 라이선스 서버를 &quot;트릭&quot;하는 데 사용할 수 있으며, 이로 인해 계정이 일시 중단됩니다.
 
-재생 보호에 대한 자세한 내용은 다음을 참조하십시오. [ AbstractRequestMessage.getMessageId()](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/protocol/AbstractRequestMessage.html#getMessageId()).
+재생 보호에 대한 자세한 내용은 다음을 참조하십시오. [AbstractRequestMessage.getMessageId()](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/protocol/AbstractRequestMessage.html#getMessageId()).
 
 ## 신뢰할 수 있는 컨텐츠 패키지 허용 목록 유지 {#maintain-a-allowlist-of-trusted-content-packagers}
 

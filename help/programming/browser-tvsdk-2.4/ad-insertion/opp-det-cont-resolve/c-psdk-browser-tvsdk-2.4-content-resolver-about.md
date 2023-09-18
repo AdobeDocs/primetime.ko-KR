@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK는 타임라인에 광고를 배치하는 기본 영업 기회 생성기 및 콘텐츠 확인자를 제공하며 이러한 생성기 및 확인자는 매니페스트의 비표준 태그를 기반으로 합니다. 응용 프로그램에서 매니페스트에서 식별된 기회를 기반으로 타임라인을 변경해야 할 수 있습니다.
 title: 기회 생성기 및 콘텐츠 해결자
-exl-id: a47acd22-8b1b-4c66-a7eb-a4d99afb5f17
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%

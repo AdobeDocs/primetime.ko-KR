@@ -1,8 +1,7 @@
 ---
 description: PlacementOpportunityDetector 인터페이스를 구현하여 고유한 영업 기회 감지기를 구현할 수 있습니다.
 title: 사용자 정의 영업 기회 감지기 구현
-exl-id: d78949a0-2c76-4976-9358-05f3db86781e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK는 MPD(미디어 프레젠테이션 설명) 파일에서 이러한 개체가 발견될 때마다 구독한 태그에 대한 TimedMetadata 개체를 준비합니다.
 title: 사용자 지정 광고 태그 구독
-exl-id: d4b9ec3a-9c3f-4adf-984e-b45862e97140
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%

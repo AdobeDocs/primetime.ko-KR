@@ -2,8 +2,7 @@
 title: 인증서 갱신
 description: 인증서 갱신
 copied-description: true
-exl-id: db130ca5-4e26-447f-b2f4-4eee0838fd56
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -16,13 +15,13 @@ Adobe Primetime DRM SDK 구성을 기반으로 하는 다음 인증서 갱신 �
 
 * Primetime DRM 프로덕션 SDK
 
-   Adobe은 지원 계약을 구입할 때 Primetime DRM 프로덕션 SDK에 대한 초기 무료 인증서 세트를 제공합니다. 지원 계약이 없을 경우 2년간 유효한 갱신인증서 세트를 구입할 수 있다.
+  Adobe은 지원 계약을 구입할 때 Primetime DRM 프로덕션 SDK에 대한 초기 무료 인증서 세트를 제공합니다. 지원 계약이 없을 경우 2년간 유효한 갱신인증서 세트를 구입할 수 있다.
 * Primetime DRM 평가 SDK
 
-   이 SDK에 설정된 인증서는 1년 동안 유효하며 갱신할 수 없습니다.
+  이 SDK에 설정된 인증서는 1년 동안 유효하며 갱신할 수 없습니다.
 * Primetime DRM 체험판 SDK
 
-   Primetime DRM 체험판 SDK는 3개월 동안 유효하며, Adobe은 하나의 무료 갱신 인증서 세트를 제공합니다.
+  Primetime DRM 체험판 SDK는 3개월 동안 유효하며, Adobe은 하나의 무료 갱신 인증서 세트를 제공합니다.
 
 ## 새 인증서 구현 및 기존 콘텐츠에 대한 이전 인증서 사용 {#section_345C92D1C9794B0BBB9A9B0702EC95FF}
 

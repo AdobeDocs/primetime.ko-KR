@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 오류, 경고 및 TVSDK가 로깅 및 디버깅을 위해 발생하는 일부 활동에 대한 메시지를 설명합니다.
 title: 알림 클래스
-exl-id: 611a886b-a77a-4092-ab05-25e496fec8b1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%

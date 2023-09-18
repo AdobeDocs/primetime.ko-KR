@@ -1,8 +1,7 @@
 ---
 description: 고객은 외부 CEK 기능이 있는 자체 CKMS(Content Key Management Systems)와 함께 AAXS(Adobe 액세스) DRM을 사용할 수 있습니다.
 title: Adobe 액세스 DRM 외부 CEK 개요
-exl-id: 4131863b-5773-4222-aae9-d984267cdb86
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%

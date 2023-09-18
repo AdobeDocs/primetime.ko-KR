@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK를 사용하여 기본 플레이어를 만들려면 다음 단계를 완료하십시오.
 title: TVSDK를 사용하여 기본 플레이어 만들기
-exl-id: ea7485e0-5d15-469b-b8b6-f9604d283492
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%

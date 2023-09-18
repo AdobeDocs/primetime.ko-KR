@@ -1,8 +1,7 @@
 ---
 description: CDN(Content Delivery Network)을 통해 전달되는 HLS 스트림은 경우에 따라 확인을 위해 매니페스트 및 세그먼트 요청에 인증 토큰을 사용할 수 있습니다. 이러한 토큰은 URL 매개 변수 또는 쿠키 헤더로 제공할 수 있습니다.
 title: 토큰화된 세그먼트 스트림
-exl-id: 20a3e8a2-2e9d-4c0d-abea-66edcbcf0003
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%

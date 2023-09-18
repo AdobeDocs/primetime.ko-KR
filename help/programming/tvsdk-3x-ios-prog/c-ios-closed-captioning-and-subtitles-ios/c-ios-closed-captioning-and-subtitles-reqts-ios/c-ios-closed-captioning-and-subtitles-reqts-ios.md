@@ -1,8 +1,7 @@
 ---
 description: 폐쇄 캡션 및 자막에는 몇 가지 고유한 차이점이 있으며 다양한 방식으로 사용할 수 있습니다.
 title: 자막 및 폐쇄 캡션 요구 사항
-exl-id: f90dcfb7-4fd2-41d5-8396-cdc827f8a8c4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -28,13 +27,13 @@ ht-degree: 0%
    * 자막은 일반적으로 다른 언어로 되어 있으며 배경 사운드를 포함하지 않습니다.
    * 자막은 기본 콘텐츠와 동시에 실행되는 스트림에 있습니다.
 
-      다음 `PTMediaPlayer` 는 기본 컨텐츠와 광고를 재생합니다. 여기서 기본 컨텐츠는 라이브/선형 또는 VOD이고, 광고는 프리롤, 미드롤 또는 포스트롤일 수 있습니다.
-   다음은 iOS 자막에 대한 몇 가지 추가 요구 사항입니다.
+     다음 `PTMediaPlayer` 는 기본 컨텐츠와 광고를 재생합니다. 여기서 기본 컨텐츠는 라이브/선형 또는 VOD이고, 광고는 프리롤, 미드롤 또는 포스트롤일 수 있습니다.
+
+  다음은 iOS 자막에 대한 몇 가지 추가 요구 사항입니다.
 
    * 타임스탬프의 경우 `X-TIMESTAMP-MAP` 값: 의 헤더 섹션에 지정됨 `WebVTT` 파일, 비디오 타임스탬프와 일치해야 합니다.
 
    * 시스템의 경우 iOS 6.1 이상을 사용해야 합니다.
-
 
 >[!IMPORTANT]
 >

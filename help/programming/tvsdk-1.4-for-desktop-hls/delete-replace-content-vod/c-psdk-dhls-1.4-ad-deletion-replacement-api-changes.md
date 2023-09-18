@@ -1,8 +1,7 @@
 ---
 description: TVSDK의 이러한 변경 사항은 광고 삭제 및 교체를 지원합니다.
 title: 광고 삭제 및 대체 API 변경 사항
-exl-id: 3cf63353-741b-41f4-93fd-609b69f7c3af
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -29,7 +28,7 @@ TVSDK의 이러한 변경 사항은 광고 삭제 및 교체를 지원합니다.
 
 * 추가됨 `ReplaceTimeRange()` 방법
 
-   확장 `TimeRange` 을(를) 가지려면 `replacementDuration` 속성. MARK 및 DELETE 사례의 경우 `replacementDuration` 은(는) 0입니다.
+  확장 `TimeRange` 을(를) 가지려면 `replacementDuration` 속성. MARK 및 DELETE 사례의 경우 `replacementDuration` 은(는) 0입니다.
 
 * `TimeRangeCollection`
 
@@ -55,11 +54,11 @@ TVSDK의 이러한 변경 사항은 광고 삭제 및 교체를 지원합니다.
    * `doRetrieveGenerators()`
 
       * 추가됨 `CustomRangesOpportunityGenerator` 메타데이터에 사용자 지정 범위가 포함된 경우
+
    * `doRetrieveResolvers()`
 
       * 추가 `CustomRangeResolver` DELETE 및 REPLACE 사용자 정의 범위가 메타데이터에 있는 경우
       * 이동됨 `CustomAdMarkerResolver` 앞에 `AuditudeResolver`
-
 
 * 추가됨 `CustomRangeOpportunityGenerator`
 
@@ -70,11 +69,11 @@ TVSDK의 이러한 변경 사항은 광고 삭제 및 교체를 지원합니다.
 
    * 추가됨 `createCustomRangeOpportunities` 모든 기회를 만들려면
 
-      MARK - 의 각 유효한 표시 범위에 대해 하나의 영업 기회 `PlacementType.CUSTOM_RANGE` 및 `PlacementMode.MARK`
+     MARK - 의 각 유효한 표시 범위에 대해 하나의 영업 기회 `PlacementType.CUSTOM_RANGE` 및 `PlacementMode.MARK`
 
-      DELETE - 의 유효한 삭제 범위마다 하나의 영업 기회 `PlacementType.CUSTOM_RANGE` 및 `PlacementMode.DELETE`
+     DELETE - 의 유효한 삭제 범위마다 하나의 영업 기회 `PlacementType.CUSTOM_RANGE` 및 `PlacementMode.DELETE`
 
-      REPLACE - 유효한 각 바꾸기 범위에 대해 두 개의 영업 기회:
+     REPLACE - 유효한 각 바꾸기 범위에 대해 두 개의 영업 기회:
 
       1. 다음의 삭제 범위 기회 `PlacementType.CUSTOM_RANGE` 및 `PlacementMode.DELETE`.
 

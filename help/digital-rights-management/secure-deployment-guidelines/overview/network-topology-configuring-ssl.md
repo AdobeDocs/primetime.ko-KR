@@ -1,8 +1,7 @@
 ---
 description: SSL(Secure Sockets Layer)은 Flash 미디어 Rights Management 서버 1.x 클라이언트에 대한 지원이 필요한 경우에만 필요합니다.
 title: SSL 구성
-exl-id: f22520dd-65df-4bcb-b966-ff605f25bfbf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%

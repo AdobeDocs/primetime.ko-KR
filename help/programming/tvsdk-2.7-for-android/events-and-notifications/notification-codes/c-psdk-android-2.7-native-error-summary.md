@@ -2,8 +2,7 @@
 title: NATIVE_ERROR 알림 세부 정보
 description: NATIVE_ERROR 알림 세부 정보
 copied-description: true
-exl-id: 51c75349-0fa8-405d-9e09-b51b425fe21b
-source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '6868'
 ht-degree: 2%
@@ -141,7 +140,7 @@ TVSDK가 네이티브 오류를 처리할 때 다음 메타데이터 키 값의 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> AUDITUDE 오류 코드</span> </td> 
-   <td colname="col2"> 감사 오류 코드(숫자). </td> 
+   <td colname="col2"> Auditude 오류 코드(숫자). </td> 
   </tr> 
  </tbody> 
 </table>

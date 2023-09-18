@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 VOD 및 라이브/선형 스트리밍 광고를 자동으로 추적합니다.
 title: 클라이언트 광고 추적
-exl-id: 84d3e0b5-a3ff-4789-866c-acf24f1ae342
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%

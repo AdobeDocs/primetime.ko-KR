@@ -1,8 +1,7 @@
 ---
 description: TVSDK에는 유효한 비율, 현재 비율, 트릭 플레이 지원 여부 및 앞으로 감기 및 되감기와 관련된 기타 기능을 결정하는 메서드, 속성 및 이벤트가 포함되어 있습니다.
 title: 속도 변경 API 요소
-exl-id: 9c366645-5ce5-485c-8423-cb0ed4bd2677
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 3%

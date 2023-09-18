@@ -1,8 +1,7 @@
 ---
 description: HLS 스트림 설정 및 재생 작업을 처리하는 PlaybackManager 를 만듭니다. 다른 구성은 필요하지 않습니다.
 title: 비디오 재생 활성화
-exl-id: b53f602b-5752-4471-9905-2e4351dfc8d3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%

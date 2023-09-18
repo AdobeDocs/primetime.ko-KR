@@ -1,8 +1,7 @@
 ---
 description: Android 3.4용 TVSDK에는 플레이어에서 구현할 수 있는 다양한 기능이 포함되어 있습니다.
 title: Primetime TVSDK 기능
-exl-id: 890768df-17a6-4cc4-8442-6b4734d819c9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%

@@ -2,8 +2,7 @@
 title: NATIVE_ERROR 알림 세부 정보
 description: NATIVE_ERROR 알림 세부 정보
 copied-description: true
-exl-id: 2b75d1ef-bfac-4e2e-a2e8-ee40b25eb8b3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%

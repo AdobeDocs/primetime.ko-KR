@@ -1,8 +1,7 @@
 ---
 description: .m3u8 파일의 EXT-X-VERSION 버전은 응용 프로그램에서 사용할 수 있는 기능과 재생 목록/매니페스트에서 사용할 수 있는 EXT 태그에 영향을 줍니다.
 title: EXT-X-VERSION 요구 사항
-exl-id: ee778fe1-d050-4c90-af8d-6600fff72e52
-source-git-commit: e2a796dc5eb017929297d127cc79b65ba51a0c75
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -19,13 +18,13 @@ ht-degree: 0%
 
 * 버전은 HLS 재생 목록의 기능 및 속성과 일치해야 합니다. 그렇지 않으면 재생 오류가 발생할 수 있습니다.
 
-   자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1)을 참조하십시오.
+  자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1)을 참조하십시오.
 * 버전은 HLS 재생 목록의 기능 및 속성과 일치해야 합니다. 그렇지 않으면 재생 오류가 발생할 수 있습니다.
 
-   자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1)을 참조하십시오.
+  버전은 HLS 재생 목록의 기능 및 특성과 일치해야 합니다. 그렇지 않으면 재생 오류가 발생할 수 있습니다.자세한 내용은 [HTTP 라이브 스트리밍 사양](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1)을 참조하세요.
 * Adobe은 기반 클라이언트에서 재생하기 위해 버전 2 이상을 사용할 것을 권장합니다.
 
-   클라이언트와 서버는 다음 방법으로 버전을 구현해야 합니다.
+  클라이언트와 서버는 다음 방법으로 버전을 구현해야 합니다.
 
 <table frame="all" colsep="1" rowsep="1" id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6"> 
  <thead> 
@@ -55,7 +54,7 @@ ht-degree: 0%
       <li id="li_1084AE3B10FD4EB387D25EEDDFBBC8CD"><span class="codeph"> EXT-X-I-FRAMES 전용 </span> 태그 </li> 
       <li id="li_4FEFA36E300C403DBB77BB4DA46DB4EB"><span class="codeph"> EXT-X-MEDIA </span> 태그 </li> 
       <li id="li_E53D81AED45C47AEA346FA3A1B191E5C">다음 <span class="codeph"> 오디오 </span> 및 <span class="codeph"> 비디오 </span> 의 속성 <span class="codeph"> EXT-X-STREAM-INF </span> 태그 </li> 
-      <li id="li_2E99A4971B8046F3845CF3D4D363CCCF">TVSDK alternate audio </li> 
+      <li id="li_2E99A4971B8046F3845CF3D4D363CCCF">TVSDK 대체 오디오 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 

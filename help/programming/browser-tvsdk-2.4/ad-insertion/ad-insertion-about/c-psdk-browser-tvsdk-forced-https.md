@@ -2,8 +2,7 @@
 title: HTTPS를 통한 보안 광고 로드
 description: HTTPS를 통한 보안 광고 로드
 copied-description: true
-exl-id: d43418e9-631b-4344-a5b3-0a6154a325d4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # HTTPS를 통한 보안 광고 로드{#secure-ad-loading-over-https}
 
-Adobe Primetime은 플레이어가 http에서 호스팅되는 경우에도 https를 통해 서드파티 광고 서버를 요청할 수 있습니다. 이러한 광고 서버 호출만 Auditude Ad Resolver 단계에서 클라이언트가 검색하는 https로 업그레이드됩니다.
+Adobe Primetime은 플레이어가 http에서 호스팅되는 경우에도 https를 통해 서드파티 광고 서버를 요청할 수 있습니다. 광고 서버 호출만 Auditude Ad Resolver 단계 중에 클라이언트가 검색하는 https로 업그레이드됩니다.
 
 >[!NOTE]
 >

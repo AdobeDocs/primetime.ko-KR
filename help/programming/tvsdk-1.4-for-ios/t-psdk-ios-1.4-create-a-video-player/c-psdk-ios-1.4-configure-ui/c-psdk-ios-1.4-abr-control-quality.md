@@ -1,8 +1,7 @@
 ---
 description: HLS 및 DASH 스트림은 동일한 짧은 비디오 버스트에 대해 상이한 비트 레이트 인코딩(프로필)을 제공한다. TVSDK는 가용 대역폭에 기초하여 각 버스트에 대한 품질 레벨을 선택할 수 있다.
 title: 비디오 품질을 위한 적응형 비트 전송률(ABR)
-exl-id: dd6d091a-58c9-4825-8c2c-a1257ef37f22
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -82,7 +81,7 @@ TVSDK 적응형 비트 전송률 매개 변수를 구성하려면:
 
 * 애플리케이션은 다음을 설정해야 합니다. `abrControlParameters` 속성 `PTMediaPlayer` 을(를) 구성하기 전에 `PTMediaPlayerItem` 적용할 초기 및 최소 비트율 설정에 대한 인스턴스입니다.
 
-   컨텐츠 재생이 시작된 후 새 인스턴스를 설정하면 최대 비트율 설정에만 영향을 줍니다.
+  컨텐츠 재생이 시작된 후 새 인스턴스를 설정하면 최대 비트율 설정에만 영향을 줍니다.
 
 * 재생 중에 최대 비트율 설정을 업데이트하려면 새 를 만듭니다 `PTABRControlParameters` 인스턴스를 설정하고 플레이어 인스턴스에 설정합니다.
 * iOS 8.0 이상에서만 재생 중 최대 비트율 설정을 업데이트할 수 있습니다. 이전 버전의 경우 `maxBitrate` 컨텐츠 재생이 시작되기 전에 설정된 값이 사용됩니다.

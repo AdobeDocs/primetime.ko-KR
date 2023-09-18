@@ -1,8 +1,7 @@
 ---
 description: ClosedCaptionStyles 클래스를 사용하여 자막 트랙의 스타일 정보를 제공할 수 있습니다. 플레이어에서 표시하는 모든 폐쇄 캡션의 스타일을 설정합니다.
 title: 자막 스타일 제어
-exl-id: fd94a851-1e8f-4406-a3bb-ca115b4e60f8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%

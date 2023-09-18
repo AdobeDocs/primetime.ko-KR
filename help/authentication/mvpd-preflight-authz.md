@@ -1,8 +1,7 @@
 ---
 title: MVPD Preflight 인증
 description: MVPD Preflight 인증
-exl-id: da2e7150-b6a8-42f3-9930-4bc846c7eee9
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
@@ -29,7 +28,7 @@ MVPD는 Preflight 인증을 지원하지 않아도 되지만, 다음 섹션에�
 
 ## AuthN에서 Preflight {#preflight-authn}
 
-이 프리플라이트 시나리오는 OLCA 호환 시나리오(케이블)입니다. &quot;인증 어설션 내의 속성 문&quot;이라는 인증 및 권한 부여 인터페이스 1.0 사양 섹션 7.5.2에서는 SAML 인증 응답에 사전 승인된 리소스 목록을 포함하는 방법에 대해 설명합니다. IdP가 이 기능을 지원하는 경우 Adobe Primetime 인증 서버는 인증 시 사전 설정된 리소스 목록을 생성하고 인증 토큰과 함께 클라이언트에 캐시할 수 있습니다. 이 메서드는 또한 최상의 사례 시나리오를 달성하며, 모든 것이 이미 클라이언트에 있으므로 프로그래머가 checkPreauthorizedResources()를 호출할 때 네트워크 호출이 수행되지 않습니다.
+이 프리플라이트 시나리오는 OLCA 호환 시나리오(케이블)입니다. &quot;인증 어설션 내의 속성 문&quot;이라는 인증 및 권한 부여 인터페이스 1.0 사양 섹션 7.5.2에서는 SAML 인증 응답이 사전 승인된 리소스 목록을 포함하는 방법에 대해 설명합니다. IdP가 이 기능을 지원하는 경우 Adobe Primetime 인증 서버는 인증 시 사전 설정된 리소스 목록을 생성하고 인증 토큰과 함께 클라이언트에 캐시할 수 있습니다. 이 메서드는 또한 최상의 사례 시나리오를 달성하며, 모든 것이 이미 클라이언트에 있으므로 프로그래머가 checkPreauthorizedResources()를 호출할 때 네트워크 호출이 수행되지 않습니다.
 
 ### SAML 속성 문의 사용자 지정 리소스 목록 {#custom-res-saml-attr}
 
@@ -125,7 +124,7 @@ Adobe은 기존 구현을 변경하지 않고 여러 채널 인증을 지원할 
 
 | Preflight 접근 방식 | MVPD | 메모 |
 |:-------------------------------:|:--------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------:|
-| 다중 채널 AuthZ | Comcast AT&amp;T 프록시 Clearleap Charter_Direct 프록시 GLDS Rogers Verizon OSN Bell Sasktel Optimum AlticeOne |  |
+| 다중 채널 AuthZ | Comcast AT&amp;T 프록시 Clearleap Charter_Direct 프록시 GLDS Rogers Verizon OSN Bell Sasktel Optimum AlticeOne |                                                                    |
 | 사용자 메타데이터의 채널 라인업 | 서든링크 | 모든 Synacor 직접 통합은 이 접근 방식도 지원할 수 있습니다. |
 | 포크 및 조인 | 위에 나열되지 않은 다른 모든 항목 | 선택된 기본 최대 리소스 수는 5입니다. |
 

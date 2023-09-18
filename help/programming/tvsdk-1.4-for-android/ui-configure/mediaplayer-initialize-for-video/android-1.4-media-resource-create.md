@@ -1,8 +1,7 @@
 ---
 description: 각 새 비디오 콘텐츠에 대해 비디오 콘텐츠에 대한 정보로 MediaResource 인스턴스를 초기화하고 미디어 리소스를 로드합니다. MediaResource 클래스는 MediaPlayer 인스턴스가 로드하는 콘텐츠를 나타냅니다.
 title: 미디어 리소스 만들기
-exl-id: cda70f91-7f30-4e37-9dfa-888b707e3d61
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -71,8 +70,9 @@ ht-degree: 0%
 
    * MediaPlayer 인스턴스.
 
-      자세한 내용은 [MediaPlayer에서 미디어 리소스 로드](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md).
+     자세한 내용은 [MediaPlayer에서 미디어 리소스 로드](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md).
    * A `MediaPlayerItemLoader` 자세한 내용은 [MediaPlayerItemLoader를 사용하여 미디어 리소스 로드](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md).
+
    >[!IMPORTANT]
    >
    >백그라운드 스레드에 미디어 리소스를 로드하지 마십시오. 대부분의 TVSDK 작업은 기본 스레드에서 실행되어야 하며 백그라운드 스레드에서 실행되면 작업에서 오류가 발생하여 종료될 수 있습니다.

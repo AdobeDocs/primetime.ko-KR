@@ -1,8 +1,7 @@
 ---
 description: 이 표는 WARN 유형 알림에 대한 자세한 정보를 증명합니다.
 title: 경고 알림 코드
-exl-id: 15f99d89-6f68-476e-a5d3-09c579486920
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 4%
@@ -47,7 +46,7 @@ ht-degree: 4%
    <td colname="2"><span class="codeph"> AD_RESOLVER_ RETURNED_NO_ADS</span> </td> 
    <td colname="3"> <p>없음 </p> </td> 
    <td colname="4"><span class="codeph"> INTERNAL_ERROR, AD_ID,DESCRIPTION</span> </td> 
-   <td colname="5"> <p>잘못된 VAST URL이나 VAST 래퍼에서 반환된 광고가 없어 광고 해결에 실패했습니다. </p> </td> 
+   <td colname="5"> <p>VAST URL이 잘못되었거나 VAST 래퍼에서 반환된 광고가 없어 광고 해결에 실패했습니다. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>배경 매니페스트</b> </td> 

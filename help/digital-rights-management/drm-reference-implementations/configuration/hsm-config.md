@@ -1,8 +1,7 @@
 ---
 description: HSM을 지원하는 Sun PKCS#11 공급자를 통해 참조 구현을 구성할 수 있습니다. HSM을 사용할 필요는 없지만 사용하는 것이 좋습니다.
 title: HSM 구성
-exl-id: 87a7d242-8202-4749-91a6-e6697be6a61d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%

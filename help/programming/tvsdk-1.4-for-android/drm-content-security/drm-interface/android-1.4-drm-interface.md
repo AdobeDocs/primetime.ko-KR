@@ -1,8 +1,7 @@
 ---
 description: Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 Adobe의 통합 Primetime DRM 솔루션 대신 타사 DRM 솔루션을 사용할 수 있습니다.
 title: Primetime DRM 인터페이스 개요
-exl-id: 2f6e50e6-39f0-4939-bb9b-6c46e34bab7e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -27,64 +26,64 @@ TVSDK 패키지에 포함된 DRM 샘플 플레이어 코드를 참조하십시�
 
 * DRM 하위 시스템을 구현하는 DRM 관리자 개체에 대한 미디어 플레이어의 참조:
 
-   ```java
-   MediaPlayer.getDRMManager();
-   ```
+  ```java
+  MediaPlayer.getDRMManager();
+  ```
 
-   >[!TIP]
-   >
-   >이 API는 유효한 을(를) 반환합니다 `DRMManager` 개체 `MediaPlayerEvent.DRM_METADATA` 이(가) 실행되었습니다. 전화 주시면 `getDRMManager()` 이 이벤트가 실행되기 전에 NULL을 반환할 수 있습니다.
+  >[!TIP]
+  >
+  >이 API는 유효한 을(를) 반환합니다 `DRMManager` 개체 `MediaPlayerEvent.DRM_METADATA` 이(가) 실행되었습니다. 전화 주시면 `getDRMManager()` 이 이벤트가 실행되기 전에 NULL을 반환할 수 있습니다.
 
 * 다음 `DRMHelper` helper 클래스 : DRM 워크플로우를 구현할 때 유용합니다.
 
-   다음을 볼 수 있습니다. `DRMHelper` 위치: `ReferencePlayer`.
+  다음을 볼 수 있습니다. `DRMHelper` 위치: `ReferencePlayer`.
 
 * A `DRMHelper` DRM 메타데이터가 미디어와 별도의 URL에 있는 경우 로드하는 메타데이터 로더 방법.
 
-   ```java
-   public static void loadDRMMetadata(final DRMManager drmManager,  
-      final String drmMetadataUrl,  
-      final DRMLoadMetadataListener loadMetadataListener);
-   ```
+  ```java
+  public static void loadDRMMetadata(final DRMManager drmManager,  
+     final String drmMetadataUrl,  
+     final DRMLoadMetadataListener loadMetadataListener);
+  ```
 
 * A `DRMHelper` 인증이 필요한지 여부를 확인하기 위해 DRM 메타데이터를 확인하는 방법입니다.
 
-   ```java
-   /** 
-   * Return whether authentication is needed for the provided 
-   * DRMMetadata. 
-   * 
-   * @param drmMetadata 
-   * The desired DRMMetadata on which to check whether auth is needed. 
-   * @return whether authentication is required for the provided metadata 
-   */ 
-   public static boolean isAuthNeeded(DRMMetadata drmMetadata);
-   ```
+  ```java
+  /** 
+  * Return whether authentication is needed for the provided 
+  * DRMMetadata. 
+  * 
+  * @param drmMetadata 
+  * The desired DRMMetadata on which to check whether auth is needed. 
+  * @return whether authentication is required for the provided metadata 
+  */ 
+  public static boolean isAuthNeeded(DRMMetadata drmMetadata);
+  ```
 
 * `DRMHelper` 인증을 수행하는 방법입니다.
 
-   ```java
-   /** 
-   * Helper method to perform DRM authentication. 
-   * 
-   * @param drmManager 
-   * the DRMManager, used to perform the authentication. 
-   * @param drmMetadata 
-   * the DRMMetadata, containing the DRM specific information. 
-   * @param authenticationListener 
-   * the listener, on which the user can be notified about the 
-   * authentication process status. 
-   * @param authUser 
-   * the DRM username provider by the user. 
-   * @param authPass 
-   * the DRM password provided by the user. 
-   */ 
-   public static void performDrmAuthentication(final DRMManager drmManager,  
-   final DRMMetadata drmMetadata,  
-   final String authUser,  
-   final String authPass,  
-   final DRMAuthenticationListener authenticationListener);
-   ```
+  ```java
+  /** 
+  * Helper method to perform DRM authentication. 
+  * 
+  * @param drmManager 
+  * the DRMManager, used to perform the authentication. 
+  * @param drmMetadata 
+  * the DRMMetadata, containing the DRM specific information. 
+  * @param authenticationListener 
+  * the listener, on which the user can be notified about the 
+  * authentication process status. 
+  * @param authUser 
+  * the DRM username provider by the user. 
+  * @param authPass 
+  * the DRM password provided by the user. 
+  */ 
+  public static void performDrmAuthentication(final DRMManager drmManager,  
+  final DRMMetadata drmMetadata,  
+  final String authUser,  
+  final String authPass,  
+  final DRMAuthenticationListener authenticationListener);
+  ```
 
 * 다양한 DRM 활동 및 상태에 대해 애플리케이션에 알리는 이벤트입니다.
 

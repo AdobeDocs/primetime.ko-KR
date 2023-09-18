@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 광고 배치를 포함하여 특정 미디어의 타임라인에 대한 정보를 제공합니다.
 title: 타임라인 클래스
-exl-id: bb879592-aef2-4adb-acbc-c927133a5cc5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%

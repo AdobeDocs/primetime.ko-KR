@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 타임라인에서 광고와 같은 콘텐츠 배치에 대한 기회를 탐지하는 데 도움이 됩니다.
 title: 타임라인 생성기 클래스
-exl-id: 2c9d1f10-fdf6-48b9-8bda-cee291befeab
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: 보안 네트워크 아키텍처를 구성할 때 Adobe Primetime DRM과 엔터프라이즈 네트워크의 다른 시스템 간의 상호 작용을 위한 네트워크 프로토콜이 필요합니다.
 title: Adobe Primetime DRM 네트워크 프로토콜
-exl-id: d5720ef4-6845-4a62-940a-9d8ba9b43b13
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%

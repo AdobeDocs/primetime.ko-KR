@@ -2,8 +2,7 @@
 title: 인증서 요청(요청자)
 description: 인증서 요청(요청자)
 copied-description: true
-exl-id: 290231ec-1146-4bfb-a449-b8ff85704197
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -27,9 +26,9 @@ ht-degree: 0%
    * CSR 파일을 업로드합니다.
    * CSR에서 CSR 정보를 복사하여 양식에 붙여넣습니다.
 
-      >[!NOTE]
-      >
-      >CSR 정보를 복사하려면 시작 태그 사이에 있는 텍스트(포함 안 함)를 선택합니다 `(-----BEGIN CERTIFICATE REQUEST-----)` 및 종료 태그 `(-----END CERTIFICATE REQUEST-----)`.
+     >[!NOTE]
+     >
+     >CSR 정보를 복사하려면 시작 태그 사이에 있는 텍스트(포함 안 함)를 선택합니다 `(-----BEGIN CERTIFICATE REQUEST-----)` 및 종료 태그 `(-----END CERTIFICATE REQUEST-----)`.
 
 1. 다음을 클릭합니다. **[!UICONTROL Submit Request]** 단추를 클릭합니다.
 

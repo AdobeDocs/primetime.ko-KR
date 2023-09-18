@@ -1,8 +1,7 @@
 ---
 description: 이벤트 핸들러를 사용하면 TVSDK가 이벤트에 응답할 수 있습니다.
 title: 이벤트 리스너 및 콜백 구현
-exl-id: eda5cd4e-4ee8-4b37-a179-242e8697f61f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%
@@ -25,13 +24,13 @@ TVSDK는에서 리스너를 공용 내부 인터페이스로 정의합니다. `M
 
    * **필수 이벤트**: 모든 재생 이벤트를 수신합니다.
 
-      >[!IMPORTANT]
-      >
-      >재생 이벤트 `onStateChanged` 는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다
+     >[!IMPORTANT]
+     >
+     >재생 이벤트 `onStateChanged` 는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다
 
    * **기타 이벤트**: 애플리케이션에 따라 선택 사항입니다.
 
-      예를 들어 재생에 광고를 통합하는 경우 AdPlaybackEventListener 콜백을 구현합니다.
+     예를 들어 재생에 광고를 통합하는 경우 AdPlaybackEventListener 콜백을 구현합니다.
 
 1. 각 이벤트에 대해 이벤트 리스너를 구현합니다.
 

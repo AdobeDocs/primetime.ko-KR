@@ -1,8 +1,7 @@
 ---
 description: 매니페스트의 태그에 대한 알림을 받으려면 AdobePSDK.TimedMetadataEvent를 수신하십시오.
 title: 시간 메타데이터 알림에 대한 리스너 추가
-exl-id: eea2505f-595c-4bbe-9b68-ae395943c888
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%

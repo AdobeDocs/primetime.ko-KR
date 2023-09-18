@@ -1,8 +1,7 @@
 ---
 title: 특정 MVPD에 대해 계정 IQ 지표를 사용하는 방법
 description: 계정 IQ 보고서를 사용하고 이해하는 방법입니다.
-exl-id: ada9a80a-b31b-4bdc-838c-dcd94a0a6c59
-source-git-commit: 5963c55d87385fbd92646bfc45a3650fb568bca5
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -29,17 +28,17 @@ ht-degree: 0%
 
 * [일반 사용](/help/AccountIQ/general-usage-reports.md)
 
-   ![](assets/specific-mvpd-gen-usage.png)
+  ![](assets/specific-mvpd-gen-usage.png)
 * [공유 계정](/help/AccountIQ/shared-acc-reports.md)
 
-   ![](assets/specific-mvpd-shared-acc.png)
+  ![](assets/specific-mvpd-shared-acc.png)
 * [사용 패턴](/help/AccountIQ/usage-patterns.md)
 
-   ![](assets/specific-mvpd-usage-pattern.png)
+  ![](assets/specific-mvpd-usage-pattern.png)
 
 * [대시보드](/help/AccountIQ/dashboard.md) (대시보드에서는 다른 보고서 페이지에서 선택한 그래프를 볼 수 있습니다.)
 
-   ![](assets/specific-mvpd-dashboard.png)
+  ![](assets/specific-mvpd-dashboard.png)
 
 이러한 각 페이지는 선택한 세그먼트의 활동을 반영합니다.
 

@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 TVSDK가 다양한 활동에 대한 응답으로 미디어 플레이어에 전달하는 이벤트를 설명합니다.
 title: Events 클래스
-exl-id: a349984a-5e47-4895-a56f-ef25eb372c79
-source-git-commit: 776d3d1668f063f1595bd3ecb53603171905014a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

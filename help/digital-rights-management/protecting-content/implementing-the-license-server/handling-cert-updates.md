@@ -2,8 +2,7 @@
 title: Adobe이 발급한 인증서가 만료되면 인증서 업데이트 처리
 description: Adobe이 발급한 인증서가 만료되면 인증서 업데이트 처리
 copied-description: true
-exl-id: 9051a647-87ed-4df6-8bbc-bb5c112383ee
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -48,24 +47,24 @@ Adobe에서 새 인증서를 받아야 할 수 있습니다. 예를 들어 평�
 
       * 참조 구현에서 `LicenseHandler.ServerCredential` 속성.
       * 보호된 스트리밍용 Adobe Primetime DRM 서버에서 현재 자격 증명은 `LicenseServerCredential` flashaccess-tenant.xml 파일의 요소입니다.
+
    * 현재 및 이전 자격 증명이 다음 대상에게 제공되는지 확인합니다. `AsymmetricKeyRetrieval`
 
       * 참조 구현에서 `LicenseHandler.ServerCredential` 및 `AsymmetricKeyRetrieval.ServerCredential. n` 속성.
 
       * Primetime DRM Server for Protected Streaming에서 이전 자격 증명은 의 첫 번째 자격 증명 뒤에 지정됩니다. `LicenseServerCredential` flashaccess-tenant.xml 파일의 요소입니다.
+
    전송 자격 증명:
 
    * 현재 자격 증명이 (으)로 전달되었는지 확인합니다. `HandlerConfiguration.setServerTransportCredential()` 방법:
 
       * 참조 구현에서 `HandlerConfiguration.ServerTransportCredential` 속성.
       * 보호된 스트리밍을 위한 Primetime DRM 서버에서 현재 자격 증명은 `TransportCredential` 의 요소 [!DNL flashaccess-tenant.xml] 파일.
+
    * 에 이전 자격 증명이 제공되는지 확인합니다. `HandlerConfiguration.setAdditionalServerTransportCredentials`():
 
       * 참조 구현에서 `HandlerConfiguration.AdditionalServerTransportCredential. n` 속성.
       * 보호된 스트리밍을 위한 Primetime DRM 서버에서는 의 첫 번째 자격 증명 뒤에 지정됩니다. `TransportCredential` flashaccess-tenant.xml 파일의 요소입니다.
-
-
-
 
 1. 패키징 도구를 업데이트하여 현재 자격 증명으로 콘텐츠를 패키징하고 있는지 확인합니다. 최신 라이선스 서버 인증서, 전송 인증서 및 패키지 자격 증명을 패키징에 사용해야 합니다.
 1. 다음과 같이 키 서버의 라이선스 서버 인증서를 업데이트합니다.

@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 콘텐츠 매니페스트에서 해당 개체가 발견될 때마다 구독한 태그에 대한 PTTimedMetadata 개체를 준비합니다.
 title: 사용자 정의 태그 구독
-exl-id: 5074e622-8824-4253-a668-485e2f68f156
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%

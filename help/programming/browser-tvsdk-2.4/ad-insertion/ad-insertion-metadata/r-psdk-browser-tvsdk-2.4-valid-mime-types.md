@@ -1,8 +1,7 @@
 ---
 description: 광고에는 여러 개의 크리에이티브가 있을 수 있으며 그중 하나는 재생되도록 선택됩니다.
 title: 유효한 MIME 유형
-exl-id: 878cae20-2a94-4795-8908-be7daffefb41
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: AES-128 암호화 방법은 헤더를 포함하는 전체 전송 스트림(TS) 컨테이너를 암호화하지만, SAMPLE-AES 암호화는 오디오와 비디오 데이터의 일부만 암호화합니다.
 title: 샘플 AES 암호화 HLS 스트림
-exl-id: 04bda50f-5ca4-4a00-bb5a-97259a2cb005
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%

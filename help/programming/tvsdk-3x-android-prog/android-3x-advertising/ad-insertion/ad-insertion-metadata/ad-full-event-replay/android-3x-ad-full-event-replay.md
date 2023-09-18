@@ -1,8 +1,7 @@
 ---
 description: FER(전체 이벤트 재생)은 라이브/DVR 에셋 역할을 하는 VOD 에셋이므로, 애플리케이션이 광고를 올바르게 배치할 수 있도록 조치를 취해야 합니다.
 title: 전체 이벤트 재생에서 광고 활성화
-exl-id: d152472d-298b-4212-af32-6245a455e914
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -31,7 +30,7 @@ FER 스트림의 경우, Adobe Primetime Ad Decisioning 서버는 재생을 시�
 
    >[!IMPORTANT]
    >
-   >호출하기 전에 광고 신호 모드를 설정해야 합니다. `prepareToPlay`. TVSDK가 타임라인에서 광고를 확인하고 배치하면 광고 신호 모드에 대한 변경 사항이 무시됩니다. 다음을 만들 때 모드 설정 `AuditudeSettings` 개체.
+   >를 호출하기 전에 광고 신호 모드를 설정해야 합니다. `prepareToPlay`. TVSDK가 타임라인에서 광고를 확인하고 배치하면 광고 신호 모드에 대한 변경 사항이 무시됩니다. 다음을 만들 때 모드 설정 `AuditudeSettings` 개체.
 
 1. 계속 재생합니다.
 

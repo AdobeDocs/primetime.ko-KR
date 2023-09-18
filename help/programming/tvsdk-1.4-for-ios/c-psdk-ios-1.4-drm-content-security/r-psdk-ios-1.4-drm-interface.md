@@ -1,8 +1,7 @@
 ---
 description: Primetime DRM(디지털 권한 관리) 시스템의 주요 클라이언트측 요소는 DRM 관리자입니다.
 title: Primetime DRM 인터페이스 개요
-exl-id: dee420cf-8aad-42e8-965d-9fd9395f2c45
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -29,9 +28,9 @@ TVSDK 패키지에 포함된 DRM 샘플 플레이어 코드를 참조하십시�
 
 * DRM 하위 시스템을 구현하는 DRM 관리자 개체에 대한 미디어 플레이어의 참조:
 
-   ```
-   @property (readonly, nonatomic) DRMManager *drmManager
-   ```
+  ```
+  @property (readonly, nonatomic) DRMManager *drmManager
+  ```
 
 <!--<a id="section_F986DB1EDD6F44CD8E57419CCA0921E8"></a>-->
 
@@ -45,8 +44,7 @@ DRM 보호 스트림이 MBR(Multiple Bit-rate) 인코딩되는 경우, 변형 �
 >
 >iOS 앱에서 DRM 보호 에셋 URL을 참조할 때 쿼리 문자열 매개 변수 `?faxs=1` 은(는) (MBR) 집합 수준 M3U8 URL에 추가되어야 합니다. 예:
 >
->
-```
+>```
 >https://your.domain.com/hls/[...]/index.m3u8?faxs=1
 >```
 >

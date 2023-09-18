@@ -4,8 +4,7 @@ description: TVSDK 2.5는 성능, 보안, 향상된 통합 등의 측면에서 �
 contentOwner: vishgupt
 products: SG_PRIMETIME
 topic-tags: migration
-exl-id: 3b7f8355-ebea-4322-aef4-5393308391b5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
@@ -332,7 +331,7 @@ itemLoader.load(playerResource); itemLoader.prepareBuffer();
 mediaPlayer.replaceCurrentItem(itemLoader.getItem());
 ```
 
-일시 중단의 경우와 같이 이 옵션을 사용하여 사전 초기화된 MediaPlayer 인스턴스 간에 전환할 수 있습니다.
+일시 중단의 경우와 같이 이 옵션을 사용하여 미리 초기화된 MediaPlayer 인스턴스 간에 전환할 수 있습니다.
 
 **생성자가 정적 create() 메서드를 바꿉니다.**
 
@@ -364,7 +363,7 @@ new MediaPlayer(getActivity().getApplicationContext()); return mediaPlayer;
 이 패턴을 따르지 않지만 `create()` 1.4의 메서드는 다음과 같습니다.
 
 * MediaResource\
-   이전에 사용된 항목 `MediaResource.createFromUrl()`. 이제 URL, 리소스 유형 및 메타데이터를 가져오는 생성자를 사용합니다. 예:
+  이전에 사용된 항목 `MediaResource.createFromUrl()`. 이제 URL, 리소스 유형 및 메타데이터를 가져오는 생성자를 사용합니다. 예:
 
 ```java
 //TVSDK v1.4

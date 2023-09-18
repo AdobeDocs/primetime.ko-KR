@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 타임라인에 영향을 주는 작업을 수행하는 데 도움이 됩니다.
 title: 타임라인 작업 클래스
-exl-id: 56e4b745-c340-4986-a61b-d41d2156482e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%

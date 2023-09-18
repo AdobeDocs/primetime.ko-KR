@@ -1,8 +1,7 @@
 ---
 description: 외부 CEK 기능을 사용하여 기존 CKMS를 사용하여 라이센스를 검증하고 패키징합니다.
 title: 외부 CEK를 사용하여 라이선스 갱신 및 패키지
-exl-id: 3944624a-099e-4fc0-b829-6ab154a53758
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -36,7 +35,6 @@ ht-degree: 0%
 >* Java 소스 코드는 포함된 ANT를 사용하여 빌드할 수 있습니다 `build-samples.xml`
 >* Flash Access SDK( `adobe-flashaccess-sdk.jar`)는 클래스 경로에 있어야 합니다.
 >
-
 
 ## 서버 워크플로우
 

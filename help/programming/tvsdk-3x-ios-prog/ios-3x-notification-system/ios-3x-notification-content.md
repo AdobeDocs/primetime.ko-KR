@@ -1,8 +1,7 @@
 ---
 description: PTNotification 객체는 플레이어 상태, 경고 및 오류의 변경 내용에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류는 플레이어의 상태에도 변화를 일으킵니다.
 title: 알림 콘텐츠
-exl-id: 62423718-b154-4105-82b2-f6e389105ec8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

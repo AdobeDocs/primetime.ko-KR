@@ -1,8 +1,7 @@
 ---
 description: AVE의 비디오 인코더 인터페이스는 NATIVE_ERROR 메타데이터 객체에서 이러한 비디오 재생 통지를 반환한다.
 title: NATIVE_ERROR 비디오 재생 값
-exl-id: a4476bbe-a62b-40cf-9795-cd209683c572
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 6%

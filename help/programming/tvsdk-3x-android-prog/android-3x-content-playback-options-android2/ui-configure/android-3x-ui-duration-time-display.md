@@ -1,8 +1,7 @@
 ---
 description: TVSDK를 사용하여 미디어에서 플레이어의 위치에 대한 정보를 검색하고 찾기 표시줄에 표시할 수 있습니다.
 title: 비디오의 지속 시간, 현재 시간 및 남은 시간을 표시합니다.
-exl-id: 68501c81-346a-4c3e-aa20-a98b8b1c6b17
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -34,7 +33,7 @@ TVSDK를 사용하여 미디어에서 플레이어의 위치에 대한 정보를
       * VOD의 경우 범위는 항상 0으로 시작하며 종료 값은 기본 콘텐츠 지속 시간과 스트림(광고)의 추가 콘텐츠 지속 시간의 합계와 같습니다.
       * 선형/라이브 에셋의 경우 범위는 재생 창 범위를 나타냅니다. 이 범위는 재생 중에 변경됩니다.
 
-         TVSDK에서 `ITEM_Updated` 미디어 항목이 새로 고쳐졌고 재생 범위를 포함한 해당 특성이 업데이트되었음을 나타내는 콜백입니다.
+        TVSDK에서 `ITEM_Updated` 미디어 항목이 새로 고쳐졌고 재생 범위를 포함한 해당 특성이 업데이트되었음을 나타내는 콜백입니다.
 
 1. 에서 사용할 수 있는 메서드 사용 `MediaPlayer` 및 `SeekBar` 클래스로 사용하여 Android SDK의 검색 창 매개 변수를 설정할 수 있습니다.
 

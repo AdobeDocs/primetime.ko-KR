@@ -1,8 +1,7 @@
 ---
 description: 302 리디렉션 최적화는 302 리디렉션 응답 수를 최소화하므로 애플리케이션이 로드 밸런스를 보다 효과적으로 조정할 수 있습니다.
 title: 302 리디렉션 최적화 비활성화 또는 활성화
-exl-id: b1bdb6d6-b34d-4e0a-8c96-7fd4ce77b5c9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%

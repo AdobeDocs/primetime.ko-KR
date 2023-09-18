@@ -1,8 +1,7 @@
 ---
 title: 선택 대화 상자에 MVPD가 표시되지 않도록 합니다.
 description: 선택 대화 상자에 MVPD가 표시되지 않도록 합니다.
-exl-id: 20faf501-c006-45e2-a725-fb1273ecaffe
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%

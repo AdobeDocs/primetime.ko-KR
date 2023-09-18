@@ -1,8 +1,7 @@
 ---
 description: 사용자 지정 광고 마커를 사용하여 기본 콘텐츠의 특정 섹션을 광고 관련 콘텐츠 기간으로 표시할 수 있습니다.
 title: 사용자 지정 광고 마커 추가
-exl-id: 310b2b81-873f-4b37-b18d-d586e6408978
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 * 광고 브레이크
 
-   광고 브레이크는 개별 연속 광고의 순서 지정 목록입니다.
+  광고 브레이크는 개별 연속 광고의 순서 지정 목록입니다.
 * 개별 광고
 
 재생 이벤트는 각 광고의 시작 및 종료 지점에서 광고 브레이크와 광고에 대해 개별적으로 트리거됩니다.

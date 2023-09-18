@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 잘못 정의된 시간 범위를 병합하거나 재정렬하여 특정 문제에 따라 시간 범위 오류를 처리합니다.
 title: 광고 삭제 및 교체 오류 처리
-exl-id: 86970989-82e0-4e6f-81fb-beee70870c69
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%

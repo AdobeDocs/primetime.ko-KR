@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerView 개체를 사용하여 비디오 보기의 위치와 크기를 제어할 수 있습니다.
 title: 비디오 보기의 위치 및 크기 제어
-exl-id: 5e7ae557-7f2b-4697-85eb-e72d1f43a7fc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -33,8 +32,7 @@ TVSDK는 기본적으로 비디오 크기나 위치가 변경될 때마다(애�
    >
    >예:
    >
-   >
-   ```
+   >```
    >public class CustomScalePolicy implements MediaPlayerViewScalePolicy { 
    >       /** 
    >         * Default constructor. 
@@ -56,6 +54,7 @@ TVSDK는 기본적으로 비디오 크기나 위치가 변경될 때마다(애�
    >       } 
    >}
    >```
+   >
 
 1. 에 구현 할당 `MediaPlayerView` 속성.
 

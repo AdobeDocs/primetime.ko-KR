@@ -2,8 +2,7 @@
 title: 개요
 description: 개요
 copied-description: true
-exl-id: 866b3147-c28b-41b0-8653-06ba867354c5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -40,7 +39,7 @@ java -jar AdobePackager.jar
 * `source` - 암호화할 파일의 이름입니다.
 * `dest` - 암호화된 파일의 이름입니다.
 
-   디렉토리를 지정하면 암호화된 파일이 소스 파일로 지정한 것과 동일한 파일 이름으로 지정된 디렉토리에 자동으로 저장됩니다. 그러나 소스 파일이 포함된 대상 디렉토리는 지정할 수 없습니다.
+  디렉토리를 지정하면 암호화된 파일이 소스 파일로 지정한 것과 동일한 파일 이름으로 지정된 디렉토리에 자동으로 저장됩니다. 그러나 소스 파일이 포함된 대상 디렉토리는 지정할 수 없습니다.
 
 **동일한 키로 여러 파일 패키징** 다중 비트 전송률 지원의 경우:
 

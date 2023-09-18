@@ -1,8 +1,7 @@
 ---
 description: 비디오에 대한 DRM 메타데이터가 미디어 스트림에 포함된 경우 재생 중에 인증을 수행합니다.
 title: 재생 중 DRM 인증
-exl-id: 3f190d37-291e-4a5e-811d-7e9984a6a44a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%

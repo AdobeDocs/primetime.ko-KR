@@ -1,8 +1,7 @@
 ---
 description: '전체 재생 목록이 누락된 경우(예: 최상위 매니페스트 파일에 지정된 M3U8 파일이 다운로드되지 않은 경우) TVSDK는 복구를 시도합니다. 복구할 수 없는 경우 애플리케이션이 다음 단계를 결정합니다.'
 title: 누락된 재생 목록 장애 조치(failover)
-exl-id: aab2dde3-aee2-4ade-b8f9-91c72df0c747
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

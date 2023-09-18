@@ -1,8 +1,7 @@
 ---
 description: TVSDK의 이벤트는 플레이어의 상태, 발생하는 오류, 재생을 시작하는 비디오와 같이 요청한 작업의 완료 또는 광고 완료와 같이 묵시적으로 발생하는 작업을 나타냅니다.
 title: Primetime 플레이어 이벤트 수신
-exl-id: 3a740245-a9e1-4e36-8761-f9f4b4e85b93
-source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -19,13 +18,13 @@ Flash 런타임에서는 TVSDK가 일련의 사용자 지정 이벤트도 사용
 
    * **필수 이벤트**: 모든 재생 이벤트를 수신합니다.
 
-      >[!IMPORTANT]
-      >
-      >재생 이벤트 `MediaPlayerStatusChangeEvent.STATUS_CHANGE` 는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다.
+     >[!IMPORTANT]
+     >
+     >재생 이벤트 `MediaPlayerStatusChangeEvent.STATUS_CHANGE` 는 오류를 포함하여 플레이어 상태를 제공합니다. 모든 상태가 플레이어의 다음 단계에 영향을 줄 수 있습니다.
 
    * **기타 이벤트**: 애플리케이션에 따라 선택 사항입니다.
 
-      예를 들어 재생에 광고를 통합하는 경우 모두 수신 대기하십시오 `AdBreakPlaybackEvent` 및 `AdPlaybackEvent` 이벤트.
+     예를 들어 재생에 광고를 통합하는 경우 모두 수신 대기하십시오 `AdBreakPlaybackEvent` 및 `AdPlaybackEvent` 이벤트.
 
 1. 각 이벤트에 대해 이벤트 리스너를 구현합니다.
 

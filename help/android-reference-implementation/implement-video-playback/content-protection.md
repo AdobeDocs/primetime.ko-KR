@@ -1,8 +1,7 @@
 ---
 description: Primetime 플레이어는 Primetime DRM 통합을 사용자 지정 DRM 워크플로우로 지원합니다. 즉, 애플리케이션이 스트림을 재생하기 전에 DRM 인증 워크플로우를 구현해야 합니다.
 title: DRM 콘텐츠 보호
-exl-id: c1904d15-023f-49fb-95f9-d157d17b3516
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -29,47 +28,47 @@ Primetime 플레이어는 Primetime DRM 통합을 사용자 지정 DRM 워크플
 
 * DRM 시스템을 초기화합니다.
 
-   다음 코드 예제에서는 호출을 보여 줍니다 `loadDRMServices` 응용 프로그램에서 `onCreate()` 함수를 사용하여 DRM 시스템에 필요한 초기화가 재생 시작 전에 시작되도록 할 수 있습니다.
+  다음 코드 예제에서는 호출을 보여 줍니다 `loadDRMServices` 응용 프로그램에서 `onCreate()` 함수를 사용하여 DRM 시스템에 필요한 초기화가 재생 시작 전에 시작되도록 할 수 있습니다.
 
-   ```java
-   @Override 
-    public void onCreate() { 
-        super.onCreate();  
-        DrmManager.loadDRMServices(getApplicationContext()); 
-    }
-   ```
+  ```java
+  @Override 
+   public void onCreate() { 
+       super.onCreate();  
+       DrmManager.loadDRMServices(getApplicationContext()); 
+   }
+  ```
 
 * DRM 라이센스를 미리 로드합니다.
 
-   다음 코드 예제에서는 `VideoItems` 콘텐츠 목록 로드가 완료되면. 이렇게 하면 DRM 라이선스가 라이선스 서버에서 획득되고 로컬로 캐시되므로 재생이 시작될 때 콘텐츠가 최소 지연으로 로드됩니다.
+  다음 코드 예제에서는 `VideoItems` 콘텐츠 목록 로드가 완료되면. 이렇게 하면 DRM 라이선스가 라이선스 서버에서 획득되고 로컬로 캐시되므로 재생이 시작될 때 콘텐츠가 최소 지연으로 로드됩니다.
 
-   ```java
-   DrmManager.preLoadDrmLicenses(item.getUrl(),  
-     new MediaPlayerItemLoader.LoaderListener() { 
-   
-       @Override 
-       public void onLoadComplete(MediaPlayerItem item) { 
-           Player.logger.w(LOG_TAG + "::DRMPreload#onLoadComplete", item.getResource().getUrl()); 
-       } 
-   
-       @Override 
-       public void onError(MediaErrorCode errorCode, String s) { 
-           Player.logger.e(LOG_TAG + "::DRMPreload#onError", s); 
-       } 
-   } 
-   ```
+  ```java
+  DrmManager.preLoadDrmLicenses(item.getUrl(),  
+    new MediaPlayerItemLoader.LoaderListener() { 
+  
+      @Override 
+      public void onLoadComplete(MediaPlayerItem item) { 
+          Player.logger.w(LOG_TAG + "::DRMPreload#onLoadComplete", item.getResource().getUrl()); 
+      } 
+  
+      @Override 
+      public void onError(MediaErrorCode errorCode, String s) { 
+          Player.logger.e(LOG_TAG + "::DRMPreload#onError", s); 
+      } 
+  } 
+  ```
 
-   >[!NOTE]
-   >
-   >설정 사용자 인터페이스에서 사전 캐싱 DRM 라이센스 를 설정(ON)으로 설정하여 콘텐츠를 로드할 때 DRM 라이센스를 사전 캐싱할 수 있습니다. 그러나 카탈로그의 모든 라이센스에 미리 로드하는 대신 특정 항목을 미리 로드하는 것이 가장 좋습니다.
-   >
-   >![](assets/precache-drm-licenses.jpg)
+  >[!NOTE]
+  >
+  >설정 사용자 인터페이스에서 사전 캐싱 DRM 라이센스 를 설정(ON)으로 설정하여 콘텐츠를 로드할 때 DRM 라이센스를 사전 캐싱할 수 있습니다. 그러나 카탈로그의 모든 라이센스에 미리 로드하는 대신 특정 항목을 미리 로드하는 것이 가장 좋습니다.
+  >
+  >![](assets/precache-drm-licenses.jpg)
 
 * 사용 `ManagerFactory` DRM 오류 처리를 구현하려면 다음 코드 줄이 [!DNL PlayerFragment.java] 파일:
 
-   ```java
-   drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);
-   ```
+  ```java
+  drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);
+  ```
 
 **관련 API 설명서**
 

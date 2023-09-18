@@ -2,8 +2,7 @@
 title: 보호된 스트리밍을 위한 DRM 서버 실행
 description: 보호된 스트리밍을 위한 DRM 서버 실행
 copied-description: true
-exl-id: 05dc4c55-a97e-4bdc-aea8-32741299454c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -83,4 +82,4 @@ Adobe Primetime DRM 서버에서 보호된 스트리밍 애플리케이션에 �
 
 ### 테넌트 구성 파일 업데이트 {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
-에 지정된 모든 값을 수정할 수 있습니다. [!DNL flashaccess-tenant.xml] 언제든지 파일에 액세스할 수 있습니다. 변경 사항은 다음에 서버가 구성 파일을 다시 로드할 때 적용됩니다. 또한 서버는 모든 자격 증명의 수정 사항을 확인합니다( [!DNL .pfx]) 테넌트 구성 파일에서 참조되는 파일 및 packager 허용 목록 인증서 파일.
+에 지정된 모든 값을 수정할 수 있습니다. [!DNL flashaccess-tenant.xml] 언제든지 파일에 액세스할 수 있습니다. 변경 사항은 다음에 서버가 구성 파일을 다시 로드할 때 적용됩니다. 또한 서버는 모든 자격 증명( [!DNL .pfx]) 테넌트 구성 파일에서 참조되는 파일 및 packager 허용 목록 인증서 파일.

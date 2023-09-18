@@ -1,8 +1,7 @@
 ---
 description: MediaPlayer 인스턴스를 재설정하면 MediaPlayerStatus에 정의된 대로 초기화되지 않은 IDLE 상태로 돌아갑니다.
 title: MediaPlayer 인스턴스 재설정 또는 재사용
-exl-id: e06a0052-ce0a-4a6c-8ebc-0666b109cf07
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -19,13 +18,13 @@ MediaPlayer 인스턴스를 재설정하면 MediaPlayerStatus에 정의된 대�
 
 * 을(를) 재사용합니다. `MediaPlayer` 인스턴스를 새로 로드해야 함 `MediaResource` (비디오 콘텐츠) 및 이전 인스턴스를 바꿉니다.
 
-   재설정하면 를 재사용할 수 있습니다. `MediaPlayer` 리소스 해제 오버헤드가 없는 인스턴스, 다시 만들기 `MediaPlayer`및 리소스를 재할당합니다. 다음 `replaceCurrentItem` 및 `replaceCurrentResource` 메서드는 reset 메서드를 호출하지 않고도 이러한 단계를 자동으로 수행합니다.
+  재설정하면 를 재사용할 수 있습니다. `MediaPlayer` 리소스 해제 오버헤드가 없는 인스턴스, 다시 만들기 `MediaPlayer`및 리소스를 재할당합니다. 다음 `replaceCurrentItem` 및 `replaceCurrentResource` 메서드는 reset 메서드를 호출하지 않고도 이러한 단계를 자동으로 수행합니다.
 
 * 다음의 경우 `MediaPlayer` 에 오류 상태가 있으며 삭제해야 합니다.
 
-   >[!IMPORTANT]
-   >
-   >이것이 ERROR 상태에서 복구할 수 있는 유일한 방법입니다.
+  >[!IMPORTANT]
+  >
+  >이것이 ERROR 상태에서 복구할 수 있는 유일한 방법입니다.
 
 1. 호출 `reset` 반환 `MediaPlayer` 인스턴스를 초기화되지 않은 상태로 전환합니다.
 

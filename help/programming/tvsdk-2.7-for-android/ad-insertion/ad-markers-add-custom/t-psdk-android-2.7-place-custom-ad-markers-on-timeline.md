@@ -1,8 +1,7 @@
 ---
 description: 이 예는 재생 타임라인에 사용자 지정 광고 마커를 포함하는 권장 방법을 보여 줍니다.
 title: 타임라인에 사용자 지정 광고 마커 배치
-exl-id: a5dafca5-5217-4800-a467-ad5c51471bc2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -24,15 +23,15 @@ ht-degree: 0%
 다음은 이 예제의 작업을 완료한 결과입니다. >
 * 다음과 같은 경우 `ReplaceTimeRange` 재생 타임라인에서 다른 재생 위치와 겹칩니다(예: 의 시작 위치). `ReplaceTimeRange` 이미 배치된 종료 위치보다 이전인 경우 TVSDK는 자동으로 위반의 시작을 조정합니다 `ReplaceTimeRange` 충돌을 피하려고.
 
-   이렇게 하면 가 조정됩니다. `ReplaceTimeRange` 원래 지정한 것보다 짧습니다. 조정 시간이 0이면 TVSDK는 자동으로 위반을 중단합니다 `ReplaceTimeRange`.
+  이렇게 하면 가 조정됩니다. `ReplaceTimeRange` 원래 지정한 것보다 짧습니다. 조정 시간이 0이면 TVSDK는 자동으로 위반을 중단합니다 `ReplaceTimeRange`.
 
 * TVSDK는 사용자 지정 광고 브레이크에 대한 인접 시간 범위를 찾아 별도의 광고 브레이크로 클러스터링합니다.
 
-   다른 시간 범위와 인접하지 않은 시간 범위는 단일 광고가 포함된 광고 브레이크로 변환됩니다.
+  다른 시간 범위와 인접하지 않은 시간 범위는 단일 광고가 포함된 광고 브레이크로 변환됩니다.
 * 응용 프로그램이 구성에 이 포함된 미디어 리소스를 로드하려고 할 경우 `CustomRangeMetadata` tvsdk는 컨텍스트 사용자 지정 광고 마커에서만 사용할 수 있으며, 기본 자산이 VOD 유형이 아닌 경우 예외를 throw합니다.
 * 사용자 지정 광고 마커를 처리할 때 TVSDK는 다른 광고 해결 메커니즘(예: Adobe Primetime 광고 결정)을 비활성화합니다.
 
-   모든 TVSDK ad-resolver 모듈 또는 사용자 지정 광고 마커 메커니즘을 사용할 수 있습니다. 사용자 지정 광고 마커를 사용하면 광고 콘텐츠가 해결된 것으로 간주되어 타임라인에 배치됩니다.
+  모든 TVSDK ad-resolver 모듈 또는 사용자 지정 광고 마커 메커니즘을 사용할 수 있습니다. 사용자 지정 광고 마커를 사용하면 광고 콘텐츠가 해결된 것으로 간주되어 타임라인에 배치됩니다.
 
 다음 코드 조각은 타임라인에 세 개의 시간 범위를 사용자 지정 광고 마커로 배치합니다.
 

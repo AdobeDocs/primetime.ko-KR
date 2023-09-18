@@ -1,8 +1,7 @@
 ---
 description: 미디어 스트림은 재생 목록/매니페스트 파일의 태그 형태로 추가 메타데이터를 전달할 수 있으며, 이 파일은 광고 배치를 나타냅니다. 사용자 지정 태그 이름을 지정하고 매니페스트 파일에 특정 태그가 나타나면 알림을 받을 수 있습니다.
 title: 사용자 정의 태그
-exl-id: 4518904a-6f85-403b-b819-004e3e1cbb96
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%

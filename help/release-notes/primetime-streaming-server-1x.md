@@ -3,8 +3,7 @@ title: Primetime 스트리밍 서버 릴리스
 description: Primetime 스트리밍 서버 1.3 및 1.4 릴리스의 새로운 기능.
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 80c4687e-b0ac-48f2-a1c3-8751552da9d1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 0%

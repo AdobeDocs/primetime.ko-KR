@@ -1,8 +1,7 @@
 ---
 title: 일반 사용 보고서
 description: 일반 사용 보고서
-exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
-source-git-commit: a2181a8fd7334f19b8387a31c71527d4f689ab9d
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 0%
@@ -66,28 +65,28 @@ x축은 현재 시간대 내의 단위를 나타내고 y축은 해당 기간 동
 
 * **AuthN 확인**
 
-   AuthN OK는 성공한 인증 수입니다. 자세한 내용 및 정의는 [제품 개념: AuthN 확인](/help/AccountIQ/product-concepts.md#authn-ok-def).
+  AuthN OK는 성공한 인증 수입니다. 자세한 내용 및 정의는 [제품 개념: AuthN 확인](/help/AccountIQ/product-concepts.md#authn-ok-def).
 
 * **AuthZ 확인**
 
-   AuthZ OK는 성공한 승인 수입니다. 자세한 내용 및 정의는 [제품 개념: AuthZ OK](/help/AccountIQ/product-concepts.md#authz-ok-def).
+  AuthZ OK는 성공한 승인 수입니다. 자세한 내용 및 정의는 [제품 개념: AuthZ OK](/help/AccountIQ/product-concepts.md#authz-ok-def).
 
 * **요청 재생**
 
-   Play 요청은 재생 요청의 수입니다. 자세한 내용 및 정의는 [제품 개념: 재생 요청](/help/AccountIQ/product-concepts.md#play-requests-def)
+  Play 요청은 재생 요청의 수입니다. 자세한 내용 및 정의는 [제품 개념: 재생 요청](/help/AccountIQ/product-concepts.md#play-requests-def)
 
-   >[!NOTE]
-   >
-   >MVPD 사용자는 재생 요청 라인 그래프를 사용할 수 없습니다.
+  >[!NOTE]
+  >
+  >MVPD 사용자는 재생 요청 라인 그래프를 사용할 수 없습니다.
 
 
 * **고유 구독자**
 
-   Unique Subscribers는 성공한 고유 구독자의 수입니다. 자세한 내용 및 정의는 [제품 개념: 고유 구독자](/help/AccountIQ/product-concepts.md#unique-subscriber-def)
+  Unique Subscribers는 성공한 고유 구독자의 수입니다. 자세한 내용 및 정의는 [제품 개념: 고유 구독자](/help/AccountIQ/product-concepts.md#unique-subscriber-def)
 
-   >[!NOTE]
-   >
-   >프로그래머의 Adobe TempPass 사용(즉, 무료 미리보기)이 세그먼트에 속하는 경우 총 고유 구독자 수에는 고유 디바이스 수도 포함됩니다.
+  >[!NOTE]
+  >
+  >프로그래머의 Adobe TempPass 사용(즉, 무료 미리보기)이 세그먼트에 속하는 경우 총 고유 구독자 수에는 고유 디바이스 수도 포함됩니다.
 
 ## 스냅샷 개요 - 임계값 초과 계정 {#snapshot-overview}
 
@@ -123,7 +122,7 @@ x축은 현재 시간대 내의 단위를 나타내고 y축은 해당 기간 동
 
 * 해당 세그먼트의 총 구독자 계정 중 백분율,
 
-   (의 정의된 세그먼트) MVPD에 대한 채널의 콘텐츠를 일정 기간 동안 소비하기 위해 X개의 장치, Y개의 IP 및 Z개의 우편번호를 사용하는 것입니다.
+  (의 정의된 세그먼트) MVPD에 대한 채널의 콘텐츠를 일정 기간 동안 소비하기 위해 X개의 장치, Y개의 IP 및 Z개의 우편번호를 사용하는 것입니다.
 
 ![](assets/select-thresholds.png)
 
@@ -204,4 +203,3 @@ x축은 계정 수를, y축은 IP 수를 나타냅니다.
 >[!MORELIKETHIS]
 >
 >* 다음을 사용하여 일반 사용 보고서에서 필터를 사용하여 선택한 세그먼트의 상위 1000개 구독자에 대한 보고서를 내보내는 방법을 알아봅니다. [상위 1000개 계정 내보내기](/help/AccountIQ/export-acc-information.md) 옵션을 선택합니다.
-

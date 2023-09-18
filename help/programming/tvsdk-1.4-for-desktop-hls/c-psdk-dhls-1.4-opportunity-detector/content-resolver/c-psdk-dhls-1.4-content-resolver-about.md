@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 타임라인에 광고를 배치하는 기본 영업 기회 생성기 및 콘텐츠 확인자를 제공하며 이러한 생성기 및 확인자는 매니페스트의 비표준 태그를 기반으로 합니다. 응용 프로그램은 중단 기간에 대한 지표와 같이 매니페스트에서 식별된 기회를 기반으로 타임라인을 변경해야 할 수 있습니다.
 title: 기회 생성기 및 콘텐츠 해결자
-exl-id: 6daf7ff4-10c4-4750-8592-94a2be489473
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%

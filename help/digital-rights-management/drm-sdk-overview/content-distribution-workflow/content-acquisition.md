@@ -1,8 +1,7 @@
 ---
 description: 소비자가 웹 사이트 또는 CDN에서 보호된 콘텐츠 파일을 획득하는 경우 비디오를 재생하기 전에 소비자가 해독 키가 포함된 라이센스도 획득해야 합니다. 다음 단계는 Flash Player 또는 Adobe AIR을 실행하는 컴퓨터에서 보호된 콘텐츠에 액세스하는 방법에 대한 일반적인 워크플로를 보여 줍니다
 title: 컨텐츠 획득
-exl-id: 92d51928-6021-4284-9310-4e6ce758bffc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 0%

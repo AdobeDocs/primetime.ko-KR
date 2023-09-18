@@ -1,8 +1,7 @@
 ---
 title: 개인 정보 보호 요청을 하는 방법
 description: 개인 정보 보호 요청을 하는 방법
-exl-id: abb21306-98d6-4899-914a-bdfa85cbd204
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -222,7 +221,7 @@ Delete 요청의 경우:
 고객이 Adobe에 개인 정보 보호 요청을 보낼 수 있는 옵션은 두 가지가 있습니다.
 
 * **수동** - 를 사용하여 [Privacy Service 사용자 인터페이스](#privacy-service-ui)
-* **자동으로** - 를 사용하여 [PRIVACY SERVICE API ](#privacy-service-api)
+* **자동으로** - 를 사용하여 [PRIVACY SERVICE API](#privacy-service-api)
 
 ### Privacy Service UI 사용 {#privacy-service-ui}
 

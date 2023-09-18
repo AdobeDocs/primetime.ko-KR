@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 광고, 네임스페이스 및 추적을 위한 메타데이터를 제공합니다.
 title: 메타데이터 클래스
-exl-id: 4014b496-7fc4-4fa9-98da-28350668d35f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%

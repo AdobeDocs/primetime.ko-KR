@@ -1,8 +1,7 @@
 ---
 description: 정책 설정은 사용자가 보호된 비디오 콘텐츠를 재생할 수 있는 시기와 방법에 대한 조건을 지정하는 프로세스입니다.
 title: 정책 설정
-exl-id: ab7295c8-88f2-4d4a-a7f1-3332df7bb735
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: Adobe은 자체 Primetime DRM License Server를 개발 및 유지 관리하지 않으려는 Adobe Primetime DRM 고객에게 클라우드 DRM 서비스를 제공합니다. 이 서비스를 활용하면 고객은 DRM 라이선스 발급을 둘러싼 운영 및 개발 복잡성을 줄일 수 있다. Primetime Cloud DRM은 iOS, Android, 데스크톱 및 Xbox360과 같은 Primetime 브라우저 TVSDK 지원 비디오 애플리케이션을 실행할 수 있는 모든 디바이스에 DRM 라이선스를 발급할 수 있습니다. 이 DRM 서비스는 Adobe에서 호스팅 및 유지 관리되며 24/7 가동 시간이 있습니다.
 title: 배경
-exl-id: bb5ad080-5b1d-43a6-8d0e-9b5735c82d96
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

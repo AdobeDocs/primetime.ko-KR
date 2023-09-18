@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스는 오류, 경고 및 로깅 및 디버깅에 문제가 되는 일부 활동에 대한 메시지를 설명합니다.
 title: 알림 클래스
-exl-id: d8af783f-1e80-4e50-89b8-97643ff6670b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%

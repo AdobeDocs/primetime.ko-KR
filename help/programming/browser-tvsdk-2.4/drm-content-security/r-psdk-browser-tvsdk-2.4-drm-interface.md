@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK는 FairPlay, PlayReady 및 Widevine을 비롯한 다양한 DRM 솔루션으로 보호되는 콘텐츠를 재생하는 데 사용할 수 있는 DRM 인터페이스를 제공합니다.
 title: DRM 인터페이스 개요
-exl-id: aa13f042-4472-4fc3-b7ba-61746b8e024a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%

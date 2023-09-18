@@ -1,8 +1,7 @@
 ---
 description: 더 이상 필요하지 않은 MediaPlayer 인스턴스를 재설정, 재사용 또는 릴리스할 수 있습니다.
 title: MediaPlayer 인스턴스 재사용 또는 제거
-exl-id: 2403e6dd-74c4-43fb-913a-d04e61041628
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -21,13 +20,13 @@ ht-degree: 0%
 
 * 을(를) 재사용합니다. `MediaPlayer` 인스턴스를 새로 로드해야 함 `MediaResource` (비디오 콘텐츠) 및 이전 인스턴스를 바꿉니다.
 
-   재설정하면 를 재사용할 수 있습니다. `MediaPlayer` 리소스 해제 오버헤드가 없는 인스턴스, 다시 만들기 `MediaPlayer`및 리소스를 재할당합니다. 다음 `replaceCurrentItem` 메서드는 자동으로 이러한 단계를 수행합니다.
+  재설정하면 를 재사용할 수 있습니다. `MediaPlayer` 리소스 해제 오버헤드가 없는 인스턴스, 다시 만들기 `MediaPlayer`및 리소스를 재할당합니다. 다음 `replaceCurrentItem` 메서드는 자동으로 이러한 단계를 수행합니다.
 
 * 다음의 경우 `MediaPlayer` 은(는) 오류 상태에 있으므로 지워야 합니다.
 
-   >[!IMPORTANT]
-   >
-   >이것이 ERROR 상태에서 복구할 수 있는 유일한 방법입니다.
+  >[!IMPORTANT]
+  >
+  >이것이 ERROR 상태에서 복구할 수 있는 유일한 방법입니다.
 
 1. 호출 `MediaPlayer.reset()` 반환 `MediaPlayer` 인스턴스를 초기화되지 않은 상태로 전환합니다.
 
@@ -60,10 +59,10 @@ ht-degree: 0%
 
 * 릴리스 `MediaPlayer`.
 
-   ```js
-   void release()
-   ```
+  ```js
+  void release()
+  ```
 
-   >[!NOTE]
-   >
-   >다음 이후 `MediaPlayer` 인스턴스가 릴리스되었으므로 더 이상 사용할 수 없습니다. 다음 방법 중 하나라도 `MediaPlayer` 인터페이스는 릴리스된 후에 호출됩니다. `IllegalStateException` 이 throw됩니다.
+  >[!NOTE]
+  >
+  >다음 이후 `MediaPlayer` 인스턴스가 릴리스되었으므로 더 이상 사용할 수 없습니다. 다음 방법 중 하나라도 `MediaPlayer` 인터페이스는 릴리스된 후에 호출됩니다. `IllegalStateException` 이 throw됩니다.

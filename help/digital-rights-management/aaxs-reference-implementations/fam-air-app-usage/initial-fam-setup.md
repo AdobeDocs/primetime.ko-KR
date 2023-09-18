@@ -2,8 +2,7 @@
 title: 초기 Flash Access 관리자 설정
 description: 초기 Flash Access 관리자 설정
 copied-description: true
-exl-id: 880822f3-0d21-42fc-889e-7375a2aab11a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%

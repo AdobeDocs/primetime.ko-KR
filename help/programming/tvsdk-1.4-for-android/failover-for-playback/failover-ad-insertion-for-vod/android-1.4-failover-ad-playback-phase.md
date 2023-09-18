@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 광고 세그먼트를 다운로드하여 장치의 화면에서 렌더링합니다.
 title: 광고 재생 단계
-exl-id: c12dcf84-0daa-4bc2-8e17-fdf47a760296
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -27,6 +26,6 @@ TVSDK는 광고 세그먼트를 다운로드하여 장치의 화면에서 렌더
 * 페일오버 알고리즘으로 인해 프로필이 변경될 때 발생하는 알림 이벤트입니다.
 * 모든 페일오버 옵션을 고려할 때 알림 이벤트가 트리거되며 추가 작업을 자동으로 수행할 수 없습니다.
 
-   응용 프로그램에서 적절한 작업을 수행해야 합니다.
+  응용 프로그램에서 적절한 작업을 수행해야 합니다.
 
 오류 발생 여부에 관계없이 TVSDK는 각각에 대해 onAdBreakComplete를 호출합니다 `onAdBreakStart` 및 `onAdComplete` 마다 `onAdStart`. 그러나 세그먼트를 다운로드할 수 없는 경우에는 타임라인에 간격이 있을 수 있습니다. 간격이 충분히 큰 경우 플레이헤드 위치의 값과 보고된 광고 진행률이 불연속성을 나타낼 수 있습니다.

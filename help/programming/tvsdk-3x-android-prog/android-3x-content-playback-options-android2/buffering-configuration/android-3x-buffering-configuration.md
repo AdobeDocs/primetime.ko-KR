@@ -1,8 +1,7 @@
 ---
 description: 더 원활한 보기 환경을 제공하기 위해 TVSDK는 비디오 스트림을 버퍼링하는 경우가 있습니다. 플레이어가 버퍼링하는 방식을 구성할 수 있습니다.
 title: 버퍼링
-exl-id: 3b706420-878d-487a-8db7-cff2a12c2660
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
@@ -45,22 +44,22 @@ TVSDK는 최소 30초의 재생 버퍼 길이와 미디어 재생이 시작되�
 
    * 초기 버퍼 시간을 재생 버퍼 시간과 동일하게 설정하려면 다음을 수행합니다.
 
-      ```
-      public static BufferControlParameters createSimple(long bufferTime)
-      ```
+     ```
+     public static BufferControlParameters createSimple(long bufferTime)
+     ```
 
    * 초기 및 재생 버퍼 시간을 설정하려면 다음을 수행합니다.
 
-      ```
-      public static BufferControlParameters createDual( 
-        long initialBuffer,  
-        long bufferTime)
-      ```
+     ```
+     public static BufferControlParameters createDual( 
+       long initialBuffer,  
+       long bufferTime)
+     ```
+
    매개 변수가 올바르지 않으면 이 메서드는 throw합니다 `MediaPlayerException` 오류 코드 포함 `PSDKErrorCode.INVALID_ARGUMENT`: 다음 조건이 충족되는 경우와 같습니다.
 
    * 초기 버퍼 시간은 0보다 작습니다.
    * 초기 버퍼 시간은 버퍼 시간보다 크다.
-
 
 1. 버퍼 매개 변수 값을 설정하려면 다음을 사용합니다 `MediaPlayer` 방법:
 

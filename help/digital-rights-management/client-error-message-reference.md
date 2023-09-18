@@ -1,8 +1,7 @@
 ---
 description: DRM 클라이언트 오류는 TVSDK 클라이언트측 오류의 하위 집합입니다.
 title: DRM 클라이언트 오류 메시지 참조
-exl-id: 3d74cb92-c0a7-4eab-91b8-7e60a9c33df4
-source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '5173'
 ht-degree: 1%

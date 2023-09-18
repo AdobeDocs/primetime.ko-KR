@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 라이브 스트리밍에 대한 마스터 m3u8 매니페스트에서 변경된 재생 정보를 감지하고 스트림이 재생되는 동안 재생 정보를 업데이트할 수 있습니다. TVSDK는 업데이트 간의 겹치지 않는 프로필 비트 전송률을 포함하여 마스터 매니페스트에서 프로필이 나타나거나 사라질 때 동적 비트 전송률 프로필 집합을 지원합니다.
 title: 라이브 마스터 매니페스트 업데이트
-exl-id: e3fffe64-1d44-4227-b830-c7661478f067
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%

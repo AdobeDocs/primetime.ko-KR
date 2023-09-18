@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 VOD 스트림에서 광고 콘텐츠를 프로그래밍 방식으로 삭제하고 바꿀 수 있습니다.
 title: 광고 삭제 및 대체 API 변경 사항
-exl-id: 4093af3c-41fd-4486-9e1c-26f68d3fbeb4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -26,11 +25,11 @@ TVSDK의 다음 변경 사항은 광고 삭제 및 교체를 지원합니다.
    * `property PTTimeRangeCollectionType type` 시간 범위의 유형을 나타냅니다.
    * `property NSArray* ranges` 은 시간 범위를 설정하는 데 사용됩니다.
 
-      배열에서 예상되는 개체 유형은 다음과 같습니다. `PTReplacementTimeRange` 또는 `CMTimeRange`.
+     배열에서 예상되는 개체 유형은 다음과 같습니다. `PTReplacementTimeRange` 또는 `CMTimeRange`.
 
-      >[!TIP]
-      >
-      >배열의 모든 개체는 같은 유형이어야 합니다.
+     >[!TIP]
+     >
+     >배열의 모든 개체는 같은 유형이어야 합니다.
 
    * `PTTimeRangeCollectionType` 는에 정의된 범위의 동작을 정의하는 열거형입니다. `PTTimeRangeCollection`:
 
@@ -58,11 +57,11 @@ TVSDK의 다음 변경 사항은 광고 삭제 및 교체를 지원합니다.
 
       * 유형 - 경고
       * 설명 - 광고 신호 모드는 사용자 지정 범위로 정의되지만 사용자 지정 범위는 정의되지 않습니다.
+
    * `INVALID_TIME_RANGES`
 
       * 유형 - 경고
       * 설명 - 하나 이상의 시간 범위가 잘못되어 무시되거나 수정됩니다.
-
 
 **더 이상 사용되지 않는 API**
 

@@ -1,8 +1,7 @@
 ---
 description: 소스 목록의 forceflash 플래그는 URL에 대한 Flash 폴백을 강제 적용합니다. 이 URL의 경우 Adobe Flash Player을 사용하여 콘텐츠를 재생할 수 있습니다.
 title: 미디어 소스 목록을 사용하여 Flash 폴백 강제 실행
-exl-id: 657bf9b1-d911-489d-80ca-2956b008431b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%

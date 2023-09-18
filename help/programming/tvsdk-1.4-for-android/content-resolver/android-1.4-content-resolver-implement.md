@@ -1,8 +1,7 @@
 ---
 description: 기본 확인자를 기반으로 자체 콘텐츠 확인자를 구현할 수 있습니다.
 title: 사용자 지정 콘텐츠 확인자 구현
-exl-id: 96468f6d-80ad-4721-8ed3-4dbfa2a64b9e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -70,7 +69,7 @@ TVSDK는 새 기회를 감지하면 등록된 콘텐츠 해결자를 반복하�
                         PlacementOpportunity placementOpportunity)
       ```
 
-      메타데이터에 `AdvertisingMetada`. 다음을 위해 사용 `TimelineOperation` 벡터 생성.
+      메타데이터에는 `AdvertisingMetada`. 다음을 위해 사용 `TimelineOperation` 벡터 생성.
 
    1. 각 배치 영업 기회에 대해 `Vector<TimelineOperation>`.
 
@@ -101,7 +100,6 @@ TVSDK는 새 기회를 감지하면 등록된 콘텐츠 해결자를 반복하�
       metadata.setValue("NATIVE_ERROR_CODE", exception.getCause().toString()); 
       error.setMetadata(metadata);
       ```
-
 
 <!--<a id="example_4F0D7692A92E480A835D6FDBEDBE75E7"></a>-->
 

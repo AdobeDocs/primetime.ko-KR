@@ -1,8 +1,7 @@
 ---
 title: Primetime TVE Dashboard 사용 안내서
 description: Primetime TVE Dashboard 사용 안내서
-exl-id: 6f7f7901-db3a-4c68-ac6a-27082db9240a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '4386'
 ht-degree: 0%
@@ -101,20 +100,20 @@ TVE 대시보드를 통해 Adobe Primetime 인증 구성을 관리적으로 변�
    * **Analytics 구성** - Adobe Primetime 인증 이벤트를 Adobe Analytics에 전달하도록 구성합니다. 이 기능을 활성화하기 전에 RSID(보고서 세트 ID)를 구성해야 하는 방법에 대한 자세한 내용은 Adobe에 문의하십시오.
 * **인증서**
 
-   발급 조직, 발급 날짜 및 만료 날짜와 함께 인증 흐름에 사용되는 인증서 목록을 포함합니다. 이러한 인증서는 개인/공개 키 역할을 하며 유효성 검사 목적으로 사용됩니다.
+  발급 조직, 발급 날짜 및 만료 날짜와 함께 인증 흐름에 사용되는 인증서 목록을 포함합니다. 이러한 인증서는 개인/공개 키 역할을 하며 유효성 검사 목적으로 사용됩니다.
 * **도메인**
 
-   각 채널이 Adobe Primetime 인증과 통신할 도메인 목록을 포함합니다.
+  각 채널이 Adobe Primetime 인증과 통신할 도메인 목록을 포함합니다.
 * **통합**
 
-   사용 가능한 MVPD와의 통합 목록과 함께 사용 가능한 각 통합의 상태를 포함합니다. 특정 항목을 클릭하면 통합 페이지로 이동할 수 있습니다.
+  사용 가능한 MVPD와의 통합 목록과 함께 사용 가능한 각 통합의 상태를 포함합니다. 특정 항목을 클릭하면 통합 페이지로 이동할 수 있습니다.
 * **등록된 응용 프로그램**
 
-   응용 프로그램 등록 목록을 포함합니다. 자세한 내용은 문서를 검토하십시오 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md).
+  응용 프로그램 등록 목록을 포함합니다. 자세한 내용은 문서를 검토하십시오 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md).
 
 * **사용자 지정 체계**
 
-   사용자 지정 체계 목록을 포함합니다. 자세한 내용은 [iOS/tvOS 애플리케이션 등록](/help/authentication/iostvos-application-registration.md) 및 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md)
+  사용자 지정 체계 목록을 포함합니다. 자세한 내용은 [iOS/tvOS 애플리케이션 등록](/help/authentication/iostvos-application-registration.md) 및 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md)
 
 
 #### 도메인 추가/삭제 {#add-delete-domains}
@@ -137,19 +136,19 @@ TVE 대시보드를 통해 Adobe Primetime 인증 구성을 관리적으로 변�
 
 * **인증서**
 
-   발급 조직, 발급 날짜 및 만료 날짜와 함께 인증 흐름에 사용되는 인증서 목록을 포함합니다. 이러한 인증서는 개인/공개 키 역할을 하며 유효성 검사 목적으로 사용됩니다.
+  발급 조직, 발급 날짜 및 만료 날짜와 함께 인증 흐름에 사용되는 인증서 목록을 포함합니다. 이러한 인증서는 개인/공개 키 역할을 하며 유효성 검사 목적으로 사용됩니다.
 
 * **채널**
 
-   이 특정 프로그래머에 속하는 채널 목록을 포함합니다. 특정 항목을 클릭하면 채널 섹션으로 이동할 수 있습니다.
+  이 특정 프로그래머에 속하는 채널 목록을 포함합니다. 특정 항목을 클릭하면 채널 섹션으로 이동할 수 있습니다.
 
 * **등록된 응용 프로그램**
 
-   응용 프로그램 등록 목록을 포함합니다. 자세한 내용은 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md).
+  응용 프로그램 등록 목록을 포함합니다. 자세한 내용은 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md).
 
 * **사용자 지정 체계**
 
-   사용자 지정 체계 목록을 포함합니다. 자세한 내용은 [iOS/tvOS 애플리케이션 등록](/help/authentication/iostvos-application-registration.md) 및 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md).
+  사용자 지정 체계 목록을 포함합니다. 자세한 내용은 [iOS/tvOS 애플리케이션 등록](/help/authentication/iostvos-application-registration.md) 및 [동적 클라이언트 등록 관리](/help/authentication/dynamic-client-registration-management.md).
 
 
 ### 통합 {#tve-db-integrations-sec}
@@ -250,13 +249,13 @@ TVE 대시보드를 통해 Adobe Primetime 인증 구성을 관리적으로 변�
 * SSO(Single Sign-On)를 활성화하거나 비활성화할 플랫폼을 선택합니다
 * 전환 **단일 사인온 활성화** 원하는 값에 플래그 지정(예/아니요)
 
-   >[!IMPORTANT]
-   >다음 사항에 주의하십시오. **단일 사인온 활성화** 플래그는 iOS, tvOS, Roku 및 FireTV 플랫폼에만 사용할 수 있으며 해당 플랫폼에 대한 단일 사인온을 지원하는 MVPD와의 통합에만 사용할 수 있습니다.
+  >[!IMPORTANT]
+  >다음 사항에 주의하십시오. **단일 사인온 활성화** 플래그는 iOS, tvOS, Roku 및 FireTV 플랫폼에만 사용할 수 있으며 해당 플랫폼에 대한 단일 사인온을 지원하는 MVPD와의 통합에만 사용할 수 있습니다.
 
 * 전환 **플랫폼 권한 시행** 원하는 값에 플래그 지정(예/아니요)
 
-   >[!IMPORTANT]
-   >다음 사항에 주의하십시오. **플랫폼 권한 시행** 플래그는 사용자가 자신의 TV 공급자 구독에 대한 플랫폼 액세스를 허용 또는 거부할지 여부를 제어합니다. 다음과 같은 경우 시나리오 고려 **단일 사인온 활성화** 플래그가 &quot;예&quot;로 설정되어 있습니다. **플랫폼 권한 시행** 또한 플래그가 &quot;예&quot;로 설정되어 있고 사용자가 자신의 TV 공급자 구독에 대한 플랫폼 액세스를 거부하도록 선택하면 각 애플리케이션(채널)에서 다른 애플리케이션(채널)이 획득한 Adobe Primetime 인증 토큰을 사용할 수 없습니다.
+  >[!IMPORTANT]
+  >다음 사항에 주의하십시오. **플랫폼 권한 시행** 플래그는 사용자가 자신의 TV 공급자 구독에 대한 플랫폼 액세스를 허용 또는 거부할지 여부를 제어합니다. 다음과 같은 경우 시나리오 고려 **단일 사인온 활성화** 플래그가 &quot;예&quot;로 설정되어 있습니다. **플랫폼 권한 시행** 또한 플래그가 &quot;예&quot;로 설정되어 있고 사용자가 자신의 TV 공급자 구독에 대한 플랫폼 액세스를 거부하도록 선택하면 각 애플리케이션(채널)에서 다른 애플리케이션(채널)이 획득한 Adobe Primetime 인증 토큰을 사용할 수 없습니다.
 
 
 #### 홈 기반 인증 사용 {#enable-hba}

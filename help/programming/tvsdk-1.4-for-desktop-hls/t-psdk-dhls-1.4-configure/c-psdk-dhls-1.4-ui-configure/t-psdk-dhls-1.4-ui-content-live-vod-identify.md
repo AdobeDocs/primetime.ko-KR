@@ -1,8 +1,7 @@
 ---
 description: 미디어 콘텐츠가 라이브인지 VOD인지 알고 있어야 하는 경우가 있습니다.
 title: 콘텐츠가 라이브인지 VOD인지 식별
-exl-id: 180eb515-5bc1-4b32-babf-bcc640ebfa72
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%

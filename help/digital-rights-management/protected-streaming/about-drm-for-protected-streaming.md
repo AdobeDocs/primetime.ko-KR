@@ -1,8 +1,7 @@
 ---
 description: Protected Streaming용 Adobe Primetime DRM 서버는 Primetime DRM SDK를 기반으로 하는 라이선스 서버 구현입니다. 이 서버는 Primetime DRM 클라이언트에 보호된 콘텐츠에 대한 라이선스를 발급합니다.
 title: 보호된 스트리밍을 위한 Adobe Primetime DRM 서버 정보
-exl-id: 911acd61-8b27-4ac7-a420-2faeb46e8087
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 title: 사용자 지정 권한 부여 확장
 description: 라이센스 획득 중에 사용자 지정 인증 논리를 호출하여 요청하는 클라이언트에 라이센스를 발급해야 하는지 여부를 결정할 수 있습니다.
-exl-id: bf7870f5-11bf-4392-a422-506b47d684f9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%

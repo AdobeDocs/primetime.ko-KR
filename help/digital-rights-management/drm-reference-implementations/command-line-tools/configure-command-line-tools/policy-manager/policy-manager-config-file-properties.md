@@ -3,8 +3,7 @@ keywords: 하드 스톱
 title: 구성 속성
 description: 구성 속성
 copied-description: true
-exl-id: f88c57d6-d951-4d7a-8de1-44cd1aa8e5f7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
@@ -103,7 +102,7 @@ ht-degree: 0%
      <ul id="ul_a5j_q4t_44"> 
       <li id="li_FD2C0C6DA19E455AA1917A56E09A7F84">(필수) <span class="codeph"> 시작</span> 클라이언트가 마지막 동기화 이후 지정된 분 내에 서버와의 동기화를 시작해야 함을 지정합니다. </li> 
       <li id="li_9DEBC57385A442C3929AE3D0E3FA8992">(선택 사항) <span class="codeph"> 강제</span> 재생 중에 클라이언트가 동기화 메시지를 강제로 적용해야 하는 확률(0~100)입니다. </li> 
-     </ul>업데이트하는 동안 다음을 사용하십시오. <span class="codeph"> -sync</span> 동기화 요구 사항을 제거할 수 있는 나머지 인수 없이 </p> </td> 
+     </ul>업데이트하는 동안 다음을 사용하십시오. <span class="codeph"> -sync</span> 동기화 요구 사항을 제거할 수 있는 나머지 인수 없음 </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.useRootLicense</span> </td> 

@@ -4,8 +4,7 @@ description: 2.0에 대해 많은 메서드 시그니처 및 API 요소 이름�
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: migration
-exl-id: 4b251e26-cee6-4d96-bb55-6c47195da4d0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '5034'
 ht-degree: 0%
@@ -373,7 +372,7 @@ playerConfig.adFactory = factory;
   </tr> 
   <tr> 
    <td><p>인터페이스 AuditudeSettings : AdvertisingMetadata { <br /> 특성 DomString zoneId; <br /> 특성 DomString mediaId; <br /> attribute DomString defaultMediaId ; <br /> 속성 DomString 도메인 ; <br /> 속성 개체 targettingInfo ; <br /> attribute Object customParameters ; <br /> attribute Boolean creativePackingEnabled ;<br /> 속성 부울 showStaticBanners ;<br /> };</p> </td> 
-   <td>기능이 MetadataKeys::AUDITUDE_METADATA_KEY에서 제공되었습니다.</td> 
+   <td>Auditude 기능은 MetadataKeys::METADATA_KEY 키에 의해 제공되었습니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -560,7 +559,7 @@ playerConfig.adFactory = factory;
    <td><p>인터페이스 DRMManager : EventTarget {<br /> 무효 acquireLicense(DRMMetadata 메타데이터, <br /> DRMAcquireLicenseSettings 설정, <br /> EventContext eventContext);<br /> 무효 acquirePreviewLicense(DRMMetadata metadata, <br /> EventContext eventContext);<br /> 무효 인증(DRMMetadata 메타데이터, <br /> DomString url,<br /> DomString 및 인증 도메인, <br /> DomString 사용자, <br /> DomString 암호, <br /> EventContext eventContext);<br /> <br /> DRMMetadata createMetadataFromBytes(<br /> Uint8Array 배열, EventContext eventContext);<br /> void initialize(EventContext eventContext);<br /> 특성 long maxOperationTime;<br /> <br /> void joinLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> 부울 forceRefresh, <br /> EventContext eventContext);<br /> void leaveLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> EventContext eventContext);<br /> <br /> void resetDRM(EventContext eventContext);<br /> void returnLicense(DomString serverURL, <br /> DomString 라이선스 ID,<br /> DomString policyID, <br /> 부울 commitImmediate,<br /> EventContext eventContext);<br /> void setAuthenticationToken(<br /> DRMMetadata 메타데이터, <br /> DomString authenticationDomain, <br /> Uint8Array 토큰, <br /> EventContext eventContext);<br /> void storeLicenseBytes(Uint8Array licenseBytes, <br /> EventContext eventContext);<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td><p>클래스 DRMErrorListener : <br /> 공용 psdkutils::PSDKIinterfaceWithUserData {<br /> 공개:<br /> virtual void onDRMError(uint32_t major, <br /> uint32_t minor, <br /> psdkutils:: PSDKString&amp; errorString, <br /> const psdkutils::PSDKString&amp; errorServerUrl) = 0;<br /> <br /> 보호됨:<br /> 가상 ~DRMErrorListener() {}<br /> }</p> </td> 
+   <td><p>클래스 DRMErrorListener : <br /> 공용 psdkutils::PSDKIinterfaceWithUserData {<br /> 공개:<br /> virtual void onDRMError(uint32_t major, <br /> uint32_t minor, <br /> psdkutils:: PSDKString&amp; errorString, <br /> const psdkutils::PSDKString&amp; errorServerUrl) = 0;<br /> <br /> 보호됨:<br /> virtual ~DRMErrorListener() {}<br /> }</p> </td> 
    <td>이벤트 / 인터페이스 / 설명 
     <ul> 
      <li>kEventDRMOperationError<p>/ DRMOperationErrorEvent</p> <p>DRMManger의 비동기 메서드 중 하나에 오류가 발생하는 경우</p> </li> 

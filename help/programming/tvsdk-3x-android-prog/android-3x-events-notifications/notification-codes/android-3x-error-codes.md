@@ -1,8 +1,7 @@
 ---
 title: PSDK 오류 코드
 description: 다양한 오류 코드, 경고 및 네이티브 오류 코드에 대한 정보입니다.
-exl-id: 90d66c13-c40c-4602-83da-186c2b623375
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 6%

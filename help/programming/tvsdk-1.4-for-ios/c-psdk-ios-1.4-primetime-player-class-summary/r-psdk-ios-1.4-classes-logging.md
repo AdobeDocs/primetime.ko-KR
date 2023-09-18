@@ -1,8 +1,7 @@
 ---
 description: 이러한 클래스를 사용하면 로깅을 사용자 지정할 수 있습니다.
 title: 클래스 로깅
-exl-id: f42033ec-99d6-4755-90d5-04c2462e9f19
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%

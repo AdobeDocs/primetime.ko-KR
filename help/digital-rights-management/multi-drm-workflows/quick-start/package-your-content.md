@@ -1,8 +1,7 @@
 ---
 description: 컨텐츠 패키징은 웹을 통해 재생할 비디오 컨텐츠를 준비하는 프로세스입니다. 패키징에는 원시 비디오를 매니페스트 파일로 변환하고, 선택적으로 서로 다른 장치 및 브라우저에 대해 서로 다른 DRM 솔루션을 사용하여 콘텐츠를 암호화하는 작업이 포함됩니다.
 title: 콘텐츠 패키지
-exl-id: d6f922d6-afec-4314-a01e-b951c1f8a7e8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%

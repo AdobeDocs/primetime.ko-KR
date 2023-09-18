@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK를 사용하려면 기본 플레이어를 만들고 구성해야 합니다. 비디오 컨텐츠를 재생하는 경우 브라우저 TVSDK를 사용하거나 UI 프레임워크를 사용하여 두 가지 방법으로 기본 플레이어를 만들 수 있습니다.
 title: 기본 플레이어
-exl-id: f51d7bf7-1784-447e-97ab-275ea53d5e46
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

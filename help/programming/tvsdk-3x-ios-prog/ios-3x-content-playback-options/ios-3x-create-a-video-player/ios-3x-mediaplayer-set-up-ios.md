@@ -1,8 +1,7 @@
 ---
 description: PTMediaPlayer 인터페이스는 미디어 플레이어 개체의 기능 및 동작을 캡슐화합니다.
 title: PTMediaPlayer 설정
-exl-id: 6d16bfd2-8d1d-4261-b343-c2e999c4d28b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%

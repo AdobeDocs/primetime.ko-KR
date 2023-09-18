@@ -1,8 +1,7 @@
 ---
 title: BOOTSTRAP API
 description: BOOTSTRAP API
-exl-id: bc7fe244-8664-43ac-b9a1-3967ea8749b1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 0%
@@ -42,7 +41,7 @@ Bootstrap API는 일반적으로 클라이언트/비디오 재생 API로 전송�
 
    **HTTP 요청과 HTTPS 요청 비교**
 
-   매니페스트 서버는 클라이언트 요청의 동일한 HTTP 프로토콜을 사용하여 URL을 만듭니다. 플레이어가 비보안 HTTP(http) 요청을 수행하면 매니페스트 서버는 http 프로토콜을 사용하여 매니페스트 URL 및 감사 추적 URL을 반환합니다. 플레이어가 보안 HTTP(https) 연결, 매니페스트 서버를 만들면 https 프로토콜이 있는 매니페스트 URL 및 감사 추적 URL이 반환됩니다.
+   매니페스트 서버는 클라이언트 요청의 동일한 HTTP 프로토콜을 사용하여 URL을 만듭니다. 플레이어가 비보안 HTTP(http) 요청을 수행하면 매니페스트 서버는 http 프로토콜이 있는 매니페스트 URL 및 Auditude 추적 URL을 반환합니다. 플레이어가 보안 HTTP(https) 연결, 매니페스트 서버를 만들면 https 프로토콜이 있는 매니페스트 URL 및 Auditude 추적 URL이 반환됩니다.
 
    >[!NOTE]
    >
@@ -72,9 +71,9 @@ Bootstrap API는 일반적으로 클라이언트/비디오 재생 API로 전송�
 | ptparallelstream | CMAF 중복 제거된 오디오 또는 비디오 스트림을 동시에 요청하는 플레이어를 사용하는 고객이 오디오 및 비디오 트랙의 광고가 일관되도록 합니다. | HLS만 |
 | ptprotoswitch | 기술 지원 담당자가 일반적으로 설정하는 명명된 매니페스트 재작성 규칙 및 광고 가져오기 규칙을 사용하도록 설정합니다.<br>예: adfetch_fw, cdn_akm | HLS/대시 |
 | 패키지 | EXT-X-DISCONTINUITY-SEQUENCE 태그를 HLS 헤더에 삽입할 수 있습니다. 가능한 값:true를 활성화하려면 생략(기본값 비활성화) | HLS만 |
-| pttimeline | 컨텐츠 스트림의 광고 브레이크를 오버라이드하는 광고 배치 및 컨텐츠에 대해 원하는 타임라인을 포함하는 문자열입니다. [ VOD 타임라인 형식 을 참조하십시오. ] | HLS/대시 |
+| pttimeline | 컨텐츠 스트림의 광고 브레이크를 오버라이드하는 광고 배치 및 컨텐츠에 대해 원하는 타임라인을 포함하는 문자열입니다. [VOD 타임라인 형식 을 참조하십시오.] | HLS/대시 |
 | pttoken | CDN에 대해 컨텐츠 조각/세그먼트 인증 토큰 보호 체계 활성화<br>가능한 값:<br>akamai, lnw(limelight), ctl(centurylink)(기본 토큰화가 비활성화됨) | HLS/대시 |
-| pttrackingmode | 광고 추적 체계를 활성화합니다.<br>가능한 값:<br>클라이언트측 광고 추적을 위한 간단한 방법<br>서버측 광고 추적을 위한 sstm<br>하이브리드 클라이언트/서버 광고 추적을 위한 simplestm(기본적으로 광고 추적이 수행되지 않음) | HLS/대시 |
+| pttrackingmode | 광고 추적 스키마를 활성화합니다.<br>가능한 값:<br>클라이언트측 광고 추적을 위한 간단한 방법<br>서버측 광고 추적을 위한 sstm<br>하이브리드 클라이언트/서버 광고 추적을 위한 simplestm(기본적으로 광고 추적이 수행되지 않음) | HLS/대시 |
 | pttrackingposition | 매니페스트 서버에서 광고 추적 정보만 반환하도록 지시합니다. 부트스트랩 요청에서 이 매개 변수를 지정하지 마십시오.<br>참고: 매니페스트 서버는 전달된 모든 값을 무시합니다. 그러나 null 또는 빈 문자열을 전달하면 매니페스트 서버는 M3U8을 반환합니다 | HLS/대시<br>클라이언트측 추적 |
 | pttrackingversion | 반환할 형식 버전을 설정합니다.<br>가능한 값:<br>v1, v2, v3 또는 vmap | HLS/대시<br>클라이언트측 추적 |
 | scteTracking | 이 매개 변수는 M3U8을 가져오는 플레이어에 SCTE 태그 정보를 검색해야 함을 매니페스트 서버에 나타냅니다.<br>가능한 값:<br>true 또는 false(기본값 false)<br>참고: SCTE-35 데이터는 다음과 같은 쿼리 매개 변수 값의 조합과 함께 JSON 사이드카에 반환됩니다.<br>ptcueformat=turner | 원소 | nfl | DPIScte35<br>pttrackingversion=v2<br>scteTracking=true<br> | HLS만 |

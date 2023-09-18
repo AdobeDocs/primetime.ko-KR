@@ -1,8 +1,7 @@
 ---
 description: Primetime Digital Rights Management(DRM) 시스템의 기능을 사용하여 비디오 콘텐츠에 안전하게 액세스할 수 있습니다. 또는 타사 DRM 솔루션을 Adobe의 통합 솔루션 대신 사용할 수 있습니다.
 title: 와이드빈
-exl-id: 44ab032e-e665-4b63-a08b-54e862894987
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%

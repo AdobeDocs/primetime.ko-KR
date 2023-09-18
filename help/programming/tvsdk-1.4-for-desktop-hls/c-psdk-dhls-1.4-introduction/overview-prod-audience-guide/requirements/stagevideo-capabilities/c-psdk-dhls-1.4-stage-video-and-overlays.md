@@ -1,8 +1,7 @@
 ---
 description: StageVideo에서 HTML 오버레이를 사용하여 Flash 표시 목록 비디오 평면에 UI 요소를 표시할 수 있습니다. 이 평면은 StageVideo 평면 위에 있으므로 StageVideo는 항상 모든 Flash 표시 목록 요소 뒤에 표시됩니다.
 title: StageVideo 및 HTML 오버레이
-exl-id: 6beda4c8-0981-4a38-bd5e-5714b9ec7efa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -42,6 +41,6 @@ HTML 오버레이는 다음에 의해 렌더링되는 비디오에서 Flash 표�
 
 * Chrome 버전 26 이상
 
-   >[!IMPORTANT]
-   >
-   >Windows XP 및 Windows Vista의 Chrome Pepper는 지원되지 않습니다.
+  >[!IMPORTANT]
+  >
+  >Windows XP 및 Windows Vista의 Chrome Pepper는 지원되지 않습니다.

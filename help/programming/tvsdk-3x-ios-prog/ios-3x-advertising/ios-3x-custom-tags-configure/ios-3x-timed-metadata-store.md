@@ -1,8 +1,7 @@
 ---
 description: 응용 프로그램은 적절한 시간에 적절한 PTTimedMetadata 개체를 사용해야 합니다.
 title: 시간이 지정된 메타데이터 개체가 발송될 때 이를 저장합니다.
-exl-id: 8b859e8d-eb4c-48f9-a95e-1bcc35a2a520
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 title: HLS 플레이어가 페일오버/백업 스트림으로 전환할 수 있음
 description: Apple HLS 스택은 기본 세트의 스트림을 검색할 수 없는 경우 페일오버/백업 스트림으로 전환을 지원합니다. Apple HLS 장치의 경우 장애 조치를 용이하게 하기 위해 매니페스트 서버에 신호를 보내 마스터 재생 목록에 식별된 기본 및 장애 조치 스트림을 분리된 세트(자체 UUID 포함)로 처리할 수 있습니다.
-exl-id: 58c7a490-403f-41b2-bdbd-6f93e27083b0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

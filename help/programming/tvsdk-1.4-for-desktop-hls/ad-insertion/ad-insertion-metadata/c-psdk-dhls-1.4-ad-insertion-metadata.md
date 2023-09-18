@@ -1,8 +1,7 @@
 ---
 description: Ad Resolver가 작동할 수 있도록 하려면 Adobe Primetime ad decisioning과 같은 광고 공급자는 공급자에 대한 연결을 활성화하기 위한 구성 값이 필요합니다.
 title: 광고 삽입 메타데이터
-exl-id: 83c0fd25-dbc3-4529-b81a-16ff78012c80
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -17,13 +16,13 @@ TVSDK에는 Primetime ad decisioning 라이브러리가 포함됩니다. Primeti
 
 * `mediaID`: 재생할 비디오의 고유 식별자입니다.
 
-   게시자는 Adobe Primetime 광고 결정 서버에 비디오 콘텐츠 및 광고 정보를 제출할 때 mediaID를 지정합니다. 이 ID는 Primetime ad decisioning에서 서버에서 비디오에 대한 관련 광고 정보를 검색하는 데 사용됩니다.
+  게시자는 Adobe Primetime 광고 결정 서버에 비디오 콘텐츠 및 광고 정보를 제출할 때 mediaID를 지정합니다. 이 ID는 Primetime ad decisioning에서 서버에서 비디오에 대한 관련 광고 정보를 검색하는 데 사용됩니다.
 
 * 사용자 `zoneID`는 Adobe에 의해 할당되며 회사 또는 웹 사이트를 식별합니다.
 * 할당된 광고 서버의 도메인입니다.
 * 기타 타깃팅 매개 변수.
 
-   필요에 따라 광고 공급자의 필요에 따라 이러한 매개 변수를 포함할 수 있습니다.
+  필요에 따라 광고 공급자의 필요에 따라 이러한 매개 변수를 포함할 수 있습니다.
 
 ## 광고 삽입 메타데이터 설정 {#set-up-ad-insertion-metadata}
 
@@ -31,7 +30,7 @@ MetadataNode 클래스를 확장하는 도우미 클래스 AuditudeSettings 를 
 
 >[!TIP]
 >
->Adobe Primetime ad decisioning을 이전에 Auditude라고 했습니다.
+>이전에 Adobe Primetime ad decisioning을 Auditude라고 했습니다.
 
 광고 메타데이터는에 있습니다. `MediaResource.metadata` 속성. 새 비디오 재생을 시작할 때 애플리케이션은 올바른 광고 메타데이터 설정을 담당합니다.
 

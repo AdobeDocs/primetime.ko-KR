@@ -1,8 +1,7 @@
 ---
 description: 이 기능을 켜고 관련 이벤트를 확인할 수 있습니다.
 title: 라이브 마스터 매니페스트 업데이트 사용
-exl-id: 02cb3116-cc30-4139-841b-8d6297214b8b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%

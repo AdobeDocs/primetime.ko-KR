@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerItemConfig 클래스를 사용하여 스트림에서 사용자 지정 태그 이름을 구성할 수 있습니다.
 title: 태그에 대한 클래스 메서드 구성
-exl-id: 864d5c35-2b26-447b-8134-414e82096f18
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
@@ -66,6 +65,6 @@ var mediaPlayerItemConfig = new AdobePSDK.MediPlayerItemConfig();
 
 * 사용자 지정 태그 이름에는 `#` 접두사입니다.
 
-   예를 들어, `#EXT-X-ASSET` 은(는) 올바른 사용자 지정 태그 이름이지만, `EXT-X-ASSET` 은(는) 잘못되었습니다.
+  예를 들어, `#EXT-X-ASSET` 은(는) 올바른 사용자 지정 태그 이름이지만, `EXT-X-ASSET` 은(는) 잘못되었습니다.
 
 * 미디어 스트림이 로드된 후에는 구성을 변경할 수 없습니다.

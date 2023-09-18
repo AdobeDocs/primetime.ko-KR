@@ -1,8 +1,7 @@
 ---
 description: TVSDK는 비트 전송률이 다른 여러 프로필이 포함된 비디오를 재생하여 사용 가능한 대역폭을 기준으로 둘 이상의 품질 수준을 제공할 수 있습니다.
 title: 다중 비트 전송률
-exl-id: 5f71d69e-993a-4985-accd-7ce2104f837e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
@@ -29,7 +28,6 @@ MBR(다중 비트 전송률) 스트림에 대한 ABR(적응형 비트 전송률)
 >* TVSDK는 제어 매개 변수를 엄격히 준수하는 것보다 지속적인 재생 환경을 선호하므로 TVSDK 장애 조치 메커니즘이 이러한 설정을 재정의할 수 있습니다.
 >* 비트 전송률이 변경되면 TVSDK가 발송됩니다 `onProfileChanged` 의 이벤트 `PlaybackEventListener`.
 
-
 ## 참조 구현에서 사용자 지정 ABR 컨트롤 사용 {#section_72A6E7263E1441DD8D7E0690285515E6}
 
 ABR(적응형 비트 전송률)은 기본적으로 TVSDK에서 활성화됩니다. Primetime 설정 사용자 인터페이스를 사용하여 사용자 지정 ABR 컨트롤을 구성하여 참조 구현에서 기본 TVSDK 동작을 재정의할 수 있습니다.
@@ -39,7 +37,7 @@ ABR(적응형 비트 전송률)은 기본적으로 TVSDK에서 활성화됩니�
 * Primetime 설정 대화 상자를 엽니다.
 * 선택 **[!UICONTROL ABR controls]**.
 
-   ![](assets/abr-configuration.jpg)
+  ![](assets/abr-configuration.jpg)
 
 * 탭 [!UICONTROL Enable ON] 을 표시하도록 제어 `OFF`.
 

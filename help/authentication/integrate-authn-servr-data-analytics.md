@@ -1,8 +1,7 @@
 ---
 title: Primetime 인증 서버측 데이터를 Adobe Analytics에 통합
 description: Primetime 인증 서버측 데이터를 Adobe Analytics에 통합
-exl-id: c1f1f2a3-c98c-4aed-92ad-1f9bfd80b82b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 4%
@@ -80,7 +79,6 @@ Adobe Primetime 인증 고객은 보다 쉽게 사용할 수 있도록 Adobe Ana
 >
 >* 카운터(하위 관계 없음)
 
-
 | 이벤트 | Adobe Analytics 이벤트 |
 |---------------------------------------|-----------------------|
 | AuthN 요청됨 | event1 |
@@ -112,7 +110,6 @@ Adobe Primetime 인증 고객은 보다 쉽게 사용할 수 있도록 Adobe Ana
 >* 할당: 가장 최근(마지막)
 >* 다음 시기 이후에 만료: 히트
 >* 유형: 텍스트 문자열
-
 
 | 속성 | eVar |
 |-----------------------------------|--------------------------------|

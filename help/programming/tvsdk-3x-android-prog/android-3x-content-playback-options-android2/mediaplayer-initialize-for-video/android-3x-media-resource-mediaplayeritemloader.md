@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerItemLoader를 사용하면 MediaPlayer 인스턴스를 인스턴스화하지 않고도 미디어 스트림에 대한 정보를 얻을 수 있습니다. 이 기능은 지연 없이 재생을 시작할 수 있도록 스트림을 미리 버퍼링하는 데 특히 유용합니다.
 title: MediaPlayerItemLoader를 사용하여 미디어 리소스 로드
-exl-id: de61ec1c-f578-4e19-a131-51f36169c7ed
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -80,6 +79,7 @@ MediaPlayerItemLoader를 사용하면 MediaPlayer 인스턴스를 인스턴스�
 
    * 버퍼링에 영향을 줄 수 있는 모든 항목(예: WebVTT 또는 오디오 트랙 선택)이 완료되었는지 확인하고 호출합니다 `prepareBuffer()` 인스턴트 아티클을 활용하기 위해.
    * 항목을 다음에 첨부 `MediaPlayer` 를 사용한 인스턴스 `replaceCurrentItem()`.
+
    전화 주시면 `prepareBuffer()`에서는 BUFFER_PREPARED 이벤트를 받습니다. `onBufferPrepared` 준비가 완료되면 처리기를 실행합니다.
 1. 호출 `load` 다음에 있음 `MediaPlayerItemLoader` 을(를) 인스턴스화하고 로드할 리소스, 선택적으로 콘텐츠 ID 및 `MediaPlayerItemConfig` 인스턴스.
 
@@ -100,6 +100,7 @@ MediaPlayerItemLoader를 사용하면 MediaPlayer 인스턴스를 인스턴스�
       1. 호출 `prepareToPlay()`.
       1. PREPARED 상태를 기다립니다.
       1. 호출 `play()`.
+
    * 항목이 버퍼링되는 경우:
 
       1. 버퍼 준비 이벤트를 기다립니다.

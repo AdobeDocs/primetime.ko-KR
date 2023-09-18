@@ -1,8 +1,7 @@
 ---
 description: 브라우저 TVSDK에서 스트림의 특정 위치(시간)를 찾을 수 있습니다. 스트림은 슬라이딩 윈도우 플레이리스트 또는 VOD(video-on-demand) 콘텐츠일 수 있습니다.
 title: 검색 창 사용 시 검색 처리
-exl-id: 4c09b218-917a-4318-82b0-c221d450a2c1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%

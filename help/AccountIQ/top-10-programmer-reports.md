@@ -1,8 +1,7 @@
 ---
 title: 상위 10명의 프로그래머를 위한 계정 공유 보고서 보기
 description: 상위 10명의 프로그래머를 위한 계정 공유 보고서 보기
-exl-id: d67fa9d1-bd77-4781-9245-a98b1754cd99
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%

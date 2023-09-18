@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerItemConfig 클래스를 사용하여 전역적으로 TVSDK에서 사용자 지정 태그 이름을 구성하거나, MediaPlayerItemConfig 클래스를 사용하여 스트림 기반으로 사용자 지정 태그 이름을 구성할 수 있습니다.
 title: 태그에 대한 클래스 메서드 구성
-exl-id: 093720df-9c2d-41f1-ba9d-9553c5df40a4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -50,8 +49,8 @@ TVSDK는 스트림별 구성을 지정하지 않는 모든 미디어 스트림�
 
 * setter 메서드는 태그 매개 변수에 null 값을 포함할 수 없습니다.
 
-   발견된 경우 TVSDK는 `IllegalArgumentException`.
+  발견된 경우 TVSDK는 `IllegalArgumentException`.
 * 사용자 지정 태그 이름에는 # 접두사가 있어야 합니다.
 
-   예를 들어, `#EXT-X-ASSET` 은(는) 올바른 사용자 지정 태그 이름이지만, `EXT-X-ASSET` 은(는) 잘못되었습니다.
+  예를 들어, `#EXT-X-ASSET` 은(는) 올바른 사용자 지정 태그 이름이지만, `EXT-X-ASSET` 은(는) 잘못되었습니다.
 * 미디어 스트림이 로드된 후에는 구성을 변경할 수 없습니다.

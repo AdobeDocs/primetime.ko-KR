@@ -1,8 +1,7 @@
 ---
 description: 모든 비디오 플레이어는 광고를 삽입하고 광고 추적을 활성화하기 위해 매니페스트 서버가 사용하는 기능을 제공해야 합니다.
 title: 비디오 플레이어 요구 사항
-exl-id: 23134e4c-6902-4b97-bf15-4524f47850e7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 0%

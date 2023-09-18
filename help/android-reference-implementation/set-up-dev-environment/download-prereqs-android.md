@@ -1,8 +1,7 @@
 ---
 title: 필수 구성 요소 소프트웨어 다운로드 및 구성
 description: 설치 프로세스는 간단합니다. 시스템에 JDK가 이미 설치되어 있는 경우 이 단계를 건너뛸 수 있지만 JDK, Eclipse IDE 및 OS가 호환되어야 합니다.
-exl-id: c2884a55-4f5e-4da8-807d-633625d7fef9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -30,18 +29,18 @@ ht-degree: 0%
 
       * Mac OS X/Unix의 경우:
 
-         ```
-         chmod +x android 
-         android update sdk --no-ui
-         ```
+        ```
+        chmod +x android 
+        android update sdk --no-ui
+        ```
 
       * Windows의 경우:
 
-         ```
-         android update sdk --no-ui
-         ```
+        ```
+        android update sdk --no-ui
+        ```
 
-         이 프로세스는 시간이 소요됩니다.
+        이 프로세스는 시간이 소요됩니다.
 
 1. Eclipse 구성
    1. Eclipse를 시작합니다.

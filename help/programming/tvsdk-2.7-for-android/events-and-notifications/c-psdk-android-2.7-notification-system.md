@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerStatus 개체는 플레이어 상태의 변경 내용에 대한 정보를 제공합니다. 알림 개체는 경고 및 오류에 대한 정보를 제공합니다. 비디오 재생을 중지하는 오류는 플레이어의 상태에도 변화를 일으킵니다. 이벤트 리스너를 구현하여 이벤트(MediaPlayerEvent 객체)를 캡처하고 응답합니다.
 title: 플레이어 상태, 활동, 오류 및 로깅에 대한 알림 및 이벤트
-exl-id: c25e834e-ffa0-444c-9285-331e6841ac29
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -75,7 +74,7 @@ Primetime 플레이어 알림 시스템의 핵심은 입니다. `Notification` �
    >
    >1. 새 이벤트에 대해 폴링하는 스레드를 구동하는 시간 간격을 줄입니다.
    >1. 알림 목록의 크기를 늘립니다.
-
+   >
 
 1. 최신 알림 이벤트 항목을 JSON 형식으로 serialize하고 사후 처리를 위해 원격 서버로 해당 항목을 보냅니다.
 

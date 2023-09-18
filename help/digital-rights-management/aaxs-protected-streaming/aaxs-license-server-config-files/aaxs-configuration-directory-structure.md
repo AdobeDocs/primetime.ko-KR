@@ -1,8 +1,7 @@
 ---
 description: Protected Streaming용 Adobe Access Server에는 글로벌 구성 파일(flashaccess-global.xml)과 각 테넌트에 대한 테넌트 구성 파일(flashaccess-tenant.xml)의 두 가지 구성 파일이 필요합니다.
 title: 디렉터리 구조 구성
-exl-id: 6561c001-798c-4503-8afb-93580d957372
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # 라이선스 서버 구성 파일 및 구성 디렉터리 구조 {#configuration-directory-structure}
 
-보호 스트리밍용 Adobe Access Server에는 글로벌 구성 파일(flashaccess-global.xml)과 각 테넌트에 대한 테넌트 구성 파일(flashaccess-tenant.xml)의 두 가지 구성 파일이 필요합니다.
+Adobe Access Server for Protected Streaming에는 전역 구성 파일(flashaccess-global.xml)과 각 테넌트에 대한 테넌트 구성 파일(flashaccess-tenant.xml)의 두 가지 구성 파일이 필요합니다.
 
 Adobe 구성 파일을 편집한 후에는 보호된 스트리밍용 Adobe Access Server과 함께 제공되는 유틸리티를 사용하여 파일이 제대로 구성되어 있는지 확인하는 것이 좋습니다. 자세한 내용은 &quot;[구성 검사기](../../aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)&quot;.
 

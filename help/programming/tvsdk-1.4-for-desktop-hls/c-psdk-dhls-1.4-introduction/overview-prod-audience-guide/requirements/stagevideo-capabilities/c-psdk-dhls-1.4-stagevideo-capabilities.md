@@ -1,8 +1,7 @@
 ---
 description: GPU(하드웨어) 가속을 지원하는 장치에서는 flash.media.StageVideo 객체를 사용하여 장치 하드웨어에서 비디오를 처리할 수 있습니다. StageVideo의 사용 가능 여부는 Flash Player, 비디오 하드웨어, OS, 드라이버, 브라우저, 네트워크 연결 및 컨텍스트 보기 등 시스템의 여러 부분에 대한 버전 및 기능에 따라 다릅니다.
 title: StageVideo 기능 및 제한 사항
-exl-id: 228ea2d0-5950-43f5-8cfd-640d1c482b05
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -19,9 +18,9 @@ GPU(하드웨어) 가속을 지원하는 장치에서는 flash.media.StageVideo 
 
    * *Flash 15 이상* - 하드웨어 가속을 사용할 수 없는 경우 `StageVideo` 소프트웨어로 돌아가 아무것도 할 필요가 없습니다.
 
-      >[!TIP]
-      >
-      >하드웨어 가속을 사용할 수 없는 경우 성능이 크게 저하될 수 있습니다.
+     >[!TIP]
+     >
+     >하드웨어 가속을 사용할 수 없는 경우 성능이 크게 저하될 수 있습니다.
 
    * *Flash 14 및 이전* - 하드웨어 가속을 사용할 수 없는 경우 `StageVideo` 를 사용할 수 없게 됩니다. 브라우저 또는 GPU에서 하드웨어 가속을 지원하지 않거나 Flash Player에서 꺼져 있는 작은 구성 집합에서는 TVSDK HLS 스택을 사용한 비디오 표시가 실패합니다. 다음에서 *HDS* 파이프라인에서 전환할 수 있습니다. `StageVideo` CPU에서 비디오를 처리하는 대체 개체(예: Video 개체)로
 
@@ -29,9 +28,9 @@ GPU(하드웨어) 가속을 지원하는 장치에서는 flash.media.StageVideo 
 
 * **wmode** - 브라우저 컨텍스트에서 `wmode` 설정은 성능에 매우 중요합니다. Adobe은 다음을 유지할 것을 권장합니다. `wmode` 을 로 설정 `direct` 을 클릭하여 브라우저 컨텍스트에서 최상의 성능을 보장합니다.
 
-   >[!NOTE]
-   >
-   >다음을 포함하는 요소의 조합 `wmode`, `StageVideo`및 Flash을 사용하면 하드웨어 실행 속도와 사용 중인 Flash 버전에 따라 기능과 제한 사항이 달라집니다.
+  >[!NOTE]
+  >
+  >다음을 포함하는 요소의 조합 `wmode`, `StageVideo`및 Flash을 사용하면 하드웨어 실행 속도와 사용 중인 Flash 버전에 따라 기능과 제한 사항이 달라집니다.
 
    * *Flash 15 이상* - `StageVideo` 은(는) 모든 사용 가능 항목에서 사용할 수 있습니다. `wmode` 설정. 그러나 을 설정하는 경우 `wmode` 이 아닌 다른 설정에 `direct`, 성능이 저하될 것입니다.
 

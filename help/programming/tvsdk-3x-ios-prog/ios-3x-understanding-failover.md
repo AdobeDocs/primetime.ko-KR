@@ -1,8 +1,7 @@
 ---
 description: 변형 재생 목록에 동일한 비트율에 대한 여러 변환이 있고 변환 중 하나가 작동을 중지하면 장애 조치 처리가 발생합니다. TVSDK는 렌디션 간에 전환합니다.
 title: 페일오버
-exl-id: 3da378ac-1665-4e51-a901-3d7772ede69a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%

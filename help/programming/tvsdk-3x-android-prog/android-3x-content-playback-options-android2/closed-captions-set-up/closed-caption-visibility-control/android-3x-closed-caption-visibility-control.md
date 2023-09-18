@@ -1,8 +1,7 @@
 ---
 description: 닫힘 캡션의 가시성을 제어할 수 있습니다. 가시성이 활성화되면 현재 선택한 트랙이 표시됩니다. 현재 트랙을 변경하는 경우 가시성 설정은 동일하게 유지됩니다.
 title: 닫힌 캡션 표시 제어
-exl-id: 1fe978c5-b9ae-4e72-ac32-e3ba4e948683
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -19,13 +18,13 @@ ht-degree: 0%
 >
 >폐쇄 캡션의 가시성 값은에 정의되어 있습니다. `MediaPlayer.Visibility`.
 >
->
-```java
+>```java
 >enum Visibility {  
 >       VISIBLE,  
 >       INVISIBLE 
 >}
 >```
+>
 
 1. 다음을 기다리십시오. `MediaPlayer` 적어도 준비됨 상태여야 합니다. 자세한 내용은 [유효한 상태를 기다립니다.](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md).
 

@@ -2,8 +2,7 @@
 title: ID 기반 도메인 등록 논리
 description: ID 기반 도메인 등록 논리
 copied-description: true
-exl-id: 6e391fce-00b4-45cf-b785-3b0ec734a11e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -36,8 +35,8 @@ ht-degree: 0%
       1. 새 컴퓨터인 경우 항목을 `UserDomainMembership` 테이블.
       1. 에서 일치하는 레코드 검색 `UserDomainRefCount` 테이블.
       1. 이 컴퓨터 GUID에 대한 항목이 없으면 레코드를 추가합니다.
-   1. 새 디바이스인 경우 및 `Max Membership` 값에 도달했습니다. 오류 를 반환합니다.
 
+   1. 새 디바이스인 경우 및 `Max Membership` 값에 도달했습니다. 오류 를 반환합니다.
 
 1. 에서 이 도메인의 모든 도메인 키 조회 `DomainKeys` 표:
 

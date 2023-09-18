@@ -1,8 +1,7 @@
 ---
 description: ID3 태그는 파일 제목 또는 아티스트 이름과 같은 오디오 또는 비디오 파일에 대한 정보를 제공합니다. TVSDK는 HLS 스트림의 전송 스트림(TS) 세그먼트 수준에서 ID3 태그를 감지하고 이벤트를 전달합니다. 애플리케이션은 태그로부터 데이터를 추출할 수 있습니다.
 title: ID3 태그
-exl-id: 316bc704-e71a-4fd7-b970-706b8c08a42e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%

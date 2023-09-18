@@ -1,8 +1,7 @@
 ---
 description: 간혹 콘텐츠를 재생할 수 없는 경우가 있습니다. 브라우저 네트워크 스택, 전송 계층, 운영 체제, Flash Player 런타임 또는 Primetime DRM 시스템의 오류를 포함하여 다양한 상황이 발생할 수 있습니다.
 title: 트리에이징 오류 개요
-exl-id: fe94d0a4-4f3c-4b0e-b830-a7a83bac1e85
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

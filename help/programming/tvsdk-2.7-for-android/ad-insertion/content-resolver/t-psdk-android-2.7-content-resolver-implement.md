@@ -1,8 +1,7 @@
 ---
 description: 기본 확인자를 기반으로 자체 콘텐츠 확인자를 구현할 수 있습니다.
 title: 사용자 지정 콘텐츠 확인자 구현
-exl-id: 04eff874-8a18-42f0-adb2-5b563e5c6a31
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -116,22 +115,22 @@ TVSDK는 새 기회를 생성할 때 등록된 콘텐츠 해결자를 반복하�
 
       * 광고 해결이 성공하면 을 호출합니다. `process(List<TimelineOperation> proposals)` 및 `notifyCompleted(Opportunity opportunity)` 다음에 있음 `ContentResolverClient`
 
-         ```java
-         _client.process(timelineOperations); 
-         _client.notifyCompleted(opportunity); 
-         ```
+        ```java
+        _client.process(timelineOperations); 
+        _client.notifyCompleted(opportunity); 
+        ```
 
       * 광고 해결이 실패하면 `notifyResolveError` 다음에 있음 `ContentResolverClient`
 
-         ```java
-         _client.notifyFailed(Opportunity opportunity, PSDKErrorCode error);
-         ```
+        ```java
+        _client.notifyFailed(Opportunity opportunity, PSDKErrorCode error);
+        ```
 
-         예:
+        예:
 
-         ```java
-         _client.notifyFailed(opportunity, UNSUPPORTED_OPERATION);
-         ```
+        ```java
+        _client.notifyFailed(opportunity, UNSUPPORTED_OPERATION);
+        ```
 
 <!--<a id="example_463B718749504A978F0B887786844C39"></a>-->
 

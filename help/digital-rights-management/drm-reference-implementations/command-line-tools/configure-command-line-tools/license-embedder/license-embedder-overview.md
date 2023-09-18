@@ -2,8 +2,7 @@
 title: 개요
 description: 개요
 copied-description: true
-exl-id: 9aebdbd0-a6f0-4c9d-be2f-a8789cadf287
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -23,7 +22,7 @@ java -jar AdobeLicenseEmbedder.jar sourcefile destfile [options]
 * `sourcefile` 암호화된 파일을 나타냅니다.
 * `destfile` 포함된 라이선스가 있는 암호화된 콘텐츠가 저장되는 파일의 이름을 지정합니다.
 
-   디렉토리를 지정하면 파일이 대상 디렉토리에 저장됩니다. 또한 소스 파일의 이름은 대상 디렉토리에 저장되는 파일의 이름이 됩니다.
+  디렉토리를 지정하면 파일이 대상 디렉토리에 저장됩니다. 또한 소스 파일의 이름은 대상 디렉토리에 저장되는 파일의 이름이 됩니다.
 
 다음 표에서는 지정할 수 있는 명령줄 옵션에 대해 설명합니다.
 

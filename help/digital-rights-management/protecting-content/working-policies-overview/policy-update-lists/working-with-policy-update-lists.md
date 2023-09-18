@@ -2,8 +2,7 @@
 title: DRM 정책 업데이트 목록 작업
 description: DRM 정책 업데이트 목록 작업
 copied-description: true
-exl-id: 140f1fff-2078-427b-ade2-8ec18a14216f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%

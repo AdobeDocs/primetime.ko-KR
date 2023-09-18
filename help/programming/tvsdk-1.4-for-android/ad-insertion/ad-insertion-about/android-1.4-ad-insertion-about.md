@@ -1,8 +1,7 @@
 ---
 description: 광고 삽입은 주문형 비디오(VOD), 라이브 스트리밍, 광고 추적 및 광고 재생을 통한 선형 스트리밍 광고를 해결합니다. TVSDK는 광고 서버에 필요한 요청을 하고, 지정된 컨텐츠에 대한 광고 정보를 수신하고, 단계별로 광고를 컨텐츠에 배치합니다.
 title: 광고 삽입
-exl-id: 390036e2-2459-4cfb-a336-640d816bdaad
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: FMRMS(Flash 미디어 Rights Management 서버) 1.0 또는 1.5로 패키지화된 콘텐츠에 대한 라이선스를 계속 발급하려면 LiveCycle ES 서버에서 Adobe Primetime DRM SDK를 기반으로 하는 고객의 새 서버로 라이선스 및 DRM 정책 데이터를 마이그레이션해야 합니다.
 title: FMRMS 1.0 또는 1.5에서 Adobe Primetime DRM 2.0 이상으로 마이그레이션
-exl-id: 6490f2ad-4863-4b41-9ebd-1de47da4250b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 0%
@@ -30,7 +29,6 @@ FMRMS(Flash 미디어 Rights Management 서버) 1.0 또는 1.5로 패키지화�
       * 콘텐츠 암호화 키
 
       1.x 컨텐츠 메타데이터를 Primetime DRM 메타데이터 형식으로 변환하려면 이 정보가 필요합니다. 참조 구현에서 이 데이터는 라이선스 데이터베이스 테이블에 저장되고 다음에서 사용됩니다. `RefImplMetadataConvReqHandler`. 자세한 내용은 `FMRMSv1RequestHandler` 및 `FMRMSv1MetadataHandler`.
-
 
 1. FMRMS 정책을 Primetime DRM 형식으로 변환:
 

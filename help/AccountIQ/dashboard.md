@@ -1,8 +1,7 @@
 ---
 title: 계정 IQ 대시보드
 description: 대시보드를 사용하면 다양한 구독자 데이터를 분석하여 암호 공유 인스턴스를 정확하게 파악할 수 있습니다.
-exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: a2181a8fd7334f19b8387a31c71527d4f689ab9d
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%

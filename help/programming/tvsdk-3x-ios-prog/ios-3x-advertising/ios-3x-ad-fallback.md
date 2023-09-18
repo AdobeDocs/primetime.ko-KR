@@ -1,8 +1,7 @@
 ---
 description: 대체 규칙이 활성화된 VAST(디지털 비디오 광고 제공 템플릿) 광고(또는 크리에이티브)의 경우 TVSDK는 잘못된 미디어 유형의 광고를 빈 광고로 취급하고 대신 대체 광고를 사용합니다. 대체 동작의 몇 가지 측면을 구성할 수 있습니다.
 title: VAST 및 VMAP 광고에 대한 광고 대체
-exl-id: 8e33793c-d278-4c82-ad9b-7c6c7ee69cd2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%

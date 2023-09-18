@@ -1,8 +1,7 @@
 ---
 description: 사용자 지정 광고 마커를 사용하면 타임라인 세그먼트를 나타내는 TimeRange 지정 세트를 TVSDK에 전달할 수 있습니다.
 title: TimeRange 클래스
-exl-id: 7451c4f6-40df-48b2-a2c7-6d7826724716
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%

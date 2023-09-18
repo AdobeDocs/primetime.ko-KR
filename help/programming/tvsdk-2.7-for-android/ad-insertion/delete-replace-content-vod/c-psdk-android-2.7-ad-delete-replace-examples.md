@@ -1,8 +1,7 @@
 ---
 description: 다음은 광고를 삭제하고 바꾸는 프로세스의 몇 가지 예입니다.
 title: 광고 삭제 및 바꾸기 예제
-exl-id: a6fdb86e-507e-4a65-bb32-928e216c6e9a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
