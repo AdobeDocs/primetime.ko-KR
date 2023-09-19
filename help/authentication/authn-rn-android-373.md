@@ -1,14 +1,14 @@
 ---
-title: 인증 Android 3.7.3 릴리스 노트
-description: 인증 Android 3.7.3 릴리스 노트
-source-git-commit: fbc0e710d205532d268213ca0bdc81449e9c9835
+title: Adobe Pass 인증 Android 3.7.3 릴리스 노트
+description: Adobe Pass 인증 Android 3.7.3 릴리스 노트
+source-git-commit: a294b5628ec7184491cf8b67a60fd6cf9410c431
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
 
-# 인증 Android 3.7.3 릴리스 노트 {#android-sdk-370-release-notes}
+# Adobe Pass 인증 Android 3.7.3 릴리스 노트 {#android-sdk-373-release-notes}
 
 >[!NOTE]
 >
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ## 빌드 번호 {#build-no-android-sdk-373}
 
-Adobe Primetime 인증: Android 3.7.3
+Adobe Pass 인증: Android 3.7.3
 
 릴리스 날짜: 2023/09/19
 
 
 
-## 릴리스 개요 {#overview-android-sdk-370}
+## 릴리스 개요 {#overview-android-sdk-373}
 
 * Android 14 및 애플리케이션 타깃팅 API 레벨 34 지원에 대한 변경 사항
    * 필요한 플래그 추가 [Android 14 런타임 등록 브로드캐스트 수신기](https://developer.android.com/about/versions/14/behavior-changes-14#runtime-receivers-exported).
@@ -32,8 +32,6 @@ Adobe Primetime 인증: Android 3.7.3
    * 참고: SDK &lt;3.7.3에서 이 문제에 대한 해결 방법은 에뮬레이터에서 Chrome 앱을 열고 MVPD 로그인을 시도하기 전에 설정을 완료하는 것입니다
 
 
-## 릴리스 패키지 {#rel=pkg-android373}
+## 릴리스 패키지 {#rel-pkg-android373}
 
 에서 Android SDK v3.7.3을 다운로드할 수 있습니다. [여기](https://tve.zendesk.com/hc/en-us/articles/204963219-Android-Native-AccessEnabler-Library).
-
-이 버전으로 업그레이드하기 전에 이 기술 정보를 확인하십시오.
