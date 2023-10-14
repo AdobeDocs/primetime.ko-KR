@@ -3,16 +3,16 @@ product: adobe primetime
 feature: Concurrency Monitoring
 audience: end-user
 user-guide-title: Primetime 동시 모니터링
-user-guide-description: 여러 애플리케이션에서 동시 사용 제한을 정의하고 적용하는 방법에 대해 알아봅니다.
+user-guide-description: 여러 애플리케이션에서의 동시 사용에 대한 제한을 정의하고 적용하는 방법에 대해 알아봅니다.
 source-git-commit: 11ca161ebaaeca08b6bdc84f9bd719dfc8509d09
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
 
-# Primetime 동시성 모니터링 도움말 {#cm}
+# Primetime 동시 모니터링 도움말 {#cm}
 
 + [동시성 모니터링 소개](cm-home.md)
 + [동시성 모니터링 용어집](cm-glossary.md)

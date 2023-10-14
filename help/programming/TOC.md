@@ -1,11 +1,11 @@
 ---
 audience: end-user
 user-guide-title: Primetime 프로그래밍 도움말
-user-guide-description: Android 장치에서 Java를 사용하는 응용 프로그램 및 비디오 플레이어를 개발하는 방법과 iOS 장치에서 Objective-C를 사용하는 방법을 배울 수 있습니다.
+user-guide-description: Android 디바이스에서 Java를 사용하는 애플리케이션 및 비디오 플레이어를 개발하는 방법과 iOS 디바이스에서 Objective-C를 사용하는 방법을 배울 수 있습니다.
 source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
 source-wordcount: '4342'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -722,7 +722,7 @@ ht-degree: 0%
       + [Primetime DRM 인터페이스 개요](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/r-psdk-ios-1.4-drm-interface.md)
       + [TVSDK 애플리케이션의 Apple FairPlay](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
       + [iOS 애플리케이션 허용 목록](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-allowlist-your-ios-application.md)
-   + [플레이어 상태, 활동, 오류 및 로그에 대한 알림 ](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
+   + [플레이어 상태, 활동, 오류 및 로그에 대한 알림](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
    + [사용자 지정된 로깅](tvsdk-1.4-for-ios/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
    + [페일오버](tvsdk-1.4-for-ios/c-psdk-ios-1.4-understanding-failover.md)
    + [청구 지표](tvsdk-1.4-for-ios/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md)

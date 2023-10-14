@@ -2,11 +2,11 @@
 product: adobe primetime
 audience: end-user
 user-guide-title: Primetime Digital Rights Management 도움말
-user-guide-description: Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대해 자세히 알아봅니다.
+user-guide-description: Digital Rights Management(DRM)의 다양한 사용자 시나리오에 대해 자세히 알아보십시오.
 source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
 source-wordcount: '2215'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    + 패키징 옵션 {#packaging-options}
       + [포함된 Primetime 오프라인 패키지 사용](cloud-quick-start/packaging-options/use-offline-packager.md)
       + [서드파티 인코더 사용](cloud-quick-start/packaging-options/use-third-party-encoder.md)
-      + [Adobe Medium 서버 사용](cloud-quick-start/packaging-options/use-adobe-media-server.md)
+      + [Adobe Media Server 사용](cloud-quick-start/packaging-options/use-adobe-media-server.md)
    + [패키지된 콘텐츠 테스트](cloud-quick-start/test-packaged-content.md)
    + [오류 평가](cloud-quick-start/triaging-errors/client-error-triaging.md)
    + 사용자 지정 인증/권한 부여 {#custom-auth-ent}
@@ -508,7 +508,7 @@ ht-degree: 0%
    + [비디오 플레이어 만들기](aaxs-protecting-content/content-creating-video-players.md)
 + Adobe 액세스 참조 구현 {#reference-implementation}
    + [개요 - 참조 구현 사용](aaxs-reference-implementations/overview.md)
-   + [콘텐츠를 패키징하고 취소 목록을 만드는 명령줄 도구 ](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
+   + [콘텐츠를 패키징하고 취소 목록을 만드는 명령줄 도구](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
    + 정책 관리자 {#policy-manager}
       + [정책 관리자 사용](aaxs-reference-implementations/command-line-tools/policy-manager/using-aaxs-policy-manager.md)
       + [구성 파일 속성](aaxs-reference-implementations/command-line-tools/policy-manager/config-file-properties.md)

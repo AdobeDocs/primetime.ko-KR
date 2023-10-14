@@ -6,7 +6,7 @@ user-guide-description: TVSDK를 이해하고 기능 관리자를 수정하여 �
 source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
